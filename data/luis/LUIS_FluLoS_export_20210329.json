@@ -32,6 +32,15 @@
       "features": []
     },
     {
+      "name": "Squawk",
+      "features": [
+        {
+          "modelName": "MLSquawkIdentifier",
+          "isRequired": false
+        }
+      ]
+    },
+    {
       "name": "Turn",
       "features": [
         {
@@ -88,6 +97,12 @@
       "features": []
     },
     {
+      "name": "MLSquawkIdentifier",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
       "name": "MLTurnIdentifier",
       "children": [],
       "roles": [],
@@ -106,7 +121,9 @@
         },
         {
           "canonicalForm": "abair",
-          "list": []
+          "list": [
+            "swissair"
+          ]
         },
         {
           "canonicalForm": "abakan air",
@@ -22097,6 +22114,74 @@
       ]
     },
     {
+      "text": "air malta 104 good afternoon squawk 5730",
+      "intent": "Squawk",
+      "entities": [
+        {
+          "entity": "MLCallSign",
+          "startPos": 0,
+          "endPos": 12,
+          "children": [
+            {
+              "entity": "FlightNr",
+              "startPos": 10,
+              "endPos": 12,
+              "children": []
+            },
+            {
+              "entity": "Airline",
+              "startPos": 0,
+              "endPos": 8,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "MLSquawkIdentifier",
+          "startPos": 29,
+          "endPos": 34,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "air portugal 4113 turn right 10 degrees",
+      "intent": "Turn",
+      "entities": [
+        {
+          "entity": "MLCallSign",
+          "startPos": 0,
+          "endPos": 16,
+          "children": [
+            {
+              "entity": "Airline",
+              "startPos": 0,
+              "endPos": 11,
+              "children": []
+            },
+            {
+              "entity": "FlightNr",
+              "startPos": 13,
+              "endPos": 16,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "MLTurnIdentifier",
+          "startPos": 18,
+          "endPos": 21,
+          "children": []
+        },
+        {
+          "entity": "MLDirection",
+          "startPos": 23,
+          "endPos": 27,
+          "children": []
+        }
+      ]
+    },
+    {
       "text": "airfrans 3261 climb to flight level 340",
       "intent": "FlightLevel",
       "entities": [
@@ -22236,6 +22321,68 @@
       "text": "app developers drink coffee",
       "intent": "None",
       "entities": []
+    },
+    {
+      "text": "bonjour alitalia 228 squawk 5772",
+      "intent": "Squawk",
+      "entities": [
+        {
+          "entity": "MLCallSign",
+          "startPos": 8,
+          "endPos": 19,
+          "children": [
+            {
+              "entity": "Airline",
+              "startPos": 8,
+              "endPos": 15,
+              "children": []
+            },
+            {
+              "entity": "FlightNr",
+              "startPos": 17,
+              "endPos": 19,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "MLSquawkIdentifier",
+          "startPos": 21,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "bonjour swissair 687 maintain flight level 280",
+      "intent": "FlightLevel",
+      "entities": [
+        {
+          "entity": "MLCallSign",
+          "startPos": 8,
+          "endPos": 19,
+          "children": [
+            {
+              "entity": "FlightNr",
+              "startPos": 17,
+              "endPos": 19,
+              "children": []
+            },
+            {
+              "entity": "Airline",
+              "startPos": 8,
+              "endPos": 15,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "MLFlightLevelType",
+          "startPos": 21,
+          "endPos": 28,
+          "children": []
+        }
+      ]
     },
     {
       "text": "cross air 2690 contact marseille on 125.85 good bye",
@@ -22387,6 +22534,37 @@
       ]
     },
     {
+      "text": "good morning adria 1642 squawk 2710",
+      "intent": "Squawk",
+      "entities": [
+        {
+          "entity": "MLCallSign",
+          "startPos": 13,
+          "endPos": 22,
+          "children": [
+            {
+              "entity": "FlightNr",
+              "startPos": 19,
+              "endPos": 22,
+              "children": []
+            },
+            {
+              "entity": "Airline",
+              "startPos": 13,
+              "endPos": 17,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "MLSquawkIdentifier",
+          "startPos": 24,
+          "endPos": 29,
+          "children": []
+        }
+      ]
+    },
+    {
       "text": "hapag lloyd 171 turn left to bilsa",
       "intent": "Turn",
       "entities": [
@@ -22492,6 +22670,37 @@
       ]
     },
     {
+      "text": "ltu 1602 right by 20 degrees please",
+      "intent": "Turn",
+      "entities": [
+        {
+          "entity": "MLCallSign",
+          "startPos": 0,
+          "endPos": 7,
+          "children": [
+            {
+              "entity": "Airline",
+              "startPos": 0,
+              "endPos": 2,
+              "children": []
+            },
+            {
+              "entity": "FlightNr",
+              "startPos": 4,
+              "endPos": 7,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "MLDirection",
+          "startPos": 9,
+          "endPos": 13,
+          "children": []
+        }
+      ]
+    },
+    {
       "text": "lufthansa 4207 turn now left to dkb",
       "intent": "Turn",
       "entities": [
@@ -22524,6 +22733,37 @@
           "entity": "MLDirection",
           "startPos": 24,
           "endPos": 27,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "lufthansa 4356 good morning squawk 2712",
+      "intent": "Squawk",
+      "entities": [
+        {
+          "entity": "MLCallSign",
+          "startPos": 0,
+          "endPos": 13,
+          "children": [
+            {
+              "entity": "Airline",
+              "startPos": 0,
+              "endPos": 8,
+              "children": []
+            },
+            {
+              "entity": "FlightNr",
+              "startPos": 10,
+              "endPos": 13,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "MLSquawkIdentifier",
+          "startPos": 28,
+          "endPos": 33,
           "children": []
         }
       ]
@@ -22699,6 +22939,37 @@
       ]
     },
     {
+      "text": "swissair 806 identified climb now flight level 340",
+      "intent": "FlightLevel",
+      "entities": [
+        {
+          "entity": "MLCallSign",
+          "startPos": 0,
+          "endPos": 11,
+          "children": [
+            {
+              "entity": "FlightNr",
+              "startPos": 9,
+              "endPos": 11,
+              "children": []
+            },
+            {
+              "entity": "Airline",
+              "startPos": 0,
+              "endPos": 7,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entity": "MLFlightLevelType",
+          "startPos": 24,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
       "text": "swissair 9360 contact rhein radar 127.37",
       "intent": "Contact",
       "entities": [
@@ -22782,6 +23053,16 @@
     {
       "name": "RegexFlightLevel",
       "regexPattern": "level (\\d+)",
+      "roles": []
+    },
+    {
+      "name": "RegexSquawkNr",
+      "regexPattern": "squawk \\d{4}",
+      "roles": []
+    },
+    {
+      "name": "RegexTurnDegrees",
+      "regexPattern": "\\d{2} degrees",
       "roles": []
     },
     {
