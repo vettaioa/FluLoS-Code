@@ -16,18 +16,52 @@ namespace LUIS_DynamicList
 
         private static LUISRuntimeClient runtimeClient;
 
+
         static void Main(string[] args)
         {
+            // authenticate to service
             ApiKeyServiceClientCredentials credentials = new ApiKeyServiceClientCredentials(API_KEY);
             runtimeClient = new LUISRuntimeClient(credentials) { Endpoint = PREDICTION_ENDPOINT };
 
-            var request = new PredictionRequest { Query = "aegean 3535 climb to flight level 320" };
-            var prediction = GetPredition(request);
-            var predictionResult = prediction.Result;
-            Console.Write(JsonConvert.SerializeObject(predictionResult, Formatting.Indented));
+
+            // prepare data for utterance without errors
+            var querySimple = "aegean 3535 climb to flight level 320";
+
+
+            // prepare data for utterance with small error
+            var queryWithError = "aegean 3535 lime to flight level 320";
+            var correctWord = "climb";
+            var correctionListName = "ClimbSynonymList";
+            var errorSynonyms = new List<string>();
+            errorSynonyms.Add("lime");
+            errorSynonyms.Add("comb");
+
+            var requestLists = new List<RequestList>();
+            requestLists.Add(new RequestList(correctWord, correctWord, errorSynonyms));
+
+            var dynamicLists = new List<DynamicList>();
+            dynamicLists.Add(new DynamicList(correctionListName, requestLists));
+
+
+            // make request for utterance without errors
+            var requestSimple = new PredictionRequest { Query = querySimple };
+            var predictionSimple = GetPrediction(requestSimple);
+            Console.WriteLine("***********     SIMPLE      ***********");
+            Console.WriteLine(JsonConvert.SerializeObject(predictionSimple.Result, Formatting.Indented));
+
+
+            // make request for utterance with small error
+            var requestDynamicList = new PredictionRequest
+            {
+                Query = queryWithError,
+                DynamicLists = dynamicLists
+            };
+            var predictionDynamicList = GetPrediction(requestDynamicList);
+            Console.WriteLine("***********   DYNAMICLIST   ***********");
+            Console.WriteLine(JsonConvert.SerializeObject(predictionDynamicList.Result, Formatting.Indented));
         }
 
-        private async static Task<PredictionResponse> GetPredition(PredictionRequest request)
+        private async static Task<PredictionResponse> GetPrediction(PredictionRequest request)
         {
             return await runtimeClient.Prediction.GetSlotPredictionAsync(APP_ID, API_SLOT, request);
         }
