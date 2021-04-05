@@ -31,7 +31,7 @@ namespace LUIS_DynamicList
             // prepare data for utterance with small error
             var queryWithError = "aegean 3535 lime to flight level 320";
             var correctWord = "climb";
-            var correctionListName = "ClimbSynonymList";
+            var correctionListName = "ListDynamicSynonyms";     // list entity must already exist in LUIS
             var errorSynonyms = new List<string>();
             errorSynonyms.Add("lime");
             errorSynonyms.Add("comb");

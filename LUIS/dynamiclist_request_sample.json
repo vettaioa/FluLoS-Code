@@ -1,0 +1,19 @@
+{
+    "query": "aegean 3535 lime to flight level 320",
+    "dynamicLists": [
+        {
+            "listEntityName":"ListDynamicSynonyms",
+            "listEntity*":"ListDynamicSynonyms",
+            "requestLists":[
+                {
+                    "name": "climb",
+                    "canonicalForm": "climb",
+                    "synonyms":[
+                        "lime",
+                        "comb"
+                    ]
+                }
+            ]
+        }
+    ]
+}
