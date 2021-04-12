@@ -1,0 +1,1931 @@
+gf1_01_005.txt	luffhansa 4723 resume own navigation to willisau
+gf1_01_011.txt	luxair 551 too short on your way fly heading 180
+gf1_01_014.txt	alitalia 300 bonjour i ll call you back
+gf1_01_024.txt	topswiss 4578 turn left 20 degrees
+gf1_01_026.txt	alitalia 301 descend to flight level 300 due traffic
+gf1_01_031.txt	speedbird 580 descend to flight level 210
+gf1_01_034.txt	speedbird 563 contact geneva on 12815 good bye
+gf1_01_035.txt	saudia
+gf1_01_036.txt	saudia 155 bonjour squawk 5743
+gf1_01_044.txt	sabena 970 set course direct to arbos
+gf1_01_048.txt	roger and re report your heading
+gf1_01_051.txt	cross air 512 contact geneva 125.85 good bye
+gf1_01_056.txt	alitalia 301 descend to flight level 270
+gf1_01_059.txt	belgian airforce 334 bonjour identified cleared passeiry epinal flight level 320
+gf1_01_060.txt	europa 381 bonjour identified cleared kines saint prex willisau flight level 340
+gf1_01_063.txt	and topswiss 4578 own navigation tour du pin
+gf1_01_064.txt	viva 9081 turn left heading 350
+gf1_01_068.txt	aero lloyd 560 bonjour identified cleared passeiry bilsa flight level 330
+gf1_01_070.txt	viva 9081 turn further left heading s heading 340
+gf1_01_072.txt	ascot 9319 identified cleared saint prex rolampont flight level 320
+gf1_01_090.txt	bonjour hapag lloyd 171 identified passeiry bilsa flight level 290
+gf1_01_091.txt	swissair 6752 turn left to kines
+gf1_01_094.txt	portugal 4113 bonjour i ll call you back
+gf1_01_111.txt	alitalia 262 identified cleared aosta saint prex rolampont flight level 300 call you back for higher
+gf1_01_113.txt	alitalia 234 reims 13227 good bye
+gf1_01_116.txt	aero lloyd confirm europa europa 361 bonjour identified cleared kines saint prex willisau flight level 340
+gf1_01_127.txt	roger turn left heading 220
+gf1_01_136.txt	europa 381 descend to flight level 280
+gf1_01_144.txt	cross air 2690 climb to flight level 300
+gf1_01_157.txt	station calling say again callsign
+gf1_01_163.txt	air inter SO set course direct to kamas
+gf1_01_174.txt	swissair 6752 contact marseille on 12585 good bye
+gf1_01_178.txt	ltu 7756 geneva 12815 good bye
+gf1_01_188.txt	N145W climb to flight level 380
+gf1_01_189.txt	lufthansa 4652 bonjour identified cleared passeiry tour du pin flight level 310
+gf1_01_217.txt	iberia 3473 bonjour identified climb to flight level 330 saint prex passe passeiry tour du pin
+gf1_01_226.txt	roger contact geneva 12815 good bye
+gf1_01_235.txt	iberia 3473 geneva 12815 good bye
+gm1_01_008.txt	speedway 3352 due to traffic descend to flight level 330
+gm1_01_012.txt	iberia 3530 contact zurich on 134.6 good bye
+gm1_01_015.txt	ok so flight planned routing
+gm1_01_020.txt	color 607 bonjour cleared kines saint prex willisau flight level 340
+gm1_01_023.txt	berlin 5073 bonjour maintain flight level 300 via saint prex willisau
+gm1_01_027.txt	roger alitalia 110 climb to flight level 320
+gm1_01_042.txt	speedway 2352 contact zurich on 134.6 good bye
+gm1_01_043.txt	merair 766 bonjour i ll call you back for further descent
+gm1_01_051.txt	topswiss 4552 continue climb to flight level 370
+gm1_01_052.txt	sunwing 5123 bonjour cleared saint prex kir correction kines saint prex arbos epinal flight level 300
+gm1_01_053.txt	alitalia 110 contact reims on 134.4 good bye
+gm1_01_054.txt	iberia 2663 descend to flight level 220 and turn right to bern
+gm1_01_061.txt	twa 800 contact milano 12585 good bye
+gm1_01_063.txt	speedbird 569 bonjour squawk 5763
+gm1_01_070.txt	speedbird 569 you re identified cleared aosta saint prex rolampont climb to flight level 330 initially
+gm1_01_071.txt	klm 376 squawk 5766
+gm1_01_079.txt	klm 376 you re identified cleared saint prex arbos epinal climb to flight level 320
+gm1_01_092.txt	klm 376 climb to flight level 330
+gm1_01_099.txt	ltu 1602 climb to flight level 330
+gm1_01_113.txt	iberia 4476 contact zurich on 125.85 good bye
+gm1_01_114.txt	twa 881 identified cleared saint prex rolampont flight level 340
+gm1_01_115.txt	alitalia 323 turn right to torino
+gm1_01_125.txt	condor 499 bonjour cleared direct arbos then epinal flight level 340
+gm1_01_128.txt	sabena 376 contact reims on 134.4 good bye
+gm1_01_138.txt	gibair 988L contact milano 12585 good bye
+gm1_01_140.txt	alitalia 216 contact reims 13227 good bye
+gm1_01_145.txt	and sabena 968 climb to flight level 310 initially
+gm1_01_152.txt	bonjour swissair 659 cleared saint prex willisau flight level 300
+gm1_01_155.txt	swissair 687 contact zurich 12585 good bye
+gm1_01_164.txt	portugalia 543 climb to flight level 350
+gm1_01_168.txt	spar 899 own navigation direct la tour du pin
+gm1_01_170.txt	swissair 693 bonjour maintain flight level 300
+gm1_01_180.txt	alitalia 379 descend to flight level 210
+gm1_01_182.txt	transavia 3513 bonjour cleared direct bilsa flight level 330
+gm1_01_189.txt	alitalia 379 contact milano 12585 good bye
+gm1_01_198.txt	alitalia 228 identified cleared saint prex rolampont climb to flight level 320
+gm1_02_004.txt	alitalia 364 contact reims on 134.4 good bye
+gm1_02_011.txt	speedbird 563 bonjour squawk 5721
+gm1_02_019.txt	roger turn left heading 320 correction 330 to permit climb
+gm1_02_023.txt	hapag lloyd 195 bonjour cleared direct to bilsa flight level 330
+gm1_02_025.txt	speedbird 580 bonjour call you back for further descent
+gm1_02_033.txt	sabena 970 climb to flight level 340
+gm1_02_043.txt	german air force 334 bonjour maintain flight level 320 via passeiry epinal
+gm1_02_046.txt	german air force 334 due to traffic continue present heading
+gm1_02_049.txt	saudia 155 descend to flight level 310 due to traffic and own navigation direct to dijon
+gm1_02_061.txt	roger contact us on 12815 good bye
+gm1_02_069.txt	roystar 626494 bonjour cleared kines saint prex arbos epinal flight level
+gm1_02_077.txt	stand by i ll call you back for higher
+gm1_02_084.txt	belgian airforce 334 contact reims on 134.4 good bye
+gm1_02_087.txt	aero lloyd 517 contact zurich on 134134.6 good bye
+gm1_02_094.txt	cross air 2690 climb to flight level 3f 30
+gm1_02_098.txt	sabena 970 contact reims on 134.4 good bye
+gm1_02_120.txt	hapag lloyd 171 turn left to bilsa
+gm1_02_132.txt	cross air 2690 contact marseille on 125.85 good bye
+gm1_02_133.txt	hamburg air 2546 marseille 12585 good bye
+gm1_02_137.txt	ltu 7756 bonjour maintain 310 and stand by for climb
+gm1_02_155.txt	hapag lloyd 171 contact marseille 12585 good bye
+gm1_02_161.txt	N145W identified cleared aosta saint prex dijon climb to flight level 380
+gm1_02_178.txt	monarch 244 contact reims on 132.27 good bye
+gm2_01_009.txt	cross air s 8680 contact marseille 125.85 au revoir
+gm2_01_010.txt	co
+gm2_01_047.txt	lufthansa 8268 resume own navigation to la tour du pin
+gm2_01_049.txt	ukay 625 bonjour identified you can kill this1
+gm2_01_052.txt	roger you should be with geneva 12815
+gm2_01_060.txt	aero lloyd 517 resume own navigation to willisau contact zurich 134.6 au revoir
+gm2_01_062.txt	hamburg air 2546 climb to flight level 300
+gm2_01_074.txt	german air force 4901 turn right heading 250
+gm2_01_093.txt	roger contact marseille 125.85 au revoir
+gm2_01_107.txt	7959 bonjour identified cleared passeiry la tour du pin flight level 300
+gm2_01_112.txt	transwede 107 geneva
+gm2_01_130.txt	lufthansa 4652 bonjour identified cleared passeiry la tour du pin flight level 340
+gm2_01_134.txt	contact radar 128.15 au revoir
+gm2_01_135.txt	iberia 3473 bonjour climb to flight level 290
+gm2_01_137.txt	alitalia 365 contact milano 125.85 au revoir
+gm2_01_141.txt	luxair 2663 bonjour continue climb to flight level 350
+gm2_01_156.txt	lufthansa 4652 contact marseille 125.85
+gm2_02_006.txt	lufthansa 5294 climb to flight level 340
+gm2_02_010.txt	cross air 512 bonjour cleared kines saint prex fribourg flight level 310
+gm2_02_020.txt	alitalia 300 squawk 5763
+gm2_02_021.txt	alitalia 301 bonjour identified maintain flight level 330 cleared passeiry torino
+gm2_02_022.txt	speedbird 563 bonjour squawk 5721
+gm2_02_023.txt	alitalia 300 identified cleared aosta saint prex dijon climb to flight level 310
+gm2_02_024.txt	sabena 970 bonjour identified cleared kines saint prex arbos climb to flight level 310
+gm2_02_036.txt	sabena 970 climb to flight level 320
+gm2_02_042.txt	roger turn left heading 330 to permit further climb
+gm2_02_052.txt	belgian airforce 334 bonjour identified cleared direct arbos then epinal flight level 320
+gm2_02_062.txt	sabena 970 contact radar 128.15 au revoir
+gm2_02_068.txt	aero lloyd 517 turn right to willisau
+gm2_02_070.txt	air france 3261 bonjour identified maintain flight level 290 to passeiry
+gm2_02_079.txt	saudia 155 climb to flight level 320
+gm2_02_080.txt	portugal 4113 bonjour identified cleared saint prex willisau flight level 310
+gm2_02_084.txt	roger turn left heading 225 to permit climb
+gm2_02_085.txt	belgian airforce 334 contact reims 134.4 au revoir
+gm2_02_086.txt	hapag lloyd 195 contact marseille 125.85 au revoir
+gm2_02_088.txt	lufthansa 8268 climb initially level 340
+gm2_02_089.txt	cross air 2690 climb to flight level 310
+gm2_02_099.txt	air france 3261 affirm in contact geneva 125.85 au revoir
+gm2_02_100.txt	swissair 6752 turn left direct to kamas
+gm2_02_110.txt	german air force 4901 report heading
+gm2_02_121.txt	lufthansa 8268 climb to flight level 360
+gm2_02_126.txt	europa 381 bonjour expect descent shortly
+gm2_02_139.txt	air berlin 5081
+gm2_02_142.txt	alitalia 365 bonjour identified cleared passeiry torino flight level 340
+gm2_02_148.txt	hamburg air 2546 contact marseille 125.85 au revoir
+gm2_02_153.txt	roger contact radar 128.15 au revoir
+gm2_02_162.txt	alitalia 317 bonjour identified cleared passeiry torino flight level 290
+gm2_02_163.txt	alitalia 262 contact reims 132.27 au revoir
+gm2_02_165.txt	german air force 4901 contact marseille 125.85 au revoir
+gm2_02_173.txt	what is your position again
+gm2_02_181.txt	N145W continue climb to flight level 390
+gm2_02_193.txt	alitalia 317 climb to flight level 320
+gm2_02_208.txt	transwede 107 contact marseille 125.85 au revoir
+gm2_02_216.txt	roger contact milano 125.85 au revoir
+sm1_01_003.txt	psa 810 contact zurich 133 decimal4
+sm1_01_004.txt	sabena 481 rhein identified
+sm1_01_011.txt	swissair 9352 climb flight level 350 set course to gotil
+sm1_01_015.txt	FSI rhein identified climb flight level 260
+sm1_01_017.txt	FSI report heading
+sm1_01_019.txt	ITASA rhein identified
+sm1_01_024.txt	lufthansa 8268 climb flight level 290
+sm1_01_030.txt	sabena 838 contact rhein 12737
+sm1_01_033.txt	constellation 2251 rhein identified
+sm1_01_037.txt	roger keep this rate until reaching
+sm1_01_038.txt	swissair 6520 rhein radar do you read
+sm1_01_041.txt	malaysian 2 contact rhein 12737
+sm1_01_043.txt	sobelair 2557 rhein identified
+sm1_01_049.txt	olympic 144 turn left heading 115 for separation
+sm1_01_061.txt	sobelair 2557 maintain heading contact rhein 132 decimal4
+sm1_01_067.txt	sabena 832 rhein confirm your level
+sm1_01_069.txt	alitalia 119 rhein identified
+sm1_01_074.txt	viva 585 request heading
+sm1_01_079.txt	viva 585 turn left to frankfurt
+sm1_01_091.txt	sabena 7816 rhein 12737
+sm1_01_093.txt	gulf air 007 rhein identified
+sm1_01_097.txt	lufthansa 4416 climb flight level 290
+sm1_01_100.txt	DIMLL rhein radar identified
+sm1_01_103.txt	alitalia 119 zurich 134 decimal6
+sm1_01_107.txt	OOPHI rhein radar identified
+sm1_01_110.txt	gulf air 007 contact rhein 127.37
+sm1_01_113.txt	speedbird 124 contact rhein 12737 good bye
+sm1_01_117.txt	midland 720 rhein radar identified
+sm1_01_120.txt	hapag lloyd 3551 contact zurich 133 decimal4
+sm1_01_121.txt	lufthansa 3556 climb flight level 290
+sm1_01_123.txt	lufthansa 3556 set course to trasadingen
+sm1_01_126.txt	alitalia 487 contact zurich 134 decimal6
+sm1_01_134.txt	alitalia 157 rhein identified
+sm1_01_135.txt	netherlands air force 35 contact rhein 132 decimal4
+sm1_01_145.txt	speedbird 122 contact rhein 127.37
+sm1_01_146.txt	jet set 497 rhein radar identified
+sm1_01_151.txt	alitalia 465 rhein radar identified
+sm1_01_156.txt	speedbird 389 rhein identified
+sm1_01_158.txt	britannia 236A zurich 133 decimal4
+sm1_01_161.txt	speedbird 389 climb flight level 310
+sm1_02_001.txt	FSI climb flight level 310
+sm1_02_008.txt	hapag lloyd 653 report rate of climb
+sm1_02_009.txt	roger
+sm1_02_011.txt	sabena 838 contact rhein 127.37
+sm1_02_018.txt	malaysian 2 contact rhein 127.37
+sm1_02_019.txt	georgia air 3 correction 037 rhein identified
+sm1_02_021.txt	sobelair 2557 rhein identified
+sm1_02_030.txt	to confirm jet set 817
+sm1_02_037.txt	klm 264 rhein radar identified
+sm1_02_042.txt	jet set 817 contact rhein 127.37
+sm1_02_043.txt	georgia air 037 rhein radar 12737
+sm1_02_044.txt	jet set 1429 rhein radar identified
+sm1_02_046.txt	olympic 144 contact rhein 132 decimal4
+sm1_02_048.txt	aero lloyd 590 rhein identified climb flight level 290
+sm1_02_049.txt	air malta 004 descend to flight level 300 rate 1500 or more
+sm1_02_053.txt	sobelair 2557 contact rhein 132 decimal4
+sm1_02_062.txt	DICPA rhein radar identified
+sm1_02_067.txt	sabena 832 rhein radar 12737
+sm1_02_070.txt	german air force 585 contact rhein 127.37 good bye
+sm1_02_079.txt	swissair 488 contact rhein on 132.4 please
+sm1_02_082.txt	britannia 222A rhein radar identified
+sm1_02_096.txt	SAF112 for separation climb flight level 330
+sm1_02_101.txt	belstar 526H rhein radar 132 decimal4
+sm1_02_105.txt	klm 264 turn left to NTM
+sm1_02_106.txt	psa 502H set course to KPT
+sm1_02_107.txt	SAF112 descend flight level 320
+sm1_02_118.txt	midland 720 climb flight level 340 turn right by 10 degrees
+sm1_02_122.txt	sabena 9369 rhein radar identified
+sm1_02_129.txt	speedbird 122 rhein radar identified
+sm1_02_136.txt	lufthansa 3638 identified climb flight level 270
+sm1_02_137.txt	lufthansa 3556 contact zurich 134 decimal6
+sm1_02_139.txt	alitalia 157 for shortcut turn right heading 140
+sm1_02_142.txt	speedbird 122 contact rhein 12737
+sm1_02_143.txt	netherlands air force 35 contact rhein 132 decimal4
+sm1_02_145.txt	jet set 497 rhein radar identified
+sm1_02_146.txt	lufthansa 3638 climb flight level 310
+sm1_02_150.txt	sabena 801 turn right to trasadingen
+sm1_02_151.txt	alitalia 149 direct TRA
+sm1_02_152.txt	DIMLL contact milano 134.52
+sm1_02_158.txt	alitalia 465 rhein radar identified
+sm1_03_005.txt	lufthansa 8268 set course to trasa
+sm1_03_009.txt	malaysian 2 rhein radar identified
+sm1_03_017.txt	negative HOCHOC thereafter SPR
+sm1_03_018.txt	FSI contact zurich 133 decimal4
+sm1_03_022.txt	ISA contact rhein 127.37
+sm1_03_024.txt	malaysian 2 contact rhein 127.37
+sm1_03_025.txt	transwede 107 rhein radar identified
+sm1_03_044.txt	sabena 7816 rhein radar identified
+sm1_03_046.txt	jet set 1429 rhein identified
+sm1_03_052.txt	german air force 585 set course to frankfurt
+sm1_03_054.txt	klm 300K contact rhein 127.37 good bye
+sm1_03_057.txt	transwede 107 climb flight level 330
+sm1_03_059.txt	air malta 004 descend to flight level 320 rate 1500 or more
+sm1_03_064.txt	lufthansa 4652 rhein radar identified climb flight level 290
+sm1_03_066.txt	netherlands air force 414 proceed direct trasa
+sm1_03_075.txt	alitalia 485 do you read
+sm1_03_084.txt	german air force 585 direct to frankfurt contact rhein radar 127.37
+sm1_03_086.txt	netherlands air force 414 calling
+sm1_03_087.txt	aero lloyd 590 contact zurich 134 decimal6
+sm1_03_090.txt	hapag lloyd 3551 rhein radar identified
+sm1_03_092.txt	speedbird 124 rhein radar identified
+sm1_03_094.txt	britannia 222A rhein radar identified
+sm1_03_095.txt	psa 502H rhein radar identified
+sm1_03_102.txt	lufthansa 4416 confirm you are cleared flight level 290 confirm in the climb
+sm1_03_107.txt	netherlands air force 35 rhein identified
+sm1_03_110.txt	europa 363 rhein radar identified
+sm1_03_111.txt	SAF112 contact rhein 127.37
+sm1_03_118.txt	lufthansa 3556 rhein radar identified turn right by 15 degrees and climb flight level 290
+sm1_03_119.txt	turkish 515 contact rhein 127.37
+sm1_03_129.txt	OHI contact rhein 132 decimal4
+sm1_03_130.txt	alitalia 487 contact zurich 134 decimal6
+sm1_03_131.txt	alitalia 149 rhein identified
+sm1_03_139.txt	lufthansa 3556 contact zurich 134.6 good bye
+sm1_03_145.txt	condor 218 rhein radar identified
+sm1_03_146.txt	swissair 783R rhein radar identified
+sm1_03_147.txt	alitalia 413 rhein radar identified climb flight level 250 confirm requested level
+sm1_03_150.txt	alitalia 413 can you accept flight level 310 as cruising level today
+sm1_03_157.txt	midland 720 rhein radar 127.37
+sm1_03_160.txt	jet set 497 contact rhein 127.37
+sm1_04_001.txt	swissair 9352 rhein radar identified
+sm1_04_004.txt	lufthansa 8268 rhein radar identified climb flight level 290
+sm1_04_005.txt	sabena 481 turn left to dinkelsbuhl
+sm1_04_010.txt	sabena 481 descend flight level 310
+sm1_04_016.txt	swissair 9352 contact rhein 127.37
+sm1_04_021.txt	hapag lloyd 653 rhein radar identified climb flight level 270
+sm1_04_033.txt	FSI contact zurich 134 decimal6
+sm1_04_034.txt	leisure 6024 rhein radar identified
+sm1_04_045.txt	sobelair 2557 turn left by 5 degrees
+sm1_04_048.txt	air malta 004 you re in radar contact
+sm1_04_055.txt	transwede 107 climb flight level 310
+sm1_04_061.txt	sobelair 2557 contact rhein 132 decimal4
+sm1_04_069.txt	olympic 144 rhein radar 132 decimal4
+sm1_04_072.txt	buongiorno alitalia 119 rhein radar identified
+sm1_04_074.txt	lufthansa 4652 rhein radar identified climb flight level 290
+sm1_04_076.txt	air malta 004 descend flight level 310 set course to frankfurt
+sm1_04_080.txt	viva 585 left turn to frankfurt
+sm1_04_081.txt	air malta 004 contact rhein 12737
+sm1_04_084.txt	DICPA rhein radar identified
+sm1_04_085.txt	sabena 832 contact rhein 127.37
+sm1_04_095.txt	sabena 7816 contact rhein 12737
+sm1_04_106.txt	psa 526H contact rhein 132 decimal4
+sm1_04_107.txt	DIMLL rhein radar identified
+sm1_04_109.txt	netherlands air force 35 rhein radar identified
+sm1_04_111.txt	alitalia 101 contact zurich 134 decimal6
+sm1_04_127.txt	lufthansa 3556 climb flight level 290
+sm1_04_136.txt	psa 502H contact milano 134.52
+sm1_04_141.txt	midland 720 set course to nattenheim
+sm1_04_142.txt	netherlands air force 35 contact rhein 132 decimal4
+sm1_04_145.txt	british midland 720 contact rhein 127.37
+sm1_04_151.txt	roger are you able for 370
+sm1_04_163.txt	jet set 497 rhein radar identified
+sm1_04_172.txt	alitalia 292 contact rhein 12737
+sm1_04_176.txt	speedbird 389 turn right by 10 degrees climb flight level 350
+sm1_04_179.txt	jet set 497 contact rhein 127.37
+sm1_05_002.txt	lufthansa 8268 rhein radar identified climb flight level 300
+sm1_05_004.txt	sabena 838 rhein radar identified
+sm1_05_011.txt	sabena 481 contact rhein 132 decimal4
+sm1_05_013.txt	lufthansa 8268 climb flight level 340
+sm1_05_025.txt	FSI set course to trasadingen
+sm1_05_030.txt	hapag lloyd 653 climb flight level 340
+sm1_05_031.txt	ITASA contact rhein 127.37
+sm1_05_035.txt	berlin fi
+sm1_05_036.txt	disregard
+sm1_05_042.txt	klm 300K rhein radar identified
+sm1_05_048.txt	air malta 004 for separation turn right by 10 degrees
+sm1_05_049.txt	olympic 144 contact rhein 132 decimal4
+sm1_05_067.txt	station calling say again
+sm1_05_072.txt	alitalia 485 rhein radar you re identified
+sm1_05_073.txt	air malta 004 proceed on course to frankfurt again
+sm1_05_088.txt	britannia 222A rhein radar identified
+sm1_05_093.txt	psa 502H rhein radar identified
+sm1_05_112.txt	psa 526H contact rhein 132 decimal4
+sm1_05_120.txt	OHI rhein radar identified confirm on course to karlsruhe
+sm1_05_122.txt	singa 112 contact rhein 127.37 good bye
+sm1_05_129.txt	britannia 236A rhein radar identified
+sm1_05_136.txt	europa 363 proceed direct to frankfurt
+sm1_05_141.txt	sabena 801 rhein radar identified
+sm1_05_143.txt	DICPA contact milano 134.52
+sm1_05_149.txt	sabena 801 right turn to trasadingen
+sm1_05_156.txt	lufthansa 3638 rhein radar do you read
+sm1_05_158.txt	co
+sm1_05_169.txt	hapag lloyd 137 rhein radar identified
+sm1_05_171.txt	lufthansa 3638 zurich radar 134 decimal6
+sm1_06_001.txt	hapag lloyd 653 climb flight level 330
+sm1_06_028.txt	swissair 6520 contact rhein 127.37
+sm1_06_029.txt	jet set 1429 rhein radar identified
+sm1_06_031.txt	jet set 817 contact rhein 127.37
+sm1_06_034.txt	sabena 832 rhein radar identified
+sm1_06_035.txt	klm 264 confirm you are calling
+sm1_06_036.txt	ok i got you now in radar contact 264
+sm1_06_037.txt	klm 300K turn left by 10 degrees for a shortcut
+sm1_06_038.txt	netherlands air force 414 rhein radar identified
+sm1_06_040.txt	lufthansa 4652 rhein radar you re identified climb flight level 290
+sm1_06_041.txt	alitalia 485 rhein radar identified
+sm1_06_044.txt	german air force 585 rhein radar stand by for identification
+sm1_06_045.txt	german air 585 confirm north of trasadingen at flight level 260
+sm1_06_051.txt	lufthansa 4652 set course direct trasadingen
+sm1_06_060.txt	jet set 1429 contact rhein 12737
+sm1_06_061.txt	aero lloyd 590 contact zurich 134 decimal6
+sm1_06_066.txt	netherlands air force 414 contact zurich 134 decimal6
+sm1_06_077.txt	alitalia 485 contact zurich 133 decimal4
+sm1_06_078.txt	alitalia 401 zurich 134 decimal6
+sm1_06_080.txt	DLL rhein radar identified
+sm1_06_084.txt	sabena 7816 turn left to nattenheim
+sm1_06_091.txt	contact rhein 1324
+sm1_06_092.txt	klm 264 contact rhein 12737
+sm1_06_108.txt	turkish 515 contact rhein 127.37
+sm1_06_120.txt	alitalia 157 rhein radar identified
+sm1_06_121.txt	lufthansa 4376 proceed direct trasadingen
+sm1_06_125.txt	station calling say again
+sm1_06_126.txt	sabena 826A rhein radar identified
+sm1_06_140.txt	swissair 783R rhein radar identified
+sm1_06_146.txt	sabena 9369 zurich 134 decimal6
+sm1_06_149.txt	sabena 826A turn left by 10 degrees
+sm1_06_151.txt	speedbird 389 rhein radar identified
+sm1_06_159.txt	thank you have a nice evening
+sm1_07_011.txt	lufthansa 8268 proceed to trasa
+sm1_07_015.txt	swissair 6520 rhein radar identified
+sm1_07_033.txt	transwede 101 contact zurich 133 decimal4
+sm1_07_042.txt	georgia 037 rhein radar identified
+sm1_07_044.txt	onur air 989 rhein radar identified
+sm1_07_048.txt	olympic 144 proceed direct to kempten
+sm1_07_053.txt	swissair 6520 rhein radar 12737
+sm1_07_054.txt	constellation 2251 contact rhein 132 decimal4
+sm1_07_067.txt	sabena 832 guten tag identified
+sm1_07_069.txt	aero lloyd 590 rhein radar identified climb flight level 300
+sm1_07_078.txt	psa 526H rhein radar identified
+sm1_07_080.txt	alitalia 401 climb flight level 300
+sm1_07_083.txt	sabena 832 contact rhein 127.37
+sm1_07_084.txt	jet set 1429 rhein radar 127.37
+sm1_07_087.txt	netherlands 414 turn left to trasadingen
+sm1_07_112.txt	aero lloyd 517 rhein radar identified
+sm1_07_116.txt	lufthansa 4416 climb flight level 300 set course to trasadingen
+sm1_07_118.txt	speedbird 124 contact rhein 127.37
+sm1_07_119.txt	europa 363 rhein radar identified proceed direct to frankfurt
+sm1_07_121.txt	turkish 515 contact rhein 127.37
+sm1_07_131.txt	hapag lloyd 3551 contact zurich 133 decimal4
+sm1_07_134.txt	lufthansa 3556 turn right to trasadingen
+sm1_07_142.txt	speedbird 223 contact rhein 12737
+sm1_07_152.txt	sabena 801 turn 10 degrees right
+sm1_07_160.txt	sabena 801 climb flight level 340
+sm1_07_165.txt	that is correct climb flight level 340 and you just reported you are passing 310
+sm2_01_002.txt	europa 744 is identified
+sm2_01_011.txt	speedway 208 is identified however contact rhein 132 decimal4
+sm2_01_012.txt	lufthansa 4390 expedite your climb please
+sm2_01_015.txt	lufthansa 4390 continue climb now to flight level 330 and still expeditious climb please
+sm2_01_018.txt	DEB turn left heading 170
+sm2_01_021.txt	ltu 1280 turn right heading 200
+sm2_01_023.txt	DEB proceed own navigation to trasadingen
+sm2_01_032.txt	sobelair 2521 climb flight level 330
+sm2_01_033.txt	DEB continue climb to flight level 290
+sm2_01_043.txt	lufthansa 4408 contact zurich 134 decimal6
+sm2_01_044.txt	swissair 9360 proceed from present position direct to gotil
+sm2_01_045.txt	affirm to gotil intersection
+sm2_01_046.txt	and swissair 806 you re cleared from present position to costa which is COA
+sm2_01_054.txt	tarom 372 continue with rhein 132 decimal4
+sm2_01_055.txt	airals 1088 contact rhein radar 127.37
+sm2_01_057.txt	swissair 806 report your rate of climb
+sm2_01_061.txt	alitalia 6474 is identified
+sm2_01_063.txt	swissair 806 maintain rate of climb 1400 feet per minute or more continue with rhein 127037
+sm2_01_070.txt	good afternoon lufthansa 5236 identified
+sm2_01_077.txt	lufthansa 3604 contact zurich 134 decimal6
+sm2_01_081.txt	GJI turn right to herbi intersection
+sm2_01_083.txt	lufthansa 4207 contact rhein radar 127.37
+sm2_01_094.txt	alitalia 6474 contact rhein radar 127.37
+sm2_01_095.txt	lufthansa 4209 turn left direct to dinkelsbuhl DKB
+sm2_01_097.txt	lufthansa 5504 i ll call you back
+sm2_01_100.txt	DIMME is identified climb initially to flight level 270
+sm2_01_105.txt	lufthansa 4209 contact rhein radar 132 decimal4
+sm2_01_108.txt	cross air 858 disregard gotil fly heading 310
+sm2_01_117.txt	thank you
+sm2_01_135.txt	lufthansa 5504 contact zurich 134 decimal6
+sm2_01_153.txt	alitalia 135 descend to flight level 290
+sm2_01_157.txt	DME maintain heading report your heading to zurich contact zurich 134 decimal6
+sm2_01_160.txt	alitalia 369 is identified
+sm2_01_166.txt	lufthansa 5217 rhein radar 132 decimal4
+sm2_01_171.txt	calling rhein last say again
+sm2_01_176.txt	DNA fly heading 175
+sm2_01_190.txt	yes go ahead
+sm2_01_192.txt	DNA proceed to nah fly heading 180
+sm2_01_193.txt	sunwing 5212 contact zurich 134 decimal6
+sm2_01_201.txt	scandinavian 687 can you increase the speed by 20 knots
+sm2_01_214.txt	lufthansa 4219 rhein radar 132 decimal4
+sm2_01_219.txt	lufthansa 3508 contact milano 134.52 good bye
+sm2_02_004.txt	good morning tarom 372 identified
+sm2_02_007.txt	good morning swissair 806 you re identified i ll call you back for higher in a minute
+sm2_02_012.txt	sabena 830 is identified good morning
+sm2_02_015.txt	swissair 806 climb flight level 340
+sm2_02_016.txt	klm 346 good morning identified
+sm2_02_020.txt	that s ok swissair 806 contact now rhein radar 127.37
+sm2_02_026.txt	expect higher with zurich in 4 minutes
+sm2_02_037.txt	lufthansa 4207 is identified after proceed direct to DKB now
+sm2_02_043.txt	lufthansa 3604 contact now zurich 134 decimal6
+sm2_02_047.txt	lufthansa 4207 contact rhein 132 decimal4
+sm2_02_055.txt	klm 346 turn left to N tan klm 346 turn left to nattenheim NTM
+sm2_02_056.txt	lufthansa 4700 contact zurich 134 decimal6
+sm2_02_057.txt	GJI turn right to trasadingen
+sm2_02_058.txt	klm 346 report your requested flight level
+sm2_02_066.txt	lufthansa 5504 is identified
+sm2_02_082.txt	bee med 1 rhein radar 132.4 good bye
+sm2_02_092.txt	alitalia 291 turn right 15 degrees report new heading
+sm2_02_097.txt	meridiana 6952 climb to flight level 270
+sm2_02_098.txt	meridiana 6952 fly heading 175
+sm2_02_100.txt	alitalia 150 turn right heading 015
+sm2_02_102.txt	nato 10 is identified
+sm2_02_106.txt	belgian airforce 44 contact rhein radar 127.37
+sm2_02_111.txt	merair 6952 climb flight level 290 maintain your heading
+sm2_02_123.txt	alitalia 135 is identified
+sm2_02_124.txt	meridiana 6952 proceed now own navigation to trasadingen TRA
+sm2_02_128.txt	adria 1627 is still with me
+sm2_02_133.txt	tunair 4802 is identified good morning
+sm2_03_002.txt	DEB stop climb at flight level 370
+sm2_03_009.txt	swissair 806 climb flight level 320
+sm2_03_011.txt	lufthansa 3566 is identified proceed to trasadingen climb to flight level 290
+sm2_03_022.txt	lufthansa 3566 climb flight level 310
+sm2_03_031.txt	lufthansa 4700 is identified proceed to trasadingen climb to flight level 290
+sm2_03_040.txt	britannia 327A contact rhein radar 132 decimal4
+sm2_03_042.txt	klm 346 can you increase to.77 or more
+sm2_03_044.txt	lufthansa 3566 contact zurich 133 decimal4
+sm2_03_052.txt	hapag lloyd 112 contact rhein radar 127.37
+sm2_03_056.txt	lufthansa 4207 contact rhein radar 132 decimal4
+sm2_03_066.txt	lufthansa 4700 contact zurich 134 decimal6
+sm2_03_069.txt	saudia 106 contact rhein radar 132 decimal4
+sm2_03_071.txt	HBITR rhein radar 127.37 good bye
+sm2_03_075.txt	who was calling rhein last please
+sm2_03_077.txt	lufthansa 4209 descend to flight level 340
+sm2_03_082.txt	roger
+sm2_03_089.txt	affirm lufthansa 4209 contact rhein radar 132 decimal4
+sm2_03_090.txt	sabena 836 contact rhein radar 127.37
+sm2_03_095.txt	roger aerovic 1061 for separation turn right heading 195
+sm2_03_097.txt	lufthansa 5504 proceed own navigation to trasadingen
+sm2_03_098.txt	merair 6952 is identified climb to flight level 270 proceed direct to trasadingen
+sm2_03_118.txt	lufthansa 5217 is identified
+sm2_03_124.txt	affirm tarom 374 contact rhein 132 decimal4
+sm2_03_126.txt	merair 6952 climb at best rate
+sm2_03_130.txt	britannia 9A contact rhein 132 decimal4
+sm2_03_151.txt	lufthansa 4217 contact rhein radar 132 decimal4
+sm2_03_153.txt	DNA turn left to fly heading 165
+sm2_03_155.txt	steel 88 contact rhein radar 132 decimal4
+sm2_03_159.txt	DIBEC is identified proceed direct to DKB
+sm2_03_167.txt	aero lloyd 652 climb to flight level 310
+sm2_03_168.txt	DNA maintain heading climb to flight level 290
+sm2_03_176.txt	lufthansa 3330 is identified climb to flight level 250 initially
+sm2_03_178.txt	DEC continue descent to flight level 340
+sm2_03_183.txt	DNA fly heading 180
+sm2_03_186.txt	alitalia 369 contact zurich 134 decimal6
+sm2_03_187.txt	aero lloyd 562 proceed from present position to hochwald HOC afterwards to saint prex that is SPR and then flight planned route
+sm2_03_195.txt	lufthansa 4582 climb to flight level 290
+sm2_04_004.txt	hapag lloyd 112 is identified
+sm2_04_005.txt	thank you
+sm2_04_006.txt	hapag lloyd 112 are you able to give me a wind reading
+sm2_04_008.txt	ok thank you
+sm2_04_022.txt	and lufthansa 3604 continue climb to flight level 290
+sm2_04_028.txt	tarom 372 contact rhein radar 132 decimal4
+sm2_04_038.txt	sabena 830 contact rhein radar 127.37
+sm2_04_041.txt	lufthansa 5236 is identified proceed direct to N disregard maintain that heading
+sm2_04_042.txt	lufthansa 5236 proceed now direct to NTM
+sm2_04_044.txt	britannia 327A contact rhein radar 132 decimal4
+sm2_04_048.txt	GJI report your heading
+sm2_04_050.txt	lufthansa 3566 contact zurich 134 decimal6
+sm2_04_054.txt	klm 346 turn left to NTM
+sm2_04_059.txt	lufthansa 5236 contact rhein radar 127.37
+sm2_04_065.txt	GJI proceed to trasadingen TRA
+sm2_04_070.txt	lufthansa 3550 proceed to trasa
+sm2_04_076.txt	confirm 355
+sm2_04_077.txt	roger alitalia 150 turn left heading 345
+sm2_04_078.txt	lufthansa 5504 is identified
+sm2_04_079.txt	DIMME is identified climb to flight level 250
+sm2_04_091.txt	GJI contact zurich 133 decimal4
+sm2_04_096.txt	confirm that tarom 374 called
+sm2_04_098.txt	cross air disregard
+sm2_04_100.txt	scandinavian 617 descend to flight level 290
+sm2_04_101.txt	merair 6952 climb now to flight level 290
+sm2_04_108.txt	roger sabena 302 proceed to gotil
+sm2_04_112.txt	britannia 306A is identified
+sm2_04_130.txt	alitalia 291 turn right to TRA
+sm2_04_132.txt	tunair 4802 is identified
+sm2_04_137.txt	lufthansa 5217 turn left to dinkelsbuhl DKB
+sm2_04_139.txt	alitalia 369 is identified
+sm2_04_145.txt	air algerie 2073 is identified proceed to TRA climb to flight level 250
+sm2_04_152.txt	scandinavian 617 contact zurich 134 decimal6
+sm2_04_155.txt	alitalia 369 turn right to trasa
+sm2_04_156.txt	algerie 2073 climb flight level 270
+sm2_04_157.txt	DNA fly now heading 190
+sm2_04_160.txt	DIBEC turn left DKB
+sm2_04_163.txt	aero lloyd 562 proceed to trasadingen climb to flight level 2f 50
+sm2_04_172.txt	algerie 2073 reduce your speed to.70 or less
+sm2_04_175.txt	affirm
+sm2_04_184.txt	scandinavian 687 turn right 15 degrees
+sm2_04_192.txt	alitalia 369 can you increase your speed to.75 or more
+sm2_04_193.txt	thank you
+sm2_04_197.txt	DEC contact rhein 132 decimal4
+sm2_04_198.txt	sunwing 5212 proceed now direct to HOC afterwards saint prex flight planned route
+sm2_04_213.txt	algerie 2073 contact zurich 134 decimal6
+sm2_04_215.txt	DNA proceed to trasadingen thank you very much that s it
+sm2_05_012.txt	lufthansa 3604 proceed direct to trasadingen
+sm2_05_014.txt	lufthansa 3604 climb to flight level 290
+sm2_05_015.txt	hapag lloyd 112 you re cleared direct to frankfurt
+sm2_05_021.txt	klm 346 to confirm the heading is 355
+sm2_05_026.txt	lufthansa 3566 contact zurich 134 decimal6
+sm2_05_029.txt	saudia 106 good afternoon identified
+sm2_05_043.txt	bee med 1 identified good afternoon
+sm2_05_053.txt	alitalia 6474 contact rhein radar 127.37
+sm2_05_061.txt	alitalia 150 good afternoon stand by for identification
+sm2_05_069.txt	GJI contact now zurich 133 decimal4
+sm2_05_073.txt	bee med 1 proceed now own navigation to lupen
+sm2_05_078.txt	sabena 836 contact rhein radar 127.37
+sm2_05_079.txt	bee med 1 contact rhein radar 132 decimal4
+sm2_05_082.txt	tarom 374 report your heading
+sm2_05_083.txt	tarom 374 turn left heading 110 for separation
+sm2_05_098.txt	malaysian 4 is identified
+sm2_05_099.txt	calling rhein say again
+sm2_05_104.txt	alitalia 150 disregard FFM turn left 20 degrees report new heading
+sm2_05_115.txt	merair 6944 is identified proceed to trasadingen climb to flight level 290
+sm2_05_116.txt	egyptair 884 is identified
+sm2_05_125.txt	alitalia 135 is identified
+sm2_05_127.txt	sunwing 5212 is identified
+sm2_05_129.txt	merair 6952 contact zurich 134 decimal6
+sm2_05_161.txt	sunwing 5212 is clear of traffic own navigation to trasadingen
+sm2_05_172.txt	alitalia 369 turn right to trasadingen
+sm2_05_179.txt	alitalia 369 descend to flight level 290 descend at 2000 feet per minute or more please
+sm2_05_180.txt	aero lloyd 562 climb to flight level 300
+sm2_05_182.txt	lufthansa 4582 proceed direct to TRA
+sm2_05_184.txt	sunwing 5212 contact zurich 134 decimal6
+sm2_05_189.txt	affirm
+sm2_06_004.txt	hapag lloyd 112 is identified good afternoon
+sm2_06_017.txt	swissair 806 contact rhein radar 127.37
+sm2_06_026.txt	klm 346 turn left 10 degrees heading 345
+sm2_06_028.txt	good afternoon GBVJI identified
+sm2_06_037.txt	klm 346 climb to flight level 320
+sm2_06_039.txt	lufthansa 4207 contact rhein radar 132 decimal4
+sm2_06_043.txt	lufthansa 4209 is identified
+sm2_06_048.txt	klm 346 turn left to NTM
+sm2_06_054.txt	lufthansa 5236 likewise rhein radar 127.37
+sm2_06_057.txt	lufthansa 3550 continue climb to flight level 290
+sm2_06_058.txt	lufthansa 5504 good afternoon identified
+sm2_06_059.txt	lufthansa 4209 turn left to DKB
+sm2_06_061.txt	alitalia 6474 contact rhein radar 127.37
+sm2_06_066.txt	lufthansa 4209 continue descent disregard i ll call you back for further descent in a minute
+sm2_06_078.txt	cross air 858 is identified
+sm2_06_084.txt	aerovic 1061 is identified non rvsm report your mach number
+sm2_06_089.txt	merair 6952 climb to flight level 300
+sm2_06_116.txt	aerovic 1061 maintain your speed.75 or less
+sm2_06_130.txt	sunwing 5214 is identified
+sm2_06_134.txt	ok
+sm2_06_137.txt	alitalia 150 contact rhein radar 127.37
+sm2_06_140.txt	alitalia 291 contact zurich radar 134 decimal6
+sm2_06_141.txt	aerovic 1061 same frequency zurich 134 decimal6
+sm2_06_147.txt	nato 10 disregard
+sm2_06_149.txt	yes 884 to frequency 132.4 please
+sm2_06_151.txt	DIBEC is identified
+sm2_06_159.txt	alitalia 135 report your mach number
+sm2_06_164.txt	scandinavian 687 is identified
+sm2_06_165.txt	lufthansa 4219 is identified
+sm2_06_169.txt	algerie 2073 is identified fly heading 205 climb flight level 270
+sm2_06_174.txt	i ll call you back for higher 3330
+sm2_06_181.txt	alitalia 369 descend now to flight level 290 expedite descent
+sm2_06_190.txt	negative lufthansa 3508 heading 195
+sm2_06_191.txt	alitalia 369 report your rate of descent
+sm2_06_200.txt	alitalia 135 contact i talk alitalia 135 contact zurich 134 decimal6
+sm2_06_203.txt	roger break lufthansa 3330 fly heading 208
+sm2_06_210.txt	alitalia 369 contact zurich 134 decimal6
+sm2_06_214.txt	lufthansa 4582 climb to flight level 300
+sm2_07_009.txt	expect higher in 1 minute i ll call you back
+sm2_07_012.txt	tarom 372 is identified
+sm2_07_014.txt	lufthansa 4408 contact zurich 134 decimal6
+sm2_07_017.txt	jat 273 is identified good afternoon
+sm2_07_019.txt	swissair 806 turn right heading 310
+sm2_07_022.txt	swissair 806 climb now to flight level 340
+sm2_07_023.txt	swissair 806 i have level 3f stand by the swissair 9360 is requesting higher
+sm2_07_025.txt	sabena 830 is identified
+sm2_07_034.txt	swissair 9360 climb to flight level 330 expect higher in 2 minutes
+sm2_07_037.txt	klm 346 is identified report your heading
+sm2_07_040.txt	swissair 9360 climb now to flight level 340
+sm2_07_044.txt	lufthansa 5236 is identified proceed direct to NTM
+sm2_07_054.txt	lufthansa 3566 contact zurich 134 decimal6
+sm2_07_059.txt	sabena 830 contact rhein radar 127.37
+sm2_07_061.txt	affirm indialook report rate of climb
+sm2_07_063.txt	lufthansa 5236 contact rhein radar 127.37
+sm2_07_068.txt	speedbird 129 contact rhein radar 132 decimal4
+sm2_07_069.txt	hapag lloyd 112 contact rhein radar 127.37
+sm2_07_077.txt	klm 346 turn left to NTM
+sm2_07_080.txt	lufthansa 3550 climb now flight level 290
+sm2_07_092.txt	indialook contact zurich 133 decimal4
+sm2_07_093.txt	alitalia 150 good afternoon identified
+sm2_07_102.txt	cross air 858 continue climb to flight level 320
+sm2_07_112.txt	sabena 836 contact rhein 127.37
+sm2_07_134.txt	meridiana 6944 is identified proceed to trasadingen climb to flight level 290
+sm2_07_136.txt	FRI
+sm2_07_142.txt	london airtours1
+sm2_07_145.txt	tarom 374 proceed own navigation to TGO
+sm2_07_148.txt	egyptair 884 is identified
+sm2_07_150.txt	what is your heading
+sm2_07_153.txt	DME climb now flight level 350
+sm2_07_157.txt	alitalia 291 turn right to trasadingen
+sm2_07_162.txt	aerovic 1061 turn right to HOC
+sm2_07_166.txt	nato 10 contact rhein radar 127.37
+sm2_07_168.txt	malaysian 4 contact rhein radar 127.37
+sm2_07_170.txt	alitalia 150 rhein radar 127.37
+sm2_07_178.txt	no 132.4 please
+sm2_07_182.txt	swissair 9359 contact rhein radar 132 decimal4
+sm2_07_192.txt	algerie 2073 you re speed later at flight level 310 is mach.76 or less
+sm2_07_197.txt	scandinavian 687 is identified
+sm2_07_200.txt	lufthansa 3508 is identified fly heading 185 climb flight level 290
+sm2_07_213.txt	affirm aero lloyd 652 expedite your climb
+sm2_07_217.txt	alitalia 369 report your rate of descent
+sm2_07_219.txt	tunair 4802 contact rhein 127.37
+sm2_07_231.txt	DEC maintain your heading report
+sm2_07_232.txt	report the heading to adjacent sector contact rhein 132 decimal4
+sm2_08_003.txt	sobelair 2521 turn left heading 120
+sm2_08_010.txt	lufthansa 4408 contact zurich 134 decimal6
+sm2_08_022.txt	airals 1088 rhein radar 127.37
+sm2_08_030.txt	lufthansa 3566 climb to flight level 310
+sm2_08_031.txt	tarom 372 contact rhein radar 132 decimal4
+sm2_08_037.txt	britannia 327A is identified
+sm2_08_039.txt	swissair 9360 climb flight level 310
+sm2_08_046.txt	lufthansa 5236 is identified proceed direct to NTM
+sm2_08_055.txt	saudia 106 is identified
+sm2_08_056.txt	lufthansa 4700 continue climb to flight level 370
+sm2_08_064.txt	lufthansa 4207 turn left to DKB
+sm2_08_071.txt	lufthansa 4207 descend to flight level 330
+sm2_08_072.txt	lufthansa 3550 is identified proceed direct to trasadingen climb flight level 250
+sm2_08_078.txt	sabena 836 is identified proceed direct to gotil
+sm2_08_084.txt	saudia 106 contact rhein radar 132 decimal4
+sm2_08_106.txt	alitalia 6474 contact rhein radar 127.37
+sm2_08_115.txt	sabena 836 non rvsm contact rhein 127.37
+sm2_08_124.txt	DME continue climb flight level 300
+sm2_08_130.txt	adria 1627 contact rhein radar 132 decimal4
+sm2_08_133.txt	DME fly now heading 180
+sm2_08_134.txt	merair 6952 left heading 180
+sm2_08_141.txt	klm 317 contact rhein 132 decimal4
+sm2_08_145.txt	cross air 858 contact rhein radar 127.37
+sm2_08_146.txt	tarom 374 is clear of traffic turn right to KPT
+sm2_08_148.txt	alitalia 150 turn left direct to NTM
+sm2_08_152.txt	D cheena is identified fly heading 170 climb flight level 270
+sm2_08_154.txt	DIMMEf climb flight level 370
+sm2_08_158.txt	alitalia 135 is identified good afternoon
+sm2_08_161.txt	sunwing 5214 in radar contact
+sm2_08_162.txt	alitalia 150 contact rhein radar 127.37
+sm2_08_165.txt	alitalia 291 turn now right to TRA
+sm2_08_169.txt	tunair 4802 is identified
+sm2_08_170.txt	DME turn right to trasadingen
+sm2_08_172.txt	aerovic 1061 contact zurich 134 decimal6
+sm2_08_176.txt	DME can you increase your rate of climb
+sm2_08_177.txt	DME turn right 10 degrees
+sm2_08_180.txt	alitalia 291 contact zurich 134 decimal6
+sm2_08_183.txt	affirm
+sm2_08_190.txt	DEC turn now left direct to DKB
+sm2_08_192.txt	DME contact zurich 133 decimal4
+sm2_08_193.txt	alitalia 369 turn right to trasadingen
+sm2_08_194.txt	algerie 2073 climb flight level 290
+sm2_08_200.txt	lufthansa 3330 is identified you re cleared to trasadingen climb flight level 290
+sm2_08_206.txt	alitalia 135 contact zurich 134 decimal6
+sm2_08_215.txt	lufthansa 3508 climb to flight level 290
+sm2_09_005.txt	speedbird 555 confirm your requested flight level
+sm2_09_008.txt	air berlin 5255 proceed to trasadingen
+sm2_09_015.txt	condor 972 turn left to SPR
+sm2_09_021.txt	KRH for the berlin 5255
+sm2_09_027.txt	alitalia 158 squawk 5720
+sm2_09_028.txt	alitalia 6474 squawk 2762
+sm2_09_031.txt	lufthansa 5305 squawk 2756
+sm2_09_033.txt	condor 972 climb to level 340
+sm2_09_036.txt	squawk 7537
+sm2_09_037.txt	DEB
+sm2_09_040.txt	condor 972 contact zurich 133 decimal4
+sm2_09_055.txt	lufthansa 4408 is identified
+sm2_09_058.txt	DEB contact zurich 133 decimal4
+sm2_09_064.txt	ahm stand by
+sm2_09_065.txt	air france 1509 turn left to hochwald
+sm2_09_069.txt	condor 666 climb to flight level 290
+sm2_09_076.txt	balkan 431 contact reims on 134 decimal4
+sm2_09_085.txt	air france 1509 stand by
+sm2_09_087.txt	roger maintain 310 final level expect higher with geneva
+sm2_09_093.txt	1602 im sorry stop climb at flight level 290 final level
+sm2_09_100.txt	speedway 3352 descend to flight level 290
+sm2_09_101.txt	lufthansa 4703 descend to flight level 290
+sm2_09_103.txt	the air france 2621 is in radar contact and the air france 009 is in radar contact
+sm2_09_107.txt	lufthansa 4408 still with me
+sm2_09_112.txt	just wanted to know whether you re on frequency
+sm2_09_117.txt	air france 689 turn left to morok
+sm2_09_118.txt	ltu 1602 contact geneva 133.15
+sm2_09_119.txt	lufthansa 3604 climb to flight level 310
+sm2_09_124.txt	alitalia 158 contact reims 1344
+sm2_09_126.txt	lufthansa 4700 is identified
+sm2_09_138.txt	lufthansa 3604 what will be your rate of climb
+sm2_09_139.txt	that s ok
+sm2_09_148.txt	air malta 450 squawk 7534
+sm2_09_151.txt	spar 89 proceed now direct to saint prex
+sm2_09_153.txt	to saint prex flight planned route
+sm2_09_157.txt	lufthansa 4700 climb to flight level 340
+sm2_09_160.txt	lauda 109 is identified
+sm2_09_164.txt	is it pPGA portugalia 543 identified
+sm2_09_165.txt	tunair 4802 squawk 2751
+sm2_09_166.txt	alitalia 416 stand by portugalia 543 climb to flight level 310
+sm2_09_177.txt	spar 89 contact geneva 133.15
+sm2_09_181.txt	affirm
+sm2_09_188.txt	alitalia 404 speed up to mach.77
+sm2_09_193.txt	portugalia 543 contact milano 13315
+sm2_09_203.txt	say again the callsign
+sm3_01_016.txt	FSI guten tag climb to level 270
+sm3_01_021.txt	hapag lloyd 653 in radar contact climb to level 290
+sm3_01_025.txt	malaysian 2 radar contact
+sm3_01_026.txt	FSI climb to level 370
+sm3_01_041.txt	olympic 144 in radar contact
+sm3_01_044.txt	leisure 6024 call rhein on 12737
+sm3_01_049.txt	good afternoon viva 585 in radar contact
+sm3_01_051.txt	georgia 037 call rhein on 12737
+sm3_01_052.txt	swissair 6520 contact rhein on 12737
+sm3_01_059.txt	transwede 107 climb to level 330
+sm3_01_071.txt	viva 585 report your heading
+sm3_01_075.txt	viva 585 roger turn right heading 035
+sm3_01_078.txt	jet set 1429 call rhein on 12737 good day
+sm3_01_080.txt	go ahead sir
+sm3_01_081.txt	viva 585 roger is copied descend to flight level 280 and proceed now direct to warburg WRB
+sm3_01_088.txt	sabena 832 likewise direct to gotil
+sm3_01_089.txt	viva 585 what s the descend rate
+sm3_01_092.txt	air malta 004 rhein 12737
+sm3_01_095.txt	welcome viva 585 call us now on 12737 good day
+sm3_01_098.txt	gulf air 007 radar contact
+sm3_01_100.txt	lufthansa 4652 zurich 1346
+sm3_01_103.txt	britannia 222A radar contact
+sm3_01_105.txt	alitalia 119 call zurich on 134 decimal6
+sm3_01_106.txt	belstar 502H good morning you re in radar contact
+sm3_01_107.txt	lufthansa 4416 climb to flight level 290
+sm3_01_108.txt	alitalia 487 good morning radar contact
+sm3_01_109.txt	belstar 526H call rhein on 132 decimal4
+sm3_01_111.txt	alitalia 401 call zurich on 1346
+sm3_01_113.txt	lufthansa 4416 direct to trasadingen
+sm3_01_119.txt	OOPHI radar contact
+sm3_01_123.txt	speedbird 124 contact rhein on 12737 good day
+sm3_01_130.txt	britannia 226A radar con correction 236A radar contact
+sm3_01_139.txt	sabena 801 radar contact
+sm3_01_140.txt	netherlands air force 35 call rhein on 132 decimal4
+sm3_01_146.txt	lufthansa 3556 zurich on 1346
+sm3_01_147.txt	midland 720 rhein 12737
+sm3_01_150.txt	speedbird 122 call rhein on 12737
+sm3_01_151.txt	alitalia 149 direct trasadingen
+sm3_01_162.txt	9369 now call zurich on 134 decimal6
+sm3_01_163.txt	hapag lloyd 137 guten tag radar contact
+sm3_02_004.txt	lufthansa 8268 climb to flight level 290 maintain present heading
+sm3_02_010.txt	swissair 9352 good morning in radar contact
+sm3_02_012.txt	sabena 481 call rhein on 1324
+sm3_02_014.txt	ISA good morning radar contact
+sm3_02_016.txt	hapag lloyd 653 good morning continue climb to flight level 290
+sm3_02_017.txt	foxy continue climb to level 330
+sm3_02_018.txt	lufthansa 8268 proceed direct to trasadingen
+sm3_02_020.txt	good morning malaysian 2 radar contact
+sm3_02_027.txt	klm 300K good morning radar contact
+sm3_02_039.txt	leisure 6024 contact rhein on 12737
+sm3_02_042.txt	olympic 144 now proceed direct to kempten
+sm3_02_045.txt	hapag lloyd 653 rhein
+sm3_02_052.txt	klm 300K turn left to nattenheim
+sm3_02_060.txt	alitalia 117 zurich on 133.4 good day
+sm3_02_062.txt	netherlands air 414 good morning radar contact report your heading
+sm3_02_064.txt	netherlands 414 roger understand non rvsm
+sm3_02_065.txt	alitalia 485 is in radar contact
+sm3_02_067.txt	klm 300K call rhein 12737 good day
+sm3_02_071.txt	klm 264 turn left 15 degrees
+sm3_02_073.txt	sabena 832 sorry proceed now direct to gotil
+sm3_02_080.txt	alitalia 401 good morning climb to flight level 290
+sm3_02_081.txt	and alitalia 401 direct trasadingen
+sm3_02_084.txt	klm 264 direct to nattenheim
+sm3_02_087.txt	aero lloyd 590 contact zurich on 134 decimal6
+sm3_02_089.txt	SAF112 good morning in radar contact and roger on non rvsm
+sm3_02_096.txt	SAF112 what s your heading
+sm3_02_100.txt	britannia 222A radar contact
+sm3_02_106.txt	DPA to trasadingen
+sm3_02_111.txt	alitalia 401 call zurich on 134 decimal6
+sm3_02_113.txt	turkish 515 good morning radar contact
+sm3_02_116.txt	SAF112 maintain your heading and call us frequency 12737 good day
+sm3_02_119.txt	britannia 222A call us on 132.4 good day
+sm3_02_122.txt	alitalia 292 radar contact
+sm3_02_128.txt	OHI contact rhein on 1324 good day
+sm3_02_136.txt	netherlands air force 35 call rhein on 1324 good day
+sm3_02_148.txt	europa 363 call rhein on 12737 good day
+sm3_02_151.txt	condor 218 good morning radar contact
+sm3_02_153.txt	DIMLL call milano on 13452
+sm3_02_155.txt	good morning swissair 783R radar contact
+sm3_02_160.txt	jet set 497 good morning radar contact
+sm3_03_001.txt	swissair 9352 radar contact expect higher after karlsruhe
+sm3_03_009.txt	transwede 2 climb to level 380
+sm3_03_015.txt	speedbird 156 call rhein 12737 good day
+sm3_03_024.txt	malaysian 2 radar contact
+sm3_03_035.txt	constellation 2251 turn right 15 degrees
+sm3_03_040.txt	georgia air 037 is in radar contact
+sm3_03_041.txt	klm 300K is in radar contact
+sm3_03_048.txt	hapag lloyd 653 call zurich on 1346
+sm3_03_052.txt	transwede 107 climb to flight level 330
+sm3_03_054.txt	olympic 144 call rhein on 1324 good day
+sm3_03_056.txt	sobelair 2557 rhein 1324
+sm3_03_057.txt	jet set 1429 radar contact
+sm3_03_062.txt	alitalia 117 zurich 1334
+sm3_03_067.txt	lufthansa 4652 climb to flight level 310
+sm3_03_072.txt	alitalia 401 climb to flight level 290
+sm3_03_077.txt	netherlands air force 414 descend to flight level 330
+sm3_03_080.txt	lufthansa 4652 climb to flight level 340
+sm3_03_082.txt	britannia 222A radar contact
+sm3_03_085.txt	hapag lloyd 3551 radar contact
+sm3_03_086.txt	lufthansa 4652 call zurich on 1346
+sm3_03_090.txt	lufthansa 4416 what s the heading presently
+sm3_03_094.txt	netherlands 35 radar contact
+sm3_03_114.txt	belstar 502H rhein 1324
+sm3_03_116.txt	sabena 9369 radar contact
+sm3_03_120.txt	turkair 515 call rhein 12737
+sm3_03_124.txt	alitalia 487 contact zurich on 1346
+sm3_03_132.txt	europa 363 call rhein 12737
+sm3_03_134.txt	lufthansa 3638 climb to level 270
+sm3_03_136.txt	lufthansa 3638 climb to level 300
+sm3_03_140.txt	alitalia 413 stand by sabena 9369 turn to trasadingen
+sm3_03_145.txt	sabena 9369 proceed direct to fribourg
+sm3_03_153.txt	alitalia 149 zurich 1346
+sm3_04_006.txt	sabena 838 non rvsm radar contact
+sm3_04_009.txt	FSI good morning radar contact
+sm3_04_010.txt	FSI proceed direct to trasadingen and climb to flight level 250
+sm3_04_012.txt	station calling say again
+sm3_04_020.txt	swissair 9352 call rhein 12737 good day
+sm3_04_021.txt	hapag lloyd 653 climb to flight level 290 direct trasadingen
+sm3_04_027.txt	leisure 6024 good morning radar contact
+sm3_04_028.txt	hapag lloyd 653 expect higher with zurich later on
+sm3_04_029.txt	sabena 838 contact rhein 12737 good day
+sm3_04_040.txt	transwede 8 good morning radar contact
+sm3_04_043.txt	malaysian 2 rhein 12737 good day
+sm3_04_057.txt	german air force 585 non rvsm radar contact
+sm3_04_061.txt	onur air 989 call rhein 12737
+sm3_04_067.txt	sabena 832 good morning radar contact
+sm3_04_070.txt	transwede 107 call zurich on 1346
+sm3_04_072.txt	onur air 388 good morning radar contact
+sm3_04_074.txt	netherlands air force 414 non rvsm radar contact
+sm3_04_076.txt	klm 300K contact rhein on 12737
+sm3_04_077.txt	aero lloyd 590 proceed direct to trasadingen
+sm3_04_083.txt	alitalia 401 good morning climb to flight level 290
+sm3_04_090.txt	sabena 832 call rhein 12737 good day
+sm3_04_091.txt	sabena 7816 turn left to nattenheim
+sm3_04_103.txt	sabena 7816 rhein 12737 good day
+sm3_04_125.txt	speedbird 124 rhein 12737 good day
+sm3_04_132.txt	lufthansa 4416 call zurich on 134 decimal6
+sm3_04_138.txt	alitalia 149 good morning radar contact
+sm3_04_157.txt	we re stopping so 1 thank you
+sm3_05_001.txt	good afternoon lufthansa 3604 climb to flight level 310
+sm3_05_002.txt	tarom 372 call rhein on 1324 good day
+sm3_05_003.txt	britannia 327A good morn good afternoon radar contact
+sm3_05_004.txt	swissair 806 contact rhein 12737 good day
+sm3_05_008.txt	swissair 9360 climb to flight level 320
+sm3_05_017.txt	correction klm 346 left turn 10 degrees
+sm3_05_018.txt	air berlin 5255 contact rhein 12737 good day
+sm3_05_021.txt	lufthansa 4207 good afternoon in radar contact
+sm3_05_022.txt	lufthansa 5236 good afternoon radar contact
+sm3_05_026.txt	lufthansa 3566 call zurich on 134.6 auf wiederhoren
+sm3_05_027.txt	jat 273 contact rhein 132.4 good day
+sm3_05_031.txt	lufthansa 3604 call zurich on 1346 auf wiederhoren
+sm3_05_041.txt	lufthansa 4209 good afternoon in radar contact
+sm3_05_050.txt	ILOOK call zurich on 134.6 good day
+sm3_05_051.txt	alitalia 6474 contact rhein on 12737 good day
+sm3_05_053.txt	saudia 106 contact rhein 132 decimal4
+sm3_05_054.txt	lufthansa 4209 descend to flight level 350
+sm3_05_055.txt	lufthansa 4209 continue descent to level 340
+sm3_05_059.txt	adria 1627 good afternoon radar contact
+sm3_05_064.txt	AFB44 non rvsm radar contact
+sm3_05_065.txt	merair 6952 good afternoon continue climb to level 260
+sm3_05_066.txt	DME continue present heading
+sm3_05_068.txt	aerovic 1061 good afternoon radar contact
+sm3_05_073.txt	bee med 1 contact rhein on 132.4 good day
+sm3_05_080.txt	tarom 374 proceed to karlsruhe
+sm3_05_085.txt	nato 010 good afternoon radar contact
+sm3_05_088.txt	swissair 9359 good afternoon radar contact
+sm3_05_089.txt	aerovic 1061 for separation turn right now heading 230
+sm3_05_090.txt	lufthansa 5504 contact zurich on 134 decimal6
+sm3_05_094.txt	roger 1061 resume own navigation to trasadingen
+sm3_05_095.txt	merair 6952 expedite climb you have opposite traffic level 30015 miles out
+sm3_05_098.txt	merair 6944 climb to flight level 290
+sm3_05_104.txt	merair 6952 call zurich on 134 decimal6
+sm3_05_105.txt	aerovic 1061 proceed direct to fribourg
+sm3_05_106.txt	tarom 374 contact rhein on 132.4 good day
+sm3_05_107.txt	tunair 4802 good afternoon radar contact
+sm3_05_119.txt	aerovic 1061 contact zurich on 134 decimal6
+sm3_05_127.txt	britannia 306A rhein
+sm3_05_128.txt	britannia 306A call milano on 13452
+sm3_05_129.txt	alitalia
+sm3_05_132.txt	sunwing 5214 proceed present position direct to hochwald HOC thereafter saint prex
+sm3_05_139.txt	alitalia 369 descend to flight level 290
+sm3_05_143.txt	good afternoon alitalia 469 in radar contact
+sm3_05_148.txt	lufthansa 4582 is in radar contact climb to flight level 290
+sm3_05_149.txt	tunair 4802 proceed to frankfurt
+sm3_05_150.txt	sunwing 5212 call zurich on 1346
+sm3_05_156.txt	DEC descend to flight level 370
+sm3_05_160.txt	alitalia 369 proceed to trasadingen
+sm3_05_163.txt	alitalia 369 call zurich 1346 good day
+sm3_05_164.txt	aero lloyd 562 call zurich 1346 good day
+sm3_05_168.txt	good afternoon sabena 806 radar contact
+sm4_01_001.txt	roger 2521 what is your requested flight level
+sm4_01_012.txt	lufthansa 4408 zurich 1346 tschuss
+sm4_01_014.txt	tag swissair 9360 identified 320 is final level for today
+sm4_01_017.txt	tarom 372 from rhein do you read
+sm4_01_019.txt	ok
+sm4_01_022.txt	swissair 806 rhein 12737 tschuss
+sm4_01_031.txt	tarom 372 rhein 1324 tschuss
+sm4_01_035.txt	roger
+sm4_01_048.txt	lufthansa 3566 contact zurich 1346 tschuss
+sm4_01_052.txt	lufthansa 3604 zurich 134 decimal6
+sm4_01_061.txt	tag lufthansa 3550 identified
+sm4_01_066.txt	alitalia 6474 rhein 12737 tschu
+sm4_01_082.txt	lufthansa 4209 rhein 1324 tschuss
+sm4_01_083.txt	bafair 44 guten tag identified rv non rvsm
+sm4_01_086.txt	sabena 836 rhein 12737 tschuss
+sm4_01_089.txt	tag DME identified climb flight level 270
+sm4_01_096.txt	guten tag tarom 374 identified
+sm4_01_102.txt	belgian airforce 44 turn left now heading 320
+sm4_01_107.txt	aerovic 1061 descend now flight level 270 rate of descent 2000 feet per minute or more
+sm4_01_110.txt	tag malaysian 4 identified
+sm4_01_118.txt	adria 1627 rhein 1324 tschuss
+sm4_01_123.txt	tag DINA identified
+sm4_01_127.txt	tag sunwing 5214 identified as well
+sm4_01_131.txt	DCINA climb flight level 270
+sm4_01_139.txt	swissair 9359 descend now flight level 310
+sm4_01_140.txt	aerovic 1061 milano 13452 tschuss
+sm4_01_156.txt	sunwing 5214 descend now flight level 370
+sm4_01_158.txt	alitalia 135 what is you mach number
+sm4_01_161.txt	air algerie 2073 direct to trasadingen
+sm4_01_169.txt	lufthansa 3508 climb flight level 280 now
+sm4_01_173.txt	sunwing 5212 contact zurich 1346 tschuss
+sm4_01_174.txt	sunwing 5212 correction sunwing 5214 zurich 1334 tschuss
+sm4_01_175.txt	aero lloyd 562 climb flight level 310 now
+sm4_01_181.txt	alitalia 369 zurich 1346 tschuss
+sm4_01_185.txt	DEC rhein 1324 tschuss
+sm4_01_187.txt	lufthansa 4219 contact rhein 1324 tschuss
+sm4_01_189.txt	lufthansa 3330 zurich 1346
+sm4_02_003.txt	DEB zurich 134.6 tschuss
+sm4_02_011.txt	tag lufthansa 3566 identified climb flight level 270
+sm4_02_012.txt	swissair 806 contact rhein 12737 tschuss
+sm4_02_014.txt	tag sabena 830 identified
+sm4_02_015.txt	tag lufthansa 3604 identified climb flight level 270
+sm4_02_026.txt	hoi klm 346 identified are you familiar with the point corna CORNA
+sm4_02_042.txt	lufthansa 35 si 66 contact zurich 1346 tschuss
+sm4_02_045.txt	britannia 327A proceed direct to kempten
+sm4_02_051.txt	roger continue heading 138 radar vectors to trasadingen
+sm4_02_054.txt	HTR are you able to climb with 2000 feet per minute or more
+sm4_02_056.txt	lufthansa 5236 contact rhein 12737 tschu
+sm4_02_073.txt	tag lufthansa 5504 identified
+sm4_02_079.txt	and 4209 expect an initial descent in about 2 minutes from now
+sm4_02_083.txt	sabena 836 contact rhein 12737 tschuss
+sm4_02_090.txt	lufthansa 5504 proceed direct to fribourg FRI there and expect further clearance with zurich then
+sm4_02_092.txt	tag tarom 374 identified
+sm4_02_093.txt	tag scandinavian 617 identified
+sm4_02_096.txt	london airtours 1 contact rhein frequency 132.4 tschuss
+sm4_02_101.txt	tarom 374 proceed direct to KPT
+sm4_02_103.txt	sabena 302 contact rhein 12737 tschuss
+sm4_02_105.txt	alitalia 291 turn right 10 degrees
+sm4_02_115.txt	merair 6952 what is your rate of climb
+sm4_02_124.txt	adria 1627 rhein 132.4 tschuss
+sm4_02_125.txt	scandinavian 617 direct to trasadingen
+sm4_02_140.txt	swissair 9359 descend now flight level 330
+sm4_02_142.txt	DIMME climb flight level 290
+sm4_02_143.txt	merair 6952 contact zurich 1346 tschuss
+sm4_02_147.txt	tag tunis air 4802 identified
+sm4_02_152.txt	alitalia 369 report your heading
+sm4_02_154.txt	tag DIBEC identified
+sm4_02_163.txt	air algerie 2073 climb flight level 290
+sm4_02_164.txt	guten tag aero lloyd 562 identified climb flight level 250 on the present heading
+sm4_02_165.txt	tag lufthansa 3508 identified maintain 240 upon reaching i ll call you back for higher
+sm4_02_166.txt	aero lloyd 562 climb now flight level 290 when passing 270 direct to trasadingen
+sm4_02_168.txt	tag lufthansa 4219 identified
+sm4_02_173.txt	tag lufthansa 3330 identified climb flight level 250
+sm4_02_175.txt	DIBEC direct to dinkelsbuhl
+sm4_02_183.txt	roger turn right heading 200
+sm4_02_196.txt	alitalia 369 descend now flight level 2702000 feet per minute or more
+sm4_02_197.txt	iberia 6710 contact zurich frequency 1346
+sm4_02_202.txt	alitalia 369 contact zurich 12737 tschuss
+sm4_03_004.txt	lufthansa 4408 climb flight level 290
+sm4_03_006.txt	tarom 372 guten tag identified
+sm4_03_013.txt	swissair 806 climb now flight level 3501500 or more
+sm4_03_016.txt	swissair 806 contact rhein 12737 tschuss
+sm4_03_017.txt	tag sabena 830 identified
+sm4_03_022.txt	airals 1088 contact rhein 12737 tschuss
+sm4_03_031.txt	tag lufthansa 4700 identified climb flight level 270
+sm4_03_035.txt	sabena 830 contact rhein 12737 tschuss
+sm4_03_040.txt	lufthansa 3566 contact rhein 1 correction zurich 1346
+sm4_03_048.txt	and HTR climb now flight level 350
+sm4_03_086.txt	lufthansa 4209 contact rhein 1324
+sm4_03_089.txt	tag tarom 374 identified turn left heading 120
+sm4_03_090.txt	tag alitalia 291 identified
+sm4_03_100.txt	tag malaysian 4 identified
+sm4_03_101.txt	tag swissair 9359 identified
+sm4_03_102.txt	merair 6952 proceed direct to trasadingen climb flight level 300
+sm4_03_107.txt	adria 1627 contact rhein 1324 tschuss
+sm4_03_122.txt	alitalia 291 report your mach number
+sm4_03_123.txt	roger are you able to increase to point 78 or more
+sm4_03_128.txt	tag alitalia 135 identified
+sm4_03_136.txt	tag alitalia 369 identified
+sm4_03_140.txt	aerovic 1061 contact zurich frequency 1346 tschuss
+sm4_03_148.txt	tag algerie 2073 identified continue current heading climb flight level 270
+sm4_03_149.txt	negative the current heading you re maintaining and climb to flight level 270
+sm4_03_150.txt	tag DIBEC identified
+sm4_03_151.txt	swissair 9359 contact rhein 132.4 tschuss
+sm4_03_158.txt	tag aero lloyd 562 climb flight level 270
+sm4_03_159.txt	algerie 2073 proceed direct no for the time being continue on heading 170
+sm4_03_160.txt	tag lufthansa 4219 identified
+sm4_03_169.txt	alitalia 369 descend flight level 290
+sm4_03_176.txt	aero lloyd 562 proceed correct no aero lloyd 562 direct to hochwald HOC thereafter saint prex SPR
+sm4_03_178.txt	aero lloyd 562 to hochwald thereafter saint prex
+sm4_03_180.txt	that is right aero lloyd 562 but turn right now to the point HOC that sa point in the computer i suggest a right turn ohh it looks very good for the present position
+sm4_03_181.txt	and aero lloyd 562 climb flight level 290
+sm4_03_186.txt	lufthansa 4582 climb to flight level 270
+sm4_03_188.txt	air algerie 2073 contact zurich 1346 tschuss
+sm4_03_191.txt	DCINA contact zurich 1346 tschuss
+sm4_04_008.txt	lufthansa 8268 proceed direct to trasadingen
+sm4_04_021.txt	lufthansa 8268 expect further climb in about 1 and a half minute
+sm4_04_022.txt	tag hapag lloyd 653 identified climb to flight level 270
+sm4_04_026.txt	hapag lloyd 653 climb flight level 290
+sm4_04_031.txt	tag constellation 2251 identified
+sm4_04_032.txt	tag leisure 6024 identified
+sm4_04_042.txt	hapag lloyd 653 climb with 1500 feet per minute or more
+sm4_04_043.txt	malaysian 2 contact rhein 12737 tschuss
+sm4_04_045.txt	hapag lloyd 653 rate of climb on convenience
+sm4_04_050.txt	leisure 6024 contact rhein 12737 tschuss
+sm4_04_053.txt	swissair 6520 contact rhein frequency 12737 tschuss
+sm4_04_054.txt	constellation 2251 contact rhein 12 correction 132.4 tschuss
+sm4_04_066.txt	transwede 107 climb now flight level 310
+sm4_04_068.txt	tag jet set 1429 identified
+sm4_04_075.txt	aero lloyd 590 for the time being climb flight level 270
+sm4_04_079.txt	german air force 585 proceed now to frankfurt ohh for the time being continue on current heading
+sm4_04_086.txt	german air force 585 turn right heading 010
+sm4_04_087.txt	tag lufthansa 4652 identified climb flight level 270
+sm4_04_088.txt	tag alitalia 485 identified
+sm4_04_094.txt	tag alitalia 401 identified
+sm4_04_113.txt	alitalia 401 climb flight level 310
+sm4_04_117.txt	tag lufthansa 4416 identified ahm report your heading
+sm4_04_119.txt	tag belstar 502H identified
+sm4_04_123.txt	tag speedbird 124 identified
+sm4_04_124.txt	tag netherlands 35 identified
+sm4_04_126.txt	netherlands 414 contact zurich 12737
+sm4_04_130.txt	lufthansa 4416 climb flight level 290 when passing 260 direct trasadingen
+sm4_04_137.txt	aero lloyd 517 proceed direct frankfurt
+sm4_04_138.txt	speedbird 124 contact rhein 12737 tschuss
+sm4_04_140.txt	tag europa 363 identified
+sm4_04_146.txt	tag lufthansa 3556 identified continue current heading
+sm4_04_150.txt	britannia 236A guten tag identified
+sm4_04_158.txt	hapag lloyd 3551 zurich frequency 1334 tschu
+sm4_04_164.txt	DICPA zurich 13452 tschuss
+sm4_04_165.txt	alitalia 487 zurich 1346
+sm4_04_168.txt	midland 720 the restricting traffic for climb is now coming up in your 11 o clock position 2000 feet higher left to right an airbus 320
+sm4_04_171.txt	and 4376 proceed direct trasadingen
+sm4_04_184.txt	sabena 826A turn left 15 degrees
+sm4_04_188.txt	sabena 9369 direct trasadingen now
+sm4_04_192.txt	tag lufthansa 3638 identified climb flight level 270
+sm4_04_193.txt	sabena 801 report your heading
+sm4_04_194.txt	roger continue heading 140 radar vectors trasadingen
+sm4_04_196.txt	roger continue heading 140
+sm4_04_200.txt	speedbird 122 contact rhein 12737 tschuss
+sm4_04_202.txt	and lufthansa 3638 rate of climb 1500 feet per minute or more
+sm4_04_203.txt	tag condor 218 identified
+sm4_04_209.txt	tag swissair 783R identified
+sm4_04_214.txt	britannia 236A contact zurich 1334 tschuss
+sm4_04_216.txt	sabena 826A direct nattenheim
+sm4_04_217.txt	alitalia 413 direct to trasadingen
+sm4_04_220.txt	an
+sm4_05_006.txt	lufthansa 8268 climb flight level 300
+sm4_05_008.txt	lufthansa 8268 direct to trasadingen climb with 1500 feet per minute or more
+sm4_05_015.txt	sabena 481 contact rhein frequency 132.4 tschuss
+sm4_05_017.txt	expect higher after passing karlsruhe
+sm4_05_019.txt	ITASA climb now flight level 320
+sm4_05_023.txt	sabena 838 contact rhein 12737 tschuss
+sm4_05_024.txt	FSI climb now flight level 290 tschu
+sm4_05_032.txt	FSI contact zurich 1346 tschuss
+sm4_05_034.txt	tag olympic 144 identified
+sm4_05_040.txt	hapag lloyd 663 contact zurich 1346 tsch ohh correction climb to flight level 300 now
+sm4_05_047.txt	klm 300K guten tag identified
+sm4_05_051.txt	left heading 350
+sm4_05_055.txt	constellation 2251 contact rhein frequency 1 through 132 decimal4
+sm4_05_071.txt	transwede 107 climb with 1500 feet per minute or more
+sm4_05_081.txt	sabena 832 guten tag identified
+sm4_05_092.txt	tag alitalia 485 identified
+sm4_05_094.txt	tag belstar 526H identified
+sm4_05_095.txt	jet set 1429 contact rhein 12737 tschuss
+sm4_05_116.txt	tag singa 112 identified maintain heading 320
+sm4_05_119.txt	tag belstar 7H identified
+sm4_05_120.txt	lufthansa 4652 zurich 1346 tschuss
+sm4_05_129.txt	singa 112 continue now heading 310
+sm4_05_140.txt	turkish 515 contact rhein 12737 tschuss
+sm4_05_153.txt	sabena 826A identified
+sm4_05_160.txt	alitalia 487 contact zurich 1346 tschuss
+sm4_05_176.txt	sabena 9369 proceed now to trasadingen
+sm4_05_178.txt	speedbird 122 contact rhein frequency 12737 tschuss
+sm4_06_003.txt	tag berlin 5255 identified
+sm4_06_009.txt	swissair 806 climb with 1500 feet per minute or more
+sm4_06_011.txt	swissair 806 continue climb to flight level 350
+sm4_06_019.txt	lufthansa 3566 guten tag identified climb flight level 290
+sm4_06_035.txt	tarom 372 contact rhein 1324
+sm4_06_039.txt	tag speedbird 129 identified
+sm4_06_042.txt	sabena 830 contact rhein frequency 12737 tschuss
+sm4_06_048.txt	roger turn left heading 355 radar vectors nattenheim
+sm4_06_049.txt	indialook climb flight level 290
+sm4_06_059.txt	speedbird 129 contact rhein 1324 tschuss
+sm4_06_062.txt	tag sabena 836 identified
+sm4_06_075.txt	GJI direct to trasadingen
+sm4_06_085.txt	sabena 836 rhein 12737 tschuss
+sm4_06_089.txt	indialook contact rhein frequenc correction zurich 1346
+sm4_06_091.txt	lufthansa 4209 proceed direct to dinkelsbuhl
+sm4_06_100.txt	bafair 44 turn left again heading 315
+sm4_06_101.txt	belgian airforce 44 turn left again heading 315
+sm4_06_110.txt	DME continue heading 180
+sm4_06_112.txt	aerovic 1061 descend now flight level 270
+sm4_06_118.txt	tag swissair 9359 identified
+sm4_06_119.txt	aerovic 1061 descend with 2000 feet per minute or more
+sm4_06_120.txt	guten tag lufthansa 5217 identified
+sm4_06_122.txt	merair 6952 climb flight level 290 now
+sm4_06_125.txt	DIMME climb flight level 300
+sm4_06_129.txt	alitalia 150 contact rhein 12737 tschuss
+sm4_06_135.txt	aerovic 1061 climb again flight level 290 now
+sm4_06_142.txt	tag sunwing 5214 identified
+sm4_06_145.txt	merair 6952 proceed to trasadingen
+sm4_06_155.txt	lufthansa 5217 contact rhein 132.4 tschuss
+zf1_01_002.txt	swissair 6520 after willisau direct to karlsruhe
+zf1_01_005.txt	transavia 381 turn left heading 170
+zf1_01_007.txt	austrian 22 contact milan 134.52 good bye
+zf1_01_009.txt	air france 3261 squawk now 2724
+zf1_01_010.txt	transavia 381 own navigation to canne
+zf1_01_023.txt	aero lloyd 560 turn right direct to saint prex
+zf1_01_026.txt	blue 572 descend to flight level 250
+zf1_01_031.txt	lufthansa 8268 climb to flight level 330 turn right 10 degrees
+zf1_01_038.txt	lufthansa 8268 own navigation to olben saint prex
+zf1_01_044.txt	ok change back to previous
+zf1_01_050.txt	hapag lloyd 653 set course direct to olben
+zf1_01_053.txt	and hapag lloyd 653 turn right heading 210
+zf1_01_057.txt	air france 3261 contact milan 1 correction geneva 13315 good bye
+zf1_01_058.txt	hamburg air 2546
+zf1_01_062.txt	hapag lloyd 653 climb to flight level 330
+zf1_01_064.txt	emirates 81 contact milan 134.52 good bye
+zf1_01_066.txt	station calling
+zf1_01_067.txt	air france 1554 good morning maintain level 330 trasadingen zurich east fusse
+zf1_01_082.txt	gulf air 032 good morning maintain 330 trasadingen zurich east fusse
+zf1_01_083.txt	hapag lloyd 171 climb to level 290
+zf1_01_085.txt	condor 104 is identified on present heading climb to flight level 310
+zf1_01_088.txt	roger maintain level 290
+zf1_01_090.txt	roger squawk 7536
+zf1_01_097.txt	jetcom 133 right heading 065
+zf1_01_101.txt	FOL on the frequency
+zf1_01_107.txt	jetcom 133 own navigation to fusse
+zf1_01_120.txt	swissair 488 climb to flight level 310 good rate of climb please
+zf1_01_122.txt	air france 1554 milan 13452 good bye
+zf1_01_130.txt	viva 9081 descend to flight level 330
+zf1_01_131.txt	aero lloyd 517 disregard
+zf1_01_132.txt	alitalia 292 good morning squawk 2761
+zf1_01_134.txt	aero lloyd 517 continue that heading for another 3 minutes
+zf1_01_135.txt	gulf air 032 milan 13452 good bye
+zf1_01_137.txt	will check call you back
+zf1_01_142.txt	aero lloyd 517 rhein 12092 tschuss
+zf1_01_172.txt	alitalia 117 descend to flight level 250 milan 13452 good bye
+zf1_01_175.txt	alitalia 485 good morning roger
+zf1_01_181.txt	alitalia 401 continue present heading
+zf1_01_192.txt	aero lloyd 590 own navigation to canne
+zf1_01_205.txt	air portugal 4113 milan 13452 good bye
+zf1_01_207.txt	aero lloyd 590 milan 13452 good bye
+zf1_01_229.txt	roger fly heading 220
+zf1_01_231.txt	jetaviation 701 descend to flight level 250
+zf1_01_240.txt	austrian 41t
+zf1_01_241.txt	2 milan 13452 good bye
+zf1_02_005.txt	blue 572 good afternoon descend to flight level 290
+zf1_02_006.txt	air france 3261 is identified climb to flight level 310 direct to hochwald
+zf1_02_007.txt	im sorry make it heading 255
+zf1_02_015.txt	lufthansa 8268 climb to flight lev disregard
+zf1_02_016.txt	F osca KSI good afternoon maintain level 290
+zf1_02_031.txt	air france 3261 resume own navigation to saint prex descend to flight level 290
+zf1_02_035.txt	aero lloyd 560 geneva 13315 tschuss
+zf1_02_041.txt	air france 1554 good morning radar contact
+zf1_02_042.txt	air inter 320PH climb to flight level 310
+zf1_02_044.txt	emirates 81 reims on correction milan 13452 good bye
+zf1_02_067.txt	speedway 3469 good afternoon maintain level 300
+zf1_02_071.txt	lufthansa 5550 milan 13452 good bye
+zf1_02_072.txt	FSI milan 13452 good bye
+zf1_02_077.txt	for higher level genev zurich 133.4 good bye
+zf1_02_079.txt	german air force 4901 geneva 13315 good bye
+zf1_02_087.txt	air france 1554 milan 13452 good bye
+zf1_02_089.txt	swissair 488 climb to flight level 310
+zf1_02_096.txt	viva 9081 good afternoon roger
+zf1_02_099.txt	speedway 3469 milan 13452 good bye
+zf1_02_107.txt	alitalia 292 buongiorno squawk 2761
+zf1_02_108.txt	air france 356 disregard
+zf1_02_109.txt	aero lloyd 590 good afternoon roger
+zf1_02_123.txt	transwede 107 own navigation saint prex geneva 13315 good bye
+zf1_02_125.txt	lufthansa 4393 milan 13452 good bye
+zf1_02_127.txt	alitalia 117 good afternoon roger
+zf1_02_128.txt	lufthansa 8221 roger
+zf1_02_147.txt	united 69 descend to flight level 290
+zf1_02_150.txt	alitalia 401 turn left heading 170
+zf1_02_155.txt	lufthansa 8221 descend to flight level 290
+zf1_02_156.txt	jetaviation 8 squawk 2732
+zf1_02_167.txt	lufthansa 8221 milan 13452 good bye
+zf1_02_169.txt	alitalia 485 descend to flight level 290
+zf1_02_174.txt	alitalia 401 own navigation to canne
+zf1_02_178.txt	turkair 925 set course direct to morok
+zf1_03_016.txt	blue 572 descend to flight level 290
+zf1_03_018.txt	scandinavian 686 resume own navigation toT
+zf1_03_023.txt	air france 3261 climb to flight level 290
+zf1_03_025.txt	lufthansa 4356 climb to flight level 320
+zf1_03_029.txt	sabena 7816 climb to flight level 340
+zf1_03_032.txt	FOKSI good morning radar contact
+zf1_03_039.txt	lufthansa 4356 set course direct to morok
+zf1_03_058.txt	aero lloyd 560 contact geneva 13315 tschuss
+zf1_03_063.txt	lufthansa 4356 reims 134.4 good bye
+zf1_03_072.txt	hamburg air 2546 contact geneva 13315 good bye
+zf1_03_074.txt	swissair 6552 good morning roger
+zf1_03_076.txt	sabena 7816 contact rhein 120.92 good bye
+zf1_03_079.txt	lufthansa 4723 descend to flight level 290
+zf1_03_084.txt	speedway 3469 good morning radar contact
+zf1_03_090.txt	lufthansa 5550 turn left heading 250
+zf1_03_109.txt	condor 104 climb to flight level 340
+zf1_03_119.txt	lufthansa 4393 descend to flight level 310
+zf1_03_124.txt	alitalia 117 turn left to saronno
+zf1_03_129.txt	swissair 488 on request by rhein stop climb level 300
+zf1_03_130.txt	and 488 own navigation to T now
+zf1_03_135.txt	alitalia 292 good morning squawk 2761
+zf1_03_136.txt	sabena 826A turn right 10 degrees
+zf1_03_137.txt	jet set 442 on heading 170 descend to flight level 290
+zf1_03_139.txt	transwede 107 own navigation to saint prex
+zf1_03_160.txt	lufthansa 4652 good morning radar contact
+zf1_03_163.txt	us air 14 contact milan 13452
+zf1_03_170.txt	lufthansa 4652 right heading 220
+zf1_03_180.txt	lufthansa 4575 climb to flight level 320
+zf1_03_184.txt	lufthansa 4652 climb to flight level 340
+zf1_03_185.txt	roger report your heading to zurich 133.4 good bye
+zf1_03_189.txt	D146 stand by short
+zf1_03_199.txt	iberia 3422 set course direct to nelli
+zf1_03_202.txt	alitalia 485 descend to flight level 310
+zf1_03_204.txt	netherlands 414 descend to flight level 250
+zf1_03_212.txt	united 69 contact milan 13452 good bye
+zf1_03_215.txt	alitalia 401 resume own navigation to saronno
+zf1_03_223.txt	0 adria 1642 contact reims 1344 good bye
+zf1_03_235.txt	hapag lloyd 3551 descend to flight level 350
+zf1_03_243.txt	hapag lloyd 3551 own navigation saronno
+zf1_03_244.txt	europa 361 own navigation toT
+zf1_03_246.txt	D76 maintain 350 further descent in 2 minutes opposite traffic below
+zf1_03_251.txt	lufthansa 4376 good morning radar contact
+zf1_03_252.txt	i think you re on the wrong frequency zurich 1334
+zf1_04_001.txt	swissair 6520 after willisau direct to frankfurt
+zf1_04_005.txt	austrian 22 milan 13452 servus
+zf1_04_012.txt	sabena 7816 is identified climb to flight level 340
+zf1_04_023.txt	lufthansa 4356 is identified climb to flight level 320
+zf1_04_041.txt	lufthansa 5318 milan 13452 good bye
+zf1_04_044.txt	hapag lloyd 653 good morning maintain level 300 trasadingen saint prex
+zf1_04_052.txt	confirm requested level is 380
+zf1_04_054.txt	hamburg air 2546 geneva 13315 tschuss
+zf1_04_058.txt	lufthansa 4393 good afternoon roger
+zf1_04_074.txt	swissair 6552 stop climb level 270
+zf1_04_075.txt	hapag lloyd 171 geneva 13315 good bye
+zf1_04_079.txt	air france 356 good morning flight correction squawk 7536
+zf1_04_080.txt	condor 104 turn left heading 250 climb to flight level 340 good rate of climb please
+zf1_04_081.txt	speedway 3469 descend now to flight level 270 rate 1500 or more
+zf1_04_083.txt	jet set 442 good afternoon roger
+zf1_04_087.txt	air inter 320PH contact reims 134.4 good bye
+zf1_04_099.txt	cotam 1141 contact milan 13452 good bye
+zf1_04_103.txt	air france 356 climb to flight level 320
+zf1_04_121.txt	ltu 7756 good afternoon roger
+zf1_04_135.txt	air france 356 contact reims 134.4 good bye
+zf1_04_136.txt	lufthansa 8221 good afternoon radar contact
+zf1_04_140.txt	saudia 341 contact milan 13452 good bye
+zf1_04_142.txt	good afternoon shamrock 4822 descend to flight level 330
+zf1_04_156.txt	alitalia 292 contact rhein 120.92 good bye
+zf1_04_158.txt	sabena 826A rhein 12092 good bye
+zf1_04_159.txt	alitalia 117 descend to flight level 270
+zf1_04_164.txt	netherlands 414 descend to flight level 290
+zf1_04_165.txt	turkair 925 good afternoon squawk 1005
+zf1_04_174.txt	netherlands 414 milan 13452 good bye
+zf1_04_182.txt	alitalia 487 descend to flight level 330
+zf1_04_184.txt	alitalia 485 milan 13452
+zf1_04_191.txt	sabena 9369 good morning maintain level 300 willisau saint prex
+zf1_04_198.txt	alitalia 426 good morning squawk 2763
+zf1_05_001.txt	air malta 004 is identified
+zf1_05_003.txt	jet set 207 left direct to hochwald
+zf1_05_005.txt	blue 572 good morning descend to flight level 330
+zf1_05_008.txt	ind israeli air force 686 resume own navigation toT
+zf1_05_010.txt	blue 572 descend to flight level 290
+zf1_05_012.txt	french air force 4234 resume own navigation direct to morok
+zf1_05_022.txt	scandinavian 614 contact rhein 12092 good bye
+zf1_05_023.txt	lufthansa 8268 good morning i ll call you back for climb for the time cleared trasadingen saint prex
+zf1_05_029.txt	lufthansa 3577 is identified
+zf1_05_030.txt	lufthansa 4356 resume own navigation direct to morok
+zf1_05_038.txt	transwede 3571 after trasadingen direct to luxeuil
+zf1_05_040.txt	jet set 207 reims 134.4 good bye
+zf1_05_047.txt	hamburg air 2546 good morning climb to flight level 290
+zf1_05_050.txt	hamburg air 2546 report your mach number
+zf1_05_051.txt	and at level thr 290
+zf1_05_054.txt	hapag lloyd 653 good morning maintain 310 trasadingen saint prex
+zf1_05_056.txt	lufthansa 5550 left heading 250
+zf1_05_063.txt	lufthansa 4356 reims 1344 good bye
+zf1_05_064.txt	aero lloyd 560 geneva 13315 own navigation to saint prex
+zf1_05_068.txt	hamburg air 2546 geneva 13315 tschuss
+zf1_05_071.txt	and geneva 13315 good bye
+zf1_05_072.txt	air berlin 5081 own navigation to saint prex
+zf1_05_077.txt	hapag lloyd 171 good morning climb to flight level 290
+zf1_05_081.txt	jetcom 133 climb to flight level 330
+zf1_05_084.txt	sabena 7816 rhein 12092 good bye
+zf1_05_087.txt	jetcom 133 climb to flight level 340
+zf1_05_092.txt	condor 104 climb to flight level 310
+zf1_05_103.txt	lufthansa 3577 rhein 1321324 tschuss
+zf1_05_108.txt	air france 356 is identified climb to flight level 320 good rate of climb
+zf1_05_110.txt	aero lloyd 517 good morning radar contact
+zf1_05_118.txt	ali sabena 826A good morning squawk 7531 and confirm the level
+zf1_05_130.txt	lufthansa 5550 descend to flight level 250
+zf1_05_136.txt	0 no contact geneva 13315 good bye
+zf1_05_138.txt	roger aero lloyd 517
+zf1_05_140.txt	alitalia 292 is identified climb to flight level 300
+zf1_05_145.txt	ltu 7756 good morning climb to level 290
+zf1_05_159.txt	us air 14 contact milan 13452 good bye
+zf1_05_160.txt	ltu 7756 geneva 13315 tschuss
+zf1_05_161.txt	transwede 107 geneva 13315 adios
+zf1_05_162.txt	iberia 3422 good morning radar contact route trasadingen nelli
+zf1_05_168.txt	adria 1642 is identified set course direct to morok
+zf1_05_170.txt	viva 9081 milan 13452 adios
+zf1_05_173.txt	alitalia 401 guten tag maintain 330
+zf1_05_184.txt	iberia 3422 turn right 10 degrees
+zf1_05_185.txt	lufthansa 4575 climb to flight level 320
+zf1_05_188.txt	united 69 descend to flight level 340
+zf1_05_192.txt	united 69 just cleared of traffic descend to flight level 290
+zf1_05_194.txt	adria 1642 contact reims 134.4 good bye
+zf1_05_196.txt	shamrock 4822 milan 13452 good bye
+zf1_05_198.txt	alitalia 485 good morning roger
+zf1_05_200.txt	iberia 3422 own navigation to nelli
+zf1_05_201.txt	adria 1642 reims 134.4 good bye
+zf1_05_206.txt	sabena 826A rhein 12092 good bye
+zf1_05_215.txt	netherlands 414 descend to flight level 250
+zf1_05_219.txt	aero lloyd correction europa 361 good morning roger
+zf1_05_220.txt	alitalia 401 for track correction right heading 180
+zf1_05_221.txt	alitalia 485 own navigation to saronno
+zf1_05_222.txt	lufthansa 8221 contact milan 13452 good bye
+zf1_05_226.txt	aero lloyd 590 milan 13452 tschuss
+zf1_05_232.txt	alitalia 487 good morning roger
+zf1_05_234.txt	roger confirm heading 036
+zf1_05_237.txt	IFG could you accept level 360
+zf1_05_250.txt	alitalia 401 milan 13452 good bye
+zf1_05_254.txt	lauda 6869 turn left heading 095 descend to flight level 330
+zf1_05_255.txt	turkish 925 contact reims 134.4 good bye
+zf1_05_256.txt	lauda s correction D 76 good morning roger
+zf1_05_258.txt	hamburg air 2500 guten tag roger
+zf1_05_260.txt	hapag lloyd 3551 descend now to flight level 250
+zf1_05_262.txt	jetaviation 701 descend to flight level 250
+zf1_05_264.txt	lauda 6869 resume own navigation to fusse descend to flight level 290
+zf1_05_269.txt	lufthansa 4376 good afternoon roger
+zf1_06_001.txt	swissair 6520 set course direct to karlsruhe
+zf1_06_002.txt	scandinavian 614 good morning climb to flight level 320
+zf1_06_008.txt	the air france 3261 stop climb level 290
+zf1_06_019.txt	contact milan 13452 good bye
+zf1_06_026.txt	lufthansa 5318 milan 13452 good bye
+zf1_06_030.txt	jetcom 133 good morning roger
+zf1_06_032.txt	lufthansa 4723 good morning descend to flight level 300
+zf1_06_035.txt	lufthansa 8268 climb to flight level 340
+zf1_06_039.txt	lufthansa 8268 report your heading to zurich on 133.4 good bye
+zf1_06_051.txt	lufthansa 4356 reims 1344 good bye
+zf1_06_053.txt	jetcom 133 contact zurich 133.4 good bye
+zf1_06_054.txt	german air force 4901 set course to saint prex
+zf1_06_070.txt	air france 1554 descend now to flight level 290
+zf1_06_075.txt	swissair 488 good morning maintain 280 when reaching call you back for higher
+zf1_06_081.txt	transwede 107 good morning maintain 330 trasa saint prex
+zf1_06_082.txt	speedway 3469 descend now to flight level 270
+zf1_06_084.txt	roger
+zf1_06_086.txt	german air force 4901 contact geneva 13315 good bye
+zf1_06_089.txt	jet set 442 zurich good morning
+zf1_06_094.txt	sabena 826A good morning squawk 7531
+zf1_06_097.txt	lufthansa 4393 milan 13452 good bye
+zf1_06_102.txt	us air 14 good morning descend to flight level 340
+zf1_06_109.txt	say again please
+zf1_06_115.txt	swissair 488 climb to flight level 320
+zf1_06_119.txt	air france 356 contact reims 1344 good bye
+zf1_06_120.txt	swissair 488 rhein 1324 good bye
+zf1_06_121.txt	alitalia 117 good morning descend to level 330
+zf1_06_124.txt	aero lloyd 517 rhein 12092 bye bye
+zf1_07_007.txt	DEB expedite climb until passing 350
+zf1_07_012.txt	DEB contact now zurich 133.4 good bye
+zf1_07_017.txt	hamburg air 2502 contact geneva 13315 good bye
+zf1_07_024.txt	lufthansa 5305 turn right to zurich east
+zf1_07_033.txt	balkan 431 contact reims 1344 good bye
+zf1_07_034.txt	lufthansa 4408 climb to flight level 310
+zf1_07_036.txt	japan air 419 good afternoon descend to flight level 250
+zf1_07_037.txt	air france 689 is identified
+zf1_07_047.txt	condor 666 contact geneva 13315 good bye
+zf1_07_056.txt	lufthansa 4408 own navigation to saint prex
+zf1_07_057.txt	alitalia 150 is identified climb to flight level 300
+zf1_07_059.txt	roger is checked
+zf1_07_061.txt	condor 607 good afternoon radar contact
+zf1_07_066.txt	speedway 3352 descend to flight level 290
+zf1_07_067.txt	lufthansa 4703 contact milan 13452 good bye
+zf1_07_068.txt	ltu 1602 geneva 13315 good bye
+zf1_07_076.txt	lufthansa 3604 climb to flight level 350
+zf1_07_077.txt	roger good rate until reaching please
+zf1_07_079.txt	air france 2621 contact reims 1344 good bye
+zf1_07_083.txt	tarom 7534 left 10 degrees
+zf1_07_089.txt	and mission 60153 clear of traffic own navigationT
+zf1_07_090.txt	and contact now rhein 132.4 good bye
+zf1_07_100.txt	aero lloyd 533 good afternoon set course direct to trasadingen nelli
+zf1_07_102.txt	lauda air 109 good afternoon squawk 2746
+zf1_07_104.txt	tunair 4802 is identified
+zf1_07_106.txt	alitalia 416 good afternoon squawk 7533
+zf1_07_112.txt	airlink 13 turn left 10 degrees due traffic
+zf1_07_114.txt	lufthansa 3550 good afternoon report position
+zf1_07_120.txt	ifo 22B good afternoon squawk 7535
+zf1_07_138.txt	air malta 450 rhein 132.4 good bye
+zf1_07_140.txt	tunair 4802 rhein 12092 bye bye
+zf1_07_141.txt	lufthansa 5931 climb to flight level 340
+zf1_07_143.txt	aero lloyd 533 own navigation to nelli
+zf1_07_149.txt	alitalia 416 contact rhein 132.4 good bye
+zf1_07_150.txt	alitalia 404 rhein 132 decimal4
+zf1_07_156.txt	GJI rate of descent 2000 or more until passing level 330
+zf1_07_161.txt	lufthansa 3550 descend to flight level 250
+zf1_07_162.txt	GJI descend to flight level 290
+zf1_07_167.txt	DME climb to flight level 330
+zf1_07_174.txt	merair 6944 climb to flight level 330
+zf1_07_180.txt	GJI contact milan 13452 good bye
+zf1_07_183.txt	lufthansa 5504 contact geneva 1 disregard descend to flight level 250
+zf1_07_184.txt	lufthansa 5931 contact rhein 132.4 good bye
+zf1_07_188.txt	air france 680 good afternoon descend to flight level 300
+zf1_07_189.txt	good afternoon israeli air force 442 maintain level 350
+zf1_07_191.txt	lufthansa 4665 milan 13452 good bye
+zf1_07_198.txt	sunwing 5212 good afternoon maintain 330 trasadingen saint prex
+zf1_07_201.txt	israeli air 442 descend to flight level 290
+zf1_08_009.txt	lufthansa 4723 descend to flight level 300
+zf1_08_011.txt	air berlin 5081 good morning maintain level 330
+zf1_08_014.txt	lufthansa 8268 good morning maintain level 310 trasadingen saint prex
+zf1_08_015.txt	lufthansa 8268 turn right heading 210
+zf1_08_016.txt	blue 572 contact milan 13452 good bye
+zf1_08_020.txt	lufthansa 8268 continue climb to level 340
+zf1_08_025.txt	jetcom 133 climb to flight level 340
+zf1_08_028.txt	aero lloyd 560 turn right direct saint prex
+zf1_08_038.txt	air france 3261 own navigation to saint prex
+zf1_08_058.txt	good morning lufthansa 4393 roger
+zf1_08_067.txt	air france 356 good morning squawk 7536
+zf1_08_070.txt	lufthansa 5550 milan 13452 good bye
+zf1_08_081.txt	jet set 442 descend to flight level 330
+zf1_08_102.txt	sabena 826A climb to flight level 320 trasadingen karlsruhe
+zf1_08_104.txt	aero lloyd 517 contact rhein 12092 good bye
+zf1_08_114.txt	us air 14 milan 13452 good bye
+zf1_08_120.txt	aero lloyd 590 good morning route trasadingen saronno call you back for climb
+zf1_08_125.txt	lufthansa 4652 climb to flight level 320
+zf1_08_128.txt	netherlands 414 good morning radar contact
+zf1_08_130.txt	transwede 107 climb to flight level 320
+zf1_08_133.txt	transwede 107 climb to flight level 330
+zf1_08_135.txt	alitalia 117 descend to flight level 250
+zf1_08_138.txt	shamrock 4822 good morning descend to flight level thr 290
+zf1_08_139.txt	IFG good morning squawk 2744
+zf1_08_140.txt	lufthansa 4575 climb to flight level 320
+zf1_08_147.txt	sabena 826A rhein 12092 good bye
+zf1_08_148.txt	alitalia 292 as well rhein 12092 ciao
+zf1_08_150.txt	europa 361 good morning radar contact
+zf1_08_157.txt	europa 361 descend to flight level 320
+zf1_08_158.txt	lufthansa 8221 descend to flight level 290
+zf1_08_163.txt	IFG turn right to zurich east
+zf1_08_166.txt	alitalia 401 climb to flight level 310
+zf1_08_174.txt	turkish 925 set course direct to morok
+zf1_08_176.txt	speedbird 77WW good morning squawk 2720
+zf1_08_181.txt	IFG contact now rhein 132.4 good bye
+zf1_08_186.txt	speedbird 77WW turn left 15 degrees
+zf1_08_187.txt	alitalia 485 good morning descend to flight level 250
+zf1_08_192.txt	lauda 6869 good morning roger
+zf1_08_194.txt	lauda 6869 descend to flight level 290
+zf1_08_195.txt	hamburg air 2500 good morning radar contact
+zf2_01_009.txt	saudia 183 continue heading
+zf2_01_011.txt	what about now
+zf2_01_014.txt	DKG good morning radar contact climb flight level 330
+zf2_01_028.txt	lufthansa 5294 contact geneva 13315 bye bye
+zf2_01_035.txt	transavia 381 set course direct canne
+zf2_01_037.txt	good morning blue 572 radar contact continue descent to flight level 250
+zf2_01_044.txt	good day to you emirates 81 radar contact maintain flight level 330 proceed via trasadingen zurich east fusse
+zf2_01_048.txt	good morning aero lloyd 560 radar contact maintain flight level 330 your heading
+zf2_01_051.txt	roger 13452
+zf2_01_056.txt	lufthansa 8268 good morning radar contact maintain flight level 290 proceed olben saint prex
+zf2_01_063.txt	jetcom 133 good morning radar contact continue to climb flight level 330 route via zurich east fusse
+zf2_01_066.txt	lufthansa 4723 heading 090
+zf2_01_067.txt	air berlin 5081 good morning radar contact proceed trasadingen saint prex
+zf2_01_085.txt	aero lloyd 560 further left by 10 degrees
+zf2_01_088.txt	gulf air 032 good morning radar contact maintain flight level 330 i ll call you back with direct
+zf2_01_090.txt	aero lloyd 560 resume own navigation direct saint prex and further contact geneva 13315 bye bye
+zf2_01_108.txt	thank you
+zf2_01_110.txt	FSI direct canne descend flight level 250
+zf2_01_115.txt	swissair 6552 descend flight level 270
+zf2_01_121.txt	gulf air 032 proceed direct fusse
+zf2_01_128.txt	us air 14 roger radar contact i ll call you back with lower
+zf2_01_132.txt	lufthansa 4393 descend flight level 290
+zf2_01_135.txt	aviva 9081 turn right heading of 090
+zf2_01_137.txt	swissair 488 turn right heading of 060
+zf2_01_145.txt	lufthansa 5550 own navigation fribourg
+zf2_01_147.txt	us air 14 direct fusse
+zf2_01_149.txt	lufthansa 5550 descend flight level 250
+zf2_01_150.txt	germania 540 contact geneva 13315
+zf2_01_151.txt	sabena 826A radar contact climb flight level 310 expedite your climb
+zf2_01_152.txt	FSI contact milan 13452
+zf2_01_159.txt	FOL contact milan 13452
+zf2_01_175.txt	transwede 107 direct saint prex
+zf2_01_178.txt	united 69 roger good morning radar contact
+zf2_01_183.txt	united 69 heading of 090
+zf2_01_189.txt	jet set 442 descend flight level 250
+zf2_01_201.txt	air france 6734 direct fusse
+zf2_01_206.txt	ok
+zf2_01_209.txt	roger
+zf2_01_211.txt	alitalia 292 can you call in please
+zf2_01_215.txt	alitalia 119 good morning radar contact maintain flight level 330 trasadingen canne
+zf2_01_218.txt	alitalia 401 good morning radar contact maintain flight level 290 report your heading
+zf2_01_219.txt	roger continue
+zf2_01_223.txt	transwede 107 geneva 13315 bye
+zf2_01_235.txt	lufthansa 4652 turn right for saint prex
+zf2_01_238.txt	alitalia 117 milan 13452
+zf2_01_244.txt	roger trasadingen canne
+zf2_01_246.txt	alitalia 119 continue heading until advised
+zf2_01_253.txt	lufthansa 4652 contact geneva 13315 bye bye
+zf2_01_255.txt	ohh that s nice thanks
+zf2_01_256.txt	austrian 412 good morning radar contact maintain flight level 330 trasadingen zurich east fusse
+zf2_01_257.txt	lufthansa 4575 contact rhein control 132.4 bye bye
+zf2_01_260.txt	alitalia 401 heading 190
+zf2_01_261.txt	aero lloyd 509 correction aero lloyd 590 contact milan 13452 bye
+zf2_01_264.txt	good morning alitalia 485 radar contact descend flight level 310 right turn 10 degrees
+zf2_01_267.txt	jetaviation 701 good morning radar contact descend flight level 310
+zf2_01_272.txt	alitalia 485 descend flight level 290
+zf2_01_275.txt	turkish 925 turn left for hochwald
+zf2_01_279.txt	austrian 412 heading of 100
+zf2_01_286.txt	lauda 6869 descend flight level 290
+zf2_01_287.txt	that s correct further contact milan 13452 bye bye
+zf2_01_289.txt	turkish 925 contact reims 1344 bye
+zf2_02_002.txt	lufthansa 5294 contact geneva on 12815 bye
+zf2_02_004.txt	good morning transavia 381 radar contact proceed direct saronno
+zf2_02_008.txt	good morning blue 572 radar contact continue descent flight level 250
+zf2_02_012.txt	good morning lufthansa 4723 radar contact
+zf2_02_022.txt	good morning lufthansa 5550 maintain for the time 280 and what is your requested level
+zf2_02_036.txt	lufthansa 8268 further climb clearance radar 133.4 bye bye
+zf2_02_041.txt	jetcom 133 roger further climb contact radar 133.4 bye
+zf2_02_046.txt	air inter 320PH radar contact climb flight level 320
+zf2_02_053.txt	gulf air 032 good morning radar contact maintain flight level 340 proceed trasadingen zurich east fusse
+zf2_02_058.txt	ok sorry hapag lloyd 171 radar contact continue climb flight level 290
+zf2_02_066.txt	air france 356 roger good morning squawk 7536
+zf2_02_071.txt	aero lloyd 517
+zf2_02_078.txt	aero lloyd 517 from zurich
+zf2_02_088.txt	us air 14 descend flight level 340 left turn heading 090
+zf2_02_089.txt	air berlin 5081 contact geneva on frequency 13315 bye bye
+zf2_02_101.txt	lufthansa 5550 resume own navigation inbound fribourg
+zf2_02_102.txt	aviva 9081 descend flight level 270
+zf2_02_103.txt	roge
+zf2_02_110.txt	lufthansa 5550 contact geneva on 1 ohh milan 13452 bye bye
+zf2_02_129.txt	swissair 488 climb flight level 320
+zf2_02_133.txt	aviva 9081 set course direct fusse and further contact milan 13452 bye bye
+zf2_02_136.txt	aero lloyd 590 good morning radar contact maintain flight level 300 proceed via trasadingen canne
+zf2_02_149.txt	alitalia 117 descend to flight level 330
+zf2_02_150.txt	netherlands air force 414 good morning radar contact maintain flight level 340 trasadingen saronno
+zf2_02_152.txt	expect in 1 minute opposite traffic
+zf2_02_155.txt	alitalia 401 good morning radar contact maintain flight level 290 proceed trasadingen canne
+zf2_02_162.txt	united 69 contact milan 13452 bye bye
+zf2_02_175.txt	good morning lufthansa 4416 radar contact maintain for the time 290 further climb in 25 miles trasadingen canne
+zf2_02_188.txt	jetaviation 701 good morning radar contact
+zf2_02_189.txt	good morning lauda 6869 radar contact descend flight level 330
+zf2_02_191.txt	ok
+zf2_02_192.txt	thank you
+zf2_02_195.txt	good morning lufthansa 3556 radar contact maintain flight level 290 and proceed trasadingen canne
+zf2_02_197.txt	lufthansa 4416 climb flight level 330
+zf2_02_201.txt	hapag lloyd 3551 good morning radar contact call you back with lower
+zf2_03_003.txt	good morning scandinavian 686 squawk 2704
+zf2_03_005.txt	lufthansa 5282 contact geneva 13815 bye
+zf2_03_020.txt	air malta 004 good morning squawk 2735
+zf2_03_028.txt	good morning lufthansa 4723 radar contact descend now flight level 290 via zurich east fusse
+zf2_03_031.txt	air france 3261 squawk 2724
+zf2_03_033.txt	air france 3261 radar contact continue with present code and proceed trasadingen saint prex climb flight level 290
+zf2_03_036.txt	air malta 004 roger turn right heading of 015
+zf2_03_038.txt	lufthansa 4356 radar contact proceed direct hochwald and then morok
+zf2_03_041.txt	roger radar contact trasadingen and then leave trasadingen on radio 250
+zf2_03_056.txt	lufthansa 8268 contact radar on 133.4 bye bye
+zf2_03_063.txt	jetcom 133 set course direct zurich east
+zf2_03_075.txt	good morning german air force 4901 radar contact maintain flight level 330 trasadingen saint prex
+zf2_03_079.txt	cotam 141 good morning radar contact maintain flight level 320 proceed inbound zurich east zurich east fusse
+zf2_03_081.txt	that s correct
+zf2_03_088.txt	lufthansa 4393 good morning radar contact maintain flight level 330 trasadingen zurich east fusse
+zf2_03_089.txt	air france 1554 good morning radar contact descend flight level 290
+zf2_03_090.txt	condor 104 radar contact turn left heading 255 and climb flight level 340
+zf2_03_091.txt	hamburg air 2546 contact geneva 13315 bye bye
+zf2_03_093.txt	air france 1554 set course direct fusse
+zf2_03_094.txt	lufthansa 3577 contact rhein control 132.4 bye bye
+zf2_03_096.txt	air france 356 roger confirm squawking 3133
+zf2_03_100.txt	aviva 9081 good morning radar contact maintain flight level 340 and turn right by 10 degrees
+zf2_03_104.txt	swissair 488 good morning radar contact i ll call you back with further climb
+zf2_03_108.txt	air france 356 affirm what is your requested level
+zf2_03_124.txt	lufthansa 4393 turn left heading of 085
+zf2_03_129.txt	german air force 4901 contact geneva 13315 bye bye
+zf2_03_139.txt	swissair 488 own navigation inboundT
+zf2_03_143.txt	sabena 826A climb flight level 300
+zf2_03_144.txt	swissair 6552 contact milan 13452 bye bye
+zf2_03_145.txt	ltu 7756 good morning radar contact
+zf2_03_149.txt	ltu 7756 good morning radar contact climb flight level 290
+zf2_03_154.txt	sabena 826A you re interested in 320
+zf2_03_156.txt	speedway 3469 contact milan 13452 bye bye
+zf2_03_177.txt	aero lloyd 590 good morning radar contact maintain flight level 310 trasadingen canne
+zf2_03_183.txt	sabena 826A resume own navigation trasadingen
+zf2_03_188.txt	air malta 100 good morning maintain flight level 340 and squawk 5717
+zf2_03_193.txt	alitalia 401 good morning radar contact maintain 310 call you back with climb
+zf2_03_197.txt	shamrock 4822 descend to flight level 250
+zf2_03_201.txt	alitalia 292 contact rhein control 120.92 bye bye
+zf2_03_204.txt	roger and proceed direct trasadingen
+zf2_03_205.txt	alitalia 117 descend flight level 310
+zf2_03_206.txt	air malta 100
+zf2_03_213.txt	lufthansa 8221 contact milan on 134.52 bye
+zf2_03_229.txt	jetaviation 701 continue via trasadingen and then fribourg
+zf2_03_236.txt	roger
+zf2_03_238.txt	roger your rate at least 2000 please
+zf2_03_242.txt	lauda 6869 descend flight level 310
+zf2_03_244.txt	aero lloyd 590 contact milan 13452 bye
+zf2_03_245.txt	netherlands air force 414 contact milan 13452 bye
+zf2_03_253.txt	alitalia 401 contact milan 13452 bye
+zf2_03_254.txt	alitalia 485 contact milan now on 13452 bye
+zf2_03_261.txt	hapag lloyd 3551 descend flight level 340
+zf2_03_266.txt	roger lufthansa 3556 radar contact
+zf2_04_001.txt	israeli 686 heading 010
+zf2_04_002.txt	good afternoon air france 3261 squawk 2724
+zf2_04_007.txt	israeli 686 heading of 360
+zf2_04_008.txt	blue 572 good morning radar contact descend flight level 250
+zf2_04_010.txt	transavia 381 resume own navigation direct canne
+zf2_04_022.txt	transavia 381 contact milan 13452 bye
+zf2_04_047.txt	okaydoke make it 59
+zf2_04_050.txt	air france 3261 no further speed restrictions
+zf2_04_053.txt	jetcom 133 continue climb flight level 340
+zf2_04_063.txt	air inter 3 ze 20PH contact reims 1344 bye
+zf2_04_073.txt	and condor 104 what is your rate of climb
+zf2_04_076.txt	condor 104 continue climb flight level 340
+zf2_04_080.txt	air france 356 good afternoon squawk 7536
+zf2_04_083.txt	FSI contact milan 13452 bye
+zf2_04_098.txt	cotam 1141 climb flight level 330
+zf2_04_099.txt	hapag lloyd 171 roger what is your position
+zf2_04_100.txt	hapag lloyd 171 please contact geneva 13315 again
+zf2_04_105.txt	0 sorry jet set 442 level is 290
+zf2_04_116.txt	swissair 488 continue climb flight level 320
+zf2_04_121.txt	aero lloyd 517 good morning radar contact maintain level 320 proceed willisau trasadingen karlsruhe
+zf2_04_123.txt	lufthansa 4731 contact rhein control 132.4 bye
+zf2_04_126.txt	alitalia 117 descend flight level 250
+zf2_04_127.txt	lufthansa 4393 continue descent flight level 300
+zf2_04_129.txt	alitalia 292 climb flight level 320
+zf2_04_134.txt	good afternoon lufthansa 4652 radar contact proceed via trasadingen and saint prex climb flight level 330
+zf2_04_137.txt	alitalia 292 own navigation trasadingen
+zf2_04_143.txt	adria 1642 turn left 10 degrees
+zf2_04_145.txt	netherlands air force 414 roger radar contact turn left by 10 degrees
+zf2_04_146.txt	lufthansa 46 52 direct saint prex
+zf2_04_147.txt	us air 14 descend level 290
+zf2_04_153.txt	lufthansa 4393 proceed direct fusse milan 13452 bye
+zf2_04_154.txt	us air 14 own navigation fusse milan 13452 bye
+zf2_04_155.txt	cotam 141 contact milan 13452 bye
+zf2_04_161.txt	alitalia 401 climb flight level 310
+zf2_04_163.txt	lufthansa 4652 climb flight level 350
+zf2_04_191.txt	alitalia 401 own navigation canne
+zf2_04_196.txt	lufthansa 4652 geneva 1 2815 bye
+zf2_04_208.txt	lufthansa 4416 turn left by 15 degrees
+zf2_04_209.txt	jetaviation 701 contact geneva on milan 13452 bye
+zf2_04_210.txt	alitalia 487 descend flight level 250
+zf2_04_220.txt	lufthansa 4376 good morning maintain flight level 290 trasadingen saint prex
+zf2_04_225.txt	lufthansa 4416 milan 13452 bye
+zf2_04_226.txt	sabena 9369 good morning radar contact maintain 310 trasadingen fribourg
+zf2_05_008.txt	air france 1509 good afternoon squawk 2776 climb flight level 340
+zf2_05_010.txt	air france 1509 your rate of climb will be
+zf2_05_017.txt	bama 15 roger due to crossing traffic turn right heading of 180 i ll call you back with direct again
+zf2_05_018.txt	lufthansa 4703 descend flight level 290
+zf2_05_027.txt	speedway 3352
+zf2_05_029.txt	klm 346 contact now rhein control on 12092 bye bye
+zf2_05_038.txt	lufthansa 4703 contact milan 13452 bye bye
+zf2_05_043.txt	speedway 3352
+zf2_05_049.txt	ltu 1602 left turn 10 degrees
+zf2_05_052.txt	japan air 419 contact milan on 13452 bye bye
+zf2_05_057.txt	lufthansa 4408 contact geneva 13315 bye bye
+zf2_05_061.txt	tarom 7534 contact milan 13452 bye bye
+zf2_05_062.txt	cross air 663
+zf2_05_086.txt	air france 09N resume own navigation direct hochwald and morok and further contact reims 134.4 bye bye
+zf2_05_092.txt	condor 607 contact rhein control on 132.4 bye bye
+zf2_05_095.txt	tunair 4802 goo good afternoon squawk 2751
+zf2_05_098.txt	good afternoon airlink 13 radar contact maintain flight level 310 flight planned route
+zf2_05_101.txt	tunis air 4802 radar contact direct karlsruhe
+zf2_05_104.txt	air berlin 5261 good afternoon radar contact maintain flight level 330 trasadingen saint prex
+zf2_05_106.txt	lufthansa 3550 good afternoon radar contact trasadingen canne
+zf2_05_107.txt	alitalia 416 radar contact climb flight level 300 final level
+zf2_05_114.txt	roger call you back
+zf2_05_117.txt	ifo 22B good afternoon squawk 7535
+zf2_05_118.txt	portugalia 543 contact geneva 13315
+zf2_05_122.txt	lufthansa 3604 own navigation canne
+zf2_05_125.txt	alitalia 324 radar contact flight planned route
+zf2_05_132.txt	lufthansa 4700 contact geneva on 13315 bye bye
+zf2_05_135.txt	sata 9601 good afternoon squawk 2764
+zf2_05_136.txt	lufthansa 5931 right turn 10 degrees
+zf2_05_148.txt	alitalia
+zf2_05_155.txt	aero lloyd 533
+zf2_05_177.txt	lufthansa 5931 contact rhein control on 132.4 bye bye
+zf2_05_186.txt	sata s 9601 turn right 10 degrees
+zf2_05_193.txt	lufthansa 3550 descend flight level 250
+zf2_05_195.txt	sabena 806 turn right 15 degrees
+zf2_05_198.txt	aviva 1061
+zf2_05_201.txt	alitalia 324 contact reims 1344 bye
+zf2_05_209.txt	cross air 518 contact rhein control on 132.4 bye
+zf2_05_210.txt	DFS further climb geneva 13315 bye
+zf2_05_215.txt	DME further climb clearance contact radar 133 point 4 bye bye
+zf2_05_217.txt	israeli 442 turn right heading of 190 descend to flight level 270
+zf2_05_225.txt	sabena 806 climb flight level 360
+zf2_05_238.txt	alitalia 291 descend flight level 250
+zf2_05_245.txt	algerie 2073 good afternoon radar contact maintain flight level 290 trasadingen saint prex 290 cruising level
+zf2_05_251.txt	good afternoon air portugal 567 radar contact squawk 2754
+zf2_05_254.txt	thank you very much indeed
+zf2_06_022.txt	alitalia 158 radar contact flight planned route
+zf2_06_030.txt	air france 1509 contact radar on 1334 bye bye
+zf2_06_039.txt	lufthansa 4703 descend flight level 290
+zf2_06_043.txt	air france 689 now radar contact proceed via albix hochwald morok
+zf2_06_049.txt	lufthansa 4408 climb flight level 330
+zf2_06_052.txt	tarom 7534 good afternoon radar contact proceed zurich east fusse
+zf2_06_073.txt	bama 15 contact milan 134.52 bye bye
+zf2_06_074.txt	good afternoon condor 607 radar contact proceed via willisau trasadingenT
+zf2_06_087.txt	good afternoon DFS radar contact correction IOK radar contact proceed trasadingen saronno climb flight level 330
+zf2_06_096.txt	lauda 109
+zf2_06_107.txt	alitalia 416 roger squawk 7533
+zf2_06_109.txt	lauda 109 from zurich if you read squawk ident
+zf2_06_111.txt	do you have tunis air 4802
+zf2_06_122.txt	ok do you have the ifo 22B
+zf2_06_134.txt	aero lloyd 533 fly heading of 035
+zf2_06_136.txt	the aero lloyd 533
+zf2_06_137.txt	fly heading of 035
+zf2_06_147.txt	airlink 13 contact milan 13452 bye
+zf2_06_149.txt	air france 670 descend flight level 250
+zf2_06_158.txt	air france 647 good afternoon squawk 5727
+zf2_06_166.txt	air france 670 contact milan on 13452 bye
+zf2_06_171.txt	bye bye
+zf2_06_175.txt	merair 6952 good afternoon radar contact trasadingen saronno
+zf2_06_180.txt	ifo 22B contact reims on 1344 bye
+zf2_06_181.txt	air france 680 descend flight level 330
+zf2_06_182.txt	alitalia 291 good afternoon radar contact trasadingen saronno
+zf2_06_188.txt	merair 6944 good afternoon radar contact trasadingen saronno
+zf2_06_190.txt	cross air 518 directT
+zf2_06_192.txt	air france 680 descend flight level 310
+zf2_06_193.txt	air malta 104 contact reims 1344
+zf2_06_195.txt	lufthansa 3550 milan 13452 bye
+zf2_06_199.txt	what is your full callsign
+zf2_06_200.txt	JS6 roger and your position
+zf2_06_204.txt	alright 13315 please
+zf2_06_208.txt	alitalia 324 contact reims 1344 bye
+zf2_06_209.txt	DFS geneva 13315 bye
+zf2_06_217.txt	good afternoon lufthansa 4665 radar contact descend flight level 340
+zf2_06_220.txt	merair 6952 turn left by 15 degrees
+zf2_06_225.txt	israeli 442 descend to flight level 2 fi correction 90
+zf2_06_238.txt	israeli 442 own navigation canne
+zf2_06_244.txt	air france 2426 good afternoon radar contact maintain level 330 trasadingen zurich east fusse
+zf2_06_245.txt	algerie 2073 heading of 210
+zf2_06_246.txt	merair 6944 descend flight level 250
+zf2_06_248.txt	0im sorry mis merair 6944 maintain 310 i see your destination sorry maintain 310
+zf2_06_255.txt	DNA proceed via trasadingen canne
+zf2_07_002.txt	israeli 686 further climb clearance contact radar 133.4 bye bye
+zf2_07_006.txt	lufthansa 5282 contact geneva 133.15 bye bye
+zf2_07_008.txt	swissair 6520 good afternoon radar contact climb flight level 320
+zf2_07_013.txt	twa 881 good afternoon radar contact maintain flight level 340 flight planned route
+zf2_07_021.txt	swissair 6520 contact rhein control 12092 bye
+zf2_07_022.txt	air france 3261 radar contact trasa saint prex
+zf2_07_026.txt	yes please
+zf2_07_030.txt	transavia 381 turn left by 10 degrees
+zf2_07_037.txt	sabena 7816 radar contact direct karlsruhe
+zf2_07_048.txt	transavia 381 contact milan 13452 bye
+zf2_07_050.txt	FSI fly report your heading
+zf2_07_068.txt	hapag lloyd 86 correction hapag lloyd 653 climb flight level 330 final level
+zf2_07_070.txt	jetcom 133 further climb clearance contact radar 133.4 bye
+zf2_07_077.txt	speedbird 3469 good afternoon radar contact maintain level 330 flight planned route
+zf2_07_078.txt	sabena 7816 contact rhein control on 120.92 bye
+zf2_07_087.txt	gulf air 032 radar contact call you back with lower
+zf2_07_090.txt	air france 3261 geneva on 13315 bye
+zf2_07_096.txt	hapag lloyd 653 contact geneva 13315 bye
+zf2_07_108.txt	jet set 442 good afternoon radar contact descend flight level 290
+zf2_07_121.txt	OAV roger radar contact
+zf2_07_122.txt	gulf air 032 turn left heading of 085
+zf2_07_126.txt	aviva 9081 descend flight level 330 rate 2000
+zf2_07_127.txt	us air 14 good afternoon radar contact heading of 090 descend flight level 340
+zf2_07_131.txt	alitalia 292 radar contact direct karlsruhe
+zf2_07_141.txt	aero lloyd 517 set course direct karlsruhe
+zf2_07_149.txt	aviva 9081 descend flight level 290
+zf2_07_152.txt	ltu 7756 contact geneva 13315 bye bye
+zf2_07_177.txt	lufthansa 4652 direct saint prex
+zf2_07_181.txt	alitalia 292 contact rhein control 120.92 bye
+zf2_07_182.txt	sabena 826A contact rhein control 12092 bye
+zf2_07_186.txt	roger shamrock 4822 further contact milan 134.52 bye bye
+zf2_07_210.txt	lufthansa 4416 climb flight level 330
+zf2_07_221.txt	hapag lloyd 3551 good afternoon radar contact turn right by 10 degrees and descend flight level 340
+zf3_01_008.txt	klm 346 zurich radar good morning squawk 2766
+zf3_01_009.txt	lufthansa 5305 zurich radar good morning squawk 2756
+zf3_01_014.txt	negative climb to flight level 340
+zf3_01_024.txt	correct
+zf3_01_026.txt	klm 346 climb to flight level 310
+zf3_01_030.txt	lufthansa 5305 report your heading now to zurich sector 13.4 bye bye
+zf3_01_042.txt	roger and what is your rate of climb
+zf3_01_043.txt	iberia 3530 due traffic descend now to flight level 290
+zf3_01_047.txt	air france 1509 set course to hochwald
+zf3_01_053.txt	french line 9163 fly heading 095 until advised
+zf3_01_069.txt	japanair 419 descend to flight level 250 to cross canne at level
+zf3_01_072.txt	ok japanair 419
+zf3_01_078.txt	ltu 1602 zurich radar good afternoon climb to flight level 340
+zf3_01_096.txt	lufthansa 3566 fly heading 165
+zf3_01_097.txt	emirates 024 zurich radar good morning identified route trasadingen zurich east fusse maintain flight level 340
+zf3_01_098.txt	lufthansa 4700 zurich radar good morning identified route trasadingen saint prex and maintain flight level 330
+zf3_01_102.txt	alitalia 158 contact reims control 134.4 ciao
+zf3_01_116.txt	air berlin 5261 zurich radar good morning identified maintain flight level 330 trasadingen saint prex
+zf3_01_123.txt	portugalia 543 zurich radar good afternoo sorry good morning climb to flight level 330
+zf3_01_133.txt	air malta 450 roger fly heading 345 until advised
+zf3_01_134.txt	lufthansa 3604 contact now milan 134.52 bye bye
+zf3_01_135.txt	air france 670 continue descent to flight level 250
+zf3_01_136.txt	lufthansa 4700 contact geneva 133.15 bye bye
+zf3_01_137.txt	portugalia 543 your rate of climb
+zf3_01_138.txt	ok keep at least 1300 feet until reaching 330 due to opposite traffic
+zf3_01_140.txt	alitalia 404 zurich radar good morning squawk 7532
+zf3_01_143.txt	cross air 518 zurich radar good morning identified routing trasadingen T 280 is final level for you
+zf3_01_154.txt	GBVJI zurich radar good morning roger i ll call you back for lower
+zf3_01_156.txt	GJI descend to flight level 340
+zf3_01_164.txt	IOK milan 13452 ciao
+zf3_01_169.txt	station calling say again
+zf3_01_182.txt	station calling say again the callsign please
+zf3_01_194.txt	air france 680 descend to flight level 290
+zf3_01_199.txt	alitalia 404 rhein control 132.4 ciao
+zf3_01_200.txt	lufthansa 5931 rhein 132.4 bye bye
+zf3_01_201.txt	aerovic 1061 turn immediately right heading 215
+zf3_01_232.txt	air france 2426 zurich radar good morning identified trasadingen zurich east fusse maintain flight level 330
+zf3_01_242.txt	aero lloyd 562 fly heading 210 until advised
+zf3_01_244.txt	DCINA good morning identified trasadingen saronno maintain flight level 290
+zf3_02_007.txt	lufthansa 5305 own navigation to ageri zurich eastT
+zf3_02_014.txt	lufthansa 4390 milan 134.52 bye bye
+zf3_02_018.txt	french line 9163 zurich radar good afternoon identified maintain flight level 330 trasadingen zurich east fusse
+zf3_02_022.txt	condor 666 zurich radar good afternoon continue climb to flight level 330
+zf3_02_030.txt	condor 666 contact geneva 133.15 bye bye
+zf3_02_032.txt	alitalia 6474 as well rhein 120.92 bye bye
+zf3_02_040.txt	correct and high rate of climb please
+zf3_02_048.txt	good afternoon descend to flight level 290
+zf3_02_049.txt	alitalia 150 good afternoon squawk 2745
+zf3_02_061.txt	reach 60153 resume own navigation to trasadingenT
+zf3_02_069.txt	lufthansa 3604 good afternoon climb immediately up to 330 high rate of climb please
+zf3_02_071.txt	reach 60153 left 10 degrees until advised
+zf3_02_073.txt	negative further left heading left 160
+zf3_02_075.txt	reach 60153 own navigation to T and contact rhein 132.4b
+zf3_02_077.txt	3604 and for further climb zurich sector 134 decim sorry 133.4 bye bye
+zf3_02_082.txt	lufthansa 4700 climb to flight level 330
+zf3_02_083.txt	alitalia 150 contact rhein 120.92 ciao
+zf3_02_089.txt	lufthansa 4700 for further climb zurich sector 133.4 bye bye
+zf3_02_091.txt	reach 60153 contact rhein 132 decimal4
+zf3_02_095.txt	air berlin 5261 own navigation to saint prex
+zf3_02_103.txt	lufthansa 3550 zurich radar good afternoon identified route trasadingen saronno maintain flight level 290
+zf3_02_106.txt	alitalia 416 zurich radar good afternoon squawk 7533
+zf3_02_109.txt	alitalia 416 you re identified climb to flight level 310 will be final level
+zf3_02_112.txt	air france 670 own navigation saronno
+zf3_02_120.txt	alitalia 416 own navigation to zurich east
+zf3_02_129.txt	airlink 13 milan 134.52
+zf3_02_131.txt	GBVJI zurich radar good afternoon descend to flight level 340
+zf3_02_136.txt	ok maintain 290
+zf3_02_152.txt	alitalia 291 zurich radar good afternoon trasadingen saronno maintain flight level 330
+zf3_02_154.txt	sabena 806 zurich radar good afternoon squawk 2741
+zf3_02_160.txt	DME climb to flight level 340
+zf3_02_175.txt	fine
+zf3_02_179.txt	DME climb to flight level 350
+zf3_02_180.txt	aerovic 1061 descend to flight level 250
+zf3_02_181.txt	merair 6952 clear of traffic own navigation saronno
+zf3_02_183.txt	DME continue heading and please call into zurich sector 133.4 bye bye
+zf3_02_185.txt	aerovic 1061 call now genev sorry m milan 134.52 bye bye
+zf3_02_189.txt	iberia 6710 zurich radar good afternoon you re identified maintain flight level 340 trasadingen saint prex
+zf3_02_194.txt	merair 6952 milan 134.52 bye bye
+zf3_02_196.txt	lufthansa 4223 zurich radar good afternoon you re identified maintain flight level 330 trasadingen zurich east fusse
+zf3_02_198.txt	should you be with geneva
+zf3_02_199.txt	1 th 13315 please
+zf3_02_200.txt	air france 2426 good afternoon identified trasadingen zurich east fusse maintain flight level 330
+zf3_03_002.txt	french line 9163 zurich radar good morning identified maintain flight level 330 trasadingen zurich east fusse
+zf3_03_010.txt	lufthansa 4703 zurich radar good morning i ll call you back for descent
+zf3_03_011.txt	tarom 7534 zurich radar good morning identified maintain flight level 330 flight planned route
+zf3_03_014.txt	lufthansa 4703 descend to flight level 290
+zf3_03_021.txt	air france 2621 zurich radar good morning squawk now 2773
+zf3_03_027.txt	air france 2621 identified maintain flight level 320 trasadingen hochwald morok
+zf3_03_029.txt	ltu 1602 zurich
+zf3_03_034.txt	lufthansa 4703 milan 13452 bye bye
+zf3_03_035.txt	french line 9163 milan 13452
+zf3_03_061.txt	tarom 7534 milan 134.52 bye bye
+zf3_03_084.txt	maintain 320
+zf3_03_087.txt	ok maintain 330
+zf3_03_089.txt	portugalia 543 climb to flight level 330
+zf3_03_105.txt	IOK climb to flight level 330
+zf3_03_107.txt	air france 670 right heading 175
+zf3_03_117.txt	french air force 4410 milan 13452 good day
+zf3_03_119.txt	cross air 518 climb to flight level 310
+zf3_03_129.txt	GBVJI good morning descend to flight level 330 initially
+zf3_03_130.txt	merair 6952 zurich radar good morning identified route trasadingen saronno i ll call you back for further climb stand by
+zf3_03_132.txt	aerovic 1061 zurich radar good morning identified trasadingen fribourg maintain flight level 300
+zf3_03_139.txt	GJI descend to flight level 290
+zf3_03_141.txt	lufthansa 4665 zurich radar good morning i ll call you back for lower stand by
+zf3_03_147.txt	lufthansa 4665 descend to flight level 290
+zf3_03_151.txt	correct and continue climb now to flight level 340 please
+zf3_03_153.txt	air france 324 contact reims 1344
+zf3_03_159.txt	air france 680 zurich radar good morning descend to flight level 250
+zf3_03_160.txt	cross air 518 rhein 1324 bye bye
+zf3_03_168.txt	lufthansa 4223 zurich radar good morning identified trasadingen zurich east fusse maintain flight level 330
+zf3_03_171.txt	air france 2426 good morning
