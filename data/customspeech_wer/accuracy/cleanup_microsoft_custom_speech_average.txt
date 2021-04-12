@@ -1,0 +1,3 @@
+Total files tested: 1922
+{0: 1359, 20: 469, 40: 78, 60: 7, 80: 2, 100: 6}
+Average word error rate: 4.4864627395799355

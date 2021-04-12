@@ -1,0 +1,1 @@
+lauda 6869 turn left heading 095 descend to flight level 330

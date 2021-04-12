@@ -1,0 +1,1 @@
+condor 607 contact rhein control on 132.4 bye bye
