@@ -1,6 +1,7 @@
 ﻿using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
 using System;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace STT_SDK_TEST
@@ -62,15 +63,26 @@ namespace STT_SDK_TEST
             // NOTE: microsoft recommends using the restult itself, even if an alternative from Best() has higher confidence
             // https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/faq-stt -> "Q: I get several results for each phrase with the detailed output format. Which one should I use?"
 
-            foreach (var alt in result.Best())
-            {
-                Console.WriteLine($"\t{alt.Confidence}\t{alt.Text}");
-            }
-
+            
             // to get confidence for every word via json
             // credits: https://stackoverflow.com/a/61567877/3218281
             string json = result.Properties.GetProperty(PropertyId.SpeechServiceResponse_JsonResult);
-            Console.WriteLine(json);
+
+            SpeechJsonResult jsonResult = JsonSerializer.Deserialize<SpeechJsonResult>(json);
+            foreach (var alt in jsonResult.NBest)
+            {
+                Console.WriteLine($"\t{alt.Confidence}\t{alt.Lexical}");
+                Console.WriteLine();
+
+                foreach (var word in alt.Words)
+                {
+                    Console.WriteLine($"\t\t\t{word.Confidence}\t{word.Word}");
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("------------------------------------------------------------------------------------------");
+            }
+
 
             Console.WriteLine();
         }
