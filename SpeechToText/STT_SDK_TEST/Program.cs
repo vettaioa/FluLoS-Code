@@ -1,6 +1,9 @@
 ﻿using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace STT_SDK_TEST
@@ -26,7 +29,8 @@ namespace STT_SDK_TEST
         }
 
 
-        // TODO: https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/dotnet/from-file/helloworld/Program.cs
+        // TODO: handle errors according to sample
+        // https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/dotnet/from-file/helloworld/Program.cs
 
 
 
@@ -35,26 +39,8 @@ namespace STT_SDK_TEST
             using var audioConfig = AudioConfig.FromWavFileInput(TESTFILE);
             using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 
-
-
             var result = await recognizer.RecognizeOnceAsync();
-            Console.WriteLine($"RECOGNIZED: Text={result.Text}");
-            Console.WriteLine();
-
-            var alternatives = SpeechRecognitionResultExtensions.Best(result);
-            foreach(var alt in alternatives)
-            {
-                Console.WriteLine($"Alternative:  Conf={alt.Confidence}   Text={alt.Text}");
-
-                if (alt.Words != null)
-                {
-                    // note: currently not getting results -> needs to be further tested
-                    foreach (var altWord in alt.Words)
-                    {
-                        Console.WriteLine($"    {altWord.Word}");
-                    }
-                }
-            }
+            await WriteResult(result);
         }
 
 
@@ -65,7 +51,31 @@ namespace STT_SDK_TEST
 
             Console.WriteLine("Speak into your microphone.");
             var result = await recognizer.RecognizeOnceAsync();
-            Console.WriteLine($"RECOGNIZED: Text={result.Text}");
+            await WriteResult(result);
+        }
+
+        private async static Task WriteResult(SpeechRecognitionResult result)
+        {
+            Console.WriteLine($"RECOGNIZED: {result.Text}");
+            Console.WriteLine("Alternatives:");
+
+            var alternatives = SpeechRecognitionResultExtensions.Best(result).OrderByDescending(r => r.Confidence);
+            foreach (var alt in alternatives)
+            {
+                // TODO: maybe use lexical instead of text?
+                Console.WriteLine($"\t{alt.Confidence}\t{alt.Text}");
+                IEnumerable<WordLevelTimingResult> res = alt.Words;
+
+                if (alt.Words != null)
+                {
+                    // note: currently not getting results -> needs to be further tested
+                    foreach (var altWord in alt.Words)
+                    {
+                        Console.WriteLine($"\t\t\t{altWord.Word}");
+                    }
+                }
+            }
+            Console.WriteLine();
         }
     }
 }
