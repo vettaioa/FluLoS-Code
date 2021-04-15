@@ -51,8 +51,9 @@ namespace Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls {
     public string checkAirline(string value) {
       marksAirline.Ratio = 0.5F;
 
-      if(marksAirline.fuzzySearching(value) != null) {
-        return marksAirline.fuzzySearching(value);
+      string result = marksAirline.fuzzySearching(value);
+      if (result != null) {
+        return result;
       }
       return "";
     }
@@ -61,8 +62,9 @@ namespace Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls {
     public string checkFlightNumber(string value) {
       marksFlightNumber.Ratio = 0.5F;
 
-      if(marksFlightNumber.fuzzySearching(value) != null) {
-        return marksFlightNumber.fuzzySearching(value);
+      string result = marksFlightNumber.fuzzySearching(value);
+      if(result != null) {
+        return result;
       }
       return "";
     }
