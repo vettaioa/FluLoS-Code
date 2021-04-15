@@ -1,9 +1,6 @@
 ﻿using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace STT_SDK_TEST
@@ -24,6 +21,10 @@ namespace STT_SDK_TEST
             speechConfig.OutputFormat = OutputFormat.Detailed;      // to get multiple results from SDK
             speechConfig.EndpointId = ENDPOINT;
 
+            // to get confidence for every word
+            // credits: https://stackoverflow.com/a/61567877/3218281
+            speechConfig.SetServiceProperty("wordLevelConfidence", "true", ServicePropertyChannel.UriQueryParameter);
+
             //await FromMic(speechConfig);
             await FromFile(speechConfig);
         }
@@ -40,41 +41,37 @@ namespace STT_SDK_TEST
             using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 
             var result = await recognizer.RecognizeOnceAsync();
-            await WriteResult(result);
+            WriteResult(result);
         }
-
 
         async static Task FromMic(SpeechConfig speechConfig)
         {
-            using var audioConfig = AudioConfig.FromDefaultMicrophoneInput();
+            using var audioConfig = AudioConfig.FromDefaultMicrophoneInput();            
             using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 
             Console.WriteLine("Speak into your microphone.");
             var result = await recognizer.RecognizeOnceAsync();
-            await WriteResult(result);
+            WriteResult(result);
         }
 
-        private async static Task WriteResult(SpeechRecognitionResult result)
+        private static void WriteResult(SpeechRecognitionResult result)
         {
             Console.WriteLine($"RECOGNIZED: {result.Text}");
             Console.WriteLine("Alternatives:");
 
-            var alternatives = SpeechRecognitionResultExtensions.Best(result).OrderByDescending(r => r.Confidence);
-            foreach (var alt in alternatives)
-            {
-                // TODO: maybe use lexical instead of text?
-                Console.WriteLine($"\t{alt.Confidence}\t{alt.Text}");
-                IEnumerable<WordLevelTimingResult> res = alt.Words;
+            // NOTE: microsoft recommends using the restult itself, even if an alternative from Best() has higher confidence
+            // https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/faq-stt -> "Q: I get several results for each phrase with the detailed output format. Which one should I use?"
 
-                if (alt.Words != null)
-                {
-                    // note: currently not getting results -> needs to be further tested
-                    foreach (var altWord in alt.Words)
-                    {
-                        Console.WriteLine($"\t\t\t{altWord.Word}");
-                    }
-                }
+            foreach (var alt in result.Best())
+            {
+                Console.WriteLine($"\t{alt.Confidence}\t{alt.Text}");
             }
+
+            // to get confidence for every word via json
+            // credits: https://stackoverflow.com/a/61567877/3218281
+            string json = result.Properties.GetProperty(PropertyId.SpeechServiceResponse_JsonResult);
+            Console.WriteLine(json);
+
             Console.WriteLine();
         }
     }
