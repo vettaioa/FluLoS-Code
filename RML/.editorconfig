@@ -1,0 +1,12 @@
+# .editorconfig for the RML solution
+root = true
+
+# All files
+[*]
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+[*.xml]
+indent_size = 4
+tab_width = 4
