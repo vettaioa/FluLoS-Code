@@ -71,7 +71,7 @@ namespace STT_SDK_TEST
             SpeechJsonResult jsonResult = JsonSerializer.Deserialize<SpeechJsonResult>(json);
             foreach (var alt in jsonResult.NBest)
             {
-                Console.WriteLine($"\t{alt.Confidence}\t{alt.Lexical}");
+                Console.WriteLine($"\t{alt.Confidence}\t{alt.Display}");
                 Console.WriteLine();
 
                 foreach (var word in alt.Words)
