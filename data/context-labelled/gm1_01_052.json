@@ -1,0 +1,5 @@
+{
+    "airline": "sunwing",
+    "flightnr": "5123",
+    "intent": ["flightlevel"]
+}

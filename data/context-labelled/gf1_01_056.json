@@ -1,0 +1,5 @@
+{
+    "airline": "alitalia",
+    "flightnr": "301",
+    "intent": ["flightlevel"]
+}

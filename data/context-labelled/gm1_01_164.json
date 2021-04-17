@@ -1,0 +1,5 @@
+{
+    "airline": "portugalia",
+    "flightnr": "543",
+    "intent": ["flightlevel"]
+}

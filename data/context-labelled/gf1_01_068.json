@@ -1,0 +1,5 @@
+{
+    "airline": "aero lloyd",
+    "flightnr": "560",
+    "intent": ["flightlevel"]
+}

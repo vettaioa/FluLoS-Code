@@ -1,0 +1,5 @@
+{
+    "airline": "swiss air",
+    "flightnr": "6752",
+    "intent": ["turn"]
+}
