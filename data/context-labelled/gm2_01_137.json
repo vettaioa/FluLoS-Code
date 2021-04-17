@@ -1,0 +1,5 @@
+{
+    "airline": "alitalia",
+    "flightnr": "365",
+    "intent": ["contact"]
+}

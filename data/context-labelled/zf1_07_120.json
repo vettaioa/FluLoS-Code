@@ -1,0 +1,5 @@
+{
+    "airline": "ifo",
+    "flightnr": "22B",
+    "intent": ["squawk"]
+}
