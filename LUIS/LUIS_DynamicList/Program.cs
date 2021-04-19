@@ -25,7 +25,7 @@ namespace LUIS_DynamicList
 
 
             // prepare data for utterance without errors
-            var querySimple = "lufthansa 3556 rhein radar identified turn right by 15 degrees and climb flight level 290";
+            var querySimple = "aegean 3535 climb to flight level 320";
 
 
             // prepare data for utterance with small error
@@ -43,8 +43,9 @@ namespace LUIS_DynamicList
             dynamicLists.Add(new DynamicList(correctionListName, requestLists));
 
 
+            //show - all - intents = true
             // make request for utterance without errors
-            var requestSimple = new PredictionRequest { Query = querySimple };
+            var requestSimple = new PredictionRequest { Query = querySimple }
             var predictionSimple = GetPrediction(requestSimple);
             Console.WriteLine("***********     SIMPLE      ***********");
             Console.WriteLine(JsonConvert.SerializeObject(predictionSimple.Result, Formatting.Indented));
