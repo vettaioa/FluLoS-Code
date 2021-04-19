@@ -73,7 +73,7 @@ analyser-rules {
   FlightLevelInstruction = $LevelInstruction
   FlightLevelNumber = $LevelNumber
   
-  Turn = TurnDirection?,$TurnInstruction?,TurnDirection?,($TurnHeadingInstruction,TurnHeadingNumber)|(TurnDegrees,$TurnDegreesInstruction)
+  Turn = TurnDirection?,$TurnInstruction?,TurnDirection?,(($TurnHeadingInstruction,TurnHeadingNumber)|(TurnDegrees,$TurnDegreesInstruction))
   TurnDirection = $TurnDirection
   TurnHeadingNumber = $TurnHeadingNumber
   TurnDegrees = $TurnDegrees
