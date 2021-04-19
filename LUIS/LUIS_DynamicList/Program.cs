@@ -9,7 +9,7 @@ namespace LUIS_DynamicList
 {
     class Program
     {
-        private static Guid APP_ID = new Guid("f2a69cf1-fad9-4bf1-b3d6-b61e6a445819");
+        private static Guid APP_ID = new Guid("468f22b2-8753-4107-bb47-a4218efa8d62");
         private const string API_KEY = "b6ecc84a0ac849819321f0c30eaf2301";
         private const string PREDICTION_ENDPOINT = "https://westeurope.api.cognitive.microsoft.com/";
         private const string API_SLOT = "Staging";  // either production or staging -> https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-how-to-publish-app#publishing-slots
@@ -25,7 +25,7 @@ namespace LUIS_DynamicList
 
 
             // prepare data for utterance without errors
-            var querySimple = "aegean 3535 climb to flight level 320";
+            var querySimple = "lufthansa 3556 rhein radar identified turn right by 15 degrees and climb flight level 290";
 
 
             // prepare data for utterance with small error
