@@ -56,7 +56,10 @@ output-structure {
 }
 analyser-rules {
   start = Message
-  Message = Filename,$Noise,CallSign?,$Noise,(FlightLevel|Turn|Contact|Squawk),$Noise
+  Message = Filename,$Noise,CallSign?,$Noise,(Intent3|Intent2|Intent1),$Noise
+  Intent1 = (FlightLevel|Turn|Contact|Squawk)
+  Intent2 = (FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk)
+  Intent3 = (FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk)
   Filename = $Filename
   
   CallSign = Airline?,FlightNumber?
