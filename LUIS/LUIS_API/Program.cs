@@ -1,27 +1,44 @@
 ﻿using System;
 using System.IO;
 using System.Net;
-using System.Net.Http;
+using System.Text.Json;
 
 namespace LUIS_API
 {
     class Program
     {
 
-        private const string URL = "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/468f22b2-8753-4107-bb47-a4218efa8d62/slots/staging/predict?subscription-key=b6ecc84a0ac849819321f0c30eaf2301&verbose=true&show-all-intents=true&log=true&query=";
+        private const string URL = "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/";
         private const string QUERY = "lufthansa 3556 rhein radar identified turn right by 15 degrees and climb flight level 290";
+        private const string CREDENTIALS_PATH = "../../../../../flulos_credentials.json";
 
         static void Main(string[] args)
         {
-            var request = WebRequest.Create(URL + QUERY);
+            if(File.Exists(CREDENTIALS_PATH))
+            {
+                FlulosCredentials flulosCredentials = JsonSerializer.Deserialize<FlulosCredentials>(File.ReadAllText(CREDENTIALS_PATH));
 
-            using var webResponse = request.GetResponse();
-            using var webStream = webResponse.GetResponseStream();
+                string requestURL = URL
+                    + flulosCredentials.LUIS_appid
+                    + "/slots/staging/predict?subscription-key="
+                    + flulosCredentials.LUIS_subscription
+                    + "&verbose=true&show-all-intents=true&log=true&query="
+                    + QUERY;
 
-            using var reader = new StreamReader(webStream);
-            var data = reader.ReadToEnd();
+                var request = WebRequest.Create(requestURL);
 
-            Console.WriteLine(data);
+                using var webResponse = request.GetResponse();
+                using var webStream = webResponse.GetResponseStream();
+
+                using var reader = new StreamReader(webStream);
+                var data = reader.ReadToEnd();
+
+                Console.WriteLine(data);
+            }
+            else
+            {
+                Console.WriteLine("Credentials not found!");
+            }
         }
     }
 }

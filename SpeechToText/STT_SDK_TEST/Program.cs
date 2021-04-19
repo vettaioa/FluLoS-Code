@@ -1,6 +1,7 @@
 ﻿using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
 using System;
+using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -10,24 +11,32 @@ namespace STT_SDK_TEST
 
     class Program
     {
-        private const string SUB_KEY = "4237d01e4dce42cc9f8a649de2d3b5e5";
         private const string REGION = "westeurope";
-        private const string ENDPOINT = "c53a10b1-77cf-4252-aecd-e5910c17d799";
         private const string TESTFILE = "sm1_01_113.wav";
+        private const string CREDENTIALS_PATH = "../../../../../flulos_credentials.json";
 
         async static Task Main(string[] args)
         {
-            var speechConfig = SpeechConfig.FromSubscription(SUB_KEY, REGION);
+            if (File.Exists(CREDENTIALS_PATH))
+            {
+                FlulosCredentials flulosCredentials = JsonSerializer.Deserialize<FlulosCredentials>(File.ReadAllText(CREDENTIALS_PATH));
 
-            speechConfig.OutputFormat = OutputFormat.Detailed;      // to get multiple results from SDK
-            speechConfig.EndpointId = ENDPOINT;
+                var speechConfig = SpeechConfig.FromSubscription(flulosCredentials.S2T_subscription, REGION);
 
-            // to get confidence for every word
-            // credits: https://stackoverflow.com/a/61567877/3218281
-            speechConfig.SetServiceProperty("wordLevelConfidence", "true", ServicePropertyChannel.UriQueryParameter);
+                speechConfig.OutputFormat = OutputFormat.Detailed;      // to get multiple results from SDK
+                speechConfig.EndpointId = flulosCredentials.S2T_endpoint;
 
-            //await FromMic(speechConfig);
-            await FromFile(speechConfig);
+                // to get confidence for every word
+                // credits: https://stackoverflow.com/a/61567877/3218281
+                speechConfig.SetServiceProperty("wordLevelConfidence", "true", ServicePropertyChannel.UriQueryParameter);
+
+                //await FromMic(speechConfig);
+                await FromFile(speechConfig);
+            }
+            else
+            {
+                Console.WriteLine("Credentials not found!");
+            }
         }
 
 
