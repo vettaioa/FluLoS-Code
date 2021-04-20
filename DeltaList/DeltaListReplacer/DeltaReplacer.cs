@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DeltaListReplacer
 {
-    class DeltaReplacer
+    public class DeltaReplacer
     {
         private FuzzySearch fuzzySearch;
         private SearchableCollection atcWords;
@@ -41,14 +41,14 @@ namespace DeltaListReplacer
             string atcWord = atcWords.fuzzySearching(word);
             if (atcWord != null)
             {
-                Console.WriteLine($"[DEBUG] Replacing '{word}' with '{atcWord}'");
+                Console.WriteLine($"[DEBUG] Replacing '{word}' with '{atcWord}' [atcWord]");
                 return atcWord;
             }
 
             string deltaWord = deltaList.fuzzySearching(word);
             if(deltaWord != null)
             {
-                Console.WriteLine($"[DEBUG] Replacing '{word}' with '{deltaWord}'");
+                Console.WriteLine($"[DEBUG] Replacing '{word}' with '{deltaWord}' [deltaWord]");
                 return deltaWord;
             }
 
