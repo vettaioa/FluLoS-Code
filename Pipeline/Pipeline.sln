@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipeline", "Pipeline\Pipeline.csproj", "{7095546E-824C-442D-BE56-0C0D9DA42032}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanUp", "..\CleanUp\CleanUp\CleanUp.csproj", "{7855DE5C-6D5D-4C10-8905-C02034F96A42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeltaListReplacer", "..\DeltaList\DeltaListReplacer\DeltaListReplacer.csproj", "{88955C3A-9330-4D52-9EE8-E6CA27269CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RML", "..\RML\RML\RML.csproj", "{9F74B21B-E826-46D5-A275-4E8B200B98D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RML", "RML", "{4D96FFA9-0CBB-44E2-A248-33A5224F73F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalCallUtils", "..\RML\ExternalCallUtils\ExternalCallUtils.csproj", "{609680AC-DB56-4AEE-9098-95F0E474239E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalCallDll", "..\RML\ExternalCallDll\ExternalCallDll.csproj", "{393B4712-2568-4F42-853C-1C5E7E7CBFB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7095546E-824C-442D-BE56-0C0D9DA42032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7095546E-824C-442D-BE56-0C0D9DA42032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7095546E-824C-442D-BE56-0C0D9DA42032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7095546E-824C-442D-BE56-0C0D9DA42032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7855DE5C-6D5D-4C10-8905-C02034F96A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7855DE5C-6D5D-4C10-8905-C02034F96A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7855DE5C-6D5D-4C10-8905-C02034F96A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7855DE5C-6D5D-4C10-8905-C02034F96A42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88955C3A-9330-4D52-9EE8-E6CA27269CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88955C3A-9330-4D52-9EE8-E6CA27269CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88955C3A-9330-4D52-9EE8-E6CA27269CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88955C3A-9330-4D52-9EE8-E6CA27269CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F74B21B-E826-46D5-A275-4E8B200B98D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F74B21B-E826-46D5-A275-4E8B200B98D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F74B21B-E826-46D5-A275-4E8B200B98D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F74B21B-E826-46D5-A275-4E8B200B98D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609680AC-DB56-4AEE-9098-95F0E474239E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609680AC-DB56-4AEE-9098-95F0E474239E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609680AC-DB56-4AEE-9098-95F0E474239E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609680AC-DB56-4AEE-9098-95F0E474239E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393B4712-2568-4F42-853C-1C5E7E7CBFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393B4712-2568-4F42-853C-1C5E7E7CBFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393B4712-2568-4F42-853C-1C5E7E7CBFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393B4712-2568-4F42-853C-1C5E7E7CBFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F74B21B-E826-46D5-A275-4E8B200B98D4} = {4D96FFA9-0CBB-44E2-A248-33A5224F73F6}
+		{609680AC-DB56-4AEE-9098-95F0E474239E} = {4D96FFA9-0CBB-44E2-A248-33A5224F73F6}
+		{393B4712-2568-4F42-853C-1C5E7E7CBFB6} = {4D96FFA9-0CBB-44E2-A248-33A5224F73F6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {275596FC-5359-476D-AE19-F2C05D2EFBDA}
+	EndGlobalSection
+EndGlobal
