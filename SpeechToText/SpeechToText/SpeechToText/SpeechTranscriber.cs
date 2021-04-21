@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SpeechToText
 {
-    class SpeechTranscriber
+    public class SpeechTranscriber
     {
         private const int DEFAULT_NBEST = 3;
         private SpeechConfig speechConfig;
@@ -21,21 +21,22 @@ namespace SpeechToText
         /// <param name="azureRegion">Azure region string (i.e. westeurope, eastus, ...)</param>
         /// <param name="azureSubscription">Azure subscription key</param>
         /// <param name="azureEndpoint">Azure endpoint of custom speech resource</param>
-        public SpeechTranscriber(string azureRegion, string azureSubscription, string azureEndpoint)
+        public SpeechTranscriber(string azureRegion, string azureApiKeyFile)
         {
             if (string.IsNullOrWhiteSpace(azureRegion))
                 throw new ArgumentNullException("azureRegion");
 
-            if (string.IsNullOrWhiteSpace(azureSubscription))
-                throw new ArgumentNullException("azureSubscription");
+            if (string.IsNullOrWhiteSpace(azureApiKeyFile))
+                throw new ArgumentNullException("azureApiKeyFile");
 
-            if (string.IsNullOrWhiteSpace(azureEndpoint))
-                throw new ArgumentNullException("azureEndpoint");
-                
-            speechConfig = SpeechConfig.FromSubscription(azureSubscription, azureRegion);
+            if(!File.Exists(azureApiKeyFile))
+                throw new ArgumentException("azureApiKeyFile not found");
 
-            speechConfig.OutputFormat = OutputFormat.Detailed;      // to get multiple results from SDK
-            speechConfig.EndpointId = azureEndpoint;
+            AzureCredentials azureCredentials = JsonSerializer.Deserialize<AzureCredentials>(File.ReadAllText(azureApiKeyFile));
+
+            speechConfig = SpeechConfig.FromSubscription(azureCredentials.S2T_subscription, azureRegion);
+            speechConfig.OutputFormat = OutputFormat.Detailed;      // to get multiple (nBest) results from SDK
+            speechConfig.EndpointId = azureCredentials.S2T_endpoint;
 
             // to get confidence for every word
             // credits: https://stackoverflow.com/a/61567877/3218281
