@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Pipeline.Model;
+using SpeechToText;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -7,30 +10,55 @@ using System.Threading.Tasks;
 
 namespace Pipeline
 {
-    delegate void MessageHandler(string message); // beside recognized literal message add metadata (e.g. word alternatives)
+    delegate void MessageHandler(string[] transcriptions);     // possible (nbest) results
 
     class SpeechToTextRunner
     {
         public event MessageHandler MessageRecognized;
 
-        public SpeechToTextRunner()
+        private SpeechTranscriber transcriber;
+        private SpeechToTextConfig config;
+
+        public SpeechToTextRunner(SpeechToTextConfig config)
         {
-            // TODO: SetUp
+            this.config = config;
+            transcriber = new SpeechTranscriber(config.AzureRegion, config.AzureApiKeysFile);
         }
 
-        public void Run()
+        public async Task Run()
         {
-            new Thread(() =>
+            string[] transcriptions = null;
+            string[,] transcriptionsMultifile = null;
+
+            switch(config.SpeechToTextMode)
             {
-                while (true)
+                case SpeechToTextMode.MicrophoneSingle:
+                    transcriptions = await transcriber.TranscribeMicrophone();
+                    break;
+                case SpeechToTextMode.FileSingle:
+                    transcriptions = await transcriber.TranscribeAudioFile(config.InputAudioFile);
+                    break;
+                case SpeechToTextMode.FileMulti:
+                case SpeechToTextMode.LabelledData:
+                    transcriptionsMultifile = await transcriber.TranscribeAudioDirectory(config.InputAudioDirectory);
+                    break;
+            }
+
+            if(transcriptions != null)
+            {
+                MessageRecognized?.Invoke(transcriptions);
+            }
+            else if(transcriptionsMultifile != null && transcriptionsMultifile.Length > 0)
+            {
+                for(int i = 0; i < transcriptionsMultifile.Length; i++)
                 {
-                    // TODO: Replace with actual recognition code :D
-                    MessageRecognized?.Invoke("lufthansa four seven two three resume own navigation to willisau");
-                    Thread.Sleep(2000);
-                    MessageRecognized?.Invoke("berlin five zero seven three bonjour maintain flight level three hundred via ST prex willisau");
-                    Thread.Sleep(9000);
+                    // select specific row i from the array
+                    string[] currentTranscriptions = Enumerable.Range(0, transcriptionsMultifile.GetLength(1))
+                                                                .Select(x => transcriptionsMultifile[i, x])
+                                                                .ToArray();
+                    MessageRecognized?.Invoke(currentTranscriptions);
                 }
-            }).Start();
+            }
         }
     }
 }

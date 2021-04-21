@@ -1,0 +1,14 @@
+{
+	"SpeechToText": {
+		"SpeechToTextMode": "FileSingle",
+		"AzureApiKeysFile": "../../../../../flulos_credentials.json",
+		"AzureRegion": "westeurope",
+		"InputAudioFile": "../../../../../../TestData/zf1_08_087.wav",
+		"InputAudioDirectory": ""
+	},
+	"Luis": {
+		"ApiUrl": "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/",
+		"PublishedSlot": "staging"
+	},
+	"InputLabelDirectory": "../../../../../data/context-labelled"
+}
