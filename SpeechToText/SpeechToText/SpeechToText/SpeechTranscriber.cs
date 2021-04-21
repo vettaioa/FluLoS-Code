@@ -48,7 +48,7 @@ namespace SpeechToText
         /// </summary>
         /// <param name="nBest"></param>
         /// <returns></returns>
-        public async Task<IList<string>> TranscribeMicrophone(int nBest = DEFAULT_NBEST)
+        public async Task<string[]> TranscribeMicrophone(int nBest = DEFAULT_NBEST)
         {
             using var audioConfig = AudioConfig.FromDefaultMicrophoneInput();
             using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
@@ -62,7 +62,7 @@ namespace SpeechToText
         /// <param name="filePath"></param>
         /// <param name="nBest"></param>
         /// <returns></returns>
-        public async Task<IList<string>> TranscribeAudioFile(string filePath, int nBest = DEFAULT_NBEST)
+        public async Task<string[]> TranscribeAudioFile(string filePath, int nBest = DEFAULT_NBEST)
         {
             if (File.Exists(filePath))
             {
@@ -80,16 +80,21 @@ namespace SpeechToText
         /// <param name="dirPath"></param>
         /// <param name="nBest"></param>
         /// <returns></returns>
-        public async Task<IList<IList<string>>> TranscribeAudioDirectory(string dirPath, int nBest = DEFAULT_NBEST)
+        public async Task<string[,]> TranscribeAudioDirectory(string dirPath, int nBest = DEFAULT_NBEST)
         {
             if(Directory.Exists(dirPath))
             {
-                IList<IList<string>> results = new List<IList<string>>();
+                string[] dirFiles = Directory.GetFiles(dirPath);
+                string[,] results = new string[dirFiles.Length, nBest];
                 try
                 {
-                    foreach (string file in Directory.GetFiles(dirPath))
+                    for(int i = 0; i < dirFiles.Length; i++)
                     {
-                        results.Add(await TranscribeAudioFile(file, nBest));
+                        string[] fileTranscriptions = await TranscribeAudioFile(dirFiles[i], nBest);
+                        for(int j = 0; j < fileTranscriptions.Length; j++)
+                        {
+                            results[i, j] = fileTranscriptions[j];
+                        }
                     }
                     return results;
                 }
@@ -107,7 +112,7 @@ namespace SpeechToText
         /// <param name="recognizer"></param>
         /// <param name="nBest"></param>
         /// <returns></returns>
-        private async Task<IList<string>> Recognize(SpeechRecognizer recognizer, int nBest = DEFAULT_NBEST)
+        private async Task<string[]> Recognize(SpeechRecognizer recognizer, int nBest = DEFAULT_NBEST)
         {
             SpeechRecognitionResult recognitionResult = await recognizer.RecognizeOnceAsync();
 
@@ -118,12 +123,12 @@ namespace SpeechToText
             SpeechJsonResult jsonResult = JsonSerializer.Deserialize<SpeechJsonResult>(json);
             if(jsonResult != null && jsonResult.NBest != null)
             {
-                IList<string> nBestResults = new List<string>();
+                string[] nBestResults = new string[nBest];
                 for(int i = 0; i < nBest; i++)
                 {
                     if(i < jsonResult.NBest.Count)
                     {
-                        nBestResults.Add(jsonResult.NBest[i].Lexical);
+                        nBestResults[i] = jsonResult.NBest[i].Lexical;
                     }
                 }
                 return nBestResults;
