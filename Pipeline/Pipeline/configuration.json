@@ -8,7 +8,8 @@
 	},
 	"Luis": {
 		"ApiUrl": "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/",
-		"PublishedSlot": "staging"
+		"PublishedSlot": "staging",
+		"AzureApiKeysFile": "../../../../../flulos_credentials.json"
 	},
 	"InputLabelDirectory": "../../../../../data/context-labelled"
 }

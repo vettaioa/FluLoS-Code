@@ -30,6 +30,7 @@ namespace Pipeline.Model
     {
         public string ApiUrl { get; set; }
         public string PublishedSlot { get; set; }
+        public string AzureApiKeysFile { get; set; }
     }
 
     enum SpeechToTextMode
