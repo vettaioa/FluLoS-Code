@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalCallUtils", "..\RML
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalCallDll", "..\RML\ExternalCallDll\ExternalCallDll.csproj", "{393B4712-2568-4F42-853C-1C5E7E7CBFB6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeechToText", "..\SpeechToText\SpeechToText\SpeechToText\SpeechToText.csproj", "{4A6AE4F6-A152-430D-9BFC-747F00583A0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeechToText", "..\SpeechToText\SpeechToText\SpeechToText.csproj", "{4A6AE4F6-A152-430D-9BFC-747F00583A0B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LUIS", "..\LUIS\LUIS\LUIS.csproj", "{FC372A16-5C2C-4D61-8DB9-B21E6BC8CEFC}"
 EndProject
