@@ -16,12 +16,14 @@ namespace SpeechToText
         private const int DEFAULT_NBEST = 3;
         private SpeechConfig speechConfig;
 
+
         /// <summary>
         /// Creates instance of SpeechTranscriber
         /// </summary>
         /// <param name="azureRegion">Azure region string (i.e. westeurope, eastus, ...)</param>
-        /// <param name="azureSubscription">Azure subscription key</param>
-        /// <param name="azureEndpoint">Azure endpoint of custom speech resource</param>
+        /// <param name="azureApiKeyFile">Filepath of file with azure subscription keys</param>
+        /// <exception cref="ArgumentNullException">Any parameter is null</exception>
+        /// <exception cref="ArgumentException">Azure api key file is not found</exception>
         public SpeechTranscriber(string azureRegion, string azureApiKeyFile)
         {
             if (string.IsNullOrWhiteSpace(azureRegion))
