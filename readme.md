@@ -11,7 +11,7 @@ Based on [Custom Speech](https://speech.microsoft.com/customspeech), *RML* and [
 ├── CleanUp/        CleanUp solution (C# .NET 5 wrapper for a python3 script)
 ├── data/           Resource Data for all the following folders
 ├── DeltaList/      DeltaList solution (C# .NET 5)
-├── LUIS/           LUIS
+├── LUIS/           LUIS (C# .NET 5)
 ├── RML/            Regex Markup Language solution (C# .NET Framework)
 └── SpeechToText/   SpeechToText solution (C# .NET 5)
 ```
