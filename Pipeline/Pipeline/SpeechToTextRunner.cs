@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Pipeline
 {
-    delegate void MessageHandler(string[] transcriptions);     // possible (nbest) results
+    delegate void MessageHandler(string[] variants);     // possible (nbest) results
 
     class SpeechToTextRunner
     {

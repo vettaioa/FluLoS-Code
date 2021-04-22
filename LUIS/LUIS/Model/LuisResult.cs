@@ -18,7 +18,7 @@ namespace LUIS.Model
     public class CallSign
     {
         public string Airline { get; set; }
-        public string FlightNr { get; set; }
+        public string FlightNumber { get; set; }
     }
 
     public class ContactInfo
@@ -102,7 +102,7 @@ namespace LUIS.Model
                         if (jsonResponse.prediction.entities.MLCallSign[0].Airline != null && jsonResponse.prediction.entities.MLCallSign[0].Airline.Count > 0)
                             CallSign.Airline = jsonResponse.prediction.entities.MLCallSign[0].Airline[0];
                         if (jsonResponse.prediction.entities.MLCallSign[0].FlightNr != null && jsonResponse.prediction.entities.MLCallSign[0].FlightNr.Count > 0)
-                            CallSign.FlightNr = jsonResponse.prediction.entities.MLCallSign[0].FlightNr[0];
+                            CallSign.FlightNumber = jsonResponse.prediction.entities.MLCallSign[0].FlightNr[0];
                     }
 
                     if (jsonResponse.prediction.entities.MLContact != null && jsonResponse.prediction.entities.MLContact.Count > 0)

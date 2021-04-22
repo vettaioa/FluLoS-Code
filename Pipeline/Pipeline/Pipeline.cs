@@ -30,22 +30,22 @@ namespace Pipeline
             await speechToText.Run();
         }
 
-        private void ProcessMessage(string[] transcriptions)
+        private void ProcessMessage(string[] variants)
         {
-            foreach(string transcription in transcriptions)
+            foreach(string variant in variants)
             {
                 Console.WriteLine();
                 Console.WriteLine("Processing Message:");
-                Console.WriteLine(transcription);
+                Console.WriteLine(variant);
 
-                var prepared = Prepare(transcription);
+                var prepared = Prepare(variant);
                 Console.WriteLine(" ===> ");
                 Console.WriteLine(prepared);
 
-                // TODO: call LUIS as well
-                var structured = Structure(prepared);
+                var rmlContext = rml.Call(prepared);
+                var luisContext = luis.Call(prepared);
                 Console.WriteLine(" ===> ");
-                Console.WriteLine(structured);
+                Console.WriteLine("TODO");
             }
         }
 
@@ -56,11 +56,6 @@ namespace Pipeline
             prepared = deltaListReplace.Call(prepared);
 
             return prepared;
-        }
-
-        private string Structure(string input)
-        {
-            return rml.Call(input);
         }
     }
 }

@@ -39,7 +39,7 @@ namespace LUIS
                     {
                         Console.WriteLine("- Callsign:");
                         Console.WriteLine("     - Airline  = {0}", result.CallSign.Airline);
-                        Console.WriteLine("     - FlightNr = {0}", result.CallSign.FlightNr);
+                        Console.WriteLine("     - FlightNr = {0}", result.CallSign.FlightNumber);
                     }
                 }
                 else
