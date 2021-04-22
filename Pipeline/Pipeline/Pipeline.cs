@@ -11,6 +11,7 @@ namespace Pipeline
         private CleanUpCaller cleanUp;
         private DeltaListReplaceCaller deltaListReplace;
         private RmlCaller rml;
+        private LuisCaller luis;
 
         public Pipeline(Configuration config)
         {
@@ -19,6 +20,7 @@ namespace Pipeline
             speechToText = new SpeechToTextRunner(config.SpeechToText);
             deltaListReplace = new DeltaListReplaceCaller();
             rml = new RmlCaller();
+            luis = new LuisCaller(config.Luis);
         }
 
         public async Task Run()
@@ -40,6 +42,7 @@ namespace Pipeline
                 Console.WriteLine(" ===> ");
                 Console.WriteLine(prepared);
 
+                // TODO: call LUIS as well
                 var structured = Structure(prepared);
                 Console.WriteLine(" ===> ");
                 Console.WriteLine(structured);

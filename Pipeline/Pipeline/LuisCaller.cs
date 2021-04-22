@@ -1,4 +1,5 @@
 ﻿using LUIS;
+using LUIS.Model;
 using Pipeline.Model;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace Pipeline
             interpreter = new UtteranceInterpreter(config.AzureApiKeysFile, config.ApiUrl, config.PublishedSlot);
         }
 
-        public string Call(string input)
+        public LuisResult Call(string input)
         {
             return interpreter.Interpret(input);
         }

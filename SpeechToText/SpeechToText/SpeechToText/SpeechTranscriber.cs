@@ -1,5 +1,6 @@
 ﻿using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
+using SpeechToText.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LUIS.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -33,19 +34,35 @@ namespace LUIS
                     + "&verbose=true&show-all-intents=true&log=true&query=";
         }
     
-        public string Interpret(string utterance)
+        public LuisResult Interpret(string utterance)
         {
-            WebRequest request = WebRequest.Create(requestURL + utterance);
+            LuisResult result = null;
+            string jsonData = null;
 
-            using WebResponse webResponse = request.GetResponse();
-            using Stream webStream = webResponse.GetResponseStream();
+            try
+            {
+                WebRequest request = WebRequest.Create(requestURL + utterance);
+                using (WebResponse webResponse = request.GetResponse())
+                using (Stream webStream = webResponse.GetResponseStream())
+                using (StreamReader reader = new StreamReader(webStream))
+                {
+                    jsonData = reader.ReadToEnd();
+                }
+            }
+            catch { }
 
-            using StreamReader reader = new StreamReader(webStream);
-            string data = reader.ReadToEnd();
+            if(!string.IsNullOrWhiteSpace(jsonData))
+            {
+                try
+                {
+                    LuisJsonResponse response = JsonSerializer.Deserialize<LuisJsonResponse>(jsonData);
+                    if (response != null)
+                        result = new LuisResult(response);
+                }
+                catch { }
+            }
 
-            // TODO: parse and return idk
-
-            return data;
+            return result;
         }
     }
 }
