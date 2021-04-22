@@ -43,7 +43,7 @@ namespace LUIS
                     + azureCredentials.LUIS_appid
                     + "/slots/"
                     + publishedSlot
-                    + "staging/predict?subscription-key="
+                    + "/predict?subscription-key="
                     + azureCredentials.LUIS_subscription
                     + "&verbose=true&show-all-intents=true&log=true&query=";
         }
@@ -63,7 +63,10 @@ namespace LUIS
                     jsonData = reader.ReadToEnd();
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                string asdf = ex.Message;
+            }
 
             if(!string.IsNullOrWhiteSpace(jsonData))
             {
