@@ -26,7 +26,7 @@ namespace Pipeline.Model
 
     public class FlightLevelIntent : MessageIntent
     {
-        public FlightLevelInstruction Instruction { get; set; }
+        public FlightLevelInstruction? Instruction { get; set; }
         public string Level { get; set; }
         public enum FlightLevelInstruction
         {
@@ -53,5 +53,9 @@ namespace Pipeline.Model
     public class SquawkIntent : MessageIntent
     {
         public string Code { get; set; }
+    }
+
+    public class NoneIntent : MessageIntent
+    {
     }
 }

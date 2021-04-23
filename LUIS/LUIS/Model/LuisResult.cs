@@ -45,7 +45,7 @@ namespace LUIS.Model
     {
         public string Utterance { get; set; }
         public IntentType TopIntent { get; set; }
-        public Dictionary<IntentType, double> IntentScores { get; set; }
+        public Dictionary<IntentType, float> IntentScores { get; set; }
         public CallSign CallSign { get; set; }
         public ContactInfo ContactInfo { get; set; }
         public FlightLevelInfo FlightLevelInfo { get; set; }
@@ -73,7 +73,7 @@ namespace LUIS.Model
                 // set intent scores in dictionary
                 if (jsonResponse.prediction.intents != null)
                 {
-                    IntentScores = new Dictionary<IntentType, double>();
+                    IntentScores = new Dictionary<IntentType, float>();
 
                     if (jsonResponse.prediction.intents.None != null)
                         IntentScores.Add(IntentType.None, jsonResponse.prediction.intents.None.score);

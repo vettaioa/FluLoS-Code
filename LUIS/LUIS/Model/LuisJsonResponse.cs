@@ -30,7 +30,7 @@ namespace LUIS.Model
 
     public class IntentScore
     {
-        public double score { get; set; }
+        public float score { get; set; }
     }
 
     public class Entities
