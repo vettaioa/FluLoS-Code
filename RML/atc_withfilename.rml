@@ -1,5 +1,6 @@
 patterns {
   $Noise = "([\w']+\s)*?";
+  $Filename = "([A-Za-z\d_]+).(wav|txt)\t";
   
   $Airline = "([A-Za-z]+)(\s[A-Za-z]+)?(\s[A-Za-z]+)?";
   $FlightNumber = "(\d|(triple\s?\d)){2,4}";
@@ -28,7 +29,8 @@ patterns {
 @RelaxNG
 output-structure {
   start = Message
-  Message = element AtcMessage {CallSign,Intents}
+  Message = element AtcMessage {Filename,CallSign,Intents}
+  Filename = element File {text}
   CallSign = element CallSign {Airline,FlightNumber}
   Airline = element Airline {text}
   FlightNumber = element FlightNumber {text}
@@ -55,10 +57,11 @@ output-structure {
 }
 analyser-rules {
   start = Message
-  Message = $Noise,CallSign?,$Noise,(Intent3|Intent2|Intent1),$Noise
+  Message = Filename,$Noise,CallSign?,$Noise,(Intent3|Intent2|Intent1),$Noise
   Intent1 = (FlightLevel|Turn|Contact|Squawk)
   Intent2 = (FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk)
   Intent3 = (FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk)
+  Filename = $Filename
   
   CallSign = Airline?,FlightNumber?
   Airline = check(Airline{$Airline}, Airline.checkAirline)
