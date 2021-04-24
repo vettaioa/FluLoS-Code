@@ -12,61 +12,58 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Web.UI.WebControls;
 using System.Configuration;
-using Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls.Utils.FuzzySearching;
-using Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls.Utils;
 using System.IO;
+using Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls.Utils;
+using System.Text.Json;
+using FuzzySearching;
 
 namespace Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls {
 
   public class Airline {
-    private BoundedCollection marksAirline;
-    private BoundedCollection marksFlightNumber;
+    private SearchableCollection airlines;
 
-    // anderpas & schuejen
-    public Airline() {
+    public Airline()
+    {
       string dataDir = Path.Combine(Directory.GetCurrentDirectory(), ConfigurationManager.AppSettings["dataDir"]);
 
-      marksAirline = new BoundedCollection();
-      XmlDataSource sourceAirline = new XmlDataSource();
-      sourceAirline.DataFile = dataDir + @"\airlines.xml";
-      sourceAirline.XPath = "airlines/airline";
-      marksAirline.DataSource = sourceAirline;
-      marksAirline.DataField = "@mark";
-      marksAirline.DataBind();
-      marksAirline.Ratio = 0.5F;
+      var phonetics = loadFromJson<Dictionary<string, string>>(Path.Combine(dataDir, @"\phonetics.json"));
+      var airlines = loadFromJson<List<string>>(Path.Combine(dataDir, @"\airlines.json"));
 
-      marksFlightNumber = new BoundedCollection();
-      XmlDataSource sourceFlightNumber = new XmlDataSource();
-      sourceFlightNumber.DataFile = dataDir + @"\flightnumbers.xml";
-      sourceFlightNumber.XPath = "flightNumbers/flightNumber";
-      marksFlightNumber.DataSource = sourceFlightNumber;
-      marksFlightNumber.DataField = "@mark";
-      marksFlightNumber.DataBind();
-      marksFlightNumber.Ratio = 0.5F;
+      var fuzzySearch = new FuzzySearch(phonetics);
+
+      this.airlines = new SearchableCollection(fuzzySearch, airlines);
+      this.airlines.Ratio = 0.5f;
     }
 
-    [ExternalCallMethod()]
+    [ExternalCallMethod]
     public string checkAirline(string value) {
-      marksAirline.Ratio = 0.5F;
 
-      string result = marksAirline.fuzzySearching(value);
-      if (result != null) {
+      string result = airlines.fuzzySearching(value);
+      if (result != null)
+      {
         return result;
       }
       return "";
     }
 
-    [ExternalCallMethod()]
-    public string checkFlightNumber(string value) {
-      marksFlightNumber.Ratio = 0.5F;
+    //[ExternalCallMethod()]
+    //public string checkFlightNumber(string value)
+    //{
+    //  marksFlightNumber.Ratio = 0.5F;
 
-      string result = marksFlightNumber.fuzzySearching(value);
-      if(result != null) {
-        return result;
-      }
-      return "";
+    //  string result = marksFlightNumber.fuzzySearching(value);
+    //  if (result != null)
+    //  {
+    //    return result;
+    //  }
+    //  return "";
+    //}
+
+    private static TValue loadFromJson<TValue>(string filePath)
+    {
+      var json = File.ReadAllText(filePath);
+      return JsonSerializer.Deserialize<TValue>(json, new JsonSerializerOptions { ReadCommentHandling = JsonCommentHandling.Skip });
     }
   }
 }
