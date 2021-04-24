@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
   </ItemGroup>
 
@@ -14,6 +13,7 @@
     <ProjectReference Include="..\..\CleanUp\CleanUp\CleanUp.csproj" />
     <ProjectReference Include="..\..\DeltaList\DeltaListReplacer\DeltaListReplacer.csproj" />
     <ProjectReference Include="..\..\LUIS\LUIS\LUIS.csproj" />
+    <ProjectReference Include="..\..\RML\RML\RML.csproj" />
     <ProjectReference Include="..\..\SpeechToText\SpeechToText\SpeechToText.csproj" />
   </ItemGroup>
 

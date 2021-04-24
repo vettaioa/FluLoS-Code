@@ -47,23 +47,15 @@ namespace Pipeline
             Console.WriteLine("Prepared/cleaned variants:");
             Array.ForEach(preparedVariants, v => Console.WriteLine($"    - {v}"));
 
-            // RML
-            Console.WriteLine("Extracting context with RML...");
-            MessageContext[] rmlContexts = new MessageContext[preparedVariants.Length];
-            for (int i = 0; i < preparedVariants.Length; i++)
-            {
-                rmlContexts[i] = luis.Call(preparedVariants[i]);
-            }
-            Console.WriteLine("TODO: show result");
+            // extract context
+            Console.WriteLine("Extracting context with...");
 
-            // LUIS
-            Console.WriteLine("Extracting context with LUIS...");
-            MessageContext[] luisContexts = new MessageContext[preparedVariants.Length];
-            for (int i = 0; i < preparedVariants.Length; i++)
+            var contexts = new (MessageContext Rml, MessageContext Luis)[preparedVariants.Length];
+            for (int i = 0; i < contexts.Length; i++)
             {
-                luisContexts[i] = luis.Call(preparedVariants[i]);
+                contexts[i] = Analyze(preparedVariants[i]);
             }
-            Console.WriteLine("TODO: show result");
+            
         }
 
         private string Prepare(string input)
@@ -73,6 +65,19 @@ namespace Pipeline
             prepared = deltaListReplace.Call(prepared);
 
             return prepared;
+        }
+
+        private (MessageContext RmlContext, MessageContext LuisContext) Analyze(string prepared)
+        {
+            // RML
+            Console.WriteLine("Extracting context with RML...");
+            var rmlResult = rml.Call(prepared);
+
+            // LUIS
+            Console.WriteLine("Extracting context with LUIS...");
+            var luisResult = luis.Call(prepared);
+
+            return (rmlResult, luisResult);
         }
     }
 }

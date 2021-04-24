@@ -30,7 +30,7 @@ namespace Pipeline
 
         public string Call(string input)
         {
-            return replacer.Replace(input);
+            return replacer.Replace(input).Trim();
         }
     }
 }

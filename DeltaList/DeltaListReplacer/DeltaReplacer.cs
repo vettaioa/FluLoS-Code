@@ -41,14 +41,24 @@ namespace DeltaListReplacer
             string atcWord = atcWords.fuzzySearching(word);
             if (atcWord != null)
             {
-                Console.WriteLine($"[DEBUG] Replacing '{word}' with '{atcWord}' [atcWord]");
+#if DEBUG
+                if(word != atcWord)
+                {
+                    Console.WriteLine($"[DEBUG] Replacing '{word}' with '{atcWord}' [atcWord]");
+                }
+#endif
                 return atcWord;
             }
 
             string deltaWord = deltaList.fuzzySearching(word);
             if(deltaWord != null)
             {
-                Console.WriteLine($"[DEBUG] Replacing '{word}' with '{deltaWord}' [deltaWord]");
+#if DEBUG
+                if (word != atcWord)
+                {
+                    Console.WriteLine($"[DEBUG] Replacing '{word}' with '{deltaWord}' [deltaWord]");
+                }
+#endif
                 return deltaWord;
             }
 
