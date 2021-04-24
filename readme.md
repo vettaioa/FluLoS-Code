@@ -12,7 +12,8 @@ Based on [Custom Speech](https://speech.microsoft.com/customspeech), *RML* and [
 ├── data/           Resource Data for all the following folders
 ├── DeltaList/      DeltaList solution (C# .NET 5)
 ├── LUIS/           LUIS (C# .NET 5)
-├── RML/            Regex Markup Language solution (C# .NET Framework)
+├── Pipeline/       Pipeline Solution - connecting all other solutions (C# .NET 5)
+├── RML/            Regex Markup Language solution (C# .NET 5)
 └── SpeechToText/   SpeechToText solution (C# .NET 5)
 ```
 
