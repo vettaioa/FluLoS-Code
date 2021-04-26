@@ -28,13 +28,21 @@ namespace Pipeline
                 }
                 else
                 {
-                    Console.WriteLine("Initializing Pipeline...");
-                    var pipeline = new Pipeline(config);
+                    if(config.RunWebPipeline)
+                    {
+                        Console.WriteLine("Initializing Web UI Endpoint");
+                        var webPipeline = new WebUI.PipelineWebEndpoint(config);
+                        await webPipeline.Run();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Initializing Pipeline...");
+                        var pipeline = new Pipeline(config);
 
-                    Console.WriteLine("Starting Pipeline Process...");
-                    await pipeline.Run();
-
-                    Console.WriteLine("Pipeline stopped");
+                        Console.WriteLine("Starting Pipeline Process...");
+                        await pipeline.Run();
+                        Console.WriteLine("Pipeline stopped");
+                    }
                 }
             }
             else

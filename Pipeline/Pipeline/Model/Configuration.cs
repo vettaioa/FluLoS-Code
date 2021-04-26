@@ -9,6 +9,7 @@ namespace Pipeline.Model
 {
     class Configuration
     {
+        public bool RunWebPipeline { get; set; }
         public SpeechToTextConfig SpeechToText { get; set; }
         public LuisConfig Luis { get; set; }
         public string InputLabelDirectory { get; set; }
