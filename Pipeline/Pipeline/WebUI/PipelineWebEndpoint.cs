@@ -11,13 +11,23 @@ using System.Threading.Tasks;
 namespace Pipeline.WebUI
 {
     class PipelineWebEndpoint
-
     {
+        private const string REQUEST_MIME = "audio/webm;codecs=opus";
+        private const string AUDIO_FILENAME = "audio.webm";
+
         private HttpListener listener;
         private bool running = true;
 
+        private static SpeechToTextConfig speechToTextConfig;
+        private static ContextExtractor contextExtractor;
+        private static HttpListenerContext httpListenerContext;
+
         public PipelineWebEndpoint(Configuration config)
         {
+            speechToTextConfig = config.SpeechToText;
+            speechToTextConfig.SpeechToTextMode = SpeechToTextMode.FileSingle;
+            contextExtractor = new ContextExtractor(config);
+
             listener = new HttpListener();
             listener.Prefixes.Add("http://+:8080/");
             //listener.Prefixes.Add("https://*:8081/");
@@ -39,7 +49,7 @@ namespace Pipeline.WebUI
                         HandleIndexPage(context);
                         break;
                     case "process":
-                        HandleSpeechInput(context);
+                        await HandleSpeechInputAsync(context);
                         break;
                 }
                 context.Response.Close();
@@ -51,6 +61,7 @@ namespace Pipeline.WebUI
         {
             running = false;
             listener.Stop();
+            Console.WriteLine("Stopped listening for HTTP requests");
         }
 
         private static void HandleIndexPage(HttpListenerContext context)
@@ -60,21 +71,65 @@ namespace Pipeline.WebUI
             var file = File.OpenRead(@"WebUI\index.html");
             file.CopyTo(context.Response.OutputStream);
         }
-        private static void HandleSpeechInput(HttpListenerContext context)
-        {
-            Console.WriteLine(context.Request.ContentType);
 
-            //context.Request.InputStream
+        private static async Task HandleSpeechInputAsync(HttpListenerContext context)
+        {
+            httpListenerContext = context;
+            if (context.Request != null)
+            {
+                Console.WriteLine("Request received");
+                if(context.Request.ContentType != null && context.Request.ContentType == REQUEST_MIME)
+                {
+                    Console.WriteLine("Processing audio...");
+                    bool audioSaved = false;
+                    try
+                    {
+                        var file = File.OpenWrite(AUDIO_FILENAME);
+                        context.Request.InputStream.CopyTo(file);
+                        audioSaved = true;
+                    }
+                    catch { }
+
+                    if (audioSaved)
+                    {
+                        Console.WriteLine("Running Speech to Text...");
+                        speechToTextConfig.InputAudioFile = AUDIO_FILENAME;
+                        SpeechToTextRunner speechToText = new SpeechToTextRunner(speechToTextConfig);
+                        speechToText.MessageRecognized += ProcessMessage;
+                        await speechToText.Run();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error saving audio to file!");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Wrong format, must be {0}", REQUEST_MIME);
+                }
+            }
+
+            // context.Request.InputStream
             // containing the audio stram in audio/webm;codecs=opus
 
             // the following example code produces a working .webm audio file
             //var file = File.OpenWrite(@"audio.webm");
             //context.Request.InputStream.CopyTo(file);
+        }
 
-            var data = new string[] { "Recognized Text:" };
+        private static void ProcessMessage(string[] variants)
+        {
+            var contextResults = contextExtractor.Extract(variants);
+            using StreamWriter writer = new StreamWriter(httpListenerContext.Response.OutputStream);
+            if (contextResults != null && contextResults.Length > 0)
+            {
+                writer.Write(JsonSerializer.Serialize(contextResults));
+            }
+            else
+            {
+                writer.Write("No results found");
+            }
 
-            using StreamWriter writer = new StreamWriter(context.Response.OutputStream);
-            writer.Write(JsonSerializer.Serialize(data));
         }
     }
 }

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,7 +31,7 @@ namespace Pipeline
             string[] transcriptions = null;
             string[,] transcriptionsMultifile = null;
 
-            switch(config.SpeechToTextMode)
+            switch (config.SpeechToTextMode)
             {
                 case SpeechToTextMode.MicrophoneSingle:
                     transcriptions = await transcriber.TranscribeMicrophone();
@@ -44,13 +45,13 @@ namespace Pipeline
                     break;
             }
 
-            if(transcriptions != null)
+            if (transcriptions != null)
             {
                 MessageRecognized?.Invoke(transcriptions);
             }
-            else if(transcriptionsMultifile != null && transcriptionsMultifile.Length > 0)
+            else if (transcriptionsMultifile != null && transcriptionsMultifile.Length > 0)
             {
-                for(int i = 0; i < transcriptionsMultifile.Length; i++)
+                for (int i = 0; i < transcriptionsMultifile.Length; i++)
                 {
                     // select specific row i from the array
                     string[] currentTranscriptions = Enumerable.Range(0, transcriptionsMultifile.GetLength(1))

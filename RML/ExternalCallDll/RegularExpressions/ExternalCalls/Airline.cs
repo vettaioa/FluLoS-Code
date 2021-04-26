@@ -27,8 +27,8 @@ namespace Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls {
     {
       string dataDir = Path.Combine(Directory.GetCurrentDirectory(), ConfigurationManager.AppSettings["dataDir"]);
 
-      var phonetics = loadFromJson<Dictionary<string, string>>(Path.Combine(dataDir, @"\phonetics.json"));
-      var airlines = loadFromJson<List<string>>(Path.Combine(dataDir, @"\airlines.json"));
+      var phonetics = loadFromJson<Dictionary<string, string>>(Path.Combine(dataDir, "phonetics.json"));
+      var airlines = loadFromJson<List<string>>(Path.Combine(dataDir, "airlines.json"));
 
       var fuzzySearch = new FuzzySearch(phonetics);
 
