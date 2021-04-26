@@ -32,7 +32,9 @@ namespace Pipeline
                     {
                         Console.WriteLine("Initializing Web UI Endpoint");
                         var webPipeline = new WebUI.PipelineWebEndpoint(config);
-                        await webPipeline.Run();
+                        webPipeline.Run();
+                        Console.ReadKey();
+                        webPipeline.Stop();
                     }
                     else
                     {
