@@ -13,7 +13,7 @@ namespace Pipeline.Model
         public SpeechToTextConfig SpeechToText { get; set; }
         public LuisConfig Luis { get; set; }
         public string InputLabelDirectory { get; set; }
-
+        public EvaluationConfig Evaluation { get; set; }
         // TODO: cleanup, deltalsit etc. params
     }
 
@@ -32,6 +32,12 @@ namespace Pipeline.Model
         public string ApiUrl { get; set; }
         public string PublishedSlot { get; set; }
         public string AzureApiKeysFile { get; set; }
+    }
+
+    class EvaluationConfig
+    {
+        public string AirplanesInRangeUrl { get; set; }
+        public string AirplaneDetailsUrl { get; set; }
     }
 
     enum SpeechToTextMode

@@ -12,5 +12,9 @@
 		"PublishedSlot": "staging",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json"
 	},
-	"InputLabelDirectory": "../../../../../data/context-labelled"
+	"InputLabelDirectory": "../../../../../data/context-labelled",
+	"Evaluation": {
+		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange/",
+		"AirplaneDetailsUrl": "https://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplane/"
+	}
 }
