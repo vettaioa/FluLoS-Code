@@ -22,7 +22,7 @@ namespace Pipeline
             luis = new LuisCaller(config.Luis);
         }
 
-        public (MessageContext Rml, MessageContext Luis)[] Extract(string[] variants)
+        public ContextExtractionResult[] Extract(string[] variants)
         {
             // output of S2T result
             Console.WriteLine("Transcription variants:");
@@ -41,7 +41,7 @@ namespace Pipeline
             // extract context
             Console.WriteLine("Extracting context with...");
 
-            var contexts = new (MessageContext Rml, MessageContext Luis)[preparedVariants.Length];
+            var contexts = new ContextExtractionResult[preparedVariants.Length];
             for (int i = 0; i < contexts.Length; i++)
             {
                 contexts[i] = Analyze(preparedVariants[i]);
@@ -59,7 +59,7 @@ namespace Pipeline
             return prepared;
         }
 
-        private (MessageContext RmlContext, MessageContext LuisContext) Analyze(string prepared)
+        private ContextExtractionResult Analyze(string prepared)
         {
             // RML
             Console.WriteLine("Extracting context with RML...");
@@ -69,7 +69,7 @@ namespace Pipeline
             Console.WriteLine("Extracting context with LUIS...");
             var luisResult = luis.Call(prepared);
 
-            return (rmlResult, luisResult);
+            return new ContextExtractionResult(rmlResult, luisResult);
         }
     }
 }

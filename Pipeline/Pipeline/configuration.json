@@ -1,18 +1,19 @@
 {
 	"RunWebPipeline": false,
 	"SpeechToText": {
-		"SpeechToTextMode": "FileSingle",
+		"SpeechToTextMode": "FileMulti",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json",
 		"AzureRegion": "westeurope",
-		"InputAudioFile": "../../../../../data/audio/test/gf1_01_031.wav",
-		"InputAudioDirectory": ""
+		"InputAudioFile": "../../../../../data/audio/test/gm2_02_089.wav",
+		"InputAudioDirectory": "../../../../../data/audio/temp/"
 	},
 	"Luis": {
 		"ApiUrl": "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/",
 		"PublishedSlot": "staging",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json"
 	},
-	"InputLabelDirectory": "../../../../../data/context-labelled",
+	"InputLabelDirectory": "../../../../../data/context-labelled/",
+	"ContextOutputDirectory": "../../../../../data/context-results/",
 	"Evaluation": {
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange/",
 		"AirplaneDetailsUrl": "https://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplane/"

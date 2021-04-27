@@ -13,6 +13,7 @@ namespace Pipeline.Model
         public SpeechToTextConfig SpeechToText { get; set; }
         public LuisConfig Luis { get; set; }
         public string InputLabelDirectory { get; set; }
+        public string ContextOutputDirectory { get; set; }
         public EvaluationConfig Evaluation { get; set; }
         // TODO: cleanup, deltalsit etc. params
     }

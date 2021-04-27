@@ -1,5 +1,8 @@
 ﻿using Pipeline.Model;
+using SpeechToText.Model;
 using System;
+using System.IO;
+using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -21,21 +24,36 @@ namespace Pipeline
         public async Task Run()
         {
             Console.WriteLine("Running Speech to Text...");
-            speechToText.MessageRecognized += ProcessMessage;
+            speechToText.SpeechTranscribed += ProcessTranscriptions;
 
             await speechToText.Run();
         }
 
-        private void ProcessMessage(string[] variants)
+        private void ProcessTranscriptions(TranscriptionResult transcriptionResult)
         {
-            var contextResults = contextExtractor.Extract(variants);
+            var contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
             if (contextResults != null)
             {
                 Console.WriteLine("Extracted context:");
-                foreach (var context in contextResults)
+                JsonSerializerOptions jsonOptions = new JsonSerializerOptions() { WriteIndented = true };
+                string resultsJson = JsonSerializer.Serialize(contextResults, jsonOptions);
+                Console.WriteLine(resultsJson);
+                if(!string.IsNullOrWhiteSpace(config.ContextOutputDirectory))
                 {
-                    Console.WriteLine("    - LUIS: {0}", JsonSerializer.Serialize(context.Luis));
-                    Console.WriteLine("    - RML:  {0}", JsonSerializer.Serialize(context.Rml));
+                    Directory.CreateDirectory(config.ContextOutputDirectory);
+
+                    StringBuilder sbFilePath = new StringBuilder();
+                    sbFilePath.Append(config.ContextOutputDirectory);
+                    if (config.SpeechToText.SpeechToTextMode == SpeechToTextMode.MicrophoneSingle)
+                    {
+                        sbFilePath.Append(DateTime.Now.ToString("yyyyMMdd-HHmmss"));
+                    }
+                    else
+                    {
+                        sbFilePath.Append(Path.GetFileNameWithoutExtension(transcriptionResult.FilePath));
+                    }
+                    sbFilePath.Append(".json");
+                    File.WriteAllText(sbFilePath.ToString(), resultsJson);
                 }
             }
             else

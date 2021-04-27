@@ -98,7 +98,7 @@ namespace Pipeline.WebUI
                         Console.WriteLine("Running Speech to Text...");
                         speechToTextConfig.InputAudioFile = AUDIO_FILENAME;
                         SpeechToTextRunner speechToText = new SpeechToTextRunner(speechToTextConfig);
-                        speechToText.MessageRecognized += ProcessMessage;
+                        speechToText.SpeechTranscribed += ProcessTranscriptions;
                         await speechToText.Run();
                     }
                     else
@@ -120,23 +120,19 @@ namespace Pipeline.WebUI
             //context.Request.InputStream.CopyTo(file);
         }
 
-        private static void ProcessMessage(string[] variants)
+        private static void ProcessTranscriptions(TranscriptionResult transcriptionResult)
         {
-            var contextResults = contextExtractor.Extract(variants);
+            var contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
             using StreamWriter writer = new StreamWriter(httpListenerContext.Response.OutputStream);
             if (contextResults != null && contextResults.Length > 0)
             {
-                foreach (var context in contextResults)
-                {
-                    writer.WriteLine("    - LUIS: {0}", JsonSerializer.Serialize(context.Luis));
-                    writer.WriteLine("    - RML:  {0}", JsonSerializer.Serialize(context.Rml));
-                }
+                JsonSerializerOptions jsonOptions = new JsonSerializerOptions() { WriteIndented = true };
+                Console.WriteLine(JsonSerializer.Serialize(contextResults, jsonOptions));
             }
             else
             {
                 writer.Write("No results found");
             }
-
         }
     }
 }
