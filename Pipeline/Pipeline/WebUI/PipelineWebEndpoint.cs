@@ -84,8 +84,11 @@ namespace Pipeline.WebUI
                     bool audioSaved = false;
                     try
                     {
-                        var file = File.OpenWrite(AUDIO_FILENAME);
-                        context.Request.InputStream.CopyTo(file);
+                        using (var file = File.OpenWrite(AUDIO_FILENAME))
+                        using (var stream = context.Request.InputStream)
+                        {
+                            stream.CopyTo(file);
+                        }
                         audioSaved = true;
                     }
                     catch { }
@@ -123,7 +126,11 @@ namespace Pipeline.WebUI
             using StreamWriter writer = new StreamWriter(httpListenerContext.Response.OutputStream);
             if (contextResults != null && contextResults.Length > 0)
             {
-                writer.Write(JsonSerializer.Serialize(contextResults));
+                foreach (var context in contextResults)
+                {
+                    writer.WriteLine("    - LUIS: {0}", JsonSerializer.Serialize(context.Luis));
+                    writer.WriteLine("    - RML:  {0}", JsonSerializer.Serialize(context.Rml));
+                }
             }
             else
             {

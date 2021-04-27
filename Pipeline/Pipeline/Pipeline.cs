@@ -31,7 +31,12 @@ namespace Pipeline
             var contextResults = contextExtractor.Extract(variants);
             if (contextResults != null)
             {
-                Console.WriteLine(JsonSerializer.Serialize(contextResults));
+                Console.WriteLine("Extracted context:");
+                foreach (var context in contextResults)
+                {
+                    Console.WriteLine("    - LUIS: {0}", JsonSerializer.Serialize(context.Luis));
+                    Console.WriteLine("    - RML:  {0}", JsonSerializer.Serialize(context.Rml));
+                }
             }
             else
             {
