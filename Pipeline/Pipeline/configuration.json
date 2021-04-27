@@ -1,5 +1,5 @@
 {
-	"RunWebPipeline": true,
+	"RunWebPipeline": false,
 	"SpeechToText": {
 		"SpeechToTextMode": "FileSingle",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json",
