@@ -84,21 +84,19 @@ namespace SpeechToText
         /// <param name="dirPath"></param>
         /// <param name="nBest"></param>
         /// <returns></returns>
-        public async Task<string[,]> TranscribeAudioDirectory(string dirPath, int nBest = DEFAULT_NBEST)
+        public async Task<string[][]> TranscribeAudioDirectory(string dirPath, int nBest = DEFAULT_NBEST)
         {
             if(Directory.Exists(dirPath))
             {
                 string[] dirFiles = Directory.GetFiles(dirPath);
-                string[,] results = new string[dirFiles.Length, nBest];
+                string[][] results = new string[dirFiles.Length][];
                 try
                 {
-                    for(int i = 0; i < dirFiles.Length; i++)
+                    Array.Sort(dirFiles);
+                    for (int i = 0; i < dirFiles.Length; i++)
                     {
                         string[] fileTranscriptions = await TranscribeAudioFile(dirFiles[i], nBest);
-                        for(int j = 0; j < fileTranscriptions.Length; j++)
-                        {
-                            results[i, j] = fileTranscriptions[j];
-                        }
+                        results[i] = fileTranscriptions;
                     }
                     return results;
                 }
@@ -127,8 +125,12 @@ namespace SpeechToText
             SpeechJsonResult jsonResult = JsonSerializer.Deserialize<SpeechJsonResult>(json);
             if(jsonResult != null && jsonResult.NBest != null)
             {
-                string[] nBestResults = new string[nBest];
-                for(int i = 0; i < nBest; i++)
+                int arraySize = nBest;
+                if (jsonResult.NBest.Count < nBest)
+                    arraySize = jsonResult.NBest.Count;     // in case speech api returns less results
+
+                string[] nBestResults = new string[arraySize];
+                for(int i = 0; i < arraySize; i++)
                 {
                     if(i < jsonResult.NBest.Count)
                     {

@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "luxair 551 shot on your way fly heading 180",
+      "CallSign": {
+        "Airline": "luxair",
+        "FlightNumber": "551"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "luxair 551 shot on your way fly heading 180",
+      "CallSign": {
+        "Airline": "luxair",
+        "FlightNumber": "551"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.04438078
+        },
+        "Contact": {
+          "Score": 0.0022403102
+        },
+        "FlightLevel": {
+          "Score": 0.0025883168
+        },
+        "Squawk": {
+          "Score": 0.0021241214
+        },
+        "Turn": {
+          "Score": 0.0033158395
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "luxair 551 shots on your way fly heading 180",
+      "CallSign": {
+        "Airline": "luxair",
+        "FlightNumber": "551"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "luxair 551 shots on your way fly heading 180",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.044579368
+        },
+        "Contact": {
+          "Score": 0.0022447007
+        },
+        "FlightLevel": {
+          "Score": 0.0025936342
+        },
+        "Squawk": {
+          "Score": 0.0021295603
+        },
+        "Turn": {
+          "Score": 0.0032965713
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "luxair 5512 shots on your way fly heading 180",
+      "CallSign": {
+        "Airline": "luxair",
+        "FlightNumber": "5512"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "luxair 5512 shots on your way fly heading 180",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.050899245
+        },
+        "Contact": {
+          "Score": 0.0021727378
+        },
+        "FlightLevel": {
+          "Score": 0.0025009322
+        },
+        "Squawk": {
+          "Score": 0.002030429
+        },
+        "Turn": {
+          "Score": 0.00335977
+        }
+      }
+    }
+  }
+]
