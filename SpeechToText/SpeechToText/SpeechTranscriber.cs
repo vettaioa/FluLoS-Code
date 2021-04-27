@@ -56,6 +56,7 @@ namespace SpeechToText
             using var audioConfig = AudioConfig.FromDefaultMicrophoneInput();
             using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 
+            Console.WriteLine("Speak into microphone...");
             return await Recognize(recognizer, nBest);
         }
 
