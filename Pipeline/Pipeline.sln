@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RML", "..\RML\RML\RML.cspro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExternalCallDll", "..\RML\ExternalCallDll\ExternalCallDll.csproj", "{DA1E7E74-75B1-4E95-A0EF-79514DCB2CE6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation", "..\Evaluation\Evaluation\Evaluation.csproj", "{2AC9464C-1BB5-4923-8B29-0D51BC526AED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{DA1E7E74-75B1-4E95-A0EF-79514DCB2CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA1E7E74-75B1-4E95-A0EF-79514DCB2CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA1E7E74-75B1-4E95-A0EF-79514DCB2CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC9464C-1BB5-4923-8B29-0D51BC526AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC9464C-1BB5-4923-8B29-0D51BC526AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC9464C-1BB5-4923-8B29-0D51BC526AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC9464C-1BB5-4923-8B29-0D51BC526AED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

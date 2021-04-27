@@ -11,6 +11,7 @@ Based on [Custom Speech](https://speech.microsoft.com/customspeech), *RML* and [
 ├── CleanUp/        CleanUp solution (C# .NET 5 wrapper for a python3 script)
 ├── data/           Resource Data for all the following folders
 ├── DeltaList/      DeltaList solution (C# .NET 5)
+├── Evaluation/     Evaluation solution with plausibility checks incl. radar (C# .NET 5)
 ├── LUIS/           LUIS (C# .NET 5)
 ├── Pipeline/       Pipeline Solution - connecting all other solutions (C# .NET 5)
 ├── RML/            Regex Markup Language solution (C# .NET 5)
