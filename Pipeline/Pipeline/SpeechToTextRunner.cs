@@ -1,5 +1,6 @@
 ﻿using Pipeline.Model;
 using SpeechToText;
+using SpeechToText.Model;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -29,50 +30,39 @@ namespace Pipeline
 
         public async Task Run()
         {
-            string[] transcriptions = null;
-            string[][] transcriptionsMultifile = null;
+            string[] micResults = null;
+            FileResult[] fileResults = null;
 
             switch (config.SpeechToTextMode)
             {
                 case SpeechToTextMode.MicrophoneSingle:
-                    transcriptions = await transcriber.TranscribeMicrophone();
+                    micResults = await transcriber.TranscribeMicrophone();
                     break;
                 case SpeechToTextMode.FileSingle:
-                    transcriptions = await transcriber.TranscribeAudioFile(config.InputAudioFile);
+                    FileResult singleFileResult = await transcriber.TranscribeAudioFile(config.InputAudioFile);
+                    if (singleFileResult != null)
+                        fileResults = new FileResult[] { singleFileResult };
                     break;
                 case SpeechToTextMode.FileMulti:
                 case SpeechToTextMode.LabelledData:
-                    transcriptionsMultifile = await transcriber.TranscribeAudioDirectory(config.InputAudioDirectory);
+                    fileResults = await transcriber.TranscribeAudioDirectory(config.InputAudioDirectory);
                     break;
             }
 
-            if (transcriptions != null)
+            if(micResults != null)
             {
-                TranscriptionResult result = new TranscriptionResult();
-                result.Transcriptions = transcriptions;
-                result.FilePath = config.InputAudioFile;
-
+                TranscriptionResult result = new TranscriptionResult { Transcriptions = micResults };
                 SpeechTranscribed?.Invoke(result);
             }
-            else if (transcriptionsMultifile != null && transcriptionsMultifile.Length > 0)
+            else if (fileResults != null && fileResults.Length > 0)
             {
-                string[] dirFiles = null;
-                try
+                foreach(FileResult fileResult in fileResults)
                 {
-                    dirFiles = Directory.GetFiles(config.InputAudioDirectory);
-                    Array.Sort(dirFiles);
-                }
-                catch { }
-
-                for (int i = 0; i < transcriptionsMultifile.Length; i++)
-                {
-                    string[] currentTranscriptions = transcriptionsMultifile[i];
-
-                    TranscriptionResult result = new TranscriptionResult();
-                    result.Transcriptions = currentTranscriptions;
-                    if (dirFiles != null && dirFiles.Length > i - 1)
-                        result.FilePath = dirFiles[i];
-
+                    TranscriptionResult result = new TranscriptionResult
+                    {
+                        Transcriptions = fileResult.Transcriptions,
+                        FilePath = fileResult.FilePath
+                    };
                     SpeechTranscribed?.Invoke(result);
                 }
             }

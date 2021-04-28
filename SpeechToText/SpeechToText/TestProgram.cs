@@ -20,12 +20,12 @@ namespace SpeechToText
                 SpeechTranscriber transcriber = new SpeechTranscriber(REGION, CREDENTIALS_PATH);
 
                 Console.WriteLine("Transcribing file...");
-                string[] results = await transcriber.TranscribeAudioFile(TESTFILE);
+                FileResult result = await transcriber.TranscribeAudioFile(TESTFILE);
 
-                if (results != null)
+                if (result != null && result.Transcriptions != null)
                 {
                     Console.WriteLine("Results:");
-                    foreach (string transcription in results)
+                    foreach (string transcription in result.Transcriptions)
                     {
                         Console.WriteLine("- {0}", transcription);
                     }

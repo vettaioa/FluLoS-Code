@@ -66,14 +66,16 @@ namespace SpeechToText
         /// <param name="filePath"></param>
         /// <param name="nBest"></param>
         /// <returns></returns>
-        public async Task<string[]> TranscribeAudioFile(string filePath, int nBest = DEFAULT_NBEST)
+        public async Task<FileResult> TranscribeAudioFile(string filePath, int nBest = DEFAULT_NBEST)
         {
             if (File.Exists(filePath))
             {
                 using var audioConfig = AudioConfig.FromWavFileInput(filePath);
                 using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 
-                return await Recognize(recognizer, nBest);
+                string[] transcriptions = await Recognize(recognizer, nBest);
+
+                return new FileResult() { FilePath = filePath, Transcriptions = transcriptions };
             }
             return null;
         }
@@ -84,19 +86,18 @@ namespace SpeechToText
         /// <param name="dirPath"></param>
         /// <param name="nBest"></param>
         /// <returns></returns>
-        public async Task<string[][]> TranscribeAudioDirectory(string dirPath, int nBest = DEFAULT_NBEST)
+        public async Task<FileResult[]> TranscribeAudioDirectory(string dirPath, int nBest = DEFAULT_NBEST)
         {
             if(Directory.Exists(dirPath))
             {
                 string[] dirFiles = Directory.GetFiles(dirPath);
-                string[][] results = new string[dirFiles.Length][];
+                FileResult[] results = new FileResult[dirFiles.Length];
                 try
                 {
-                    Array.Sort(dirFiles);
                     for (int i = 0; i < dirFiles.Length; i++)
                     {
-                        string[] fileTranscriptions = await TranscribeAudioFile(dirFiles[i], nBest);
-                        results[i] = fileTranscriptions;
+                        FileResult result = await TranscribeAudioFile(dirFiles[i], nBest);
+                        results[i] = result;
                     }
                     return results;
                 }

@@ -1,7 +1,7 @@
 {
 	"RunWebPipeline": false,
 	"SpeechToText": {
-		"SpeechToTextMode": "FileSigle",
+		"SpeechToTextMode": "FileSingle",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json",
 		"AzureRegion": "westeurope",
 		"InputAudioFile": "../../../../../data/audio/test/gm2_02_089.wav",
