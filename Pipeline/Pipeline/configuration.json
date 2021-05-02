@@ -16,6 +16,11 @@
 	"ContextOutputDirectory": "../../../../../data/context-results/",
 	"Evaluation": {
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange/",
-		"AirplaneDetailsUrl": "https://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplane/"
+		"AirplaneDetailsUrl": "https://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplane/",
+		"FlightLevelMin": 150,
+		"FlightLevelMax": 450,
+		"ContactFrequencies": [ 12815, 12585 ],
+		"ContactPlaces": [ "rhein", "marseille" ],
+		"SquawkCodes": [ 5766, 5720 ]
 	}
 }
