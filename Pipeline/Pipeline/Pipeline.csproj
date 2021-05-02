@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\CleanUp\CleanUp\CleanUp.csproj" />
     <ProjectReference Include="..\..\DeltaList\DeltaListReplacer\DeltaListReplacer.csproj" />
+    <ProjectReference Include="..\..\Evaluation\Evaluation\Evaluation.csproj" />
     <ProjectReference Include="..\..\LUIS\LUIS\LUIS.csproj" />
     <ProjectReference Include="..\..\RML\RML\RML.csproj" />
     <ProjectReference Include="..\..\SpeechToText\SpeechToText\SpeechToText.csproj" />
