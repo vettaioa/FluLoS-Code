@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 364 contact reims 134.4 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "364"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.010530985
+        },
+        "Contact": {
+          "Score": 0.9992857
+        },
+        "FlightLevel": {
+          "Score": 0.0021961657
+        },
+        "Squawk": {
+          "Score": 0.0027801006
+        },
+        "Turn": {
+          "Score": 0.0022235692
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 364 contact reims on 134.4 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "364"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.009970973
+        },
+        "Contact": {
+          "Score": 0.9996348
+        },
+        "FlightLevel": {
+          "Score": 0.0023680418
+        },
+        "Squawk": {
+          "Score": 0.0027322995
+        },
+        "Turn": {
+          "Score": 0.0022553406
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 364 contact reims 134.for good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "364"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.0107002575
+        },
+        "Contact": {
+          "Score": 0.9992857
+        },
+        "FlightLevel": {
+          "Score": 0.0022072976
+        },
+        "Squawk": {
+          "Score": 0.0028061022
+        },
+        "Turn": {
+          "Score": 0.0022465843
+        }
+      }
+    }
+  }
+]

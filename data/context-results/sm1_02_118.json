@@ -1,0 +1,84 @@
+[
+  {
+    "RmlResult": {
+      "Message": "midland 720 climb flight level 340 turn right by 10 degrees",
+      "CallSign": {
+        "Airline": "midland",
+        "FlightNumber": "720"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        },
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "midland 720 climb flight level 340 turn right by 10 degrees",
+      "CallSign": {
+        "Airline": "midland",
+        "FlightNumber": "720"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.005379116
+        },
+        "Contact": {
+          "Score": 0.0018345523
+        },
+        "FlightLevel": {
+          "Score": 0.99229056
+        },
+        "Squawk": {
+          "Score": 0.0016716402
+        },
+        "Turn": {
+          "Score": 0.9963073
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "midland 720 climb flight level 340 turn right by 10 degrees in",
+      "CallSign": {
+        "Airline": "midland",
+        "FlightNumber": "720"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        },
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "midland 720 climb flight level 340 turn right by 10 degrees in",
+      "CallSign": {
+        "Airline": "midland",
+        "FlightNumber": "720"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.0046932655
+        },
+        "Contact": {
+          "Score": 0.0018708088
+        },
+        "FlightLevel": {
+          "Score": 0.9927544
+        },
+        "Squawk": {
+          "Score": 0.0016600706
+        },
+        "Turn": {
+          "Score": 0.9963612
+        }
+      }
+    }
+  }
+]

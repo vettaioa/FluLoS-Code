@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "tag lloyd 171 turn level to bilsa",
+      "CallSign": {
+        "Airline": "tag lloyd",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.016933188
+        },
+        "Contact": {
+          "Score": 0.0018809199
+        },
+        "FlightLevel": {
+          "Score": 0.00285592
+        },
+        "Squawk": {
+          "Score": 0.0017691763
+        },
+        "Turn": {
+          "Score": 0.003142937
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "bag lloyd 171 turn level to bilsa",
+      "CallSign": {
+        "Airline": "bag lloyd",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01672688
+        },
+        "Contact": {
+          "Score": 0.0018779518
+        },
+        "FlightLevel": {
+          "Score": 0.0028615717
+        },
+        "Squawk": {
+          "Score": 0.0017643626
+        },
+        "Turn": {
+          "Score": 0.0031458368
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "tag heuer 171 turn level to bilsa",
+      "CallSign": {
+        "Airline": "tag heuer",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.030222168
+        },
+        "Contact": {
+          "Score": 0.0018124859
+        },
+        "FlightLevel": {
+          "Score": 0.002796846
+        },
+        "Squawk": {
+          "Score": 0.0019401318
+        },
+        "Turn": {
+          "Score": 0.0029052214
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "so 693 bonjour maintain flight level 300",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "so 693 bonjour maintain flight level 300",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.02192164
+        },
+        "Contact": {
+          "Score": 0.0018627733
+        },
+        "FlightLevel": {
+          "Score": 0.99137545
+        },
+        "Squawk": {
+          "Score": 0.002585328
+        },
+        "Turn": {
+          "Score": 0.0019373574
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "swiss 693 bonjour maintain flight level 300",
+      "CallSign": {
+        "Airline": "swiss",
+        "FlightNumber": "693"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "swiss 693 bonjour maintain flight level 300",
+      "CallSign": {
+        "Airline": "swiss",
+        "FlightNumber": "693"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.023563612
+        },
+        "Contact": {
+          "Score": 0.0018863737
+        },
+        "FlightLevel": {
+          "Score": 0.9910434
+        },
+        "Squawk": {
+          "Score": 0.0025844085
+        },
+        "Turn": {
+          "Score": 0.0019621395
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "S693 bonjour maintain flight level 300",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "S693 bonjour maintain flight level 300",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.02759457
+        },
+        "Contact": {
+          "Score": 0.0016692594
+        },
+        "FlightLevel": {
+          "Score": 0.9914612
+        },
+        "Squawk": {
+          "Score": 0.0025079136
+        },
+        "Turn": {
+          "Score": 0.0017231986
+        }
+      }
+    }
+  }
+]

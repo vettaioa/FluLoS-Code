@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "speedway 3352 due to traffic descend flight level 330",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "3352"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedway 3352 due to traffic descend flight level 330",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.026864884
+        },
+        "Contact": {
+          "Score": 0.0019817937
+        },
+        "FlightLevel": {
+          "Score": 0.99055606
+        },
+        "Squawk": {
+          "Score": 0.0018675012
+        },
+        "Turn": {
+          "Score": 0.0020238648
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedway 3352 due to traffic descend to flight level 330",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "3352"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedway 3352 due to traffic descend to flight level 330",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.021912767
+        },
+        "Contact": {
+          "Score": 0.0020168088
+        },
+        "FlightLevel": {
+          "Score": 0.9962617
+        },
+        "Squawk": {
+          "Score": 0.0018417167
+        },
+        "Turn": {
+          "Score": 0.002067722
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedway 352 due to traffic descend flight level 330",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "352"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedway 352 due to traffic descend flight level 330",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "352"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.025103148
+        },
+        "Contact": {
+          "Score": 0.002070432
+        },
+        "FlightLevel": {
+          "Score": 0.9901457
+        },
+        "Squawk": {
+          "Score": 0.0019800037
+        },
+        "Turn": {
+          "Score": 0.0021302195
+        }
+      }
+    }
+  }
+]

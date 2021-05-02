@@ -1,0 +1,107 @@
+[
+  {
+    "RmlResult": {
+      "Message": "gibair 98L contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "libair",
+        "FlightNumber": "98"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "gibair 98L contact milano 12585 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04789478
+        },
+        "Contact": {
+          "Score": 0.9844732
+        },
+        "FlightLevel": {
+          "Score": 0.0017424681
+        },
+        "Squawk": {
+          "Score": 0.0021227181
+        },
+        "Turn": {
+          "Score": 0.0017817043
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "gibair 988L contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "libair",
+        "FlightNumber": "988"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "gibair 988L contact milano 12585 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04789478
+        },
+        "Contact": {
+          "Score": 0.9844732
+        },
+        "FlightLevel": {
+          "Score": 0.0017424681
+        },
+        "Squawk": {
+          "Score": 0.0021227181
+        },
+        "Turn": {
+          "Score": 0.0017817043
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "japan 8L contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "air japan",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "japan 8L contact milano 12585 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.041013733
+        },
+        "Contact": {
+          "Score": 0.9822129
+        },
+        "FlightLevel": {
+          "Score": 0.001941594
+        },
+        "Squawk": {
+          "Score": 0.002305257
+        },
+        "Turn": {
+          "Score": 0.0020264816
+        }
+      }
+    }
+  }
+]

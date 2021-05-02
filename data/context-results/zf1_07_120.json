@@ -1,0 +1,101 @@
+[
+  {
+    "RmlResult": {
+      "Message": "fo 22B good afternoon squawk 7535",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "fo 22B good afternoon squawk 7535",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04508832
+        },
+        "Contact": {
+          "Score": 0.0019990979
+        },
+        "FlightLevel": {
+          "Score": 0.0016606438
+        },
+        "Squawk": {
+          "Score": 0.9562827
+        },
+        "Turn": {
+          "Score": 0.0018684409
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "f 22B good afternoon squawk 7535",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "f 22B good afternoon squawk 7535",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.042135954
+        },
+        "Contact": {
+          "Score": 0.001977191
+        },
+        "FlightLevel": {
+          "Score": 0.0016347171
+        },
+        "Squawk": {
+          "Score": 0.96152186
+        },
+        "Turn": {
+          "Score": 0.0018337354
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "fa 22B good afternoon squawk 7535",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "fa 22B good afternoon squawk 7535",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.044661496
+        },
+        "Contact": {
+          "Score": 0.001996003
+        },
+        "FlightLevel": {
+          "Score": 0.0016569721
+        },
+        "Squawk": {
+          "Score": 0.9570588
+        },
+        "Turn": {
+          "Score": 0.0018635205
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "at 365 contact milano 125.85 au revoir",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "at 365 contact milano 125.85 au revoir",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.041958913
+        },
+        "Contact": {
+          "Score": 0.0029735072
+        },
+        "FlightLevel": {
+          "Score": 0.0025776592
+        },
+        "Squawk": {
+          "Score": 0.0023016892
+        },
+        "Turn": {
+          "Score": 0.0024403576
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "365 contact milano 125.85 au revoir",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": "365"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "365 contact milano 125.85 au revoir",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.050272536
+        },
+        "Contact": {
+          "Score": 0.0029108152
+        },
+        "FlightLevel": {
+          "Score": 0.0023628948
+        },
+        "Squawk": {
+          "Score": 0.0023263237
+        },
+        "Turn": {
+          "Score": 0.0023908357
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "aero 365 contact milano 125.85 au revoir",
+      "CallSign": {
+        "Airline": "aerem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "aero 365 contact milano 125.85 au revoir",
+      "CallSign": {
+        "Airline": "aero",
+        "FlightNumber": "365"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.035354182
+        },
+        "Contact": {
+          "Score": 0.0028477744
+        },
+        "FlightLevel": {
+          "Score": 0.0026959255
+        },
+        "Squawk": {
+          "Score": 0.0022395262
+        },
+        "Turn": {
+          "Score": 0.0025321287
+        }
+      }
+    }
+  }
+]

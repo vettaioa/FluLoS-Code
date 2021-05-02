@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "viva 585 turn level to frankfurt",
+      "CallSign": {
+        "Airline": "viva",
+        "FlightNumber": "585"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.046300557
+        },
+        "Contact": {
+          "Score": 0.0020066025
+        },
+        "FlightLevel": {
+          "Score": 0.0027929212
+        },
+        "Squawk": {
+          "Score": 0.0022015215
+        },
+        "Turn": {
+          "Score": 0.0024570313
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "viva 585 turn level frankfurt",
+      "CallSign": {
+        "Airline": "viva",
+        "FlightNumber": "585"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.06405354
+        },
+        "Contact": {
+          "Score": 0.0019558826
+        },
+        "FlightLevel": {
+          "Score": 0.0024505141
+        },
+        "Squawk": {
+          "Score": 0.002259098
+        },
+        "Turn": {
+          "Score": 0.002380897
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "viva 585 turn level a frankfurt",
+      "CallSign": {
+        "Airline": "viva",
+        "FlightNumber": "585"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.04933943
+        },
+        "Contact": {
+          "Score": 0.0020265782
+        },
+        "FlightLevel": {
+          "Score": 0.0027713543
+        },
+        "Squawk": {
+          "Score": 0.0022240994
+        },
+        "Turn": {
+          "Score": 0.002450098
+        }
+      }
+    }
+  }
+]

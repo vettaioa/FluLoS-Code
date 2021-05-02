@@ -1,0 +1,74 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "topswiss 4578 on level",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.18616706
+        },
+        "Contact": {
+          "Score": 0.0015303807
+        },
+        "FlightLevel": {
+          "Score": 0.002967006
+        },
+        "Squawk": {
+          "Score": 0.0017184697
+        },
+        "Turn": {
+          "Score": 0.0015295891
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "topswiss 45781 level",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.19308993
+        },
+        "Contact": {
+          "Score": 0.0014219867
+        },
+        "FlightLevel": {
+          "Score": 0.0026571327
+        },
+        "Squawk": {
+          "Score": 0.001724684
+        },
+        "Turn": {
+          "Score": 0.0014368974
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "topswiss 4578 an level",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.1450272
+        },
+        "Contact": {
+          "Score": 0.001582161
+        },
+        "FlightLevel": {
+          "Score": 0.0028700687
+        },
+        "Squawk": {
+          "Score": 0.0018075171
+        },
+        "Turn": {
+          "Score": 0.0015996078
+        }
+      }
+    }
+  }
+]

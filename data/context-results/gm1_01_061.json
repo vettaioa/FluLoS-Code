@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "twa 800 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "twa 800 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "twa",
+        "FlightNumber": "800"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.041372903
+        },
+        "Contact": {
+          "Score": 0.98209184
+        },
+        "FlightLevel": {
+          "Score": 0.0019461182
+        },
+        "Squawk": {
+          "Score": 0.0023068283
+        },
+        "Turn": {
+          "Score": 0.002032094
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "tw 800 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "tw 800 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "tw",
+        "FlightNumber": "800"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.040226236
+        },
+        "Contact": {
+          "Score": 0.98247874
+        },
+        "FlightLevel": {
+          "Score": 0.0019315775
+        },
+        "Squawk": {
+          "Score": 0.0023017684
+        },
+        "Turn": {
+          "Score": 0.002014066
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "tw 800 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "tw 800 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "tw",
+        "FlightNumber": "800"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.040226236
+        },
+        "Contact": {
+          "Score": 0.98247874
+        },
+        "FlightLevel": {
+          "Score": 0.0019315775
+        },
+        "Squawk": {
+          "Score": 0.0023017684
+        },
+        "Turn": {
+          "Score": 0.002014066
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "RmlResult": {
+      "Message": "german air force 4901 turn right heading 250",
+      "CallSign": {
+        "Airline": "german air force",
+        "FlightNumber": "4901"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "german air force 4901 turn right heading 250",
+      "CallSign": {
+        "Airline": "german air force",
+        "FlightNumber": "4901"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01962841
+        },
+        "Contact": {
+          "Score": 0.002712151
+        },
+        "FlightLevel": {
+          "Score": 0.0022815636
+        },
+        "Squawk": {
+          "Score": 0.0022832179
+        },
+        "Turn": {
+          "Score": 0.995641
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "german air force for 901 turn right heading 250",
+      "CallSign": {
+        "Airline": "german air force",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "german air force for 901 turn right heading 250",
+      "CallSign": {
+        "Airline": "german air force for",
+        "FlightNumber": "901"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.015110338
+        },
+        "Contact": {
+          "Score": 0.002780147
+        },
+        "FlightLevel": {
+          "Score": 0.0024699434
+        },
+        "Squawk": {
+          "Score": 0.0022432776
+        },
+        "Turn": {
+          "Score": 0.9957915
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "german air force 4901 turn right heading to 50",
+      "CallSign": {
+        "Airline": "german air force",
+        "FlightNumber": "4901"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.014702679
+        },
+        "Contact": {
+          "Score": 0.0027598839
+        },
+        "FlightLevel": {
+          "Score": 0.0024927338
+        },
+        "Squawk": {
+          "Score": 0.002230509
+        },
+        "Turn": {
+          "Score": 0.0036596325
+        }
+      }
+    }
+  }
+]

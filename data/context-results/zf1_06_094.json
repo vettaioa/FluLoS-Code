@@ -1,0 +1,92 @@
+[
+  {
+    "RmlResult": {
+      "Message": "sabena 826A good morning squawk 7531",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "sabena 826A good morning squawk 7531",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.028773252
+        },
+        "Contact": {
+          "Score": 0.0019042336
+        },
+        "FlightLevel": {
+          "Score": 0.0015309814
+        },
+        "Squawk": {
+          "Score": 0.96885747
+        },
+        "Turn": {
+          "Score": 0.0016279495
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 826A good morning squawk 753 won",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.027030619
+        },
+        "Contact": {
+          "Score": 0.00209574
+        },
+        "FlightLevel": {
+          "Score": 0.0018488527
+        },
+        "Squawk": {
+          "Score": 0.94572705
+        },
+        "Turn": {
+          "Score": 0.0018587442
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "sabena 826A good morning squawk 75301",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "sabena 826A good morning squawk 75301",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.028773252
+        },
+        "Contact": {
+          "Score": 0.0019042336
+        },
+        "FlightLevel": {
+          "Score": 0.0015309814
+        },
+        "Squawk": {
+          "Score": 0.96885747
+        },
+        "Turn": {
+          "Score": 0.0016279495
+        }
+      }
+    }
+  }
+]

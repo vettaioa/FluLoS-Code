@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "aero lloyd 517 turn right to willisau",
+      "CallSign": {
+        "Airline": "aero lloyd",
+        "FlightNumber": "517"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02846489
+        },
+        "Contact": {
+          "Score": 0.0020930734
+        },
+        "FlightLevel": {
+          "Score": 0.0025284681
+        },
+        "Squawk": {
+          "Score": 0.0019233902
+        },
+        "Turn": {
+          "Score": 0.99415916
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "aero lloyd 517 turn right to willisau ohh",
+      "CallSign": {
+        "Airline": "aero lloyd",
+        "FlightNumber": "517"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02687525
+        },
+        "Contact": {
+          "Score": 0.0021878667
+        },
+        "FlightLevel": {
+          "Score": 0.0027560294
+        },
+        "Squawk": {
+          "Score": 0.0019679714
+        },
+        "Turn": {
+          "Score": 0.99412626
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "aero lloyd 517 turn right to willisauo",
+      "CallSign": {
+        "Airline": "aero lloyd",
+        "FlightNumber": "517"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02846489
+        },
+        "Contact": {
+          "Score": 0.0020930734
+        },
+        "FlightLevel": {
+          "Score": 0.0025284681
+        },
+        "Squawk": {
+          "Score": 0.0019233902
+        },
+        "Turn": {
+          "Score": 0.99415916
+        }
+      }
+    }
+  }
+]

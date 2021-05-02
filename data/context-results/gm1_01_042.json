@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "speedway 3352 contact zurich ontario.6 good bye",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "3352"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.027739987
+        },
+        "Contact": {
+          "Score": 0.99928904
+        },
+        "FlightLevel": {
+          "Score": 0.0023450232
+        },
+        "Squawk": {
+          "Score": 0.002312252
+        },
+        "Turn": {
+          "Score": 0.002124174
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "speedway 3352 contact zurich ontario for.6 good bye",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "3352"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02322598
+        },
+        "Contact": {
+          "Score": 0.999636
+        },
+        "FlightLevel": {
+          "Score": 0.002534668
+        },
+        "Squawk": {
+          "Score": 0.0022853364
+        },
+        "Turn": {
+          "Score": 0.0021756012
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "speedway 352 contact zurich ontario.6 good bye",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "352"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.0245664
+        },
+        "Contact": {
+          "Score": 0.9992631
+        },
+        "FlightLevel": {
+          "Score": 0.002474252
+        },
+        "Squawk": {
+          "Score": 0.0024325363
+        },
+        "Turn": {
+          "Score": 0.0022651202
+        }
+      }
+    }
+  }
+]

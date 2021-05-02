@@ -1,114 +1,114 @@
 [
   {
     "RmlResult": {
-      "Message": "cross air 2690 climb to flight level 310",
+      "Message": "cross air 2690 contact marseille on 125.85 good bye",
       "CallSign": {
         "Airline": "crossair",
         "FlightNumber": "2690"
       },
       "Intents": {
-        "FlightLevel": {
+        "Contact": {
           "Score": 1
         }
       }
     },
     "LuisResult": {
-      "Message": "cross air 2690 climb to flight level 310",
+      "Message": "cross air 2690 contact marseille on 125.85 good bye",
       "CallSign": {
         "Airline": "cross air",
         "FlightNumber": "2690"
       },
       "Intents": {
         "None": {
-          "Score": 0.009319202
+          "Score": 0.009764195
         },
         "Contact": {
-          "Score": 0.0023215055
+          "Score": 0.99973685
         },
         "FlightLevel": {
-          "Score": 0.9966568
+          "Score": 0.002562793
         },
         "Squawk": {
-          "Score": 0.001735439
+          "Score": 0.0020937473
         },
         "Turn": {
-          "Score": 0.0017400843
+          "Score": 0.0019817643
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "cross air 2690 climb flight level 310",
+      "Message": "cross air 2690 contact marseille 125.85 good bye",
       "CallSign": {
         "Airline": "crossair",
         "FlightNumber": "2690"
       },
       "Intents": {
-        "FlightLevel": {
+        "Contact": {
           "Score": 1
         }
       }
     },
     "LuisResult": {
-      "Message": "cross air 2690 climb flight level 310",
+      "Message": "cross air 2690 contact marseille 125.85 good bye",
       "CallSign": {
         "Airline": "cross air",
         "FlightNumber": "2690"
       },
       "Intents": {
         "None": {
-          "Score": 0.012186752
+          "Score": 0.009980268
         },
         "Contact": {
-          "Score": 0.0022827953
+          "Score": 0.9994892
         },
         "FlightLevel": {
-          "Score": 0.99138016
+          "Score": 0.0023948348
         },
         "Squawk": {
-          "Score": 0.0017721509
+          "Score": 0.002126132
         },
         "Turn": {
-          "Score": 0.0016935966
+          "Score": 0.0019553008
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "cross air 269 o climb to flight level 310",
+      "Message": "cross air 690 contact marseille on 125.85 good bye",
       "CallSign": {
         "Airline": "crossair",
-        "FlightNumber": "269"
+        "FlightNumber": "690"
       },
       "Intents": {
-        "FlightLevel": {
+        "Contact": {
           "Score": 1
         }
       }
     },
     "LuisResult": {
-      "Message": "cross air 269 o climb to flight level 310",
+      "Message": "cross air 690 contact marseille on 125.85 good bye",
       "CallSign": {
         "Airline": "cross air",
-        "FlightNumber": "269"
+        "FlightNumber": "690"
       },
       "Intents": {
         "None": {
-          "Score": 0.010605769
+          "Score": 0.011410136
         },
         "Contact": {
-          "Score": 0.0024492992
+          "Score": 0.9997211
         },
         "FlightLevel": {
-          "Score": 0.9967663
+          "Score": 0.0028499344
         },
         "Squawk": {
-          "Score": 0.0019816405
+          "Score": 0.0023085733
         },
         "Turn": {
-          "Score": 0.0020430486
+          "Score": 0.002207688
         }
       }
     }

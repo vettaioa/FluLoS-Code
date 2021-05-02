@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "sabena 970 contact radar 128.150",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sabena 970 contact radar 128.150",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.06590086
+        },
+        "Contact": {
+          "Score": 0.0025264097
+        },
+        "FlightLevel": {
+          "Score": 0.0020334974
+        },
+        "Squawk": {
+          "Score": 0.0022312428
+        },
+        "Turn": {
+          "Score": 0.002206505
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "sabena 970 contact radar 128.15",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sabena 970 contact radar 128.15",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.065663956
+        },
+        "Contact": {
+          "Score": 0.0025299902
+        },
+        "FlightLevel": {
+          "Score": 0.0020252683
+        },
+        "Squawk": {
+          "Score": 0.0022216658
+        },
+        "Turn": {
+          "Score": 0.0021976952
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "sabena 970 contact radar 128.15 aw",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sabena 970 contact radar 128.15 aw",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.053970497
+        },
+        "Contact": {
+          "Score": 0.0025874074
+        },
+        "FlightLevel": {
+          "Score": 0.0022525622
+        },
+        "Squawk": {
+          "Score": 0.002216781
+        },
+        "Turn": {
+          "Score": 0.002269108
+        }
+      }
+    }
+  }
+]

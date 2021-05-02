@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "lufthansa 4652",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.22483908
+        },
+        "Contact": {
+          "Score": 0.0015459253
+        },
+        "FlightLevel": {
+          "Score": 0.0010355271
+        },
+        "Squawk": {
+          "Score": 0.0034355728
+        },
+        "Turn": {
+          "Score": 0.0020715294
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "lufthansa 465 to",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "465"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.12481221
+        },
+        "Contact": {
+          "Score": 0.001828174
+        },
+        "FlightLevel": {
+          "Score": 0.0013867824
+        },
+        "Squawk": {
+          "Score": 0.0032787686
+        },
+        "Turn": {
+          "Score": 0.0023239057
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "lufthansa 465 too",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "465"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.14029324
+        },
+        "Contact": {
+          "Score": 0.0018632059
+        },
+        "FlightLevel": {
+          "Score": 0.0013717747
+        },
+        "Squawk": {
+          "Score": 0.0032844553
+        },
+        "Turn": {
+          "Score": 0.0023097352
+        }
+      }
+    }
+  }
+]

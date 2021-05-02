@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 481 turn level to dinkelsbuhl",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "481"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.035445284
+        },
+        "Contact": {
+          "Score": 0.0018299209
+        },
+        "FlightLevel": {
+          "Score": 0.002615334
+        },
+        "Squawk": {
+          "Score": 0.0017589595
+        },
+        "Turn": {
+          "Score": 0.0020824412
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 481 turn level dinkelsbuhl",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "481"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.050002098
+        },
+        "Contact": {
+          "Score": 0.0017857495
+        },
+        "FlightLevel": {
+          "Score": 0.0022922
+        },
+        "Squawk": {
+          "Score": 0.001805616
+        },
+        "Turn": {
+          "Score": 0.0020134132
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 481 turn level to dinkelsbuhl now",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "481"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.027206417
+        },
+        "Contact": {
+          "Score": 0.0018857406
+        },
+        "FlightLevel": {
+          "Score": 0.0028894525
+        },
+        "Squawk": {
+          "Score": 0.0017379979
+        },
+        "Turn": {
+          "Score": 0.002150149
+        }
+      }
+    }
+  }
+]

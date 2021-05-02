@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "monarch 244 contact on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "244"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "monarch 244 contact on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "244"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.033803932
+        },
+        "Contact": {
+          "Score": 0.999164
+        },
+        "FlightLevel": {
+          "Score": 0.0024971024
+        },
+        "Squawk": {
+          "Score": 0.0024853528
+        },
+        "Turn": {
+          "Score": 0.0023135468
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "monarch 244 contact reims on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "244"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "monarch 244 contact reims on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "244"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02712245
+        },
+        "Contact": {
+          "Score": 0.99956906
+        },
+        "FlightLevel": {
+          "Score": 0.002658471
+        },
+        "Squawk": {
+          "Score": 0.002397401
+        },
+        "Turn": {
+          "Score": 0.0023253476
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "monarch 24 contact on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "24"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "monarch 24 contact on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "24"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.032084376
+        },
+        "Contact": {
+          "Score": 0.9991826
+        },
+        "FlightLevel": {
+          "Score": 0.002474482
+        },
+        "Squawk": {
+          "Score": 0.0024839381
+        },
+        "Turn": {
+          "Score": 0.0022900717
+        }
+      }
+    }
+  }
+]

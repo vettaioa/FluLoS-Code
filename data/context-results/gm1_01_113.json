@@ -1,0 +1,105 @@
+[
+  {
+    "RmlResult": {
+      "Message": "iberia 4476 contact zurich 125.85 good bye",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "4476"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "iberia 4476 contact zurich 125.85 good bye",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "4476"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.024281265
+        },
+        "Contact": {
+          "Score": 0.99923545
+        },
+        "FlightLevel": {
+          "Score": 0.0023965677
+        },
+        "Squawk": {
+          "Score": 0.0022153652
+        },
+        "Turn": {
+          "Score": 0.0020750568
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "iberia 4476 contact zurich on 25.85 good bye",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "4476"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.024581628
+        },
+        "Contact": {
+          "Score": 0.9996124
+        },
+        "FlightLevel": {
+          "Score": 0.0026236053
+        },
+        "Squawk": {
+          "Score": 0.0022092445
+        },
+        "Turn": {
+          "Score": 0.0021249724
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "iberia for 476 contact zurich 125.85 good bye",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "476"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "iberia for 476 contact zurich 125.85 good bye",
+      "CallSign": {
+        "Airline": "iberia for",
+        "FlightNumber": "476"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.018401569
+        },
+        "Contact": {
+          "Score": 0.9992319
+        },
+        "FlightLevel": {
+          "Score": 0.0027075044
+        },
+        "Squawk": {
+          "Score": 0.002303268
+        },
+        "Turn": {
+          "Score": 0.0022517396
+        }
+      }
+    }
+  }
+]

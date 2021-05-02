@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "hamburg airways",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "hamburg air",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01605053
+        },
+        "Contact": {
+          "Score": 0.99960715
+        },
+        "FlightLevel": {
+          "Score": 0.0024825493
+        },
+        "Squawk": {
+          "Score": 0.0020578366
+        },
+        "Turn": {
+          "Score": 0.0021849235
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "hamburg air 2546 contact marseille 125.850",
+      "CallSign": {
+        "Airline": "hamburg airways",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "hamburg air 2546 contact marseille 125.850",
+      "CallSign": {
+        "Airline": "hamburg air",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.020782126
+        },
+        "Contact": {
+          "Score": 0.99963576
+        },
+        "FlightLevel": {
+          "Score": 0.0020826003
+        },
+        "Squawk": {
+          "Score": 0.0020817106
+        },
+        "Turn": {
+          "Score": 0.0020695173
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "hamburg 2546 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "air hamburg",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "hamburg 2546 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "hamburg",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.027588142
+        },
+        "Contact": {
+          "Score": 0.9995314
+        },
+        "FlightLevel": {
+          "Score": 0.002294945
+        },
+        "Squawk": {
+          "Score": 0.0020143888
+        },
+        "Turn": {
+          "Score": 0.0021700468
+        }
+      }
+    }
+  }
+]

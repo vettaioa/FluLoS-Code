@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 157 for shortcut turn right heading 140",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "157"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 157 for shortcut turn right heading 140",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "157"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01486222
+        },
+        "Contact": {
+          "Score": 0.002560681
+        },
+        "FlightLevel": {
+          "Score": 0.002130434
+        },
+        "Squawk": {
+          "Score": 0.0026988245
+        },
+        "Turn": {
+          "Score": 0.9957065
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 157 for shortcut turn right heading 1 for0",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "157"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 157 for shortcut turn right heading 1 for0",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "157"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.013872652
+        },
+        "Contact": {
+          "Score": 0.0025611192
+        },
+        "FlightLevel": {
+          "Score": 0.0022243857
+        },
+        "Squawk": {
+          "Score": 0.0025740874
+        },
+        "Turn": {
+          "Score": 0.9957395
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 1574 shortcut turn right heading 140",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "1574"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 1574 shortcut turn right heading 140",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "1574"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.019217025
+        },
+        "Contact": {
+          "Score": 0.0024435574
+        },
+        "FlightLevel": {
+          "Score": 0.0018317193
+        },
+        "Squawk": {
+          "Score": 0.0026483138
+        },
+        "Turn": {
+          "Score": 0.9956313
+        }
+      }
+    }
+  }
+]

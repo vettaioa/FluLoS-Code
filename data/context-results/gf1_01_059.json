@@ -1,0 +1,80 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force 34 bonjour",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "34"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.048800927
+        },
+        "Contact": {
+          "Score": 0.0025470746
+        },
+        "FlightLevel": {
+          "Score": 0.0024354728
+        },
+        "Squawk": {
+          "Score": 0.0033724774
+        },
+        "Turn": {
+          "Score": 0.002063961
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force 334 bonjour",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.052930374
+        },
+        "Contact": {
+          "Score": 0.0025273098
+        },
+        "FlightLevel": {
+          "Score": 0.0023897665
+        },
+        "Squawk": {
+          "Score": 0.003317171
+        },
+        "Turn": {
+          "Score": 0.0020851062
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force a 34 bonjour",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.03753467
+        },
+        "Contact": {
+          "Score": 0.0026325705
+        },
+        "FlightLevel": {
+          "Score": 0.0027547549
+        },
+        "Squawk": {
+          "Score": 0.0033079418
+        },
+        "Turn": {
+          "Score": 0.0021267503
+        }
+      }
+    }
+  }
+]

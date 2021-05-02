@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "cross air 512 contact geneva 125.85 good bye",
+      "CallSign": {
+        "Airline": "crossair",
+        "FlightNumber": "512"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "cross air 512 contact geneva 125.85 good bye",
+      "CallSign": {
+        "Airline": "cross air",
+        "FlightNumber": "512"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.010622451
+        },
+        "Contact": {
+          "Score": 0.99946654
+        },
+        "FlightLevel": {
+          "Score": 0.0030756916
+        },
+        "Squawk": {
+          "Score": 0.002366705
+        },
+        "Turn": {
+          "Score": 0.0021801759
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "cross air 51 contact geneva 125.85 good bye",
+      "CallSign": {
+        "Airline": "crossair",
+        "FlightNumber": "51"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "cross air 51 contact geneva 125.85 good bye",
+      "CallSign": {
+        "Airline": "cross air",
+        "FlightNumber": "51"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.010880413
+        },
+        "Contact": {
+          "Score": 0.9994813
+        },
+        "FlightLevel": {
+          "Score": 0.002733067
+        },
+        "Squawk": {
+          "Score": 0.0024002984
+        },
+        "Turn": {
+          "Score": 0.0022018806
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "cross air 512 contact geneva 125.85 good bye",
+      "CallSign": {
+        "Airline": "crossair",
+        "FlightNumber": "512"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "cross air 512 contact geneva 125.85 good bye",
+      "CallSign": {
+        "Airline": "cross air",
+        "FlightNumber": "512"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.010622451
+        },
+        "Contact": {
+          "Score": 0.99946654
+        },
+        "FlightLevel": {
+          "Score": 0.0030756916
+        },
+        "Squawk": {
+          "Score": 0.002366705
+        },
+        "Turn": {
+          "Score": 0.0021801759
+        }
+      }
+    }
+  }
+]

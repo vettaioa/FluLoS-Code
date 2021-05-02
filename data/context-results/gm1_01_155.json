@@ -1,0 +1,94 @@
+[
+  {
+    "RmlResult": {
+      "Message": "swiss air 687 contact zurich 12585 good bye",
+      "CallSign": {
+        "Airline": "swiss air force",
+        "FlightNumber": "687"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "swiss air 687 contact zurich 12585 good bye",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "687"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.015665853
+        },
+        "Contact": {
+          "Score": 0.9852861
+        },
+        "FlightLevel": {
+          "Score": 0.002317296
+        },
+        "Squawk": {
+          "Score": 0.0022558924
+        },
+        "Turn": {
+          "Score": 0.0019623903
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "swiss air 687 contact zurich 2585 good bye",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "687"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.021768466
+        },
+        "Contact": {
+          "Score": 0.97997755
+        },
+        "FlightLevel": {
+          "Score": 0.002414669
+        },
+        "Squawk": {
+          "Score": 0.0024077278
+        },
+        "Turn": {
+          "Score": 0.0020620015
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "swiss air 687 contact zurich 1255 good bye",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "687"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.020567536
+        },
+        "Contact": {
+          "Score": 0.97890615
+        },
+        "FlightLevel": {
+          "Score": 0.0025027504
+        },
+        "Squawk": {
+          "Score": 0.0025162313
+        },
+        "Turn": {
+          "Score": 0.002194132
+        }
+      }
+    }
+  }
+]

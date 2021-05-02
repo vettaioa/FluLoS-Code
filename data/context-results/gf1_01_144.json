@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "cross air 2690 climb to flight level 300",
+      "CallSign": {
+        "Airline": "crossair",
+        "FlightNumber": "2690"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "cross air 2690 climb to flight level 300",
+      "CallSign": {
+        "Airline": "cross air",
+        "FlightNumber": "2690"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.008968089
+        },
+        "Contact": {
+          "Score": 0.0023589276
+        },
+        "FlightLevel": {
+          "Score": 0.99627167
+        },
+        "Squawk": {
+          "Score": 0.0017376582
+        },
+        "Turn": {
+          "Score": 0.0017372919
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "cross air 2690 climb flight level 300",
+      "CallSign": {
+        "Airline": "crossair",
+        "FlightNumber": "2690"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "cross air 2690 climb flight level 300",
+      "CallSign": {
+        "Airline": "cross air",
+        "FlightNumber": "2690"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.011751788
+        },
+        "Contact": {
+          "Score": 0.0023210207
+        },
+        "FlightLevel": {
+          "Score": 0.9903879
+        },
+        "Squawk": {
+          "Score": 0.0017750001
+        },
+        "Turn": {
+          "Score": 0.001690122
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "cross air 690 climb to flight level 300",
+      "CallSign": {
+        "Airline": "crossair",
+        "FlightNumber": "690"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "cross air 690 climb to flight level 300",
+      "CallSign": {
+        "Airline": "cross air",
+        "FlightNumber": "690"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.011638276
+        },
+        "Contact": {
+          "Score": 0.0024267738
+        },
+        "FlightLevel": {
+          "Score": 0.9962199
+        },
+        "Squawk": {
+          "Score": 0.0019982602
+        },
+        "Turn": {
+          "Score": 0.0019901432
+        }
+      }
+    }
+  }
+]

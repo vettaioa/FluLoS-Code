@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "olympic 144 turn level heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "144"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "olympic 144 turn level heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "144"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.013752491
+        },
+        "Contact": {
+          "Score": 0.0019509301
+        },
+        "FlightLevel": {
+          "Score": 0.0028784676
+        },
+        "Squawk": {
+          "Score": 0.001959288
+        },
+        "Turn": {
+          "Score": 0.9956315
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "olympic 14 turn level heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "14"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "olympic 14 turn level heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "14"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.014592074
+        },
+        "Contact": {
+          "Score": 0.001964213
+        },
+        "FlightLevel": {
+          "Score": 0.0029597967
+        },
+        "Squawk": {
+          "Score": 0.0019712003
+        },
+        "Turn": {
+          "Score": 0.0034755832
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "olympic 14 for turn level heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "14"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "olympic 14 for turn level heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "14"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.012229269
+        },
+        "Contact": {
+          "Score": 0.0020150824
+        },
+        "FlightLevel": {
+          "Score": 0.003215287
+        },
+        "Squawk": {
+          "Score": 0.0019530961
+        },
+        "Turn": {
+          "Score": 0.0035357908
+        }
+      }
+    }
+  }
+]

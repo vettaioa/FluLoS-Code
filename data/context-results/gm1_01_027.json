@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "roger alitalia 110 climb flight level 320",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "110"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger alitalia 110 climb flight level 320",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "110"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.012241043
+        },
+        "Contact": {
+          "Score": 0.0022621918
+        },
+        "FlightLevel": {
+          "Score": 0.98870057
+        },
+        "Squawk": {
+          "Score": 0.002444935
+        },
+        "Turn": {
+          "Score": 0.0020388202
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "roger alitalia 110 climb flight level 30",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "110"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger alitalia 110 climb flight level 30",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "110"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.011687622
+        },
+        "Contact": {
+          "Score": 0.0022954135
+        },
+        "FlightLevel": {
+          "Score": 0.9882738
+        },
+        "Squawk": {
+          "Score": 0.0024853386
+        },
+        "Turn": {
+          "Score": 0.0020531449
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "roger alitalia 110 climb to flight level 320",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "110"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger alitalia 110 climb to flight level 320",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "110"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.00944774
+        },
+        "Contact": {
+          "Score": 0.0023045305
+        },
+        "FlightLevel": {
+          "Score": 0.9956189
+        },
+        "Squawk": {
+          "Score": 0.002394417
+        },
+        "Turn": {
+          "Score": 0.0020906795
+        }
+      }
+    }
+  }
+]

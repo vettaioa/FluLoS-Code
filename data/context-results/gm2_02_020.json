@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 300 squawk 5763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "300"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 300 squawk 5763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "300"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.036172483
+        },
+        "Contact": {
+          "Score": 0.0021498057
+        },
+        "FlightLevel": {
+          "Score": 0.0011933869
+        },
+        "Squawk": {
+          "Score": 0.953908
+        },
+        "Turn": {
+          "Score": 0.0019256761
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 300 squawk 57630",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "300"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 300 squawk 57630",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "300"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.036172483
+        },
+        "Contact": {
+          "Score": 0.0021498057
+        },
+        "FlightLevel": {
+          "Score": 0.0011933869
+        },
+        "Squawk": {
+          "Score": 0.953908
+        },
+        "Turn": {
+          "Score": 0.0019256761
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 300 squawk 5763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "300"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 300 squawk 5763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "300"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.036172483
+        },
+        "Contact": {
+          "Score": 0.0021498057
+        },
+        "FlightLevel": {
+          "Score": 0.0011933869
+        },
+        "Squawk": {
+          "Score": 0.953908
+        },
+        "Turn": {
+          "Score": 0.0019256761
+        }
+      }
+    }
+  }
+]

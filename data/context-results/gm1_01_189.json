@@ -1,0 +1,105 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 379 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "379"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 379 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "379"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.013870218
+        },
+        "Contact": {
+          "Score": 0.98698413
+        },
+        "FlightLevel": {
+          "Score": 0.0017275162
+        },
+        "Squawk": {
+          "Score": 0.0027212359
+        },
+        "Turn": {
+          "Score": 0.0020028648
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 379 contact milano 1255 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "379"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.018960927
+        },
+        "Contact": {
+          "Score": 0.98102015
+        },
+        "FlightLevel": {
+          "Score": 0.0019111916
+        },
+        "Squawk": {
+          "Score": 0.002967159
+        },
+        "Turn": {
+          "Score": 0.0022241757
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 379 contact milano 12585 good bye now",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "379"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 379 contact milano 12585 good bye now",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "379"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.011039641
+        },
+        "Contact": {
+          "Score": 0.9870396
+        },
+        "FlightLevel": {
+          "Score": 0.0019137057
+        },
+        "Squawk": {
+          "Score": 0.0026582987
+        },
+        "Turn": {
+          "Score": 0.0020578809
+        }
+      }
+    }
+  }
+]

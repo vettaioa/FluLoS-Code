@@ -1,0 +1,107 @@
+[
+  {
+    "RmlResult": {
+      "Message": "sabena 826A turn level by 10 degrees",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sabena 826A turn level by 10 degrees",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.024292689
+        },
+        "Contact": {
+          "Score": 0.00164806
+        },
+        "FlightLevel": {
+          "Score": 0.0028303405
+        },
+        "Squawk": {
+          "Score": 0.0015846156
+        },
+        "Turn": {
+          "Score": 0.0027992262
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "sabena 826A turn level by 10 degrees now",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sabena 826A turn level by 10 degrees now",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.019315002
+        },
+        "Contact": {
+          "Score": 0.0017063385
+        },
+        "FlightLevel": {
+          "Score": 0.003083826
+        },
+        "Squawk": {
+          "Score": 0.0015790302
+        },
+        "Turn": {
+          "Score": 0.0028473386
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "sabena 826A turn level by 10 degrees in",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sabena 826A turn level by 10 degrees in",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.019987138
+        },
+        "Contact": {
+          "Score": 0.0017027297
+        },
+        "FlightLevel": {
+          "Score": 0.00310324
+        },
+        "Squawk": {
+          "Score": 0.0015755111
+        },
+        "Turn": {
+          "Score": 0.002854025
+        }
+      }
+    }
+  }
+]

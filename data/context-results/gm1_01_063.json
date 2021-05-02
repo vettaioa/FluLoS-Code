@@ -1,0 +1,101 @@
+[
+  {
+    "RmlResult": {
+      "Message": "speedbird 569 bonjour squawk 5763",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "569"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 569 bonjour squawk 5763",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.049100913
+        },
+        "Contact": {
+          "Score": 0.0016843069
+        },
+        "FlightLevel": {
+          "Score": 0.0020420912
+        },
+        "Squawk": {
+          "Score": 0.014210859
+        },
+        "Turn": {
+          "Score": 0.0017661117
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedbird 56 bonjour squawk 5763",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "56"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 56 bonjour squawk 5763",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04481537
+        },
+        "Contact": {
+          "Score": 0.0016457591
+        },
+        "FlightLevel": {
+          "Score": 0.0020579486
+        },
+        "Squawk": {
+          "Score": 0.01615988
+        },
+        "Turn": {
+          "Score": 0.0017250854
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedbird 569 bonjour squawk 5763",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "569"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 569 bonjour squawk 5763",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.049100913
+        },
+        "Contact": {
+          "Score": 0.0016843069
+        },
+        "FlightLevel": {
+          "Score": 0.0020420912
+        },
+        "Squawk": {
+          "Score": 0.014210859
+        },
+        "Turn": {
+          "Score": 0.0017661117
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "swiss air 6752 turn level direct to kamas",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "6752"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01765216
+        },
+        "Contact": {
+          "Score": 0.0024996267
+        },
+        "FlightLevel": {
+          "Score": 0.003341446
+        },
+        "Squawk": {
+          "Score": 0.001934017
+        },
+        "Turn": {
+          "Score": 0.0025529573
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "swiss air 6752 turn level direct kamas",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "6752"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.023272058
+        },
+        "Contact": {
+          "Score": 0.0024638642
+        },
+        "FlightLevel": {
+          "Score": 0.003017562
+        },
+        "Squawk": {
+          "Score": 0.0019779946
+        },
+        "Turn": {
+          "Score": 0.002488805
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "swiss air 6752 turn level direct to kamas",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "6752"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01765216
+        },
+        "Contact": {
+          "Score": 0.0024996267
+        },
+        "FlightLevel": {
+          "Score": 0.003341446
+        },
+        "Squawk": {
+          "Score": 0.001934017
+        },
+        "Turn": {
+          "Score": 0.0025529573
+        }
+      }
+    }
+  }
+]

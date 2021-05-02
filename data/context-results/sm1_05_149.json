@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 801 right turn to trasadingen",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "801"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.070704
+        },
+        "Contact": {
+          "Score": 0.0019424172
+        },
+        "FlightLevel": {
+          "Score": 0.0016879176
+        },
+        "Squawk": {
+          "Score": 0.0019555097
+        },
+        "Turn": {
+          "Score": 0.0027792072
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 801 right 100 trasadingen",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "801"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.15129073
+        },
+        "Contact": {
+          "Score": 0.0020581959
+        },
+        "FlightLevel": {
+          "Score": 0.0015741099
+        },
+        "Squawk": {
+          "Score": 0.0021845412
+        },
+        "Turn": {
+          "Score": 0.002324576
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 801 write 100 trasadingen",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "801"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.19448507
+        },
+        "Contact": {
+          "Score": 0.0021571764
+        },
+        "FlightLevel": {
+          "Score": 0.0016384184
+        },
+        "Squawk": {
+          "Score": 0.0022998704
+        },
+        "Turn": {
+          "Score": 0.0020992125
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.19484931
+        },
+        "Contact": {
+          "Score": 0.002372376
+        },
+        "FlightLevel": {
+          "Score": 0.0006244953
+        },
+        "Squawk": {
+          "Score": 0.004334551
+        },
+        "Turn": {
+          "Score": 0.0019740975
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia is",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.11216062
+        },
+        "Contact": {
+          "Score": 0.0025765803
+        },
+        "FlightLevel": {
+          "Score": 0.00087057997
+        },
+        "Squawk": {
+          "Score": 0.0041082874
+        },
+        "Turn": {
+          "Score": 0.002122375
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia in",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.105837606
+        },
+        "Contact": {
+          "Score": 0.0025792625
+        },
+        "FlightLevel": {
+          "Score": 0.00087320583
+        },
+        "Squawk": {
+          "Score": 0.00411196
+        },
+        "Turn": {
+          "Score": 0.0021278886
+        }
+      }
+    }
+  }
+]

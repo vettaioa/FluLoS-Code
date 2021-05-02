@@ -1,0 +1,74 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "aero 560",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.2516157
+        },
+        "Contact": {
+          "Score": 0.0017694463
+        },
+        "FlightLevel": {
+          "Score": 0.0010852541
+        },
+        "Squawk": {
+          "Score": 0.0026091856
+        },
+        "Turn": {
+          "Score": 0.0024683797
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "aero 8560",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.39594215
+        },
+        "Contact": {
+          "Score": 0.0016874195
+        },
+        "FlightLevel": {
+          "Score": 0.0010888095
+        },
+        "Squawk": {
+          "Score": 0.0024004965
+        },
+        "Turn": {
+          "Score": 0.0021162287
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "aero at 560",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.16789825
+        },
+        "Contact": {
+          "Score": 0.0018920292
+        },
+        "FlightLevel": {
+          "Score": 0.0013710592
+        },
+        "Squawk": {
+          "Score": 0.0025352265
+        },
+        "Turn": {
+          "Score": 0.002589382
+        }
+      }
+    }
+  }
+]

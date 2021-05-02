@@ -1,0 +1,105 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 216 contact reims 13227 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "216"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 216 contact reims 13227 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "216"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.024199843
+        },
+        "Contact": {
+          "Score": 0.9760487
+        },
+        "FlightLevel": {
+          "Score": 0.0018288576
+        },
+        "Squawk": {
+          "Score": 0.0029891618
+        },
+        "Turn": {
+          "Score": 0.0021523987
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 216 contact reims 1327 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "216"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.023419827
+        },
+        "Contact": {
+          "Score": 0.9752513
+        },
+        "FlightLevel": {
+          "Score": 0.0019374571
+        },
+        "Squawk": {
+          "Score": 0.0030373232
+        },
+        "Turn": {
+          "Score": 0.0022668922
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia to 16 contact reims 13227 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "16"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia to 16 contact reims 13227 good bye",
+      "CallSign": {
+        "Airline": "alitalia to",
+        "FlightNumber": "16"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01688444
+        },
+        "Contact": {
+          "Score": 0.97706455
+        },
+        "FlightLevel": {
+          "Score": 0.0019956748
+        },
+        "Squawk": {
+          "Score": 0.0029516306
+        },
+        "Turn": {
+          "Score": 0.0021839747
+        }
+      }
+    }
+  }
+]

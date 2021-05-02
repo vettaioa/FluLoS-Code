@@ -1,0 +1,98 @@
+[
+  {
+    "RmlResult": {
+      "Message": "turkair 925 good afternoon squawk 1005",
+      "CallSign": {
+        "Airline": "turkish",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "turkair 925 good afternoon squawk 1005",
+      "CallSign": {
+        "Airline": "turkair",
+        "FlightNumber": "925"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.04431567
+        },
+        "Contact": {
+          "Score": 0.002074218
+        },
+        "FlightLevel": {
+          "Score": 0.001743506
+        },
+        "Squawk": {
+          "Score": 0.94557464
+        },
+        "Turn": {
+          "Score": 0.0019800386
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "turkair 9 to 5 good afternoon squawk 1005",
+      "CallSign": {
+        "Airline": "turkish",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "turkair 9 to 5 good afternoon squawk 1005",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.026993467
+        },
+        "Contact": {
+          "Score": 0.0021765516
+        },
+        "FlightLevel": {
+          "Score": 0.0021576434
+        },
+        "Squawk": {
+          "Score": 0.94274855
+        },
+        "Turn": {
+          "Score": 0.0020843786
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "turkair 925 good afternoon squawk 1o 05",
+      "CallSign": {
+        "Airline": "turkair",
+        "FlightNumber": "925"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.037141487
+        },
+        "Contact": {
+          "Score": 0.0020735592
+        },
+        "FlightLevel": {
+          "Score": 0.0018706213
+        },
+        "Squawk": {
+          "Score": 0.95190316
+        },
+        "Turn": {
+          "Score": 0.001938446
+        }
+      }
+    }
+  }
+]

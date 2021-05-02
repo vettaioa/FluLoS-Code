@@ -1,0 +1,74 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "condor 499 bonjour cleared",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.1142477
+        },
+        "Contact": {
+          "Score": 0.0019274685
+        },
+        "FlightLevel": {
+          "Score": 0.0024165544
+        },
+        "Squawk": {
+          "Score": 0.0032297776
+        },
+        "Turn": {
+          "Score": 0.0020535942
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "condor 49 bonjour cleared",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.11081938
+        },
+        "Contact": {
+          "Score": 0.001915075
+        },
+        "FlightLevel": {
+          "Score": 0.0024692297
+        },
+        "Squawk": {
+          "Score": 0.0032595822
+        },
+        "Turn": {
+          "Score": 0.0020409103
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "condor 499 bonjour cleared",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.1142477
+        },
+        "Contact": {
+          "Score": 0.0019274685
+        },
+        "FlightLevel": {
+          "Score": 0.0024165544
+        },
+        "Squawk": {
+          "Score": 0.0032297776
+        },
+        "Turn": {
+          "Score": 0.0020535942
+        }
+      }
+    }
+  }
+]

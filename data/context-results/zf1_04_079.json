@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "airfrans uh 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans uh 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans uh",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.020009346
+        },
+        "Contact": {
+          "Score": 0.0021370563
+        },
+        "FlightLevel": {
+          "Score": 0.0025441104
+        },
+        "Squawk": {
+          "Score": 0.9259619
+        },
+        "Turn": {
+          "Score": 0.0022306866
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "air france a 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airbus france",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "air france a 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "air france a",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.012818206
+        },
+        "Contact": {
+          "Score": 0.002742061
+        },
+        "FlightLevel": {
+          "Score": 0.0026059654
+        },
+        "Squawk": {
+          "Score": 0.9295296
+        },
+        "Turn": {
+          "Score": 0.0023661342
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "airfrans 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.022501104
+        },
+        "Contact": {
+          "Score": 0.0020653903
+        },
+        "FlightLevel": {
+          "Score": 0.002304871
+        },
+        "Squawk": {
+          "Score": 0.93422276
+        },
+        "Turn": {
+          "Score": 0.0021656256
+        }
+      }
+    }
+  }
+]

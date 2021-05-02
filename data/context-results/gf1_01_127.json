@@ -1,0 +1,96 @@
+[
+  {
+    "RmlResult": {
+      "Message": "roger turn level heading 220",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger turn level heading 220",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.03429862
+        },
+        "Contact": {
+          "Score": 0.0018168192
+        },
+        "FlightLevel": {
+          "Score": 0.0023780048
+        },
+        "Squawk": {
+          "Score": 0.0020788023
+        },
+        "Turn": {
+          "Score": 0.0030661472
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "roger turn level heading to 20",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.018177552
+        },
+        "Contact": {
+          "Score": 0.0017995957
+        },
+        "FlightLevel": {
+          "Score": 0.0027541048
+        },
+        "Squawk": {
+          "Score": 0.0019513535
+        },
+        "Turn": {
+          "Score": 0.0033548232
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "roger turn level heading 22o",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger turn level heading 22o",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.0368024
+        },
+        "Contact": {
+          "Score": 0.0016774652
+        },
+        "FlightLevel": {
+          "Score": 0.0023829902
+        },
+        "Squawk": {
+          "Score": 0.001870081
+        },
+        "Turn": {
+          "Score": 0.0030433787
+        }
+      }
+    }
+  }
+]

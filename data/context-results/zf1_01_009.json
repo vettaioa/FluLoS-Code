@@ -1,0 +1,86 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "airfrans 3261 squawk now 2724",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.044727307
+        },
+        "Contact": {
+          "Score": 0.0015511916
+        },
+        "FlightLevel": {
+          "Score": 0.0015929992
+        },
+        "Squawk": {
+          "Score": 0.021297371
+        },
+        "Turn": {
+          "Score": 0.0016242502
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "airfrans 3261 squawk now 274",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.046769742
+        },
+        "Contact": {
+          "Score": 0.0016788711
+        },
+        "FlightLevel": {
+          "Score": 0.0017182886
+        },
+        "Squawk": {
+          "Score": 0.013816558
+        },
+        "Turn": {
+          "Score": 0.0017688406
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "airfrans 3261 squawk 2724",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans 3261 squawk 2724",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.06352534
+        },
+        "Contact": {
+          "Score": 0.001483317
+        },
+        "FlightLevel": {
+          "Score": 0.0013506
+        },
+        "Squawk": {
+          "Score": 0.96720356
+        },
+        "Turn": {
+          "Score": 0.0015410751
+        }
+      }
+    }
+  }
+]

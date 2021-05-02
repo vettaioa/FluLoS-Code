@@ -1,0 +1,107 @@
+[
+  {
+    "RmlResult": {
+      "Message": "klm 376 squawk 5766",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "klm 376 squawk 5766",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.10161454
+        },
+        "Contact": {
+          "Score": 0.0018258584
+        },
+        "FlightLevel": {
+          "Score": 0.0013506322
+        },
+        "Squawk": {
+          "Score": 0.9376991
+        },
+        "Turn": {
+          "Score": 0.0019337045
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "lm 376 squawk 5766",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "lm 376 squawk 5766",
+      "CallSign": {
+        "Airline": "lm",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.101093985
+        },
+        "Contact": {
+          "Score": 0.0018235126
+        },
+        "FlightLevel": {
+          "Score": 0.0013490391
+        },
+        "Squawk": {
+          "Score": 0.9383481
+        },
+        "Turn": {
+          "Score": 0.0019312054
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "l 376 squawk 5766",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "l 376 squawk 5766",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.09556701
+        },
+        "Contact": {
+          "Score": 0.0017981117
+        },
+        "FlightLevel": {
+          "Score": 0.0013317764
+        },
+        "Squawk": {
+          "Score": 0.9450298
+        },
+        "Turn": {
+          "Score": 0.0019041464
+        }
+      }
+    }
+  }
+]

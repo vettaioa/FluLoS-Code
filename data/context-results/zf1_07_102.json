@@ -1,0 +1,101 @@
+[
+  {
+    "RmlResult": {
+      "Message": "lauda 109 good afternoon squawk 2746",
+      "CallSign": {
+        "Airline": "lauda air",
+        "FlightNumber": "109"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "lauda 109 good afternoon squawk 2746",
+      "CallSign": {
+        "Airline": "lauda",
+        "FlightNumber": "109"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.045451097
+        },
+        "Contact": {
+          "Score": 0.0020807262
+        },
+        "FlightLevel": {
+          "Score": 0.0017514981
+        },
+        "Squawk": {
+          "Score": 0.94330764
+        },
+        "Turn": {
+          "Score": 0.001990856
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "lauda 109 good afternoon squawk 27 for6",
+      "CallSign": {
+        "Airline": "lauda",
+        "FlightNumber": "109"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03811934
+        },
+        "Contact": {
+          "Score": 0.00215932
+        },
+        "FlightLevel": {
+          "Score": 0.0019748507
+        },
+        "Squawk": {
+          "Score": 0.936588
+        },
+        "Turn": {
+          "Score": 0.0020678206
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "lauda air 109 good afternoon squawk 2746",
+      "CallSign": {
+        "Airline": "lauda air",
+        "FlightNumber": "109"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "lauda air 109 good afternoon squawk 2746",
+      "CallSign": {
+        "Airline": "lauda air",
+        "FlightNumber": "109"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.024041576
+        },
+        "Contact": {
+          "Score": 0.002613833
+        },
+        "FlightLevel": {
+          "Score": 0.001958326
+        },
+        "Squawk": {
+          "Score": 0.9404718
+        },
+        "Turn": {
+          "Score": 0.0020222238
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 6474 squawk 2762",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "6474"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 6474 squawk 2762",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "6474"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.036719356
+        },
+        "Contact": {
+          "Score": 0.0021068498
+        },
+        "FlightLevel": {
+          "Score": 0.0011378649
+        },
+        "Squawk": {
+          "Score": 0.959532
+        },
+        "Turn": {
+          "Score": 0.0018452874
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 6474 squawk 276 too",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "6474"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.031963725
+        },
+        "Contact": {
+          "Score": 0.0022420767
+        },
+        "FlightLevel": {
+          "Score": 0.0014297907
+        },
+        "Squawk": {
+          "Score": 0.013858007
+        },
+        "Turn": {
+          "Score": 0.0020329198
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 6474 squawk 276 to",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "6474"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.028564349
+        },
+        "Contact": {
+          "Score": 0.002221476
+        },
+        "FlightLevel": {
+          "Score": 0.0014265913
+        },
+        "Squawk": {
+          "Score": 0.014513631
+        },
+        "Turn": {
+          "Score": 0.002027136
+        }
+      }
+    }
+  }
+]

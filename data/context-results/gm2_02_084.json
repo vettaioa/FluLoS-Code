@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "roger turn level heading 225 permit climb",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        },
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger turn level heading 225 permit climb",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.01792025
+        },
+        "Contact": {
+          "Score": 0.0018792201
+        },
+        "FlightLevel": {
+          "Score": 0.0033721027
+        },
+        "Squawk": {
+          "Score": 0.0019405814
+        },
+        "Turn": {
+          "Score": 0.0028517533
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "roger turn level heading 2252 permit climb",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        },
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger turn level heading 2252 permit climb",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.019660408
+        },
+        "Contact": {
+          "Score": 0.0017776428
+        },
+        "FlightLevel": {
+          "Score": 0.0033901632
+        },
+        "Squawk": {
+          "Score": 0.0017999647
+        },
+        "Turn": {
+          "Score": 0.0027753587
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "roger turn level heading 225 minute climb",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        },
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger turn level heading 225 minute climb",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.016808584
+        },
+        "Contact": {
+          "Score": 0.0018615098
+        },
+        "FlightLevel": {
+          "Score": 0.0034185222
+        },
+        "Squawk": {
+          "Score": 0.0019204713
+        },
+        "Turn": {
+          "Score": 0.0028646693
+        }
+      }
+    }
+  }
+]

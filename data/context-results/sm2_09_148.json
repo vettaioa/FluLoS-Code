@@ -1,0 +1,101 @@
+[
+  {
+    "RmlResult": {
+      "Message": "air malta 450 squawk 7534",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "450"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "air malta 450 squawk 7534",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "450"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.039928973
+        },
+        "Contact": {
+          "Score": 0.002294143
+        },
+        "FlightLevel": {
+          "Score": 0.001525809
+        },
+        "Squawk": {
+          "Score": 0.9520987
+        },
+        "Turn": {
+          "Score": 0.001916173
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "air malta 450 squawk 753 for",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "450"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.029268628
+        },
+        "Contact": {
+          "Score": 0.002423989
+        },
+        "FlightLevel": {
+          "Score": 0.0018271996
+        },
+        "Squawk": {
+          "Score": 0.013003919
+        },
+        "Turn": {
+          "Score": 0.0021133053
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "air malta 450 squawk 75340",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "450"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "air malta 450 squawk 75340",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "450"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.039928973
+        },
+        "Contact": {
+          "Score": 0.002294143
+        },
+        "FlightLevel": {
+          "Score": 0.001525809
+        },
+        "Squawk": {
+          "Score": 0.9520987
+        },
+        "Turn": {
+          "Score": 0.001916173
+        }
+      }
+    }
+  }
+]

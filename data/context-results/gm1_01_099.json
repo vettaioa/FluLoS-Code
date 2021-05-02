@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "ltu 1602 climb to flight level 330",
+      "CallSign": {
+        "Airline": "ltu",
+        "FlightNumber": "1602"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "ltu 1602 climb to flight level 330",
+      "CallSign": {
+        "Airline": "ltu",
+        "FlightNumber": "1602"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01410982
+        },
+        "Contact": {
+          "Score": 0.0018681077
+        },
+        "FlightLevel": {
+          "Score": 0.994968
+        },
+        "Squawk": {
+          "Score": 0.0019311281
+        },
+        "Turn": {
+          "Score": 0.0025322132
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "ltu 1602 climb flight level 330",
+      "CallSign": {
+        "Airline": "ltu",
+        "FlightNumber": "1602"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "ltu 1602 climb flight level 330",
+      "CallSign": {
+        "Airline": "ltu",
+        "FlightNumber": "1602"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.018789375
+        },
+        "Contact": {
+          "Score": 0.0018257843
+        },
+        "FlightLevel": {
+          "Score": 0.9868674
+        },
+        "Squawk": {
+          "Score": 0.0019732297
+        },
+        "Turn": {
+          "Score": 0.0024645645
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "ltu 160 to climb to flight level 330",
+      "CallSign": {
+        "Airline": "ltu",
+        "FlightNumber": "160"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "ltu 160 to climb to flight level 330",
+      "CallSign": {
+        "Airline": "ltu",
+        "FlightNumber": "160"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.014888549
+        },
+        "Contact": {
+          "Score": 0.001945759
+        },
+        "FlightLevel": {
+          "Score": 0.9957072
+        },
+        "Squawk": {
+          "Score": 0.0019341388
+        },
+        "Turn": {
+          "Score": 0.0023325896
+        }
+      }
+    }
+  }
+]

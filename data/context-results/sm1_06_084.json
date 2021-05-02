@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 7816 turn level to nattenheim",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "7816"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.026925724
+        },
+        "Contact": {
+          "Score": 0.0014475203
+        },
+        "FlightLevel": {
+          "Score": 0.0030020261
+        },
+        "Squawk": {
+          "Score": 0.0013839834
+        },
+        "Turn": {
+          "Score": 0.0022578994
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 7816 turn level and nattenheim",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "7816"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.031423938
+        },
+        "Contact": {
+          "Score": 0.0014997817
+        },
+        "FlightLevel": {
+          "Score": 0.0029117009
+        },
+        "Squawk": {
+          "Score": 0.0014396635
+        },
+        "Turn": {
+          "Score": 0.0022604256
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 7816 turn level nattenheim",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "7816"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03941615
+        },
+        "Contact": {
+          "Score": 0.0014101869
+        },
+        "FlightLevel": {
+          "Score": 0.002640881
+        },
+        "Squawk": {
+          "Score": 0.0014166536
+        },
+        "Turn": {
+          "Score": 0.0021714752
+        }
+      }
+    }
+  }
+]

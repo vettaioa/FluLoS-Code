@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "speedbird 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.029354362
+        },
+        "Contact": {
+          "Score": 0.9847981
+        },
+        "FlightLevel": {
+          "Score": 0.0017337252
+        },
+        "Squawk": {
+          "Score": 0.0020814307
+        },
+        "Turn": {
+          "Score": 0.002037007
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "tag 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "stage",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "tag 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "tag",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.026814448
+        },
+        "Contact": {
+          "Score": 0.9843692
+        },
+        "FlightLevel": {
+          "Score": 0.001803138
+        },
+        "Squawk": {
+          "Score": 0.0021610826
+        },
+        "Turn": {
+          "Score": 0.0021116463
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "good 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "good 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "good",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02233487
+        },
+        "Contact": {
+          "Score": 0.9853385
+        },
+        "FlightLevel": {
+          "Score": 0.0017684721
+        },
+        "Squawk": {
+          "Score": 0.00230274
+        },
+        "Turn": {
+          "Score": 0.0020535805
+        }
+      }
+    }
+  }
+]

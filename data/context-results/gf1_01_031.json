@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "speedbird 580 descend to flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "580"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 580 descend to flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "580"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03763549
+        },
+        "Contact": {
+          "Score": 0.0018401884
+        },
+        "FlightLevel": {
+          "Score": 0.9954001
+        },
+        "Squawk": {
+          "Score": 0.0018580406
+        },
+        "Turn": {
+          "Score": 0.0018917378
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedbird 70 descend to flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "70"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 70 descend to flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "70"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.035242196
+        },
+        "Contact": {
+          "Score": 0.0017931627
+        },
+        "FlightLevel": {
+          "Score": 0.9956417
+        },
+        "Squawk": {
+          "Score": 0.0018009829
+        },
+        "Turn": {
+          "Score": 0.0018408957
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedbird 580 descend flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "580"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 580 descend flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "580"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.050876558
+        },
+        "Contact": {
+          "Score": 0.001802605
+        },
+        "FlightLevel": {
+          "Score": 0.9879826
+        },
+        "Squawk": {
+          "Score": 0.0019025137
+        },
+        "Turn": {
+          "Score": 0.0018357922
+        }
+      }
+    }
+  }
+]

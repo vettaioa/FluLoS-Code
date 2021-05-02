@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 4 to 6 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 4 to 6 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "4"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.00804158
+        },
+        "Contact": {
+          "Score": 0.00256248
+        },
+        "FlightLevel": {
+          "Score": 0.0019377362
+        },
+        "Squawk": {
+          "Score": 0.95520693
+        },
+        "Turn": {
+          "Score": 0.002018712
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 426 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "426"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 426 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "426"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.017917978
+        },
+        "Contact": {
+          "Score": 0.002411078
+        },
+        "FlightLevel": {
+          "Score": 0.0016274155
+        },
+        "Squawk": {
+          "Score": 0.95172477
+        },
+        "Turn": {
+          "Score": 0.001991517
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 4 too 6 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 4 too 6 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "4"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.009205976
+        },
+        "Contact": {
+          "Score": 0.0025820078
+        },
+        "FlightLevel": {
+          "Score": 0.0019439897
+        },
+        "Squawk": {
+          "Score": 0.9527076
+        },
+        "Turn": {
+          "Score": 0.002030096
+        }
+      }
+    }
+  }
+]

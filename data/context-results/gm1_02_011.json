@@ -1,0 +1,98 @@
+[
+  {
+    "RmlResult": {
+      "Message": "speedbird 563 bonjour squawk 5721",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 563 bonjour squawk 5721",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.049333427
+        },
+        "Contact": {
+          "Score": 0.0016863288
+        },
+        "FlightLevel": {
+          "Score": 0.0020412714
+        },
+        "Squawk": {
+          "Score": 0.014116375
+        },
+        "Turn": {
+          "Score": 0.0017682655
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "speedbird 563 bonjour squawk 572 on",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.04264917
+        },
+        "Contact": {
+          "Score": 0.0018320556
+        },
+        "FlightLevel": {
+          "Score": 0.002312414
+        },
+        "Squawk": {
+          "Score": 0.01143597
+        },
+        "Turn": {
+          "Score": 0.0019172039
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedbird 56 bonjour squawk 5721",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "56"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 56 bonjour squawk 5721",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04481537
+        },
+        "Contact": {
+          "Score": 0.0016457591
+        },
+        "FlightLevel": {
+          "Score": 0.0020579486
+        },
+        "Squawk": {
+          "Score": 0.01615988
+        },
+        "Turn": {
+          "Score": 0.0017250854
+        }
+      }
+    }
+  }
+]

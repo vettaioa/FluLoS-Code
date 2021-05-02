@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 301 descend flight level 270",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 301 descend flight level 270",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.018093126
+        },
+        "Contact": {
+          "Score": 0.0022400569
+        },
+        "FlightLevel": {
+          "Score": 0.98581696
+        },
+        "Squawk": {
+          "Score": 0.0025269664
+        },
+        "Turn": {
+          "Score": 0.001968806
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 301 descend to flight level 270",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 301 descend to flight level 270",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.013480657
+        },
+        "Contact": {
+          "Score": 0.0022866738
+        },
+        "FlightLevel": {
+          "Score": 0.9945681
+        },
+        "Squawk": {
+          "Score": 0.002466777
+        },
+        "Turn": {
+          "Score": 0.0020257349
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 301 descend flight level 27o",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 301 descend flight level 27o",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.017526744
+        },
+        "Contact": {
+          "Score": 0.002197033
+        },
+        "FlightLevel": {
+          "Score": 0.9860948
+        },
+        "Squawk": {
+          "Score": 0.0024575703
+        },
+        "Turn": {
+          "Score": 0.0018733636
+        }
+      }
+    }
+  }
+]

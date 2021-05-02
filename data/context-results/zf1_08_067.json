@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "airfrans 356 good morning squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans 356 good morning squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03344887
+        },
+        "Contact": {
+          "Score": 0.0019199265
+        },
+        "FlightLevel": {
+          "Score": 0.0018315333
+        },
+        "Squawk": {
+          "Score": 0.9536092
+        },
+        "Turn": {
+          "Score": 0.0017894488
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "airfrans 356 good morning squawk 75360",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans 356 good morning squawk 75360",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03344887
+        },
+        "Contact": {
+          "Score": 0.0019199265
+        },
+        "FlightLevel": {
+          "Score": 0.0018315333
+        },
+        "Squawk": {
+          "Score": 0.9536092
+        },
+        "Turn": {
+          "Score": 0.0017894488
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "airfrans 356 good morning squawk 75360",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans 356 good morning squawk 75360",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03344887
+        },
+        "Contact": {
+          "Score": 0.0019199265
+        },
+        "FlightLevel": {
+          "Score": 0.0018315333
+        },
+        "Squawk": {
+          "Score": 0.9536092
+        },
+        "Turn": {
+          "Score": 0.0017894488
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "roger turn level heading 330 to permit further climb",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        },
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger turn level heading 330 to permit further climb",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.01163249
+        },
+        "Contact": {
+          "Score": 0.0019708187
+        },
+        "FlightLevel": {
+          "Score": 0.0038563139
+        },
+        "Squawk": {
+          "Score": 0.0018967319
+        },
+        "Turn": {
+          "Score": 0.0030947356
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "roger turn level heading 330 to commit further climb",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        },
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger turn level heading 330 to commit further climb",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.011788448
+        },
+        "Contact": {
+          "Score": 0.001974653
+        },
+        "FlightLevel": {
+          "Score": 0.0038469767
+        },
+        "Squawk": {
+          "Score": 0.0019007364
+        },
+        "Turn": {
+          "Score": 0.003090938
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "roger turn level heading 330 permit further climb",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        },
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "roger turn level heading 330 permit further climb",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.014734991
+        },
+        "Contact": {
+          "Score": 0.0019381548
+        },
+        "FlightLevel": {
+          "Score": 0.0035241917
+        },
+        "Squawk": {
+          "Score": 0.0019319948
+        },
+        "Turn": {
+          "Score": 0.0030298778
+        }
+      }
+    }
+  }
+]

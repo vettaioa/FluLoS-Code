@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "portugalia 543 climb to flight level 350",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "portugalia 543 climb to flight level 350",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02900695
+        },
+        "Contact": {
+          "Score": 0.0018325956
+        },
+        "FlightLevel": {
+          "Score": 0.99895483
+        },
+        "Squawk": {
+          "Score": 0.0018531767
+        },
+        "Turn": {
+          "Score": 0.0018949148
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "portugalia 543 climb flight level 350",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "portugalia 543 climb flight level 350",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.038849734
+        },
+        "Contact": {
+          "Score": 0.0017927951
+        },
+        "FlightLevel": {
+          "Score": 0.9885924
+        },
+        "Squawk": {
+          "Score": 0.0018951534
+        },
+        "Turn": {
+          "Score": 0.0018402507
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "portugalia 543 climb to flight level 35o",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "portugalia 543 climb to flight level 35o",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03255685
+        },
+        "Contact": {
+          "Score": 0.001771312
+        },
+        "FlightLevel": {
+          "Score": 0.9958157
+        },
+        "Squawk": {
+          "Score": 0.0017693721
+        },
+        "Turn": {
+          "Score": 0.0018170159
+        }
+      }
+    }
+  }
+]

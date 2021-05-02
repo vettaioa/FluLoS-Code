@@ -1,0 +1,74 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "transavia 3513 bonjour cleared direct bilsa flight level 330",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.016435234
+        },
+        "Contact": {
+          "Score": 0.0017361954
+        },
+        "FlightLevel": {
+          "Score": 0.94195884
+        },
+        "Squawk": {
+          "Score": 0.0022584733
+        },
+        "Turn": {
+          "Score": 0.0022582752
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "transavia 3513 bonjour cleared direct bilsa flight level 30",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.015112298
+        },
+        "Contact": {
+          "Score": 0.0016948592
+        },
+        "FlightLevel": {
+          "Score": 0.006131815
+        },
+        "Squawk": {
+          "Score": 0.0022476923
+        },
+        "Turn": {
+          "Score": 0.0022149552
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "transavia 3513 bonjour cleared direct bilsa flight level 33o",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.015761565
+        },
+        "Contact": {
+          "Score": 0.0016564705
+        },
+        "FlightLevel": {
+          "Score": 0.006264599
+        },
+        "Squawk": {
+          "Score": 0.0022087032
+        },
+        "Turn": {
+          "Score": 0.0021625464
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "hapag lloyd 195 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "195"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "hapag lloyd 195 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "195"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01490761
+        },
+        "Contact": {
+          "Score": 0.99935365
+        },
+        "FlightLevel": {
+          "Score": 0.0024603093
+        },
+        "Squawk": {
+          "Score": 0.001893494
+        },
+        "Turn": {
+          "Score": 0.002629354
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "hapag lloyd 195 contact marseille 125.850",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "195"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "hapag lloyd 195 contact marseille 125.850",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "195"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.020292096
+        },
+        "Contact": {
+          "Score": 0.9993562
+        },
+        "FlightLevel": {
+          "Score": 0.0020819092
+        },
+        "Squawk": {
+          "Score": 0.0019013265
+        },
+        "Turn": {
+          "Score": 0.0025397977
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "hapag lloyd 195 contact marseille 125.85",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "195"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "hapag lloyd 195 contact marseille 125.85",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "195"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.018423747
+        },
+        "Contact": {
+          "Score": 0.99936265
+        },
+        "FlightLevel": {
+          "Score": 0.0020345664
+        },
+        "Squawk": {
+          "Score": 0.00186165
+        },
+        "Turn": {
+          "Score": 0.0024960572
+        }
+      }
+    }
+  }
+]

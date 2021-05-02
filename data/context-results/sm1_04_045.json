@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "sobelair 2557 turn level by 5 degrees",
+      "CallSign": {
+        "Airline": "belair",
+        "FlightNumber": "2557"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sobelair 2557 turn level by 5 degrees",
+      "CallSign": {
+        "Airline": "sobelair",
+        "FlightNumber": "2557"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.041905638
+        },
+        "Contact": {
+          "Score": 0.0018885517
+        },
+        "FlightLevel": {
+          "Score": 0.0028882183
+        },
+        "Squawk": {
+          "Score": 0.0019520253
+        },
+        "Turn": {
+          "Score": 0.0027422323
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "sobelair 2557 turn level by 5 degrees",
+      "CallSign": {
+        "Airline": "belair",
+        "FlightNumber": "2557"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sobelair 2557 turn level by 5 degrees",
+      "CallSign": {
+        "Airline": "sobelair",
+        "FlightNumber": "2557"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.041905638
+        },
+        "Contact": {
+          "Score": 0.0018885517
+        },
+        "FlightLevel": {
+          "Score": 0.0028882183
+        },
+        "Squawk": {
+          "Score": 0.0019520253
+        },
+        "Turn": {
+          "Score": 0.0027422323
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "sobelair 2557 turn level by 5 degrees here",
+      "CallSign": {
+        "Airline": "belair",
+        "FlightNumber": "2557"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "sobelair 2557 turn level by 5 degrees here",
+      "CallSign": {
+        "Airline": "sobelair",
+        "FlightNumber": "2557"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.034971032
+        },
+        "Contact": {
+          "Score": 0.001955118
+        },
+        "FlightLevel": {
+          "Score": 0.0031561034
+        },
+        "Squawk": {
+          "Score": 0.0019449252
+        },
+        "Turn": {
+          "Score": 0.0027948515
+        }
+      }
+    }
+  }
+]

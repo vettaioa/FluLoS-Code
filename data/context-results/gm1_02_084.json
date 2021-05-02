@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force 334 contact reims on 134.4 good bye",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.010953024
+        },
+        "Contact": {
+          "Score": 0.9996572
+        },
+        "FlightLevel": {
+          "Score": 0.0029338396
+        },
+        "Squawk": {
+          "Score": 0.0023069603
+        },
+        "Turn": {
+          "Score": 0.0022743521
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force 334 contact reims 134.4 good bye",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.011348831
+        },
+        "Contact": {
+          "Score": 0.9993317
+        },
+        "FlightLevel": {
+          "Score": 0.0027566825
+        },
+        "Squawk": {
+          "Score": 0.0023398986
+        },
+        "Turn": {
+          "Score": 0.002248077
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force 34 contact reims on 134.4 good bye",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "34"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01032391
+        },
+        "Contact": {
+          "Score": 0.9996641
+        },
+        "FlightLevel": {
+          "Score": 0.0029120578
+        },
+        "Squawk": {
+          "Score": 0.0023015884
+        },
+        "Turn": {
+          "Score": 0.0022547673
+        }
+      }
+    }
+  }
+]

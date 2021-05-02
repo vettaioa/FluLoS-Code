@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "speedbird 563 contact geneva on 12815 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 563 contact geneva on 12815 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.048363354
+        },
+        "Contact": {
+          "Score": 0.99238807
+        },
+        "FlightLevel": {
+          "Score": 0.0021328153
+        },
+        "Squawk": {
+          "Score": 0.0023209334
+        },
+        "Turn": {
+          "Score": 0.0020656385
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedbird 563 contact geneva 12815 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 563 contact geneva 12815 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.051292192
+        },
+        "Contact": {
+          "Score": 0.9803078
+        },
+        "FlightLevel": {
+          "Score": 0.0019435679
+        },
+        "Squawk": {
+          "Score": 0.002367678
+        },
+        "Turn": {
+          "Score": 0.0020276203
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "speedbird 563 contact geneva 13815 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 563 contact geneva 13815 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.051292192
+        },
+        "Contact": {
+          "Score": 0.9803078
+        },
+        "FlightLevel": {
+          "Score": 0.0019435679
+        },
+        "Squawk": {
+          "Score": 0.002367678
+        },
+        "Turn": {
+          "Score": 0.0020276203
+        }
+      }
+    }
+  }
+]

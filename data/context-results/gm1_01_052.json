@@ -1,0 +1,74 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sunwing 5123 bonjour cleared st prex correction kines st prex arbos epinal flight level 300",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.0092116315
+        },
+        "Contact": {
+          "Score": 0.0018224104
+        },
+        "FlightLevel": {
+          "Score": 0.9980973
+        },
+        "Squawk": {
+          "Score": 0.0019134339
+        },
+        "Turn": {
+          "Score": 0.0018336882
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sunwing 5123 bonjour cleared st prex give correction kines st prex arbos epinal flight level 300",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.008337327
+        },
+        "Contact": {
+          "Score": 0.0018568414
+        },
+        "FlightLevel": {
+          "Score": 0.9981661
+        },
+        "Squawk": {
+          "Score": 0.0019035273
+        },
+        "Turn": {
+          "Score": 0.0018651509
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sunwing 5123 bonjour cleared st prex your correction kines st prex arbos epinal flight level 300",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.008309319
+        },
+        "Contact": {
+          "Score": 0.0018539961
+        },
+        "FlightLevel": {
+          "Score": 0.99817276
+        },
+        "Squawk": {
+          "Score": 0.0019026778
+        },
+        "Turn": {
+          "Score": 0.0018620531
+        }
+      }
+    }
+  }
+]

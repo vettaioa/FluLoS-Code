@@ -1,0 +1,104 @@
+[
+  {
+    "RmlResult": {
+      "Message": "tunair 4802 squawk 2751",
+      "CallSign": {
+        "Airline": "tunair",
+        "FlightNumber": "4802"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "tunair 4802 squawk 2751",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.1015643
+        },
+        "Contact": {
+          "Score": 0.0015937923
+        },
+        "FlightLevel": {
+          "Score": 0.0011792405
+        },
+        "Squawk": {
+          "Score": 0.9693957
+        },
+        "Turn": {
+          "Score": 0.0016586432
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "tunair 402 squawk 2751",
+      "CallSign": {
+        "Airline": "tunair",
+        "FlightNumber": "402"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "tunair 402 squawk 2751",
+      "CallSign": {
+        "Airline": "tunair",
+        "FlightNumber": "402"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.10519013
+        },
+        "Contact": {
+          "Score": 0.0017308737
+        },
+        "FlightLevel": {
+          "Score": 0.0012795886
+        },
+        "Squawk": {
+          "Score": 0.9514723
+        },
+        "Turn": {
+          "Score": 0.0018185925
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "tunair 480 to squawk 2751",
+      "CallSign": {
+        "Airline": "tunair",
+        "FlightNumber": "480"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "tunair 480 to squawk 2751",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.070776574
+        },
+        "Contact": {
+          "Score": 0.0017705545
+        },
+        "FlightLevel": {
+          "Score": 0.0014876357
+        },
+        "Squawk": {
+          "Score": 0.016766064
+        },
+        "Turn": {
+          "Score": 0.0018745181
+        }
+      }
+    }
+  }
+]

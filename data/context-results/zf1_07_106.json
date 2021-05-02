@@ -1,0 +1,101 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 416 good afternoon squawk 7533",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "416"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 416 good afternoon squawk 7533",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "416"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01933249
+        },
+        "Contact": {
+          "Score": 0.0024262902
+        },
+        "FlightLevel": {
+          "Score": 0.0015955429
+        },
+        "Squawk": {
+          "Score": 0.9506627
+        },
+        "Turn": {
+          "Score": 0.0020144081
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 416 good afternoon squawk 753",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "416"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01945044
+        },
+        "Contact": {
+          "Score": 0.0024723907
+        },
+        "FlightLevel": {
+          "Score": 0.0016916805
+        },
+        "Squawk": {
+          "Score": 0.94145817
+        },
+        "Turn": {
+          "Score": 0.0021287603
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 416 good afternoon squawk 75338",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "416"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 416 good afternoon squawk 75338",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "416"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01933249
+        },
+        "Contact": {
+          "Score": 0.0024262902
+        },
+        "FlightLevel": {
+          "Score": 0.0015955429
+        },
+        "Squawk": {
+          "Score": 0.9506627
+        },
+        "Turn": {
+          "Score": 0.0020144081
+        }
+      }
+    }
+  }
+]

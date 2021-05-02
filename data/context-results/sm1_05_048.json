@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "air malta 004 for separation turn right by 10 degrees",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "004"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "air malta 004 for separation turn right by 10 degrees",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "004"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.013560594
+        },
+        "Contact": {
+          "Score": 0.002640803
+        },
+        "FlightLevel": {
+          "Score": 0.002592064
+        },
+        "Squawk": {
+          "Score": 0.0027338516
+        },
+        "Turn": {
+          "Score": 0.99713045
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "air malta 004 for separation turn right by 10 degrees here",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "004"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "air malta 004 for separation turn right by 10 degrees here",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "004"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.011927822
+        },
+        "Contact": {
+          "Score": 0.0026911297
+        },
+        "FlightLevel": {
+          "Score": 0.0027921037
+        },
+        "Squawk": {
+          "Score": 0.0027017654
+        },
+        "Turn": {
+          "Score": 0.9971583
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "air malta 004 for separation turn right by 10 degrees in",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "004"
+      },
+      "Intents": {
+        "Turn": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "air malta 004 for separation turn right by 10 degrees in",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "004"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.011655715
+        },
+        "Contact": {
+          "Score": 0.00269182
+        },
+        "FlightLevel": {
+          "Score": 0.0027850708
+        },
+        "Squawk": {
+          "Score": 0.0027060849
+        },
+        "Turn": {
+          "Score": 0.9971718
+        }
+      }
+    }
+  }
+]

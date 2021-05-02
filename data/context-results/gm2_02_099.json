@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "airfrans 3261 affirm and contact geneva 125.85 au revoir",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans 3261 affirm and contact geneva 125.85 au revoir",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.023989255
+        },
+        "Contact": {
+          "Score": 0.0032138403
+        },
+        "FlightLevel": {
+          "Score": 0.0032039112
+        },
+        "Squawk": {
+          "Score": 0.0019263678
+        },
+        "Turn": {
+          "Score": 0.0021671648
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "airfrans 3261 affirm contact geneva 125.85 au revoir",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans 3261 affirm contact geneva 125.85 au revoir",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.028010363
+        },
+        "Contact": {
+          "Score": 0.0031623128
+        },
+        "FlightLevel": {
+          "Score": 0.0029793743
+        },
+        "Squawk": {
+          "Score": 0.0019412709
+        },
+        "Turn": {
+          "Score": 0.0021286507
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "airfrans 3261 affirm contact geneva 125.85 au revoir",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "airfrans 3261 affirm contact geneva 125.85 au revoir",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.028010363
+        },
+        "Contact": {
+          "Score": 0.0031623128
+        },
+        "FlightLevel": {
+          "Score": 0.0029793743
+        },
+        "Squawk": {
+          "Score": 0.0019412709
+        },
+        "Turn": {
+          "Score": 0.0021286507
+        }
+      }
+    }
+  }
+]

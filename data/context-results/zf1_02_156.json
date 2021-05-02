@@ -1,0 +1,101 @@
+[
+  {
+    "RmlResult": {
+      "Message": "jetaviation 701 squawk 2732",
+      "CallSign": {
+        "Airline": "euraviation",
+        "FlightNumber": "701"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "jetaviation 701 squawk 2732",
+      "CallSign": {
+        "Airline": "jetaviation",
+        "FlightNumber": "701"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.104567386
+        },
+        "Contact": {
+          "Score": 0.0017273531
+        },
+        "FlightLevel": {
+          "Score": 0.0012771429
+        },
+        "Squawk": {
+          "Score": 0.9522028
+        },
+        "Turn": {
+          "Score": 0.001814749
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "jetaviation 71 squawk 2732",
+      "CallSign": {
+        "Airline": "euraviation",
+        "FlightNumber": "71"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "jetaviation 71 squawk 2732",
+      "CallSign": {
+        "Airline": "jetaviation",
+        "FlightNumber": "71"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.101142734
+        },
+        "Contact": {
+          "Score": 0.0017077809
+        },
+        "FlightLevel": {
+          "Score": 0.0012635416
+        },
+        "Squawk": {
+          "Score": 0.95610124
+        },
+        "Turn": {
+          "Score": 0.0017933936
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "jetaviation 701 squawk 273 too",
+      "CallSign": {
+        "Airline": "jetaviation",
+        "FlightNumber": "701"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.076383136
+        },
+        "Contact": {
+          "Score": 0.001911599
+        },
+        "FlightLevel": {
+          "Score": 0.0015754825
+        },
+        "Squawk": {
+          "Score": 0.011834
+        },
+        "Turn": {
+          "Score": 0.0020115112
+        }
+      }
+    }
+  }
+]

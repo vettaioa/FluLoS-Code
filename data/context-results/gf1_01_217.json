@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "iberia 3473 bonjour identified climb to flight level",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3473"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "iberia 3473 bonjour identified climb to flight level",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3473"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.010969933
+        },
+        "Contact": {
+          "Score": 0.0016648277
+        },
+        "FlightLevel": {
+          "Score": 0.31623888
+        },
+        "Squawk": {
+          "Score": 0.002134549
+        },
+        "Turn": {
+          "Score": 0.0017175514
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "iberia 3473 bonjour identified climb to flight level law",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3473"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "iberia 3473 bonjour identified climb to flight level law",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3473"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.009781013
+        },
+        "Contact": {
+          "Score": 0.0017318529
+        },
+        "FlightLevel": {
+          "Score": 0.9971602
+        },
+        "Squawk": {
+          "Score": 0.0021211114
+        },
+        "Turn": {
+          "Score": 0.0017804082
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "iberia 3473 bonjour identified climb to flight level la",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3473"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "iberia 3473 bonjour identified climb to flight level la",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3473"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.009559153
+        },
+        "Contact": {
+          "Score": 0.0017236966
+        },
+        "FlightLevel": {
+          "Score": 0.9971913
+        },
+        "Squawk": {
+          "Score": 0.0021177751
+        },
+        "Turn": {
+          "Score": 0.0017719117
+        }
+      }
+    }
+  }
+]

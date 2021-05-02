@@ -1,0 +1,110 @@
+[
+  {
+    "RmlResult": {
+      "Message": "lufthansa 5305 squawk 2756",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "5305"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "lufthansa 5305 squawk 2756",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "5305"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.047800347
+        },
+        "Contact": {
+          "Score": 0.0015421505
+        },
+        "FlightLevel": {
+          "Score": 0.0013114167
+        },
+        "Squawk": {
+          "Score": 0.961186
+        },
+        "Turn": {
+          "Score": 0.0018725848
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "lufthansa 53 o5 squawk 2756",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "53"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "lufthansa 53 o5 squawk 2756",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "53"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.04201764
+        },
+        "Contact": {
+          "Score": 0.0016776699
+        },
+        "FlightLevel": {
+          "Score": 0.0015596065
+        },
+        "Squawk": {
+          "Score": 0.01571216
+        },
+        "Turn": {
+          "Score": 0.0019896005
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "lufthansa 5305 squawk 27560",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "5305"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "lufthansa 5305 squawk 27560",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "5305"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.047800347
+        },
+        "Contact": {
+          "Score": 0.0015421505
+        },
+        "FlightLevel": {
+          "Score": 0.0013114167
+        },
+        "Squawk": {
+          "Score": 0.961186
+        },
+        "Turn": {
+          "Score": 0.0018725848
+        }
+      }
+    }
+  }
+]

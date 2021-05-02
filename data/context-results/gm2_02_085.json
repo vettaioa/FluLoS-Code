@@ -1,0 +1,83 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force 334 contact reims 134.4 if",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.018915895
+        },
+        "Contact": {
+          "Score": 0.99917233
+        },
+        "FlightLevel": {
+          "Score": 0.0026819203
+        },
+        "Squawk": {
+          "Score": 0.0022528642
+        },
+        "Turn": {
+          "Score": 0.0023440663
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force 334 contact reims 134.4 revoir",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.020907918
+        },
+        "Contact": {
+          "Score": 0.9991509
+        },
+        "FlightLevel": {
+          "Score": 0.0027122933
+        },
+        "Squawk": {
+          "Score": 0.0022727335
+        },
+        "Turn": {
+          "Score": 0.0023732902
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "belgian air force 334 contact reims 134.4 iveagh",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.023012377
+        },
+        "Contact": {
+          "Score": 0.99915755
+        },
+        "FlightLevel": {
+          "Score": 0.0026064797
+        },
+        "Squawk": {
+          "Score": 0.0021700375
+        },
+        "Turn": {
+          "Score": 0.0022661379
+        }
+      }
+    }
+  }
+]

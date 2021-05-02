@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "lufthansa 4652 contact marseille 125.85",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "lufthansa 4652 contact marseille 125.85",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.031163752
+        },
+        "Contact": {
+          "Score": 0.99908656
+        },
+        "FlightLevel": {
+          "Score": 0.0020075624
+        },
+        "Squawk": {
+          "Score": 0.0024479658
+        },
+        "Turn": {
+          "Score": 0.0022067744
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "lufthansa 4652 contact marseille 125.850",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "lufthansa 4652 contact marseille 125.850",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03496928
+        },
+        "Contact": {
+          "Score": 0.0030722765
+        },
+        "FlightLevel": {
+          "Score": 0.0020601852
+        },
+        "Squawk": {
+          "Score": 0.0024949005
+        },
+        "Turn": {
+          "Score": 0.0022532542
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "lufthansa 4652 contact marseille 125.855",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {
+        "Contact": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "lufthansa 4652 contact marseille 125.855",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03531912
+        },
+        "Contact": {
+          "Score": 0.99907583
+        },
+        "FlightLevel": {
+          "Score": 0.0020626995
+        },
+        "Squawk": {
+          "Score": 0.002495581
+        },
+        "Turn": {
+          "Score": 0.0022557545
+        }
+      }
+    }
+  }
+]

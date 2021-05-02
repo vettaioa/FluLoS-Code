@@ -1,0 +1,92 @@
+[
+  {
+    "RmlResult": {
+      "Message": "speedbird 563 bonjour squawk 5721",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "Squawk": null
+      }
+    },
+    "LuisResult": {
+      "Message": "speedbird 563 bonjour squawk 5721",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.049333427
+        },
+        "Contact": {
+          "Score": 0.0016863288
+        },
+        "FlightLevel": {
+          "Score": 0.0020412714
+        },
+        "Squawk": {
+          "Score": 0.014116375
+        },
+        "Turn": {
+          "Score": 0.0017682655
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "speedbird 563 bonjour squawk 572 won",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03928235
+        },
+        "Contact": {
+          "Score": 0.0018467803
+        },
+        "FlightLevel": {
+          "Score": 0.00231802
+        },
+        "Squawk": {
+          "Score": 0.011139816
+        },
+        "Turn": {
+          "Score": 0.001937616
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "speedbird 563 bonjour squawk 572 juan",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.040601436
+        },
+        "Contact": {
+          "Score": 0.0018597513
+        },
+        "FlightLevel": {
+          "Score": 0.0023112467
+        },
+        "Squawk": {
+          "Score": 0.010683576
+        },
+        "Turn": {
+          "Score": 0.0019511394
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "RmlResult": {
+      "Message": "alitalia 301 descend to flight level 300 traffic",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 301 descend to flight level 300 traffic",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01070309
+        },
+        "Contact": {
+          "Score": 0.0023466328
+        },
+        "FlightLevel": {
+          "Score": 0.9950788
+        },
+        "Squawk": {
+          "Score": 0.0024347657
+        },
+        "Turn": {
+          "Score": 0.0020671512
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 301 descend to flight level 300 traffic",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 301 descend to flight level 300 traffic",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.01070309
+        },
+        "Contact": {
+          "Score": 0.0023466328
+        },
+        "FlightLevel": {
+          "Score": 0.9950788
+        },
+        "Squawk": {
+          "Score": 0.0024347657
+        },
+        "Turn": {
+          "Score": 0.0020671512
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "alitalia 301 descend flight level 300 traffic",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Score": 1
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "alitalia 301 descend flight level 300 traffic",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.013975332
+        },
+        "Contact": {
+          "Score": 0.0023069987
+        },
+        "FlightLevel": {
+          "Score": 0.98730206
+        },
+        "Squawk": {
+          "Score": 0.0024900301
+        },
+        "Turn": {
+          "Score": 0.0020148347
+        }
+      }
+    }
+  }
+]
