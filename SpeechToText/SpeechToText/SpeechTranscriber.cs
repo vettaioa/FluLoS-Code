@@ -32,7 +32,7 @@ namespace SpeechToText
             if (string.IsNullOrWhiteSpace(azureApiKeyFile))
                 throw new ArgumentNullException("azureApiKeyFile");
 
-            if(!File.Exists(azureApiKeyFile))
+            if (!File.Exists(azureApiKeyFile))
                 throw new ArgumentException("azureApiKeyFile not found");
 
             AzureCredentials azureCredentials = JsonSerializer.Deserialize<AzureCredentials>(File.ReadAllText(azureApiKeyFile));
@@ -81,6 +81,30 @@ namespace SpeechToText
         }
 
         /// <summary>
+        /// Transcribes multiple audio files
+        /// </summary>
+        /// <param name="filePaths"></param>
+        /// <param name="nBest"></param>
+        /// <returns></returns>
+        public async Task<FileResult[]> TranscribeAudioFiles(string[] filePaths, int nBest = DEFAULT_NBEST)
+        {
+            FileResult[] results = null;
+
+            if (filePaths != null && filePaths.Length > 0)
+            {
+                results = new FileResult[filePaths.Length];
+                for (int i = 0; i < filePaths.Length; i++)
+                {
+                    Console.WriteLine("  {0}/{1}: {2}", i+1, filePaths.Length, filePaths[i]);
+                    FileResult result = await TranscribeAudioFile(filePaths[i], nBest);
+                    results[i] = result;
+                }
+            }
+
+            return results;
+        }
+
+        /// <summary>
         /// Transcribes multiple audio files within a directory
         /// </summary>
         /// <param name="dirPath"></param>
@@ -88,26 +112,21 @@ namespace SpeechToText
         /// <returns></returns>
         public async Task<FileResult[]> TranscribeAudioDirectory(string dirPath, int nBest = DEFAULT_NBEST)
         {
-            if(Directory.Exists(dirPath))
+            if (Directory.Exists(dirPath))
             {
-                string[] dirFiles = Directory.GetFiles(dirPath);
-                FileResult[] results = new FileResult[dirFiles.Length];
                 try
                 {
-                    for (int i = 0; i < dirFiles.Length; i++)
-                    {
-                        FileResult result = await TranscribeAudioFile(dirFiles[i], nBest);
-                        results[i] = result;
-                    }
-                    return results;
+                    string[] dirFiles = Directory.GetFiles(dirPath);
+                    return await TranscribeAudioFiles(dirFiles, nBest);
                 }
-                catch(Exception ex) when (ex is IOException || ex is SystemException)
+                catch (Exception ex) when (ex is IOException || ex is SystemException)
                 {
                     Console.WriteLine($"Error getting files from directory {dirPath}");
                 }
             }
             return null;
         }
+
 
         /// <summary>
         /// Recognizes speech and gives back strings of possible transcriptions
@@ -124,16 +143,16 @@ namespace SpeechToText
             string json = recognitionResult.Properties.GetProperty(PropertyId.SpeechServiceResponse_JsonResult);
 
             SpeechJsonResult jsonResult = JsonSerializer.Deserialize<SpeechJsonResult>(json);
-            if(jsonResult != null && jsonResult.NBest != null)
+            if (jsonResult != null && jsonResult.NBest != null)
             {
                 int arraySize = nBest;
                 if (jsonResult.NBest.Count < nBest)
                     arraySize = jsonResult.NBest.Count;     // in case speech api returns less results
 
                 string[] nBestResults = new string[arraySize];
-                for(int i = 0; i < arraySize; i++)
+                for (int i = 0; i < arraySize; i++)
                 {
-                    if(i < jsonResult.NBest.Count)
+                    if (i < jsonResult.NBest.Count)
                     {
                         nBestResults[i] = jsonResult.NBest[i].Lexical;
                     }

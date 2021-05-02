@@ -18,7 +18,7 @@ namespace Pipeline
         {
             this.config = config;
             contextExtractor = new ContextExtractor(config);
-            speechToText = new SpeechToTextRunner(config.SpeechToText);
+            speechToText = new SpeechToTextRunner(config.SpeechToText, config.InputLabelDirectory);
         }
 
         public async Task Run()
@@ -38,7 +38,7 @@ namespace Pipeline
                 JsonSerializerOptions jsonOptions = new JsonSerializerOptions() { WriteIndented = true };
                 string resultsJson = JsonSerializer.Serialize(contextResults, jsonOptions);
                 Console.WriteLine(resultsJson);
-                if(!string.IsNullOrWhiteSpace(config.ContextOutputDirectory))
+                if (!string.IsNullOrWhiteSpace(config.ContextOutputDirectory))
                 {
                     Directory.CreateDirectory(config.ContextOutputDirectory);
 

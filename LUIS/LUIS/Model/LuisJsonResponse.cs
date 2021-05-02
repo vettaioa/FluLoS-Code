@@ -53,7 +53,7 @@ namespace LUIS.Model
         public IList<List<string>> ListAirlines { get; set; }
 
         // Prebuilt
-        public IList<string> geographyV2 { get; set; }
+        public IList<PrebuiltGeography> geographyV2 { get; set; }
 
     }
 
@@ -91,5 +91,11 @@ namespace LUIS.Model
     public class MLSubSubEntity
     {
         public IList<string> Value { get; set; }
+    }
+
+    public class PrebuiltGeography
+    {
+        public string value { get; set; }
+        public string type { get; set; }
     }
 }

@@ -164,8 +164,8 @@ namespace LUIS.Model
                     if (jsonResponse.prediction.entities.RegexTurnTo != null && jsonResponse.prediction.entities.RegexTurnTo.Count > 0)
                         EntitiesNonML.Add("RegexTurnTo", jsonResponse.prediction.entities.RegexTurnTo[0]);
                     
-                    if (jsonResponse.prediction.entities.geographyV2 != null && jsonResponse.prediction.entities.geographyV2.Count > 0)
-                        EntitiesNonML.Add("geographyV2", jsonResponse.prediction.entities.geographyV2[0]);
+                    if (jsonResponse.prediction.entities.geographyV2 != null && jsonResponse.prediction.entities.geographyV2.Count > 0 && jsonResponse.prediction.entities.geographyV2[0] != null)
+                        EntitiesNonML.Add("geographyV2", jsonResponse.prediction.entities.geographyV2[0].value);
                     
                     if (jsonResponse.prediction.entities.ListAirlines != null && jsonResponse.prediction.entities.ListAirlines.Count > 0 && jsonResponse.prediction.entities.ListAirlines[0] != null && jsonResponse.prediction.entities.ListAirlines[0].Count > 0)
                         EntitiesNonML.Add("ListAirlines", jsonResponse.prediction.entities.ListAirlines[0][0]); 
