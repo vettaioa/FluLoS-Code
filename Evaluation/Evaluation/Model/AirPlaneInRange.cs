@@ -1,13 +1,13 @@
 ﻿
 namespace Evaluation.Model
 {
-    public class AirPlaneInRange
+    class AirplaneInRange
     {
         public int Id { get; set; }
-        public AirPlanePosition Position { get; set; }
+        public AirplanePosition Position { get; set; }
     }
 
-    public class AirPlanePosition
+    public class AirplanePosition
     {
         public int Altitude { get; set; }
         public double Heading { get; set; }

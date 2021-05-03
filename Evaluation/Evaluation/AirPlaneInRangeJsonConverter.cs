@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Evaluation
 {
-    class AirPlaneInRangeJsonConverter : JsonConverter<AirPlaneInRange>
+    class AirPlaneInRangeJsonConverter : JsonConverter<AirplaneInRange>
     {
-        public override AirPlaneInRange Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override AirplaneInRange Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             if(reader.TokenType != JsonTokenType.StartArray)
             {
@@ -20,21 +20,21 @@ namespace Evaluation
             reader.Read(); // start of array
 
             var planeId = reader.GetInt32();
-            var planePosition = ReadProperty<AirPlanePosition>(ref reader, typeof(AirPlanePosition), options);
+            var planePosition = ReadProperty<AirplanePosition>(ref reader, typeof(AirplanePosition), options);
 
             if(reader.TokenType != JsonTokenType.EndArray)
             {
                 throw new JsonException("Expected End of Array");
             }
 
-            return new AirPlaneInRange
+            return new AirplaneInRange
             {
                 Id = planeId,
                 Position = planePosition,
             };
         }
 
-        public override void Write(Utf8JsonWriter writer, AirPlaneInRange value, JsonSerializerOptions options)
+        public override void Write(Utf8JsonWriter writer, AirplaneInRange value, JsonSerializerOptions options)
         {
             throw new NotImplementedException();
         }

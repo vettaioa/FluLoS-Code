@@ -29,9 +29,9 @@ namespace Evaluation
             return result;
         }
 
-        private AirPlaneInRange[] GetAirplanesInRange()
+        private AirplaneInRange[] GetAirplanesInRange()
         {
-            AirPlaneInRange[] airPlanes = null;
+            AirplaneInRange[] airPlanes = null;
             // Returns null if failes, or empty array if no airplanes in range
 
             try
