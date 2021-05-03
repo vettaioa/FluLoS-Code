@@ -41,8 +41,8 @@ namespace SharedModel
         public string OutputDirectory { get; set; }
         public string AirplanesInRangeUrl { get; set; }
         public string AirplaneDetailsUrl { get; set; }
-        public short FlightLevelMin { get; set; }
-        public short FlightLevelMax { get; set; }
+        public short? FlightLevelMin { get; set; }
+        public short? FlightLevelMax { get; set; }
         public int[] ContactFrequencies { get; set; }
         public string[] ContactPlaces { get; set; }
         public string[] SquawkCodes { get; set; }
