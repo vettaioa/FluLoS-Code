@@ -20,7 +20,7 @@ namespace DeltaListReplacer
             fuzzySearch = new FuzzySearch(phonetics);
 
             this.atcWords = new SearchableCollection(fuzzySearch, atcWords);
-            this.atcWords.Ratio = 0.6f;
+            this.atcWords.Ratio = 0.7f;
 
             this.deltaList = new SearchableDictionary<string>(fuzzySearch, deltaList);
             this.deltaList.Ratio = 0.8f;

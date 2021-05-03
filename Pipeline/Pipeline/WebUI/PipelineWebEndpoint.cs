@@ -1,4 +1,5 @@
 ﻿using Pipeline.Model;
+using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,7 +23,7 @@ namespace Pipeline.WebUI
         private static ContextExtractor contextExtractor;
         private static HttpListenerContext httpListenerContext;
 
-        public PipelineWebEndpoint(Configuration config)
+        public PipelineWebEndpoint(AppConfiguration config)
         {
             speechToTextConfig = config.SpeechToText;
             speechToTextConfig.SpeechToTextMode = SpeechToTextMode.FileSingle;

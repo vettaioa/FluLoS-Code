@@ -1,13 +1,14 @@
-﻿using System;
+﻿using SharedModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Pipeline.Model
+namespace SharedModel
 {
-    class Configuration
+    public class AppConfiguration
     {
         public bool RunWebPipeline { get; set; }
         public SpeechToTextConfig SpeechToText { get; set; }
@@ -18,7 +19,7 @@ namespace Pipeline.Model
         // TODO: cleanup, deltalsit etc. params
     }
 
-    class SpeechToTextConfig
+    public class SpeechToTextConfig
     {
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public SpeechToTextMode SpeechToTextMode { get; set; }
@@ -28,25 +29,26 @@ namespace Pipeline.Model
         public string InputAudioDirectory { get; set; }
     }
 
-    class LuisConfig
+    public class LuisConfig
     {
         public string ApiUrl { get; set; }
         public string PublishedSlot { get; set; }
         public string AzureApiKeysFile { get; set; }
     }
 
-    class EvaluationConfig
+    public class EvaluationConfig
     {
+        public string OutputDirectory { get; set; }
         public string AirplanesInRangeUrl { get; set; }
         public string AirplaneDetailsUrl { get; set; }
         public short FlightLevelMin { get; set; }
         public short FlightLevelMax { get; set; }
-        public short[] ContactFrequencies { get; set; }
+        public int[] ContactFrequencies { get; set; }
         public string[] ContactPlaces { get; set; }
-        public short[] SquawkCodes { get; set; }
+        public string[] SquawkCodes { get; set; }
     }
 
-    enum SpeechToTextMode
+    public enum SpeechToTextMode
     {
         /// <summary>
         /// Single utterance from microphone

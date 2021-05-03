@@ -15,6 +15,7 @@
     <ProjectReference Include="..\..\Evaluation\Evaluation\Evaluation.csproj" />
     <ProjectReference Include="..\..\LUIS\LUIS\LUIS.csproj" />
     <ProjectReference Include="..\..\RML\RML\RML.csproj" />
+    <ProjectReference Include="..\..\SharedModel\SharedModel\SharedModel.csproj" />
     <ProjectReference Include="..\..\SpeechToText\SpeechToText\SpeechToText.csproj" />
   </ItemGroup>
 

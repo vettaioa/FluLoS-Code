@@ -1,5 +1,7 @@
 ﻿using Evaluation;
+using Evaluation.Model;
 using Pipeline.Model;
+using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,22 +22,13 @@ namespace Pipeline
             }
             else
             {
-                evaluator = new Evaluator(new Evaluation.Model.EvaluatorConfig()
-                {
-                    AirplaneDetailsUrl = config.AirplaneDetailsUrl,
-                    AirplanesInRangeUrl = config.AirplanesInRangeUrl,
-                    ContactFrequencies = config.ContactFrequencies,
-                    ContactPlaces = config.ContactPlaces,
-                    FlightLevelMax = config.FlightLevelMax,
-                    FlightLevelMin = config.FlightLevelMin
-                });
+                evaluator = new Evaluator(config);
             }
         }
 
-        public void Evaluate(MessageContext context)
+        public EvaluationResult Evaluate(MessageContext context)
         {
-            // TODO
-            evaluator.Evaluate();
+            return evaluator.Evaluate(context);
         }
     }
 }

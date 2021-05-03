@@ -1,4 +1,5 @@
 ﻿using Pipeline.Model;
+using SharedModel;
 using System;
 using System.IO;
 using System.Text.Json;
@@ -15,10 +16,10 @@ namespace Pipeline
             Console.WriteLine("Loading App Configuration...");
             if(File.Exists(CONFIG_FILE))
             {
-                Configuration config = null;
+                AppConfiguration config = null;
                 try
                 {
-                    config = JsonSerializer.Deserialize<Configuration>(File.ReadAllText(CONFIG_FILE));
+                    config = JsonSerializer.Deserialize<AppConfiguration>(File.ReadAllText(CONFIG_FILE));
                 }
                 catch { }
 

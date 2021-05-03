@@ -7,6 +7,7 @@ All resource files are located here
 ```
 .
 ├── audio/              Audio files for Speech-to-Text (must be copied here)
+├── context-labelled/   Evaluation of context results
 ├── context-labelled/   Context label data named after the speech-to-text resources
 ├── context-results/    Recognized context by RML and LUIS
 ├── deltalist/          Input data for the deltaList

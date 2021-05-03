@@ -1,4 +1,5 @@
 ﻿using Evaluation.Model;
+using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,19 +13,19 @@ namespace Evaluation
 {
     public class Evaluator
     {
-        private EvaluatorConfig config;
 
-        public Evaluator(EvaluatorConfig config)
+        public Evaluator(EvaluationConfig config)
         {
-            this.config = config;
+            // TODO
         }
 
-        public EvaluationResult Evaluate()
+        public EvaluationResult Evaluate(MessageContext messageContext)
         {
             EvaluationResult result = EvaluationResult.Error;
 
             // TODO: get airplanes in range
 
+            // TODO: evaluate if is possible
 
             return result;
         }

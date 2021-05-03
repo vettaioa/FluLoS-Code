@@ -1,4 +1,5 @@
 ﻿using Pipeline.Model;
+using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace Pipeline
         private RmlCaller rml;
         private LuisCaller luis;
 
-        public ContextExtractor(Configuration config)
+        public ContextExtractor(AppConfiguration config)
         {
             cleanUp = new CleanUpCaller();
             deltaListReplace = new DeltaListReplaceCaller();

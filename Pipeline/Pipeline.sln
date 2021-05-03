@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExternalCallDll", "..\RML\E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evaluation", "..\Evaluation\Evaluation\Evaluation.csproj", "{2AC9464C-1BB5-4923-8B29-0D51BC526AED}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedModel", "..\SharedModel\SharedModel\SharedModel.csproj", "{467AEF81-28FE-47DD-93F0-8196D21E6FF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{2AC9464C-1BB5-4923-8B29-0D51BC526AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AC9464C-1BB5-4923-8B29-0D51BC526AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AC9464C-1BB5-4923-8B29-0D51BC526AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467AEF81-28FE-47DD-93F0-8196D21E6FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467AEF81-28FE-47DD-93F0-8196D21E6FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467AEF81-28FE-47DD-93F0-8196D21E6FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467AEF81-28FE-47DD-93F0-8196D21E6FF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,6 @@
 ﻿using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
+using SharedModel;
 using SpeechToText.Model;
 using System;
 using System.Collections.Generic;
@@ -24,20 +25,16 @@ namespace SpeechToText
         /// <param name="azureApiKeyFile">Filepath of file with azure subscription keys</param>
         /// <exception cref="ArgumentNullException">Any parameter is null</exception>
         /// <exception cref="ArgumentException">Azure api key file is not found</exception>
-        public SpeechTranscriber(string azureRegion, string azureApiKeyFile)
+        public SpeechTranscriber(SpeechToTextConfig config)
         {
-            if (string.IsNullOrWhiteSpace(azureRegion))
-                throw new ArgumentNullException("azureRegion");
+            if (config == null)
+                throw new ArgumentNullException("config");
 
-            if (string.IsNullOrWhiteSpace(azureApiKeyFile))
-                throw new ArgumentNullException("azureApiKeyFile");
+            if (!File.Exists(config.AzureApiKeysFile))
+                throw new ArgumentException("AzureApiKeysFile not found");
 
-            if (!File.Exists(azureApiKeyFile))
-                throw new ArgumentException("azureApiKeyFile not found");
-
-            AzureCredentials azureCredentials = JsonSerializer.Deserialize<AzureCredentials>(File.ReadAllText(azureApiKeyFile));
-
-            speechConfig = SpeechConfig.FromSubscription(azureCredentials.S2T_subscription, azureRegion);
+            AzureCredentials azureCredentials = JsonSerializer.Deserialize<AzureCredentials>(File.ReadAllText(config.AzureApiKeysFile));
+            speechConfig = SpeechConfig.FromSubscription(azureCredentials.S2T_subscription, config.AzureRegion);
             speechConfig.OutputFormat = OutputFormat.Detailed;      // to get multiple (nBest) results from SDK
             speechConfig.EndpointId = azureCredentials.S2T_endpoint;
 

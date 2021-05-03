@@ -1,4 +1,5 @@
 ﻿using LUIS.Model;
+using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,27 +23,21 @@ namespace LUIS
         /// <param name="publishedSlot">Slot of published endpoint ("staging" or "production")</param>
         /// <exception cref="ArgumentNullException">Any parameter is null</exception>
         /// <exception cref="ArgumentException">Azure api key file is not found</exception>
-        public UtteranceInterpreter(string azureApiKeyFile, string apiUrl, string publishedSlot)
+        public UtteranceInterpreter(LuisConfig config)
         {
-            if (string.IsNullOrWhiteSpace(azureApiKeyFile))
-                throw new ArgumentNullException("azureApiKeyFile");
+            if (config == null)
+                throw new ArgumentNullException("config");
 
-            if (string.IsNullOrWhiteSpace(apiUrl))
-                throw new ArgumentNullException("apiUrl");
+            if (!File.Exists(config.AzureApiKeysFile))
+                throw new ArgumentException("AzureApiKeysFile not found");
 
-            if (string.IsNullOrWhiteSpace(publishedSlot))
-                throw new ArgumentNullException("publishedSlot");
-
-            if (!File.Exists(azureApiKeyFile))
-                throw new ArgumentException("azureApiKeyFile not found");
-
-            AzureCredentials azureCredentials = JsonSerializer.Deserialize<AzureCredentials>(File.ReadAllText(azureApiKeyFile));
+            AzureCredentials azureCredentials = JsonSerializer.Deserialize<AzureCredentials>(File.ReadAllText(config.AzureApiKeysFile));
 
 
-            requestURL = apiUrl
+            requestURL = config.ApiUrl
                     + azureCredentials.LUIS_appid
                     + "/slots/"
-                    + publishedSlot
+                    + config.PublishedSlot
                     + "/predict?subscription-key="
                     + azureCredentials.LUIS_subscription
                     + "&verbose=true&show-all-intents=true&log=true&query=";

@@ -1,4 +1,5 @@
 ﻿using Pipeline.Model;
+using SharedModel;
 using SpeechToText;
 using SpeechToText.Model;
 using System;
@@ -27,7 +28,7 @@ namespace Pipeline
         {
             this.config = config;
             this.labelDataDir = labelDataDir;
-            transcriber = new SpeechTranscriber(config.AzureRegion, config.AzureApiKeysFile);
+            transcriber = new SpeechTranscriber(config);
         }
 
         public async Task Run()

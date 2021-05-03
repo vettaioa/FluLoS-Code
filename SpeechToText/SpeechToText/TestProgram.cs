@@ -1,4 +1,5 @@
-﻿using SpeechToText.Model;
+﻿using SharedModel;
+using SpeechToText.Model;
 using System;
 using System.IO;
 using System.Text.Json;
@@ -17,7 +18,12 @@ namespace SpeechToText
             try
             {
                 Console.WriteLine("Setting up transcriber...");
-                SpeechTranscriber transcriber = new SpeechTranscriber(REGION, CREDENTIALS_PATH);
+                SpeechToTextConfig speechConfig = new SpeechToTextConfig()
+                {
+                    AzureApiKeysFile = CREDENTIALS_PATH,
+                    AzureRegion = REGION
+                };
+                SpeechTranscriber transcriber = new SpeechTranscriber(speechConfig);
 
                 Console.WriteLine("Transcribing file...");
                 FileResult result = await transcriber.TranscribeAudioFile(TESTFILE);

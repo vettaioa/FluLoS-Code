@@ -1,12 +1,13 @@
 ﻿using Iib.RegexMarkupLanguage;
 using Pipeline.Model;
+using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Xml;
-using static Pipeline.Model.FlightLevelIntent;
+using static SharedModel.FlightLevelIntent;
 
 namespace Pipeline
 {

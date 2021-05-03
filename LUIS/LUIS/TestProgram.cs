@@ -1,4 +1,5 @@
 ﻿using LUIS.Model;
+using SharedModel;
 using System;
 
 namespace LUIS
@@ -15,7 +16,13 @@ namespace LUIS
             try
             {
                 Console.WriteLine("Setting up interpreter...");
-                UtteranceInterpreter interpreter = new UtteranceInterpreter(CREDENTIALS_PATH, URL, SLOT);
+                LuisConfig luisConfig = new LuisConfig()
+                {
+                    AzureApiKeysFile = CREDENTIALS_PATH,
+                    ApiUrl = URL,
+                    PublishedSlot = SLOT
+                };
+                UtteranceInterpreter interpreter = new UtteranceInterpreter(luisConfig);
 
                 Console.WriteLine("Structuring utterance...");
                 LuisResult result = interpreter.Interpret(QUERY);

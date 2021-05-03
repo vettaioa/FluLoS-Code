@@ -1,4 +1,5 @@
 ﻿using Pipeline.Model;
+using SharedModel;
 using SpeechToText.Model;
 using System;
 using System.IO;
@@ -10,11 +11,11 @@ namespace Pipeline
 {
     class Pipeline
     {
-        private Configuration config;
+        private AppConfiguration config;
         private SpeechToTextRunner speechToText;
         private ContextExtractor contextExtractor;
 
-        public Pipeline(Configuration config)
+        public Pipeline(AppConfiguration config)
         {
             this.config = config;
             contextExtractor = new ContextExtractor(config);
@@ -40,21 +41,28 @@ namespace Pipeline
                 Console.WriteLine(resultsJson);
                 if (!string.IsNullOrWhiteSpace(config.ContextOutputDirectory))
                 {
-                    Directory.CreateDirectory(config.ContextOutputDirectory);
+                    try
+                    {
+                        Directory.CreateDirectory(config.ContextOutputDirectory);
 
-                    StringBuilder sbFilePath = new StringBuilder();
-                    sbFilePath.Append(config.ContextOutputDirectory);
-                    if (config.SpeechToText.SpeechToTextMode == SpeechToTextMode.MicrophoneSingle)
-                    {
-                        sbFilePath.Append(DateTime.Now.ToString("yyyyMMdd-HHmmss"));
+                        StringBuilder sbFilePath = new StringBuilder();
+                        sbFilePath.Append(config.ContextOutputDirectory);
+                        if (config.SpeechToText.SpeechToTextMode == SpeechToTextMode.MicrophoneSingle)
+                        {
+                            sbFilePath.Append(DateTime.Now.ToString("yyyyMMdd-HHmmss"));
+                        }
+                        else
+                        {
+                            sbFilePath.Append(Path.GetFileNameWithoutExtension(transcriptionResult.FilePath));
+                        }
+                        sbFilePath.Append(".json");
+                        File.WriteAllText(sbFilePath.ToString(), resultsJson);
                     }
-                    else
-                    {
-                        sbFilePath.Append(Path.GetFileNameWithoutExtension(transcriptionResult.FilePath));
-                    }
-                    sbFilePath.Append(".json");
-                    File.WriteAllText(sbFilePath.ToString(), resultsJson);
+                    catch { }
                 }
+
+                // TODO: evaluate results (and maybe write results to file???)
+                // TODO: check for set flags in result
             }
             else
             {

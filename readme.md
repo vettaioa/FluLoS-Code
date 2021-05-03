@@ -15,6 +15,7 @@ Based on [Custom Speech](https://speech.microsoft.com/customspeech), *RML* and [
 ├── LUIS/           LUIS (C# .NET 5)
 ├── Pipeline/       Pipeline Solution - connecting all other solutions (C# .NET 5)
 ├── RML/            Regex Markup Language solution (C# .NET 5)
+├── SharedModel/    Model class library used by multiple solutions (C# .NET 5)
 └── SpeechToText/   SpeechToText solution (C# .NET 5)
 ```
 
