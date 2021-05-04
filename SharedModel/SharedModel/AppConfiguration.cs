@@ -45,6 +45,7 @@ namespace SharedModel
         public short? FlightLevelMax { get; set; }
         public int[] ContactFrequencies { get; set; }
         public string[] ContactPlaces { get; set; }
+        public string[] TurnPlaces { get; set; }
         public string[] SquawkCodes { get; set; }
     }
 

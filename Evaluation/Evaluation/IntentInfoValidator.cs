@@ -1,4 +1,5 @@
-﻿using SharedModel;
+﻿using Evaluation.Model;
+using SharedModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace Evaluation
 {
     class IntentInfoValidator
     {
-        internal static bool IsSquawkValid(SquawkIntent squawk, string[] validCodes = null)
+        internal static SquawkValidationResult ValidateSquawk(SquawkIntent squawk, string[] validCodes = null)
         {
-            bool isValid = false;
+            SquawkValidationResult result = SquawkValidationResult.Invalid;
             string squawkRegex = @"^\d{4}$";
 
             if (squawk != null && squawk.Code != null)
@@ -24,21 +25,21 @@ namespace Evaluation
                     {
                         // if there are predefined squawk codes in config -> check if matches one of them
                         if (validCodes.Contains(squawk.Code))
-                            isValid = true;
+                            result |= SquawkValidationResult.CodeValid;
                     }
                     else
                     {
                         // no predefined squawk codes in config -> accept any 4 digit code
-                        isValid = true;
+                        result |= SquawkValidationResult.CodeValid;
                     }
                 }
             }
 
-            return isValid;
+            return result;
         }
-        internal static bool IsContactInfoValid(ContactIntent contactIntent, int[] validFrequencies = null, string[] validPlaces = null)
+        internal static ContactValidationResult ValidateContact(ContactIntent contactIntent, int[] validFrequencies = null, string[] validPlaces = null)
         {
-            bool isValid = false;
+            ContactValidationResult result = ContactValidationResult.Invalid;
             string frequencyRegex = @"^1(\d){2}\.?\d{2}$";
             string placeRegex = @"^(A-Za-z)+$";
 
@@ -54,13 +55,13 @@ namespace Evaluation
                         if (int.TryParse(contactIntent.Frequency.Replace(".", ""), out parsedFreq))
                         {
                             if (validFrequencies.Contains(parsedFreq))
-                                isValid = true;
+                                result |= ContactValidationResult.FrequencyValid;
                         }
                     }
                     else
                     {
                         // no predefined contact frequencies in config -> accept any with valid format
-                        isValid = true;
+                        result |= ContactValidationResult.FrequencyValid;
                     }
                 }
 
@@ -71,22 +72,22 @@ namespace Evaluation
                     {
                         // if there are predefined contact places in config -> check if matches one of them
                         if (validPlaces.Any(p => string.Compare(p, contactIntent.Place, true) == 0))
-                            isValid = true;
+                            result |= ContactValidationResult.PlaceValid;
                     }
                     else
                     {
                         // no predefined contact frequencies in config -> accept any with valid format
-                        isValid = true;
+                        result |= ContactValidationResult.PlaceValid;
                     }
                 }
             }
 
-            return isValid;
+            return result;
         }
 
-        internal static bool IsFlightLevelValid(FlightLevelIntent flightLevelIntent, short? min, short? max)
+        internal static FlightLevelValidationResult ValidateFlightLevel(FlightLevelIntent flightLevelIntent, short? min, short? max)
         {
-            bool isValid = false;
+            FlightLevelValidationResult result = FlightLevelValidationResult.Invalid;
             string levelRegex = @"^\d{2,3}$";
 
             if (min == null)
@@ -94,39 +95,68 @@ namespace Evaluation
             if (max == null)
                 max = 500;
 
-            // flightLevelIntent.Instruction is omitted here, as it is already parsed
-            // and the flight level is more relevant
-
-            if (flightLevelIntent != null && flightLevelIntent.Level != null && Regex.IsMatch(flightLevelIntent.Level, levelRegex))
+            // check flight level
+            if (flightLevelIntent != null)
             {
-                short parsedLevel;
-                if (short.TryParse(flightLevelIntent.Level, out parsedLevel) && parsedLevel >= min && parsedLevel <= max)
-                    isValid = true;
+                if (flightLevelIntent.Level != null && Regex.IsMatch(flightLevelIntent.Level, levelRegex))
+                {
+                    short parsedLevel;
+                    if (short.TryParse(flightLevelIntent.Level, out parsedLevel) && parsedLevel >= min && parsedLevel <= max)
+                        result |= FlightLevelValidationResult.FlightLevelValid;
+                }
+
+                // check instruction
+                if (flightLevelIntent.Instruction != null)
+                {
+                    // TODO: check wether its correct considering the current height
+                    result |= FlightLevelValidationResult.InstructionValid;
+                }
             }
 
-            return isValid;
+            return result;
         }
 
-        internal static bool IsTurnInfoValid(TurnIntent turnIntent)
+        internal static TurnValidationResult ValidateTurn(TurnIntent turnIntent, string[] validPlaces)
         {
-            bool isValid = false;
+            TurnValidationResult result = TurnValidationResult.Invalid;
             string placeRegex = @"^(A-Za-z)+$";
             string directionRegex = @"^(left|right)$";
             string degreesRegex = @"^[0-2]?[0-9]{1,2}|3[0-5][0-9]|360$";
 
             if(turnIntent != null)
             {
-                bool hasValidPlace = (turnIntent.Place != null && Regex.IsMatch(turnIntent.Place, placeRegex));
-                bool hasValidDirection = (turnIntent.Direction != null && Regex.IsMatch(turnIntent.Direction, directionRegex, RegexOptions.IgnoreCase));
-                bool hasValidDegrees = (turnIntent.Degrees != null && Regex.IsMatch(turnIntent.Degrees, degreesRegex));
-                bool hasValidHeading = (turnIntent.Heading != null && Regex.IsMatch(turnIntent.Heading, degreesRegex));
+                if (turnIntent.Degrees != null && Regex.IsMatch(turnIntent.Degrees, degreesRegex))
+                    result |= TurnValidationResult.DegreesValid;
 
-                // direction is omitted, as the exact value of heading or degrees is more important
-                if (hasValidPlace || hasValidDegrees || hasValidHeading)
-                    isValid = true;
+                if (turnIntent.Heading != null && Regex.IsMatch(turnIntent.Heading, degreesRegex))
+                    result |= TurnValidationResult.HeadingValid;
+
+                if (turnIntent.Direction != null && result.HasFlag(TurnValidationResult.HeadingValid) && Regex.IsMatch(turnIntent.Direction, directionRegex, RegexOptions.IgnoreCase))
+                {
+                    // direction can only be verified, if a heading has been set
+                    // this compares the direction (left/right) with current heading of plane from radar
+
+                    // TODO: implement
+                    result |= TurnValidationResult.DirectionValid;
+                }
+
+                if (turnIntent.Place != null && Regex.IsMatch(turnIntent.Place, placeRegex))
+                {
+                    if (validPlaces != null && validPlaces.Length > 0)
+                    {
+                        // if there are predefined turn to places in config -> check if matches one of them
+                        if (validPlaces.Contains(turnIntent.Place, StringComparer.OrdinalIgnoreCase))
+                            result |= TurnValidationResult.PlaceValid;
+                    }
+                    else
+                    {
+                        // no predefined turn to place in config -> accept any with valid format
+                        result |= TurnValidationResult.PlaceValid;
+                    }
+                }
             }
 
-            return isValid;
+            return result;
         }
     }
 }
