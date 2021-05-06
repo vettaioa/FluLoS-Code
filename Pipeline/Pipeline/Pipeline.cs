@@ -32,12 +32,13 @@ namespace Pipeline
 
         private void ProcessTranscriptions(TranscriptionResult transcriptionResult)
         {
-            var contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
+            ContextExtractionResult[] contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
             if (contextResults != null)
             {
                 Console.WriteLine("Extracted context:");
-                JsonSerializerOptions jsonOptions = new JsonSerializerOptions() { WriteIndented = true };
-                string resultsJson = JsonSerializer.Serialize(contextResults, jsonOptions);
+                // using Newtonsoft because build-in JsonSerializer cannot handle dictionnaries with enum as key
+                string resultsJson = Newtonsoft.Json.JsonConvert.SerializeObject(contextResults, Newtonsoft.Json.Formatting.Indented);
+
                 Console.WriteLine(resultsJson);
                 if (!string.IsNullOrWhiteSpace(config.ContextOutputDirectory))
                 {

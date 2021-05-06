@@ -58,9 +58,9 @@ namespace LUIS
                     jsonData = reader.ReadToEnd();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                Console.WriteLine("Error calling LUIS API.");
+                Console.WriteLine("Error calling LUIS API: {0}", ex.Message);
             }
 
             if (!string.IsNullOrWhiteSpace(jsonData))
@@ -71,7 +71,7 @@ namespace LUIS
                     if (response != null)
                         result = new LuisResult(response);
                 }
-                catch
+                catch (Exception ex)
                 {
                     Console.WriteLine("Error parsing result JSON.");
                 }
