@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "CSDOG descend flight level 190",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "190",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "CSDOG descend flight level 190",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.0585754
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016471487
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "190",
+          "Score": 0.9879249
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0018080567
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016756009
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "CSDOG descend flight level 90",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "90",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "CSDOG descend flight level 90",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.053945
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0015891845
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "90",
+          "Score": 0.988814
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0017311618
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016098467
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "charley SDOG descend flight level 190",
+      "CallSign": {
+        "Airline": "chanchangi",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "190",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "charley SDOG descend flight level 190",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.051546205
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0018128316
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "190",
+          "Score": 0.98783654
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0019156158
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0018474339
+        }
+      }
+    }
+  }
+]

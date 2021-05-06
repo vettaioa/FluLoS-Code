@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "good afternoon correction 4 for aK identified climb flight level 280",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "280",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "good afternoon correction 4 for aK identified climb flight level 280",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.010670201
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0022536002
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "280",
+          "Score": 0.9920046
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0023385768
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0021195856
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "good afternoon correction for for aK identified climb flight level 280",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "280",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "good afternoon correction for for aK identified climb flight level 280",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.011008868
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0022380967
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "280",
+          "Score": 0.99211526
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0023564745
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0021378596
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "good afternoon correction for for K identified climb flight level 280",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "280",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "good afternoon correction for for K identified climb flight level 280",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.010517866
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0022264402
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "280",
+          "Score": 0.99224824
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002353546
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0021219156
+        }
+      }
+    }
+  }
+]

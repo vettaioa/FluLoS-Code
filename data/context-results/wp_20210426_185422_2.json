@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "correction 385G correct contact arrival 130.560 good bye",
+      "CallSign": {
+        "Airline": "coral",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "130.56",
+          "Place": "arrival",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "correction 385G correct contact arrival 130.560 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.031987213
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0032533556
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0026441133
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002379888
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0024926066
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "correction 35G correct contact arrival 130.560 good bye",
+      "CallSign": {
+        "Airline": "coral",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "130.56",
+          "Place": "arrival",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "correction 35G correct contact arrival 130.560 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.031987213
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0032533556
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0026441133
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002379888
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0024926066
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "correction 385G correct contact rival 130.560 good bye",
+      "CallSign": {
+        "Airline": "coral",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "130.56",
+          "Place": "rival",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "correction 385G correct contact rival 130.560 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.032182984
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0032452182
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0026481256
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0023809515
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.002494622
+        }
+      }
+    }
+  }
+]

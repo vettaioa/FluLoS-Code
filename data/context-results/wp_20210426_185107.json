@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "54 over L contact arrival 135.230 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": "54"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "135.23",
+          "Place": "arrival",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "54 over L contact arrival 135.230 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.029554868
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0034230666
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0027764705
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002520605
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0024224706
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "in 5L contact arrival 135.230 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "135.23",
+          "Place": "arrival",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "in 5L contact arrival 135.230 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.03480118
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0033629884
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0025661325
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0025479698
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0023771094
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "5L contact arrival 135.230 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "135.23",
+          "Place": "arrival",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "5L contact arrival 135.230 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.041845135
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0032907508
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0023536559
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0025782173
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.002329775
+        }
+      }
+    }
+  }
+]

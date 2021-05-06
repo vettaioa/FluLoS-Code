@@ -1,0 +1,143 @@
+[
+  {
+    "RmlResult": {
+      "Message": "air flight to D contact long on 125.050 good bye",
+      "CallSign": {
+        "Airline": "air flight",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "125.05",
+          "Place": "long",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "air flight to D contact long on 125.050 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.0097911535
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0042176116
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0035403694
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002357196
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0022765135
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "air flight to D contact london 125.050 good bye",
+      "CallSign": {
+        "Airline": "air flight",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "125.05",
+          "Place": "london",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "air flight to D contact london 125.050 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.010131037
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0041423948
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.003333573
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0023952825
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0022589806
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "air flight 2D contact long on 125.050 good bye",
+      "CallSign": {
+        "Airline": "air flight",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "125.05",
+          "Place": "long",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "air flight 2D contact long on 125.050 good bye",
+      "CallSign": {
+        "Airline": "air flight",
+        "FlightNumber": "2D"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.0131638255
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.004053885
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.003293479
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0024026437
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.002266781
+        }
+      }
+    }
+  }
+]

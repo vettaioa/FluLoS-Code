@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "385G descend flight level 130",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": "385"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "130",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "385G descend flight level 130",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.057594847
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016350726
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "130",
+          "Score": 0.98811287
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0017919883
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016618796
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "385G descend flight level 130",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": "385"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "130",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "385G descend flight level 130",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.057594847
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016350726
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "130",
+          "Score": 0.98811287
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0017919883
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016618796
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "35G descend flight level 130",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": "35"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "130",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "35G descend flight level 130",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.057594847
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016350726
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "130",
+          "Score": 0.98811287
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0017919883
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016618796
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "145K descend flight level 160",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": "145"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "160",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "145K descend flight level 160",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.05745406
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016333302
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "160",
+          "Score": 0.9881399
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0017896724
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016599012
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "1 for 5K descend flight level 160",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "160",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "1 for 5K descend flight level 160",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.032882594
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.001889667
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "160",
+          "Score": 0.98941416
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0019301882
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0019432426
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "its 145K descend flight level 160",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "160",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "its 145K descend flight level 160",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04685232
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0017396247
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "160",
+          "Score": 0.9888614
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0018221741
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0017642666
+        }
+      }
+    }
+  }
+]

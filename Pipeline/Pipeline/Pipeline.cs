@@ -1,4 +1,5 @@
-﻿using Pipeline.Model;
+﻿using Newtonsoft.Json.Converters;
+using Pipeline.Model;
 using SharedModel;
 using SpeechToText.Model;
 using System;
@@ -37,7 +38,7 @@ namespace Pipeline
             {
                 Console.WriteLine("Extracted context:");
                 // using Newtonsoft because build-in JsonSerializer cannot handle dictionnaries with enum as key
-                string resultsJson = Newtonsoft.Json.JsonConvert.SerializeObject(contextResults, Newtonsoft.Json.Formatting.Indented);
+                string resultsJson = Newtonsoft.Json.JsonConvert.SerializeObject(contextResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
 
                 Console.WriteLine(resultsJson);
                 if (!string.IsNullOrWhiteSpace(config.ContextOutputDirectory))

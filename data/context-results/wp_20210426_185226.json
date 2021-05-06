@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "at 9 for KM contact geneva 134.850 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134.85",
+          "Place": "geneva",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "at 9 for KM contact geneva 134.850 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.013362183
+        },
+        "Contact": {
+          "Frequency": "134.850",
+          "Place": "geneva",
+          "Score": 0.99940175
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0027917242
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0023019067
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0022926163
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "at 94KM contact geneva 134.850 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134.85",
+          "Place": "geneva",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "at 94KM contact geneva 134.850 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.021057943
+        },
+        "Contact": {
+          "Frequency": "134.850",
+          "Place": "geneva",
+          "Score": 0.99940556
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0022896307
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0022342613
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0020792603
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "at 9 for killer M contact geneva 134.850 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134.85",
+          "Place": "geneva",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "at 9 for killer M contact geneva 134.850 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.011725552
+        },
+        "Contact": {
+          "Frequency": "134.850",
+          "Place": "geneva",
+          "Score": 0.99940795
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0029856234
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0022833245
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.002331881
+        }
+      }
+    }
+  }
+]

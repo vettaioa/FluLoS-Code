@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "7AY contact pa 134.390 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134.39",
+          "Place": "pa",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "7AY contact pa 134.390 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.03006796
+        },
+        "Contact": {
+          "Frequency": "134.390",
+          "Place": "pa",
+          "Score": 0.9991728
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.002218291
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0022624226
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.002033319
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "7AY contact father 134.390 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134.39",
+          "Place": "father",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "7AY contact father 134.390 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.029588768
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0034413196
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0022128704
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0022581997
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0020252964
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "7AY contact pa 134.390 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134.39",
+          "Place": "pa",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "7AY contact pa 134.390 good bye",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.03006796
+        },
+        "Contact": {
+          "Frequency": "134.390",
+          "Place": "pa",
+          "Score": 0.9991728
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.002218291
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0022624226
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.002033319
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "94 kill my climb flight level 270",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": "94"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "270",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "94 kill my climb flight level 270",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.02510777
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019290573
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "270",
+          "Score": 0.99002886
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0019912387
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0019940464
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "9 for kill my climb flight level 270",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "270",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "9 for kill my climb flight level 270",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.018453825
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019504027
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "270",
+          "Score": 0.99123955
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0019331771
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0020187814
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "9 for climb my climb flight level 270",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": null,
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "9 for climb my climb flight level 270",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.016269391
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019091449
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "270",
+          "Score": 0.9915286
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0018850502
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.001972118
+        }
+      }
+    }
+  }
+]

@@ -15,6 +15,7 @@ namespace SpeechToText
     public class SpeechTranscriber
     {
         private const int DEFAULT_NBEST = 3;
+        private const string FILE_EXTENSION = ".wav";
         private SpeechConfig speechConfig;
 
 
@@ -65,7 +66,7 @@ namespace SpeechToText
         /// <returns></returns>
         public async Task<FileResult> TranscribeAudioFile(string filePath, int nBest = DEFAULT_NBEST)
         {
-            if (File.Exists(filePath))
+            if (File.Exists(filePath) && Path.GetExtension(filePath) == FILE_EXTENSION)
             {
                 using var audioConfig = AudioConfig.FromWavFileInput(filePath);
                 using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
@@ -73,6 +74,10 @@ namespace SpeechToText
                 string[] transcriptions = await Recognize(recognizer, nBest);
 
                 return new FileResult() { FilePath = filePath, Transcriptions = transcriptions };
+            }
+            else
+            {
+                Console.WriteLine("  Skipping because it is not a {0} file", FILE_EXTENSION);
             }
             return null;
         }

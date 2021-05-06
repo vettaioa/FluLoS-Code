@@ -1,0 +1,140 @@
+[
+  {
+    "RmlResult": {
+      "Message": "swiss 145K descend flight level 280",
+      "CallSign": {
+        "Airline": "swiss",
+        "FlightNumber": "145"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "280",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "swiss 145K descend flight level 280",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04326014
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0017402493
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "280",
+          "Score": 0.9892769
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0018211299
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0017699257
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "swiss 1 for 5K descend flight level 280",
+      "CallSign": {
+        "Airline": "swiss",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "280",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "swiss 1 for 5K descend flight level 280",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.025965707
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019520058
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "280",
+          "Score": 0.99048996
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.001916598
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.002002225
+        }
+      }
+    }
+  },
+  {
+    "RmlResult": {
+      "Message": "swiss won 45K descend flight level 280",
+      "CallSign": {
+        "Airline": "swiss jet",
+        "FlightNumber": "45"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "280",
+          "Score": 1.0
+        }
+      }
+    },
+    "LuisResult": {
+      "Message": "swiss won 45K descend flight level 280",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.035667863
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0018229092
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "280",
+          "Score": 0.98999625
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0018315455
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.001848553
+        }
+      }
+    }
+  }
+]
