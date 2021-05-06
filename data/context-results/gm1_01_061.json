@@ -8,7 +8,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "12585",
+          "Place": "milano",
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.041372903
         },
         "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
           "Score": 0.98209184
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019461182
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0023068283
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002032094
         }
       }
@@ -46,7 +57,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "12585",
+          "Place": "milano",
+          "Score": 1.0
         }
       }
     },
@@ -61,15 +74,24 @@
           "Score": 0.040226236
         },
         "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
           "Score": 0.98247874
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019315775
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0023017684
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002014066
         }
       }
@@ -84,7 +106,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "12585",
+          "Place": "milano",
+          "Score": 1.0
         }
       }
     },
@@ -99,15 +123,24 @@
           "Score": 0.040226236
         },
         "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
           "Score": 0.98247874
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019315775
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0023017684
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002014066
         }
       }

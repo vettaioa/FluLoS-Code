@@ -8,10 +8,16 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": "290",
+          "Score": 1.0
         },
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
@@ -26,15 +32,24 @@
           "Score": 0.0026656773
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019903472
         },
         "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "290",
           "Score": 0.99293
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.001772674
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
           "Score": 0.99614793
         }
       }
@@ -49,10 +64,16 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": "290",
+          "Score": 1.0
         },
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
@@ -67,15 +88,24 @@
           "Score": 0.0026656773
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019903472
         },
         "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "290",
           "Score": 0.99293
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.001772674
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
           "Score": 0.99614793
         }
       }
@@ -90,10 +120,16 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": null,
+          "Score": 1.0
         },
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
@@ -108,15 +144,24 @@
           "Score": 0.0026429635
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0020481441
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0064946497
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0017833634
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
           "Score": 0.99620277
         }
       }

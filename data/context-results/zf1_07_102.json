@@ -21,15 +21,24 @@
           "Score": 0.045451097
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0020807262
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0017514981
         },
         "Squawk": {
+          "Code": "2746",
           "Score": 0.94330764
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.001990856
         }
       }
@@ -48,15 +57,24 @@
           "Score": 0.03811934
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.00215932
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019748507
         },
         "Squawk": {
+          "Code": "27",
           "Score": 0.936588
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020678206
         }
       }
@@ -84,15 +102,24 @@
           "Score": 0.024041576
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.002613833
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.001958326
         },
         "Squawk": {
+          "Code": "2746",
           "Score": 0.9404718
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020222238
         }
       }

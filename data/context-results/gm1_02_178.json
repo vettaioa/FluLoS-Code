@@ -8,7 +8,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "132.27",
+          "Place": "on",
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.033803932
         },
         "Contact": {
+          "Frequency": "132.27",
+          "Place": "on",
           "Score": 0.999164
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0024971024
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0024853528
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0023135468
         }
       }
@@ -46,7 +57,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "132.27",
+          "Place": "reims",
+          "Score": 1.0
         }
       }
     },
@@ -61,15 +74,24 @@
           "Score": 0.02712245
         },
         "Contact": {
+          "Frequency": "132.27",
+          "Place": "reims",
           "Score": 0.99956906
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.002658471
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002397401
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0023253476
         }
       }
@@ -84,7 +106,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "132.27",
+          "Place": "on",
+          "Score": 1.0
         }
       }
     },
@@ -99,15 +123,24 @@
           "Score": 0.032084376
         },
         "Contact": {
+          "Frequency": "132.27",
+          "Place": "on",
           "Score": 0.9991826
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.002474482
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0024839381
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0022900717
         }
       }

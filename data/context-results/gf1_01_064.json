@@ -1,114 +1,153 @@
 [
   {
     "RmlResult": {
-      "Message": "viva 9081 turn level heading 350",
+      "Message": "viva 9081 turn left heading 350",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "35",
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "viva 9081 turn level heading 350",
+      "Message": "viva 9081 turn left heading 350",
       "CallSign": {
         "Airline": "viva",
         "FlightNumber": "9081"
       },
       "Intents": {
         "None": {
-          "Score": 0.033591747
+          "Score": 0.039490208
         },
         "Contact": {
-          "Score": 0.0018016571
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0018798915
         },
         "FlightLevel": {
-          "Score": 0.0026005977
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0017300774
         },
         "Squawk": {
-          "Score": 0.0019156231
+          "Code": null,
+          "Score": 0.002024827
         },
         "Turn": {
-          "Score": 0.0029514604
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "350",
+          "Place": null,
+          "Score": 0.99603915
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "viva 901 turn level heading 350",
+      "Message": "viva 901 turn left heading 350",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "35",
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "viva 901 turn level heading 350",
+      "Message": "viva 901 turn left heading 350",
       "CallSign": {
         "Airline": "viva",
         "FlightNumber": "901"
       },
       "Intents": {
         "None": {
-          "Score": 0.030982306
+          "Score": 0.035673767
         },
         "Contact": {
-          "Score": 0.0019190204
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019922461
         },
         "FlightLevel": {
-          "Score": 0.0026077875
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0018340065
         },
         "Squawk": {
-          "Score": 0.0020848697
+          "Code": null,
+          "Score": 0.0021891608
         },
         "Turn": {
-          "Score": 0.0029921008
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "350",
+          "Place": null,
+          "Score": 0.99594015
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "viva 9081 turn level heading 35o",
+      "Message": "viva 9081 turn left heading 35o",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "35",
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "viva 9081 turn level heading 35o",
+      "Message": "viva 9081 turn left heading 35o",
       "CallSign": {
         "Airline": "viva",
         "FlightNumber": "9081"
       },
       "Intents": {
         "None": {
-          "Score": 0.03704809
+          "Score": 0.0445493
         },
         "Contact": {
-          "Score": 0.0017287028
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0018135717
         },
         "FlightLevel": {
-          "Score": 0.0025988745
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.001626663
         },
         "Squawk": {
-          "Score": 0.0018127832
+          "Code": null,
+          "Score": 0.001929821
         },
         "Turn": {
-          "Score": 0.0030001213
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "35o",
+          "Place": null,
+          "Score": 0.9962655
         }
       }
     }

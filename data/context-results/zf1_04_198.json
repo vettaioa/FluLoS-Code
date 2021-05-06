@@ -21,15 +21,24 @@
           "Score": 0.00804158
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.00256248
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019377362
         },
         "Squawk": {
+          "Code": "2763",
           "Score": 0.95520693
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002018712
         }
       }
@@ -57,15 +66,24 @@
           "Score": 0.017917978
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.002411078
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0016274155
         },
         "Squawk": {
+          "Code": "2763",
           "Score": 0.95172477
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.001991517
         }
       }
@@ -93,15 +111,24 @@
           "Score": 0.009205976
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0025820078
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019439897
         },
         "Squawk": {
+          "Code": "2763",
           "Score": 0.9527076
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002030096
         }
       }

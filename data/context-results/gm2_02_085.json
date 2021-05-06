@@ -12,15 +12,24 @@
           "Score": 0.018915895
         },
         "Contact": {
+          "Frequency": "134.4",
+          "Place": "reims",
           "Score": 0.99917233
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0026819203
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0022528642
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0023440663
         }
       }
@@ -39,15 +48,24 @@
           "Score": 0.020907918
         },
         "Contact": {
+          "Frequency": "134.4",
+          "Place": "reims",
           "Score": 0.9991509
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0027122933
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0022727335
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0023732902
         }
       }
@@ -66,15 +84,24 @@
           "Score": 0.023012377
         },
         "Contact": {
+          "Frequency": "134.4",
+          "Place": "reims",
           "Score": 0.99915755
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0026064797
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0021700375
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0022661379
         }
       }

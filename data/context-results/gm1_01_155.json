@@ -8,7 +8,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "12585",
+          "Place": "zurich",
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.015665853
         },
         "Contact": {
+          "Frequency": "12585",
+          "Place": "zurich",
           "Score": 0.9852861
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.002317296
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0022558924
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0019623903
         }
       }
@@ -50,15 +61,24 @@
           "Score": 0.021768466
         },
         "Contact": {
+          "Frequency": "2585",
+          "Place": "zurich",
           "Score": 0.97997755
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.002414669
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0024077278
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020620015
         }
       }
@@ -77,15 +97,24 @@
           "Score": 0.020567536
         },
         "Contact": {
+          "Frequency": "1255",
+          "Place": "zurich",
           "Score": 0.97890615
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0025027504
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0025162313
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002194132
         }
       }

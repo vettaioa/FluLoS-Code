@@ -8,7 +8,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Maintain",
+          "Level": "300",
+          "Score": 1.0
         }
       }
     },
@@ -20,15 +22,24 @@
           "Score": 0.02192164
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0018627733
         },
         "FlightLevel": {
+          "Instruction": "Maintain",
+          "Level": "300",
           "Score": 0.99137545
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002585328
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0019373574
         }
       }
@@ -43,7 +54,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Maintain",
+          "Level": "300",
+          "Score": 1.0
         }
       }
     },
@@ -58,15 +71,24 @@
           "Score": 0.023563612
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0018863737
         },
         "FlightLevel": {
+          "Instruction": "Maintain",
+          "Level": "300",
           "Score": 0.9910434
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0025844085
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0019621395
         }
       }
@@ -81,7 +103,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Maintain",
+          "Level": "300",
+          "Score": 1.0
         }
       }
     },
@@ -93,15 +117,24 @@
           "Score": 0.02759457
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0016692594
         },
         "FlightLevel": {
+          "Instruction": "Maintain",
+          "Level": "300",
           "Score": 0.9914612
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0025079136
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0017231986
         }
       }

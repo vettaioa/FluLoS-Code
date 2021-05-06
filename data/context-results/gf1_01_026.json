@@ -8,7 +8,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Descend",
+          "Level": null,
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.01070309
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0023466328
         },
         "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "300",
           "Score": 0.9950788
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0024347657
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020671512
         }
       }
@@ -46,7 +57,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Descend",
+          "Level": null,
+          "Score": 1.0
         }
       }
     },
@@ -61,15 +74,24 @@
           "Score": 0.01070309
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0023466328
         },
         "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "300",
           "Score": 0.9950788
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0024347657
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020671512
         }
       }
@@ -84,7 +106,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Descend",
+          "Level": "300",
+          "Score": 1.0
         }
       }
     },
@@ -99,15 +123,24 @@
           "Score": 0.013975332
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0023069987
         },
         "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "300",
           "Score": 0.98730206
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0024900301
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020148347
         }
       }

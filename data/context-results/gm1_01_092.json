@@ -8,7 +8,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": null,
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.027982028
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.001965774
         },
         "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "330",
           "Score": 0.99542165
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0020348798
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020556967
         }
       }
@@ -46,7 +57,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": "330",
+          "Score": 1.0
         }
       }
     },
@@ -61,15 +74,24 @@
           "Score": 0.037284043
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019223569
         },
         "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "330",
           "Score": 0.98804617
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0020804603
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0019985335
         }
       }
@@ -84,7 +106,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": null,
+          "Score": 1.0
         }
       }
     },
@@ -99,15 +123,24 @@
           "Score": 0.025616214
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019371348
         },
         "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "30",
           "Score": 0.995603
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0020019996
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020261705
         }
       }

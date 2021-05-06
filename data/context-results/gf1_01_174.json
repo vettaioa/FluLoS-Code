@@ -8,7 +8,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "12585",
+          "Place": "marseille",
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.016571673
         },
         "Contact": {
+          "Frequency": "12585",
+          "Place": "marseille",
           "Score": 0.9956754
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0021297208
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002159076
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0019073215
         }
       }
@@ -50,15 +61,24 @@
           "Score": 0.023018908
         },
         "Contact": {
+          "Frequency": "1585",
+          "Place": "marseille",
           "Score": 0.9940926
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0022192283
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0023044106
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002004144
         }
       }
@@ -73,7 +93,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "12585",
+          "Place": "marseille",
+          "Score": 1.0
         }
       }
     },
@@ -88,15 +110,24 @@
           "Score": 0.016571673
         },
         "Contact": {
+          "Frequency": "12585",
+          "Place": "marseille",
           "Score": 0.9956754
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0021297208
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002159076
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0019073215
         }
       }

@@ -21,15 +21,24 @@
           "Score": 0.104567386
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0017273531
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0012771429
         },
         "Squawk": {
+          "Code": "2732",
           "Score": 0.9522028
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.001814749
         }
       }
@@ -57,15 +66,24 @@
           "Score": 0.101142734
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0017077809
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0012635416
         },
         "Squawk": {
+          "Code": "2732",
           "Score": 0.95610124
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0017933936
         }
       }
@@ -84,15 +102,24 @@
           "Score": 0.076383136
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.001911599
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0015754825
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.011834
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020115112
         }
       }

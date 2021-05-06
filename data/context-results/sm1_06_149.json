@@ -1,105 +1,144 @@
 [
   {
     "RmlResult": {
-      "Message": "sabena 826A turn level by 10 degrees",
+      "Message": "sabena 826A turn left by 10 degrees",
       "CallSign": {
         "Airline": "shabair",
         "FlightNumber": "826"
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "sabena 826A turn level by 10 degrees",
+      "Message": "sabena 826A turn left by 10 degrees",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.024292689
+          "Score": 0.03037109
         },
         "Contact": {
-          "Score": 0.00164806
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0017413832
         },
         "FlightLevel": {
-          "Score": 0.0028303405
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0016128332
         },
         "Squawk": {
-          "Score": 0.0015846156
+          "Code": null,
+          "Score": 0.0017041285
         },
         "Turn": {
-          "Score": 0.0027992262
+          "Direction": "left",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 0.9975021
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "sabena 826A turn level by 10 degrees now",
+      "Message": "sabena 826A turn left by 10 degrees now",
       "CallSign": {
         "Airline": "shabair",
         "FlightNumber": "826"
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "sabena 826A turn level by 10 degrees now",
+      "Message": "sabena 826A turn left by 10 degrees now",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.019315002
+          "Score": 0.023917885
         },
         "Contact": {
-          "Score": 0.0017063385
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0017987317
         },
         "FlightLevel": {
-          "Score": 0.003083826
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0018085922
         },
         "Squawk": {
-          "Score": 0.0015790302
+          "Code": null,
+          "Score": 0.0016926931
         },
         "Turn": {
-          "Score": 0.0028473386
+          "Direction": "left",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 0.9974943
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "sabena 826A turn level by 10 degrees in",
+      "Message": "sabena 826A turn left by 10 degrees in",
       "CallSign": {
         "Airline": "shabair",
         "FlightNumber": "826"
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "sabena 826A turn level by 10 degrees in",
+      "Message": "sabena 826A turn left by 10 degrees in",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.019987138
+          "Score": 0.024936005
         },
         "Contact": {
-          "Score": 0.0017027297
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.001797863
         },
         "FlightLevel": {
-          "Score": 0.00310324
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0017855621
         },
         "Squawk": {
-          "Score": 0.0015755111
+          "Code": null,
+          "Score": 0.0016926633
         },
         "Turn": {
-          "Score": 0.002854025
+          "Direction": "left",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 0.9975335
         }
       }
     }

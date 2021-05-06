@@ -8,7 +8,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "12585",
+          "Place": "milano",
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.013870218
         },
         "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
           "Score": 0.98698413
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0017275162
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0027212359
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020028648
         }
       }
@@ -50,15 +61,24 @@
           "Score": 0.018960927
         },
         "Contact": {
+          "Frequency": "1255",
+          "Place": "milano",
           "Score": 0.98102015
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019111916
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002967159
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0022241757
         }
       }
@@ -73,7 +93,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "12585",
+          "Place": "milano",
+          "Score": 1.0
         }
       }
     },
@@ -88,15 +110,24 @@
           "Score": 0.011039641
         },
         "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
           "Score": 0.9870396
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019137057
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0026582987
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020578809
         }
       }

@@ -9,15 +9,24 @@
           "Score": 0.1142477
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019274685
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0024165544
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0032297776
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020535942
         }
       }
@@ -33,15 +42,24 @@
           "Score": 0.11081938
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.001915075
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0024692297
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0032595822
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020409103
         }
       }
@@ -57,15 +75,24 @@
           "Score": 0.1142477
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019274685
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0024165544
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0032297776
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0020535942
         }
       }

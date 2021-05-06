@@ -1,114 +1,153 @@
 [
   {
     "RmlResult": {
-      "Message": "sobelair 2557 turn level by 5 degrees",
+      "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "belair",
         "FlightNumber": "2557"
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "sobelair 2557 turn level by 5 degrees",
+      "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "sobelair",
         "FlightNumber": "2557"
       },
       "Intents": {
         "None": {
-          "Score": 0.041905638
+          "Score": 0.049386386
         },
         "Contact": {
-          "Score": 0.0018885517
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019706711
         },
         "FlightLevel": {
-          "Score": 0.0028882183
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0019236672
         },
         "Squawk": {
-          "Score": 0.0019520253
+          "Code": null,
+          "Score": 0.0020636774
         },
         "Turn": {
-          "Score": 0.0027422323
+          "Direction": "left",
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 0.99715567
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "sobelair 2557 turn level by 5 degrees",
+      "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "belair",
         "FlightNumber": "2557"
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "sobelair 2557 turn level by 5 degrees",
+      "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "sobelair",
         "FlightNumber": "2557"
       },
       "Intents": {
         "None": {
-          "Score": 0.041905638
+          "Score": 0.049386386
         },
         "Contact": {
-          "Score": 0.0018885517
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019706711
         },
         "FlightLevel": {
-          "Score": 0.0028882183
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0019236672
         },
         "Squawk": {
-          "Score": 0.0019520253
+          "Code": null,
+          "Score": 0.0020636774
         },
         "Turn": {
-          "Score": 0.0027422323
+          "Direction": "left",
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 0.99715567
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "sobelair 2557 turn level by 5 degrees here",
+      "Message": "sobelair 2557 turn left by 5 degrees here",
       "CallSign": {
         "Airline": "belair",
         "FlightNumber": "2557"
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": null,
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "sobelair 2557 turn level by 5 degrees here",
+      "Message": "sobelair 2557 turn left by 5 degrees here",
       "CallSign": {
         "Airline": "sobelair",
         "FlightNumber": "2557"
       },
       "Intents": {
         "None": {
-          "Score": 0.034971032
+          "Score": 0.041050386
         },
         "Contact": {
-          "Score": 0.001955118
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0020373992
         },
         "FlightLevel": {
-          "Score": 0.0031561034
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.002132252
         },
         "Squawk": {
-          "Score": 0.0019449252
+          "Code": null,
+          "Score": 0.0020525116
         },
         "Turn": {
-          "Score": 0.0027948515
+          "Direction": "left",
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 0.9971816
         }
       }
     }

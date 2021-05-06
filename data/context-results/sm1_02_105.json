@@ -2,26 +2,35 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "klm 264 turn level to NTM",
+      "Message": "klm 264 turn left to NTM",
       "CallSign": {
         "Airline": "klm",
         "FlightNumber": "264"
       },
       "Intents": {
         "None": {
-          "Score": 0.0514378
+          "Score": 0.058895268
         },
         "Contact": {
-          "Score": 0.0020415694
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.00211692
         },
         "FlightLevel": {
-          "Score": 0.0027070036
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0019343841
         },
         "Squawk": {
-          "Score": 0.0022421225
+          "Code": null,
+          "Score": 0.0023504258
         },
         "Turn": {
-          "Score": 0.0024578117
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "NTM",
+          "Score": 0.99405277
         }
       }
     }
@@ -29,26 +38,35 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "klm 264 turn level to NTM ohh",
+      "Message": "klm 264 turn left to NTM ohh",
       "CallSign": {
         "Airline": "klm",
         "FlightNumber": "264"
       },
       "Intents": {
         "None": {
-          "Score": 0.04439816
+          "Score": 0.050227728
         },
         "Contact": {
-          "Score": 0.0021334663
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0022042715
         },
         "FlightLevel": {
-          "Score": 0.002940199
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0021749644
         },
         "Squawk": {
-          "Score": 0.0022432732
+          "Code": null,
+          "Score": 0.0023405747
         },
         "Turn": {
-          "Score": 0.0025201219
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "NTM",
+          "Score": 0.99406034
         }
       }
     }
@@ -56,26 +74,35 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "klm 264 turn level to NTMi",
+      "Message": "klm 264 turn left to NTMi",
       "CallSign": {
         "Airline": "klm",
         "FlightNumber": "264"
       },
       "Intents": {
         "None": {
-          "Score": 0.05656556
+          "Score": 0.066776805
         },
         "Contact": {
-          "Score": 0.0019123575
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019983507
         },
         "FlightLevel": {
-          "Score": 0.0027688711
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0018269365
         },
         "Squawk": {
-          "Score": 0.0020567419
+          "Code": null,
+          "Score": 0.002178054
         },
         "Turn": {
-          "Score": 0.0023485404
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "NTMi",
+          "Score": 0.99410564
         }
       }
     }

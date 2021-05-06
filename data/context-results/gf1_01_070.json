@@ -2,26 +2,35 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "viva 9081 turn further level heading equals",
+      "Message": "viva 9081 turn further left heading equals",
       "CallSign": {
         "Airline": "viva",
         "FlightNumber": "9081"
       },
       "Intents": {
         "None": {
-          "Score": 0.02736468
+          "Score": 0.031755257
         },
         "Contact": {
-          "Score": 0.0018901086
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.00196494
         },
         "FlightLevel": {
-          "Score": 0.00275981
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0019076271
         },
         "Squawk": {
-          "Score": 0.0019404232
+          "Code": null,
+          "Score": 0.0020412188
         },
         "Turn": {
-          "Score": 0.0032067832
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0041308776
         }
       }
     }
@@ -29,26 +38,35 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "viva 9081 turn further level heading a equals",
+      "Message": "viva 9081 turn further left heading a equals",
       "CallSign": {
         "Airline": "viva",
         "FlightNumber": "9081"
       },
       "Intents": {
         "None": {
-          "Score": 0.02237288
+          "Score": 0.025953365
         },
         "Contact": {
-          "Score": 0.0019442928
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0020206207
         },
         "FlightLevel": {
-          "Score": 0.003033453
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0021039594
         },
         "Squawk": {
-          "Score": 0.0019199878
+          "Code": null,
+          "Score": 0.0020188747
         },
         "Turn": {
-          "Score": 0.0032705679
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.004203136
         }
       }
     }
@@ -56,26 +74,35 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "viva 9081 turn further level heading equal",
+      "Message": "viva 9081 turn further left heading equal",
       "CallSign": {
         "Airline": "viva",
         "FlightNumber": "9081"
       },
       "Intents": {
         "None": {
-          "Score": 0.0276597
+          "Score": 0.032060936
         },
         "Contact": {
-          "Score": 0.0018940457
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019684464
         },
         "FlightLevel": {
-          "Score": 0.002755957
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.00191092
         },
         "Squawk": {
-          "Score": 0.0019449752
+          "Code": null,
+          "Score": 0.0020452018
         },
         "Turn": {
-          "Score": 0.0032003797
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.004113635
         }
       }
     }

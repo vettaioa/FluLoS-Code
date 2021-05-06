@@ -18,15 +18,24 @@
           "Score": 0.04508832
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019990979
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0016606438
         },
         "Squawk": {
+          "Code": "7535",
           "Score": 0.9562827
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0018684409
         }
       }
@@ -51,15 +60,24 @@
           "Score": 0.042135954
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.001977191
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0016347171
         },
         "Squawk": {
+          "Code": "7535",
           "Score": 0.96152186
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0018337354
         }
       }
@@ -84,15 +102,24 @@
           "Score": 0.044661496
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.001996003
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0016569721
         },
         "Squawk": {
+          "Code": "7535",
           "Score": 0.9570588
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0018635205
         }
       }

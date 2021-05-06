@@ -8,7 +8,11 @@
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": "250",
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +27,24 @@
           "Score": 0.01962841
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.002712151
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0022815636
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0022832179
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": "250",
+          "Place": null,
           "Score": 0.995641
         }
       }
@@ -46,7 +59,11 @@
       },
       "Intents": {
         "Turn": {
-          "Score": 1
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": "250",
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
@@ -61,15 +78,24 @@
           "Score": 0.015110338
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.002780147
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0024699434
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0022432776
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": "250",
+          "Place": null,
           "Score": 0.9957915
         }
       }
@@ -88,15 +114,24 @@
           "Score": 0.014702679
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0027598839
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0024927338
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002230509
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0036596325
         }
       }

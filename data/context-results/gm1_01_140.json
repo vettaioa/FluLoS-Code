@@ -8,7 +8,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "13227",
+          "Place": "reims",
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.024199843
         },
         "Contact": {
+          "Frequency": "13227",
+          "Place": "reims",
           "Score": 0.9760487
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0018288576
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0029891618
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0021523987
         }
       }
@@ -50,15 +61,24 @@
           "Score": 0.023419827
         },
         "Contact": {
+          "Frequency": "1327",
+          "Place": "reims",
           "Score": 0.9752513
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019374571
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0030373232
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0022668922
         }
       }
@@ -73,7 +93,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "13227",
+          "Place": "reims",
+          "Score": 1.0
         }
       }
     },
@@ -88,15 +110,24 @@
           "Score": 0.01688444
         },
         "Contact": {
+          "Frequency": "13227",
+          "Place": "reims",
           "Score": 0.97706455
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019956748
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0029516306
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0021839747
         }
       }

@@ -1,114 +1,159 @@
 [
   {
     "RmlResult": {
-      "Message": "roger turn level heading 225 permit climb",
+      "Message": "roger turn left heading 225 permit climb",
       "CallSign": {
         "Airline": "aerogem",
         "FlightNumber": ""
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": null,
+          "Score": 1.0
         },
         "Turn": {
-          "Score": 1
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "225",
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "roger turn level heading 225 permit climb",
+      "Message": "roger turn left heading 225 permit climb",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.01792025
+          "Score": 0.020502124
         },
         "Contact": {
-          "Score": 0.0018792201
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019468941
         },
         "FlightLevel": {
-          "Score": 0.0033721027
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.002414868
         },
         "Squawk": {
-          "Score": 0.0019405814
+          "Code": null,
+          "Score": 0.0020322646
         },
         "Turn": {
-          "Score": 0.0028517533
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "225",
+          "Place": null,
+          "Score": 0.99568844
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "roger turn level heading 2252 permit climb",
+      "Message": "roger turn left heading 2252 permit climb",
       "CallSign": {
         "Airline": "aerogem",
         "FlightNumber": ""
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": null,
+          "Score": 1.0
         },
         "Turn": {
-          "Score": 1
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "225",
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "roger turn level heading 2252 permit climb",
+      "Message": "roger turn left heading 2252 permit climb",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.019660408
+          "Score": 0.022800986
         },
         "Contact": {
-          "Score": 0.0017776428
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0018475008
         },
         "FlightLevel": {
-          "Score": 0.0033901632
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0023428057
         },
         "Squawk": {
-          "Score": 0.0017999647
+          "Code": null,
+          "Score": 0.0018928495
         },
         "Turn": {
-          "Score": 0.0027753587
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0035765758
         }
       }
     }
   },
   {
     "RmlResult": {
-      "Message": "roger turn level heading 225 minute climb",
+      "Message": "roger turn left heading 225 minute climb",
       "CallSign": {
         "Airline": "aerogem",
         "FlightNumber": ""
       },
       "Intents": {
         "FlightLevel": {
-          "Score": 1
+          "Instruction": "Climb",
+          "Level": null,
+          "Score": 1.0
         },
         "Turn": {
-          "Score": 1
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "225",
+          "Place": null,
+          "Score": 1.0
         }
       }
     },
     "LuisResult": {
-      "Message": "roger turn level heading 225 minute climb",
+      "Message": "roger turn left heading 225 minute climb",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.016808584
+          "Score": 0.019314237
         },
         "Contact": {
-          "Score": 0.0018615098
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019308712
         },
         "FlightLevel": {
-          "Score": 0.0034185222
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0024178983
         },
         "Squawk": {
-          "Score": 0.0019204713
+          "Code": null,
+          "Score": 0.0020144254
         },
         "Turn": {
-          "Score": 0.0028646693
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "225",
+          "Place": null,
+          "Score": 0.9957452
         }
       }
     }

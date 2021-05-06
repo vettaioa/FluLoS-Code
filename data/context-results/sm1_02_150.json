@@ -12,15 +12,24 @@
           "Score": 0.070704
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019424172
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0016879176
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0019555097
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "trasadingen",
           "Score": 0.99338794
         }
       }
@@ -39,15 +48,24 @@
           "Score": 0.09994217
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0018988367
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0014695745
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0020116896
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0026955167
         }
       }
@@ -66,15 +84,24 @@
           "Score": 0.052990906
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0019987852
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0019016385
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.001926478
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "trasadingen",
           "Score": 0.99351186
         }
       }

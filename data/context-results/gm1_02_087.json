@@ -8,7 +8,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "13413",
+          "Place": "zurich",
+          "Score": 1.0
         }
       }
     },
@@ -23,15 +25,24 @@
           "Score": 0.012527902
         },
         "Contact": {
+          "Frequency": "134134.6",
+          "Place": "zurich",
           "Score": 0.999234
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0030129193
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002043758
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0024025692
         }
       }
@@ -46,7 +57,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "13413",
+          "Place": "ontario",
+          "Score": 1.0
         }
       }
     },
@@ -61,15 +74,24 @@
           "Score": 0.011582714
         },
         "Contact": {
+          "Frequency": "134134.6",
+          "Place": "zurich",
           "Score": 0.9996026
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0032352896
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0020451355
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002456045
         }
       }
@@ -84,7 +106,9 @@
       },
       "Intents": {
         "Contact": {
-          "Score": 1
+          "Frequency": "13434",
+          "Place": "zurich",
+          "Score": 1.0
         }
       }
     },
@@ -99,15 +123,24 @@
           "Score": 0.012527902
         },
         "Contact": {
+          "Frequency": "13434.6",
+          "Place": "zurich",
           "Score": 0.999234
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0030129193
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002043758
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0024025692
         }
       }

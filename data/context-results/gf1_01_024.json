@@ -2,23 +2,32 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "topswiss 4578 on level",
+      "Message": "topswiss 4578 on left",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.18616706
+          "Score": 0.2564551
         },
         "Contact": {
-          "Score": 0.0015303807
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016671673
         },
         "FlightLevel": {
-          "Score": 0.002967006
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0011961882
         },
         "Squawk": {
-          "Score": 0.0017184697
+          "Code": null,
+          "Score": 0.0019207158
         },
         "Turn": {
-          "Score": 0.0015295891
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0028352425
         }
       }
     }
@@ -26,23 +35,32 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "topswiss 45781 level",
+      "Message": "topswiss 45781 left",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.19308993
+          "Score": 0.26885435
         },
         "Contact": {
-          "Score": 0.0014219867
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0015574284
         },
         "FlightLevel": {
-          "Score": 0.0026571327
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0009838642
         },
         "Squawk": {
-          "Score": 0.001724684
+          "Code": null,
+          "Score": 0.0019424228
         },
         "Turn": {
-          "Score": 0.0014368974
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0028264308
         }
       }
     }
@@ -50,23 +68,32 @@
   {
     "RmlResult": null,
     "LuisResult": {
-      "Message": "topswiss 4578 an level",
+      "Message": "topswiss 4578 an left",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.1450272
+          "Score": 0.19638865
         },
         "Contact": {
-          "Score": 0.001582161
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0017163176
         },
         "FlightLevel": {
-          "Score": 0.0028700687
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0012404716
         },
         "Squawk": {
-          "Score": 0.0018075171
+          "Code": null,
+          "Score": 0.0020097462
         },
         "Turn": {
-          "Score": 0.0015996078
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0028306646
         }
       }
     }

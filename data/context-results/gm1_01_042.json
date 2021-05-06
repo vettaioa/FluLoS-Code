@@ -12,15 +12,24 @@
           "Score": 0.027739987
         },
         "Contact": {
+          "Frequency": "ontario.6",
+          "Place": "zurich",
           "Score": 0.99928904
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0023450232
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.002312252
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.002124174
         }
       }
@@ -39,15 +48,24 @@
           "Score": 0.02322598
         },
         "Contact": {
+          "Frequency": "for.6",
+          "Place": "zurich",
           "Score": 0.999636
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.002534668
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0022853364
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0021756012
         }
       }
@@ -66,15 +84,24 @@
           "Score": 0.0245664
         },
         "Contact": {
+          "Frequency": "ontario.6",
+          "Place": "zurich",
           "Score": 0.9992631
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.002474252
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0024325363
         },
         "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
           "Score": 0.0022651202
         }
       }

@@ -12,15 +12,24 @@
           "Score": 0.02846489
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0020930734
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0025284681
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0019233902
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "willisau",
           "Score": 0.99415916
         }
       }
@@ -39,15 +48,24 @@
           "Score": 0.02687525
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0021878667
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0027560294
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0019679714
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "willisau",
           "Score": 0.99412626
         }
       }
@@ -66,15 +84,24 @@
           "Score": 0.02846489
         },
         "Contact": {
+          "Frequency": null,
+          "Place": null,
           "Score": 0.0020930734
         },
         "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
           "Score": 0.0025284681
         },
         "Squawk": {
+          "Code": null,
           "Score": 0.0019233902
         },
         "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "willisauo",
           "Score": 0.99415916
         }
       }
