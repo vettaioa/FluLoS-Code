@@ -1,0 +1,1659 @@
+{
+    "luis_schema_version": "7.0.0",
+    "intents": [
+      {
+        "name": "Contact",
+        "features": []
+      },
+      {
+        "name": "FlightLevel",
+        "features": []
+      },
+      {
+        "name": "None",
+        "features": []
+      },
+      {
+        "name": "Squawk",
+        "features": []
+      },
+      {
+        "name": "Turn",
+        "features": []
+      }
+    ],
+    "entities": [
+      {
+        "name": "MLCallSign",
+        "children": [
+          {
+            "name": "Airline",
+            "children": [],
+            "features": []
+          },
+          {
+            "name": "FlightNr",
+            "children": [],
+            "features": []
+          }
+        ],
+        "roles": [],
+        "features": []
+      },
+      {
+        "name": "MLContact",
+        "children": [
+          {
+            "name": "Frequency",
+            "children": [],
+            "features": []
+          },
+          {
+            "name": "Place",
+            "children": [],
+            "features": []
+          }
+        ],
+        "roles": [],
+        "features": []
+      },
+      {
+        "name": "MLFlightLevel",
+        "children": [
+          {
+            "name": "Level",
+            "children": [],
+            "features": []
+          },
+          {
+            "name": "Instruction",
+            "children": [],
+            "features": []
+          }
+        ],
+        "roles": [],
+        "features": []
+      },
+      {
+        "name": "MLSquawk",
+        "children": [
+          {
+            "name": "Code",
+            "children": [],
+            "features": []
+          }
+        ],
+        "roles": [],
+        "features": []
+      },
+      {
+        "name": "MLTurn",
+        "children": [
+          {
+            "name": "Direction",
+            "children": [],
+            "features": []
+          },
+          {
+            "name": "Degrees",
+            "children": [
+              {
+                "name": "Value",
+                "children": [],
+                "features": []
+              }
+            ],
+            "features": []
+          },
+          {
+            "name": "Heading",
+            "children": [
+              {
+                "name": "Value",
+                "children": [],
+                "features": []
+              }
+            ],
+            "features": []
+          },
+          {
+            "name": "Place",
+            "children": [
+              {
+                "name": "Value",
+                "children": [],
+                "features": []
+              }
+            ],
+            "features": []
+          }
+        ],
+        "roles": [],
+        "features": []
+      }
+    ],
+    "hierarchicals": [],
+    "composites": [],
+    "closedLists": [],
+    "prebuiltEntities": [],
+    "utterances": [
+      {
+        "text": "aero lloyd 517 good morning maintain flight level 320",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 13,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 9,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 11,
+                "endPos": 13,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 28,
+            "endPos": 52,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 28,
+                "endPos": 35,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 50,
+                "endPos": 52,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "aero lloyd 560 further left by 10 degrees",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 13,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 11,
+                "endPos": 13,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 9,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 23,
+            "endPos": 40,
+            "children": [
+              {
+                "entity": "Degrees",
+                "startPos": 31,
+                "endPos": 40,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 31,
+                    "endPos": 32,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 23,
+                "endPos": 26,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "air berlin 5081 geneva 13315",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 14,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 9,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 11,
+                "endPos": 14,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 16,
+            "endPos": 27,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 23,
+                "endPos": 27,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 16,
+                "endPos": 21,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "air hamburg 2546 marseille 12647 good bye",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 15,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 12,
+                "endPos": 15,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 10,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 17,
+            "endPos": 31,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 27,
+                "endPos": 31,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 17,
+                "endPos": 25,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "air malta 104 good afternoon squawk 5730",
+        "intent": "Squawk",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 12,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 10,
+                "endPos": 12,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 8,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLSquawk",
+            "startPos": 29,
+            "endPos": 39,
+            "children": [
+              {
+                "entity": "Code",
+                "startPos": 36,
+                "endPos": 39,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "air portugal 4113 turn right 10 degrees",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 16,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 11,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 13,
+                "endPos": 16,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 18,
+            "endPos": 38,
+            "children": [
+              {
+                "entity": "Degrees",
+                "startPos": 29,
+                "endPos": 38,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 29,
+                    "endPos": 30,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 23,
+                "endPos": 27,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "airfrans 3261 climb to flight level 340",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 12,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 9,
+                "endPos": 12,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 7,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 14,
+            "endPos": 38,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 14,
+                "endPos": 18,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 36,
+                "endPos": 38,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "alitalia 292 turn right to nattenheim",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 11,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 7,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 9,
+                "endPos": 11,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 13,
+            "endPos": 36,
+            "children": [
+              {
+                "entity": "Place",
+                "startPos": 24,
+                "endPos": 36,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 27,
+                    "endPos": 36,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 18,
+                "endPos": 22,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "alitalia 379 contact milano 12585 good bye",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 11,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 9,
+                "endPos": 11,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 7,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 13,
+            "endPos": 32,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 28,
+                "endPos": 32,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 21,
+                "endPos": 26,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "alitalia 401 zurich 134.6",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 11,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 7,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 9,
+                "endPos": 11,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 13,
+            "endPos": 24,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 20,
+                "endPos": 24,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 13,
+                "endPos": 18,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "app developers drink coffee",
+        "intent": "None",
+        "entities": []
+      },
+      {
+        "text": "bonjour alitalia 228 squawk 5772",
+        "intent": "Squawk",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 8,
+            "endPos": 19,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 8,
+                "endPos": 15,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 17,
+                "endPos": 19,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLSquawk",
+            "startPos": 21,
+            "endPos": 31,
+            "children": [
+              {
+                "entity": "Code",
+                "startPos": 28,
+                "endPos": 31,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "bonjour swissair 687 maintain flight level 280",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 8,
+            "endPos": 19,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 17,
+                "endPos": 19,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 8,
+                "endPos": 15,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 21,
+            "endPos": 45,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 21,
+                "endPos": 28,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 43,
+                "endPos": 45,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "cross air 2690 contact marseille on 125.85 good bye",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 13,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 8,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 10,
+                "endPos": 13,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 15,
+            "endPos": 41,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 36,
+                "endPos": 41,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 23,
+                "endPos": 31,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "cross air 512 bonjour cleared kines st prex fribourg flight level 310",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 12,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 8,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 10,
+                "endPos": 12,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 53,
+            "endPos": 68,
+            "children": [
+              {
+                "entity": "Level",
+                "startPos": 66,
+                "endPos": 68,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "french air force 4234 reims 134.4 good bye",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 20,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 15,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 17,
+                "endPos": 20,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 22,
+            "endPos": 32,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 28,
+                "endPos": 32,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 22,
+                "endPos": 26,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "french lines 9165 fly heading 095",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 16,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 13,
+                "endPos": 16,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 11,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 18,
+            "endPos": 32,
+            "children": [
+              {
+                "entity": "Heading",
+                "startPos": 22,
+                "endPos": 32,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 30,
+                    "endPos": 32,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "general motors 4209 continue descent to level 340",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 18,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 15,
+                "endPos": 18,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 13,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 29,
+            "endPos": 48,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 29,
+                "endPos": 35,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 46,
+                "endPos": 48,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "good morning adria 1642 squawk 2710",
+        "intent": "Squawk",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 13,
+            "endPos": 22,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 19,
+                "endPos": 22,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 13,
+                "endPos": 17,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLSquawk",
+            "startPos": 24,
+            "endPos": 34,
+            "children": [
+              {
+                "entity": "Code",
+                "startPos": 31,
+                "endPos": 34,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "hapag lloyd 171 turn left to bilsa",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 14,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 10,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 12,
+                "endPos": 14,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 16,
+            "endPos": 33,
+            "children": [
+              {
+                "entity": "Place",
+                "startPos": 26,
+                "endPos": 33,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 29,
+                    "endPos": 33,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 21,
+                "endPos": 24,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "hapag lloyd 355 zurich frequency 1337 tschuss",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 14,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 10,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 12,
+                "endPos": 14,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 16,
+            "endPos": 36,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 33,
+                "endPos": 36,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 16,
+                "endPos": 21,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "iberia 3473 bonjour climb to flight level 390",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 10,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 7,
+                "endPos": 10,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 5,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 20,
+            "endPos": 44,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 20,
+                "endPos": 24,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 42,
+                "endPos": 44,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "jet set 207 left direct hochwald",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 10,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 8,
+                "endPos": 10,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 6,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 12,
+            "endPos": 31,
+            "children": [
+              {
+                "entity": "Place",
+                "startPos": 17,
+                "endPos": 31,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 24,
+                    "endPos": 31,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 12,
+                "endPos": 15,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "ltu 1602 right by 20 degrees please",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 7,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 2,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 4,
+                "endPos": 7,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 9,
+            "endPos": 27,
+            "children": [
+              {
+                "entity": "Degrees",
+                "startPos": 18,
+                "endPos": 27,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 18,
+                    "endPos": 19,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 9,
+                "endPos": 13,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "lufthansa 4207 turn now left to dkb",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 13,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 10,
+                "endPos": 13,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 8,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 15,
+            "endPos": 34,
+            "children": [
+              {
+                "entity": "Place",
+                "startPos": 29,
+                "endPos": 34,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 32,
+                    "endPos": 34,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 24,
+                "endPos": 27,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "lufthansa 4356 good morning squawk 2712",
+        "intent": "Squawk",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 13,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 8,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 10,
+                "endPos": 13,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLSquawk",
+            "startPos": 28,
+            "endPos": 38,
+            "children": [
+              {
+                "entity": "Code",
+                "startPos": 35,
+                "endPos": 38,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "lufthansa 4416 climb flight level 290",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 13,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 8,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 10,
+                "endPos": 13,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 15,
+            "endPos": 36,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 15,
+                "endPos": 19,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 34,
+                "endPos": 36,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "lufthansa 5504 turn right heading 200",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 13,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 10,
+                "endPos": 13,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 8,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 15,
+            "endPos": 36,
+            "children": [
+              {
+                "entity": "Heading",
+                "startPos": 26,
+                "endPos": 36,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 34,
+                    "endPos": 36,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 20,
+                "endPos": 24,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "luxair 2663 bonjour continue climb to flight level 350",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 29,
+            "endPos": 53,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 29,
+                "endPos": 33,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 38,
+                "endPos": 49,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 51,
+                "endPos": 53,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "music is categorized into genres",
+        "intent": "None",
+        "entities": []
+      },
+      {
+        "text": "olympic 144 turn left heading 115 for separation",
+        "intent": "Turn",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 10,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 8,
+                "endPos": 10,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 6,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLTurn",
+            "startPos": 12,
+            "endPos": 32,
+            "children": [
+              {
+                "entity": "Heading",
+                "startPos": 22,
+                "endPos": 32,
+                "children": [
+                  {
+                    "entity": "Value",
+                    "startPos": 30,
+                    "endPos": 32,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "entity": "Direction",
+                "startPos": 17,
+                "endPos": 20,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "penguins are animals",
+        "intent": "None",
+        "entities": []
+      },
+      {
+        "text": "sabena 481 contact rhein frequency 132.4 tschuss",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 9,
+            "children": [
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 5,
+                "children": []
+              },
+              {
+                "entity": "FlightNr",
+                "startPos": 7,
+                "endPos": 9,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 11,
+            "endPos": 39,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 35,
+                "endPos": 39,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 19,
+                "endPos": 23,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "swissair 806 identified climb now flight level 340",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 11,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 9,
+                "endPos": 11,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 7,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 24,
+            "endPos": 49,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 24,
+                "endPos": 28,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 47,
+                "endPos": 49,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "swissair 9360 contact rhein radar 127.37",
+        "intent": "Contact",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 12,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 9,
+                "endPos": 12,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 7,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLContact",
+            "startPos": 14,
+            "endPos": 39,
+            "children": [
+              {
+                "entity": "Frequency",
+                "startPos": 34,
+                "endPos": 39,
+                "children": []
+              },
+              {
+                "entity": "Place",
+                "startPos": 22,
+                "endPos": 26,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "trains on tracks",
+        "intent": "None",
+        "entities": []
+      },
+      {
+        "text": "trampolines are mostly played with by kids",
+        "intent": "None",
+        "entities": []
+      },
+      {
+        "text": "united 69 descend to flight level 290",
+        "intent": "FlightLevel",
+        "entities": [
+          {
+            "entity": "MLCallSign",
+            "startPos": 0,
+            "endPos": 8,
+            "children": [
+              {
+                "entity": "FlightNr",
+                "startPos": 7,
+                "endPos": 8,
+                "children": []
+              },
+              {
+                "entity": "Airline",
+                "startPos": 0,
+                "endPos": 5,
+                "children": []
+              }
+            ]
+          },
+          {
+            "entity": "MLFlightLevel",
+            "startPos": 10,
+            "endPos": 36,
+            "children": [
+              {
+                "entity": "Instruction",
+                "startPos": 10,
+                "endPos": 16,
+                "children": []
+              },
+              {
+                "entity": "Level",
+                "startPos": 34,
+                "endPos": 36,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "versionId": "0.1",
+    "name": "FluLoS-Prod_v2",
+    "desc": "",
+    "culture": "en-us",
+    "tokenizerVersion": "1.0.0",
+    "patternAnyEntities": [],
+    "regex_entities": [],
+    "phraselists": [],
+    "regex_features": [],
+    "patterns": [],
+    "settings": [
+      {
+        "name": "NormalizePunctuation",
+        "value": "false"
+      },
+      {
+        "name": "NormalizeWordForm",
+        "value": "false"
+      }
+    ]
+  }

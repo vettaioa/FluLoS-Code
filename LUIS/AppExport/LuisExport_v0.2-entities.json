@@ -3,21 +3,11 @@
     "intents": [
       {
         "name": "Contact",
-        "features": [
-          {
-            "modelName": "MLContact",
-            "isRequired": false
-          }
-        ]
+        "features": []
       },
       {
         "name": "FlightLevel",
-        "features": [
-          {
-            "modelName": "MLFlightLevel",
-            "isRequired": false
-          }
-        ]
+        "features": []
       },
       {
         "name": "None",
@@ -25,21 +15,11 @@
       },
       {
         "name": "Squawk",
-        "features": [
-          {
-            "modelName": "MLSquawk",
-            "isRequired": false
-          }
-        ]
+        "features": []
       },
       {
         "name": "Turn",
-        "features": [
-          {
-            "modelName": "MLTurn",
-            "isRequired": false
-          }
-        ]
+        "features": []
       }
     ],
     "entities": [
@@ -23601,7 +23581,7 @@
         ]
       }
     ],
-    "versionId": "0.1",
+    "versionId": "0.2-entities",
     "name": "FluLoS-Prod_v2",
     "desc": "",
     "culture": "en-us",
