@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\RML\FuzzySearch\FuzzySearch.csproj" />
     <ProjectReference Include="..\..\SharedModel\SharedModel\SharedModel.csproj" />
   </ItemGroup>
 

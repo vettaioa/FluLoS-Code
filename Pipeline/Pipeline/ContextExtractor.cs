@@ -19,7 +19,7 @@ namespace Pipeline
         {
             cleanUp = new CleanUpCaller();
             deltaListReplace = new DeltaListReplaceCaller();
-            rml = new RmlCaller();
+            rml = new RmlCaller(config.Rml);
             luis = new LuisCaller(config.Luis);
         }
 

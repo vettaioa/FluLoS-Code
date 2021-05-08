@@ -63,6 +63,7 @@ namespace FuzzySearching
         /// <summary>Führt eine 'fuzzy' Suche für die übergebene Zeichenkette aus. Gibt die am besten übereinstimmende Zeichenkette zurück.
         /// Wurde keine übereinstimmung gefunden, welche der geforderten Ratio entspricht, wird <c>null</c> zurück gegeben.</summary>
         /// <param name="search">Die zu suchende Zeichenkette.</param>
+        /// <param name="ratio">Ratio für die fuzzy suche. Überschreibt den <c>Ratio</c> Property Wert, falls gesetzt und valid</param>
         /// <returns>Die beste Übereinstimmung, oder <c>null</c> falls keine genügend gute gefunden worden ist.</returns>
         public string fuzzySearching(string search, float? ratio = null)
         {

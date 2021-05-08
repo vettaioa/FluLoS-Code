@@ -1,4 +1,6 @@
 ﻿
+using System.Text.RegularExpressions;
+
 namespace Evaluation.Model
 {
     public class Airplane
@@ -21,6 +23,15 @@ namespace Evaluation.Model
         //public long? LastChangeTimestamp { get; set; }
         //public long? ScheduledArrivalTime { get; set; }
         //public long? ScheduledDepartureTime { get; set; }
+
+        public string GetFlightNumber()
+        {
+            if (FlightIdentification != null)
+            {
+                return Regex.Replace(FlightIdentification, "[^0-9]", "");
+            }
+            return null;
+        }
 
     }
 

@@ -25,10 +25,10 @@ namespace Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls {
 
     public Airline()
     {
-      string dataDir = Path.Combine(Directory.GetCurrentDirectory(), ConfigurationManager.AppSettings["dataDir"]);
+      string currentDir = Directory.GetCurrentDirectory();
 
-      var phonetics = loadFromJson<Dictionary<string, string>>(Path.Combine(dataDir, "phonetics.json"));
-      var airlines = loadFromJson<List<string>>(Path.Combine(dataDir, "airlines.json"));
+      var phonetics = loadFromJson<Dictionary<string, string>>(Path.Combine(currentDir, ConfigurationManager.AppSettings["phoneticsFile"]));
+      var airlines = loadFromJson<List<string>>(Path.Combine(currentDir, ConfigurationManager.AppSettings["airlinesFile"]));
 
       var fuzzySearch = new FuzzySearch(phonetics);
 

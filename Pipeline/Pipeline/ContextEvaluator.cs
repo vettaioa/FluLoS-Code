@@ -26,9 +26,9 @@ namespace Pipeline
             }
         }
 
-        public async Task<EvaluationResult> Evaluate(MessageContext context)
+        public EvaluationResult Evaluate(MessageContext context)
         {
-            return await evaluator.Evaluate(context);
+            return evaluator.Evaluate(context);
         }
     }
 }

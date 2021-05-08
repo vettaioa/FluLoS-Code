@@ -13,6 +13,7 @@ namespace SharedModel
         public bool RunWebPipeline { get; set; }
         public SpeechToTextConfig SpeechToText { get; set; }
         public LuisConfig Luis { get; set; }
+        public RmlConfig Rml { get; set; }
         public string InputLabelDirectory { get; set; }
         public string ContextOutputDirectory { get; set; }
         public EvaluationConfig Evaluation { get; set; }
@@ -36,11 +37,32 @@ namespace SharedModel
         public string AzureApiKeysFile { get; set; }
     }
 
+    public class RmlConfig
+    {
+        public string RmlFile { get; set; }
+        public string ExtCallDllDirectory { get; set; }
+        public string PhoneticsFile { get; set; }
+        public string AirlinesFile { get; set; }
+    }
+
     public class EvaluationConfig
     {
+
         public string OutputDirectory { get; set; }
+
         public string AirplanesInRangeUrl { get; set; }
         public string AirplaneDetailsUrl { get; set; }
+        public short[] LatitudeMinMax { get; set; }
+        public short[] LongitudeMinMax { get; set; }
+
+        public string PhoneticsFile { get; set; }
+        public string AirlinesFile { get; set; }
+
+        public EvaluationRules Rules { get; set; }
+    }
+
+    public class EvaluationRules
+    {
         public short? FlightLevelMin { get; set; }
         public short? FlightLevelMax { get; set; }
         public int[] ContactFrequencies { get; set; }

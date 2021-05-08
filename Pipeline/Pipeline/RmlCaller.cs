@@ -14,16 +14,17 @@ namespace Pipeline
     class RmlCaller
     {
         private Rml rmlRegex;
-        public RmlCaller()
+        public RmlCaller(RmlConfig config)
         {
-            var root = Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\..\..\");
+            var currentDir = Directory.GetCurrentDirectory();
 
-            var rmlDefinition = Path.Combine(root, @"RML\atc.rml");
-            ConfigurationManager.AppSettings["dataDir"] = Path.Combine(root, @"data\rml\"); ;
-            ConfigurationManager.AppSettings["dllDir"] = Path.Combine(root, @"RML\ExternalCallDll\bin\Debug\net5.0\");
+            var rmlFile = Path.Combine(currentDir, config.RmlFile);
+            ConfigurationManager.AppSettings["phoneticsFile"] = Path.Combine(currentDir, config.PhoneticsFile);
+            ConfigurationManager.AppSettings["airlinesFile"] = Path.Combine(currentDir, config.AirlinesFile);
+            ConfigurationManager.AppSettings["dllDir"] = Path.Combine(currentDir, config.ExtCallDllDirectory);
 
             IEnumerable<CompilerException> errors;
-            rmlRegex = new Rml(rmlDefinition, out errors);
+            rmlRegex = new Rml(rmlFile, out errors);
 
             if (errors.Count() > 0)
             {

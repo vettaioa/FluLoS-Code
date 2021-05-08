@@ -1,4 +1,5 @@
 ﻿using Evaluation.Model;
+using FuzzySearching;
 using SharedModel;
 using System;
 using System.Collections.Generic;
@@ -6,44 +7,51 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Evaluation
 {
     public class Evaluator
     {
-        private EvaluationConfig config;
-        private RadarScanner radarScanner;
+        private readonly EvaluationConfig config;
+        private AirspaceSearch airspaceSearch;
 
         public Evaluator(EvaluationConfig config)
         {
             this.config = config;
-            radarScanner = new RadarScanner(config.AirplanesInRangeUrl, config.AirplaneDetailsUrl);
+
+            InitAirspaceSearch(); // loads the current airspace state
         }
 
-        public async Task<EvaluationResult> Evaluate(MessageContext messageContext)
+        public EvaluationResult Evaluate(MessageContext messageContext)
         {
+            if (airspaceSearch == null)
+            {
+                throw new ApplicationException("radar data not loaded yet");
+            }
+
             EvaluationResult result = new EvaluationResult();
 
             // TODO: set the overall result? "valid" and "invalid"? do we even need them?
 
             if (messageContext != null)
             {
-                // get airplanes in range
-                IEnumerable<RadarAirplane> raderAirplanes = await radarScanner.GetRadarAirplanes(47, 48, 7, 10);
-                // radarAirplanes an airspacesearch übergeh und en fuzzy search
-                // Fuzzy search (siehe deltaliste)
-
-                if (messageContext.CallSign != null)
+                if (messageContext.CallSign != null) // no callsign = can't do radar check
                 {
-                    // TODO: correction i.e. if airline missing (only airplane with nr 2322 in radar)
-                    // as skyguide mentioned, airline or flight nr get omnitted often
+                    RadarAirplane radarAirplane = airspaceSearch.FindByCallSign(messageContext.CallSign);
 
-                    // TODO: only check intents if callsign and radar airplane found?
-                }
-                else
-                {
-                    // no callsign = can't do radar check
+                    //string flightNumber = radarAirplane.Airplane.Flight.GetFlightNumber();
+                    //if (flightNumber == messageContext.CallSign.FlightNumber)
+                    //{
+                    //    result.CallSignResult |= CallSignResult.FlightNumberValid;
+                    //}
+                    //else
+                    //{
+                    //    // todo: return corrected flightnumber
+                    //}
+
+                    // todo: validate intent values based on radarAirplane data 
                 }
 
                 // evaluate intent info
@@ -57,16 +65,16 @@ namespace Evaluation
                             switch (intentType)
                             {
                                 case IntentType.Squawk:
-                                    result.SquawkResult = IntentInfoValidator.ValidateSquawk((intent as SquawkIntent), config.SquawkCodes);
+                                    result.SquawkResult = IntentInfoValidator.ValidateSquawk((intent as SquawkIntent), config.Rules.SquawkCodes);
                                     break;
                                 case IntentType.Contact:
-                                    result.ContactResult = IntentInfoValidator.ValidateContact((intent as ContactIntent), config.ContactFrequencies, config.ContactPlaces);
+                                    result.ContactResult = IntentInfoValidator.ValidateContact((intent as ContactIntent), config.Rules.ContactFrequencies, config.Rules.ContactPlaces);
                                     break;
                                 case IntentType.FlightLevel:
-                                    result.FlightLevelResult = IntentInfoValidator.ValidateFlightLevel((intent as FlightLevelIntent), config.FlightLevelMin, config.FlightLevelMax);
+                                    result.FlightLevelResult = IntentInfoValidator.ValidateFlightLevel((intent as FlightLevelIntent), config.Rules.FlightLevelMin, config.Rules.FlightLevelMax);
                                     break;
                                 case IntentType.Turn:
-                                    result.TurnResult = IntentInfoValidator.ValidateTurn(intent as TurnIntent, config.TurnPlaces);
+                                    result.TurnResult = IntentInfoValidator.ValidateTurn(intent as TurnIntent, config.Rules.TurnPlaces);
                                     break;
                             }
                         }
@@ -75,6 +83,31 @@ namespace Evaluation
             }
 
             return result;
+        }
+
+        private async void InitAirspaceSearch()
+        {
+            var currentDir = Directory.GetCurrentDirectory();
+
+            // FuzzySearch
+            var phonetics = loadFromJsonFile<Dictionary<string, string>>(Path.Combine(currentDir, config.PhoneticsFile));
+            var fuzzySearch = new FuzzySearch(phonetics);
+
+            // Airspace
+            var radarScanner = new RadarScanner(config.AirplanesInRangeUrl, config.AirplaneDetailsUrl);
+            var radarAirplanes = await radarScanner.GetRadarAirplanes(config.LatitudeMinMax[0], config.LatitudeMinMax[1],
+                                                                      config.LongitudeMinMax[0], config.LongitudeMinMax[1]);
+
+            var knownAirlines = loadFromJsonFile<IEnumerable<KnownAirline>>(Path.Combine(currentDir, config.AirlinesFile));
+
+            airspaceSearch = new AirspaceSearch(fuzzySearch, knownAirlines, radarAirplanes);
+
+        }
+
+        private static T loadFromJsonFile<T>(string filePath)
+        {
+            var json = File.ReadAllText(filePath);
+            return JsonSerializer.Deserialize<T>(json, new JsonSerializerOptions { ReadCommentHandling = JsonCommentHandling.Skip });
         }
     }
 }

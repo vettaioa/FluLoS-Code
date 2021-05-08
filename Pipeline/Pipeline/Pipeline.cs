@@ -15,12 +15,14 @@ namespace Pipeline
         private AppConfiguration config;
         private SpeechToTextRunner speechToText;
         private ContextExtractor contextExtractor;
+        private ContextEvaluator contextEvaluator;
 
         public Pipeline(AppConfiguration config)
         {
             this.config = config;
             contextExtractor = new ContextExtractor(config);
             speechToText = new SpeechToTextRunner(config.SpeechToText, config.InputLabelDirectory);
+            contextEvaluator = new ContextEvaluator(config.Evaluation);
         }
 
         public async Task Run()
@@ -41,34 +43,48 @@ namespace Pipeline
                 string resultsJson = Newtonsoft.Json.JsonConvert.SerializeObject(contextResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
 
                 Console.WriteLine(resultsJson);
-                if (!string.IsNullOrWhiteSpace(config.ContextOutputDirectory))
-                {
-                    try
-                    {
-                        Directory.CreateDirectory(config.ContextOutputDirectory);
+                WriteToOutputDirectory(config.ContextOutputDirectory, transcriptionResult.FilePath, resultsJson);
 
-                        StringBuilder sbFilePath = new StringBuilder();
-                        sbFilePath.Append(config.ContextOutputDirectory);
-                        if (config.SpeechToText.SpeechToTextMode == SpeechToTextMode.MicrophoneSingle)
-                        {
-                            sbFilePath.Append(DateTime.Now.ToString("yyyyMMdd-HHmmss"));
-                        }
-                        else
-                        {
-                            sbFilePath.Append(Path.GetFileNameWithoutExtension(transcriptionResult.FilePath));
-                        }
-                        sbFilePath.Append(".json");
-                        File.WriteAllText(sbFilePath.ToString(), resultsJson);
-                    }
-                    catch { }
+
+
+                foreach (ContextExtractionResult contextResult in contextResults)
+                {
+                    var evalResultLuis = contextEvaluator.Evaluate(contextResult.LuisResult);
+                    var evalResultRml = contextEvaluator.Evaluate(contextResult.RmlResult);
+
                 }
 
-                // TODO: evaluate results (and maybe write results to file???)
+                // TODO: maybe write evaluation results to file
                 // TODO: check for set flags in result
             }
             else
             {
                 Console.WriteLine("No results found!");
+            }
+        }
+
+        private void WriteToOutputDirectory(string outputDirectory, string filename, string jsonData)
+        {
+            if (!string.IsNullOrWhiteSpace(outputDirectory))
+            {
+                try
+                {
+                    Directory.CreateDirectory(outputDirectory);
+
+                    StringBuilder sbFilePath = new StringBuilder();
+                    sbFilePath.Append(outputDirectory);
+                    if (config.SpeechToText.SpeechToTextMode == SpeechToTextMode.MicrophoneSingle)
+                    {
+                        sbFilePath.Append(DateTime.Now.ToString("yyyyMMdd-HHmmss"));
+                    }
+                    else
+                    {
+                        sbFilePath.Append(Path.GetFileNameWithoutExtension(filename));
+                    }
+                    sbFilePath.Append(".json");
+                    File.WriteAllText(sbFilePath.ToString(), jsonData);
+                }
+                catch { }
             }
         }
     }

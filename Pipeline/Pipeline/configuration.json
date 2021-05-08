@@ -12,18 +12,30 @@
 		"PublishedSlot": "staging",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json"
 	},
+	"Rml": {
+		"RmlFile": "../../../../../RML/atc.rml",
+		"ExtCallDllDirectory": "../../../../../RML/ExternalCallDll/bin/Debug/net5.0/",
+		"PhoneticsFile": "../../../../../data/rml/phonetics.json",
+		"AirlinesFile": "../../../../../data/rml/airlines.json"
+	},
 	"InputLabelDirectory": "../../../../../data/context-labelled/",
 	"ContextOutputDirectory": "../../../../../data/context-results/",
 	"Evaluation": {
 		"OutputDirectory": "../../../../../data/context-evaluation/",
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange",
-		"AirplaneDetailsUrl": "https://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplane",
-
-		"FlightLevelMin": 150,
-		"FlightLevelMax": 450,
-		"ContactFrequencies": [ 12815, 12585 ],
-		"ContactPlaces": [ "rhein", "marseille" ],
-		"TurnPlaces": [ "hochwald", "nattenheim" ],
-		"SquawkCodes": [ "5766", "5720" ]
+		"LatitudeMinMax": [47, 48],
+		"LongitudeMinMax": [7, 10],
+		"AirplaneDetailsUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplane",
+		"PhoneticsFile": "../../../../../data/rml/phonetics.json",
+		"AirlinesFile": "../../../../../data/evaluation/airlines.json",
+		
+		"Rules": {
+			"FlightLevelMin": 150,
+			"FlightLevelMax": 450,
+			"ContactFrequencies": [ 12815, 12585 ],
+			"ContactPlaces": [ "rhein", "marseille" ],
+			"TurnPlaces": [ "hochwald", "nattenheim" ],
+			"SquawkCodes": [ "5766", "5720" ]
+		}
 	}
 }

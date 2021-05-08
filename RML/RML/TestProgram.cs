@@ -17,9 +17,9 @@ namespace RML
       var rmlDataFolder = Path.Combine(root, @"data\rml\");
       var rmlDefinition = Path.Combine(root, @"RML\atc.rml");
 
-      ConfigurationManager.AppSettings["dataDir"] = rmlDataFolder;
       ConfigurationManager.AppSettings["dllDir"] = Path.Combine(root, @"RML\ExternalCallDll\bin\Debug\net5.0\");
-      ConfigurationManager.AppSettings["phonetics"] = Path.Combine(rmlDataFolder, "phonetic.xml");
+      ConfigurationManager.AppSettings["airlinesFile"] = Path.Combine(rmlDataFolder, "airlines.json"); ;
+      ConfigurationManager.AppSettings["phoneticsFile"] = Path.Combine(rmlDataFolder, "phonetics.json");
 
       IEnumerable<CompilerException> errors;
       Rml rmlRegex = new Rml(rmlDefinition, out errors);
