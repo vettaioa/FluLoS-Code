@@ -64,15 +64,22 @@ namespace FuzzySearching
         /// <summary>Führt eine 'fuzzy' Suche für die übergebene Zeichenkette aus. Gibt das Resultat für die am besten übereinstimmende Zeichenkette zurück. 
         /// Wurde keine übereinstimmung gefunden, welche der geforderten Ratio entspricht, wird der Type default zurück gegeben.</summary>
         /// <param name="search">Die zu suchende Zeichenkette.</param>
+        /// <param name="ratio">Ratio für die fuzzy suche. Überschreibt den <c>Ratio</c> Property Wert, falls gesetzt und valid</param>
         /// <returns>Die Value der besten Übereinstimmung, oder der Type default falls keine genügend gute gefunden worden ist.</returns>
-        public TValue fuzzySearching(string search)
+        public TValue fuzzySearching(string search, float? ratio = null)
         {
             if (dict == null)
             {
                 throw new Exception("Dictionary is 'null'");
             }
 
-            var key = fuzzySearch.search(phonetics, trigram, search, Ratio);
+            float neededRatio = Ratio;
+            if (ratio != null && ratio > 0 && ratio < 1)
+            {
+                neededRatio = ratio.Value;
+            }
+
+            var key = fuzzySearch.search(phonetics, trigram, search, neededRatio);
             if(key != null)
             {
                 TryGetValue(key, out var value);

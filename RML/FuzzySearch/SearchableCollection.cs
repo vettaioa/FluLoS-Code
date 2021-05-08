@@ -64,11 +64,17 @@ namespace FuzzySearching
         /// Wurde keine übereinstimmung gefunden, welche der geforderten Ratio entspricht, wird <c>null</c> zurück gegeben.</summary>
         /// <param name="search">Die zu suchende Zeichenkette.</param>
         /// <returns>Die beste Übereinstimmung, oder <c>null</c> falls keine genügend gute gefunden worden ist.</returns>
-        public string fuzzySearching(string search)
+        public string fuzzySearching(string search, float? ratio = null)
         {
             if(list == null)
             {
                 throw new Exception("Collection is 'null'");
+            }
+
+            float neededRatio = Ratio;
+            if (ratio != null && ratio > 0 && ratio < 1)
+            {
+                neededRatio = ratio.Value;
             }
 
             return fuzzySearch.search(phonetics, trigram, search, Ratio);
