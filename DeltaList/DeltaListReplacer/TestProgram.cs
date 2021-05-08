@@ -15,7 +15,7 @@ namespace DeltaListReplacer
             var phonetics = loadPhonetics(Path.Combine(dataFolder, "phonetics.json"));
 
             var atcWords = loadAtcWords(Path.Combine(dataFolder, "atcwords.json"));
-            var deltalist = loadDeltalist(Path.Combine(dataFolder, "atcwords.json"));
+            var deltalist = loadDeltalist(Path.Combine(dataFolder, "deltalist.json"));
 
             var replacer = new DeltaReplacer(phonetics, atcWords, deltalist);
 

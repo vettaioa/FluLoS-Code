@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FuzzySearch\FuzzySearch.csproj" />
+    <ProjectReference Include="..\..\RML\FuzzySearch\FuzzySearch.csproj" />
   </ItemGroup>
 
 </Project>

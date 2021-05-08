@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeltaListReplacer", "DeltaListReplacer\DeltaListReplacer.csproj", "{3184FDC0-8647-429E-B065-3A0644C3BBE3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuzzySearch", "FuzzySearch\FuzzySearch.csproj", "{0577DAD9-B01E-4658-822D-900AE80DC8A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuzzySearch", "..\RML\FuzzySearch\FuzzySearch.csproj", "{001C5492-83E2-4E3A-88FA-9F189027EFAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{3184FDC0-8647-429E-B065-3A0644C3BBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3184FDC0-8647-429E-B065-3A0644C3BBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3184FDC0-8647-429E-B065-3A0644C3BBE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0577DAD9-B01E-4658-822D-900AE80DC8A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0577DAD9-B01E-4658-822D-900AE80DC8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0577DAD9-B01E-4658-822D-900AE80DC8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0577DAD9-B01E-4658-822D-900AE80DC8A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001C5492-83E2-4E3A-88FA-9F189027EFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001C5492-83E2-4E3A-88FA-9F189027EFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001C5492-83E2-4E3A-88FA-9F189027EFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001C5492-83E2-4E3A-88FA-9F189027EFAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
