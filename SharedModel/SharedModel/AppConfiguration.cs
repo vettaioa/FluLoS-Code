@@ -28,6 +28,7 @@ namespace SharedModel
         public string AzureRegion { get; set; }
         public string InputAudioFile { get; set; }
         public string InputAudioDirectory { get; set; }
+        public string InputTranscriptionDirectory { get; set; }
     }
 
     public class LuisConfig
@@ -89,8 +90,13 @@ namespace SharedModel
         FileMulti,
 
         /// <summary>
-        /// Folder of son labeldata
+        /// Folder of hand labelled data
         /// </summary>
-        LabelledData
+        LabelledData,
+
+        /// <summary>
+        /// Folder of existing s2t transcriptions
+        /// </summary>
+        ExistingTranscriptions
     }
 }

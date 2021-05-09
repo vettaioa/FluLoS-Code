@@ -53,6 +53,9 @@ namespace Pipeline
                     string[] filesToTranscribe = GetAudioFilesForLabelData(labelDataDir);
                     fileResults = await transcriber.TranscribeAudioFiles(filesToTranscribe);
                     break;
+                case SpeechToTextMode.ExistingTranscriptions:
+                    fileResults = ReadTranscriptionFiles(config.InputTranscriptionDirectory);
+                    break;
             }
 
             if (micResults != null)
@@ -102,6 +105,39 @@ namespace Pipeline
             }
 
             return audioFiles;
+        }
+
+        private FileResult[] ReadTranscriptionFiles(string directory)
+        {
+            FileResult[] results = null;
+            string[] files = null;
+            try
+            {
+                files = Directory.GetFiles(directory);
+            }
+            catch { }
+
+            if (files != null && files.Length > 0)
+            {
+                results = new FileResult[files.Length];
+
+                for(int i = 0; i < files.Length; i++)
+                {
+                    try
+                    {
+                        string currentTranscription = File.ReadAllText(files[i]);
+                        FileResult currentResult = new FileResult()
+                        {
+                            FilePath = files[i],
+                            Transcriptions = new string[] { currentTranscription }
+                        };
+                        results[i] = currentResult;
+                    }
+                    catch { }
+                }
+            }
+
+            return results;
         }
     }
 }

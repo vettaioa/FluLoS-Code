@@ -18,9 +18,7 @@ namespace LUIS
         /// <summary>
         /// Creates instance of UtteranceInterpreter
         /// </summary>
-        /// <param name="azureApiKeyFile">Filepath of file with azure subscription keys</param>
-        /// <param name="apiUrl">Full URL of REST API (i.e. "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/")</param>
-        /// <param name="publishedSlot">Slot of published endpoint ("staging" or "production")</param>
+        /// <param name="config">Configuration parameters for LUIS</param>
         /// <exception cref="ArgumentNullException">Any parameter is null</exception>
         /// <exception cref="ArgumentException">Azure api key file is not found</exception>
         public UtteranceInterpreter(LuisConfig config)
