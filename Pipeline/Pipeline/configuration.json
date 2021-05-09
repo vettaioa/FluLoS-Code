@@ -20,7 +20,7 @@
 		"AirlinesFile": "../../../../../data/rml/airlines.json"
 	},
 	"InputLabelDirectory": "../../../../../data/context-labelled/",
-	"ContextOutputDirectory": "../../../../../data/luis-comparison/v0.2-features/",
+	"ContextOutputDirectory": "../../../../../data/context-results/",
 	"Evaluation": {
 		"OutputDirectory": "../../../../../data/context-evaluation/",
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange",
