@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 801 right turn to trasadingen",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "801"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.070704
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.025857324
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.011868613
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.005010353
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.44930005
+        }
+      }
+    }
+  }
+]

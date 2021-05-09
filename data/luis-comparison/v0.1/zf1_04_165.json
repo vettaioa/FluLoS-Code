@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "turkair 925 good afternoon squawk 1005",
+      "CallSign": {
+        "Airline": "turkair",
+        "FlightNumber": "925"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.04431567
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.019547137
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.012605021
+        },
+        "Squawk": {
+          "Code": "1005",
+          "Score": 0.5367174
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.023211183
+        }
+      }
+    }
+  }
+]

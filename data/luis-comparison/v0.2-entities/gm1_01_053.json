@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 110 contact reims 134.4 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "110"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.009951694
+        },
+        "Contact": {
+          "Frequency": "134.4",
+          "Place": "reims",
+          "Score": 0.9269341
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.018487906
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.011188109
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.040286724
+        }
+      }
+    }
+  }
+]

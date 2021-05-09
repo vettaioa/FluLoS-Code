@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "swiss air 6752 turn left direct to kamas",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "6752"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.021183208
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0026308487
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0021074004
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0020595232
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.003498082
+        }
+      }
+    }
+  }
+]

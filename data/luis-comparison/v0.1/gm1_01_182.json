@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "transavia 3513 bonjour cleared direct bilsa flight level 330",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.016435234
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.008804474
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "330",
+          "Score": 0.7711293
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.00792156
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.07182176
+        }
+      }
+    }
+  }
+]

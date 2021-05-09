@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "roger turn left heading 220",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.040362444
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0018984447
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0015663335
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0022016517
+        },
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "220",
+          "Place": null,
+          "Score": 0.9962168
+        }
+      }
+    }
+  }
+]

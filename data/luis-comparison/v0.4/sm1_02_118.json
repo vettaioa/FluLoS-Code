@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "midland 720 climb flight level 340 turn right by 10 degrees",
+      "CallSign": {
+        "Airline": "midland",
+        "FlightNumber": "720"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.005379116
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0018345523
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "340",
+          "Score": 0.99229056
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0016716402
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 0.9963073
+        }
+      }
+    }
+  }
+]

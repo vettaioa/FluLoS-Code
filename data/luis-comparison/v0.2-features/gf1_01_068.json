@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "aero 560 bonjour identified cleared passeiry bilsa flight level 330",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.012006238
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.001804331
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "330",
+          "Score": 0.94126314
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002177598
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0024772042
+        }
+      }
+    }
+  }
+]

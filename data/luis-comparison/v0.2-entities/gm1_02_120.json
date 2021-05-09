@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "tag lloyd 171 turn left to bilsa",
+      "CallSign": {
+        "Airline": "tag lloyd",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.019839637
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.010177442
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.017406395
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.004577124
+        },
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "bilsa",
+          "Score": 0.93415517
+        }
+      }
+    }
+  }
+]

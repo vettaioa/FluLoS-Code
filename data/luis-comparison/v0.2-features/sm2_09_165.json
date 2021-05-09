@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "tunair 4802 squawk 2751",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.1015643
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0015937923
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0011792405
+        },
+        "Squawk": {
+          "Code": "2751",
+          "Score": 0.9693957
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016586432
+        }
+      }
+    }
+  }
+]

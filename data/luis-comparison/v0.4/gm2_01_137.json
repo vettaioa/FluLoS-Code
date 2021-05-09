@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "at 365 contact milano 125.85 au revoir",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.041958913
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0029735072
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0025776592
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0023016892
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0024403576
+        }
+      }
+    }
+  }
+]

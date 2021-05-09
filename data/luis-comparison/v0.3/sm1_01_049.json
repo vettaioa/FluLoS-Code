@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "olympic 144 turn left heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "144"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.015607315
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.002016707
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.002104668
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0020459753
+        },
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "115",
+          "Place": null,
+          "Score": 0.99647474
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 826A good morning squawk 7531",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.028773252
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019042336
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0015309814
+        },
+        "Squawk": {
+          "Code": "7531",
+          "Score": 0.96885747
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016279495
+        }
+      }
+    }
+  }
+]

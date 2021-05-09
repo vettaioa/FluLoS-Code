@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "lufthansa 4652 contact marseille 125.85",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.031163752
+        },
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "marseille",
+          "Score": 0.36419514
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.016821695
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.008258061
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.07222217
+        }
+      }
+    }
+  }
+]

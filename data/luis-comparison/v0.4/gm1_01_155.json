@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "swiss air 687 contact zurich 12585 good bye",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "687"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.015665853
+        },
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "zurich",
+          "Score": 0.9852861
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.002317296
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0022558924
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0019623903
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "cross air 512 contact geneva 125.85 good bye",
+      "CallSign": {
+        "Airline": "cross air",
+        "FlightNumber": "512"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.010622451
+        },
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "geneva",
+          "Score": 0.8552493
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.04534725
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.007679032
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.035128467
+        }
+      }
+    }
+  }
+]

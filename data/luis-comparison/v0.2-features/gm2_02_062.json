@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sabena 970 contact radar 128.150",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.06590086
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0025264097
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0020334974
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0022312428
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.002206505
+        }
+      }
+    }
+  }
+]

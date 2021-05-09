@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "aero lloyd 517 turn right to willisau",
+      "CallSign": {
+        "Airline": "aero lloyd",
+        "FlightNumber": "517"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02846489
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.01385006
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.12404422
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.004591902
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": null,
+          "Place": "willisau",
+          "Score": 0.5193351
+        }
+      }
+    }
+  }
+]

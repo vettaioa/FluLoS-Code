@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "airfrans 3261 affirm and contact geneva 125.85 au revoir",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.023989255
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0032138403
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0032039112
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0019263678
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0021671648
+        }
+      }
+    }
+  }
+]

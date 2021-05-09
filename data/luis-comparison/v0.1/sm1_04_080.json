@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "viva 585 left turn to frankfurt",
+      "CallSign": {
+        "Airline": "viva",
+        "FlightNumber": "585"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.053864084
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.021568865
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.018400485
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0075252657
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.5855292
+        }
+      }
+    }
+  }
+]

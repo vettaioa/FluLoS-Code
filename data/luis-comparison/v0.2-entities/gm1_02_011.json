@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "speedbird 563 bonjour squawk 5721",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.049333427
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0055446094
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.029233996
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.52917325
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.01292632
+        }
+      }
+    }
+  }
+]

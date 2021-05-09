@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 364 contact reims 134.4 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "364"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.010530985
+        },
+        "Contact": {
+          "Frequency": "134.4",
+          "Place": "reims",
+          "Score": 0.9992857
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0021961657
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0027801006
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0022235692
+        }
+      }
+    }
+  }
+]

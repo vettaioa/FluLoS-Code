@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "so 693 bonjour maintain flight level 300",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.02192164
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.01115729
+        },
+        "FlightLevel": {
+          "Instruction": "Maintain",
+          "Level": "300",
+          "Score": 0.839964
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.010443085
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.018934228
+        }
+      }
+    }
+  }
+]

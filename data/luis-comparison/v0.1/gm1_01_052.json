@@ -1,0 +1,35 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "sunwing 5123 bonjour cleared st prex correction kines st prex arbos epinal flight level 300",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.0092116315
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.01210352
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "300",
+          "Score": 0.9868121
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0049348134
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.015454411
+        }
+      }
+    }
+  }
+]

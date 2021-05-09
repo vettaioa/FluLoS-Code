@@ -1,0 +1,38 @@
+[
+  {
+    "RmlResult": null,
+    "LuisResult": {
+      "Message": "alitalia 4 to 6 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "4"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.00804158
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.16682978
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.015708204
+        },
+        "Squawk": {
+          "Code": "2763",
+          "Score": 0.6506648
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.02885338
+        }
+      }
+    }
+  }
+]
