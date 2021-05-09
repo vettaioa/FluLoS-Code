@@ -5,7 +5,8 @@
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json",
 		"AzureRegion": "westeurope",
 		"InputAudioFile": "../../../../../data/audio/test/gf1_01_026.wav",
-		"InputAudioDirectory": "../../../../../data/audio/test/"
+		"InputAudioDirectory": "../../../../../data/audio/test/",
+		"InputTranscriptionDirectory": "../../../../../data/luis-comparison/transcriptions/"
 	},
 	"Luis": {
 		"ApiUrl": "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/",
@@ -23,12 +24,12 @@
 	"Evaluation": {
 		"OutputDirectory": "../../../../../data/context-evaluation/",
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange",
-		"LatitudeMinMax": [47, 48],
-		"LongitudeMinMax": [7, 10],
+		"LatitudeMinMax": [ 47, 48 ],
+		"LongitudeMinMax": [ 7, 10 ],
 		"AirplaneDetailsUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplane",
 		"PhoneticsFile": "../../../../../data/rml/phonetics.json",
 		"AirlinesFile": "../../../../../data/evaluation/airlines.json",
-		
+
 		"Rules": {
 			"FlightLevelMin": 150,
 			"FlightLevelMax": 450,
