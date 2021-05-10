@@ -33,25 +33,11 @@ namespace Evaluation
 
             EvaluationResult result = new EvaluationResult();
 
-            // TODO: set the overall result? "valid" and "invalid"? do we even need them?
-
             if (messageContext != null)
             {
-                if (messageContext.CallSign != null) // no callsign = can't do radar check
+                if (messageContext.CallSign != null)
                 {
-                    RadarAirplane radarAirplane = airspaceSearch.FindByCallSign(messageContext.CallSign);
-
-                    //string flightNumber = radarAirplane.Airplane.Flight.GetFlightNumber();
-                    //if (flightNumber == messageContext.CallSign.FlightNumber)
-                    //{
-                    //    result.CallSignResult |= CallSignResult.FlightNumberValid;
-                    //}
-                    //else
-                    //{
-                    //    // todo: return corrected flightnumber
-                    //}
-
-                    // todo: validate intent values based on radarAirplane data 
+                    result.RadarAirplane = airspaceSearch.FindByCallSign(messageContext.CallSign);
                 }
 
                 // evaluate intent info
@@ -71,10 +57,10 @@ namespace Evaluation
                                     result.ContactResult = IntentInfoValidator.ValidateContact((intent as ContactIntent), config.Rules.ContactFrequencies, config.Rules.ContactPlaces);
                                     break;
                                 case IntentType.FlightLevel:
-                                    result.FlightLevelResult = IntentInfoValidator.ValidateFlightLevel((intent as FlightLevelIntent), config.Rules.FlightLevelMin, config.Rules.FlightLevelMax);
+                                    result.FlightLevelResult = IntentInfoValidator.ValidateFlightLevel((intent as FlightLevelIntent), result.RadarAirplane, config.Rules.FlightLevelMin, config.Rules.FlightLevelMax);
                                     break;
                                 case IntentType.Turn:
-                                    result.TurnResult = IntentInfoValidator.ValidateTurn(intent as TurnIntent, config.Rules.TurnPlaces);
+                                    result.TurnResult = IntentInfoValidator.ValidateTurn(intent as TurnIntent, result.RadarAirplane, config.Rules.TurnPlaces);
                                     break;
                             }
                         }

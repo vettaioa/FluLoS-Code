@@ -40,7 +40,7 @@ namespace Pipeline
             Array.ForEach(preparedVariants, v => Console.WriteLine($"    - {v}"));
 
             // extract context
-            Console.WriteLine("Extracting context with...");
+            Console.WriteLine("Extracting context...");
 
             var contexts = new ContextExtractionResult[preparedVariants.Length];
             for (int i = 0; i < contexts.Length; i++)
