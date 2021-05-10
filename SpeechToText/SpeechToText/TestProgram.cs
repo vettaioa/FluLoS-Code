@@ -10,8 +10,8 @@ namespace SpeechToText
     class TestProgram
     {
         private const string REGION = "westeurope";
-        private const string TESTFILE = "../../../../../../data/audio/test/sm1_01_113.wav";
-        private const string CREDENTIALS_PATH = "../../../../../../flulos_credentials.json";
+        private const string TESTFILE = "../../../../../data/audio/test/sm1_01_113.wav";
+        private const string CREDENTIALS_PATH = "../../../../../flulos_credentials.json";
 
         static async Task Main(string[] args)
         {

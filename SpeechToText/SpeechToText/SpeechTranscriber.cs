@@ -144,22 +144,25 @@ namespace SpeechToText
             // credits: https://stackoverflow.com/a/61567877/3218281
             string json = recognitionResult.Properties.GetProperty(PropertyId.SpeechServiceResponse_JsonResult);
 
-            SpeechJsonResult jsonResult = JsonSerializer.Deserialize<SpeechJsonResult>(json);
-            if (jsonResult != null && jsonResult.NBest != null)
+            if (!string.IsNullOrWhiteSpace(json))
             {
-                int arraySize = nBest;
-                if (jsonResult.NBest.Count < nBest)
-                    arraySize = jsonResult.NBest.Count;     // in case speech api returns less results
-
-                string[] nBestResults = new string[arraySize];
-                for (int i = 0; i < arraySize; i++)
+                SpeechJsonResult jsonResult = JsonSerializer.Deserialize<SpeechJsonResult>(json);
+                if (jsonResult != null && jsonResult.NBest != null)
                 {
-                    if (i < jsonResult.NBest.Count)
+                    int arraySize = nBest;
+                    if (jsonResult.NBest.Count < nBest)
+                        arraySize = jsonResult.NBest.Count;     // in case speech api returns less results
+
+                    string[] nBestResults = new string[arraySize];
+                    for (int i = 0; i < arraySize; i++)
                     {
-                        nBestResults[i] = jsonResult.NBest[i].Lexical;
+                        if (i < jsonResult.NBest.Count)
+                        {
+                            nBestResults[i] = jsonResult.NBest[i].Lexical;
+                        }
                     }
+                    return nBestResults;
                 }
-                return nBestResults;
             }
 
             return null;
