@@ -11,69 +11,120 @@ namespace Evaluation
 {
     class AirspaceSearch
     {
-        private readonly IEnumerable<KnownAirline> knownAirlines;
         private readonly IEnumerable<RadarAirplane> radarAirplanes;
 
-        private SearchableDictionary<RadarAirplane> byAirline;
-        private SearchableDictionary<RadarAirplane> byFlightnumber;
+        private SearchableDictionary<RadarAirplane> byCallSign;
+        private SearchableDictionary<RadarAirplane> byFlightNumber;
 
         public AirspaceSearch(FuzzySearch fuzzySearch, IEnumerable<KnownAirline> knownAirlines, IEnumerable<RadarAirplane> radarAirplanes)
         {
-            this.knownAirlines = knownAirlines;
             this.radarAirplanes = radarAirplanes;
 
-            InitFuzzySearchCollections(fuzzySearch);
+            InitFuzzySearchCollections(fuzzySearch, knownAirlines);
         }
 
-        private void InitFuzzySearchCollections(FuzzySearch fuzzySearch)
+        public RadarAirplane FindByCallSign(CallSign callSign)
+        {
+            string fuzzyCallsign = callSign.Airline + callSign.FlightNumber;
+            
+            RadarAirplane foundPlane = byCallSign.fuzzySearching(fuzzyCallsign, 0.8f);
+
+            if(foundPlane == null)
+            {
+                // try to find by flightnumber only
+                foundPlane = byFlightNumber.fuzzySearching(callSign.FlightNumber);
+            }
+
+            return foundPlane;
+        }
+
+        private void InitFuzzySearchCollections(FuzzySearch fuzzySearch, IEnumerable<KnownAirline> knownAirlines)
         {
             // Airspace to FuzzySearch
-            var airlineNames = new Dictionary<string, RadarAirplane>();
+            var fuzzyCallsigns = new Dictionary<string, RadarAirplane>();
             var flightNumbers = new Dictionary<string, RadarAirplane>();
             foreach (var radarAirplane in radarAirplanes)
             {
-                string airlineName = radarAirplane?.Airplane?.Flight?.Airline?.Name;
-                //string airlineIata = radarAirplane?.Airplane?.Flight?.Airline?.AirlineIATA;
+                string airlineCallsign = FindCallSignForRadarAirplane(knownAirlines, radarAirplane);
                 string flightNumber = radarAirplane?.Airplane?.Flight?.GetFlightNumber();
 
-                if (airlineName != null)
+                if (!string.IsNullOrEmpty(airlineCallsign) && !string.IsNullOrEmpty(flightNumber))
                 {
-                    // TODO: airline to callsign airline (and maybe check both?)
-                    // TODO: maybe extract "shortname" from flightIdentification, if airlineName is null
-                    airlineNames.Add(airlineName, radarAirplane);
+                    string fuzzyCallsign = airlineCallsign + flightNumber;
+                    fuzzyCallsigns.Add(fuzzyCallsign, radarAirplane);
                 }
-                if (flightNumber != null)
+                if (!string.IsNullOrEmpty(flightNumber))
                 {
                     flightNumbers.Add(flightNumber, radarAirplane);
                 }
             }
 
-            byAirline = new SearchableDictionary<RadarAirplane>(fuzzySearch, airlineNames);
-            byFlightnumber = new SearchableDictionary<RadarAirplane>(fuzzySearch, flightNumbers);
+            byCallSign = new SearchableDictionary<RadarAirplane>(fuzzySearch, fuzzyCallsigns);
+            byFlightNumber = new SearchableDictionary<RadarAirplane>(fuzzySearch, flightNumbers);
         }
 
-        public RadarAirplane FindByCallSign(CallSign callSign)
+        private static string FindCallSignForRadarAirplane(IEnumerable<KnownAirline> knownAirlines, RadarAirplane radarAirplane)
         {
-            var planeByAirline = byAirline.fuzzySearching(callSign.Airline, 0.9f);
-            var planeByNumber = byFlightnumber.fuzzySearching(callSign.FlightNumber, 0.9f);
+            if(radarAirplane.Airplane?.Flight != null)
+            {
+                string iata = radarAirplane.Airplane.Flight.Airline?.AirlineIATA?.ToLower();
+                string icao = radarAirplane.Airplane.Flight.Airline?.AirlineICAO?.ToLower();
 
-            if (planeByAirline == null)
-            {
-                return planeByNumber;
-            }
-            if (planeByNumber == null)
-            {
-                return planeByAirline;
-            }
-            if (planeByAirline == planeByNumber)
-            {
-                return planeByAirline;
+                string identification = radarAirplane.Airplane.Flight.FlightIdentification?.ToLower();
+                string code = Regex.Match(identification, "^([a-zA-Z]{2,3})").Value.ToLower();
+
+                // replace unkown iata or icao code if flight identification contains iata or icao code
+                if(iata == null && code.Length == 2)
+                {
+                    iata = code;
+                }
+                else if (icao == null && code.Length == 3)
+                {
+                    icao = code;
+                }
+
+                var foundAirlines = knownAirlines.Where(ka => ka.Iata == iata || ka.Icao == icao);
+
+                if (foundAirlines.Count() == 0)
+                {
+                    // no airline found matching the criterias => using callsign from radar
+                    string callSign = radarAirplane.Airplane.Flight.Airline?.Callsign?.ToLower();
+
+                    if (callSign != null && callSign.Length > 1)
+                    {
+#if DEBUG
+                        Console.WriteLine($"[DEBUG] Taking CallSign {callSign} from Radar");
+#endif
+                        return callSign;
+                    }
+                    return null; // no airline callsign found
+                }
+                else if (foundAirlines.Count() > 1)
+                {
+                    var foundAirlinesExact = foundAirlines.Where(ka => ka.Iata == iata && ka.Icao == icao);
+
+                    if(foundAirlinesExact.Count() > 0)
+                    {
+                        foundAirlines = foundAirlinesExact;
+                    }
+                }
+                
+                KnownAirline foundAirline = foundAirlines.First();
+                if(foundAirline.CallSign == null)
+                {
+                    return foundAirline.Name; // found airline has no known callsign
+                }
+                else
+                {
+                    return foundAirline.CallSign;
+                }
             }
 
-            // todo: handle different results
-            Console.WriteLine("FindInAirSpace found two different matching Airplanes :/");
-            // todo: check which one of both matches both callsign values
-            return null;
+            
+#if DEBUG
+            Console.WriteLine($"[DEBUG] Couldn't find Airline CallSign for {radarAirplane?.Airplane?.Flight?.FlightIdentification}");
+#endif
+            return null; // no matching airline found
         }
 
     }
