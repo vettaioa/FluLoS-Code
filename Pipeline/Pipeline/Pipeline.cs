@@ -51,6 +51,15 @@ namespace Pipeline
                     var evalResultLuis = contextEvaluator.Evaluate(contextResult.LuisResult);
                     var evalResultRml = contextEvaluator.Evaluate(contextResult.RmlResult);
 
+                    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    //
+                    // TODO: WE HAVE MULTIPLE EVALUATION RESULTS AND CONTEXTRESULTS, BUT WE ONLY WANT ONE
+                    //       -> all felder dure und priorisieret de ersti im array
+                    //       -> münd aber no sege, weles ContextExtractionResult mer nehmed
+                    //          oder ob mer es neus bauet nume mit richtige Date kombiniert
+                    //
+                    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
                     string evaluationJson = Newtonsoft.Json.JsonConvert.SerializeObject(new EvaluationResultWrapper { LuisEvaluation = evalResultLuis, RmlEvaluation = evalResultRml}, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
                     Console.WriteLine(evaluationJson);
                     WriteToOutputDirectory(config.Evaluation.OutputDirectory, transcriptionResult.FilePath, evaluationJson);
