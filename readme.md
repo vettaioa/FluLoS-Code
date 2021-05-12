@@ -19,6 +19,17 @@ Based on [Custom Speech](https://speech.microsoft.com/customspeech), *RML* and [
 └── SpeechToText/   SpeechToText solution (C# .NET 5)
 ```
 
+### Keys File
+For this app to work, a file "flulos_credentials.json" must be copied into the root of the repository:
+```json
+{
+	"S2T_subscription": "<AzureCustomSpeechSubscriptionKey>",
+	"S2T_endpoint": "<AzureCustomSpeechEndpointID>",
+	"LUIS_subscription": "<AzureLuisSubscriptionKey>",
+	"LUIS_appid": "<AzureLuisAppId>"
+}
+```
+
 <!--
 # Contributors
 ![](https://avatars.githubusercontent.com/u/78963050?s=20) vettaioa
