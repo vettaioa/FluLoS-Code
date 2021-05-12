@@ -99,36 +99,42 @@ namespace Evaluation
             // check flight level
             if (flightLevelIntent != null)
             {
-                short parsedIntentLevel = 0;
-
-                if (flightLevelIntent.Level != null && Regex.IsMatch(flightLevelIntent.Level, levelRegex))
+                if(airplane == null || (airplane != null && !airplane.Position.OnGround))
                 {
-                    if (short.TryParse(flightLevelIntent.Level, out parsedIntentLevel) && parsedIntentLevel >= min && parsedIntentLevel <= max)
-                        result |= FlightLevelValidationResult.FlightLevelValid;
-                }
+                    // only validate if no radar airplane found (to just check if within reasonable range)
+                    //            or if radar airplane found but it is not on the ground
 
-                // check instruction (only if flight level was valid, because only then a well-founded statement can be made)
-                if (result.HasFlag(FlightLevelValidationResult.FlightLevelValid) && flightLevelIntent.Instruction != null && airplane != null && airplane.Position != null&& airplane.Position.Altitude > 0)
-                {
-                    // check wether the instruction (climb/maintain/descend) is correct considering the current height
-                    int? radarFlightLevel = ConvertMetersToFlightLevel(airplane.Position.Altitude);
+                    short parsedIntentLevel = 0;
 
-                    if (radarFlightLevel != null)
+                    if (flightLevelIntent.Level != null && Regex.IsMatch(flightLevelIntent.Level, levelRegex))
                     {
-                        switch (flightLevelIntent.Instruction)
+                        if (short.TryParse(flightLevelIntent.Level, out parsedIntentLevel) && parsedIntentLevel >= min && parsedIntentLevel <= max)
+                            result |= FlightLevelValidationResult.FlightLevelValid;
+                    }
+
+                    // check instruction (only if flight level was valid, because only then a well-founded statement can be made)
+                    if (result.HasFlag(FlightLevelValidationResult.FlightLevelValid) && flightLevelIntent.Instruction != null && airplane != null && airplane.Position != null && airplane.Position.Altitude > 0)
+                    {
+                        // check wether the instruction (climb/maintain/descend) is correct considering the current height
+                        int? radarFlightLevel = ConvertMetersToFlightLevel(airplane.Position.Altitude);
+
+                        if (radarFlightLevel != null)
                         {
-                            case FlightLevelIntent.FlightLevelInstruction.Climb:
-                                if (parsedIntentLevel > radarFlightLevel)
-                                    result |= FlightLevelValidationResult.InstructionValid;
-                                break;
-                            case FlightLevelIntent.FlightLevelInstruction.Descend:
-                                if (parsedIntentLevel < radarFlightLevel)
-                                    result |= FlightLevelValidationResult.InstructionValid;
-                                break;
-                            case FlightLevelIntent.FlightLevelInstruction.Maintain:
-                                if (parsedIntentLevel == radarFlightLevel)
-                                    result |= FlightLevelValidationResult.InstructionValid;
-                                break;
+                            switch (flightLevelIntent.Instruction)
+                            {
+                                case FlightLevelIntent.FlightLevelInstruction.Climb:
+                                    if (parsedIntentLevel > radarFlightLevel)
+                                        result |= FlightLevelValidationResult.InstructionValid;
+                                    break;
+                                case FlightLevelIntent.FlightLevelInstruction.Descend:
+                                    if (parsedIntentLevel < radarFlightLevel)
+                                        result |= FlightLevelValidationResult.InstructionValid;
+                                    break;
+                                case FlightLevelIntent.FlightLevelInstruction.Maintain:
+                                    if (parsedIntentLevel == radarFlightLevel)
+                                        result |= FlightLevelValidationResult.InstructionValid;
+                                    break;
+                            }
                         }
                     }
                 }
@@ -144,65 +150,71 @@ namespace Evaluation
             string directionRegex = @"^(left|right)$";
             string degreesRegex = @"^[0-2]?[0-9]{1,2}|3[0-5][0-9]|360$";
 
-            if(turnIntent != null)
+            if (turnIntent != null)
             {
-                if (turnIntent.Degrees != null && Regex.IsMatch(turnIntent.Degrees, degreesRegex))
-                    result |= TurnValidationResult.DegreesValid;
-
-                if (turnIntent.Heading != null && Regex.IsMatch(turnIntent.Heading, degreesRegex))
-                    result |= TurnValidationResult.HeadingValid;
-
-                if (turnIntent.Direction != null && Regex.IsMatch(turnIntent.Direction, directionRegex, RegexOptions.IgnoreCase))
+                if (airplane == null || (airplane != null && !airplane.Position.OnGround))
                 {
-                    // direction can only be verified, if a heading has been set
-                    // this compares the direction (left/right) with current heading of plane from radar
-                    if (result.HasFlag(TurnValidationResult.HeadingValid) && airplane != null && airplane.Position != null && airplane.Position.Heading >= 0 && airplane.Position.Heading <= 360)
-                    {
-                        int intentHeading;
+                    // only validate if no radar airplane found (to just check if within reasonable range)
+                    //            or if radar airplane found but it is not on the ground
 
-                        if(int.TryParse(turnIntent.Heading, out intentHeading))
+                    if (turnIntent.Degrees != null && Regex.IsMatch(turnIntent.Degrees, degreesRegex))
+                        result |= TurnValidationResult.DegreesValid;
+
+                    if (turnIntent.Heading != null && Regex.IsMatch(turnIntent.Heading, degreesRegex))
+                        result |= TurnValidationResult.HeadingValid;
+
+                    if (turnIntent.Direction != null && Regex.IsMatch(turnIntent.Direction, directionRegex, RegexOptions.IgnoreCase))
+                    {
+                        // direction can only be verified, if a heading has been set
+                        // this compares the direction (left/right) with current heading of plane from radar
+                        if (result.HasFlag(TurnValidationResult.HeadingValid) && airplane != null && airplane.Position != null && airplane.Position.Heading >= 0 && airplane.Position.Heading <= 360)
                         {
-                            int? headingDifference = null;
+                            int intentHeading;
 
-                            try
+                            if (int.TryParse(turnIntent.Heading, out intentHeading))
                             {
-                                headingDifference = Convert.ToInt32((intentHeading - airplane.Position.Heading));
-                            }
-                            catch { }
+                                int? headingDifference = null;
 
-                            if(headingDifference != null)
-                            {
-                                if (headingDifference < 0)
-                                    headingDifference += 360;
-
-                                if(headingDifference > 180 && turnIntent.Direction == "left")
+                                try
                                 {
-                                    // turn should be left
-                                    result |= TurnValidationResult.DirectionValid;
+                                    headingDifference = Convert.ToInt32((intentHeading - airplane.Position.Heading));
                                 }
-                                else if(headingDifference < 180 && turnIntent.Direction == "right")
+                                catch { }
+
+                                if (headingDifference != null)
                                 {
-                                    // turn should be right
-                                    result |= TurnValidationResult.DirectionValid;
+                                    if (headingDifference < 0)
+                                        headingDifference += 360;
+
+                                    if (headingDifference > 180 && turnIntent.Direction == "left")
+                                    {
+                                        // turn should be left
+                                        result |= TurnValidationResult.DirectionValid;
+                                    }
+                                    else if (headingDifference < 180 && turnIntent.Direction == "right")
+                                    {
+                                        // turn should be right
+                                        result |= TurnValidationResult.DirectionValid;
+                                    }
                                 }
                             }
+
                         }
-
                     }
-                }
 
-                if (turnIntent.Place != null && Regex.IsMatch(turnIntent.Place, placeRegex))
-                {
-                    if (validPlaces != null && validPlaces.Length > 0)
+                    if (turnIntent.Place != null && Regex.IsMatch(turnIntent.Place, placeRegex))
                     {
-                        // if there are predefined turn to places in config -> check if matches one of them
-                        if (validPlaces.Contains(turnIntent.Place, StringComparer.OrdinalIgnoreCase))
+                        if (validPlaces != null && validPlaces.Length > 0)
+                        {
+                            // if there are predefined turn to places in config -> check if matches one of them
+                            if (validPlaces.Contains(turnIntent.Place, StringComparer.OrdinalIgnoreCase))
+                                result |= TurnValidationResult.PlaceValid;
+                        }
+                        else
+                        {
+                            // no predefined turn to place in config -> accept any with valid format
                             result |= TurnValidationResult.PlaceValid;
-                    }
-                    else
-                    {
-                        // no predefined turn to place in config -> accept any with valid format
-                        result |= TurnValidationResult.PlaceValid;
+                        }
                     }
                 }
             }
