@@ -93,7 +93,7 @@ namespace Evaluation
         private static T loadFromJsonFile<T>(string filePath)
         {
             var json = File.ReadAllText(filePath);
-            return JsonSerializer.Deserialize<T>(json, new JsonSerializerOptions { ReadCommentHandling = JsonCommentHandling.Skip });
+            return JsonSerializer.Deserialize<T>(json, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase, ReadCommentHandling = JsonCommentHandling.Skip });
         }
     }
 }
