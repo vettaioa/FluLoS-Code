@@ -78,7 +78,7 @@ namespace FuzzySearching
                 neededRatio = ratio.Value;
             }
 
-            return fuzzySearch.search(phonetics, trigram, search, Ratio);
+            return fuzzySearch.search(phonetics, trigram, search, neededRatio);
         }
 
         // IReadOnlyCollection interface
