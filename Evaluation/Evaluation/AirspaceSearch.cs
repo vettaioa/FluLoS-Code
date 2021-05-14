@@ -25,14 +25,14 @@ namespace Evaluation
 
         public RadarAirplane FindByCallSign(CallSign callSign)
         {
-            string fuzzyCallsign = callSign.Airline + callSign.FlightNumber;
+            string fuzzyCallsign = callSign.Airline + " " +  callSign.FlightNumber;
             
-            RadarAirplane foundPlane = byCallSign.fuzzySearching(fuzzyCallsign, 0.8f);
+            RadarAirplane foundPlane = byCallSign.fuzzySearching(fuzzyCallsign, 0.7f);
 
             if(foundPlane == null)
             {
                 // try to find by flightnumber only
-                foundPlane = byFlightNumber.fuzzySearching(callSign.FlightNumber);
+                foundPlane = byFlightNumber.fuzzySearching(callSign.FlightNumber, 0.7f);
             }
 
             return foundPlane;
@@ -46,16 +46,23 @@ namespace Evaluation
             foreach (var radarAirplane in radarAirplanes)
             {
                 string airlineCallsign = FindCallSignForRadarAirplane(knownAirlines, radarAirplane);
-                string flightNumber = radarAirplane?.Airplane?.Flight?.GetFlightNumber();
+                string flightNumber = radarAirplane?.Airplane?.Flight?.GetFlightNumber()?.ToLower();
 
                 if (!string.IsNullOrEmpty(airlineCallsign) && !string.IsNullOrEmpty(flightNumber))
                 {
-                    string fuzzyCallsign = airlineCallsign + flightNumber;
+                    string fuzzyCallsign = airlineCallsign + " " + flightNumber;
                     fuzzyCallsigns.Add(fuzzyCallsign, radarAirplane);
                 }
                 if (!string.IsNullOrEmpty(flightNumber))
                 {
-                    flightNumbers.Add(flightNumber, radarAirplane);
+                    if (!flightNumbers.ContainsKey(flightNumber))
+                    {
+                        flightNumbers.Add(flightNumber, radarAirplane);
+                    }
+                    else
+                    {
+                        flightNumbers[flightNumber] = null; // set to null, because flightnumber is not unique
+                    }
                 }
             }
 
@@ -71,16 +78,16 @@ namespace Evaluation
                 string icao = radarAirplane.Airplane.Flight.Airline?.AirlineICAO?.ToLower();
 
                 string identification = radarAirplane.Airplane.Flight.FlightIdentification?.ToLower();
-                string code = Regex.Match(identification, "^([a-zA-Z]{2,3})").Value.ToLower();
+                string airlineCode = Regex.Match(identification, "^([a-zA-Z]{2,3})").Value.ToLower();
 
                 // replace unkown iata or icao code if flight identification contains iata or icao code
-                if(iata == null && code.Length == 2)
+                if(iata == null && airlineCode.Length == 2)
                 {
-                    iata = code;
+                    iata = airlineCode;
                 }
-                else if (icao == null && code.Length == 3)
+                else if (icao == null && airlineCode.Length == 3)
                 {
-                    icao = code;
+                    icao = airlineCode;
                 }
 
                 var foundAirlines = knownAirlines.Where(ka => ka.Iata == iata || ka.Icao == icao);
