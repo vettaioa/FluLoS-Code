@@ -70,7 +70,7 @@ namespace Pipeline
             Console.WriteLine("Extracting context with LUIS...");
             var luisResult = luis.Call(prepared);
 
-            return new ContextExtractionResult(rmlResult, luisResult);
+            return new ContextExtractionResult(prepared, rmlResult, luisResult);
         }
     }
 }

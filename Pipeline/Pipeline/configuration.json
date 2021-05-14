@@ -22,7 +22,8 @@
 	"InputLabelDirectory": "../../../../../data/context-labelled/",
 	"ContextOutputDirectory": "../../../../../data/context-results/",
 	"Evaluation": {
-		"OutputDirectory": "../../../../../data/context-evaluation/",
+		"ValidationOutputDirectory": "../../../../../data/context-evaluation/",
+		"ResultOutputDirectory": "../../../../../data/context-validated/",
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange",
 		"LatitudeMinMax": [ 47, 48 ],
 		"LongitudeMinMax": [ 7, 10 ],

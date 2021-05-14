@@ -9,11 +9,13 @@ namespace Pipeline.Model
 {
     class ContextExtractionResult
     {
+        public string Transcription { get; set; }
         public MessageContext RmlResult { get; set; }
         public MessageContext LuisResult { get; set; }
 
-        public ContextExtractionResult(MessageContext rml, MessageContext luis)
+        public ContextExtractionResult(string transcription, MessageContext rml, MessageContext luis)
         {
+            Transcription = transcription;
             RmlResult = rml;
             LuisResult = luis;
         }

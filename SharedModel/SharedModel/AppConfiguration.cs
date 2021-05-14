@@ -48,9 +48,8 @@ namespace SharedModel
 
     public class EvaluationConfig
     {
-
-        public string OutputDirectory { get; set; }
-
+        public string ValidationOutputDirectory { get; set; }
+        public string MergeOutputDirectory { get; set; }
         public string AirplanesInRangeUrl { get; set; }
         public string AirplaneDetailsUrl { get; set; }
         public short[] LatitudeMinMax { get; set; }

@@ -1,8 +1,10 @@
-﻿using Newtonsoft.Json.Converters;
+﻿using Evaluation.Model;
+using Newtonsoft.Json.Converters;
 using Pipeline.Model;
 using SharedModel;
 using SpeechToText.Model;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.Json;
@@ -45,25 +47,42 @@ namespace Pipeline
                 Console.WriteLine(resultsJson);
                 WriteToOutputDirectory(config.ContextOutputDirectory, transcriptionResult.FilePath, resultsJson);
 
-                Console.WriteLine("Evaluation results:");
-                foreach (ContextExtractionResult contextResult in contextResults)
+
+                // evaluate all context extraction results
+                EvaluationResult[] luisEvaluations = new EvaluationResult[contextResults.Length];
+                EvaluationResult[] rmlEvaluations = new EvaluationResult[contextResults.Length];
+
+                for(int i = 0; i < contextResults.Length; i++)
                 {
-                    var evalResultLuis = contextEvaluator.Evaluate(contextResult.LuisResult);
-                    var evalResultRml = contextEvaluator.Evaluate(contextResult.RmlResult);
-
-                    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                    //
-                    // TODO: WE HAVE MULTIPLE EVALUATION RESULTS AND CONTEXTRESULTS, BUT WE ONLY WANT ONE
-                    //       -> all felder dure und priorisieret de ersti im array
-                    //       -> münd aber no sege, weles ContextExtractionResult mer nehmed
-                    //          oder ob mer es neus bauet nume mit richtige Date kombiniert
-                    //
-                    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-                    string evaluationJson = Newtonsoft.Json.JsonConvert.SerializeObject(new EvaluationResultWrapper { LuisEvaluation = evalResultLuis, RmlEvaluation = evalResultRml}, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
-                    Console.WriteLine(evaluationJson);
-                    WriteToOutputDirectory(config.Evaluation.OutputDirectory, transcriptionResult.FilePath, evaluationJson);
+                    luisEvaluations[i] = contextEvaluator.Evaluate(contextResults[i].LuisResult);
+                    rmlEvaluations[i] = contextEvaluator.Evaluate(contextResults[i].RmlResult);
                 }
+                EvaluationResultsWrapper evaluationResults = new EvaluationResultsWrapper(luisEvaluations, rmlEvaluations);
+                string evaluationJson = Newtonsoft.Json.JsonConvert.SerializeObject(evaluationResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
+                Console.WriteLine("Evaluation results:");
+                Console.WriteLine(evaluationJson);
+                WriteToOutputDirectory(config.Evaluation.ValidationOutputDirectory, transcriptionResult.FilePath, evaluationJson);
+
+
+                // extract correct data by considering the evaluation results (priorizing the first correct occurence of a field)
+                (MessageContext, EvaluationResult)?[] luisValidatedContexts = new (MessageContext, EvaluationResult)?[contextResults.Length];
+                (MessageContext, EvaluationResult)?[] rmlValidatedContexts = new (MessageContext, EvaluationResult)?[contextResults.Length];
+                for (int i = 0; i < luisEvaluations.Length; i++)
+                {
+                    luisValidatedContexts[i] = (contextResults[i].LuisResult, luisEvaluations[i]);
+                }
+                for (int i = 0; i < rmlEvaluations.Length; i++)
+                {
+                    luisValidatedContexts[i] = (contextResults[i].LuisResult, luisEvaluations[i]);
+                }
+
+                MessageContext bestLuisContext = ContextMerger.Merge(luisValidatedContexts);
+                MessageContext bestRmlContext = ContextMerger.Merge(rmlValidatedContexts);
+                (MessageContext LuisContext, MessageContext RmlContext) bestContexts = (bestLuisContext, bestRmlContext);
+                string bestContextJson = Newtonsoft.Json.JsonConvert.SerializeObject(bestContexts, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
+                Console.WriteLine("Validated Results:");
+                Console.WriteLine(bestContextJson);
+                WriteToOutputDirectory(config.Evaluation.MergeOutputDirectory, transcriptionResult.FilePath, evaluationJson);
             }
             else
             {
@@ -95,5 +114,6 @@ namespace Pipeline
                 catch { }
             }
         }
+
     }
 }
