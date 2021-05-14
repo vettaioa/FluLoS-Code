@@ -28,7 +28,7 @@ namespace Evaluation.Model
         {
             if (FlightIdentification != null)
             {
-                return Regex.Replace(FlightIdentification, "[^0-9]", "");
+                return Regex.Replace(FlightIdentification, "^[a-zA-Z]{2,3}", "");
             }
             return null;
         }

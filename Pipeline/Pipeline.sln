@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeltaListReplacer", "..\DeltaList\DeltaListReplacer\DeltaListReplacer.csproj", "{88955C3A-9330-4D52-9EE8-E6CA27269CF0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RML", "RML", "{4D96FFA9-0CBB-44E2-A248-33A5224F73F6}"
+	ProjectSection(SolutionItems) = preProject
+		..\RML\atc.rml = ..\RML\atc.rml
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeechToText", "..\SpeechToText\SpeechToText\SpeechToText.csproj", "{4A6AE4F6-A152-430D-9BFC-747F00583A0B}"
 EndProject
