@@ -2,7 +2,7 @@ patterns {
   $Noise = "([\w']+\s)*?";
   
   $Airline = "([A-Za-z]+)(\s[A-Za-z]+)?(\s[A-Za-z]+)?";
-  $FlightNumber = "(\d|(triple\s?\d)){2,4}";
+  $FlightNumber = "([0-9a-zA-Z]|(triple\s?\d)){2,4}";
 
   //$Greeting = "((good)?\s?(morning|day|evening))|(guten)?\s?tag|hello|bonjour";
   
