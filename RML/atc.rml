@@ -51,7 +51,7 @@ output-structure {
   ContactFrequency = element Frequency {text}
   
   Squawk = element Squawk {SquawkCode}
-  SquawkCode = element Squawk {text}
+  SquawkCode = element Code {text}
 }
 analyser-rules {
   start = Message
