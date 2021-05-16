@@ -2,7 +2,7 @@ patterns {
   $Noise = "([\w']+\s)*?";
   
   $Airline = "([A-Za-z]+)(\s[A-Za-z]+)?(\s[A-Za-z]+)?";
-  $FlightNumber = "([0-9a-zA-Z]|(triple\s?\d)){2,4}";
+  $FlightNumber = "([0-9]([0-9a-zA-Z]){1,3})|([0-9a-z]\s?triple\s?\d\s?[0-9a-z])";
 
   //$Greeting = "((good)?\s?(morning|day|evening))|(guten)?\s?tag|hello|bonjour";
   
@@ -13,14 +13,14 @@ patterns {
   $TurnInstruction = "turn";
   $TurnDirection = "left|right";
   $TurnHeadingInstruction = "(fly)?\s?heading\s?(of)?";
-  $TurnHeadingNumber = "[0-2]?[0-9]{1,2}|3[0-5][0-9]|360";
-  $TurnDegrees = "[0-2]?[0-9]{1,2}|3[0-5][0-9]|360";
+  $TurnHeadingNumber = "360|3[0-5][0-9]|[0-2]?[0-9]{1,2}";
+  $TurnDegrees = "360|3[0-5][0-9]|[0-2]?[0-9]{1,2}";
   $TurnDegreesInstruction = "degrees";
   
-  $ContactInstruction = "contact";
+  $ContactInstruction = "contact\s?";
   $ContactName = "([A-Za-z]+)(\s(?!on)[A-Za-z]+)?";
   $ContactFrequencyIntro = "on";
-  $ContactFrequency = "1(\d){2}\.?\d{2}";
+  $ContactFrequency = "1(\d){2}\.?\d{1,3}";
   
   $SquawkInstruction = "squawk";
   $SquawkCode = "\s?\d{4}";
@@ -61,13 +61,14 @@ analyser-rules {
   Intent3 = (FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk)
   
   CallSign = Airline?,FlightNumber?
-  Airline = check(Airline{$Airline}, Airline.checkAirline)
+  Airline = $Airline
+  //Airline = check(Airline{$Airline}, Airline.checkAirline)
   FlightNumber = $FlightNumber
   //FlightNumber = check(FlightNumber{$FlightNumber}, Airline.checkFlightNumber)
   
   //Greeting = $Greeting
   
-  FlightLevel = FlightLevelInstruction,$Noise,($LevelIntro?,FlightLevelNumber)?
+  FlightLevel = FlightLevelInstruction?,($Noise,$LevelIntro?,FlightLevelNumber)?
   FlightLevelInstruction = $LevelInstruction
   FlightLevelNumber = $LevelNumber
   

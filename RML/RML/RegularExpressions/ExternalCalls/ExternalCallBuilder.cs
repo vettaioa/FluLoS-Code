@@ -56,7 +56,7 @@ namespace Iib.RegexMarkupLanguage.RegularExpressions.ExternalCalls {
           log.Fatal("Can't read application setting argument 'dllDir'...");
           throw new Exception("Can't read application setting argument 'dllDir'...");
         }
-        instance = new ExternalCallBuilder(ConfigurationManager.AppSettings["dllDir"]);
+        instance = new ExternalCallBuilder(dllDir);
       }
       return instance;
     }
