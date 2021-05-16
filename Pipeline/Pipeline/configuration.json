@@ -10,7 +10,7 @@
 	},
 	"Luis": {
 		"ApiUrl": "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/",
-		"PublishedSlot": "staging",
+		"PublishedSlot": "production",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json"
 	},
 	"Rml": {
