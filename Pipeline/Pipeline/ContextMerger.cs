@@ -168,7 +168,7 @@ namespace Pipeline
         {
             ContactIntent resultContact = null;     // the result only containing valid data
 
-            if (!validation.HasFlag(ContactValidationResult.Invalid))
+            if (validation != ContactValidationResult.Invalid)
             {
                 resultContact = new ContactIntent();
 
@@ -186,7 +186,7 @@ namespace Pipeline
         {
             FlightLevelIntent resultLevel = null;     // the result only containing valid data
 
-            if (!validation.HasFlag(FlightLevelValidationResult.Invalid))
+            if (validation != FlightLevelValidationResult.Invalid)
             {
                 resultLevel = new FlightLevelIntent();
 
@@ -204,7 +204,7 @@ namespace Pipeline
         {
             SquawkIntent resultSquawk = null;     // the result only containing valid data
 
-            if (!validation.HasFlag(SquawkValidationResult.Invalid))
+            if (validation != SquawkValidationResult.Invalid)
             {
                 resultSquawk = new SquawkIntent();
 
@@ -219,7 +219,7 @@ namespace Pipeline
         {
             TurnIntent resultTurn = null;     // the result only containing valid data
 
-            if (!validation.HasFlag(TurnValidationResult.Invalid))
+            if (validation != TurnValidationResult.Invalid)
             {
                 resultTurn = new TurnIntent();
 

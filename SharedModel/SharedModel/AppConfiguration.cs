@@ -17,7 +17,6 @@ namespace SharedModel
         public string InputLabelDirectory { get; set; }
         public string ContextOutputDirectory { get; set; }
         public EvaluationConfig Evaluation { get; set; }
-        // TODO: cleanup, deltalsit etc. params
     }
 
     public class SpeechToTextConfig
@@ -48,7 +47,8 @@ namespace SharedModel
 
     public class EvaluationConfig
     {
-        public string ValidationOutputDirectory { get; set; }
+        public bool RunEvaluation { get; set; }
+        public string EvaluationOutputDirectory { get; set; }
         public string MergeOutputDirectory { get; set; }
         public string AirplanesInRangeUrl { get; set; }
         public string AirplaneDetailsUrl { get; set; }
