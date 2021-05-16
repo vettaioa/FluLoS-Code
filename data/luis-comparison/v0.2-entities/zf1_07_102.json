@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lauda 109 good afternoon squawk 2746",
       "CallSign": {
         "Airline": "lauda",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.045451097
+          "Score": 0.021255055
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.020017335
+          "Score": 0.011121377
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.012909282
+          "Score": 0.009855062
         },
         "Squawk": {
           "Code": "2746",
-          "Score": 0.50740117
+          "Score": 0.80997616
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.024120174
+          "Score": 0.014229478
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

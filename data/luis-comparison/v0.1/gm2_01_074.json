@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "german air force 4901 turn right heading 250",
       "CallSign": {
         "Airline": "german air force",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01962841
+          "Score": 0.01806646
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.081283
+          "Score": 0.071146205
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.025730062
+          "Score": 0.029803783
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0071239835
+          "Score": 0.0074696876
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": "250",
           "Place": null,
-          "Score": 0.64916265
+          "Score": 0.6523559
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

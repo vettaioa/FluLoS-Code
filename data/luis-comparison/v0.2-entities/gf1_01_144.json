@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "cross air 2690 climb to flight level 300",
       "CallSign": {
         "Airline": "cross air",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.008968089
+          "Score": 0.008345903
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.089594975
+          "Score": 0.034551024
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "300",
-          "Score": 0.7841577
+          "Score": 0.92897385
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0037263604
+          "Score": 0.003520354
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.009867071
+          "Score": 0.011440241
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

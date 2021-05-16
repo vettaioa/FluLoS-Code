@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 563 bonjour squawk 5721",
       "CallSign": {
         "Airline": "speedbird",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.049333427
+          "Score": 0.023553984
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0055446094
+          "Score": 0.0037052773
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.029233996
+          "Score": 0.017835608
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.52917325
+          "Code": "5721",
+          "Score": 0.83601695
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.01292632
+          "Score": 0.007424943
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

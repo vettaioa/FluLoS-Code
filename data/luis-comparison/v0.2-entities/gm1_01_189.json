@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 379 contact milano 12585 good bye",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.013870218
+          "Score": 0.012182266
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "milano",
-          "Score": 0.9460873
+          "Score": 0.84049815
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.00917578
+          "Score": 0.018020026
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0097279465
+          "Score": 0.013878011
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.020945577
+          "Score": 0.027610527
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

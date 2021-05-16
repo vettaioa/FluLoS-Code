@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 157 for shortcut turn right heading 140",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01486222
+          "Score": 0.011823452
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002560681
+          "Score": 0.0021448499
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002130434
+          "Score": 0.0022402802
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0026988245
+          "Score": 0.0026082727
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": "140",
           "Place": null,
-          "Score": 0.9957065
+          "Score": 0.99551326
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

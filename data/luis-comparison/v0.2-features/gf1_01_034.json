@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 563 contact geneva on 12815 good bye",
       "CallSign": {
         "Airline": "speedbird",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.048363354
+          "Score": 0.039287426
         },
         "Contact": {
           "Frequency": "12815",
           "Place": "geneva",
-          "Score": 0.99238807
+          "Score": 0.9922946
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0021328153
+          "Score": 0.0019422838
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0023209334
+          "Score": 0.0023236817
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020656385
+          "Score": 0.0017261987
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

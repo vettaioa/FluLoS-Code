@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 970 contact reims on 134.4 good bye",
       "CallSign": {
         "Airline": "sabena",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.018269157
+          "Score": 0.013118602
         },
         "Contact": {
           "Frequency": "134.4",
           "Place": "reims",
-          "Score": 0.9193057
+          "Score": 0.9219575
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.024341337
+          "Score": 0.023347601
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0056378944
+          "Score": 0.008393847
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.020100577
+          "Score": 0.016115934
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

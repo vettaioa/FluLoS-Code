@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "belgian air force 334 contact reims on 134.4 good bye",
       "CallSign": {
         "Airline": "belgian air force",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.010953024
+          "Score": 0.009007075
         },
         "Contact": {
           "Frequency": "134.4",
           "Place": "reims",
-          "Score": 0.9151017
+          "Score": 0.9354561
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.04939522
+          "Score": 0.04976128
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.007043176
+          "Score": 0.006931109
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.04080198
+          "Score": 0.034454312
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

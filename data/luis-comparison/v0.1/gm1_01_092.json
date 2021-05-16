@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 376 climb to flight level 330",
       "CallSign": {
         "Airline": "klm",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.027982028
+          "Score": 0.021955512
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.01935178
+          "Score": 0.017777557
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "330",
-          "Score": 0.6933165
+          "Score": 0.7827037
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.005479809
+          "Score": 0.0056792255
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.033012353
+          "Score": 0.02611126
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

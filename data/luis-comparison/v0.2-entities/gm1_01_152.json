@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "bonjour swiss air 659 cleared st prex willisau flight level 300",
       "CallSign": {
         "Airline": "swiss air",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.011061155
+          "Score": 0.0072740237
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.03212103
+          "Score": 0.026520949
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "300",
-          "Score": 0.8826802
+          "Score": 0.9274397
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.008105606
+          "Score": 0.008948017
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.023857338
+          "Score": 0.017641783
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 264 turn left to NTM",
       "CallSign": {
         "Airline": "klm",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.058895268
+          "Score": 0.051071383
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.023696672
+          "Score": 0.020903366
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.019604225
+          "Score": 0.02436466
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0077842795
+          "Score": 0.009456169
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "NTM",
-          "Score": 0.5173407
+          "Score": 0.4934563
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

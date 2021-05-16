@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "air malta 004 for separation turn right by 10 degrees",
       "CallSign": {
         "Airline": "air malta",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.013560594
+          "Score": 0.013554149
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.05703225
+          "Score": 0.052599568
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.03187758
+          "Score": 0.036461707
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.011783705
+          "Score": 0.009609159
         },
         "Turn": {
           "Direction": "right",
           "Degrees": "10",
           "Heading": null,
           "Place": null,
-          "Score": 0.8127497
+          "Score": 0.82994944
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

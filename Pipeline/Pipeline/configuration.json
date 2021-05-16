@@ -1,12 +1,12 @@
 {
 	"RunWebPipeline": false,
 	"SpeechToText": {
-		"SpeechToTextMode": "ExistingTranscriptions",
+		"SpeechToTextMode": "FileSingle",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json",
 		"AzureRegion": "westeurope",
 		"InputAudioFile": "../../../../../data/audio/test/gf1_01_026.wav",
 		"InputAudioDirectory": "../../../../../data/audio/test/",
-		"InputTranscriptionDirectory": "../../../../../data/luis-comparison/test/"
+		"InputTranscriptionDirectory": "../../../../../data/luis-comparison/transcriptions/"
 	},
 	"Luis": {
 		"ApiUrl": "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/",
@@ -20,9 +20,9 @@
 		"AirlinesFile": "../../../../../data/rml/airlines.json"
 	},
 	"InputLabelDirectory": "../../../../../data/context-labelled/",
-	"ContextOutputDirectory": "../../../../../data/luis-comparison/v0.1/",
+	"ContextOutputDirectory": "../../../../../data/context-results/",
 	"Evaluation": {
-		"RunEvaluation": false,
+		"RunEvaluation": true,
 		"EvaluationOutputDirectory": "../../../../../data/context-evaluation/",
 		"MergeOutputDirectory": "../../../../../data/context-validated/",
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange",

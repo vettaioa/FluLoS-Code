@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lufthansa 3556 rhein radar identified turn right by 15 degrees and climb flight level 290",
       "CallSign": {
         "Airline": "lufthansa",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.0026656773
+          "Score": 0.002282815
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.09167012
+          "Score": 0.07261105
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "290",
-          "Score": 0.8483396
+          "Score": 0.9065732
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0038053212
+          "Score": 0.0027666183
         },
         "Turn": {
           "Direction": "right",
           "Degrees": "15",
           "Heading": null,
           "Place": null,
-          "Score": 0.33465368
+          "Score": 0.31439918
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

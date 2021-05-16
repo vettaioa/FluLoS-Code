@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 171 contact marseille 12585 good bye",
       "CallSign": {
         "Airline": "speedbird",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.029354362
+          "Score": 0.024692439
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "marseille",
-          "Score": 0.9847981
+          "Score": 0.9843042
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017337252
+          "Score": 0.0016065922
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020814307
+          "Score": 0.0021380389
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002037007
+          "Score": 0.001718346
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

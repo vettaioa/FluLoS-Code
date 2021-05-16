@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 323 turn right to torino",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.026510479
+          "Score": 0.020311989
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.09923759
+          "Score": 0.06213012
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.013428523
+          "Score": 0.025013473
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.013539776
+          "Score": 0.015985265
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": null,
           "Place": "torino",
-          "Score": 0.45735675
+          "Score": 0.4461663
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

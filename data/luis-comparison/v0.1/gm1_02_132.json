@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "cross air 2690 contact marseille on 125.85 good bye",
       "CallSign": {
         "Airline": "cross air",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.009764195
+          "Score": 0.010762583
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "marseille",
-          "Score": 0.96345806
+          "Score": 0.9244314
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0190107
+          "Score": 0.030632049
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.005636435
+          "Score": 0.006496905
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.017460737
+          "Score": 0.023667186
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

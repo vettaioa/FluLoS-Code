@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "swiss air 6752 contact marseille on 12585 good bye",
       "CallSign": {
         "Airline": "swiss air",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.016571673
+          "Score": 0.012353169
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "marseille",
-          "Score": 0.9956754
+          "Score": 0.9954542
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0021297208
+          "Score": 0.0019265368
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002159076
+          "Score": 0.002230408
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019073215
+          "Score": 0.0016001402
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

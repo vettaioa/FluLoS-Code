@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "roger alitalia 110 climb flight level 320",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.012241043
+          "Score": 0.008035961
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.05888718
+          "Score": 0.037605263
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "320",
-          "Score": 0.660627
+          "Score": 0.8412349
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.008538603
+          "Score": 0.008168217
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0300687
+          "Score": 0.023620805
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

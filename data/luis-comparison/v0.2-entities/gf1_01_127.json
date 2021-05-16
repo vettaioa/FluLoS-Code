@@ -1,35 +1,35 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "roger turn left heading 220",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.040362444
+          "Score": 0.03669752
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.010395399
+          "Score": 0.008893903
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.00731975
+          "Score": 0.008887702
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.006492637
+          "Score": 0.00799466
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": "220",
           "Place": null,
-          "Score": 0.8652581
+          "Score": 0.86226696
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

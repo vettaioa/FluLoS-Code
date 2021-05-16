@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 7816 turn left to nattenheim",
       "CallSign": {
         "Airline": "sabena",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.036590297
+          "Score": 0.027145298
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0015544355
+          "Score": 0.0014100638
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013843135
+          "Score": 0.0012358966
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0015201172
+          "Score": 0.0017752455
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "nattenheim",
-          "Score": 0.9952048
+          "Score": 0.99476117
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "ltu 1602 climb to flight level 330",
       "CallSign": {
         "Airline": "ltu",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01410982
+          "Score": 0.011688123
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018681077
+          "Score": 0.0015886254
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "330",
-          "Score": 0.994968
+          "Score": 0.9969584
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019311281
+          "Score": 0.001872867
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0025322132
+          "Score": 0.0021157898
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

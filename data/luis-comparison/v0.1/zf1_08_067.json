@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "airfrans 356 good morning squawk 7536",
       "CallSign": {
         "Airline": "airfrans",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.03344887
+          "Score": 0.013208971
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.014032545
+          "Score": 0.0072067007
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.01911774
+          "Score": 0.00920717
         },
         "Squawk": {
           "Code": "7536",
-          "Score": 0.6503809
+          "Score": 0.9402604
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.012435448
+          "Score": 0.006826005
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

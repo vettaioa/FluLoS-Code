@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 416 good afternoon squawk 7533",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01933249
+          "Score": 0.008172358
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.07057483
+          "Score": 0.029751992
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0076682307
+          "Score": 0.008673605
         },
         "Squawk": {
           "Code": "7533",
-          "Score": 0.594221
+          "Score": 0.84952515
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.030695925
+          "Score": 0.019184267
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

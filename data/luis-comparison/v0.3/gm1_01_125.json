@@ -1,35 +1,35 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "good or 499 bonjour cleared direct arbos epinal flight level 340",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.0098143425
+          "Score": 0.00804672
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020229868
+          "Score": 0.0016560866
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "340",
-          "Score": 0.95268476
+          "Score": 0.9593417
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0024414435
+          "Score": 0.0023020701
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020351252
+          "Score": 0.0017182239
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

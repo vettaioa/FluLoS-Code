@@ -1,35 +1,38 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "saudia 155 bonjour squawk 5743",
-      "CallSign": null,
+      "CallSign": {
+        "Airline": "saudia",
+        "FlightNumber": "155"
+      },
       "Intents": {
         "None": {
-          "Score": 0.04800128
+          "Score": 0.023797644
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017574588
+          "Score": 0.0013638072
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.00205735
+          "Score": 0.0016596179
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.012428168
+          "Code": "5743",
+          "Score": 0.97720134
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018542012
+          "Score": 0.001391484
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

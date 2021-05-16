@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 376 squawk 5766",
       "CallSign": {
         "Airline": "klm",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.10161454
+          "Score": 0.04825901
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.008353651
+          "Score": 0.005206228
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0054619783
+          "Score": 0.004506446
         },
         "Squawk": {
           "Code": "5766",
-          "Score": 0.44132027
+          "Score": 0.77992666
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.021290172
+          "Score": 0.011408922
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 6474 squawk 2762",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.036719356
+          "Score": 0.0137202265
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.031682316
+          "Score": 0.012630374
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002186391
+          "Score": 0.0026545872
         },
         "Squawk": {
           "Code": "2762",
-          "Score": 0.72301036
+          "Score": 0.9304395
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.019845758
+          "Score": 0.010671667
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

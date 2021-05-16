@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "iberia 3473 bonjour identified climb to flight level 330 st prex passeiry passeiry tour du pin",
       "CallSign": {
         "Airline": "iberia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.0051631047
+          "Score": 0.00410871
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.022900663
+          "Score": 0.021863483
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "330",
-          "Score": 0.9911906
+          "Score": 0.9940205
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.004504839
+          "Score": 0.003981577
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.023615433
+          "Score": 0.019751417
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

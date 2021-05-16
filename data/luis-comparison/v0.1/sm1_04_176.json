@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 389 turn right by 10 degrees climb flight level 350",
       "CallSign": {
         "Airline": "speedbird",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.008629961
+          "Score": 0.0068858955
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.01439658
+          "Score": 0.011670642
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "350",
-          "Score": 0.7392513
+          "Score": 0.8444957
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.003141247
+          "Score": 0.0027778319
         },
         "Turn": {
           "Direction": "right",
           "Degrees": "10",
           "Heading": null,
           "Place": null,
-          "Score": 0.42288554
+          "Score": 0.38236675
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

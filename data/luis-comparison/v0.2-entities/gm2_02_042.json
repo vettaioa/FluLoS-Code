@@ -1,35 +1,35 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "roger turn left heading 330 to permit further climb",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.013163461
+          "Score": 0.0124000395
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.02420281
+          "Score": 0.022498284
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.09356373
+          "Score": 0.10144325
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.005012021
+          "Score": 0.005356132
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": "330",
           "Place": null,
-          "Score": 0.8167198
+          "Score": 0.8197248
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

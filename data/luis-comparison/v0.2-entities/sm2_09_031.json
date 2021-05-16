@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lufthansa 5305 squawk 2756",
       "CallSign": {
         "Airline": "lufthansa",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.047800347
+          "Score": 0.021403689
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0036489614
+          "Score": 0.0022121456
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0044477643
+          "Score": 0.003040875
         },
         "Squawk": {
           "Code": "2756",
-          "Score": 0.742149
+          "Score": 0.93026227
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.030918153
+          "Score": 0.016456595
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

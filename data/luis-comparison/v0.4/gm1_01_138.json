@@ -1,35 +1,35 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "gibair 98L contact milano 12585 good bye",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.04789478
+          "Score": 0.038612638
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "milano",
-          "Score": 0.9844732
+          "Score": 0.9842024
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017424681
+          "Score": 0.0015910133
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0021227181
+          "Score": 0.0021838371
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017817043
+          "Score": 0.0014968618
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

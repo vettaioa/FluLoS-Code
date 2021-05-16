@@ -1,35 +1,38 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "airfrans 3261 squawk now 2724",
-      "CallSign": null,
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
       "Intents": {
         "None": {
-          "Score": 0.044727307
+          "Score": 0.013779759
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0015511916
+          "Score": 0.00112464
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015929992
+          "Score": 0.0012105661
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.021297371
+          "Score": 0.04265293
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0016242502
+          "Score": 0.001124439
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

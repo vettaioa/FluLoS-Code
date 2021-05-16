@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 300 squawk 5763",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.036172483
+          "Score": 0.012359526
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0021498057
+          "Score": 0.0015982796
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0011933869
+          "Score": 0.0012692004
         },
         "Squawk": {
           "Code": "5763",
-          "Score": 0.953908
+          "Score": 0.98399377
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019256761
+          "Score": 0.0013535644
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

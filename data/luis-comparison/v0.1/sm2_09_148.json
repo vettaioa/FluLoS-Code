@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "air malta 450 squawk 7534",
       "CallSign": {
         "Airline": "air malta",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.039928973
+          "Score": 0.020287847
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0194242
+          "Score": 0.0132007925
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.00626782
+          "Score": 0.005037142
         },
         "Squawk": {
           "Code": "7534",
-          "Score": 0.6303501
+          "Score": 0.8437235
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.019275844
+          "Score": 0.011388186
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

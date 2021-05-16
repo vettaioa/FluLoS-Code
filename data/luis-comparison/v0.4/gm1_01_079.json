@@ -1,35 +1,35 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "l 376 identified cleared st prex arbos epinal climb to flight level 320",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.012678756
+          "Score": 0.008943679
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019937877
+          "Score": 0.0016421148
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "320",
-          "Score": 0.9982204
+          "Score": 0.9989308
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0016826283
+          "Score": 0.0014816233
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020240606
+          "Score": 0.0016875522
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

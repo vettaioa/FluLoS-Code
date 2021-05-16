@@ -1,35 +1,35 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 826A turn left by 10 degrees",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.03037109
+          "Score": 0.026980167
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.012102089
+          "Score": 0.007935476
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0046009035
+          "Score": 0.0050196815
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0035449779
+          "Score": 0.0053828573
         },
         "Turn": {
           "Direction": "left",
           "Degrees": "10",
           "Heading": null,
           "Place": null,
-          "Score": 0.96109223
+          "Score": 0.96276563
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

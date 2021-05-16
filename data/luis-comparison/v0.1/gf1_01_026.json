@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 301 descend to flight level 300 traffic",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01070309
+          "Score": 0.0049089547
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.085806616
+          "Score": 0.045026273
         },
         "FlightLevel": {
           "Instruction": "Descend",
           "Level": "300",
-          "Score": 0.6095136
+          "Score": 0.9057205
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.008699621
+          "Score": 0.0074585974
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.04129639
+          "Score": 0.027134396
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

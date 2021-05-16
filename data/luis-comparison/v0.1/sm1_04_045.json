@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "sobelair",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.049386386
+          "Score": 0.045316122
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.015299014
+          "Score": 0.013793012
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.013176053
+          "Score": 0.015661372
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0056405943
+          "Score": 0.0064644823
         },
         "Turn": {
           "Direction": "left",
           "Degrees": "5",
           "Heading": null,
           "Place": null,
-          "Score": 0.84011316
+          "Score": 0.8352245
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

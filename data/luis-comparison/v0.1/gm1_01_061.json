@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "twa 800 contact milano 12585 good bye",
       "CallSign": {
         "Airline": "twa",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.041372903
+          "Score": 0.033068128
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "milano",
-          "Score": 0.7043211
+          "Score": 0.6917984
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.017686678
+          "Score": 0.02035614
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0067490404
+          "Score": 0.008692376
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.021271907
+          "Score": 0.01978213
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

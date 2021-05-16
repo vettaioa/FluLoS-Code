@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedway 3352 contact zurich ontario.6 good bye",
       "CallSign": {
         "Airline": "speedway",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.027739987
+          "Score": 0.022569904
         },
         "Contact": {
           "Frequency": "ontario.6",
           "Place": "zurich",
-          "Score": 0.8095075
+          "Score": 0.84793144
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.03162097
+          "Score": 0.031958777
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0071292436
+          "Score": 0.008174428
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.026454626
+          "Score": 0.021806037
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

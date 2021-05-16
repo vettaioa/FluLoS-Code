@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "iberia 4476 contact zurich 125.85 good bye",
       "CallSign": {
         "Airline": "iberia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.024281265
+          "Score": 0.02028482
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "zurich",
-          "Score": 0.7775193
+          "Score": 0.80668646
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.03933442
+          "Score": 0.040208764
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0063987663
+          "Score": 0.007314698
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.023570623
+          "Score": 0.02008271
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

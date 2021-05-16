@@ -1,38 +1,35 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 569 identified cleared aosta st prex rolampont climb to flight level 330 initially",
-      "CallSign": {
-        "Airline": "speedbird",
-        "FlightNumber": "569"
-      },
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.013285366
+          "Score": 0.010057514
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.032546684
+          "Score": 0.029838137
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "330",
-          "Score": 0.94276047
+          "Score": 0.9703595
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0035603852
+          "Score": 0.0030482893
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.03969655
+          "Score": 0.030579867
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

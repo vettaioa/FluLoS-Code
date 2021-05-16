@@ -1,35 +1,35 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "topswiss 4578 on left to 0 degrees",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.06868359
+          "Score": 0.06468497
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.015196352
+          "Score": 0.014480796
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.013088323
+          "Score": 0.015054063
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.004986683
+          "Score": 0.005596806
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.74107146
+          "Score": 0.73144823
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

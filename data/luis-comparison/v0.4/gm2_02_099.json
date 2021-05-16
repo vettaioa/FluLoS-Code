@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "airfrans 3261 affirm and contact geneva 125.85 au revoir",
       "CallSign": {
         "Airline": "airfrans",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.023989255
+          "Score": 0.017163234
         },
         "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0032138403
+          "Frequency": "125.85",
+          "Place": "geneva",
+          "Score": 0.99915516
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0032039112
+          "Score": 0.0026461426
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019263678
+          "Score": 0.0023067677
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021671648
+          "Score": 0.0017907616
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

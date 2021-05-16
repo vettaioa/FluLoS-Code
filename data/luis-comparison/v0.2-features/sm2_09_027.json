@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 158 squawk 5720",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.041335594
+          "Score": 0.017179307
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0021522641
+          "Score": 0.0016361028
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0012187879
+          "Score": 0.0012296749
         },
         "Squawk": {
           "Code": "5720",
-          "Score": 0.9475011
+          "Score": 0.98159766
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019517816
+          "Score": 0.0014039559
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]

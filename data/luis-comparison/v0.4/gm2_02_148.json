@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
       "CallSign": {
         "Airline": "hamburg air",
@@ -9,30 +8,31 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01605053
+          "Score": 0.013560225
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "marseille",
-          "Score": 0.99960715
+          "Score": 0.99963576
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024825493
+          "Score": 0.0022470567
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020578366
+          "Score": 0.001909317
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021849235
+          "Score": 0.0018651144
         }
       }
-    }
+    },
+    "RmlContext": null
   }
 ]
