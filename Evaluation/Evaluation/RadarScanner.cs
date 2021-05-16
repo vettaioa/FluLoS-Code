@@ -27,11 +27,18 @@ namespace Evaluation
         /// <returns></returns>
         public async Task<IEnumerable<RadarAirplane>> GetRadarAirplanes(short minLatitude, short maxLatitude, short minLongitude, short maxLongitude)
         {
-            var airplanesInRange = await GetAirplanesInRange(minLatitude, maxLatitude, minLongitude, maxLongitude);
+            try
+            {
+                var airplanesInRange = await GetAirplanesInRange(minLatitude, maxLatitude, minLongitude, maxLongitude);
 
-            return airplanesInRange
-                    .Select(plane => (plane, GetAirplane(plane.Id)))
-                    .Select(t => new RadarAirplane { Airplane = t.Item2.Result, Position = t.plane.Position });
+                return airplanesInRange
+                        .Select(plane => (plane, GetAirplane(plane.Id)))
+                        .Select(t => new RadarAirplane { Airplane = t.Item2.Result, Position = t.plane.Position });
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         private async Task<List<AirplaneInRange>> GetAirplanesInRange(short minLatitude, short maxLatitude, short minLongitude, short maxLongitude)

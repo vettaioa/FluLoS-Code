@@ -43,25 +43,29 @@ namespace Evaluation
             // Airspace to FuzzySearch
             var fuzzyCallsigns = new Dictionary<string, RadarAirplane>();
             var flightNumbers = new Dictionary<string, RadarAirplane>();
-            foreach (var radarAirplane in radarAirplanes)
-            {
-                string airlineCallsign = FindCallSignForRadarAirplane(knownAirlines, radarAirplane);
-                string flightNumber = radarAirplane?.Airplane?.Flight?.GetFlightNumber()?.ToLower();
 
-                if (!string.IsNullOrEmpty(airlineCallsign) && !string.IsNullOrEmpty(flightNumber))
+            if (radarAirplanes != null)
+            {
+                foreach (var radarAirplane in radarAirplanes)
                 {
-                    string fuzzyCallsign = airlineCallsign + " " + flightNumber;
-                    fuzzyCallsigns.Add(fuzzyCallsign, radarAirplane);
-                }
-                if (!string.IsNullOrEmpty(flightNumber))
-                {
-                    if (!flightNumbers.ContainsKey(flightNumber))
+                    string airlineCallsign = FindCallSignForRadarAirplane(knownAirlines, radarAirplane);
+                    string flightNumber = radarAirplane?.Airplane?.Flight?.GetFlightNumber()?.ToLower();
+
+                    if (!string.IsNullOrEmpty(airlineCallsign) && !string.IsNullOrEmpty(flightNumber))
                     {
-                        flightNumbers.Add(flightNumber, radarAirplane);
+                        string fuzzyCallsign = airlineCallsign + " " + flightNumber;
+                        fuzzyCallsigns.Add(fuzzyCallsign, radarAirplane);
                     }
-                    else
+                    if (!string.IsNullOrEmpty(flightNumber))
                     {
-                        flightNumbers[flightNumber] = null; // set to null, because flightnumber is not unique
+                        if (!flightNumbers.ContainsKey(flightNumber))
+                        {
+                            flightNumbers.Add(flightNumber, radarAirplane);
+                        }
+                        else
+                        {
+                            flightNumbers[flightNumber] = null; // set to null, because flightnumber is not unique
+                        }
                     }
                 }
             }
