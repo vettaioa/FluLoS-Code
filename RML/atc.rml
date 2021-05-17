@@ -61,8 +61,8 @@ analyser-rules {
   Intent3 = (FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk),$Noise,(FlightLevel|Turn|Contact|Squawk)
   
   CallSign = Airline?,FlightNumber?
-  Airline = $Airline
-  //Airline = check(Airline{$Airline}, Airline.checkAirline)
+  //Airline = $Airline
+  Airline = check(Airline{$Airline}, Airline.checkAirline)
   FlightNumber = $FlightNumber
   //FlightNumber = check(FlightNumber{$FlightNumber}, Airline.checkFlightNumber)
   
