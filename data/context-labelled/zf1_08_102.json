@@ -1,0 +1,5 @@
+{
+    "airline": "sabena",
+    "flightnr": "826A",
+    "intent": ["flightlevel"]
+}

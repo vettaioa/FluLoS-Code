@@ -1,5 +1,5 @@
 {
-    "airline": "K L M",
+    "airline": "klm",
     "flightnr": "376",
     "intent": ["flightlevel"]
 }

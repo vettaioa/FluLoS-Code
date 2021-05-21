@@ -1,0 +1,5 @@
+{
+    "airline": "jet set",
+    "flightnr": "442",
+    "intent": ["flightlevel"]
+}
