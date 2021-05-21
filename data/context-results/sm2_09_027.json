@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "alitalia 158 squawk 5720",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "158"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 158 squawk 5720",
       "CallSign": {
         "Airline": "alitalia",
@@ -18,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.041335594
+          "Score": 0.017179307
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0021522641
+          "Score": 0.0016361028
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0012187879
+          "Score": 0.0012296749
         },
         "Squawk": {
           "Code": "5720",
-          "Score": 0.9475011
+          "Score": 0.98159766
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019517816
+          "Score": 0.0014039559
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 158 squawk 5720",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "158"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "572",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 158 squawk 570",
       "CallSign": {
         "Airline": "alitalia",
@@ -54,35 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.039522167
+          "Score": 0.017362403
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0022088622
+          "Score": 0.0016890609
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0012912508
+          "Score": 0.001299078
         },
         "Squawk": {
           "Code": "570",
-          "Score": 0.9395071
+          "Score": 0.9779988
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020574452
+          "Score": 0.0015010381
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 158 squawk 570",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "158"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "570",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 158 squawk 57 to0",
       "CallSign": {
         "Airline": "alitalia",
@@ -90,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.034371402
+          "Score": 0.0150725
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0022434636
+          "Score": 0.0017114183
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.001446177
+          "Score": 0.0014275808
         },
         "Squawk": {
           "Code": "57",
-          "Score": 0.9386906
+          "Score": 0.97737116
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020477858
+          "Score": 0.0014969931
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 158 squawk 57 to0",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "158"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "57",
+          "Score": 1.0
         }
       }
     }

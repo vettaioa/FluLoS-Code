@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "twa 81 identified cleared st rolampont flight level 340",
       "CallSign": {
         "Airline": "twa",
@@ -9,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.025359944
+          "Score": 0.017972777
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020385003
+          "Score": 0.0016925092
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "340",
-          "Score": 0.7963994
+          "Score": 0.831256
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019654057
+          "Score": 0.0018200014
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020871395
+          "Score": 0.0017228025
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "twa 81 identified cleared st rolampont flight level 340",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "81",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "twa 881 identified cleared st rolampont flight level 340",
       "CallSign": {
         "Airline": "twa",
@@ -45,28 +57,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.026396178
+          "Score": 0.01881469
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002057568
+          "Score": 0.0017085482
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "340",
-          "Score": 0.7919122
+          "Score": 0.82742304
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019854512
+          "Score": 0.0018425564
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021075692
+          "Score": 0.0017402743
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "twa 881 identified cleared st rolampont flight level 340",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "881",
+          "Score": 1.0
         }
       }
     }

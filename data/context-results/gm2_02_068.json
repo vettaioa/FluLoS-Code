@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "aero lloyd 517 turn right to willisau",
       "CallSign": {
         "Airline": "aero lloyd",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.02846489
+          "Score": 0.028163275
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020930734
+          "Score": 0.0018406684
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0025284681
+          "Score": 0.0021126242
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019233902
+          "Score": 0.0019588359
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": null,
           "Place": "willisau",
-          "Score": 0.99415916
+          "Score": 0.9940788
         }
       }
+    },
+    "RmlContext": {
+      "Message": "aero lloyd 517 turn right to willisau",
+      "CallSign": {
+        "Airline": "aero lanka",
+        "FlightNumber": "517"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "aero lloyd 517 turn right to willisau ohh",
       "CallSign": {
         "Airline": "aero lloyd",
@@ -45,35 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.02687525
+          "Score": 0.025959875
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0021878667
+          "Score": 0.001905358
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0027560294
+          "Score": 0.0023062178
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019679714
+          "Score": 0.0019699205
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": null,
           "Place": "willisau",
-          "Score": 0.99412626
+          "Score": 0.99405205
         }
       }
+    },
+    "RmlContext": {
+      "Message": "aero lloyd 517 turn right to willisau ohh",
+      "CallSign": {
+        "Airline": "aero lanka",
+        "FlightNumber": "517"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "aero lloyd 517 turn right to willisauo",
       "CallSign": {
         "Airline": "aero lloyd",
@@ -81,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.02846489
+          "Score": 0.028163275
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020930734
+          "Score": 0.0018406684
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0025284681
+          "Score": 0.0021126242
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019233902
+          "Score": 0.0019588359
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": null,
           "Place": "willisauo",
-          "Score": 0.99415916
+          "Score": 0.9940788
         }
       }
+    },
+    "RmlContext": {
+      "Message": "aero lloyd 517 turn right to willisauo",
+      "CallSign": {
+        "Airline": "aero lanka",
+        "FlightNumber": "517"
+      },
+      "Intents": {}
     }
   }
 ]

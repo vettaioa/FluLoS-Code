@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "alitalia 6474 squawk 2762",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "6474"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 6474 squawk 2762",
       "CallSign": {
         "Airline": "alitalia",
@@ -18,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.036719356
+          "Score": 0.0137202265
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0021068498
+          "Score": 0.0015779892
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0011378649
+          "Score": 0.0011528181
         },
         "Squawk": {
           "Code": "2762",
-          "Score": 0.959532
+          "Score": 0.986598
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018452874
+          "Score": 0.0012983466
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 6474 squawk 2762",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "6474"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 6474 squawk 276 too",
       "CallSign": {
         "Airline": "alitalia",
@@ -54,35 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.031963725
+          "Score": 0.013607082
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0022420767
+          "Score": 0.0017020802
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0014297907
+          "Score": 0.0014127127
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.013858007
+          "Code": "276",
+          "Score": 0.97919
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020329198
+          "Score": 0.0014783023
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 6474 squawk 276 too",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "6474"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 6474 squawk 276 to",
       "CallSign": {
         "Airline": "alitalia",
@@ -90,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.028564349
+          "Score": 0.012003737
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002221476
+          "Score": 0.0016824879
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0014265913
+          "Score": 0.0014055688
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.014513631
+          "Code": "276",
+          "Score": 0.98029566
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002027136
+          "Score": 0.001469625
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 6474 squawk 276 to",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "6474"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
         }
       }
     }

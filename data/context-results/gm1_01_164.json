@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "portugalia 543 climb to flight level 350",
-      "CallSign": {
-        "Airline": "portugalia",
-        "FlightNumber": "543"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "portugalia 543 climb to flight level 350",
       "CallSign": {
         "Airline": "portugalia",
@@ -22,34 +8,81 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.02900695
+          "Score": 0.021304887
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018325956
+          "Score": 0.0015397947
         },
         "FlightLevel": {
           "Instruction": "Climb",
-          "Level": "flight level",
-          "Score": 0.99895483
+          "Level": "350",
+          "Score": 0.9974284
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0018531767
+          "Score": 0.0017650046
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018949148
+          "Score": 0.0015608341
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "portugalia 543 climb to flight level 350",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "350",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "portugalia 543 climb flight level 350",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.02822832
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.00151085
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "350",
+          "Score": 0.993127
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0018362502
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0015077791
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "portugalia 543 climb flight level 350",
       "CallSign": {
         "Airline": "portugalia",
@@ -62,57 +95,10 @@
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
-      "Message": "portugalia 543 climb flight level 350",
-      "CallSign": {
-        "Airline": "portugalia",
-        "FlightNumber": "543"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.038849734
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0017927951
-        },
-        "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": "350",
-          "Score": 0.9885924
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0018951534
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0018402507
-        }
-      }
     }
   },
   {
-    "RmlResult": {
-      "Message": "portugalia 543 climb to flight level 35o",
-      "CallSign": {
-        "Airline": "portugalia",
-        "FlightNumber": "543"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "portugalia 543 climb to flight level 35o",
       "CallSign": {
         "Airline": "portugalia",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.03255685
+          "Score": 0.026217502
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001771312
+          "Score": 0.0015134371
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "35o",
-          "Score": 0.9958157
+          "Score": 0.99742484
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0017693721
+          "Score": 0.0017071832
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018170159
+          "Score": 0.001513528
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "portugalia 543 climb to flight level 35o",
+      "CallSign": {
+        "Airline": "portugalia",
+        "FlightNumber": "543"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "35",
+          "Score": 1.0
         }
       }
     }

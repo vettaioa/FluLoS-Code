@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "iberia 3530 contact zurich ontario.6 good bye",
       "CallSign": {
         "Airline": "iberia",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.025078071
+          "Score": 0.02081015
         },
         "Contact": {
           "Frequency": "ontario.6",
           "Place": "zurich",
-          "Score": 0.9992569
+          "Score": 0.99928737
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024625205
+          "Score": 0.0021775565
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022547976
+          "Score": 0.0022148043
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020954842
+          "Score": 0.0017698767
         }
       }
+    },
+    "RmlContext": {
+      "Message": "iberia 3530 contact zurich ontario.6 good bye",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3530"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "iberia 3530 contact zurich ontario for.6 good bye",
       "CallSign": {
         "Airline": "iberia",
@@ -45,35 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.021006795
+          "Score": 0.017507458
         },
         "Contact": {
           "Frequency": "for.6",
           "Place": "zurich",
-          "Score": 0.99962
+          "Score": 0.9996384
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002659947
+          "Score": 0.0023287786
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022291895
+          "Score": 0.002161932
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021456701
+          "Score": 0.0018178158
         }
       }
+    },
+    "RmlContext": {
+      "Message": "iberia 3530 contact zurich ontario for.6 good bye",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3530"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "iberia 353 o contact zurich ontario.6 good bye",
       "CallSign": {
         "Airline": "iberia",
@@ -81,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.019684577
+          "Score": 0.016033595
         },
         "Contact": {
           "Frequency": "ontario.6",
           "Place": "zurich",
-          "Score": 0.99924237
+          "Score": 0.99926645
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0027917374
+          "Score": 0.002455141
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0023538556
+          "Score": 0.0022750734
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002284407
+          "Score": 0.0019321173
         }
       }
+    },
+    "RmlContext": {
+      "Message": "iberia 353 o contact zurich ontario.6 good bye",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "353"
+      },
+      "Intents": {}
     }
   }
 ]

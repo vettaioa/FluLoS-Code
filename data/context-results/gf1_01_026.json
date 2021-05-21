@@ -42,7 +42,7 @@
       "Intents": {
         "FlightLevel": {
           "Instruction": "Descend",
-          "Level": null,
+          "Level": "300",
           "Score": 1.0
         }
       }
@@ -91,7 +91,7 @@
       "Intents": {
         "FlightLevel": {
           "Instruction": "Descend",
-          "Level": null,
+          "Level": "300",
           "Score": 1.0
         }
       }

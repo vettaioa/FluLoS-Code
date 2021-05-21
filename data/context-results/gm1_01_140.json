@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "alitalia 216 contact reims 13227 good bye",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "216"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "13227",
-          "Place": "reims",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 216 contact reims 13227 good bye",
       "CallSign": {
         "Airline": "alitalia",
@@ -22,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.024199843
+          "Score": 0.017374974
         },
         "Contact": {
           "Frequency": "13227",
           "Place": "reims",
-          "Score": 0.9760487
+          "Score": 0.9750428
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018288576
+          "Score": 0.0019363803
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0029891618
+          "Score": 0.0029530355
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021523987
+          "Score": 0.0017494772
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 216 contact reims 13227 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "216"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "132",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 216 contact reims 1327 good bye",
       "CallSign": {
         "Airline": "alitalia",
@@ -58,48 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.023419827
+          "Score": 0.01681763
         },
         "Contact": {
           "Frequency": "1327",
           "Place": "reims",
-          "Score": 0.9752513
+          "Score": 0.9741185
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019374571
+          "Score": 0.0020187024
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0030373232
+          "Score": 0.0029998797
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0022668922
+          "Score": 0.0018475854
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 216 contact reims 1327 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "216"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "132",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "alitalia to 16 contact reims 13227 good bye",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "16"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "13227",
-          "Place": "reims",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia to 16 contact reims 13227 good bye",
       "CallSign": {
         "Airline": "alitalia to",
@@ -107,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01688444
+          "Score": 0.012162219
         },
         "Contact": {
           "Frequency": "13227",
           "Place": "reims",
-          "Score": 0.97706455
+          "Score": 0.97601604
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019956748
+          "Score": 0.0020942295
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0029516306
+          "Score": 0.002868476
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021839747
+          "Score": 0.0017817382
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia to 16 contact reims 13227 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "16"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "132",
+          "Score": 1.0
         }
       }
     }

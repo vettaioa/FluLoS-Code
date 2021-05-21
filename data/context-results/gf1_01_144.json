@@ -1,6 +1,39 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "cross air 2690 climb to flight level 300",
+      "CallSign": {
+        "Airline": "cross air",
+        "FlightNumber": "2690"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.008345903
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0019762581
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "300",
+          "Score": 0.9979172
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0016262706
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0015256898
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "cross air 2690 climb to flight level 300",
       "CallSign": {
         "Airline": "crossair",
@@ -9,47 +42,47 @@
       "Intents": {
         "FlightLevel": {
           "Instruction": "Climb",
-          "Level": null,
+          "Level": "300",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
-      "Message": "cross air 2690 climb to flight level 300",
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "cross air 2690 climb flight level 300",
       "CallSign": {
         "Airline": "cross air",
         "FlightNumber": "2690"
       },
       "Intents": {
         "None": {
-          "Score": 0.008968089
+          "Score": 0.010777169
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0023589276
+          "Score": 0.0019491104
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "300",
-          "Score": 0.99627167
+          "Score": 0.9944982
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0017376582
+          "Score": 0.0016857064
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017372919
+          "Score": 0.0014771115
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
+    },
+    "RmlContext": {
       "Message": "cross air 2690 climb flight level 300",
       "CallSign": {
         "Airline": "crossair",
@@ -62,43 +95,43 @@
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
-      "Message": "cross air 2690 climb flight level 300",
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "cross air 690 climb to flight level 300",
       "CallSign": {
         "Airline": "cross air",
-        "FlightNumber": "2690"
+        "FlightNumber": "690"
       },
       "Intents": {
         "None": {
-          "Score": 0.011751788
+          "Score": 0.008474523
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0023210207
+          "Score": 0.0020303342
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "300",
-          "Score": 0.9903879
+          "Score": 0.9977578
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0017750001
+          "Score": 0.0018008214
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001690122
+          "Score": 0.0016644713
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
+    },
+    "RmlContext": {
       "Message": "cross air 690 climb to flight level 300",
       "CallSign": {
         "Airline": "crossair",
@@ -107,41 +140,8 @@
       "Intents": {
         "FlightLevel": {
           "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "cross air 690 climb to flight level 300",
-      "CallSign": {
-        "Airline": "cross air",
-        "FlightNumber": "690"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.011638276
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0024267738
-        },
-        "FlightLevel": {
-          "Instruction": "Climb",
           "Level": "300",
-          "Score": 0.9962199
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0019982602
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0019901432
+          "Score": 1.0
         }
       }
     }

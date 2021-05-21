@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "monarch 244 contact on 132.27 good bye",
-      "CallSign": {
-        "Airline": "monarch",
-        "FlightNumber": "244"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "132.27",
-          "Place": "on",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "monarch 244 contact on 132.27 good bye",
       "CallSign": {
         "Airline": "monarch",
@@ -22,48 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.033803932
+          "Score": 0.02672192
         },
         "Contact": {
           "Frequency": "132.27",
           "Place": "on",
-          "Score": 0.999164
+          "Score": 0.99919087
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024971024
+          "Score": 0.0022451996
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0024853528
+          "Score": 0.0024236827
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0023135468
+          "Score": 0.001933284
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "monarch 244 contact reims on 132.27 good bye",
+    },
+    "RmlContext": {
+      "Message": "monarch 244 contact on 132.27 good bye",
       "CallSign": {
         "Airline": "monarch",
         "FlightNumber": "244"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "132.27",
-          "Place": "reims",
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "132",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "monarch 244 contact reims on 132.27 good bye",
       "CallSign": {
         "Airline": "monarch",
@@ -71,48 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.02712245
+          "Score": 0.021764947
         },
         "Contact": {
           "Frequency": "132.27",
           "Place": "reims",
-          "Score": 0.99956906
+          "Score": 0.9995859
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002658471
+          "Score": 0.0023739513
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002397401
+          "Score": 0.0023121352
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0023253476
+          "Score": 0.0019566363
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "monarch 244 contact reims on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "244"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "132",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "monarch 24 contact on 132.27 good bye",
-      "CallSign": {
-        "Airline": "monarch",
-        "FlightNumber": "24"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "132.27",
-          "Place": "on",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "monarch 24 contact on 132.27 good bye",
       "CallSign": {
         "Airline": "monarch",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.032084376
+          "Score": 0.025309712
         },
         "Contact": {
           "Frequency": "132.27",
           "Place": "on",
-          "Score": 0.9991826
+          "Score": 0.9992085
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002474482
+          "Score": 0.002221795
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0024839381
+          "Score": 0.0024223113
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0022900717
+          "Score": 0.0019142625
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "monarch 24 contact on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "24"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "132",
+          "Score": 1.0
         }
       }
     }

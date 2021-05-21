@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 264 turn left to NTM",
       "CallSign": {
         "Airline": "klm",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.058895268
+          "Score": 0.051071383
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.00211692
+          "Score": 0.0018102436
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019343841
+          "Score": 0.001841081
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0023504258
+          "Score": 0.002405733
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "NTM",
-          "Score": 0.99405277
+          "Score": 0.9938338
         }
       }
+    },
+    "RmlContext": {
+      "Message": "klm 264 turn left to NTM",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "264"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 264 turn left to NTM ohh",
       "CallSign": {
         "Airline": "klm",
@@ -45,35 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.050227728
+          "Score": 0.04327001
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0022042715
+          "Score": 0.0018738398
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0021749644
+          "Score": 0.002039883
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0023405747
+          "Score": 0.002353538
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "NTM",
-          "Score": 0.99406034
+          "Score": 0.9938658
         }
       }
+    },
+    "RmlContext": {
+      "Message": "klm 264 turn left to NTM ohh",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "264"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 264 turn left to NTMi",
       "CallSign": {
         "Airline": "klm",
@@ -81,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.066776805
+          "Score": 0.060121886
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019983507
+          "Score": 0.0017298555
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018269365
+          "Score": 0.0017400602
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002178054
+          "Score": 0.0022376988
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "NTMi",
-          "Score": 0.99410564
+          "Score": 0.9938883
         }
       }
+    },
+    "RmlContext": {
+      "Message": "klm 264 turn left to NTMi",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "264"
+      },
+      "Intents": {}
     }
   }
 ]

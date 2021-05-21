@@ -1,129 +1,147 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
       "Message": "tunair 4802 squawk 2751",
       "CallSign": {
         "Airline": "tunair",
         "FlightNumber": "4802"
       },
       "Intents": {
-        "Squawk": null
+        "None": {
+          "Score": 0.03721094
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.001177848
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.000962985
+        },
+        "Squawk": {
+          "Code": "2751",
+          "Score": 0.9913215
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0011562599
+        }
       }
     },
-    "LuisResult": {
+    "RmlContext": {
       "Message": "tunair 4802 squawk 2751",
-      "CallSign": null,
+      "CallSign": {
+        "Airline": "tunair",
+        "FlightNumber": "4802"
+      },
       "Intents": {
-        "None": {
-          "Score": 0.1015643
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0015937923
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0011792405
-        },
-        "Squawk": {
-          "Code": "2751",
-          "Score": 0.9693957
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0016586432
+          "Level": "275",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
       "Message": "tunair 402 squawk 2751",
       "CallSign": {
         "Airline": "tunair",
         "FlightNumber": "402"
       },
       "Intents": {
-        "Squawk": null
+        "None": {
+          "Score": 0.045686018
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0013145823
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.001088839
+        },
+        "Squawk": {
+          "Code": "2751",
+          "Score": 0.98454905
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0013118902
+        }
       }
     },
-    "LuisResult": {
+    "RmlContext": {
       "Message": "tunair 402 squawk 2751",
       "CallSign": {
         "Airline": "tunair",
         "FlightNumber": "402"
       },
       "Intents": {
-        "None": {
-          "Score": 0.10519013
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0017308737
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0012795886
-        },
-        "Squawk": {
-          "Code": "2751",
-          "Score": 0.9514723
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0018185925
+          "Level": "275",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
       "Message": "tunair 480 to squawk 2751",
       "CallSign": {
         "Airline": "tunair",
         "FlightNumber": "480"
       },
       "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
-      "Message": "tunair 480 to squawk 2751",
-      "CallSign": null,
-      "Intents": {
         "None": {
-          "Score": 0.070776574
+          "Score": 0.030005706
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017705545
+          "Score": 0.0013345933
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0014876357
+          "Score": 0.001230086
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.016766064
+          "Code": "2751",
+          "Score": 0.9846507
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018745181
+          "Score": 0.0013571371
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "tunair 480 to squawk 2751",
+      "CallSign": {
+        "Airline": "tunair",
+        "FlightNumber": "480"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "275",
+          "Score": 1.0
         }
       }
     }

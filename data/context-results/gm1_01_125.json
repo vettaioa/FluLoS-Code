@@ -1,101 +1,131 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "condor 499 bonjour cleared",
-      "CallSign": null,
+      "CallSign": {
+        "Airline": "condor",
+        "FlightNumber": "499"
+      },
       "Intents": {
         "None": {
-          "Score": 0.1142477
+          "Score": 0.09407152
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019274685
+          "Score": 0.0016482833
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024165544
+          "Score": 0.0021860877
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0032297776
+          "Score": 0.0034842282
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020535942
+          "Score": 0.0016786894
         }
       }
+    },
+    "RmlContext": {
+      "Message": "condor 499 bonjour cleared",
+      "CallSign": {
+        "Airline": "condor",
+        "FlightNumber": "499"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "condor 49 bonjour cleared",
-      "CallSign": null,
+      "CallSign": {
+        "Airline": "condor",
+        "FlightNumber": "49"
+      },
       "Intents": {
         "None": {
-          "Score": 0.11081938
+          "Score": 0.09124899
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001915075
+          "Score": 0.0016380263
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024692297
+          "Score": 0.0022236817
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0032595822
+          "Score": 0.0035181488
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020409103
+          "Score": 0.0016686864
         }
       }
+    },
+    "RmlContext": {
+      "Message": "condor 49 bonjour cleared",
+      "CallSign": {
+        "Airline": "condor",
+        "FlightNumber": "49"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "condor 499 bonjour cleared",
-      "CallSign": null,
+      "CallSign": {
+        "Airline": "condor",
+        "FlightNumber": "499"
+      },
       "Intents": {
         "None": {
-          "Score": 0.1142477
+          "Score": 0.09407152
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019274685
+          "Score": 0.0016482833
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024165544
+          "Score": 0.0021860877
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0032297776
+          "Score": 0.0034842282
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020535942
+          "Score": 0.0016786894
         }
       }
+    },
+    "RmlContext": {
+      "Message": "condor 499 bonjour cleared",
+      "CallSign": {
+        "Airline": "condor",
+        "FlightNumber": "499"
+      },
+      "Intents": {}
     }
   }
 ]

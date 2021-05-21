@@ -1,48 +1,48 @@
 [
   {
     "LuisContext": {
-      "Message": "airfrans 3261 squawk now 2724",
+      "Message": "jet set 442 descend flight level 330",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "jet set",
+        "FlightNumber": "442"
       },
       "Intents": {
         "None": {
-          "Score": 0.013779759
+          "Score": 0.016442806
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.00112464
+          "Score": 0.0015584015
         },
         "FlightLevel": {
-          "Instruction": null,
-          "Level": null,
-          "Score": 0.0012105661
+          "Instruction": "Descend",
+          "Level": "330",
+          "Score": 0.9936646
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.04265293
+          "Score": 0.0018169855
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001124439
+          "Score": 0.0018275116
         }
       }
     },
     "RmlContext": {
-      "Message": "airfrans 3261 squawk now 2724",
+      "Message": "jet set 442 descend flight level 330",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "jet service",
+        "FlightNumber": "442"
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": null,
-          "Level": "272",
+          "Instruction": "Descend",
+          "Level": "330",
           "Score": 1.0
         }
       }
@@ -50,48 +50,48 @@
   },
   {
     "LuisContext": {
-      "Message": "airfrans 3261 squawk now 274",
+      "Message": "jet set 442 descend to flight level 330",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "jet set",
+        "FlightNumber": "442"
       },
       "Intents": {
         "None": {
-          "Score": 0.017124012
+          "Score": 0.012707603
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0012492664
+          "Score": 0.001582847
         },
         "FlightLevel": {
-          "Instruction": null,
-          "Level": null,
-          "Score": 0.0013511733
+          "Instruction": "Descend",
+          "Level": "330",
+          "Score": 0.9976063
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.02542563
+          "Score": 0.0017521037
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0012651996
+          "Score": 0.0018827756
         }
       }
     },
     "RmlContext": {
-      "Message": "airfrans 3261 squawk now 274",
+      "Message": "jet set 442 descend to flight level 330",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "jet service",
+        "FlightNumber": "442"
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": null,
-          "Level": "274",
+          "Instruction": "Descend",
+          "Level": "330",
           "Score": 1.0
         }
       }
@@ -99,48 +99,48 @@
   },
   {
     "LuisContext": {
-      "Message": "airfrans 3261 squawk 2724",
+      "Message": "jet set 442 descend flight level 30",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "jet set",
+        "FlightNumber": "442"
       },
       "Intents": {
         "None": {
-          "Score": 0.02012615
+          "Score": 0.015002532
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001078706
+          "Score": 0.0015297489
         },
         "FlightLevel": {
-          "Instruction": null,
-          "Level": null,
-          "Score": 0.0010186068
+          "Instruction": "Descend",
+          "Level": "30",
+          "Score": 0.9939087
         },
         "Squawk": {
-          "Code": "2724",
-          "Score": 0.9926133
+          "Code": null,
+          "Score": 0.0017716871
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0010576543
+          "Score": 0.0018164589
         }
       }
     },
     "RmlContext": {
-      "Message": "airfrans 3261 squawk 2724",
+      "Message": "jet set 442 descend flight level 30",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "jet service",
+        "FlightNumber": "442"
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": null,
-          "Level": "272",
+          "Instruction": "Descend",
+          "Level": "30",
           "Score": 1.0
         }
       }

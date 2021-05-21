@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 970 contact reims on 134.4 good bye",
       "CallSign": {
         "Airline": "sabena",
@@ -9,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.018269157
+          "Score": 0.013118602
         },
         "Contact": {
           "Frequency": "134.4",
           "Place": "reims",
-          "Score": 0.9995926
+          "Score": 0.99960047
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0023457257
+          "Score": 0.0020313151
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002105733
+          "Score": 0.002382904
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020295249
+          "Score": 0.0016822873
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 970 contact reims on 134.4 good bye",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 970 contact reims 134.4 good bye",
       "CallSign": {
         "Airline": "sabena",
@@ -45,35 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01915108
+          "Score": 0.013628016
         },
         "Contact": {
           "Frequency": "134.4",
           "Place": "reims",
-          "Score": 0.999203
+          "Score": 0.9992128
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0021763502
+          "Score": 0.001902794
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0021397076
+          "Score": 0.0024531025
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020001142
+          "Score": 0.0016520083
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 970 contact reims 134.4 good bye",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 970 contact reims on 134.for good bye",
       "CallSign": {
         "Airline": "sabena",
@@ -81,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.018875066
+          "Score": 0.014262738
         },
         "Contact": {
           "Frequency": "134.for",
           "Place": "reims",
-          "Score": 0.9995919
+          "Score": 0.9995983
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0023594068
+          "Score": 0.0020553477
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0021195684
+          "Score": 0.0024176193
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020499635
+          "Score": 0.0017088985
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 970 contact reims on 134.for good bye",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
+          "Score": 1.0
         }
       }
     }

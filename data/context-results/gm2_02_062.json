@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "sabena 970 contact radar 128.150",
-      "CallSign": {
-        "Airline": "shabair",
-        "FlightNumber": "970"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "128.15",
-          "Place": "radar",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 970 contact radar 128.150",
       "CallSign": {
         "Airline": "sabena",
@@ -22,48 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.06590086
+          "Score": 0.045690343
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0025264097
+          "Score": 0.0021016262
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0020334974
+          "Score": 0.001850622
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022312428
+          "Score": 0.0026035134
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002206505
+          "Score": 0.0017843042
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "sabena 970 contact radar 128.15",
+    },
+    "RmlContext": {
+      "Message": "sabena 970 contact radar 128.150",
       "CallSign": {
         "Airline": "shabair",
         "FlightNumber": "970"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "128.15",
-          "Place": "radar",
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "128",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "sabena 970 contact radar 128.15",
       "CallSign": {
         "Airline": "sabena",
@@ -71,48 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.065663956
+          "Score": 0.04541236
         },
         "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0025299902
+          "Frequency": "128.15",
+          "Place": "radar",
+          "Score": 0.9989227
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0020252683
+          "Score": 0.0018426636
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022216658
+          "Score": 0.0025911583
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021976952
+          "Score": 0.0017768166
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "sabena 970 contact radar 128.15 aw",
+    },
+    "RmlContext": {
+      "Message": "sabena 970 contact radar 128.15",
       "CallSign": {
         "Airline": "shabair",
         "FlightNumber": "970"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "128.15",
-          "Place": "radar",
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "128",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "sabena 970 contact radar 128.15 aw",
       "CallSign": {
         "Airline": "sabena",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.053970497
+          "Score": 0.037482157
         },
         "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0025874074
+          "Frequency": "128.15",
+          "Place": "radar",
+          "Score": 0.99894005
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0022525622
+          "Score": 0.0020244718
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002216781
+          "Score": 0.0025486213
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002269108
+          "Score": 0.0018424756
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 970 contact radar 128.15 aw",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "128",
+          "Score": 1.0
         }
       }
     }

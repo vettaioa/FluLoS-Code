@@ -1,115 +1,98 @@
 [
   {
-    "RmlResult": {
-      "Message": "l 376 identified cleared st prex arbos epinal climb to flight level 320",
-      "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "l 376 identified cleared st prex arbos epinal climb to flight level 320",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.012678756
+          "Score": 0.008943679
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019937877
+          "Score": 0.0016421148
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "320",
-          "Score": 0.9982204
+          "Score": 0.9989308
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0016826283
+          "Score": 0.0014816233
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020240606
+          "Score": 0.0016875522
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "k 376 identified cleared st prex arbos epinal climb to flight level 320",
+    },
+    "RmlContext": {
+      "Message": "l 376 identified cleared st prex arbos epinal climb to flight level 320",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
+          "Instruction": null,
+          "Level": "376",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "k 376 identified cleared st prex arbos epinal climb to flight level 320",
-      "CallSign": {
-        "Airline": "k",
-        "FlightNumber": "376"
-      },
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.012729266
+          "Score": 0.0089861015
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001996221
+          "Score": 0.0016441661
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "320",
-          "Score": 0.9982149
+          "Score": 0.99892724
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0016850074
+          "Score": 0.0014841327
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002026646
+          "Score": 0.0016898246
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "kl 376 identified cleared st prex arbos epinal climb to flight level 320",
+    },
+    "RmlContext": {
+      "Message": "k 376 identified cleared st prex arbos epinal climb to flight level 320",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
+          "Instruction": null,
+          "Level": "376",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "kl 376 identified cleared st prex arbos epinal climb to flight level 320",
       "CallSign": {
         "Airline": "kl",
@@ -117,28 +100,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.013011405
+          "Score": 0.00922364
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020096868
+          "Score": 0.0016555222
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "320",
-          "Score": 0.99818444
+          "Score": 0.99890745
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0016981849
+          "Score": 0.0014980485
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020409639
+          "Score": 0.0017024098
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "kl 376 identified cleared st prex arbos epinal climb to flight level 320",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "376",
+          "Score": 1.0
         }
       }
     }

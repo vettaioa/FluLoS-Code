@@ -1,99 +1,138 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sunwing 5123 bonjour cleared st prex correction kines st prex arbos epinal flight level 300",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.0092116315
+          "Score": 0.0070269667
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018224104
+          "Score": 0.0015279329
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "300",
-          "Score": 0.9980973
+          "Score": 0.98690856
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019134339
+          "Score": 0.0017238782
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018336882
+          "Score": 0.0015548698
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sunwing 5123 bonjour cleared st prex correction kines st prex arbos epinal flight level 300",
+      "CallSign": {
+        "Airline": "sunwing",
+        "FlightNumber": "5123"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "300",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sunwing 5123 bonjour cleared st prex give correction kines st prex arbos epinal flight level 300",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.008337327
+          "Score": 0.0063790195
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018568414
+          "Score": 0.001553573
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "300",
-          "Score": 0.9981661
+          "Score": 0.98730135
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019035273
+          "Score": 0.0017020982
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018651509
+          "Score": 0.0015849677
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sunwing 5123 bonjour cleared st prex give correction kines st prex arbos epinal flight level 300",
+      "CallSign": {
+        "Airline": "sunwing",
+        "FlightNumber": "5123"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "300",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sunwing 5123 bonjour cleared st prex your correction kines st prex arbos epinal flight level 300",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.008309319
+          "Score": 0.0063535077
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018539961
+          "Score": 0.0015512359
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "300",
-          "Score": 0.99817276
+          "Score": 0.9873447
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019026778
+          "Score": 0.0017011098
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018620531
+          "Score": 0.0015822402
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sunwing 5123 bonjour cleared st prex your correction kines st prex arbos epinal flight level 300",
+      "CallSign": {
+        "Airline": "sunwing",
+        "FlightNumber": "5123"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "300",
+          "Score": 1.0
         }
       }
     }

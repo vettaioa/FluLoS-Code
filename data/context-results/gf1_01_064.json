@@ -1,22 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "viva 9081 turn left heading 350",
-      "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "35",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "viva 9081 turn left heading 350",
       "CallSign": {
         "Airline": "viva",
@@ -24,50 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.039490208
+          "Score": 0.033464577
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018798915
+          "Score": 0.0016182897
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017300774
+          "Score": 0.0017321742
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002024827
+          "Score": 0.0020449911
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": "350",
           "Place": null,
-          "Score": 0.99603915
+          "Score": 0.99586725
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "viva 901 turn left heading 350",
+    },
+    "RmlContext": {
+      "Message": "viva 9081 turn left heading 350",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "35",
-          "Place": null,
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "908",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "viva 901 turn left heading 350",
       "CallSign": {
         "Airline": "viva",
@@ -75,50 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.035673767
+          "Score": 0.029490395
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019922461
+          "Score": 0.0016975178
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018340065
+          "Score": 0.001822473
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0021891608
+          "Score": 0.002208202
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": "350",
           "Place": null,
-          "Score": 0.99594015
+          "Score": 0.9957706
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "viva 9081 turn left heading 35o",
+    },
+    "RmlContext": {
+      "Message": "viva 901 turn left heading 350",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "35",
-          "Place": null,
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "901",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "viva 9081 turn left heading 35o",
       "CallSign": {
         "Airline": "viva",
@@ -126,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.0445493
+          "Score": 0.04272712
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018135717
+          "Score": 0.0015964584
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.001626663
+          "Score": 0.0015623904
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.001929821
+          "Score": 0.0019887856
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": "35o",
           "Place": null,
-          "Score": 0.9962655
+          "Score": 0.9961515
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "viva 9081 turn left heading 35o",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "908",
+          "Score": 1.0
         }
       }
     }

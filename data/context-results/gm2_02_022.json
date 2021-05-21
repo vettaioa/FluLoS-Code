@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "speedbird 563 bonjour squawk 5721",
-      "CallSign": {
-        "Airline": "speedbird",
-        "FlightNumber": "563"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 563 bonjour squawk 5721",
       "CallSign": {
         "Airline": "speedbird",
@@ -18,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.049333427
+          "Score": 0.023553984
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0016863288
+          "Score": 0.0013028093
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0020412714
+          "Score": 0.0016176903
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.014116375
+          "Code": "5721",
+          "Score": 0.9804724
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017682655
+          "Score": 0.001315006
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "speedbird 563 bonjour squawk 5721",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "572",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 563 bonjour squawk 572 won",
       "CallSign": {
         "Airline": "speedbird",
@@ -54,35 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.03928235
+          "Score": 0.02001323
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018467803
+          "Score": 0.001433432
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.00231802
+          "Score": 0.0018588416
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.011139816
+          "Code": "572",
+          "Score": 0.9736666
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001937616
+          "Score": 0.0014690043
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "speedbird 563 bonjour squawk 572 won",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "572",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 563 bonjour squawk 572 juan",
       "CallSign": {
         "Airline": "speedbird",
@@ -90,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.040601436
+          "Score": 0.020975541
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018597513
+          "Score": 0.0014469234
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0023112467
+          "Score": 0.0018625984
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.010683576
+          "Code": "572",
+          "Score": 0.97235894
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019511394
+          "Score": 0.0014827654
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "speedbird 563 bonjour squawk 572 juan",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "572",
+          "Score": 1.0
         }
       }
     }

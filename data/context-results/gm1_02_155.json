@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "speedbird 171 contact marseille 12585 good bye",
-      "CallSign": {
-        "Airline": "speedbird",
-        "FlightNumber": "171"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "12585",
-          "Place": "marseille",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 171 contact marseille 12585 good bye",
       "CallSign": {
         "Airline": "speedbird",
@@ -22,48 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.029354362
+          "Score": 0.024692439
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "marseille",
-          "Score": 0.9847981
+          "Score": 0.9843042
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017337252
+          "Score": 0.0016065922
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020814307
+          "Score": 0.0021380389
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002037007
+          "Score": 0.001718346
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "speedbird 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "tag 171 contact marseille 12585 good bye",
-      "CallSign": {
-        "Airline": "stage",
-        "FlightNumber": "171"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "12585",
-          "Place": "marseille",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "tag 171 contact marseille 12585 good bye",
       "CallSign": {
         "Airline": "tag",
@@ -71,48 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.026814448
+          "Score": 0.022290949
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "marseille",
-          "Score": 0.9843692
+          "Score": 0.9837716
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.001803138
+          "Score": 0.0016721097
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0021610826
+          "Score": 0.0022134813
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021116463
+          "Score": 0.0017810366
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "tag 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "stage",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "good 171 contact marseille 12585 good bye",
-      "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "12585",
-          "Place": "marseille",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "good 171 contact marseille 12585 good bye",
       "CallSign": {
         "Airline": "good",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.02233487
+          "Score": 0.018659346
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "marseille",
-          "Score": 0.9853385
+          "Score": 0.98446476
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017684721
+          "Score": 0.0016278672
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.00230274
+          "Score": 0.002385289
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020535805
+          "Score": 0.001733802
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "good 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "171",
+          "Score": 1.0
         }
       }
     }

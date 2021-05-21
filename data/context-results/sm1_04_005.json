@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 481 turn left to dinkelsbuhl",
       "CallSign": {
         "Airline": "sabena",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.04323769
+          "Score": 0.04611354
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019262538
+          "Score": 0.0016252798
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015918169
+          "Score": 0.0015379052
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0018795365
+          "Score": 0.0023538466
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "dinkelsbuhl",
-          "Score": 0.99370444
+          "Score": 0.9935943
         }
       }
+    },
+    "RmlContext": {
+      "Message": "sabena 481 turn left to dinkelsbuhl",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "481"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 481 turn left dinkelsbuhl",
       "CallSign": {
         "Airline": "sabena",
@@ -45,35 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.060977563
+          "Score": 0.0641465
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001881023
+          "Score": 0.001592627
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013872274
+          "Score": 0.001370684
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.001930955
+          "Score": 0.0024685964
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0028330411
+          "Score": 0.0023699405
         }
       }
+    },
+    "RmlContext": {
+      "Message": "sabena 481 turn left dinkelsbuhl",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "481"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 481 turn left to dinkelsbuhl now",
       "CallSign": {
         "Airline": "sabena",
@@ -81,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.032985732
+          "Score": 0.03296969
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019811473
+          "Score": 0.0016561601
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017944783
+          "Score": 0.0017347373
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0018525432
+          "Score": 0.0022617474
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "dinkelsbuhl",
-          "Score": 0.99381816
+          "Score": 0.99369943
         }
       }
+    },
+    "RmlContext": {
+      "Message": "sabena 481 turn left to dinkelsbuhl now",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "481"
+      },
+      "Intents": {}
     }
   }
 ]

@@ -1,6 +1,36 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "roger turn left heading 225 permit climb",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.019197289
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016850443
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0021585284
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0020389834
+        },
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "225",
+          "Place": null,
+          "Score": 0.9956253
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "roger turn left heading 225 permit climb",
       "CallSign": {
         "Airline": "aerogem",
@@ -8,105 +38,91 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        },
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "225",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "roger turn left heading 225 permit climb",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.020502124
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0019468941
-        },
-        "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.002414868
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0020322646
-        },
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "225",
-          "Place": null,
-          "Score": 0.99568844
+          "Level": "225",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "roger turn left heading 2252 permit climb",
-      "CallSign": {
-        "Airline": "aerogem",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        },
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "225",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "roger turn left heading 2252 permit climb",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.022800986
+          "Score": 0.022104068
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018475008
+          "Score": 0.0016168158
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0023428057
+          "Score": 0.0020845337
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0018928495
+          "Score": 0.0019046876
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0035765758
+          "Score": 0.0030114916
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "roger turn left heading 2252 permit climb",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "225",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "roger turn left heading 225 minute climb",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.018189022
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016731609
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0021573359
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002021014
+        },
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "225",
+          "Place": null,
+          "Score": 0.99568564
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "roger turn left heading 225 minute climb",
       "CallSign": {
         "Airline": "aerogem",
@@ -114,46 +130,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        },
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "225",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "roger turn left heading 225 minute climb",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.019314237
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0019308712
-        },
-        "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0024178983
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0020144254
-        },
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "225",
-          "Place": null,
-          "Score": 0.9957452
+          "Level": "225",
+          "Score": 1.0
         }
       }
     }

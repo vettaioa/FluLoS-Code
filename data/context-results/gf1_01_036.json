@@ -1,117 +1,147 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
       "Message": "saudia 155 bonjour squawk 5743",
       "CallSign": {
         "Airline": "saudia",
         "FlightNumber": "155"
       },
       "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
-      "Message": "saudia 155 bonjour squawk 5743",
-      "CallSign": null,
-      "Intents": {
         "None": {
-          "Score": 0.04800128
+          "Score": 0.023797644
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017574588
+          "Score": 0.0013638072
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.00205735
+          "Score": 0.0016596179
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.012428168
+          "Code": "5743",
+          "Score": 0.97720134
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018542012
+          "Score": 0.001391484
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "saudia 155 bonjour squawk 5743",
+      "CallSign": {
+        "Airline": "saudia",
+        "FlightNumber": "155"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "574",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "saudia 155 bonjour squawk 57 for3",
-      "CallSign": null,
+      "CallSign": {
+        "Airline": "saudia",
+        "FlightNumber": "155"
+      },
       "Intents": {
         "None": {
-          "Score": 0.039677136
+          "Score": 0.020299785
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018506962
+          "Score": 0.001437502
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0023159685
+          "Score": 0.0018599766
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.010999759
+          "Code": "57",
+          "Score": 0.9732774
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019416986
+          "Score": 0.0014731556
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "saudia 155 bonjour squawk 57 for3",
+      "CallSign": {
+        "Airline": "saudia",
+        "FlightNumber": "155"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "57",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
       "Message": "saudia 155 bonjour squawk 5743",
       "CallSign": {
         "Airline": "saudia",
         "FlightNumber": "155"
       },
       "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
-      "Message": "saudia 155 bonjour squawk 5743",
-      "CallSign": null,
-      "Intents": {
         "None": {
-          "Score": 0.04800128
+          "Score": 0.023797644
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017574588
+          "Score": 0.0013638072
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.00205735
+          "Score": 0.0016596179
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.012428168
+          "Code": "5743",
+          "Score": 0.97720134
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018542012
+          "Score": 0.001391484
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "saudia 155 bonjour squawk 5743",
+      "CallSign": {
+        "Airline": "saudia",
+        "FlightNumber": "155"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "574",
+          "Score": 1.0
         }
       }
     }

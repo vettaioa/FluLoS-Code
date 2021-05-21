@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "airfrans 356 good morning squawk 7536",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "356"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "airfrans 356 good morning squawk 7536",
       "CallSign": {
         "Airline": "airfrans",
@@ -18,44 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.03344887
+          "Score": 0.013208971
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019199265
+          "Score": 0.0013814331
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018315333
+          "Score": 0.0014038943
         },
         "Squawk": {
           "Code": "7536",
-          "Score": 0.9536092
+          "Score": 0.9868272
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017894488
+          "Score": 0.0012988092
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "airfrans 356 good morning squawk 75360",
+    },
+    "RmlContext": {
+      "Message": "airfrans 356 good morning squawk 7536",
       "CallSign": {
         "Airline": "airfrans",
         "FlightNumber": "356"
       },
       "Intents": {
-        "Squawk": null
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
+        }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "airfrans 356 good morning squawk 75360",
       "CallSign": {
         "Airline": "airfrans",
@@ -63,44 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.03344887
+          "Score": 0.013208971
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019199265
+          "Score": 0.0013814331
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018315333
+          "Score": 0.0014038943
         },
         "Squawk": {
           "Code": "75360",
-          "Score": 0.9536092
+          "Score": 0.9868272
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017894488
+          "Score": 0.0012988092
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
+    },
+    "RmlContext": {
       "Message": "airfrans 356 good morning squawk 75360",
       "CallSign": {
         "Airline": "airfrans",
         "FlightNumber": "356"
       },
       "Intents": {
-        "Squawk": null
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
+        }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "airfrans 356 good morning squawk 75360",
       "CallSign": {
         "Airline": "airfrans",
@@ -108,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.03344887
+          "Score": 0.013208971
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019199265
+          "Score": 0.0013814331
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018315333
+          "Score": 0.0014038943
         },
         "Squawk": {
           "Code": "75360",
-          "Score": 0.9536092
+          "Score": 0.9868272
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017894488
+          "Score": 0.0012988092
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "airfrans 356 good morning squawk 75360",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }

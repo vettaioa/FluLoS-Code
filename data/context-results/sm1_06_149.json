@@ -1,144 +1,138 @@
 [
   {
-    "RmlResult": {
-      "Message": "sabena 826A turn left by 10 degrees",
-      "CallSign": {
-        "Airline": "shabair",
-        "FlightNumber": "826"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": null,
-          "Degrees": "10",
-          "Heading": null,
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 826A turn left by 10 degrees",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.03037109
+          "Score": 0.026980167
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017413832
+          "Score": 0.0015022517
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0016128332
+          "Score": 0.0014971994
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0017041285
+          "Score": 0.002030033
         },
         "Turn": {
           "Direction": "left",
           "Degrees": "10",
           "Heading": null,
           "Place": null,
-          "Score": 0.9975021
+          "Score": 0.99739057
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 826A turn left by 10 degrees",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826A"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "10",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "sabena 826A turn left by 10 degrees now",
-      "CallSign": {
-        "Airline": "shabair",
-        "FlightNumber": "826"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": null,
-          "Degrees": "10",
-          "Heading": null,
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 826A turn left by 10 degrees now",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.023917885
+          "Score": 0.019843828
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017987317
+          "Score": 0.0015348956
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018085922
+          "Score": 0.001687751
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0016926931
+          "Score": 0.0019707596
         },
         "Turn": {
           "Direction": "left",
           "Degrees": "10",
           "Heading": null,
           "Place": null,
-          "Score": 0.9974943
+          "Score": 0.99737847
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 826A turn left by 10 degrees now",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826A"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "10",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "sabena 826A turn left by 10 degrees in",
-      "CallSign": {
-        "Airline": "shabair",
-        "FlightNumber": "826"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": null,
-          "Degrees": "10",
-          "Heading": null,
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 826A turn left by 10 degrees in",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.024936005
+          "Score": 0.022102071
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001797863
+          "Score": 0.0015434976
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017855621
+          "Score": 0.0016358602
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0016926633
+          "Score": 0.0019849828
         },
         "Turn": {
           "Direction": "left",
           "Degrees": "10",
           "Heading": null,
           "Place": null,
-          "Score": 0.9975335
+          "Score": 0.99743265
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 826A turn left by 10 degrees in",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826A"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "10",
+          "Score": 1.0
         }
       }
     }

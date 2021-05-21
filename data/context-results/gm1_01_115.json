@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 323 turn right to torino",
       "CallSign": {
         "Airline": "alitalia",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.026510479
+          "Score": 0.020311989
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0025455302
+          "Score": 0.0021374682
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017771343
+          "Score": 0.0019549213
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0029557687
+          "Score": 0.002940199
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": null,
           "Place": "torino",
-          "Score": 0.99373144
+          "Score": 0.9933394
         }
       }
+    },
+    "RmlContext": {
+      "Message": "alitalia 323 turn right to torino",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "323"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 3 to 3 turn right to torino",
       "CallSign": {
         "Airline": "alitalia",
@@ -45,35 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.014794243
+          "Score": 0.011394917
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0026881106
+          "Score": 0.0022402396
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.00216988
+          "Score": 0.002336145
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002878904
+          "Score": 0.002766419
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": null,
           "Place": "torino",
-          "Score": 0.99408525
+          "Score": 0.99376154
         }
       }
+    },
+    "RmlContext": {
+      "Message": "alitalia 3 to 3 turn right to torino",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": ""
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 323 turn right torino",
       "CallSign": {
         "Airline": "alitalia",
@@ -81,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.036772087
+          "Score": 0.02786958
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0024837723
+          "Score": 0.0020932262
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015552777
+          "Score": 0.0017479204
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0030370872
+          "Score": 0.0030821941
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0028444955
+          "Score": 0.002277849
         }
       }
+    },
+    "RmlContext": {
+      "Message": "alitalia 323 turn right torino",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "323"
+      },
+      "Intents": {}
     }
   }
 ]

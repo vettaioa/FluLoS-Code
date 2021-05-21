@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "europa 381 descend to flight level 280",
-      "CallSign": {
-        "Airline": "europa",
-        "FlightNumber": "381"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "europa 381 descend to flight level 280",
       "CallSign": {
         "Airline": "europa",
@@ -22,34 +8,81 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.031702388
+          "Score": 0.019064505
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019043371
+          "Score": 0.0015605841
         },
         "FlightLevel": {
           "Instruction": "Descend",
           "Level": "280",
-          "Score": 0.9954651
+          "Score": 0.99755514
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019468978
+          "Score": 0.0018170133
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019746304
+          "Score": 0.0015877491
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "europa 381 descend to flight level 280",
+      "CallSign": {
+        "Airline": "europa",
+        "FlightNumber": "381"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "280",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "europa 381 descend flight level 280",
+      "CallSign": {
+        "Airline": "europa",
+        "FlightNumber": "381"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.025343787
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0015319117
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "280",
+          "Score": 0.9934597
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0018914762
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0015346381
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "europa 381 descend flight level 280",
       "CallSign": {
         "Airline": "europa",
@@ -62,57 +95,10 @@
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
-      "Message": "europa 381 descend flight level 280",
-      "CallSign": {
-        "Airline": "europa",
-        "FlightNumber": "381"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.042512614
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0018637533
-        },
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "280",
-          "Score": 0.98815364
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.00199195
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0019187203
-        }
-      }
     }
   },
   {
-    "RmlResult": {
-      "Message": "europa 381 descend to flight level 28o",
-      "CallSign": {
-        "Airline": "europa",
-        "FlightNumber": "381"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "europa 381 descend to flight level 28o",
       "CallSign": {
         "Airline": "europa",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.03832699
+          "Score": 0.022777248
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018534578
+          "Score": 0.0015227542
         },
         "FlightLevel": {
           "Instruction": "Descend",
           "Level": "28o",
-          "Score": 0.9953305
+          "Score": 0.99753875
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0018741945
+          "Score": 0.0017442278
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019060959
+          "Score": 0.0015266475
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "europa 381 descend to flight level 28o",
+      "CallSign": {
+        "Airline": "europa",
+        "FlightNumber": "381"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "28",
+          "Score": 1.0
         }
       }
     }

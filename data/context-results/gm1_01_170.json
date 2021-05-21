@@ -1,6 +1,36 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "so 693 bonjour maintain flight level 300",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.012241709
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0014955469
+        },
+        "FlightLevel": {
+          "Instruction": "Maintain",
+          "Level": "300",
+          "Score": 0.99524724
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0024005664
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0015411823
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "so 693 bonjour maintain flight level 300",
       "CallSign": {
         "Airline": "",
@@ -8,94 +38,94 @@
       },
       "Intents": {
         "FlightLevel": {
+          "Instruction": null,
+          "Level": "693",
+          "Score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "swiss 693 bonjour maintain flight level 300",
+      "CallSign": {
+        "Airline": "swiss",
+        "FlightNumber": "693"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.011670408
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0014863459
+        },
+        "FlightLevel": {
           "Instruction": "Maintain",
+          "Level": "300",
+          "Score": 0.99504817
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002563607
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0015319074
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "swiss 693 bonjour maintain flight level 300",
+      "CallSign": {
+        "Airline": "swiss",
+        "FlightNumber": "693"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
           "Level": "300",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
-      "Message": "so 693 bonjour maintain flight level 300",
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "S693 bonjour maintain flight level 300",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.02192164
+          "Score": 0.014638767
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018627733
+          "Score": 0.0013451639
         },
         "FlightLevel": {
           "Instruction": "Maintain",
           "Level": "300",
-          "Score": 0.99137545
+          "Score": 0.9954452
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002585328
+          "Score": 0.002341546
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019373574
-        }
-      }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "swiss 693 bonjour maintain flight level 300",
-      "CallSign": {
-        "Airline": "swiss",
-        "FlightNumber": "693"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Maintain",
-          "Level": "300",
-          "Score": 1.0
+          "Score": 0.001353842
         }
       }
     },
-    "LuisResult": {
-      "Message": "swiss 693 bonjour maintain flight level 300",
-      "CallSign": {
-        "Airline": "swiss",
-        "FlightNumber": "693"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.023563612
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0018863737
-        },
-        "FlightLevel": {
-          "Instruction": "Maintain",
-          "Level": "300",
-          "Score": 0.9910434
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0025844085
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0019621395
-        }
-      }
-    }
-  },
-  {
-    "RmlResult": {
+    "RmlContext": {
       "Message": "S693 bonjour maintain flight level 300",
       "CallSign": {
         "Airline": "",
@@ -103,39 +133,9 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": "Maintain",
+          "Instruction": null,
           "Level": "300",
           "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "S693 bonjour maintain flight level 300",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.02759457
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0016692594
-        },
-        "FlightLevel": {
-          "Instruction": "Maintain",
-          "Level": "300",
-          "Score": 0.9914612
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0025079136
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0017231986
         }
       }
     }

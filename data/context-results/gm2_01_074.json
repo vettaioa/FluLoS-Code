@@ -1,22 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "german air force 4901 turn right heading 250",
-      "CallSign": {
-        "Airline": "german air force",
-        "FlightNumber": "4901"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": "right",
-          "Degrees": null,
-          "Heading": "250",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "german air force 4901 turn right heading 250",
       "CallSign": {
         "Airline": "german air force",
@@ -24,50 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01962841
+          "Score": 0.01806646
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002712151
+          "Score": 0.0023185385
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0022815636
+          "Score": 0.0021197018
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022832179
+          "Score": 0.0021809193
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": "250",
           "Place": null,
-          "Score": 0.995641
+          "Score": 0.9955888
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "german air force 4901 turn right heading 250",
+      "CallSign": {
+        "Airline": "german air force",
+        "FlightNumber": "4901"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "250",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "german air force for 901 turn right heading 250",
-      "CallSign": {
-        "Airline": "german air force",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": "right",
-          "Degrees": null,
-          "Heading": "250",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "german air force for 901 turn right heading 250",
       "CallSign": {
         "Airline": "german air force for",
@@ -75,35 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.015110338
+          "Score": 0.014051661
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002780147
+          "Score": 0.002371306
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024699434
+          "Score": 0.0022688701
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022432776
+          "Score": 0.0021101797
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": "250",
           "Place": null,
-          "Score": 0.9957915
+          "Score": 0.9957587
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "german air force for 901 turn right heading 250",
+      "CallSign": {
+        "Airline": "german air force",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "901",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "german air force 4901 turn right heading to 50",
       "CallSign": {
         "Airline": "german air force",
@@ -111,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.014702679
+          "Score": 0.013740549
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0027598839
+          "Score": 0.0023557926
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024927338
+          "Score": 0.0022818453
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002230509
+          "Score": 0.0020992875
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0036596325
+          "Score": 0.0031009235
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "german air force 4901 turn right heading to 50",
+      "CallSign": {
+        "Airline": "german air force",
+        "FlightNumber": "4901"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "50",
+          "Score": 1.0
         }
       }
     }

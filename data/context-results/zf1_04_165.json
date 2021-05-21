@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "turkair 925 good afternoon squawk 1005",
-      "CallSign": {
-        "Airline": "turkish",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "turkair 925 good afternoon squawk 1005",
       "CallSign": {
         "Airline": "turkair",
@@ -18,77 +8,94 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.04431567
+          "Score": 0.020423329
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002074218
+          "Score": 0.0015248694
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.001743506
+          "Score": 0.0014428812
         },
         "Squawk": {
           "Code": "1005",
-          "Score": 0.94557464
+          "Score": 0.9807815
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019800386
+          "Score": 0.0014702587
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "turkair 925 good afternoon squawk 1005",
+      "CallSign": {
+        "Airline": "turkish",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "925",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "turkair 9 to 5 good afternoon squawk 1005",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.01256627
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0015912014
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.001733449
+        },
+        "Squawk": {
+          "Code": "1005",
+          "Score": 0.9790162
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0015633204
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "turkair 9 to 5 good afternoon squawk 1005",
       "CallSign": {
         "Airline": "turkish",
         "FlightNumber": ""
       },
       "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
-      "Message": "turkair 9 to 5 good afternoon squawk 1005",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.026993467
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0021765516
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0021576434
-        },
-        "Squawk": {
-          "Code": "1005",
-          "Score": 0.94274855
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0020843786
+          "Level": "100",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "turkair 925 good afternoon squawk 1o 05",
       "CallSign": {
         "Airline": "turkair",
@@ -96,28 +103,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.037141487
+          "Score": 0.01632909
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020735592
+          "Score": 0.0015042337
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018706213
+          "Score": 0.0015050459
         },
         "Squawk": {
           "Code": "1o",
-          "Score": 0.95190316
+          "Score": 0.9833366
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001938446
+          "Score": 0.0014301931
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "turkair 925 good afternoon squawk 1o 05",
+      "CallSign": {
+        "Airline": "turkish",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "925",
+          "Score": 1.0
         }
       }
     }

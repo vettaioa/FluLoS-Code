@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "alitalia 4 to 6 good morning squawk 2763",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 4 to 6 good morning squawk 2763",
       "CallSign": {
         "Airline": "alitalia",
@@ -18,44 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.00804158
+          "Score": 0.003395829
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.00256248
+          "Score": 0.0018680916
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019377362
+          "Score": 0.0017760872
         },
         "Squawk": {
           "Code": "2763",
-          "Score": 0.95520693
+          "Score": 0.9822328
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002018712
+          "Score": 0.0014833467
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 4 to 6 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "alitalia 426 good morning squawk 2763",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "426"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 426 good morning squawk 2763",
       "CallSign": {
         "Airline": "alitalia",
@@ -63,44 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.017917978
+          "Score": 0.008134115
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002411078
+          "Score": 0.0017782396
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0016274155
+          "Score": 0.0015499184
         },
         "Squawk": {
           "Code": "2763",
-          "Score": 0.95172477
+          "Score": 0.98129994
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001991517
+          "Score": 0.0014678637
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 426 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "426"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "alitalia 4 too 6 good morning squawk 2763",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 4 too 6 good morning squawk 2763",
       "CallSign": {
         "Airline": "alitalia",
@@ -108,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.009205976
+          "Score": 0.0039337045
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0025820078
+          "Score": 0.0018884888
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019439897
+          "Score": 0.0017885804
         },
         "Squawk": {
           "Code": "2763",
-          "Score": 0.9527076
+          "Score": 0.98107535
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002030096
+          "Score": 0.0014963829
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 4 too 6 good morning squawk 2763",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
         }
       }
     }

@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "hapag lloyd 195 contact marseille 125.85 au revoir",
-      "CallSign": {
-        "Airline": "hapag lloyd",
-        "FlightNumber": "195"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "125.85",
-          "Place": "marseille",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "hapag lloyd 195 contact marseille 125.85 au revoir",
       "CallSign": {
         "Airline": "hapag lloyd",
@@ -22,48 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01490761
+          "Score": 0.01237041
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "marseille",
-          "Score": 0.99935365
+          "Score": 0.9994015
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024603093
+          "Score": 0.002187803
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.001893494
+          "Score": 0.0018158726
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002629354
+          "Score": 0.0022300985
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "hapag lloyd 195 contact marseille 125.850",
+    },
+    "RmlContext": {
+      "Message": "hapag lloyd 195 contact marseille 125.85 au revoir",
       "CallSign": {
         "Airline": "hapag lloyd",
         "FlightNumber": "195"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "125.85",
-          "Place": "marseille",
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "hapag lloyd 195 contact marseille 125.850",
       "CallSign": {
         "Airline": "hapag lloyd",
@@ -71,48 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.020292096
+          "Score": 0.016703255
         },
         "Contact": {
           "Frequency": "125.850",
           "Place": "marseille",
-          "Score": 0.9993562
+          "Score": 0.99941105
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0020819092
+          "Score": 0.0018825791
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019013265
+          "Score": 0.0018692216
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0025397977
+          "Score": 0.0021391923
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "hapag lloyd 195 contact marseille 125.85",
+    },
+    "RmlContext": {
+      "Message": "hapag lloyd 195 contact marseille 125.850",
       "CallSign": {
         "Airline": "hapag lloyd",
         "FlightNumber": "195"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "125.85",
-          "Place": "marseille",
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "hapag lloyd 195 contact marseille 125.85",
       "CallSign": {
         "Airline": "hapag lloyd",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.018423747
+          "Score": 0.015316262
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "marseille",
-          "Score": 0.99936265
+          "Score": 0.9994177
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0020345664
+          "Score": 0.0018411723
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.00186165
+          "Score": 0.0018320172
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0024960572
+          "Score": 0.0021076938
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "hapag lloyd 195 contact marseille 125.85",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "195"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }

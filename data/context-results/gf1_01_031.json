@@ -1,6 +1,39 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "speedbird 580 descend to flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "580"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.022315037
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0015121027
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "210",
+          "Score": 0.9975758
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0017271348
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0015148277
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "speedbird 580 descend to flight level 210",
       "CallSign": {
         "Airline": "speedbird",
@@ -9,96 +42,96 @@
       "Intents": {
         "FlightLevel": {
           "Instruction": "Descend",
-          "Level": null,
+          "Level": "210",
           "Score": 1.0
         }
       }
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "speedbird 70 descend to flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "70"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.020724552
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0014743403
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "210",
+          "Score": 0.99770427
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.001666924
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0014729947
+        }
+      }
     },
-    "LuisResult": {
-      "Message": "speedbird 580 descend to flight level 210",
+    "RmlContext": {
+      "Message": "speedbird 70 descend to flight level 210",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "70"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "210",
+          "Score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "speedbird 580 descend flight level 210",
       "CallSign": {
         "Airline": "speedbird",
         "FlightNumber": "580"
       },
       "Intents": {
         "None": {
-          "Score": 0.03763549
+          "Score": 0.029876728
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018401884
+          "Score": 0.0014853434
         },
         "FlightLevel": {
           "Instruction": "Descend",
           "Level": "210",
-          "Score": 0.9954001
+          "Score": 0.9935187
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0018580406
+          "Score": 0.0017990809
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018917378
-        }
-      }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "speedbird 70 descend to flight level 210",
-      "CallSign": {
-        "Airline": "speedbird",
-        "FlightNumber": "70"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": null,
-          "Score": 1.0
+          "Score": 0.0014619423
         }
       }
     },
-    "LuisResult": {
-      "Message": "speedbird 70 descend to flight level 210",
-      "CallSign": {
-        "Airline": "speedbird",
-        "FlightNumber": "70"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.035242196
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0017931627
-        },
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "210",
-          "Score": 0.9956417
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0018009829
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0018408957
-        }
-      }
-    }
-  },
-  {
-    "RmlResult": {
+    "RmlContext": {
       "Message": "speedbird 580 descend flight level 210",
       "CallSign": {
         "Airline": "speedbird",
@@ -109,39 +142,6 @@
           "Instruction": "Descend",
           "Level": "210",
           "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "speedbird 580 descend flight level 210",
-      "CallSign": {
-        "Airline": "speedbird",
-        "FlightNumber": "580"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.050876558
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.001802605
-        },
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "210",
-          "Score": 0.9879826
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0019025137
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0018357922
         }
       }
     }

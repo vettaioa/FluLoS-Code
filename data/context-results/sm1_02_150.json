@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 801 turn right to trasadingen",
       "CallSign": {
         "Airline": "sabena",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.070704
+          "Score": 0.059466116
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019424172
+          "Score": 0.001649204
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0016879176
+          "Score": 0.0015647584
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019555097
+          "Score": 0.0023733343
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": null,
           "Place": "trasadingen",
-          "Score": 0.99338794
+          "Score": 0.9930306
         }
       }
+    },
+    "RmlContext": {
+      "Message": "sabena 801 turn right to trasadingen",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "801"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 801 turn right trasadingen",
       "CallSign": {
         "Airline": "sabena",
@@ -45,35 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.09994217
+          "Score": 0.083126955
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018988367
+          "Score": 0.0016177057
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0014695745
+          "Score": 0.0013935012
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020116896
+          "Score": 0.0024915265
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0026955167
+          "Score": 0.0021751064
         }
       }
+    },
+    "RmlContext": {
+      "Message": "sabena 801 turn right trasadingen",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "801"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 801 turn right to trasadingen now",
       "CallSign": {
         "Airline": "sabena",
@@ -81,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.052990906
+          "Score": 0.041761246
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019987852
+          "Score": 0.0016796967
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019016385
+          "Score": 0.0017702093
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.001926478
+          "Score": 0.002280515
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": null,
           "Place": "trasadingen",
-          "Score": 0.99351186
+          "Score": 0.99315614
         }
       }
+    },
+    "RmlContext": {
+      "Message": "sabena 801 turn right to trasadingen now",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "801"
+      },
+      "Intents": {}
     }
   }
 ]

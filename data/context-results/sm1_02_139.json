@@ -1,22 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "alitalia 157 for shortcut turn right heading 140",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "157"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": "right",
-          "Degrees": null,
-          "Heading": "140",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 157 for shortcut turn right heading 140",
       "CallSign": {
         "Airline": "alitalia",
@@ -24,50 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01486222
+          "Score": 0.011823452
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002560681
+          "Score": 0.0021448499
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002130434
+          "Score": 0.0022402802
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0026988245
+          "Score": 0.0026082727
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": "140",
           "Place": null,
-          "Score": 0.9957065
+          "Score": 0.99551326
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "alitalia 157 for shortcut turn right heading 1 for0",
+    },
+    "RmlContext": {
+      "Message": "alitalia 157 for shortcut turn right heading 140",
       "CallSign": {
         "Airline": "alitalia",
         "FlightNumber": "157"
       },
       "Intents": {
-        "Turn": {
-          "Direction": "right",
-          "Degrees": null,
-          "Heading": "1",
-          "Place": null,
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "140",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "alitalia 157 for shortcut turn right heading 1 for0",
       "CallSign": {
         "Airline": "alitalia",
@@ -75,50 +57,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.013872652
+          "Score": 0.011222669
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0025611192
+          "Score": 0.0021526143
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0022243857
+          "Score": 0.0023341684
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0025740874
+          "Score": 0.0024559875
         },
         "Turn": {
-          "Direction": "right",
+          "Direction": null,
           "Degrees": null,
-          "Heading": "1",
+          "Heading": null,
           "Place": null,
-          "Score": 0.9957395
-        }
-      }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "alitalia 1574 shortcut turn right heading 140",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "1574"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": "right",
-          "Degrees": null,
-          "Heading": "140",
-          "Place": null,
-          "Score": 1.0
+          "Score": 0.002968144
         }
       }
     },
-    "LuisResult": {
+    "RmlContext": {
+      "Message": "alitalia 157 for shortcut turn right heading 1 for0",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "157"
+      },
+      "Intents": {}
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "alitalia 1574 shortcut turn right heading 140",
       "CallSign": {
         "Airline": "alitalia",
@@ -126,28 +100,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.019217025
+          "Score": 0.01545332
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0024435574
+          "Score": 0.0020693731
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018317193
+          "Score": 0.001986262
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0026483138
+          "Score": 0.0025989588
         },
         "Turn": {
           "Direction": "right",
           "Degrees": null,
           "Heading": "140",
           "Place": null,
-          "Score": 0.9956313
+          "Score": 0.99540365
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 1574 shortcut turn right heading 140",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "1574"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "140",
+          "Score": 1.0
         }
       }
     }

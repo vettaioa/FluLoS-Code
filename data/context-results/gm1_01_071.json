@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "klm 376 squawk 5766",
-      "CallSign": {
-        "Airline": "klm",
-        "FlightNumber": "376"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 376 squawk 5766",
       "CallSign": {
         "Airline": "klm",
@@ -18,44 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.10161454
+          "Score": 0.04825901
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018258584
+          "Score": 0.0014062237
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013506322
+          "Score": 0.0011765244
         },
         "Squawk": {
           "Code": "5766",
-          "Score": 0.9376991
+          "Score": 0.97875047
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019337045
+          "Score": 0.0014227368
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "klm 376 squawk 5766",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "576",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "lm 376 squawk 5766",
-      "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lm 376 squawk 5766",
       "CallSign": {
         "Airline": "lm",
@@ -63,70 +57,88 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.101093985
+          "Score": 0.04781017
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018235126
+          "Score": 0.0014034016
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013490391
+          "Score": 0.0011740798
         },
         "Squawk": {
           "Code": "5766",
-          "Score": 0.9383481
+          "Score": 0.97902656
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019312054
+          "Score": 0.0014198667
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "lm 376 squawk 5766",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "376",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "l 376 squawk 5766",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04316451
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0013729774
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.001147738
+        },
+        "Squawk": {
+          "Code": "5766",
+          "Score": 0.9818198
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0013889272
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "l 376 squawk 5766",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
-      "Message": "l 376 squawk 5766",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.09556701
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0017981117
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0013317764
-        },
-        "Squawk": {
-          "Code": "5766",
-          "Score": 0.9450298
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0019041464
+          "Level": "376",
+          "Score": 1.0
         }
       }
     }

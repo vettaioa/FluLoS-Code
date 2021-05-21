@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "tag lloyd 171 turn left to bilsa",
       "CallSign": {
         "Airline": "tag lloyd",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.019839637
+          "Score": 0.01863121
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019614042
+          "Score": 0.0017373002
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019252878
+          "Score": 0.0017602063
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0018664747
+          "Score": 0.0018853684
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "bilsa",
-          "Score": 0.99553275
+          "Score": 0.9953913
         }
       }
+    },
+    "RmlContext": {
+      "Message": "tag lloyd 171 turn left to bilsa",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "171"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "bag lloyd 171 turn left to bilsa",
       "CallSign": {
         "Airline": "bag lloyd",
@@ -45,35 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01962001
+          "Score": 0.018447975
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019589367
+          "Score": 0.0017357767
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019228418
+          "Score": 0.0017575719
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.001862133
+          "Score": 0.0018810831
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "bilsa",
-          "Score": 0.99554676
+          "Score": 0.99540627
         }
       }
+    },
+    "RmlContext": {
+      "Message": "bag lloyd 171 turn left to bilsa",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "171"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "tag heuer 171 turn left to bilsa",
       "CallSign": {
         "Airline": "tag heuer",
@@ -81,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.035226125
+          "Score": 0.03160375
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018854574
+          "Score": 0.0016451079
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019246242
+          "Score": 0.001812237
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020428821
+          "Score": 0.0020591735
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": null,
           "Place": "bilsa",
-          "Score": 0.9950949
+          "Score": 0.99490494
         }
       }
+    },
+    "RmlContext": {
+      "Message": "tag heuer 171 turn left to bilsa",
+      "CallSign": {
+        "Airline": "tag u-s",
+        "FlightNumber": "171"
+      },
+      "Intents": {}
     }
   }
 ]

@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "bonjour swiss air 659 cleared st prex willisau flight level 300",
       "CallSign": {
         "Airline": "swiss air",
@@ -9,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.011061155
+          "Score": 0.0072740237
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002307672
+          "Score": 0.0018910696
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "300",
-          "Score": 0.96419156
+          "Score": 0.97098607
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0023223415
+          "Score": 0.0022116161
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019668045
+          "Score": 0.0016205809
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "bonjour swiss air 659 cleared st prex willisau flight level 300",
+      "CallSign": {
+        "Airline": "bonair",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "659",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "bonjour swiss 659 cleared st prex willisau flight level 300",
       "CallSign": {
         "Airline": "swiss",
@@ -45,61 +57,88 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01848027
+          "Score": 0.011633444
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019038295
+          "Score": 0.0015541797
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "300",
-          "Score": 0.96256137
+          "Score": 0.9699199
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022813133
+          "Score": 0.0022715179
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019491848
+          "Score": 0.0015878301
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "bonjour swiss 659 cleared st prex willisau flight level 300",
+      "CallSign": {
+        "Airline": "bonair",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "659",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "bonjour 659 cleared st prex willisau flight level 300",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.020717027
+          "Score": 0.0147191975
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018335877
+          "Score": 0.0015311441
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": "300",
-          "Score": 0.96137583
+          "Score": 0.9691767
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0023007523
+          "Score": 0.0021827107
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018821168
+          "Score": 0.0015574886
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "bonjour 659 cleared st prex willisau flight level 300",
+      "CallSign": {
+        "Airline": "bonair",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "659",
+          "Score": 1.0
         }
       }
     }

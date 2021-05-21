@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "belgian air force 34 bonjour",
       "CallSign": {
         "Airline": "belgian air force",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.048800927
+          "Score": 0.041604444
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0025470746
+          "Score": 0.0021770126
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0024354728
+          "Score": 0.0021667224
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0033724774
+          "Score": 0.0034029305
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002063961
+          "Score": 0.0017148918
         }
       }
+    },
+    "RmlContext": {
+      "Message": "belgian air force 34 bonjour",
+      "CallSign": {
+        "Airline": "belgian airforce",
+        "FlightNumber": "34"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "belgian air force 334 bonjour",
       "CallSign": {
         "Airline": "belgian air force",
@@ -45,61 +51,82 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.052930374
+          "Score": 0.044972703
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0025273098
+          "Score": 0.0021587198
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0023897665
+          "Score": 0.0021383448
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.003317171
+          "Score": 0.003354724
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020851062
+          "Score": 0.0017307193
         }
       }
+    },
+    "RmlContext": {
+      "Message": "belgian air force 334 bonjour",
+      "CallSign": {
+        "Airline": "belgian airforce",
+        "FlightNumber": "334"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "belgian air force a 34 bonjour",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.03753467
+          "Score": 0.032004658
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0026325705
+          "Score": 0.0022386133
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0027547549
+          "Score": 0.0024116023
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0033079418
+          "Score": 0.0032717923
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021267503
+          "Score": 0.0017756113
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "belgian air force a 34 bonjour",
+      "CallSign": {
+        "Airline": "belgian airforce",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "34",
+          "Score": 1.0
         }
       }
     }

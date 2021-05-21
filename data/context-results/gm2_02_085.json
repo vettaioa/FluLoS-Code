@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "belgian air force 334 contact reims 134.4 if",
       "CallSign": {
         "Airline": "belgian air force",
@@ -9,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.018915895
+          "Score": 0.015236927
         },
         "Contact": {
           "Frequency": "134.4",
           "Place": "reims",
-          "Score": 0.99917233
+          "Score": 0.99921685
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0026819203
+          "Score": 0.0024025051
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022528642
+          "Score": 0.0020688975
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0023440663
+          "Score": 0.0019819506
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "belgian air force 334 contact reims 134.4 if",
+      "CallSign": {
+        "Airline": "belgian airforce",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "belgian air force 334 contact reims 134.4 revoir",
       "CallSign": {
         "Airline": "belgian air force",
@@ -45,35 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.020907918
+          "Score": 0.016850468
         },
         "Contact": {
           "Frequency": "134.4",
           "Place": "reims",
-          "Score": 0.9991509
+          "Score": 0.99919516
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0027122933
+          "Score": 0.0024321282
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0022727335
+          "Score": 0.0020963396
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0023732902
+          "Score": 0.0020043151
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "belgian air force 334 contact reims 134.4 revoir",
+      "CallSign": {
+        "Airline": "belgian airforce",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "belgian air force 334 contact reims 134.4 iveagh",
       "CallSign": {
         "Airline": "belgian air force",
@@ -81,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.023012377
+          "Score": 0.018814968
         },
         "Contact": {
           "Frequency": "134.4",
           "Place": "reims",
-          "Score": 0.99915755
+          "Score": 0.99920803
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0026064797
+          "Score": 0.0023355032
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0021700375
+          "Score": 0.0019958527
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0022661379
+          "Score": 0.0019153253
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "belgian air force 334 contact reims 134.4 iveagh",
+      "CallSign": {
+        "Airline": "belgian airforce",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
+          "Score": 1.0
         }
       }
     }

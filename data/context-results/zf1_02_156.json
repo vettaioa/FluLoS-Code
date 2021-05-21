@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "jetaviation 701 squawk 2732",
-      "CallSign": {
-        "Airline": "euraviation",
-        "FlightNumber": "701"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "jetaviation 701 squawk 2732",
       "CallSign": {
         "Airline": "jetaviation",
@@ -18,44 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.104567386
+          "Score": 0.045145124
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017273531
+          "Score": 0.0013105903
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0012771429
+          "Score": 0.0010853432
         },
         "Squawk": {
           "Code": "2732",
-          "Score": 0.9522028
+          "Score": 0.98483753
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001814749
+          "Score": 0.0013077325
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "jetaviation 701 squawk 2732",
+      "CallSign": {
+        "Airline": "euraviation",
+        "FlightNumber": "701"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "273",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "jetaviation 71 squawk 2732",
-      "CallSign": {
-        "Airline": "euraviation",
-        "FlightNumber": "71"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "jetaviation 71 squawk 2732",
       "CallSign": {
         "Airline": "jetaviation",
@@ -63,35 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.101142734
+          "Score": 0.042229526
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017077809
+          "Score": 0.0012884774
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0012635416
+          "Score": 0.0010659872
         },
         "Squawk": {
           "Code": "2732",
-          "Score": 0.95610124
+          "Score": 0.98635674
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017933936
+          "Score": 0.0012847106
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "jetaviation 71 squawk 2732",
+      "CallSign": {
+        "Airline": "euraviation",
+        "FlightNumber": "71"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "273",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "jetaviation 701 squawk 273 too",
       "CallSign": {
         "Airline": "jetaviation",
@@ -99,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.076383136
+          "Score": 0.036472384
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001911599
+          "Score": 0.0014681318
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015754825
+          "Score": 0.0013504699
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.011834
+          "Code": "273",
+          "Score": 0.97651416
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020115112
+          "Score": 0.001493402
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "jetaviation 701 squawk 273 too",
+      "CallSign": {
+        "Airline": "euraviation",
+        "FlightNumber": "701"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "273",
+          "Score": 1.0
         }
       }
     }

@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "alitalia 416 good afternoon squawk 7533",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "416"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 416 good afternoon squawk 7533",
       "CallSign": {
         "Airline": "alitalia",
@@ -18,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01933249
+          "Score": 0.008172358
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0024262902
+          "Score": 0.0017719101
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015955429
+          "Score": 0.0015219674
         },
         "Squawk": {
           "Code": "7533",
-          "Score": 0.9506627
+          "Score": 0.9818781
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020144081
+          "Score": 0.0014701093
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 416 good afternoon squawk 7533",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "416"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 416 good afternoon squawk 753",
       "CallSign": {
         "Airline": "alitalia",
@@ -54,44 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01945044
+          "Score": 0.008742174
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0024723907
+          "Score": 0.0018252751
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0016916805
+          "Score": 0.0016124704
         },
         "Squawk": {
           "Code": "753",
-          "Score": 0.94145817
+          "Score": 0.9776407
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021287603
+          "Score": 0.0015766639
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "alitalia 416 good afternoon squawk 75338",
+    },
+    "RmlContext": {
+      "Message": "alitalia 416 good afternoon squawk 753",
       "CallSign": {
         "Airline": "alitalia",
         "FlightNumber": "416"
       },
       "Intents": {
-        "Squawk": null
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
+        }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "alitalia 416 good afternoon squawk 75338",
       "CallSign": {
         "Airline": "alitalia",
@@ -99,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01933249
+          "Score": 0.008172358
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0024262902
+          "Score": 0.0017719101
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015955429
+          "Score": 0.0015219674
         },
         "Squawk": {
           "Code": "75338",
-          "Score": 0.9506627
+          "Score": 0.9818781
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020144081
+          "Score": 0.0014701093
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 416 good afternoon squawk 75338",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "416"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }

@@ -1,117 +1,138 @@
 [
   {
-    "RmlResult": {
-      "Message": "sabena 826A good morning squawk 7531",
-      "CallSign": {
-        "Airline": "shabair",
-        "FlightNumber": "826"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 826A good morning squawk 7531",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.028773252
+          "Score": 0.010877955
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019042336
+          "Score": 0.0013237408
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015309814
+          "Score": 0.0011701144
         },
         "Squawk": {
           "Code": "7531",
-          "Score": 0.96885747
+          "Score": 0.9911348
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0016279495
+          "Score": 0.001158936
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 826A good morning squawk 7531",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826A"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 826A good morning squawk 753 won",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.027030619
+          "Score": 0.011928504
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.00209574
+          "Score": 0.0015055534
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018488527
+          "Score": 0.0014609792
         },
         "Squawk": {
           "Code": "753",
-          "Score": 0.94572705
+          "Score": 0.9825659
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018587442
+          "Score": 0.0013720318
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 826A good morning squawk 753 won",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826A"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "sabena 826A good morning squawk 75301",
-      "CallSign": {
-        "Airline": "shabair",
-        "FlightNumber": "826"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sabena 826A good morning squawk 75301",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.028773252
+          "Score": 0.010877955
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019042336
+          "Score": 0.0013237408
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015309814
+          "Score": 0.0011701144
         },
         "Squawk": {
           "Code": "75301",
-          "Score": 0.96885747
+          "Score": 0.9911348
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0016279495
+          "Score": 0.001158936
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "sabena 826A good morning squawk 75301",
+      "CallSign": {
+        "Airline": "shabair",
+        "FlightNumber": "826A"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }

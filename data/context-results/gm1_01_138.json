@@ -1,138 +1,141 @@
 [
   {
-    "RmlResult": {
-      "Message": "gibair 98L contact milano 12585 good bye",
-      "CallSign": {
-        "Airline": "libair",
-        "FlightNumber": "98"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "12585",
-          "Place": "milano",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "gibair 98L contact milano 12585 good bye",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.04789478
+          "Score": 0.038612638
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "milano",
-          "Score": 0.9844732
+          "Score": 0.9842024
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017424681
+          "Score": 0.0015910133
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0021227181
+          "Score": 0.0021838371
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017817043
+          "Score": 0.0014968618
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "gibair 98L contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "libair",
+        "FlightNumber": "98L"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "gibair 988L contact milano 12585 good bye",
-      "CallSign": {
-        "Airline": "libair",
-        "FlightNumber": "988"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "12585",
-          "Place": "milano",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "gibair 988L contact milano 12585 good bye",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.04789478
+          "Score": 0.038612638
         },
         "Contact": {
           "Frequency": "12585",
           "Place": "milano",
-          "Score": 0.9844732
+          "Score": 0.9842024
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017424681
+          "Score": 0.0015910133
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0021227181
+          "Score": 0.0021838371
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017817043
+          "Score": 0.0014968618
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "gibair 988L contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "libair",
+        "FlightNumber": "988L"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "japan 8L contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "japan",
+        "FlightNumber": "8L"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.03275681
+        },
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
+          "Score": 0.98160326
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0017867562
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0023531667
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0017019196
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "japan 8L contact milano 12585 good bye",
       "CallSign": {
         "Airline": "air japan",
-        "FlightNumber": ""
+        "FlightNumber": "8L"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "12585",
-          "Place": "milano",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "japan 8L contact milano 12585 good bye",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.041013733
-        },
-        "Contact": {
-          "Frequency": "12585",
-          "Place": "milano",
-          "Score": 0.9822129
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.001941594
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.002305257
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0020264816
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }

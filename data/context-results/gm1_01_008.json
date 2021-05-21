@@ -1,6 +1,36 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "speedway 3352 due to traffic descend flight level 330",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.016025027
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.001615726
+        },
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "330",
+          "Score": 0.99468505
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0016925697
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016335031
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "speedway 3352 due to traffic descend flight level 330",
       "CallSign": {
         "Airline": "speedway",
@@ -8,45 +38,45 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": "Descend",
+          "Instruction": null,
           "Level": "330",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
-      "Message": "speedway 3352 due to traffic descend flight level 330",
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "speedway 3352 due to traffic descend to flight level 330",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.026864884
+          "Score": 0.013158128
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019817937
+          "Score": 0.0016404612
         },
         "FlightLevel": {
           "Instruction": "Descend",
           "Level": "330",
-          "Score": 0.99055606
+          "Score": 0.99795526
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0018675012
+          "Score": 0.0016490105
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020238648
+          "Score": 0.0016751264
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
+    },
+    "RmlContext": {
       "Message": "speedway 3352 due to traffic descend to flight level 330",
       "CallSign": {
         "Airline": "speedway",
@@ -54,59 +84,15 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "speedway 3352 due to traffic descend to flight level 330",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.021912767
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0020168088
-        },
-        "FlightLevel": {
-          "Instruction": "Descend",
+          "Instruction": null,
           "Level": "330",
-          "Score": 0.9962617
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0018417167
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.002067722
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "speedway 352 due to traffic descend flight level 330",
-      "CallSign": {
-        "Airline": "speedway",
-        "FlightNumber": "352"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "330",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedway 352 due to traffic descend flight level 330",
       "CallSign": {
         "Airline": "speedway",
@@ -114,28 +100,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.025103148
+          "Score": 0.014944014
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002070432
+          "Score": 0.001680195
         },
         "FlightLevel": {
           "Instruction": "Descend",
           "Level": "330",
-          "Score": 0.9901457
+          "Score": 0.99444884
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019800037
+          "Score": 0.0018003363
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021302195
+          "Score": 0.0017214977
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "speedway 352 due to traffic descend flight level 330",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "352"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "330",
+          "Score": 1.0
         }
       }
     }

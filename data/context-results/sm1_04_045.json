@@ -1,22 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "sobelair 2557 turn left by 5 degrees",
-      "CallSign": {
-        "Airline": "belair",
-        "FlightNumber": "2557"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": null,
-          "Degrees": "5",
-          "Heading": null,
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "sobelair",
@@ -24,50 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.049386386
+          "Score": 0.045316122
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019706711
+          "Score": 0.0017092195
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019236672
+          "Score": 0.0018193524
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020636774
+          "Score": 0.0020829996
         },
         "Turn": {
           "Direction": "left",
           "Degrees": "5",
           "Heading": null,
           "Place": null,
-          "Score": 0.99715567
+          "Score": 0.9970734
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
+    },
+    "RmlContext": {
       "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "belair",
         "FlightNumber": "2557"
       },
-      "Intents": {
-        "Turn": {
-          "Direction": null,
-          "Degrees": "5",
-          "Heading": null,
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+      "Intents": {}
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "sobelair",
@@ -75,50 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.049386386
+          "Score": 0.045316122
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019706711
+          "Score": 0.0017092195
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019236672
+          "Score": 0.0018193524
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020636774
+          "Score": 0.0020829996
         },
         "Turn": {
           "Direction": "left",
           "Degrees": "5",
           "Heading": null,
           "Place": null,
-          "Score": 0.99715567
+          "Score": 0.9970734
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "sobelair 2557 turn left by 5 degrees here",
+    },
+    "RmlContext": {
+      "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
         "Airline": "belair",
         "FlightNumber": "2557"
       },
-      "Intents": {
-        "Turn": {
-          "Direction": null,
-          "Degrees": "5",
-          "Heading": null,
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+      "Intents": {}
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "sobelair 2557 turn left by 5 degrees here",
       "CallSign": {
         "Airline": "sobelair",
@@ -126,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.041050386
+          "Score": 0.03754013
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020373992
+          "Score": 0.0017582417
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002132252
+          "Score": 0.001990129
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020525116
+          "Score": 0.0020394668
         },
         "Turn": {
           "Direction": "left",
           "Degrees": "5",
           "Heading": null,
           "Place": null,
-          "Score": 0.9971816
+          "Score": 0.9971105
         }
       }
+    },
+    "RmlContext": {
+      "Message": "sobelair 2557 turn left by 5 degrees here",
+      "CallSign": {
+        "Airline": "belair",
+        "FlightNumber": "2557"
+      },
+      "Intents": {}
     }
   }
 ]

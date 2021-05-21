@@ -1,92 +1,40 @@
 [
   {
     "LuisContext": {
-      "Message": "airfrans 3261 squawk now 2724",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
-      },
+      "Message": "IFG good morning squawk 2744",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.013779759
+          "Score": 0.018131852
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.00112464
+          "Score": 0.0013211491
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0012105661
+          "Score": 0.0011419344
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.04265293
+          "Code": "2744",
+          "Score": 0.9908475
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001124439
+          "Score": 0.0012130681
         }
       }
     },
     "RmlContext": {
-      "Message": "airfrans 3261 squawk now 2724",
+      "Message": "IFG good morning squawk 2744",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "272",
-          "Score": 1.0
-        }
-      }
-    }
-  },
-  {
-    "LuisContext": {
-      "Message": "airfrans 3261 squawk now 274",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.017124012
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0012492664
-        },
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": null,
-          "Score": 0.0013511733
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.02542563
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0012651996
-        }
-      }
-    },
-    "RmlContext": {
-      "Message": "airfrans 3261 squawk now 274",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "",
+        "FlightNumber": ""
       },
       "Intents": {
         "FlightLevel": {
@@ -99,48 +47,91 @@
   },
   {
     "LuisContext": {
-      "Message": "airfrans 3261 squawk 2724",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
-      },
+      "Message": "IFG good morning squawk 274 for",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.02012615
+          "Score": 0.01700561
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001078706
+          "Score": 0.0014842255
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0010186068
+          "Score": 0.0014199932
         },
         "Squawk": {
-          "Code": "2724",
-          "Score": 0.9926133
+          "Code": "274",
+          "Score": 0.9838842
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0010576543
+          "Score": 0.0014234792
         }
       }
     },
     "RmlContext": {
-      "Message": "airfrans 3261 squawk 2724",
+      "Message": "IFG good morning squawk 274 for",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "",
+        "FlightNumber": ""
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "272",
+          "Level": "274",
+          "Score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "IFG good morning squawk 27 for4",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.017320173
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0014207383
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0013412659
+        },
+        "Squawk": {
+          "Code": "27",
+          "Score": 0.98696953
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0013262933
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "IFG good morning squawk 27 for4",
+      "CallSign": {
+        "Airline": "",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "27",
           "Score": 1.0
         }
       }

@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "speedbird 563 bonjour squawk 5721",
-      "CallSign": {
-        "Airline": "speedbird",
-        "FlightNumber": "563"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 563 bonjour squawk 5721",
       "CallSign": {
         "Airline": "speedbird",
@@ -18,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.049333427
+          "Score": 0.023553984
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0016863288
+          "Score": 0.0013028093
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0020412714
+          "Score": 0.0016176903
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.014116375
+          "Code": "5721",
+          "Score": 0.9804724
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0017682655
+          "Score": 0.001315006
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "speedbird 563 bonjour squawk 5721",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "572",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "speedbird 563 bonjour squawk 572 on",
       "CallSign": {
         "Airline": "speedbird",
@@ -54,70 +57,88 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.04264917
+          "Score": 0.021696908
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018320556
+          "Score": 0.001420084
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002312414
+          "Score": 0.0018483538
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.01143597
+          "Code": "572",
+          "Score": 0.9744732
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019172039
+          "Score": 0.0014516766
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "speedbird 563 bonjour squawk 572 on",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "572",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "speedbird 56 bonjour squawk 5721",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.020447737
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0012620086
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0016045764
+        },
+        "Squawk": {
+          "Code": "5721",
+          "Score": 0.9833479
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0012728726
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "speedbird 56 bonjour squawk 5721",
       "CallSign": {
         "Airline": "speedbird",
         "FlightNumber": "56"
       },
       "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
-      "Message": "speedbird 56 bonjour squawk 5721",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.04481537
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0016457591
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0020579486
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.01615988
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0017250854
+          "Level": "572",
+          "Score": 1.0
         }
       }
     }

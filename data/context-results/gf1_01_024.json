@@ -1,101 +1,122 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "topswiss 4578 on left",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.2564551
+          "Score": 0.24862523
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0016671673
+          "Score": 0.0014977164
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0011961882
+          "Score": 0.0011949734
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019207158
+          "Score": 0.0020740023
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0028352425
+          "Score": 0.0023133946
         }
       }
+    },
+    "RmlContext": {
+      "Message": "topswiss 4578 on left",
+      "CallSign": {
+        "Airline": "topswiss",
+        "FlightNumber": "4578"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "topswiss 45781 left",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.26885435
+          "Score": 0.25904876
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0015574284
+          "Score": 0.001414696
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0009838642
+          "Score": 0.0010064138
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0019424228
+          "Score": 0.002165607
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0028264308
+          "Score": 0.0022858835
         }
       }
+    },
+    "RmlContext": {
+      "Message": "topswiss 45781 left",
+      "CallSign": {
+        "Airline": "topswiss",
+        "FlightNumber": "4578"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "topswiss 4578 an left",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.19638865
+          "Score": 0.184462
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017163176
+          "Score": 0.0015331329
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0012404716
+          "Score": 0.001235916
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020097462
+          "Score": 0.0021709895
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0028306646
+          "Score": 0.0023055295
         }
       }
+    },
+    "RmlContext": {
+      "Message": "topswiss 4578 an left",
+      "CallSign": {
+        "Airline": "topswiss",
+        "FlightNumber": "4578"
+      },
+      "Intents": {}
     }
   }
 ]

@@ -1,126 +1,138 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "fo 22B good afternoon squawk 7535",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.019332942
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0014469889
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0013464255
+        },
+        "Squawk": {
+          "Code": "7535",
+          "Score": 0.9853841
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0013655883
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "fo 22B good afternoon squawk 7535",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
-        "Squawk": null
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "22",
+          "Score": 1.0
+        }
       }
-    },
-    "LuisResult": {
-      "Message": "fo 22B good afternoon squawk 7535",
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "f 22B good afternoon squawk 7535",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.04508832
+          "Score": 0.017274816
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019990979
+          "Score": 0.0014164969
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0016606438
+          "Score": 0.0013111142
         },
         "Squawk": {
           "Code": "7535",
-          "Score": 0.9562827
+          "Score": 0.987485
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018684409
+          "Score": 0.0013295036
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
+    },
+    "RmlContext": {
       "Message": "f 22B good afternoon squawk 7535",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
-        "Squawk": null
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "22",
+          "Score": 1.0
+        }
       }
-    },
-    "LuisResult": {
-      "Message": "f 22B good afternoon squawk 7535",
+    }
+  },
+  {
+    "LuisContext": {
+      "Message": "fa 22B good afternoon squawk 7535",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.042135954
+          "Score": 0.019029582
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001977191
+          "Score": 0.0014426616
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0016347171
+          "Score": 0.0013414026
         },
         "Squawk": {
           "Code": "7535",
-          "Score": 0.96152186
+          "Score": 0.9856992
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018337354
+          "Score": 0.0013604551
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
+    },
+    "RmlContext": {
       "Message": "fa 22B good afternoon squawk 7535",
       "CallSign": {
         "Airline": "",
         "FlightNumber": ""
       },
       "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
-      "Message": "fa 22B good afternoon squawk 7535",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.044661496
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.001996003
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0016569721
-        },
-        "Squawk": {
-          "Code": "7535",
-          "Score": 0.9570588
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0018635205
+          "Level": "22",
+          "Score": 1.0
         }
       }
     }

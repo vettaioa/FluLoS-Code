@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "aero lloyd 517 contact zurich 134134.6 good bye",
-      "CallSign": {
-        "Airline": "aero lanka",
-        "FlightNumber": "517"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "13413",
-          "Place": "zurich",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "aero lloyd 517 contact zurich 134134.6 good bye",
       "CallSign": {
         "Airline": "aero lloyd",
@@ -22,48 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.012527902
+          "Score": 0.0112636285
         },
         "Contact": {
           "Frequency": "134134.6",
           "Place": "zurich",
-          "Score": 0.999234
+          "Score": 0.99927735
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0030129193
+          "Score": 0.0024389848
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002043758
+          "Score": 0.001993397
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0024025692
+          "Score": 0.0020568243
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "aero lloyd 517 contact zurich ontario 134134.6 good bye",
+    },
+    "RmlContext": {
+      "Message": "aero lloyd 517 contact zurich 134134.6 good bye",
       "CallSign": {
         "Airline": "aero lanka",
         "FlightNumber": "517"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "13413",
-          "Place": "ontario",
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "aero lloyd 517 contact zurich ontario 134134.6 good bye",
       "CallSign": {
         "Airline": "aero lloyd",
@@ -71,48 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.011582714
+          "Score": 0.010366185
         },
         "Contact": {
           "Frequency": "134134.6",
           "Place": "zurich",
-          "Score": 0.9996026
+          "Score": 0.9996274
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0032352896
+          "Score": 0.0026099
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020451355
+          "Score": 0.0019706497
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002456045
+          "Score": 0.0021056568
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "aero lloyd 517 contact zurich 13434.6 good bye",
+    },
+    "RmlContext": {
+      "Message": "aero lloyd 517 contact zurich ontario 134134.6 good bye",
       "CallSign": {
         "Airline": "aero lanka",
         "FlightNumber": "517"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "13434",
-          "Place": "zurich",
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "aero lloyd 517 contact zurich 13434.6 good bye",
       "CallSign": {
         "Airline": "aero lloyd",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.012527902
+          "Score": 0.0112636285
         },
         "Contact": {
           "Frequency": "13434.6",
           "Place": "zurich",
-          "Score": 0.999234
+          "Score": 0.99927735
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0030129193
+          "Score": 0.0024389848
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002043758
+          "Score": 0.001993397
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0024025692
+          "Score": 0.0020568243
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "aero lloyd 517 contact zurich 13434.6 good bye",
+      "CallSign": {
+        "Airline": "aero lanka",
+        "FlightNumber": "517"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "134",
+          "Score": 1.0
         }
       }
     }

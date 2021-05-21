@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "lufthansa 5305 squawk 2756",
-      "CallSign": {
-        "Airline": "lufthansa",
-        "FlightNumber": "5305"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lufthansa 5305 squawk 2756",
       "CallSign": {
         "Airline": "lufthansa",
@@ -18,44 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.047800347
+          "Score": 0.021403689
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0015421505
+          "Score": 0.0011865326
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013114167
+          "Score": 0.0010825573
         },
         "Squawk": {
           "Code": "2756",
-          "Score": 0.961186
+          "Score": 0.98645926
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018725848
+          "Score": 0.0013632305
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "lufthansa 5305 squawk 2756",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "5305"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "275",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "lufthansa 53 o5 squawk 2756",
-      "CallSign": {
-        "Airline": "lufthansa",
-        "FlightNumber": "53"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lufthansa 53 o5 squawk 2756",
       "CallSign": {
         "Airline": "lufthansa",
@@ -63,44 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.04201764
+          "Score": 0.020254355
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0016776699
+          "Score": 0.0012997155
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015596065
+          "Score": 0.0012907768
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.01571216
+          "Code": "2756",
+          "Score": 0.9811359
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019896005
+          "Score": 0.0014776314
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "lufthansa 53 o5 squawk 2756",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "53"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "275",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "lufthansa 5305 squawk 27560",
-      "CallSign": {
-        "Airline": "lufthansa",
-        "FlightNumber": "5305"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lufthansa 5305 squawk 27560",
       "CallSign": {
         "Airline": "lufthansa",
@@ -108,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.047800347
+          "Score": 0.021403689
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0015421505
+          "Score": 0.0011865326
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013114167
+          "Score": 0.0010825573
         },
         "Squawk": {
           "Code": "27560",
-          "Score": 0.961186
+          "Score": 0.98645926
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0018725848
+          "Score": 0.0013632305
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "lufthansa 5305 squawk 27560",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "5305"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "275",
+          "Score": 1.0
         }
       }
     }

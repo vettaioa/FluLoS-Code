@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
-      "CallSign": {
-        "Airline": "hamburg airways",
-        "FlightNumber": "2546"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "125.85",
-          "Place": "marseille",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
       "CallSign": {
         "Airline": "hamburg air",
@@ -22,97 +8,97 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.01605053
+          "Score": 0.013560225
         },
         "Contact": {
           "Frequency": "125.85",
-          "Place": "marseille",
-          "Score": 0.99960715
-        },
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": null,
-          "Score": 0.0024825493
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0020578366
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0021849235
-        }
-      }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "hamburg air 2546 contact marseille 125.850",
-      "CallSign": {
-        "Airline": "hamburg airways",
-        "FlightNumber": "2546"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "125.85",
-          "Place": "marseille",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "hamburg air 2546 contact marseille 125.850",
-      "CallSign": {
-        "Airline": "hamburg air",
-        "FlightNumber": "2546"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.020782126
-        },
-        "Contact": {
-          "Frequency": "125.850",
           "Place": "marseille",
           "Score": 0.99963576
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0020826003
+          "Score": 0.0022470567
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020817106
+          "Score": 0.001909317
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020695173
+          "Score": 0.0018651144
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "hamburg airways",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "hamburg 2546 contact marseille 125.85 au revoir",
+    "LuisContext": {
+      "Message": "hamburg air 2546 contact marseille 125.850",
       "CallSign": {
-        "Airline": "air hamburg",
+        "Airline": "hamburg air",
         "FlightNumber": "2546"
       },
       "Intents": {
+        "None": {
+          "Score": 0.017458297
+        },
         "Contact": {
-          "Frequency": "125.85",
+          "Frequency": "125.850",
           "Place": "marseille",
-          "Score": 1.0
+          "Score": 0.99966675
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0019234985
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.001965537
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.001756652
         }
       }
     },
-    "LuisResult": {
+    "RmlContext": {
+      "Message": "hamburg air 2546 contact marseille 125.850",
+      "CallSign": {
+        "Airline": "hamburg airways",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "hamburg 2546 contact marseille 125.85 au revoir",
       "CallSign": {
         "Airline": "hamburg",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.027588142
+          "Score": 0.022466036
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "marseille",
-          "Score": 0.9995314
+          "Score": 0.9995645
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002294945
+          "Score": 0.0020998954
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020143888
+          "Score": 0.0019553157
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021700468
+          "Score": 0.0018327651
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "hamburg 2546 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "air hamburg",
+        "FlightNumber": "2546"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }

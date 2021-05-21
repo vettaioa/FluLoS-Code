@@ -1,22 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "olympic 144 turn left heading 115 for separation",
-      "CallSign": {
-        "Airline": "olympic",
-        "FlightNumber": "144"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "115",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "olympic 144 turn left heading 115 for separation",
       "CallSign": {
         "Airline": "olympic",
@@ -24,50 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.015607315
+          "Score": 0.011867345
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002016707
+          "Score": 0.0017209601
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002104668
+          "Score": 0.0019774628
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020459753
+          "Score": 0.0021403076
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": "115",
           "Place": null,
-          "Score": 0.99647474
+          "Score": 0.9962686
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "olympic 144 turn left heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "144"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "115",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "olympic 14 turn left heading 115 for separation",
-      "CallSign": {
-        "Airline": "olympic",
-        "FlightNumber": "14"
-      },
-      "Intents": {
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "115",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "olympic 14 turn left heading 115 for separation",
       "CallSign": {
         "Airline": "olympic",
@@ -75,50 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.016676325
+          "Score": 0.012140814
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020342735
+          "Score": 0.0017325929
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002125556
+          "Score": 0.0019971046
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020635005
+          "Score": 0.0021681085
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": "115",
           "Place": null,
-          "Score": 0.9964551
+          "Score": 0.9962351
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "olympic 14 for turn left heading 115 for separation",
+    },
+    "RmlContext": {
+      "Message": "olympic 14 turn left heading 115 for separation",
       "CallSign": {
         "Airline": "olympic",
         "FlightNumber": "14"
       },
       "Intents": {
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "115",
-          "Place": null,
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "115",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "olympic 14 for turn left heading 115 for separation",
       "CallSign": {
         "Airline": "olympic",
@@ -126,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.013957569
+          "Score": 0.01020702
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020859775
+          "Score": 0.0017703342
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0023201278
+          "Score": 0.0021545058
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020432863
+          "Score": 0.0021153176
         },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
           "Heading": "115",
           "Place": null,
-          "Score": 0.996504
+          "Score": 0.9963016
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "olympic 14 for turn left heading 115 for separation",
+      "CallSign": {
+        "Airline": "olympic",
+        "FlightNumber": "14"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "115",
+          "Score": 1.0
         }
       }
     }

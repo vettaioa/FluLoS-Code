@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "airfrans uh 356 good morning fly correction squawk 7536",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "356"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "airfrans uh 356 good morning fly correction squawk 7536",
       "CallSign": {
         "Airline": "airfrans uh",
@@ -18,44 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.020009346
+          "Score": 0.008983282
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0021370563
+          "Score": 0.0015706205
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0025441104
+          "Score": 0.001946108
         },
         "Squawk": {
           "Code": "7536",
-          "Score": 0.9259619
+          "Score": 0.9760327
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0022306866
+          "Score": 0.0016789568
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "airfrans uh 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "air france a 356 good morning fly correction squawk 7536",
-      "CallSign": {
-        "Airline": "airbus france",
-        "FlightNumber": "356"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "air france a 356 good morning fly correction squawk 7536",
       "CallSign": {
         "Airline": "air france a",
@@ -63,44 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.012818206
+          "Score": 0.0071257534
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002742061
+          "Score": 0.0020621696
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0026059654
+          "Score": 0.0020914432
         },
         "Squawk": {
           "Code": "7536",
-          "Score": 0.9295296
+          "Score": 0.96972615
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0023661342
+          "Score": 0.001843932
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "air france a 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airbus france",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "airfrans 356 good morning fly correction squawk 7536",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "356"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "airfrans 356 good morning fly correction squawk 7536",
       "CallSign": {
         "Airline": "airfrans",
@@ -108,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.022501104
+          "Score": 0.009783229
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020653903
+          "Score": 0.0015109768
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002304871
+          "Score": 0.0017666895
         },
         "Squawk": {
           "Code": "7536",
-          "Score": 0.93422276
+          "Score": 0.9794647
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021656256
+          "Score": 0.0016145307
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "airfrans 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "753",
+          "Score": 1.0
         }
       }
     }

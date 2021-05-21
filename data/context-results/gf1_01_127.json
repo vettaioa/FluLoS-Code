@@ -1,129 +1,138 @@
 [
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "roger turn left heading 220",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.03669752
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016487958
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0015270013
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.002300864
+        },
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "220",
+          "Place": null,
+          "Score": 0.9960845
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "roger turn left heading 220",
       "CallSign": {
         "Airline": "aerogem",
         "FlightNumber": ""
       },
       "Intents": {
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "220",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "roger turn left heading 220",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.040362444
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0018984447
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0015663335
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0022016517
-        },
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "220",
-          "Place": null,
-          "Score": 0.9962168
+          "Level": "220",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "roger turn left heading to 20",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.021665769
+          "Score": 0.02042966
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018869324
+          "Score": 0.0016403188
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017439651
+          "Score": 0.0016661357
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002076391
+          "Score": 0.0021266653
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.00460055
+          "Score": 0.0038229555
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "roger turn left heading to 20",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "20",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "roger turn left heading 22o",
+      "CallSign": null,
+      "Intents": {
+        "None": {
+          "Score": 0.04247027
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.001556015
+        },
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": null,
+          "Score": 0.0014170076
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0020976125
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0035360842
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "roger turn left heading 22o",
       "CallSign": {
         "Airline": "aerogem",
         "FlightNumber": ""
       },
       "Intents": {
-        "Turn": {
-          "Direction": "left",
-          "Degrees": null,
-          "Heading": "22",
-          "Place": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
-      "Message": "roger turn left heading 22o",
-      "CallSign": null,
-      "Intents": {
-        "None": {
-          "Score": 0.04453131
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0017646436
-        },
         "FlightLevel": {
           "Instruction": null,
-          "Level": null,
-          "Score": 0.0014503447
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0019982478
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0042866305
+          "Level": "22",
+          "Score": 1.0
         }
       }
     }

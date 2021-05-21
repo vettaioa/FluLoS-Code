@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "cross air 2690 contact marseille on 125.85 good bye",
-      "CallSign": {
-        "Airline": "crossair",
-        "FlightNumber": "2690"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "125.85",
-          "Place": "marseille",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "cross air 2690 contact marseille on 125.85 good bye",
       "CallSign": {
         "Airline": "cross air",
@@ -22,48 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.009764195
+          "Score": 0.010762583
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "marseille",
-          "Score": 0.99973685
+          "Score": 0.9997502
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.002562793
+          "Score": 0.0024052882
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020937473
+          "Score": 0.0020399997
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019817643
+          "Score": 0.0017864155
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "cross air 2690 contact marseille 125.85 good bye",
+    },
+    "RmlContext": {
+      "Message": "cross air 2690 contact marseille on 125.85 good bye",
       "CallSign": {
         "Airline": "crossair",
         "FlightNumber": "2690"
       },
       "Intents": {
-        "Contact": {
-          "Frequency": "125.85",
-          "Place": "marseille",
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "cross air 2690 contact marseille 125.85 good bye",
       "CallSign": {
         "Airline": "cross air",
@@ -71,48 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.009980268
+          "Score": 0.010907009
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "marseille",
-          "Score": 0.9994892
+          "Score": 0.9995109
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0023948348
+          "Score": 0.0022672955
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002126132
+          "Score": 0.0020958318
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0019553008
+          "Score": 0.0017570466
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "cross air 2690 contact marseille 125.85 good bye",
+      "CallSign": {
+        "Airline": "crossair",
+        "FlightNumber": "2690"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
-      "Message": "cross air 690 contact marseille on 125.85 good bye",
-      "CallSign": {
-        "Airline": "crossair",
-        "FlightNumber": "690"
-      },
-      "Intents": {
-        "Contact": {
-          "Frequency": "125.85",
-          "Place": "marseille",
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "cross air 690 contact marseille on 125.85 good bye",
       "CallSign": {
         "Airline": "cross air",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.011410136
+          "Score": 0.0096648075
         },
         "Contact": {
           "Frequency": "125.85",
           "Place": "marseille",
-          "Score": 0.9997211
+          "Score": 0.99973494
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0028499344
+          "Score": 0.0025190033
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0023085733
+          "Score": 0.0021404177
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002207688
+          "Score": 0.0018925074
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "cross air 690 contact marseille on 125.85 good bye",
+      "CallSign": {
+        "Airline": "crossair",
+        "FlightNumber": "690"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "125",
+          "Score": 1.0
         }
       }
     }

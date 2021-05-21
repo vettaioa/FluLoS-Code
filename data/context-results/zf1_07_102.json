@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "lauda 109 good afternoon squawk 2746",
-      "CallSign": {
-        "Airline": "lauda air",
-        "FlightNumber": "109"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lauda 109 good afternoon squawk 2746",
       "CallSign": {
         "Airline": "lauda",
@@ -18,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.045451097
+          "Score": 0.021255055
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0020807262
+          "Score": 0.0015348532
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0017514981
+          "Score": 0.0014545411
         },
         "Squawk": {
           "Code": "2746",
-          "Score": 0.94330764
+          "Score": 0.97979796
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001990856
+          "Score": 0.0014820783
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "lauda 109 good afternoon squawk 2746",
+      "CallSign": {
+        "Airline": "lauda air",
+        "FlightNumber": "109"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "274",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lauda 109 good afternoon squawk 27 for6",
       "CallSign": {
         "Airline": "lauda",
@@ -54,44 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.03811934
+          "Score": 0.018404407
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.00215932
+          "Score": 0.0015989527
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0019748507
+          "Score": 0.0016298114
         },
         "Squawk": {
           "Code": "27",
-          "Score": 0.936588
+          "Score": 0.97648203
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020678206
+          "Score": 0.0015555855
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "lauda air 109 good afternoon squawk 2746",
+    },
+    "RmlContext": {
+      "Message": "lauda 109 good afternoon squawk 27 for6",
       "CallSign": {
         "Airline": "lauda air",
         "FlightNumber": "109"
       },
       "Intents": {
-        "Squawk": null
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "27",
+          "Score": 1.0
+        }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "lauda air 109 good afternoon squawk 2746",
       "CallSign": {
         "Airline": "lauda air",
@@ -99,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.024041576
+          "Score": 0.011886527
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.002613833
+          "Score": 0.0019436699
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.001958326
+          "Score": 0.0016106629
         },
         "Squawk": {
           "Code": "2746",
-          "Score": 0.9404718
+          "Score": 0.9772946
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020222238
+          "Score": 0.0015318028
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "lauda air 109 good afternoon squawk 2746",
+      "CallSign": {
+        "Airline": "lauda air",
+        "FlightNumber": "109"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "274",
+          "Score": 1.0
         }
       }
     }

@@ -1,101 +1,134 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "aero 560",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.2516157
+          "Score": 0.22159584
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0017694463
+          "Score": 0.0015572858
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0010852541
+          "Score": 0.0010861347
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0026091856
+          "Score": 0.0029919168
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0024683797
+          "Score": 0.0019916878
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "aero 560",
+      "CallSign": {
+        "Airline": "aerem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "560",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "aero 8560",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.39594215
+          "Score": 0.36703077
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0016874195
+          "Score": 0.0015069159
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0010888095
+          "Score": 0.0010652647
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0024004965
+          "Score": 0.0027735701
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021162287
+          "Score": 0.0017092831
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "aero 8560",
+      "CallSign": {
+        "Airline": "aerem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "856",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "aero at 560",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.16789825
+          "Score": 0.14619069
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018920292
+          "Score": 0.0016486826
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013710592
+          "Score": 0.0013314361
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0025352265
+          "Score": 0.0027987699
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.002589382
+          "Score": 0.0021082025
         }
       }
+    },
+    "RmlContext": {
+      "Message": "aero at 560",
+      "CallSign": {
+        "Airline": "aero alfe",
+        "FlightNumber": "560"
+      },
+      "Intents": {}
     }
   }
 ]

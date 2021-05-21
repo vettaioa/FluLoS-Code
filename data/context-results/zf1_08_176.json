@@ -1,43 +1,40 @@
 [
   {
     "LuisContext": {
-      "Message": "airfrans 3261 squawk now 2724",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
-      },
+      "Message": "speedbird 77WW good morning squawk 2720",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.013779759
+          "Score": 0.021598907
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.00112464
+          "Score": 0.001480953
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0012105661
+          "Score": 0.0014092196
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.04265293
+          "Code": "2720",
+          "Score": 0.9824171
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001124439
+          "Score": 0.0013984303
         }
       }
     },
     "RmlContext": {
-      "Message": "airfrans 3261 squawk now 2724",
+      "Message": "speedbird 77WW good morning squawk 2720",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "speedbird",
+        "FlightNumber": "77WW"
       },
       "Intents": {
         "FlightLevel": {
@@ -50,48 +47,45 @@
   },
   {
     "LuisContext": {
-      "Message": "airfrans 3261 squawk now 274",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
-      },
+      "Message": "speedbird 77WW good morning squawk 272o",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.017124012
+          "Score": 0.01638853
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0012492664
+          "Score": 0.0013494542
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013511733
+          "Score": 0.0012560363
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.02542563
+          "Code": "272o",
+          "Score": 0.9900314
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0012651996
+          "Score": 0.0012325813
         }
       }
     },
     "RmlContext": {
-      "Message": "airfrans 3261 squawk now 274",
+      "Message": "speedbird 77WW good morning squawk 272o",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "speedbird",
+        "FlightNumber": "77WW"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "274",
+          "Level": "272",
           "Score": 1.0
         }
       }
@@ -99,43 +93,40 @@
   },
   {
     "LuisContext": {
-      "Message": "airfrans 3261 squawk 2724",
-      "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
-      },
+      "Message": "speedbird 77WW good morning squawk 272o",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.02012615
+          "Score": 0.01638853
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001078706
+          "Score": 0.0013494542
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0010186068
+          "Score": 0.0012560363
         },
         "Squawk": {
-          "Code": "2724",
-          "Score": 0.9926133
+          "Code": "272o",
+          "Score": 0.9900314
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0010576543
+          "Score": 0.0012325813
         }
       }
     },
     "RmlContext": {
-      "Message": "airfrans 3261 squawk 2724",
+      "Message": "speedbird 77WW good morning squawk 272o",
       "CallSign": {
-        "Airline": "airfrans",
-        "FlightNumber": "3261"
+        "Airline": "speedbird",
+        "FlightNumber": "77WW"
       },
       "Intents": {
         "FlightLevel": {

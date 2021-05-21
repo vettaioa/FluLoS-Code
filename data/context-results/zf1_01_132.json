@@ -1,16 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "alitalia 292 good morning squawk 2761",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "292"
-      },
-      "Intents": {
-        "Squawk": null
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 292 good morning squawk 2761",
       "CallSign": {
         "Airline": "alitalia",
@@ -18,35 +8,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.014081617
+          "Score": 0.0068985354
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0023230924
+          "Score": 0.0017226547
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015869052
+          "Score": 0.0015082335
         },
         "Squawk": {
           "Code": "2761",
-          "Score": 0.94978917
+          "Score": 0.98055816
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021709255
+          "Score": 0.0016060399
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 292 good morning squawk 2761",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "292"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "alitalia 292 good morning squawk 276 won",
       "CallSign": {
         "Airline": "alitalia",
@@ -54,44 +57,48 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.0118963765
+          "Score": 0.0061362344
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0024505865
+          "Score": 0.0018290355
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0018841695
+          "Score": 0.0017641842
         },
         "Squawk": {
           "Code": "276",
-          "Score": 0.93827695
+          "Score": 0.97477025
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0023344422
+          "Score": 0.0017599696
         }
       }
-    }
-  },
-  {
-    "RmlResult": {
-      "Message": "alitalia 292 good morning squawk 27610",
+    },
+    "RmlContext": {
+      "Message": "alitalia 292 good morning squawk 276 won",
       "CallSign": {
         "Airline": "alitalia",
         "FlightNumber": "292"
       },
       "Intents": {
-        "Squawk": null
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
+        }
       }
-    },
-    "LuisResult": {
+    }
+  },
+  {
+    "LuisContext": {
       "Message": "alitalia 292 good morning squawk 27610",
       "CallSign": {
         "Airline": "alitalia",
@@ -99,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.014081617
+          "Score": 0.0068985354
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0023230924
+          "Score": 0.0017226547
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0015869052
+          "Score": 0.0015082335
         },
         "Squawk": {
           "Code": "27610",
-          "Score": 0.94978917
+          "Score": 0.98055816
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0021709255
+          "Score": 0.0016060399
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "alitalia 292 good morning squawk 27610",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "292"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "276",
+          "Score": 1.0
         }
       }
     }

@@ -1,20 +1,6 @@
 [
   {
-    "RmlResult": {
-      "Message": "klm 376 climb to flight level 330",
-      "CallSign": {
-        "Airline": "klm",
-        "FlightNumber": "376"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 376 climb to flight level 330",
       "CallSign": {
         "Airline": "klm",
@@ -22,34 +8,81 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.027982028
+          "Score": 0.021955512
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001965774
+          "Score": 0.0016555553
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "330",
-          "Score": 0.99542165
+          "Score": 0.9972151
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020348798
+          "Score": 0.0019712981
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020556967
+          "Score": 0.0017113955
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "klm 376 climb to flight level 330",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "330",
+          "Score": 1.0
         }
       }
     }
   },
   {
-    "RmlResult": {
+    "LuisContext": {
+      "Message": "klm 376 climb flight level 330",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "None": {
+          "Score": 0.028970748
+        },
+        "Contact": {
+          "Frequency": null,
+          "Place": null,
+          "Score": 0.0016240961
+        },
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "330",
+          "Score": 0.9925541
+        },
+        "Squawk": {
+          "Code": null,
+          "Score": 0.0020506831
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": null,
+          "Place": null,
+          "Score": 0.0016552712
+        }
+      }
+    },
+    "RmlContext": {
       "Message": "klm 376 climb flight level 330",
       "CallSign": {
         "Airline": "klm",
@@ -62,57 +95,10 @@
           "Score": 1.0
         }
       }
-    },
-    "LuisResult": {
-      "Message": "klm 376 climb flight level 330",
-      "CallSign": {
-        "Airline": "klm",
-        "FlightNumber": "376"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.037284043
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0019223569
-        },
-        "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": "330",
-          "Score": 0.98804617
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0020804603
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0019985335
-        }
-      }
     }
   },
   {
-    "RmlResult": {
-      "Message": "klm 376 climb to flight level 30",
-      "CallSign": {
-        "Airline": "klm",
-        "FlightNumber": "376"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 1.0
-        }
-      }
-    },
-    "LuisResult": {
+    "LuisContext": {
       "Message": "klm 376 climb to flight level 30",
       "CallSign": {
         "Airline": "klm",
@@ -120,28 +106,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.025616214
+          "Score": 0.020054208
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0019371348
+          "Score": 0.001631904
         },
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "30",
-          "Score": 0.995603
+          "Score": 0.9973162
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0020019996
+          "Score": 0.001934551
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020261705
+          "Score": 0.0016876875
+        }
+      }
+    },
+    "RmlContext": {
+      "Message": "klm 376 climb to flight level 30",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "30",
+          "Score": 1.0
         }
       }
     }

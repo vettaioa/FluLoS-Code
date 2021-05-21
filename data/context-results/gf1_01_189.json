@@ -1,7 +1,6 @@
 [
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lufthansa 4652",
       "CallSign": {
         "Airline": "lufthansa",
@@ -9,35 +8,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.22483908
+          "Score": 0.2159196
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0015459253
+          "Score": 0.0013982384
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0010355271
+          "Score": 0.0010391617
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0034355728
+          "Score": 0.0032799728
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0020715294
+          "Score": 0.0016935942
         }
       }
+    },
+    "RmlContext": {
+      "Message": "lufthansa 4652",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "4652"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lufthansa 465 to",
       "CallSign": {
         "Airline": "lufthansa",
@@ -45,35 +51,42 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.12481221
+          "Score": 0.112262875
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.001828174
+          "Score": 0.0016010347
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013867824
+          "Score": 0.0013589995
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0032787686
+          "Score": 0.0031908925
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0023239057
+          "Score": 0.0019085514
         }
       }
+    },
+    "RmlContext": {
+      "Message": "lufthansa 465 to",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "465"
+      },
+      "Intents": {}
     }
   },
   {
-    "RmlResult": null,
-    "LuisResult": {
+    "LuisContext": {
       "Message": "lufthansa 465 too",
       "CallSign": {
         "Airline": "lufthansa",
@@ -81,30 +94,38 @@
       },
       "Intents": {
         "None": {
-          "Score": 0.14029324
+          "Score": 0.124161266
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0018632059
+          "Score": 0.0016269392
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0013717747
+          "Score": 0.0013530191
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0032844553
+          "Score": 0.003219288
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0023097352
+          "Score": 0.0018927836
         }
       }
+    },
+    "RmlContext": {
+      "Message": "lufthansa 465 too",
+      "CallSign": {
+        "Airline": "lufthansa",
+        "FlightNumber": "465"
+      },
+      "Intents": {}
     }
   }
 ]
