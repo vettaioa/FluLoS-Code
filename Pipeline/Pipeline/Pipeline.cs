@@ -37,59 +37,66 @@ namespace Pipeline
 
         private void ProcessTranscriptions(TranscriptionResult transcriptionResult)
         {
-            ContextResultWrapper[] contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
-            if (contextResults != null)
+            if (transcriptionResult != null && transcriptionResult.Transcriptions != null)
             {
-                Console.WriteLine("Extracted context:");
-                // using Newtonsoft because build-in JsonSerializer cannot handle dictionnaries with enum as key
-                string resultsJson = Newtonsoft.Json.JsonConvert.SerializeObject(contextResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
-
-                Console.WriteLine(resultsJson);
-                WriteToOutputDirectory(config.ContextOutputDirectory, transcriptionResult.FilePath, resultsJson);
-
-                if (config.Evaluation.RunEvaluation)
+                ContextResultWrapper[] contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
+                if (contextResults != null)
                 {
+                    Console.WriteLine("Extracted context:");
+                    // using Newtonsoft because build-in JsonSerializer cannot handle dictionnaries with enum as key
+                    string resultsJson = Newtonsoft.Json.JsonConvert.SerializeObject(contextResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
 
-                    // evaluate all context extraction results
-                    EvaluationResult[] luisEvaluations = new EvaluationResult[contextResults.Length];
-                    EvaluationResult[] rmlEvaluations = new EvaluationResult[contextResults.Length];
+                    Console.WriteLine(resultsJson);
+                    WriteToOutputDirectory(config.ContextOutputDirectory, transcriptionResult.FilePath, resultsJson);
 
-                    for (int i = 0; i < contextResults.Length; i++)
+                    if (config.Evaluation.RunEvaluation)
                     {
-                        luisEvaluations[i] = contextEvaluator.Evaluate(contextResults[i].LuisContext);
-                        rmlEvaluations[i] = contextEvaluator.Evaluate(contextResults[i].RmlContext);
-                    }
-                    EvaluationResultsWrapper evaluationResults = new EvaluationResultsWrapper(luisEvaluations, rmlEvaluations);
-                    string evaluationJson = Newtonsoft.Json.JsonConvert.SerializeObject(evaluationResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
-                    Console.WriteLine("Evaluation results:");
-                    Console.WriteLine(evaluationJson);
-                    WriteToOutputDirectory(config.Evaluation.EvaluationOutputDirectory, transcriptionResult.FilePath, evaluationJson);
+
+                        // evaluate all context extraction results
+                        EvaluationResult[] luisEvaluations = new EvaluationResult[contextResults.Length];
+                        EvaluationResult[] rmlEvaluations = new EvaluationResult[contextResults.Length];
+
+                        for (int i = 0; i < contextResults.Length; i++)
+                        {
+                            luisEvaluations[i] = contextEvaluator.Evaluate(contextResults[i].LuisContext);
+                            rmlEvaluations[i] = contextEvaluator.Evaluate(contextResults[i].RmlContext);
+                        }
+                        EvaluationResultsWrapper evaluationResults = new EvaluationResultsWrapper(luisEvaluations, rmlEvaluations);
+                        string evaluationJson = Newtonsoft.Json.JsonConvert.SerializeObject(evaluationResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
+                        Console.WriteLine("Evaluation results:");
+                        Console.WriteLine(evaluationJson);
+                        WriteToOutputDirectory(config.Evaluation.EvaluationOutputDirectory, transcriptionResult.FilePath, evaluationJson);
 
 
-                    // extract correct data by considering the evaluation results (priorizing the first correct occurence of a field)
-                    (MessageContext, EvaluationResult)?[] luisValidatedContexts = new (MessageContext, EvaluationResult)?[contextResults.Length];
-                    (MessageContext, EvaluationResult)?[] rmlValidatedContexts = new (MessageContext, EvaluationResult)?[contextResults.Length];
-                    for (int i = 0; i < luisEvaluations.Length; i++)
-                    {
-                        luisValidatedContexts[i] = (contextResults[i].LuisContext, luisEvaluations[i]);
-                    }
-                    for (int i = 0; i < rmlEvaluations.Length; i++)
-                    {
-                        rmlValidatedContexts[i] = (contextResults[i].RmlContext, rmlEvaluations[i]);
-                    }
+                        // extract correct data by considering the evaluation results (priorizing the first correct occurence of a field)
+                        (MessageContext, EvaluationResult)?[] luisValidatedContexts = new (MessageContext, EvaluationResult)?[contextResults.Length];
+                        (MessageContext, EvaluationResult)?[] rmlValidatedContexts = new (MessageContext, EvaluationResult)?[contextResults.Length];
+                        for (int i = 0; i < luisEvaluations.Length; i++)
+                        {
+                            luisValidatedContexts[i] = (contextResults[i].LuisContext, luisEvaluations[i]);
+                        }
+                        for (int i = 0; i < rmlEvaluations.Length; i++)
+                        {
+                            rmlValidatedContexts[i] = (contextResults[i].RmlContext, rmlEvaluations[i]);
+                        }
 
-                    MessageContext bestLuisContext = ContextMerger.Merge(luisValidatedContexts);
-                    MessageContext bestRmlContext = ContextMerger.Merge(rmlValidatedContexts);
-                    ContextResultWrapper bestContexts = new ContextResultWrapper() { LuisContext = bestLuisContext, RmlContext = bestRmlContext };
-                    string bestContextJson = Newtonsoft.Json.JsonConvert.SerializeObject(bestContexts, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
-                    Console.WriteLine("Validated Results:");
-                    Console.WriteLine(bestContextJson);
-                    WriteToOutputDirectory(config.Evaluation.MergeOutputDirectory, transcriptionResult.FilePath, bestContextJson);
+                        MessageContext bestLuisContext = ContextMerger.Merge(luisValidatedContexts);
+                        MessageContext bestRmlContext = ContextMerger.Merge(rmlValidatedContexts);
+                        ContextResultWrapper bestContexts = new ContextResultWrapper() { LuisContext = bestLuisContext, RmlContext = bestRmlContext };
+                        string bestContextJson = Newtonsoft.Json.JsonConvert.SerializeObject(bestContexts, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
+                        Console.WriteLine("Validated Results:");
+                        Console.WriteLine(bestContextJson);
+                        WriteToOutputDirectory(config.Evaluation.MergeOutputDirectory, transcriptionResult.FilePath, bestContextJson);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No results found!");
                 }
             }
             else
             {
-                Console.WriteLine("No results found!");
+                Console.WriteLine("No transcriptions received!");
             }
         }
 

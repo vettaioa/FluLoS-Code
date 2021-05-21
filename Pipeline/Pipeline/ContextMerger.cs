@@ -80,6 +80,9 @@ namespace Pipeline
 
                                             if (string.IsNullOrEmpty(contactResult.Place) && !string.IsNullOrWhiteSpace(validContact.Place))
                                                 contactResult.Place = validContact.Place;
+
+                                            if(contactResult.Score < validContact.Score)
+                                                contactResult.Score = validContact.Score;
                                         }
                                         break;
                                     case IntentType.FlightLevel:
@@ -103,6 +106,9 @@ namespace Pipeline
 
                                             if (levelResult.Instruction == null && validLevel.Instruction != null)
                                                 levelResult.Instruction = validLevel.Instruction;
+
+                                            if (levelResult.Score < validLevel.Score)
+                                                levelResult.Score = validLevel.Score;
                                         }
                                         break;
                                     case IntentType.Squawk:
@@ -123,6 +129,9 @@ namespace Pipeline
 
                                             if (string.IsNullOrEmpty(squawkResult.Code) && !string.IsNullOrWhiteSpace(validSquawk.Code))
                                                 squawkResult.Code = validSquawk.Code;
+
+                                            if (squawkResult.Score < validSquawk.Score)
+                                                squawkResult.Score = validSquawk.Score;
                                         }
                                         break;
                                     case IntentType.Turn:
@@ -152,6 +161,9 @@ namespace Pipeline
 
                                             if (string.IsNullOrEmpty(turnResult.Place) && !string.IsNullOrWhiteSpace(validTurn.Place))
                                                 turnResult.Place = validTurn.Place;
+
+                                            if (turnResult.Score < validTurn.Score)
+                                                turnResult.Score = validTurn.Score;
                                         }
                                         break;
                                 }
@@ -177,6 +189,8 @@ namespace Pipeline
 
                 if (!string.IsNullOrWhiteSpace(contactInfo.Place) && validation.HasFlag(ContactValidationResult.PlaceValid))
                     resultContact.Place = contactInfo.Place;
+
+                resultContact.Score = contactInfo.Score;
             }
 
             return resultContact;
@@ -195,6 +209,8 @@ namespace Pipeline
 
                 if (levelInfo.Instruction != null && validation.HasFlag(FlightLevelValidationResult.InstructionValid))
                     resultLevel.Instruction = levelInfo.Instruction;
+
+                resultLevel.Score = levelInfo.Score;
             }
 
             return resultLevel;
@@ -210,6 +226,8 @@ namespace Pipeline
 
                 if (!string.IsNullOrWhiteSpace(squawkInfo.Code) && validation.HasFlag(SquawkValidationResult.CodeValid))
                     resultSquawk.Code = squawkInfo.Code;
+
+                resultSquawk.Score = squawkInfo.Score;
             }
 
             return resultSquawk;
@@ -234,6 +252,8 @@ namespace Pipeline
 
                 if (!string.IsNullOrWhiteSpace(turnInfo.Place) && validation.HasFlag(TurnValidationResult.PlaceValid))
                     resultTurn.Place = turnInfo.Place;
+
+                resultTurn.Score = turnInfo.Score;
             }
 
             return resultTurn;
