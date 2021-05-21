@@ -28,6 +28,7 @@ namespace SharedModel
         public string InputAudioFile { get; set; }
         public string InputAudioDirectory { get; set; }
         public string InputTranscriptionDirectory { get; set; }
+        public string OutputNBestDirectory { get; set; }
     }
 
     public class LuisConfig

@@ -6,7 +6,8 @@
 		"AzureRegion": "westeurope",
 		"InputAudioFile": "../../../../../data/audio/test/gf1_01_026.wav",
 		"InputAudioDirectory": "../../../../../data/audio/test/",
-		"InputTranscriptionDirectory": "../../../../../data/luis-comparison/transcriptions/"
+		"InputTranscriptionDirectory": "../../../../../data/luis-comparison/transcriptions/",
+		"OutputNBestDirectory": "../../../../../data/stt-nbest/"
 	},
 	"Luis": {
 		"ApiUrl": "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/",

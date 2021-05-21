@@ -17,7 +17,7 @@ namespace SpeechToText
         private const int DEFAULT_NBEST = 3;
         private const string FILE_EXTENSION = ".wav";
         private SpeechConfig speechConfig;
-
+        private string outputDirectory;
 
         /// <summary>
         /// Creates instance of SpeechTranscriber
@@ -33,6 +33,8 @@ namespace SpeechToText
 
             if (!File.Exists(config.AzureApiKeysFile))
                 throw new ArgumentException("AzureApiKeysFile not found");
+
+            outputDirectory = config.OutputNBestDirectory;
 
             AzureCredentials azureCredentials = JsonSerializer.Deserialize<AzureCredentials>(File.ReadAllText(config.AzureApiKeysFile));
             speechConfig = SpeechConfig.FromSubscription(azureCredentials.S2T_subscription, config.AzureRegion);
@@ -55,7 +57,13 @@ namespace SpeechToText
             using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 
             Console.WriteLine("Speak into microphone...");
-            return await Recognize(recognizer, nBest);
+
+
+            string[] transcriptions = await Recognize(recognizer, nBest);
+
+            WriteOutput(outputDirectory, DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".json", transcriptions);
+
+            return transcriptions;
         }
 
         /// <summary>
@@ -72,6 +80,8 @@ namespace SpeechToText
                 using var recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 
                 string[] transcriptions = await Recognize(recognizer, nBest);
+
+                WriteOutput(outputDirectory, Path.GetFileNameWithoutExtension(filePath) + ".json", transcriptions);
 
                 return new FileResult() { FilePath = filePath, Transcriptions = transcriptions };
             }
@@ -166,6 +176,20 @@ namespace SpeechToText
             }
 
             return null;
+        }
+
+        private void WriteOutput(string directory, string filename, string[] transcriptions)
+        {
+            try
+            {
+                Directory.CreateDirectory(directory);
+
+                JsonSerializerOptions jsonOptions = new JsonSerializerOptions() { WriteIndented = true };
+                string json = JsonSerializer.Serialize(transcriptions, jsonOptions);
+
+                File.WriteAllText(Path.Combine(directory, filename), json);
+            }
+            catch { }
         }
     }
 }
