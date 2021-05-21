@@ -45,12 +45,13 @@ def load_data():
     datarecords = []
 
     for filename in filenames:
+        name = filename.split('.')[0]
         label = loaded_labels.get(filename)
         context = loaded_contexts.get(filename)
 
         labels.append(label)
         contexts.append(context)
-        datarecords.append(DataRecord(filename, label, context))
+        datarecords.append(DataRecord(name, label, context))
     
     this.data = Data(filenames, labels, contexts, datarecords)
     return this.data
