@@ -1,2 +1,1 @@
-merair six nine four four
-climb to flight level two nine zero
+merair six nine four four climb to flight level two nine zero
