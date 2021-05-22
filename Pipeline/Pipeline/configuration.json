@@ -1,12 +1,12 @@
 {
 	"RunWebPipeline": false,
 	"SpeechToText": {
-		"SpeechToTextMode": "FileSingle",
+		"SpeechToTextMode": "ExistingTranscriptions",
 		"AzureApiKeysFile": "../../../../../flulos_credentials.json",
 		"AzureRegion": "westeurope",
 		"InputAudioFile": "../../../../../data/audio/test/gf1_01_026.wav",
 		"InputAudioDirectory": "../../../../../data/audio/test/",
-		"InputTranscriptionDirectory": "../../../../../data/luis-comparison/transcriptions/",
+		"InputTranscriptionDirectory": "../../../../../data/stt-nbest/",
 		"OutputNBestDirectory": "../../../../../data/stt-nbest/"
 	},
 	"Luis": {

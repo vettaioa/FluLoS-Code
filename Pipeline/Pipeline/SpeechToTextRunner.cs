@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -125,12 +126,20 @@ namespace Pipeline
                 {
                     try
                     {
-                        string currentTranscription = File.ReadAllText(files[i]);
-                        FileResult currentResult = new FileResult()
+                        string fileContent = File.ReadAllText(files[i]);
+                        FileResult currentResult = new FileResult() { FilePath = files[i] };
+
+                        if (fileContent.StartsWith('['))
                         {
-                            FilePath = files[i],
-                            Transcriptions = new string[] { currentTranscription }
-                        };
+                            // file contains json array of n-best transcriptions
+                            currentResult.Transcriptions = JsonSerializer.Deserialize<string[]>(fileContent);
+                        }
+                        else
+                        {
+                            // file contains single transcription as text
+                            currentResult.Transcriptions = new string[] { fileContent };
+                        }
+
                         results[i] = currentResult;
                     }
                     catch { }

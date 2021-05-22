@@ -41,7 +41,7 @@ namespace Evaluation
         internal static ContactValidationResult ValidateContact(ContactIntent contactIntent, int[] validFrequencies = null, string[] validPlaces = null)
         {
             ContactValidationResult result = ContactValidationResult.Invalid;
-            string frequencyRegex = @"^1(\d){2}\.?\d{2}$";
+            string frequencyRegex = @"^1(\d){2}\.?\d{1,2}$";
             string placeRegex = @"^(A-Za-z)+$";
 
             if (contactIntent != null)
