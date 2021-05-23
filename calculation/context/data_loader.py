@@ -11,9 +11,14 @@ from json_utils import load_json_file
 __path_data_folder = '../../data/'
 __path_label_folder = PurePath(__path_data_folder, 'context-labelled')
 __path_context_folder = PurePath(__path_data_folder, 'context-results')
+__path_nbest_folder = PurePath(__path_data_folder, 'stt-nbest')
+__path_cleaned_folder = PurePath('../wer/data/clean/text')
+
 
 Data = namedtuple('Data', ['filenames', 'labels', 'contexts', 'datarecords'])
 DataRecord = namedtuple('DataRecord', ['name', 'label', 'context'])
+
+NBest = namedtuple('NBest', ['name', 'transcriptions'])
 
 
 this = sys.modules[__name__]
@@ -56,3 +61,30 @@ def load_data():
     this.data = Data(filenames, labels, contexts, datarecords)
     return this.data
 
+
+def load_stt_nbests():
+    loaded_nbest = {}
+    for x in Path(__path_nbest_folder).iterdir():
+        if x.is_file() and x.suffix == '.json':
+            loaded_nbest[x.name] = load_json_file(x)
+    
+    nbest_transcriptions = []
+
+    filenames = loaded_nbest.keys()
+    for filename in filenames:
+        name = filename.split('.')[0]
+        trascriptions = loaded_nbest.get(filename)
+        nbest_transcriptions.append(NBest(name, trascriptions))
+    
+    return nbest_transcriptions
+
+
+def load_human_transcription(filename):
+    filecontent = ''
+    filepath = Path(__path_cleaned_folder.as_posix() + '\\' + filename + '.txt')
+    if(filepath.exists() and filepath.is_file()):
+        with open(filepath) as f:
+            content = f.readlines()
+            filecontent = content[0]
+
+    return filecontent
