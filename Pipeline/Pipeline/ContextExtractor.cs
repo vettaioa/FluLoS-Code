@@ -11,14 +11,12 @@ namespace Pipeline
     class ContextExtractor
     {
         private CleanUpCaller cleanUp;
-        private DeltaListReplaceCaller deltaListReplace;
         private RmlCaller rml;
         private LuisCaller luis;
 
         public ContextExtractor(AppConfiguration config)
         {
             cleanUp = new CleanUpCaller();
-            deltaListReplace = new DeltaListReplaceCaller();
             rml = new RmlCaller(config.Rml);
             luis = new LuisCaller(config.Luis);
         }
@@ -53,11 +51,7 @@ namespace Pipeline
 
         private string Prepare(string input)
         {
-            var prepared = cleanUp.Call(input);
-
-            prepared = deltaListReplace.Call(prepared);
-
-            return prepared;
+            return cleanUp.Call(input);
         }
 
         private ContextResultWrapper Analyze(string prepared)
