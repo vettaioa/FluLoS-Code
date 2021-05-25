@@ -40,9 +40,9 @@
         "FlightNumber": "687"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "zurich",
           "Score": 1.0
         }
       }
@@ -138,9 +138,9 @@
         "FlightNumber": "687"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "1255",
+          "Place": "zurich",
           "Score": 1.0
         }
       }

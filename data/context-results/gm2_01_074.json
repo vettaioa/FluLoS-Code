@@ -40,9 +40,11 @@
         "FlightNumber": "4901"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "250",
+        "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": "250",
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -92,6 +94,13 @@
         "FlightLevel": {
           "Instruction": null,
           "Level": "901",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": "250",
+          "Place": null,
           "Score": 1.0
         }
       }

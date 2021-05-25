@@ -40,9 +40,8 @@
         "FlightNumber": "109"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "274",
+        "Squawk": {
+          "Code": "2746",
           "Score": 1.0
         }
       }
@@ -138,9 +137,8 @@
         "FlightNumber": "109"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "274",
+        "Squawk": {
+          "Code": "2746",
           "Score": 1.0
         }
       }

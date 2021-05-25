@@ -37,9 +37,8 @@
         "FlightNumber": "77WW"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "272",
+        "Squawk": {
+          "Code": "2720",
           "Score": 1.0
         }
       }

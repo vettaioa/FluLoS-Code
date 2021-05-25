@@ -37,9 +37,11 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "330",
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "330",
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -83,9 +85,11 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "330",
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "330",
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -129,9 +133,11 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "330",
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "330",
+          "Place": null,
           "Score": 1.0
         }
       }

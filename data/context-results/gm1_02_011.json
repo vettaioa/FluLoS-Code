@@ -40,9 +40,8 @@
         "FlightNumber": "563"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "572",
+        "Squawk": {
+          "Code": "5721",
           "Score": 1.0
         }
       }
@@ -135,9 +134,8 @@
         "FlightNumber": "56"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "572",
+        "Squawk": {
+          "Code": "5721",
           "Score": 1.0
         }
       }

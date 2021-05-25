@@ -40,9 +40,8 @@
         "FlightNumber": "450"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "753",
+        "Squawk": {
+          "Code": "7534",
           "Score": 1.0
         }
       }
@@ -138,9 +137,8 @@
         "FlightNumber": "450"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "753",
+        "Squawk": {
+          "Code": "7534",
           "Score": 1.0
         }
       }

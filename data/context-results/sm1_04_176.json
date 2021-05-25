@@ -41,8 +41,15 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": null,
-          "Level": "10",
+          "Instruction": "Climb",
+          "Level": "350",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -90,8 +97,15 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": null,
-          "Level": "10",
+          "Instruction": "Climb",
+          "Level": "350",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -139,8 +153,15 @@
       },
       "Intents": {
         "FlightLevel": {
-          "Instruction": null,
-          "Level": "10",
+          "Instruction": "Climb",
+          "Level": "350",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }

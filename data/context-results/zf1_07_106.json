@@ -40,9 +40,8 @@
         "FlightNumber": "416"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "753",
+        "Squawk": {
+          "Code": "7533",
           "Score": 1.0
         }
       }
@@ -138,9 +137,8 @@
         "FlightNumber": "416"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "753",
+        "Squawk": {
+          "Code": "7533",
           "Score": 1.0
         }
       }

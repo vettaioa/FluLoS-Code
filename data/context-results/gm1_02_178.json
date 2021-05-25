@@ -40,9 +40,9 @@
         "FlightNumber": "244"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "132",
+        "Contact": {
+          "Frequency": "132.27",
+          "Place": "on",
           "Score": 1.0
         }
       }
@@ -89,9 +89,9 @@
         "FlightNumber": "244"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "132",
+        "Contact": {
+          "Frequency": "132.27",
+          "Place": "reims",
           "Score": 1.0
         }
       }
@@ -138,9 +138,9 @@
         "FlightNumber": "24"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "132",
+        "Contact": {
+          "Frequency": "132.27",
+          "Place": "on",
           "Score": 1.0
         }
       }

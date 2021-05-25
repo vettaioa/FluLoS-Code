@@ -40,9 +40,9 @@
         "FlightNumber": "563"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "128",
+        "Contact": {
+          "Frequency": "12815",
+          "Place": "geneva",
           "Score": 1.0
         }
       }
@@ -89,9 +89,9 @@
         "FlightNumber": "563"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "128",
+        "Contact": {
+          "Frequency": "12815",
+          "Place": "geneva",
           "Score": 1.0
         }
       }
@@ -138,9 +138,9 @@
         "FlightNumber": "563"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "138",
+        "Contact": {
+          "Frequency": "13815",
+          "Place": "geneva",
           "Score": 1.0
         }
       }

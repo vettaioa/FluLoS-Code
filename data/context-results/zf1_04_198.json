@@ -40,9 +40,8 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "276",
+        "Squawk": {
+          "Code": "2763",
           "Score": 1.0
         }
       }
@@ -89,9 +88,8 @@
         "FlightNumber": "426"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "276",
+        "Squawk": {
+          "Code": "2763",
           "Score": 1.0
         }
       }
@@ -138,9 +136,8 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "276",
+        "Squawk": {
+          "Code": "2763",
           "Score": 1.0
         }
       }

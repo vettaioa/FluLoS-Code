@@ -40,9 +40,9 @@
         "FlightNumber": "171"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "marseille",
           "Score": 1.0
         }
       }
@@ -89,9 +89,9 @@
         "FlightNumber": "171"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "marseille",
           "Score": 1.0
         }
       }
@@ -141,6 +141,11 @@
         "FlightLevel": {
           "Instruction": null,
           "Level": "171",
+          "Score": 1.0
+        },
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "marseille",
           "Score": 1.0
         }
       }

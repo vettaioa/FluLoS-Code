@@ -40,9 +40,8 @@
         "FlightNumber": "155"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "574",
+        "Squawk": {
+          "Code": "5743",
           "Score": 1.0
         }
       }
@@ -138,9 +137,8 @@
         "FlightNumber": "155"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "574",
+        "Squawk": {
+          "Code": "5743",
           "Score": 1.0
         }
       }

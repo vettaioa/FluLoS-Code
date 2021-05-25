@@ -40,9 +40,8 @@
         "FlightNumber": "158"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "572",
+        "Squawk": {
+          "Code": "5720",
           "Score": 1.0
         }
       }

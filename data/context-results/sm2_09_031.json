@@ -40,9 +40,8 @@
         "FlightNumber": "5305"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "275",
+        "Squawk": {
+          "Code": "2756",
           "Score": 1.0
         }
       }
@@ -89,9 +88,8 @@
         "FlightNumber": "53"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "275",
+        "Squawk": {
+          "Code": "2756",
           "Score": 1.0
         }
       }
@@ -138,9 +136,8 @@
         "FlightNumber": "5305"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "275",
+        "Squawk": {
+          "Code": "2756",
           "Score": 1.0
         }
       }

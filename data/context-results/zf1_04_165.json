@@ -44,6 +44,10 @@
           "Instruction": null,
           "Level": "925",
           "Score": 1.0
+        },
+        "Squawk": {
+          "Code": "1005",
+          "Score": 1.0
         }
       }
     }
@@ -86,9 +90,8 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "100",
+        "Squawk": {
+          "Code": "1005",
           "Score": 1.0
         }
       }

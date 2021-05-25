@@ -37,9 +37,8 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "274",
+        "Squawk": {
+          "Code": "2744",
           "Score": 1.0
         }
       }

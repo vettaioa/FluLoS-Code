@@ -41,6 +41,11 @@
           "Instruction": null,
           "Level": "365",
           "Score": 1.0
+        },
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "milano",
+          "Score": 1.0
         }
       }
     }
@@ -83,9 +88,9 @@
         "FlightNumber": "365"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "milano",
           "Score": 1.0
         }
       }
@@ -135,6 +140,11 @@
         "FlightLevel": {
           "Instruction": null,
           "Level": "365",
+          "Score": 1.0
+        },
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "milano",
           "Score": 1.0
         }
       }

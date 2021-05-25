@@ -39,7 +39,15 @@
         "Airline": "belair",
         "FlightNumber": "2557"
       },
-      "Intents": {}
+      "Intents": {
+        "Turn": {
+          "Direction": "left",
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
+        }
+      }
     }
   },
   {
@@ -82,7 +90,15 @@
         "Airline": "belair",
         "FlightNumber": "2557"
       },
-      "Intents": {}
+      "Intents": {
+        "Turn": {
+          "Direction": "left",
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
+        }
+      }
     }
   },
   {
@@ -125,7 +141,15 @@
         "Airline": "belair",
         "FlightNumber": "2557"
       },
-      "Intents": {}
+      "Intents": {
+        "Turn": {
+          "Direction": "left",
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
+        }
+      }
     }
   }
 ]

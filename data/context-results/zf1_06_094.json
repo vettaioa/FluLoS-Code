@@ -37,9 +37,8 @@
         "FlightNumber": "826A"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "753",
+        "Squawk": {
+          "Code": "7531",
           "Score": 1.0
         }
       }
@@ -129,9 +128,8 @@
         "FlightNumber": "826A"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "753",
+        "Squawk": {
+          "Code": "7530",
           "Score": 1.0
         }
       }

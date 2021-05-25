@@ -40,9 +40,11 @@
         "FlightNumber": "144"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "115",
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "115",
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -89,9 +91,11 @@
         "FlightNumber": "14"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "115",
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "115",
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -138,9 +142,11 @@
         "FlightNumber": "14"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "115",
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": "115",
+          "Place": null,
           "Score": 1.0
         }
       }

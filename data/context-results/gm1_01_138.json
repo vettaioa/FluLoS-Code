@@ -37,9 +37,9 @@
         "FlightNumber": "98L"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
           "Score": 1.0
         }
       }
@@ -83,9 +83,9 @@
         "FlightNumber": "988L"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
           "Score": 1.0
         }
       }
@@ -132,9 +132,9 @@
         "FlightNumber": "8L"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
           "Score": 1.0
         }
       }

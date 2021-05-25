@@ -40,9 +40,8 @@
         "FlightNumber": "376"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "576",
+        "Squawk": {
+          "Code": "5766",
           "Score": 1.0
         }
       }
@@ -93,6 +92,10 @@
           "Instruction": null,
           "Level": "376",
           "Score": 1.0
+        },
+        "Squawk": {
+          "Code": "5766",
+          "Score": 1.0
         }
       }
     }
@@ -138,6 +141,10 @@
         "FlightLevel": {
           "Instruction": null,
           "Level": "376",
+          "Score": 1.0
+        },
+        "Squawk": {
+          "Code": "5766",
           "Score": 1.0
         }
       }

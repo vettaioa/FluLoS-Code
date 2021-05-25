@@ -23,7 +23,7 @@
 	"InputLabelDirectory": "../../../../../data/context-labelled/",
 	"ContextOutputDirectory": "../../../../../data/context-results/",
 	"Evaluation": {
-		"RunEvaluation": true,
+		"RunEvaluation": false,
 		"EvaluationOutputDirectory": "../../../../../data/context-evaluation/",
 		"MergeOutputDirectory": "../../../../../data/context-validated/",
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange",

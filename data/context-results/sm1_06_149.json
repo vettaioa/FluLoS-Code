@@ -37,9 +37,11 @@
         "FlightNumber": "826A"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "10",
+        "Turn": {
+          "Direction": "left",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -83,9 +85,11 @@
         "FlightNumber": "826A"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "10",
+        "Turn": {
+          "Direction": "left",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -129,9 +133,11 @@
         "FlightNumber": "826A"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "10",
+        "Turn": {
+          "Direction": "left",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }

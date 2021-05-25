@@ -42,7 +42,14 @@
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "15",
+          "Level": "290",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -91,7 +98,14 @@
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "15",
+          "Level": "290",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -140,7 +154,14 @@
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "15",
+          "Level": "290",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": null,
+          "Degrees": "15",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }

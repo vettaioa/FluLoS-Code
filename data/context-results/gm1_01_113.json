@@ -40,9 +40,9 @@
         "FlightNumber": "4476"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "zurich",
           "Score": 1.0
         }
       }
@@ -138,9 +138,9 @@
         "FlightNumber": "476"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "zurich",
           "Score": 1.0
         }
       }

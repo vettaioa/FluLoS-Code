@@ -40,9 +40,9 @@
         "FlightNumber": "517"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "134",
+        "Contact": {
+          "Frequency": "134134",
+          "Place": "zurich",
           "Score": 1.0
         }
       }
@@ -89,9 +89,9 @@
         "FlightNumber": "517"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "134",
+        "Contact": {
+          "Frequency": "134134",
+          "Place": "ontario",
           "Score": 1.0
         }
       }
@@ -138,9 +138,9 @@
         "FlightNumber": "517"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "134",
+        "Contact": {
+          "Frequency": "13434",
+          "Place": "zurich",
           "Score": 1.0
         }
       }

@@ -40,9 +40,9 @@
         "FlightNumber": "2546"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "marseille",
           "Score": 1.0
         }
       }
@@ -89,9 +89,9 @@
         "FlightNumber": "2546"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.850",
+          "Place": "marseille",
           "Score": 1.0
         }
       }
@@ -138,9 +138,9 @@
         "FlightNumber": "2546"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "marseille",
           "Score": 1.0
         }
       }

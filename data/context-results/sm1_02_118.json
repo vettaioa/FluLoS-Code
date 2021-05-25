@@ -44,6 +44,13 @@
           "Instruction": "Climb",
           "Level": "340",
           "Score": 1.0
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
         }
       }
     }
@@ -92,6 +99,13 @@
         "FlightLevel": {
           "Instruction": "Climb",
           "Level": "340",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
           "Score": 1.0
         }
       }

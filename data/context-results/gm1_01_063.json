@@ -40,9 +40,8 @@
         "FlightNumber": "569"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "576",
+        "Squawk": {
+          "Code": "5763",
           "Score": 1.0
         }
       }
@@ -86,9 +85,8 @@
         "FlightNumber": "56"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "576",
+        "Squawk": {
+          "Code": "5763",
           "Score": 1.0
         }
       }
@@ -135,9 +133,8 @@
         "FlightNumber": "569"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "576",
+        "Squawk": {
+          "Code": "5763",
           "Score": 1.0
         }
       }

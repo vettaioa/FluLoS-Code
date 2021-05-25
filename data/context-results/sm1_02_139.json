@@ -40,9 +40,11 @@
         "FlightNumber": "157"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "140",
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": "140",
+          "Place": null,
           "Score": 1.0
         }
       }
@@ -88,7 +90,15 @@
         "Airline": "alitalia",
         "FlightNumber": "157"
       },
-      "Intents": {}
+      "Intents": {
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": "1",
+          "Place": null,
+          "Score": 1.0
+        }
+      }
     }
   },
   {
@@ -132,9 +142,11 @@
         "FlightNumber": "1574"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "140",
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": "140",
+          "Place": null,
           "Score": 1.0
         }
       }

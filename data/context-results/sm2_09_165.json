@@ -40,9 +40,8 @@
         "FlightNumber": "4802"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "275",
+        "Squawk": {
+          "Code": "2751",
           "Score": 1.0
         }
       }
@@ -89,9 +88,8 @@
         "FlightNumber": "402"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "275",
+        "Squawk": {
+          "Code": "2751",
           "Score": 1.0
         }
       }
@@ -138,9 +136,8 @@
         "FlightNumber": "480"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "275",
+        "Squawk": {
+          "Code": "2751",
           "Score": 1.0
         }
       }

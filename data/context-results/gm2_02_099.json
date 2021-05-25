@@ -40,9 +40,9 @@
         "FlightNumber": "3261"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "geneva",
           "Score": 1.0
         }
       }
@@ -86,9 +86,9 @@
         "FlightNumber": "3261"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "geneva",
           "Score": 1.0
         }
       }
@@ -132,9 +132,9 @@
         "FlightNumber": "3261"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "125",
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "geneva",
           "Score": 1.0
         }
       }

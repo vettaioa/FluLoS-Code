@@ -40,9 +40,8 @@
         "FlightNumber": "701"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "273",
+        "Squawk": {
+          "Code": "2732",
           "Score": 1.0
         }
       }
@@ -89,9 +88,8 @@
         "FlightNumber": "71"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "273",
+        "Squawk": {
+          "Code": "2732",
           "Score": 1.0
         }
       }

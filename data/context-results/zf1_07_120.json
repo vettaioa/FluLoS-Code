@@ -37,9 +37,8 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "22",
+        "Squawk": {
+          "Code": "7535",
           "Score": 1.0
         }
       }
@@ -83,9 +82,8 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "22",
+        "Squawk": {
+          "Code": "7535",
           "Score": 1.0
         }
       }
@@ -129,9 +127,8 @@
         "FlightNumber": ""
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "22",
+        "Squawk": {
+          "Code": "7535",
           "Score": 1.0
         }
       }
