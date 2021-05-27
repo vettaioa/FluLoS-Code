@@ -6,7 +6,7 @@
 		"AzureRegion": "westeurope",
 		"InputAudioFile": "../../../../../data/audio/test/gf1_01_026.wav",
 		"InputAudioDirectory": "../../../../../data/audio/test/",
-		"InputTranscriptionDirectory": "../../../../../data/stt-nbest/",
+		"InputTranscriptionDirectory": "../../../../../data/stt-nbest/3best/",
 		"OutputNBestDirectory": "../../../../../data/stt-nbest/"
 	},
 	"Luis": {
