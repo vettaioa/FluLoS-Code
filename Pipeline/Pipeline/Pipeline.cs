@@ -65,7 +65,7 @@ namespace Pipeline
                         string evaluationJson = Newtonsoft.Json.JsonConvert.SerializeObject(evaluationResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
                         Console.WriteLine("Evaluation results:");
                         Console.WriteLine(evaluationJson);
-                        WriteToOutputDirectory(config.Evaluation.EvaluationOutputDirectory, transcriptionResult.FilePath, evaluationJson);
+                        WriteToOutputDirectory(config.Evaluation.FlagsOutputDirectory, transcriptionResult.FilePath, evaluationJson);
 
 
                         // extract correct data by considering the evaluation results (priorizing the first correct occurence of a field)
@@ -86,7 +86,7 @@ namespace Pipeline
                         string bestContextJson = Newtonsoft.Json.JsonConvert.SerializeObject(bestContexts, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
                         Console.WriteLine("Validated Results:");
                         Console.WriteLine(bestContextJson);
-                        WriteToOutputDirectory(config.Evaluation.MergeOutputDirectory, transcriptionResult.FilePath, bestContextJson);
+                        WriteToOutputDirectory(config.Evaluation.MergedOutputDirectory, transcriptionResult.FilePath, bestContextJson);
                     }
                 }
                 else

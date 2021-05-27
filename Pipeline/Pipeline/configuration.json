@@ -20,12 +20,12 @@
 		"PhoneticsFile": "../../../../../data/rml/phonetics.json",
 		"AirlinesFile": "../../../../../data/rml/airlines.json"
 	},
-	"InputLabelDirectory": "../../../../../data/context-labelled/",
-	"ContextOutputDirectory": "../../../../../data/context-results/",
+	"InputLabelDirectory": "../../../../../data/context-extraction/labelled/",
+	"ContextOutputDirectory": "../../../../../data/context-extraction/extracted/",
 	"Evaluation": {
 		"RunEvaluation": false,
-		"EvaluationOutputDirectory": "../../../../../data/context-evaluation/",
-		"MergeOutputDirectory": "../../../../../data/context-validated/",
+		"FlagsOutputDirectory": "../../../../../data/evaluation/validation-flags/",
+		"MergedOutputDirectory": "../../../../../data/evaluation/validated-context/",
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange",
 		"LatitudeMinMax": [ 47, 48 ],
 		"LongitudeMinMax": [ 7, 10 ],
