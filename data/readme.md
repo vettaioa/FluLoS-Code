@@ -13,5 +13,4 @@ All resource files are located here
 ├── mock-airspace/        Data for the fake airspace needed for evaluation
 ├── rml/                  Input data for RML
 ├── speech-to-text/       Output data of Speech-To-Text
-├── stt-nbest/            Output of Speech to Text with the n-Best transcriptions
 ```
