@@ -167,9 +167,9 @@ namespace Evaluation
                     if (turnIntent.Heading != null && Regex.IsMatch(turnIntent.Heading, degreesRegex))
                         result |= TurnValidationResult.HeadingValid;
 
-                    if (turnIntent.Direction != null && Regex.IsMatch(turnIntent.Direction, directionRegex, RegexOptions.IgnoreCase))
+                    if (!string.IsNullOrWhiteSpace(turnIntent.Direction) && Regex.IsMatch(turnIntent.Direction, directionRegex, RegexOptions.IgnoreCase))
                     {
-                        // direction can only be verified, if a heading has been set
+                        // direction can be verified, if a heading has been set
                         // this compares the direction (left/right) with current heading of plane from radar
                         if (result.HasFlag(TurnValidationResult.HeadingValid) && airplane != null && airplane.Position != null && airplane.Position.Heading >= 0 && airplane.Position.Heading <= 360)
                         {
@@ -185,7 +185,7 @@ namespace Evaluation
                                 }
                                 catch { }
 
-                                if (headingDifference != null)
+                                if (headingDifference != null && !string.IsNullOrWhiteSpace(turnIntent.Direction))
                                 {
                                     if (headingDifference < 0)
                                         headingDifference += 360;
@@ -203,6 +203,11 @@ namespace Evaluation
                                 }
                             }
 
+                        }
+                        else if(result.HasFlag(TurnValidationResult.PlaceValid) || result.HasFlag(TurnValidationResult.DegreesValid))
+                        {
+                            // consider turn direction as valid if a place or degrees have been mentioned so the information does not get lost
+                            result |= TurnValidationResult.DirectionValid;
                         }
                     }
 
