@@ -1,0 +1,33 @@
+{
+  "Message": "",
+  "CallSign": {
+    "Airline": "airline",
+    "FlightNumber": "123A"
+  },
+  "Intents": {
+    "None": {
+      "Score": 1.0
+    },
+    "Contact": {
+      "Frequency": "12345",
+      "Place": "abc",
+      "Score": 1.0
+    },
+    "FlightLevel": {
+      "Instruction": "MaintainClimbDescend",
+      "Level": "210",
+      "Score": 1.0
+    },
+    "Squawk": {
+      "Code": null,
+      "Score": 1.0
+    },
+    "Turn": {
+      "Direction": "leftright",
+      "Degrees": "15",
+      "Heading": "015",
+      "Place": "abc",
+      "Score": 1.0
+    }
+  }
+}

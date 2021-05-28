@@ -1,0 +1,13 @@
+{
+  "Message": "klm 376 squawk 5766",
+  "CallSign": {
+    "Airline": "KLM",
+    "FlightNumber": "376"
+  },
+  "Intents": {
+    "Squawk": {
+      "Code": "5766",
+      "Score": 1.0
+    }
+  }
+}

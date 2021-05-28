@@ -1,0 +1,16 @@
+{
+  "Message": "viva 9081 turn left heading 350",
+  "CallSign": {
+    "Airline": "Viva Air",
+    "FlightNumber": "9081"
+  },
+  "Intents": {
+    "Turn": {
+      "Direction": null,
+      "Degrees": null,
+      "Heading": "350",
+      "Place": null,
+      "Score": 1.0
+    }
+  }
+}

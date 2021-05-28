@@ -1,0 +1,13 @@
+{
+  "Message": "airfrans 3261 squawk now 2724",
+  "CallSign": {
+    "Airline": "Air France",
+    "FlightNumber": "3261"
+  },
+  "Intents": {
+    "Squawk": {
+      "Code": null,
+      "Score": 1.0
+    }
+  }
+}

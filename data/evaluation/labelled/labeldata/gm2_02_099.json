@@ -1,0 +1,14 @@
+{
+  "Message": "airfrans 3261 affirm in contact ah geneva 125.85 au revoir",
+  "CallSign": {
+    "Airline": "Air France",
+    "FlightNumber": "3261"
+  },
+  "Intents": {
+    "Contact": {
+      "Frequency": "125.85",
+      "Place": null,
+      "Score": 1.0
+    }
+  }
+}

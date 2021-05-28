@@ -24,6 +24,8 @@
 	"ContextOutputDirectory": "../../../../../data/context-extraction/extracted/",
 	"Evaluation": {
 		"RunEvaluation": false,
+		"UseMockedAirspace": false,
+		"MockedAirspaceFile": "../../../../../data/evaluation/labeldata_airspace.json",
 		"FlagsOutputDirectory": "../../../../../data/evaluation/validation-flags/",
 		"MergedOutputDirectory": "../../../../../data/evaluation/validated-context/",
 		"AirplanesInRangeUrl": "http://waikiki.zhaw.ch/proxy/app2/AirTrafficService/getAirplanesInRange",
@@ -36,10 +38,10 @@
 		"Rules": {
 			"FlightLevelMin": 150,
 			"FlightLevelMax": 450,
-			"ContactFrequencies": [ 12815, 12585 ],
-			"ContactPlaces": [ "rhein", "marseille" ],
-			"TurnPlaces": [ "hochwald", "nattenheim" ],
-			"SquawkCodes": [ "5766", "5720" ]
+			"ContactFrequencies": [ 12885, 12750 ],
+			"ContactPlaces": [ "rhein", "marseille", "zurich" ],
+			"TurnPlaces": [ "hochwald", "nattenheim", "ntm" ],
+			"SquawkCodes": [ "5766", "6653", "2756", "2762" ]
 		}
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "Message": "sabena 7816 turn left to nattenheim",
+  "CallSign": {
+    "Airline": "Sabena",
+    "FlightNumber": "7816"
+  },
+  "Intents": {
+    "Turn": {
+      "Direction": "left",
+      "Degrees": null,
+      "Heading": null,
+      "Place": "nattenheim",
+      "Score": 1.0
+    }
+  }
+}

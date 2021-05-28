@@ -1,0 +1,16 @@
+{
+  "Message": "sabena 801 turn right to trasadingen",
+  "CallSign": {
+    "Airline": "Sabena",
+    "FlightNumber": "801"
+  },
+  "Intents": {
+    "Turn": {
+      "Direction": null,
+      "Degrees": null,
+      "Heading": null,
+      "Place": null,
+      "Score": 1.0
+    }
+  }
+}

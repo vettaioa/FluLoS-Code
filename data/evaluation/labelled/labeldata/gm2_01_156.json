@@ -1,0 +1,14 @@
+{
+  "Message": "lufthansa 4652 contact marseille 125.85",
+  "CallSign": {
+    "Airline": "Lufthansa",
+    "FlightNumber": "4652"
+  },
+  "Intents": {
+    "Contact": {
+      "Frequency": "125.85",
+      "Place": "marseille",
+      "Score": 1.0
+    }
+  }
+}

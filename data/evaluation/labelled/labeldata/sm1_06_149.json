@@ -1,0 +1,16 @@
+{
+  "Message": "sabena 826A turn left by 10 degrees",
+  "CallSign": {
+    "Airline": "Sabena",
+    "FlightNumber": "826A"
+  },
+  "Intents": {
+    "Turn": {
+      "Direction": "left",
+      "Degrees": "10",
+      "Heading": null,
+      "Place": null,
+      "Score": 1.0
+    }
+  }
+}

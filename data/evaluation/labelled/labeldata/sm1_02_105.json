@@ -1,0 +1,16 @@
+{
+  "Message": "klm 264 turn left to ntm",
+  "CallSign": {
+    "Airline": "KLM",
+    "FlightNumber": "264"
+  },
+  "Intents": {
+    "Turn": {
+      "Direction": "left",
+      "Degrees": null,
+      "Heading": null,
+      "Place": "ntm",
+      "Score": 1.0
+    }
+  }
+}

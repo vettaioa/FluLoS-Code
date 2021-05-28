@@ -1,0 +1,14 @@
+{
+  "Message": "sabena 826A climb to flight level 320 trasadingen karlsruhe",
+  "CallSign": {
+    "Airline": "Sabena",
+    "FlightNumber": "826A"
+  },
+  "Intents": {
+    "FlightLevel": {
+      "Instruction": null,
+      "Level": "320",
+      "Score": 1.0
+    }
+  }
+}

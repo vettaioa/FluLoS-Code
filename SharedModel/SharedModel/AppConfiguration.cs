@@ -49,6 +49,8 @@ namespace SharedModel
     public class EvaluationConfig
     {
         public bool RunEvaluation { get; set; }
+        public bool UseMockedAirspace { get; set; }
+        public string MockedAirspaceFile { get; set; }
         public string FlagsOutputDirectory { get; set; }
         public string MergedOutputDirectory { get; set; }
         public string AirplanesInRangeUrl { get; set; }

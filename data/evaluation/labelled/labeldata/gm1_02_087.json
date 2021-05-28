@@ -1,0 +1,14 @@
+{
+  "Message": "aero lloyd 517 contact zurich on 134134.6 good bye",
+  "CallSign": {
+    "Airline": "Aero Lloyd",
+    "FlightNumber": "517"
+  },
+  "Intents": {
+    "Contact": {
+      "Frequency": null,
+      "Place": "zurich",
+      "Score": 1.0
+    }
+  }
+}
