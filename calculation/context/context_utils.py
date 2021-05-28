@@ -2,7 +2,7 @@
 Authors: Ioannis Vettas & Pascal Haupt
 """
 
-from utils import hamming_distance
+from utils import levenshtein_distance
 
 def _get_callsign(context_result):
     if context_result:
@@ -23,8 +23,8 @@ def check_callsign(context_result, label_data):
     return (
         actual_airline == expected_airline,
         actual_flightnr == expected_flightnr,
-        hamming_distance(actual_airline, expected_airline) if actual_airline is not None else None,
-        hamming_distance(actual_flightnr, expected_flightnr) if actual_flightnr is not None else None
+        levenshtein_distance(actual_airline, expected_airline) if actual_airline is not None else None,
+        levenshtein_distance(actual_flightnr, expected_flightnr) if actual_flightnr is not None else None
     )
 
 def _get_intents(context_result):
