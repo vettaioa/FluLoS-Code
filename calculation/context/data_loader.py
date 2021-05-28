@@ -9,9 +9,9 @@ from typing import List
 from json_utils import load_json_file
 
 __path_data_folder = '../../data/'
-__path_label_folder = PurePath(__path_data_folder, 'context-labelled')
-__path_context_folder = PurePath(__path_data_folder, 'context-results')
-__path_nbest_folder = PurePath(__path_data_folder, 'stt-nbest')
+__path_label_folder = PurePath(__path_data_folder, 'context-extraction/labelled')
+__path_context_folder = PurePath(__path_data_folder, 'context-extraction/extracted')
+__path_nbest_folder = PurePath(__path_data_folder, 'speech-to-text/nbest/3best')
 __path_cleaned_folder = PurePath('../wer/data/clean/text')
 
 
