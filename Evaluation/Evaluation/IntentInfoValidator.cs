@@ -116,7 +116,11 @@ namespace Evaluation
                     if (result.HasFlag(FlightLevelValidationResult.FlightLevelValid) && flightLevelIntent.Instruction != null && airplane != null && airplane.Position != null && airplane.Position.Altitude > 0)
                     {
                         // check wether the instruction (climb/maintain/descend) is correct considering the current height
-                        int? radarFlightLevel = ConvertMetersToFlightLevel(airplane.Position.Altitude);
+                        int? radarFlightLevel = null;
+
+                        // radar returns altitude in feet. Flight Level = Hundreds of Feet (i.e. FL240 = 24000 feet)
+                        if (airplane.Position.Altitude > 100)
+                            radarFlightLevel = airplane.Position.Altitude / 100;
 
                         if (radarFlightLevel != null)
                         {
@@ -220,22 +224,6 @@ namespace Evaluation
             }
 
             return result;
-        }
-
-        private static int? ConvertMetersToFlightLevel(int meters)
-        {
-            int? flightLevel = null;
-
-            try
-            {
-                // Flight Level = Hundreds of Feet (i.e. FL240 = 24000 feet)
-                // 1 foot = 3.280839895 meters
-                // -> FL = feet / 100 = (meters * 3.280839895) / 100
-                flightLevel = Convert.ToInt32((meters * 3.280839895) / 100);
-            }
-            catch { }
-
-            return flightLevel;
         }
     }
 }
