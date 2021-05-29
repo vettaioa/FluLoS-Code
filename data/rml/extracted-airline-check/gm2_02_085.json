@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "belgian air force 334 contact reims 134.4 if",
+      "CallSign": {
+        "Airline": "belgian airforce",
+        "FlightNumber": "334"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134.4",
+          "Place": "reims",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

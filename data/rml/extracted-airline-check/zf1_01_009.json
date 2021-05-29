@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "airfrans 3261 squawk now 2724",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "272",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

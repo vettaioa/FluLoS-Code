@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "transavia 3513 bonjour cleared direct bilsa flight level 330",
+      "CallSign": {
+        "Airline": "transavia",
+        "FlightNumber": "3513"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "330",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

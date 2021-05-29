@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "speedway 3352 contact zurich ontario.6 good bye",
+      "CallSign": {
+        "Airline": "speedway",
+        "FlightNumber": "3352"
+      },
+      "Intents": {}
+    }
+  }
+]

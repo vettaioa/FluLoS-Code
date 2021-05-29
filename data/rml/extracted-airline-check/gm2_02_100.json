@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "swiss air 6752 turn left direct to kamas",
+      "CallSign": {
+        "Airline": "swiss air force",
+        "FlightNumber": "6752"
+      },
+      "Intents": {}
+    }
+  }
+]

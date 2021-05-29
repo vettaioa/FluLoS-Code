@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "tunair 4802 squawk 2751",
+      "CallSign": {
+        "Airline": "tunair",
+        "FlightNumber": "4802"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "2751",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

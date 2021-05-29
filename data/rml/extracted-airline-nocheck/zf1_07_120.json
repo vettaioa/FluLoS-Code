@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "fo 22B good afternoon squawk 7535",
+      "CallSign": {
+        "Airline": "fo",
+        "FlightNumber": "22B"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "7535",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

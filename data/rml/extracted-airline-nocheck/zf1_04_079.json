@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "airfrans uh 356 good morning fly correction squawk 7536",
+      "CallSign": {
+        "Airline": "airfrans uh",
+        "FlightNumber": "356"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "7536",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

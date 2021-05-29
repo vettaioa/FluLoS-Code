@@ -1,0 +1,21 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "air malta 004 for separation turn right by 10 degrees",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "004"
+      },
+      "Intents": {
+        "Turn": {
+          "Direction": null,
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

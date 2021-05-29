@@ -1,0 +1,26 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "speedbird 389 turn right by 10 degrees climb flight level 350",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "389"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "350",
+          "Score": 1.0
+        },
+        "Turn": {
+          "Direction": "right",
+          "Degrees": "10",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

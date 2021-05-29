@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "klm 376 squawk 5766",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "5766",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

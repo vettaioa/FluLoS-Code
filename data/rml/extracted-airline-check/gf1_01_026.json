@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "alitalia 301 descend to flight level 300 traffic",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "301"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Descend",
+          "Level": "300",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

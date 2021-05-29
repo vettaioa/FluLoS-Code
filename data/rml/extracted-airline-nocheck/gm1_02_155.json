@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "speedbird 171 contact marseille 12585 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "171"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "marseille",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

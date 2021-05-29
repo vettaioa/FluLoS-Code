@@ -1,0 +1,21 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "viva 9081 turn left heading 350",
+      "CallSign": {
+        "Airline": "viva",
+        "FlightNumber": "9081"
+      },
+      "Intents": {
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "350",
+          "Place": null,
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

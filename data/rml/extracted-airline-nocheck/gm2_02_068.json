@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "aero lloyd 517 turn right to willisau",
+      "CallSign": {
+        "Airline": "aero lloyd",
+        "FlightNumber": "517"
+      },
+      "Intents": {}
+    }
+  }
+]

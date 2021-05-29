@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "alitalia 323 turn right to torino",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "323"
+      },
+      "Intents": {}
+    }
+  }
+]

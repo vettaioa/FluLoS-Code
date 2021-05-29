@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "ltu 1602 climb to flight level 330",
+      "CallSign": {
+        "Airline": "ltu",
+        "FlightNumber": "1602"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "330",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "aero lloyd 517 contact zurich 134134.6 good bye",
+      "CallSign": {
+        "Airline": "aero lloyd",
+        "FlightNumber": "517"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134134",
+          "Place": "zurich",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

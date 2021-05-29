@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "klm 264 turn left to NTM",
+      "CallSign": {
+        "Airline": "klm",
+        "FlightNumber": "264"
+      },
+      "Intents": {}
+    }
+  }
+]

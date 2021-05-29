@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "airfrans 3261 affirm and contact geneva 125.85 au revoir",
+      "CallSign": {
+        "Airline": "airfrans",
+        "FlightNumber": "3261"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "geneva",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "alitalia 379 contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "379"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

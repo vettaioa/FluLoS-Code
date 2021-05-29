@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "l 376 identified cleared st prex arbos epinal climb to flight level 320",
+      "CallSign": {
+        "Airline": "l",
+        "FlightNumber": "376"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "320",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

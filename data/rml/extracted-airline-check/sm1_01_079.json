@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "viva 585 turn left to frankfurt",
+      "CallSign": {
+        "Airline": "viva",
+        "FlightNumber": "585"
+      },
+      "Intents": {}
+    }
+  }
+]

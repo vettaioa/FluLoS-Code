@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "speedbird 563 contact geneva on 12815 good bye",
+      "CallSign": {
+        "Airline": "speedbird",
+        "FlightNumber": "563"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "12815",
+          "Place": "geneva",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

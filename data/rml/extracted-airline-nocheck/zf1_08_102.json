@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "sabena 826A climb to flight level 320 trasadingen karlsruhe",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "826A"
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": "Climb",
+          "Level": "320",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "topswiss 4578 on left",
+      "CallSign": {
+        "Airline": "topswiss",
+        "FlightNumber": "4578"
+      },
+      "Intents": {}
+    }
+  }
+]

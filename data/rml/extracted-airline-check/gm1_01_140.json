@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "alitalia 216 contact reims 13227 good bye",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "216"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "13227",
+          "Place": "reims",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

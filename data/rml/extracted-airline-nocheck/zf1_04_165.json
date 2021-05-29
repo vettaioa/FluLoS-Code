@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "turkair 925 good afternoon squawk 1005",
+      "CallSign": {
+        "Airline": "turkair",
+        "FlightNumber": "925"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "1005",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

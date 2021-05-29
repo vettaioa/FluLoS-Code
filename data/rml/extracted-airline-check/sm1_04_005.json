@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "sabena 481 turn left to dinkelsbuhl",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "481"
+      },
+      "Intents": {}
+    }
+  }
+]

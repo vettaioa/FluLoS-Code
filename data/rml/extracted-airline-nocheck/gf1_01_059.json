@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "belgian air force 34 bonjour",
+      "CallSign": {
+        "Airline": "belgian air force",
+        "FlightNumber": "34"
+      },
+      "Intents": {}
+    }
+  }
+]

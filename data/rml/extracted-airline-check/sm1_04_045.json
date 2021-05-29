@@ -1,0 +1,21 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "sobelair 2557 turn left by 5 degrees",
+      "CallSign": {
+        "Airline": "belair",
+        "FlightNumber": "2557"
+      },
+      "Intents": {
+        "Turn": {
+          "Direction": "left",
+          "Degrees": "5",
+          "Heading": null,
+          "Place": null,
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

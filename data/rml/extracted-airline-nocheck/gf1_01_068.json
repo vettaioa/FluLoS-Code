@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "aero 560",
+      "CallSign": {
+        "Airline": "aero",
+        "FlightNumber": "560"
+      },
+      "Intents": {}
+    }
+  }
+]

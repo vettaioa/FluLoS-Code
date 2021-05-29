@@ -1,0 +1,21 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "roger turn left heading 220",
+      "CallSign": {
+        "Airline": "aerogem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "Turn": {
+          "Direction": "left",
+          "Degrees": null,
+          "Heading": "220",
+          "Place": null,
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "air malta 450 squawk 7534",
+      "CallSign": {
+        "Airline": "air malta",
+        "FlightNumber": "450"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "7534",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

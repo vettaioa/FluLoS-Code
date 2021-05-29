@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "swiss air 687 contact zurich 12585 good bye",
+      "CallSign": {
+        "Airline": "swiss air",
+        "FlightNumber": "687"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "zurich",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

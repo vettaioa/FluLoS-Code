@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "monarch 244 contact on 132.27 good bye",
+      "CallSign": {
+        "Airline": "monarch",
+        "FlightNumber": "244"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "132.27",
+          "Place": "on",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

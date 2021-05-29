@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "alitalia 6474 squawk 2762",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "6474"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "2762",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

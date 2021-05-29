@@ -1,0 +1,21 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "german air force 4901 turn right heading 250",
+      "CallSign": {
+        "Airline": "german air force",
+        "FlightNumber": "4901"
+      },
+      "Intents": {
+        "Turn": {
+          "Direction": "right",
+          "Degrees": null,
+          "Heading": "250",
+          "Place": null,
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

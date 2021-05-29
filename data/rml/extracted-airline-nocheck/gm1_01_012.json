@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "iberia 3530 contact zurich ontario.6 good bye",
+      "CallSign": {
+        "Airline": "iberia",
+        "FlightNumber": "3530"
+      },
+      "Intents": {}
+    }
+  }
+]

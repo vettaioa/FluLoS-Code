@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "aero 560",
+      "CallSign": {
+        "Airline": "aerem",
+        "FlightNumber": ""
+      },
+      "Intents": {
+        "FlightLevel": {
+          "Instruction": null,
+          "Level": "560",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

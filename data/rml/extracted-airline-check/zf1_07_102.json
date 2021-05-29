@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "lauda 109 good afternoon squawk 2746",
+      "CallSign": {
+        "Airline": "lauda air",
+        "FlightNumber": "109"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "2746",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

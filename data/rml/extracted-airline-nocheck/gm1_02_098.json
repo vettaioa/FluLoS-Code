@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "sabena 970 contact reims on 134.4 good bye",
+      "CallSign": {
+        "Airline": "sabena",
+        "FlightNumber": "970"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "134.4",
+          "Place": "reims",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

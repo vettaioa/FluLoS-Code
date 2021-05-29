@@ -1,0 +1,18 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "saudia 155 bonjour squawk 5743",
+      "CallSign": {
+        "Airline": "saudia",
+        "FlightNumber": "155"
+      },
+      "Intents": {
+        "Squawk": {
+          "Code": "5743",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

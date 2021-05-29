@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "hapag lloyd 195 contact marseille 125.85 au revoir",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "195"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "125.85",
+          "Place": "marseille",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "alitalia 157 for shortcut turn right heading 140",
+      "CallSign": {
+        "Airline": "alitalia",
+        "FlightNumber": "157"
+      },
+      "Intents": {
+        "Turn": {
+          "Direction": null,
+          "Degrees": null,
+          "Heading": "140",
+          "Place": null,
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

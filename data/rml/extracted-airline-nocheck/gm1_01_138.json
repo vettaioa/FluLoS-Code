@@ -1,0 +1,19 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "gibair 98L contact milano 12585 good bye",
+      "CallSign": {
+        "Airline": "gibair",
+        "FlightNumber": "98L"
+      },
+      "Intents": {
+        "Contact": {
+          "Frequency": "12585",
+          "Place": "milano",
+          "Score": 1.0
+        }
+      }
+    }
+  }
+]

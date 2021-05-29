@@ -1,0 +1,13 @@
+[
+  {
+    "LuisContext": null,
+    "RmlContext": {
+      "Message": "tag lloyd 171 turn left to bilsa",
+      "CallSign": {
+        "Airline": "hapag lloyd",
+        "FlightNumber": "171"
+      },
+      "Intents": {}
+    }
+  }
+]
