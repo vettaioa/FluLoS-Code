@@ -5765,5 +5765,7 @@
 {"iata":null, "icao":"cyn", "name":"zhongyuan aviation", "callSign":"zhongyuan" },
 {"iata":"3j", "icao":"wzp", "name":"zip", "callSign":"zipper" },
 {"iata":"zg", "icao":"tzt", "name":"zipair tokyo", "callSign":"zippy" },
-{"iata":null, "icao":"orz", "name":"zorex", "callSign":"zorex" }
+{"iata":"sn", "icao":"sab", "name":"sabena", "callSign":"sabena" },
+{"iata":"yp", "icao":"aef", "name":"aero lloyd", "callSign":"aero lloyd" },
+{"iata":"fv", "icao":"viv", "name":"viva air", "callSign":"viva" }
 ]
