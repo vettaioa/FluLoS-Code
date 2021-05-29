@@ -12,6 +12,7 @@ __path_data_folder = '../../data/'
 __path_label_folder = PurePath(__path_data_folder, 'context-extraction/labelled')
 __path_context_folder = PurePath(__path_data_folder, 'context-extraction/extracted')
 __path_luisversions_folder = PurePath(__path_data_folder, 'luis-comparison')
+__path_rmlversions_folder = PurePath(__path_data_folder, 'rml-comparison')
 __path_nbest_folder = PurePath(__path_data_folder, 'speech-to-text/nbest/3best')
 __path_cleaned_folder = PurePath('../wer/data/clean/text')
 
@@ -19,8 +20,8 @@ __path_cleaned_folder = PurePath('../wer/data/clean/text')
 Data = namedtuple('Data', ['filenames', 'labels', 'contexts', 'datarecords'])
 DataRecord = namedtuple('DataRecord', ['name', 'label', 'context'])
 
-LuisVData = namedtuple('LuisVData', ['versions', 'datarecords'])
-LuisVRecord = namedtuple('LuisVRecord', ['name', 'label', 'contexts'])
+DataV = namedtuple('DataV', ['versions', 'datarecords'])
+DataVRecord = namedtuple('DataVRecord', ['name', 'label', 'contexts'])
 NBest = namedtuple('NBest', ['name', 'transcriptions'])
 
 
@@ -80,9 +81,25 @@ def load_luisversions_data(luisVersions):
 
         #labels.append(label)
         #contextslist.append(contexts)
-        datarecords.append(LuisVRecord(name, label, contexts))
+        datarecords.append(DataVRecord(name, label, contexts))
     
-    return LuisVData(luisVersions, datarecords)
+    return DataV(luisVersions, datarecords)
+
+def load_rmlversions_data(rmlVersions):
+    loaded_labels = __load_labels(__path_label_folder)
+    loaded_contexts = {v:__load_contexts(PurePath(__path_rmlversions_folder, v)) for v in rmlVersions}
+
+    filenames = loaded_labels.keys()
+    datarecords = []
+
+    for filename in filenames:
+        name = filename.split('.')[0]
+        label = loaded_labels.get(filename)
+        contexts = {v:loaded_contexts[v].get(filename) for v in rmlVersions}
+
+        datarecords.append(DataVRecord(name, label, contexts))
+    
+    return DataV(rmlVersions, datarecords)
 
 def load_stt_nbests():
     loaded_nbest = {}
