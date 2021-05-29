@@ -11,7 +11,10 @@
   },
   "RmlContext": {
     "Message": "speedbird 77WW good morning squawk 2720",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "British Airways",
+      "FlightNumber": "566"
+    },
     "Intents": {
       "Squawk": {
         "Code": null,

@@ -1,7 +1,10 @@
 {
   "LuisContext": {
     "Message": "sabena 970 contact radar 128.150",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "Sabena",
+      "FlightNumber": "158"
+    },
     "Intents": {
       "Contact": {
         "Frequency": null,
@@ -12,7 +15,10 @@
   },
   "RmlContext": {
     "Message": "sabena 970 contact radar 128.150",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "Sabena",
+      "FlightNumber": "158"
+    },
     "Intents": {
       "Contact": {
         "Frequency": null,

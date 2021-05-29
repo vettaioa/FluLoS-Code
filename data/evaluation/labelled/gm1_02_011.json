@@ -1,0 +1,13 @@
+{
+  "Message": "speedbird 563 bonjour squawk 5721",
+  "CallSign": {
+    "Airline": "British Airways",
+    "FlightNumber": "56"
+  },
+  "Intents": {
+    "Squawk": {
+      "Code": null,
+      "Score": 1.0
+    }
+  }
+}

@@ -1,7 +1,10 @@
 {
   "LuisContext": {
     "Message": "sabena 481 turn left to dinkelsbuhl",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "Sabena",
+      "FlightNumber": "158"
+    },
     "Intents": {
       "Turn": {
         "Direction": null,
@@ -14,7 +17,10 @@
   },
   "RmlContext": {
     "Message": "sabena 481 turn left to dinkelsbuhl",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "Sabena",
+      "FlightNumber": "158"
+    },
     "Intents": {}
   }
 }

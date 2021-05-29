@@ -1,7 +1,10 @@
 {
   "LuisContext": {
     "Message": "speedbird 569 bonjour squawk 5763",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "British Airways",
+      "FlightNumber": "566"
+    },
     "Intents": {
       "Squawk": {
         "Code": null,
@@ -11,7 +14,10 @@
   },
   "RmlContext": {
     "Message": "speedbird 569 bonjour squawk 5763",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "British Airways",
+      "FlightNumber": "566"
+    },
     "Intents": {
       "Squawk": {
         "Code": null,

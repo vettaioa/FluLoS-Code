@@ -34,12 +34,17 @@ iata: OA, ICAO: OAL, name & callsign: OLYMPIC
 for callsign improvement:
 - lufthansa 5905
 - olympic 6474
+- sabena 158
+- saudia 158
+- speedbird 566
+- speedbird 56
 
 
 ## Callsign Improvement
-- sm2_09_031.wav (InvalidFlightNr) lufthansa 5305 squawk 2756 -> wird verbessert zu lufthansa 5905
-- sm2_09_028.wav (InvalidAirline) alitalia 6474 squawk 2762 -> wird verbessert zu olympic 6474
-
+- sm2_09_031.wav (InvalidFlightNr) lufthansa 5305 squawk 2756 -> sollte zu lufthansa 5905 verbessert werden
+- sm2_09_028.wav (InvalidAirline) alitalia 6474 squawk 2762 -> sollte zu olympic 6474 verbessert werden
+- gf1_01_036.wav (InvalidFlightNr) saudia 155 bonjour squawk 5743 -> sollte zu saudia 158 verbessert werden, obwohl es auch sabena 158 gibt
+- gm1_02_011.json (InvalidFlightNr) speedbird 563 bonjour squawk 5721 -> sollte zu speedbird 56 verbessert werden, obwohl es auch speedbird 566 gibt
 
 
 ## Squawk

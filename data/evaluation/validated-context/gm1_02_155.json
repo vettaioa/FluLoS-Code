@@ -1,7 +1,10 @@
 {
   "LuisContext": {
     "Message": "speedbird 171 contact marseille 12585 good bye",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "British Airways",
+      "FlightNumber": "566"
+    },
     "Intents": {
       "Contact": {
         "Frequency": "12585",
@@ -12,7 +15,10 @@
   },
   "RmlContext": {
     "Message": "speedbird 171 contact marseille 12585 good bye",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "British Airways",
+      "FlightNumber": "566"
+    },
     "Intents": {
       "Contact": {
         "Frequency": "12585",

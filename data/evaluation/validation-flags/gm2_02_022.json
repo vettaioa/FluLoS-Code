@@ -1,21 +1,120 @@
 {
   "LuisEvaluations": [
     {
-      "RadarAirplane": null,
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "BA",
+              "AirlineICAO": "BAW",
+              "Callsign": "Speedbird",
+              "Country": {
+                "Code": "GB",
+                "Name": "Great Britain"
+              },
+              "Name": "British Airways"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "BA566"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 33000,
+          "Heading": 245.379638671875,
+          "Latitude": 47.31487154361754,
+          "Longitude": 9.05506109809429,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 263.0,
+          "Squawk": "6653",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
       "SquawkResult": "Invalid",
       "ContactResult": "Invalid",
       "FlightLevelResult": "Invalid",
       "TurnResult": "Invalid"
     },
     {
-      "RadarAirplane": null,
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "BA",
+              "AirlineICAO": "BAW",
+              "Callsign": "Speedbird",
+              "Country": {
+                "Code": "GB",
+                "Name": "Great Britain"
+              },
+              "Name": "British Airways"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "BA566"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 33000,
+          "Heading": 245.379638671875,
+          "Latitude": 47.31487154361754,
+          "Longitude": 9.05506109809429,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 263.0,
+          "Squawk": "6653",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
       "SquawkResult": "Invalid",
       "ContactResult": "Invalid",
       "FlightLevelResult": "Invalid",
       "TurnResult": "Invalid"
     },
     {
-      "RadarAirplane": null,
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "BA",
+              "AirlineICAO": "BAW",
+              "Callsign": "Speedbird",
+              "Country": {
+                "Code": "GB",
+                "Name": "Great Britain"
+              },
+              "Name": "British Airways"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "BA566"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 33000,
+          "Heading": 245.379638671875,
+          "Latitude": 47.31487154361754,
+          "Longitude": 9.05506109809429,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 263.0,
+          "Squawk": "6653",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
       "SquawkResult": "Invalid",
       "ContactResult": "Invalid",
       "FlightLevelResult": "Invalid",
@@ -24,21 +123,120 @@
   ],
   "RmlEvaluations": [
     {
-      "RadarAirplane": null,
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "BA",
+              "AirlineICAO": "BAW",
+              "Callsign": "Speedbird",
+              "Country": {
+                "Code": "GB",
+                "Name": "Great Britain"
+              },
+              "Name": "British Airways"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "BA566"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 33000,
+          "Heading": 245.379638671875,
+          "Latitude": 47.31487154361754,
+          "Longitude": 9.05506109809429,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 263.0,
+          "Squawk": "6653",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
       "SquawkResult": "Invalid",
       "ContactResult": "Invalid",
       "FlightLevelResult": "Invalid",
       "TurnResult": "Invalid"
     },
     {
-      "RadarAirplane": null,
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "BA",
+              "AirlineICAO": "BAW",
+              "Callsign": "Speedbird",
+              "Country": {
+                "Code": "GB",
+                "Name": "Great Britain"
+              },
+              "Name": "British Airways"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "BA566"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 33000,
+          "Heading": 245.379638671875,
+          "Latitude": 47.31487154361754,
+          "Longitude": 9.05506109809429,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 263.0,
+          "Squawk": "6653",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
       "SquawkResult": "Invalid",
       "ContactResult": "Invalid",
       "FlightLevelResult": "Invalid",
       "TurnResult": "Invalid"
     },
     {
-      "RadarAirplane": null,
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "BA",
+              "AirlineICAO": "BAW",
+              "Callsign": "Speedbird",
+              "Country": {
+                "Code": "GB",
+                "Name": "Great Britain"
+              },
+              "Name": "British Airways"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "BA566"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 33000,
+          "Heading": 245.379638671875,
+          "Latitude": 47.31487154361754,
+          "Longitude": 9.05506109809429,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 263.0,
+          "Squawk": "6653",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
       "SquawkResult": "Invalid",
       "ContactResult": "Invalid",
       "FlightLevelResult": "Invalid",

@@ -1,0 +1,13 @@
+{
+  "Message": "saudia 155 bonjour squawk 5743",
+  "CallSign": {
+    "Airline": "Saudia",
+    "FlightNumber": "158"
+  },
+  "Intents": {
+    "Squawk": {
+      "Code": null,
+      "Score": 1.0
+    }
+  }
+}

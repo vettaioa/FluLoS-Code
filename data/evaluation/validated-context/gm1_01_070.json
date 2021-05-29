@@ -1,7 +1,10 @@
 {
   "LuisContext": {
     "Message": "speedbird 569 identified cleared aosta st prex rolampont climb to flight level 330 initially",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "British Airways",
+      "FlightNumber": "566"
+    },
     "Intents": {
       "FlightLevel": {
         "Instruction": null,
@@ -12,7 +15,10 @@
   },
   "RmlContext": {
     "Message": "speedbird 569 identified cleared aosta st prex rolampont climb to flight level 330 initially",
-    "CallSign": null,
+    "CallSign": {
+      "Airline": "British Airways",
+      "FlightNumber": "566"
+    },
     "Intents": {
       "FlightLevel": {
         "Instruction": null,
