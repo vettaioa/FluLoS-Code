@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "ltu 1602 climb to flight level 330",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "330",
+        "Score": 0.99735564
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "ltu 1602 climb to flight level 330",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "330",
+        "Score": 1.0
+      }
+    }
+  }
+}

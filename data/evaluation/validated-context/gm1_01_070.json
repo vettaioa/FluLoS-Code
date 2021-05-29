@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "speedbird 569 identified cleared aosta st prex rolampont climb to flight level 330 initially",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "330",
+        "Score": 0.99884933
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "speedbird 569 identified cleared aosta st prex rolampont climb to flight level 330 initially",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "330",
+        "Score": 1.0
+      }
+    }
+  }
+}

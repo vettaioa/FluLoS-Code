@@ -1,0 +1,20 @@
+{
+  "LuisContext": {
+    "Message": "alitalia 323 turn right to torino",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": null,
+        "Place": null,
+        "Score": 0.99376154
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "alitalia 323 turn right to torino",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

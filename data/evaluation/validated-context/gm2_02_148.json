@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "125.85",
+        "Place": "marseille",
+        "Score": 0.99966675
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "125.85",
+        "Place": "marseille",
+        "Score": 1.0
+      }
+    }
+  }
+}

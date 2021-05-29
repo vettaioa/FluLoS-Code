@@ -1,0 +1,27 @@
+{
+  "LuisContext": {
+    "Message": "swiss 123D descend to flight level 190",
+    "CallSign": {
+      "Airline": "Swiss International Air Lines",
+      "FlightNumber": "169A"
+    },
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "190",
+        "Score": 0.9976415
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "swiss 123D descend to flight level 190",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "190",
+        "Score": 1.0
+      }
+    }
+  }
+}

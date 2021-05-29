@@ -1,0 +1,81 @@
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "LX",
+              "AirlineICAO": "SWR",
+              "Callsign": "Swiss",
+              "Country": {
+                "Code": "CH",
+                "Name": "Switzerland"
+              },
+              "Name": "Swiss International Air Lines"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "LX169A"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 1414,
+          "Heading": 95.625,
+          "Latitude": 47.455294132232666,
+          "Longitude": 8.555409908294678,
+          "OnGround": true,
+          "PointType": "EXACT",
+          "Speed": 0.0,
+          "Squawk": "1000",
+          "Timestamp": 1622130816493,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}

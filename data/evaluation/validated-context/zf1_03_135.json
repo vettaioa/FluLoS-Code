@@ -1,0 +1,27 @@
+{
+  "LuisContext": {
+    "Message": "alitalia 292 good morning squawk 2761",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.98055816
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "alitalia 292 good morning squawk 2761",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "276",
+        "Score": 1.0
+      }
+    }
+  }
+}

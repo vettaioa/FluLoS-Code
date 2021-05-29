@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "bonjour swiss air 659 cleared st prex willisau flight level 300",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "300",
+        "Score": 0.97098607
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "bonjour swiss air 659 cleared st prex willisau flight level 300",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

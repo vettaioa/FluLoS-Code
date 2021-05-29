@@ -6,7 +6,7 @@
       "FlightLevel": {
         "Instruction": null,
         "Level": "300",
-        "Score": 0.0
+        "Score": 0.9978382
       }
     }
   },
@@ -17,7 +17,7 @@
       "FlightLevel": {
         "Instruction": null,
         "Level": "300",
-        "Score": 0.0
+        "Score": 1.0
       }
     }
   }

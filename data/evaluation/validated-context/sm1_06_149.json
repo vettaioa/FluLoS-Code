@@ -1,0 +1,31 @@
+{
+  "LuisContext": {
+    "Message": "sabena 826A turn left by 10 degrees",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": "left",
+        "Degrees": "10",
+        "Heading": null,
+        "Place": null,
+        "Score": 0.99743265
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "sabena 826A turn left by 10 degrees",
+    "CallSign": {
+      "Airline": "Sabena",
+      "FlightNumber": "826A"
+    },
+    "Intents": {
+      "Turn": {
+        "Direction": "left",
+        "Degrees": "10",
+        "Heading": null,
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "sabena 970 contact reims on 134.4 good bye",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "970"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "sabena 970 contact reims 134.4 good bye",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "970"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "sabena 970 contact reims on 134.for good bye",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "970"
       },
       "Intents": {

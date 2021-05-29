@@ -1,0 +1,27 @@
+{
+  "LuisContext": {
+    "Message": "air malta 450 squawk 7534",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.98085546
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "air malta 450 squawk 7534",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

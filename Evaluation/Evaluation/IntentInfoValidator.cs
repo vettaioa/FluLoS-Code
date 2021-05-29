@@ -42,7 +42,7 @@ namespace Evaluation
         {
             ContactValidationResult result = ContactValidationResult.Invalid;
             string frequencyRegex = @"^1(\d){2}\.?\d{1,2}$";
-            string placeRegex = @"^(A-Za-z)+$";
+            string placeRegex = @"^[A-Za-z]+$";
 
             if (contactIntent != null)
             {
@@ -150,7 +150,7 @@ namespace Evaluation
         internal static TurnValidationResult ValidateTurn(TurnIntent turnIntent, RadarAirplane airplane, string[] validPlaces)
         {
             TurnValidationResult result = TurnValidationResult.Invalid;
-            string placeRegex = @"^(A-Za-z)+$";
+            string placeRegex = @"^[A-Za-z]+$";
             string directionRegex = @"^(left|right)$";
             string degreesRegex = @"^[0-2]?[0-9]{1,2}|3[0-5][0-9]|360$";
 
@@ -166,6 +166,21 @@ namespace Evaluation
 
                     if (turnIntent.Heading != null && Regex.IsMatch(turnIntent.Heading, degreesRegex))
                         result |= TurnValidationResult.HeadingValid;
+
+                    if (turnIntent.Place != null && Regex.IsMatch(turnIntent.Place, placeRegex))
+                    {
+                        if (validPlaces != null && validPlaces.Length > 0)
+                        {
+                            // if there are predefined turn to places in config -> check if matches one of them
+                            if (validPlaces.Contains(turnIntent.Place, StringComparer.OrdinalIgnoreCase))
+                                result |= TurnValidationResult.PlaceValid;
+                        }
+                        else
+                        {
+                            // no predefined turn to place in config -> accept any with valid format
+                            result |= TurnValidationResult.PlaceValid;
+                        }
+                    }
 
                     if (!string.IsNullOrWhiteSpace(turnIntent.Direction) && Regex.IsMatch(turnIntent.Direction, directionRegex, RegexOptions.IgnoreCase))
                     {
@@ -211,20 +226,6 @@ namespace Evaluation
                         }
                     }
 
-                    if (turnIntent.Place != null && Regex.IsMatch(turnIntent.Place, placeRegex))
-                    {
-                        if (validPlaces != null && validPlaces.Length > 0)
-                        {
-                            // if there are predefined turn to places in config -> check if matches one of them
-                            if (validPlaces.Contains(turnIntent.Place, StringComparer.OrdinalIgnoreCase))
-                                result |= TurnValidationResult.PlaceValid;
-                        }
-                        else
-                        {
-                            // no predefined turn to place in config -> accept any with valid format
-                            result |= TurnValidationResult.PlaceValid;
-                        }
-                    }
                 }
             }
 

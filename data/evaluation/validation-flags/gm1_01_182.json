@@ -1,0 +1,48 @@
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}

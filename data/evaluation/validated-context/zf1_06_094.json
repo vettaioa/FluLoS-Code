@@ -1,0 +1,30 @@
+{
+  "LuisContext": {
+    "Message": "sabena 826A good morning squawk 7531",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.9911348
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "sabena 826A good morning squawk 7531",
+    "CallSign": {
+      "Airline": "Sabena",
+      "FlightNumber": "826A"
+    },
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

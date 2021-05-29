@@ -1,0 +1,18 @@
+{
+  "LuisContext": {
+    "Message": "lufthansa 4652",
+    "CallSign": {
+      "Airline": "Lufthansa",
+      "FlightNumber": "4652"
+    },
+    "Intents": {}
+  },
+  "RmlContext": {
+    "Message": "lufthansa 4652",
+    "CallSign": {
+      "Airline": "Lufthansa",
+      "FlightNumber": "4652"
+    },
+    "Intents": {}
+  }
+}

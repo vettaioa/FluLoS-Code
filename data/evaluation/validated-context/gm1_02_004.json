@@ -1,0 +1,29 @@
+{
+  "LuisContext": {
+    "Message": "alitalia 364 contact reims 134.4 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 0.99964577
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "alitalia 364 contact reims 134.4 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "LuisContext": {
+    "Message": "at 365 contact milano 125.85 au revoir",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "125.85",
+        "Place": null,
+        "Score": 0.99910706
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "at 365 contact milano 125.85 au revoir",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "365",
+        "Score": 1.0
+      },
+      "Contact": {
+        "Frequency": "125.85",
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

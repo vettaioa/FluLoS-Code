@@ -1,0 +1,26 @@
+{
+  "LuisContext": {
+    "Message": "aero lloyd 517 turn right to willisau",
+    "CallSign": {
+      "Airline": "Aero LLoyd",
+      "FlightNumber": "517"
+    },
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": null,
+        "Place": null,
+        "Score": 0.9940788
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "aero lloyd 517 turn right to willisau",
+    "CallSign": {
+      "Airline": "Aero LLoyd",
+      "FlightNumber": "517"
+    },
+    "Intents": {}
+  }
+}

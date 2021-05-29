@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "sabena 801 turn right to trasadingen",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "801"
       },
       "Intents": {}
@@ -79,7 +79,7 @@
     "RmlContext": {
       "Message": "sabena 801 turn right trasadingen",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "801"
       },
       "Intents": {}
@@ -122,7 +122,7 @@
     "RmlContext": {
       "Message": "sabena 801 turn right to trasadingen now",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "801"
       },
       "Intents": {}

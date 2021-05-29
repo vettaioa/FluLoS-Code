@@ -1,0 +1,28 @@
+{
+  "LuisContext": {
+    "Message": "roger turn left heading 225 permit climb",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": "225",
+        "Place": null,
+        "Score": 0.99568564
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "roger turn left heading 225 permit climb",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": "225",
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

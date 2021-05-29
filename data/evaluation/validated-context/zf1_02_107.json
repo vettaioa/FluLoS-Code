@@ -1,0 +1,12 @@
+{
+  "LuisContext": {
+    "Message": "alitalia",
+    "CallSign": null,
+    "Intents": {}
+  },
+  "RmlContext": {
+    "Message": "alitalia",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

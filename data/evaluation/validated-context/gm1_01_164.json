@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "portugalia 543 climb to flight level 350",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "350",
+        "Score": 0.9974284
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "portugalia 543 climb to flight level 350",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "350",
+        "Score": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "LuisContext": {
+    "Message": "IFG good morning squawk 2744",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.9908475
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "IFG good morning squawk 2744",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "274",
+        "Score": 1.0
+      }
+    }
+  }
+}

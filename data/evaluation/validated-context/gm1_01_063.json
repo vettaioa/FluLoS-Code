@@ -1,0 +1,22 @@
+{
+  "LuisContext": {
+    "Message": "speedbird 569 bonjour squawk 5763",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.9833479
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "speedbird 569 bonjour squawk 5763",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

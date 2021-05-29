@@ -1,0 +1,30 @@
+{
+  "LuisContext": {
+    "Message": "klm 376 climb to flight level 330",
+    "CallSign": {
+      "Airline": "KLM",
+      "FlightNumber": "376"
+    },
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": "Climb",
+        "Level": "330",
+        "Score": 0.9973162
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "klm 376 climb to flight level 330",
+    "CallSign": {
+      "Airline": "KLM",
+      "FlightNumber": "376"
+    },
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": "Climb",
+        "Level": "330",
+        "Score": 1.0
+      }
+    }
+  }
+}

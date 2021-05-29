@@ -1,0 +1,33 @@
+{
+  "LuisContext": {
+    "Message": "alitalia 6474 squawk 2762",
+    "CallSign": {
+      "Airline": "Olympic",
+      "FlightNumber": "6474"
+    },
+    "Intents": {
+      "Squawk": {
+        "Code": "2762",
+        "Score": 0.986598
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "alitalia 6474 squawk 2762",
+    "CallSign": {
+      "Airline": "Olympic",
+      "FlightNumber": "6474"
+    },
+    "Intents": {
+      "Squawk": {
+        "Code": "2762",
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "276",
+        "Score": 1.0
+      }
+    }
+  }
+}

@@ -36,16 +36,10 @@
     "RmlContext": {
       "Message": "viva 585 left turn to frankfurt",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "585"
       },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "585",
-          "Score": 1.0
-        }
-      }
+      "Intents": {}
     }
   },
   {
@@ -85,16 +79,10 @@
     "RmlContext": {
       "Message": "viva 585 left until frankfurt",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "585"
       },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "585",
-          "Score": 1.0
-        }
-      }
+      "Intents": {}
     }
   },
   {
@@ -134,16 +122,10 @@
     "RmlContext": {
       "Message": "viva 585 left turn to frankfort",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "585"
       },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "585",
-          "Score": 1.0
-        }
-      }
+      "Intents": {}
     }
   }
 ]

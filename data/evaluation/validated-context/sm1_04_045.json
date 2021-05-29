@@ -1,0 +1,28 @@
+{
+  "LuisContext": {
+    "Message": "sobelair 2557 turn left by 5 degrees",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": "left",
+        "Degrees": "5",
+        "Heading": null,
+        "Place": null,
+        "Score": 0.9971105
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "sobelair 2557 turn left by 5 degrees",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": "left",
+        "Degrees": "5",
+        "Heading": null,
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

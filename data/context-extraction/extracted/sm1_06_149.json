@@ -33,7 +33,7 @@
     "RmlContext": {
       "Message": "sabena 826A turn left by 10 degrees",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "826A"
       },
       "Intents": {
@@ -81,7 +81,7 @@
     "RmlContext": {
       "Message": "sabena 826A turn left by 10 degrees now",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "826A"
       },
       "Intents": {
@@ -129,7 +129,7 @@
     "RmlContext": {
       "Message": "sabena 826A turn left by 10 degrees in",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "826A"
       },
       "Intents": {

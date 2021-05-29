@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "sabena 970 contact radar 128.150",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "970"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "sabena 970 contact radar 128.15",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "970"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "sabena 970 contact radar 128.15 aw",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "970"
       },
       "Intents": {

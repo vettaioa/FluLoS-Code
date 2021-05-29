@@ -1,0 +1,29 @@
+{
+  "LuisContext": {
+    "Message": "swiss air 687 contact zurich 12585 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "12585",
+        "Place": "zurich",
+        "Score": 0.9842751
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "swiss air 687 contact zurich 12585 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "12585",
+        "Place": "zurich",
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "258",
+        "Score": 1.0
+      }
+    }
+  }
+}

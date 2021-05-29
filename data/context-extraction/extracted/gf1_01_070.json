@@ -33,16 +33,10 @@
     "RmlContext": {
       "Message": "viva 9081 turn further left heading equals",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "9081"
       },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "908",
-          "Score": 1.0
-        }
-      }
+      "Intents": {}
     }
   },
   {
@@ -79,16 +73,10 @@
     "RmlContext": {
       "Message": "viva 9081 turn further left heading a equals",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "9081"
       },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "908",
-          "Score": 1.0
-        }
-      }
+      "Intents": {}
     }
   },
   {
@@ -125,16 +113,10 @@
     "RmlContext": {
       "Message": "viva 9081 turn further left heading equal",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "9081"
       },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "908",
-          "Score": 1.0
-        }
-      }
+      "Intents": {}
     }
   }
 ]

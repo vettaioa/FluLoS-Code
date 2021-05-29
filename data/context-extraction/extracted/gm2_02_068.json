@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "aero lloyd 517 turn right to willisau",
       "CallSign": {
-        "Airline": "aero lanka",
+        "Airline": "aero lloyd",
         "FlightNumber": "517"
       },
       "Intents": {}
@@ -79,7 +79,7 @@
     "RmlContext": {
       "Message": "aero lloyd 517 turn right to willisau ohh",
       "CallSign": {
-        "Airline": "aero lanka",
+        "Airline": "aero lloyd",
         "FlightNumber": "517"
       },
       "Intents": {}
@@ -122,7 +122,7 @@
     "RmlContext": {
       "Message": "aero lloyd 517 turn right to willisauo",
       "CallSign": {
-        "Airline": "aero lanka",
+        "Airline": "aero lloyd",
         "FlightNumber": "517"
       },
       "Intents": {}

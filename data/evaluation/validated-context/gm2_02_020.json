@@ -1,0 +1,22 @@
+{
+  "LuisContext": {
+    "Message": "alitalia 300 squawk 5763",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.98399377
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "alitalia 300 squawk 5763",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

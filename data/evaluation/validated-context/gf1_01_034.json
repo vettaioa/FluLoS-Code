@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "speedbird 563 contact geneva on 12815 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 0.9922946
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "speedbird 563 contact geneva on 12815 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

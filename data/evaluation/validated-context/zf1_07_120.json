@@ -1,0 +1,22 @@
+{
+  "LuisContext": {
+    "Message": "fo 22B good afternoon squawk 7535",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.987485
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "fo 22B good afternoon squawk 7535",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

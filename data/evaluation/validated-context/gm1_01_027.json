@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "roger alitalia 110 climb flight level 320",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "320",
+        "Score": 0.9978004
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "roger alitalia 110 climb flight level 320",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "320",
+        "Score": 1.0
+      }
+    }
+  }
+}

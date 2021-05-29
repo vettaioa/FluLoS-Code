@@ -33,7 +33,7 @@
     "RmlContext": {
       "Message": "sabena 826A good morning squawk 7531",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "826A"
       },
       "Intents": {
@@ -78,7 +78,7 @@
     "RmlContext": {
       "Message": "sabena 826A good morning squawk 753 won",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "826A"
       },
       "Intents": {
@@ -124,7 +124,7 @@
     "RmlContext": {
       "Message": "sabena 826A good morning squawk 75301",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "826A"
       },
       "Intents": {

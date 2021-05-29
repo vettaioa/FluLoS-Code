@@ -1,0 +1,29 @@
+{
+  "LuisContext": {
+    "Message": "twa 800 contact milano 12585 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "12585",
+        "Place": null,
+        "Score": 0.9818872
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "twa 800 contact milano 12585 good bye",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": null,
+        "Score": 1.0
+      },
+      "Contact": {
+        "Frequency": "12585",
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

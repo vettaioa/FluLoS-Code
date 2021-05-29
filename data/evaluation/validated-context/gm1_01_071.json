@@ -1,0 +1,33 @@
+{
+  "LuisContext": {
+    "Message": "klm 376 squawk 5766",
+    "CallSign": {
+      "Airline": "KLM",
+      "FlightNumber": "376"
+    },
+    "Intents": {
+      "Squawk": {
+        "Code": "5766",
+        "Score": 0.9818198
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "klm 376 squawk 5766",
+    "CallSign": {
+      "Airline": "KLM",
+      "FlightNumber": "376"
+    },
+    "Intents": {
+      "Squawk": {
+        "Code": "5766",
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "376",
+        "Score": 1.0
+      }
+    }
+  }
+}

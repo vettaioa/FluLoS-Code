@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "sunwing 5123 bonjour cleared st prex correction kines st prex arbos epinal flight level 300",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "300",
+        "Score": 0.9873447
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "sunwing 5123 bonjour cleared st prex correction kines st prex arbos epinal flight level 300",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "300",
+        "Score": 1.0
+      }
+    }
+  }
+}

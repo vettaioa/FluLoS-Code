@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "sabena 481 turn left to dinkelsbuhl",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "481"
       },
       "Intents": {}
@@ -79,7 +79,7 @@
     "RmlContext": {
       "Message": "sabena 481 turn left dinkelsbuhl",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "481"
       },
       "Intents": {}
@@ -122,7 +122,7 @@
     "RmlContext": {
       "Message": "sabena 481 turn left to dinkelsbuhl now",
       "CallSign": {
-        "Airline": "shabair",
+        "Airline": "sabena",
         "FlightNumber": "481"
       },
       "Intents": {}

@@ -1,0 +1,12 @@
+{
+  "LuisContext": {
+    "Message": "condor 499 bonjour cleared",
+    "CallSign": null,
+    "Intents": {}
+  },
+  "RmlContext": {
+    "Message": "condor 499 bonjour cleared",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

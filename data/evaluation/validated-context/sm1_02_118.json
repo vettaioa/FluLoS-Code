@@ -1,0 +1,38 @@
+{
+  "LuisContext": {
+    "Message": "midland 720 climb flight level 340 turn right by 10 degrees",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "340",
+        "Score": 0.99499005
+      },
+      "Turn": {
+        "Direction": "right",
+        "Degrees": "10",
+        "Heading": null,
+        "Place": null,
+        "Score": 0.9963669
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "midland 720 climb flight level 340 turn right by 10 degrees",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "340",
+        "Score": 1.0
+      },
+      "Turn": {
+        "Direction": "right",
+        "Degrees": "10",
+        "Heading": null,
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

@@ -79,10 +79,22 @@ namespace Evaluation
             var phonetics = loadFromJsonFile<Dictionary<string, string>>(Path.Combine(currentDir, config.PhoneticsFile));
             var fuzzySearch = new FuzzySearch(phonetics);
 
+
             // Airspace
-            var radarScanner = new RadarScanner(config.AirplanesInRangeUrl, config.AirplaneDetailsUrl);
-            var radarAirplanes = await radarScanner.GetRadarAirplanes(config.LatitudeMinMax[0], config.LatitudeMinMax[1],
-                                                                      config.LongitudeMinMax[0], config.LongitudeMinMax[1]);
+            IEnumerable<RadarAirplane> radarAirplanes = null;
+            if (config.UseMockedAirspace)
+            {
+                // use a mocked airspace from predefined json
+                radarAirplanes = JsonSerializer.Deserialize<IEnumerable<RadarAirplane>>(File.ReadAllText(config.MockedAirspaceFile));
+            }
+            else
+            {
+                // call radar to get current airspace
+                var radarScanner = new RadarScanner(config.AirplanesInRangeUrl, config.AirplaneDetailsUrl);
+                radarAirplanes = await radarScanner.GetRadarAirplanes(config.LatitudeMinMax[0], config.LatitudeMinMax[1],
+                                                                          config.LongitudeMinMax[0], config.LongitudeMinMax[1]);
+            }
+
 
             var knownAirlines = loadFromJsonFile<IEnumerable<KnownAirline>>(Path.Combine(currentDir, config.AirlinesFile));
 

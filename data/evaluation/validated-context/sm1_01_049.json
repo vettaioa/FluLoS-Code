@@ -1,0 +1,34 @@
+{
+  "LuisContext": {
+    "Message": "olympic 144 turn left heading 115 for separation",
+    "CallSign": {
+      "Airline": "Olympic",
+      "FlightNumber": "6474"
+    },
+    "Intents": {
+      "Turn": {
+        "Direction": "left",
+        "Degrees": null,
+        "Heading": "115",
+        "Place": null,
+        "Score": 0.9963016
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "olympic 144 turn left heading 115 for separation",
+    "CallSign": {
+      "Airline": "Olympic",
+      "FlightNumber": "6474"
+    },
+    "Intents": {
+      "Turn": {
+        "Direction": "left",
+        "Degrees": null,
+        "Heading": "115",
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

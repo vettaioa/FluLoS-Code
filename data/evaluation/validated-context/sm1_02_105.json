@@ -1,0 +1,26 @@
+{
+  "LuisContext": {
+    "Message": "klm 264 turn left to NTM",
+    "CallSign": {
+      "Airline": "KLM",
+      "FlightNumber": "264"
+    },
+    "Intents": {
+      "Turn": {
+        "Direction": "left",
+        "Degrees": null,
+        "Heading": null,
+        "Place": "NTM",
+        "Score": 0.9938883
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "klm 264 turn left to NTM",
+    "CallSign": {
+      "Airline": "KLM",
+      "FlightNumber": "264"
+    },
+    "Intents": {}
+  }
+}

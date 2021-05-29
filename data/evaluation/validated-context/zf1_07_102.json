@@ -1,0 +1,27 @@
+{
+  "LuisContext": {
+    "Message": "lauda 109 good afternoon squawk 2746",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.97979796
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "lauda 109 good afternoon squawk 2746",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

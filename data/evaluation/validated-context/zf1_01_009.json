@@ -1,0 +1,33 @@
+{
+  "LuisContext": {
+    "Message": "airfrans 3261 squawk now 2724",
+    "CallSign": {
+      "Airline": "Air France",
+      "FlightNumber": "3261"
+    },
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.9926133
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "airfrans 3261 squawk now 2724",
+    "CallSign": {
+      "Airline": "Air France",
+      "FlightNumber": "3261"
+    },
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "272",
+        "Score": 1.0
+      },
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

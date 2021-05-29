@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "gibair 98L contact milano 12585 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "12585",
+        "Place": null,
+        "Score": 0.9842024
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "gibair 98L contact milano 12585 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "12585",
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

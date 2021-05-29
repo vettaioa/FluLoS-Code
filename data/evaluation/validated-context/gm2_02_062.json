@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "sabena 970 contact radar 128.150",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 0.99894005
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "sabena 970 contact radar 128.150",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

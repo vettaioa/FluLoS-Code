@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "cross air 2690 climb to flight level 300",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "300",
+        "Score": 0.9979172
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "cross air 2690 climb to flight level 300",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "300",
+        "Score": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "LuisContext": {
+    "Message": "alitalia 416 good afternoon squawk 7533",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.9818781
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "alitalia 416 good afternoon squawk 7533",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      },
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

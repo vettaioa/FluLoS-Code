@@ -1,0 +1,246 @@
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "YP",
+              "AirlineICAO": "AEF",
+              "Callsign": "Aero LLoyd",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Aero LLoyd"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "YP517"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 6200,
+          "Heading": 181.1920166015625,
+          "Latitude": 47.47589349746704,
+          "Longitude": 8.883497714996338,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 239.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -1343.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "YP",
+              "AirlineICAO": "AEF",
+              "Callsign": "Aero LLoyd",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Aero LLoyd"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "YP517"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 6200,
+          "Heading": 181.1920166015625,
+          "Latitude": 47.47589349746704,
+          "Longitude": 8.883497714996338,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 239.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -1343.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "YP",
+              "AirlineICAO": "AEF",
+              "Callsign": "Aero LLoyd",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Aero LLoyd"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "YP517"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 6200,
+          "Heading": 181.1920166015625,
+          "Latitude": 47.47589349746704,
+          "Longitude": 8.883497714996338,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 239.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -1343.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "YP",
+              "AirlineICAO": "AEF",
+              "Callsign": "Aero LLoyd",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Aero LLoyd"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "YP517"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 6200,
+          "Heading": 181.1920166015625,
+          "Latitude": 47.47589349746704,
+          "Longitude": 8.883497714996338,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 239.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -1343.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "YP",
+              "AirlineICAO": "AEF",
+              "Callsign": "Aero LLoyd",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Aero LLoyd"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "YP517"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 6200,
+          "Heading": 181.1920166015625,
+          "Latitude": 47.47589349746704,
+          "Longitude": 8.883497714996338,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 239.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -1343.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "YP",
+              "AirlineICAO": "AEF",
+              "Callsign": "Aero LLoyd",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Aero LLoyd"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "YP517"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 6200,
+          "Heading": 181.1920166015625,
+          "Latitude": 47.47589349746704,
+          "Longitude": 8.883497714996338,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 239.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -1343.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}

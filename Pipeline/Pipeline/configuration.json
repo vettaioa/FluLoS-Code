@@ -6,8 +6,8 @@
 		"AzureRegion": "westeurope",
 		"InputAudioFile": "../../../../../data/audio/test/gf1_01_026.wav",
 		"InputAudioDirectory": "../../../../../data/audio/test/",
-		"InputTranscriptionDirectory": "../../../../../data/stt-nbest/3best/",
-		"OutputNBestDirectory": "../../../../../data/stt-nbest/"
+		"InputTranscriptionDirectory": "../../../../../data/speech-to-text/nbest/1best/",
+		"OutputNBestDirectory": "../../../../../data/speech-to-text/nbest/3best/"
 	},
 	"Luis": {
 		"ApiUrl": "https://westeurope.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/",
@@ -24,7 +24,8 @@
 	"ContextOutputDirectory": "../../../../../data/context-extraction/extracted/",
 	"Evaluation": {
 		"RunEvaluation": false,
-		"UseMockedAirspace": false,
+		"UseMockedAirspace": true,
+		"ScoreThreshold": 0.5,
 		"MockedAirspaceFile": "../../../../../data/evaluation/labeldata_airspace.json",
 		"FlagsOutputDirectory": "../../../../../data/evaluation/validation-flags/",
 		"MergedOutputDirectory": "../../../../../data/evaluation/validated-context/",
@@ -38,7 +39,7 @@
 		"Rules": {
 			"FlightLevelMin": 150,
 			"FlightLevelMax": 450,
-			"ContactFrequencies": [ 12885, 12750 ],
+			"ContactFrequencies": [ 12885, 12585, 12750 ],
 			"ContactPlaces": [ "rhein", "marseille", "zurich" ],
 			"TurnPlaces": [ "hochwald", "nattenheim", "ntm" ],
 			"SquawkCodes": [ "5766", "6653", "2756", "2762" ]

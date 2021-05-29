@@ -1,0 +1,147 @@
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL376"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 208.6962890625,
+          "Latitude": 47.75301933288574,
+          "Longitude": 7.735104560852051,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 408.0,
+          "Squawk": "0732",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "CodeValid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL376"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 208.6962890625,
+          "Latitude": 47.75301933288574,
+          "Longitude": 7.735104560852051,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 408.0,
+          "Squawk": "0732",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "CodeValid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "CodeValid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL376"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 208.6962890625,
+          "Latitude": 47.75301933288574,
+          "Longitude": 7.735104560852051,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 408.0,
+          "Squawk": "0732",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "CodeValid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "CodeValid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "CodeValid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}

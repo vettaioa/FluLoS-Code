@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "jet set 442 descend flight level 330",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "330",
+        "Score": 0.9976063
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "jet set 442 descend flight level 330",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "330",
+        "Score": 1.0
+      }
+    }
+  }
+}

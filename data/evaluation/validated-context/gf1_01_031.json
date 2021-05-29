@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "speedbird 580 descend to flight level 210",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "210",
+        "Score": 0.99770427
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "speedbird 580 descend to flight level 210",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "210",
+        "Score": 1.0
+      }
+    }
+  }
+}

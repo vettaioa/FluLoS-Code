@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "alitalia 110 contact reims 134.4 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 0.9996503
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "alitalia 110 contact reims 134.4 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

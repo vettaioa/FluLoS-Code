@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "europa 381 descend to flight level 280",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "280",
+        "Score": 0.99755514
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "europa 381 descend to flight level 280",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "280",
+        "Score": 1.0
+      }
+    }
+  }
+}

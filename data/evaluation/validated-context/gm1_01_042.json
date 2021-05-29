@@ -1,0 +1,18 @@
+{
+  "LuisContext": {
+    "Message": "speedway 3352 contact zurich ontario.6 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": "zurich",
+        "Score": 0.99965245
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "speedway 3352 contact zurich ontario.6 good bye",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

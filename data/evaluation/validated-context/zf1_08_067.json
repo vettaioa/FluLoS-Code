@@ -1,0 +1,28 @@
+{
+  "LuisContext": {
+    "Message": "airfrans 356 good morning squawk 7536",
+    "CallSign": {
+      "Airline": "Air France",
+      "FlightNumber": "3261"
+    },
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.9868272
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "airfrans 356 good morning squawk 7536",
+    "CallSign": {
+      "Airline": "Air France",
+      "FlightNumber": "3261"
+    },
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

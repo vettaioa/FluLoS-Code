@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "monarch 244 contact on 132.27 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 0.9995859
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "monarch 244 contact on 132.27 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

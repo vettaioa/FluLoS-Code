@@ -1,0 +1,20 @@
+{
+  "LuisContext": {
+    "Message": "sabena 481 turn left to dinkelsbuhl",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": null,
+        "Place": null,
+        "Score": 0.99369943
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "sabena 481 turn left to dinkelsbuhl",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL264"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 39825,
+          "Heading": 109.500732421875,
+          "Latitude": 47.83241271972656,
+          "Longitude": 9.999876022338867,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 440.0,
+          "Squawk": "0666",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "DirectionValid, PlaceValid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL264"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 39825,
+          "Heading": 109.500732421875,
+          "Latitude": 47.83241271972656,
+          "Longitude": 9.999876022338867,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 440.0,
+          "Squawk": "0666",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "DirectionValid, PlaceValid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL264"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 39825,
+          "Heading": 109.500732421875,
+          "Latitude": 47.83241271972656,
+          "Longitude": 9.999876022338867,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 440.0,
+          "Squawk": "0666",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL264"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 39825,
+          "Heading": 109.500732421875,
+          "Latitude": 47.83241271972656,
+          "Longitude": 9.999876022338867,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 440.0,
+          "Squawk": "0666",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL264"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 39825,
+          "Heading": 109.500732421875,
+          "Latitude": 47.83241271972656,
+          "Longitude": 9.999876022338867,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 440.0,
+          "Squawk": "0666",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "KL",
+              "AirlineICAO": "KLM",
+              "Callsign": "KLM",
+              "Country": {
+                "Code": "NL",
+                "Name": "Netherlands"
+              },
+              "Name": "KLM"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "KL264"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 39825,
+          "Heading": 109.500732421875,
+          "Latitude": 47.83241271972656,
+          "Longitude": 9.999876022338867,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 440.0,
+          "Squawk": "0666",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "LuisContext": {
+    "Message": "iberia 3473 bonjour identified climb to flight level",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": null,
+        "Score": 0.9981497
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "iberia 3473 bonjour identified climb to flight level",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

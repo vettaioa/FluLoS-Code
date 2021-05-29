@@ -8,7 +8,7 @@ iata: sn, icao: sab, name & callsign: sabena
 "iata":"lh", "icao":"dlh", "name":"lufthansa", "callSign":"lufthansa" },
 iata: YP, icao: AEF, name & callsign: AERO LLOYD
 IATA: FV, ICAO: VIV, name: viva air, callsign: VIVA
-iata: OA, ICAO: OAL, name & callsign: OLYMPIC 
+iata: OA, ICAO: OAL, name & callsign: OLYMPIC
 
 
 "Flight": {

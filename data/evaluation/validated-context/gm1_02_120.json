@@ -1,0 +1,20 @@
+{
+  "LuisContext": {
+    "Message": "tag lloyd 171 turn left to bilsa",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": null,
+        "Place": null,
+        "Score": 0.99540627
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "tag lloyd 171 turn left to bilsa",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

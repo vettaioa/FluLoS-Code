@@ -1,0 +1,26 @@
+{
+  "LuisContext": {
+    "Message": "sabena 801 turn right to trasadingen",
+    "CallSign": {
+      "Airline": "Sabena",
+      "FlightNumber": "826A"
+    },
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": null,
+        "Place": null,
+        "Score": 0.99315614
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "sabena 801 turn right to trasadingen",
+    "CallSign": {
+      "Airline": "Sabena",
+      "FlightNumber": "826A"
+    },
+    "Intents": {}
+  }
+}

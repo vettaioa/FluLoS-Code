@@ -1,0 +1,18 @@
+{
+  "LuisContext": {
+    "Message": "iberia 3530 contact zurich ontario.6 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": "zurich",
+        "Score": 0.9996384
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "iberia 3530 contact zurich ontario.6 good bye",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

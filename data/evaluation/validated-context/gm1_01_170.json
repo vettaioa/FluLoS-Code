@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "so 693 bonjour maintain flight level 300",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "300",
+        "Score": 0.9954452
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "so 693 bonjour maintain flight level 300",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "300",
+        "Score": 1.0
+      }
+    }
+  }
+}

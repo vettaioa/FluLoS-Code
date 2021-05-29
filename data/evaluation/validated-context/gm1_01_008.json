@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "speedway 3352 due to traffic descend flight level 330",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "330",
+        "Score": 0.99795526
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "speedway 3352 due to traffic descend flight level 330",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "330",
+        "Score": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "swiss 213C climb flight level 190",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "190",
+        "Score": 0.99742603
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "swiss 213C climb flight level 190",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "190",
+        "Score": 1.0
+      }
+    }
+  }
+}

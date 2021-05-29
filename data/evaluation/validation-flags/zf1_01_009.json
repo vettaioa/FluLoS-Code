@@ -1,0 +1,246 @@
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "AF",
+              "AirlineICAO": "AFR",
+              "Callsign": "Airfrans",
+              "Country": {
+                "Code": "FR",
+                "Name": "France"
+              },
+              "Name": "Air France"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "AF3261"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 121.4703369140625,
+          "Latitude": 47.48707294464111,
+          "Longitude": 8.335039615631104,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 444.0,
+          "Squawk": "0667",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "AF",
+              "AirlineICAO": "AFR",
+              "Callsign": "Airfrans",
+              "Country": {
+                "Code": "FR",
+                "Name": "France"
+              },
+              "Name": "Air France"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "AF3261"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 121.4703369140625,
+          "Latitude": 47.48707294464111,
+          "Longitude": 8.335039615631104,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 444.0,
+          "Squawk": "0667",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "AF",
+              "AirlineICAO": "AFR",
+              "Callsign": "Airfrans",
+              "Country": {
+                "Code": "FR",
+                "Name": "France"
+              },
+              "Name": "Air France"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "AF3261"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 121.4703369140625,
+          "Latitude": 47.48707294464111,
+          "Longitude": 8.335039615631104,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 444.0,
+          "Squawk": "0667",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "AF",
+              "AirlineICAO": "AFR",
+              "Callsign": "Airfrans",
+              "Country": {
+                "Code": "FR",
+                "Name": "France"
+              },
+              "Name": "Air France"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "AF3261"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 121.4703369140625,
+          "Latitude": 47.48707294464111,
+          "Longitude": 8.335039615631104,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 444.0,
+          "Squawk": "0667",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "AF",
+              "AirlineICAO": "AFR",
+              "Callsign": "Airfrans",
+              "Country": {
+                "Code": "FR",
+                "Name": "France"
+              },
+              "Name": "Air France"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "AF3261"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 121.4703369140625,
+          "Latitude": 47.48707294464111,
+          "Longitude": 8.335039615631104,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 444.0,
+          "Squawk": "0667",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "AF",
+              "AirlineICAO": "AFR",
+              "Callsign": "Airfrans",
+              "Country": {
+                "Code": "FR",
+                "Name": "France"
+              },
+              "Name": "Air France"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "AF3261"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 29000,
+          "Heading": 121.4703369140625,
+          "Latitude": 47.48707294464111,
+          "Longitude": 8.335039615631104,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 444.0,
+          "Squawk": "0667",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "LuisContext": {
+    "Message": "tunair 4802 squawk 2751",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.9913215
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "tunair 4802 squawk 2751",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

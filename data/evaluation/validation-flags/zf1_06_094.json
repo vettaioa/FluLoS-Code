@@ -1,0 +1,147 @@
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "SN",
+              "AirlineICAO": "SAB",
+              "Callsign": "Sabena",
+              "Country": {
+                "Code": "BE",
+                "Name": "Belgium"
+              },
+              "Name": "Sabena"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "SN826A"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 41600,
+          "Heading": 149.0130615234375,
+          "Latitude": 47.93601036071777,
+          "Longitude": 9.764013290405273,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 405.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "SN",
+              "AirlineICAO": "SAB",
+              "Callsign": "Sabena",
+              "Country": {
+                "Code": "BE",
+                "Name": "Belgium"
+              },
+              "Name": "Sabena"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "SN826A"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 41600,
+          "Heading": 149.0130615234375,
+          "Latitude": 47.93601036071777,
+          "Longitude": 9.764013290405273,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 405.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "SN",
+              "AirlineICAO": "SAB",
+              "Callsign": "Sabena",
+              "Country": {
+                "Code": "BE",
+                "Name": "Belgium"
+              },
+              "Name": "Sabena"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "SN826A"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 41600,
+          "Heading": 149.0130615234375,
+          "Latitude": 47.93601036071777,
+          "Longitude": 9.764013290405273,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 405.0,
+          "Squawk": "1000",
+          "Timestamp": 1620588421765,
+          "VerticalRate": 0.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "LuisContext": {
+    "Message": "swiss air 6752 turn left direct to kamas",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": null,
+        "Place": null,
+        "Score": 0.994345
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "swiss air 6752 turn left direct to kamas",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

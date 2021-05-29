@@ -1,0 +1,22 @@
+{
+  "LuisContext": {
+    "Message": "alitalia 4 to 6 good morning squawk 2763",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 0.9822328
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "alitalia 4 to 6 good morning squawk 2763",
+    "CallSign": null,
+    "Intents": {
+      "Squawk": {
+        "Code": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

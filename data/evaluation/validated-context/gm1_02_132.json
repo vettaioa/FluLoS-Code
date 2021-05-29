@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "cross air 2690 contact marseille on 125.85 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "125.85",
+        "Place": "marseille",
+        "Score": 0.9997502
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "cross air 2690 contact marseille on 125.85 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "125.85",
+        "Place": "marseille",
+        "Score": 1.0
+      }
+    }
+  }
+}

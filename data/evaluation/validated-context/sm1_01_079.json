@@ -1,0 +1,20 @@
+{
+  "LuisContext": {
+    "Message": "viva 585 turn left to frankfurt",
+    "CallSign": null,
+    "Intents": {
+      "Turn": {
+        "Direction": null,
+        "Degrees": null,
+        "Heading": null,
+        "Place": null,
+        "Score": 0.9940066
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "viva 585 turn left to frankfurt",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

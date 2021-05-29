@@ -1,0 +1,12 @@
+{
+  "LuisContext": {
+    "Message": "topswiss 4578 on left",
+    "CallSign": null,
+    "Intents": {}
+  },
+  "RmlContext": {
+    "Message": "topswiss 4578 on left",
+    "CallSign": null,
+    "Intents": {}
+  }
+}

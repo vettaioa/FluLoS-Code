@@ -36,12 +36,12 @@
     "RmlContext": {
       "Message": "viva 9081 turn left heading 350",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "9081"
       },
       "Intents": {
         "Turn": {
-          "Direction": null,
+          "Direction": "left",
           "Degrees": null,
           "Heading": "350",
           "Place": null,
@@ -87,15 +87,10 @@
     "RmlContext": {
       "Message": "viva 901 turn left heading 350",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "901"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "901",
-          "Score": 1.0
-        },
         "Turn": {
           "Direction": "left",
           "Degrees": null,
@@ -143,12 +138,12 @@
     "RmlContext": {
       "Message": "viva 9081 turn left heading 35o",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "viva",
+        "FlightNumber": "9081"
       },
       "Intents": {
         "Turn": {
-          "Direction": null,
+          "Direction": "left",
           "Degrees": null,
           "Heading": "35",
           "Place": null,

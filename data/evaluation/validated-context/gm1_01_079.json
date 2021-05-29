@@ -1,0 +1,27 @@
+{
+  "LuisContext": {
+    "Message": "l 376 identified cleared st prex arbos epinal climb to flight level 320",
+    "CallSign": {
+      "Airline": "KLM",
+      "FlightNumber": "376"
+    },
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": "Climb",
+        "Level": "320",
+        "Score": 0.9989308
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "l 376 identified cleared st prex arbos epinal climb to flight level 320",
+    "CallSign": null,
+    "Intents": {
+      "FlightLevel": {
+        "Instruction": null,
+        "Level": "376",
+        "Score": 1.0
+      }
+    }
+  }
+}

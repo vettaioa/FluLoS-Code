@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "swiss air 6752 contact marseille on 12585 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "12585",
+        "Place": "marseille",
+        "Score": 0.9954542
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "swiss air 6752 contact marseille on 12585 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "12585",
+        "Place": "marseille",
+        "Score": 1.0
+      }
+    }
+  }
+}

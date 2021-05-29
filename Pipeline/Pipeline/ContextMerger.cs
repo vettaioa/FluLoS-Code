@@ -13,9 +13,10 @@ namespace Pipeline
         /// <summary>
         /// Checks all extracted context data and only picks the ones that have a positive valiadation result.
         /// </summary>
-        /// <param name="validatedContexts"></param>
+        /// <param name="validatedContexts">Data to validate</param>
+        /// <param name="validatedContexts">Threshold specifying what minimum score is required for an intent to be considered</param>
         /// <returns>Context with only successfully validated data</returns>
-        public static MessageContext Merge((MessageContext Context, EvaluationResult Validation)?[] validatedContexts)
+        public static MessageContext Merge((MessageContext Context, EvaluationResult Validation)?[] validatedContexts, float scoreThreshold = 0.5f)
         {
             MessageContext result = new MessageContext();
             result.Intents = new Dictionary<IntentType, MessageIntent>();
@@ -55,7 +56,7 @@ namespace Pipeline
                             MessageIntent intentDetails = validatedContext.Value.Context.Intents[intent];
                             EvaluationResult evaluationResult = validatedContext.Value.Validation;
 
-                            if (intentDetails != null && evaluationResult != null)
+                            if (intentDetails != null && evaluationResult != null && intentDetails.Score >= scoreThreshold)
                             {
                                 switch (intent)
                                 {
@@ -178,19 +179,16 @@ namespace Pipeline
 
         private static ContactIntent ExtractValidData(ContactIntent contactInfo, ContactValidationResult validation)
         {
-            ContactIntent resultContact = null;     // the result only containing valid data
+            ContactIntent resultContact = new ContactIntent();     // the result only containing valid data
+            resultContact.Score = contactInfo.Score;
 
             if (validation != ContactValidationResult.Invalid)
             {
-                resultContact = new ContactIntent();
-
                 if (!string.IsNullOrWhiteSpace(contactInfo.Frequency) && validation.HasFlag(ContactValidationResult.FrequencyValid))
                     resultContact.Frequency = contactInfo.Frequency;
 
                 if (!string.IsNullOrWhiteSpace(contactInfo.Place) && validation.HasFlag(ContactValidationResult.PlaceValid))
                     resultContact.Place = contactInfo.Place;
-
-                resultContact.Score = contactInfo.Score;
             }
 
             return resultContact;
@@ -198,19 +196,16 @@ namespace Pipeline
 
         private static FlightLevelIntent ExtractValidData(FlightLevelIntent levelInfo, FlightLevelValidationResult validation)
         {
-            FlightLevelIntent resultLevel = null;     // the result only containing valid data
+            FlightLevelIntent resultLevel = new FlightLevelIntent();     // the result only containing valid data
+            resultLevel.Score = levelInfo.Score;
 
             if (validation != FlightLevelValidationResult.Invalid)
             {
-                resultLevel = new FlightLevelIntent();
-
                 if (!string.IsNullOrWhiteSpace(levelInfo.Level) && validation.HasFlag(FlightLevelValidationResult.FlightLevelValid))
                     resultLevel.Level = levelInfo.Level;
 
                 if (levelInfo.Instruction != null && validation.HasFlag(FlightLevelValidationResult.InstructionValid))
                     resultLevel.Instruction = levelInfo.Instruction;
-
-                resultLevel.Score = levelInfo.Score;
             }
 
             return resultLevel;
@@ -218,16 +213,13 @@ namespace Pipeline
 
         private static SquawkIntent ExtractValidData(SquawkIntent squawkInfo, SquawkValidationResult validation)
         {
-            SquawkIntent resultSquawk = null;     // the result only containing valid data
+            SquawkIntent resultSquawk = new SquawkIntent();     // the result only containing valid data
+            resultSquawk.Score = squawkInfo.Score;
 
             if (validation != SquawkValidationResult.Invalid)
             {
-                resultSquawk = new SquawkIntent();
-
                 if (!string.IsNullOrWhiteSpace(squawkInfo.Code) && validation.HasFlag(SquawkValidationResult.CodeValid))
                     resultSquawk.Code = squawkInfo.Code;
-
-                resultSquawk.Score = squawkInfo.Score;
             }
 
             return resultSquawk;
@@ -235,12 +227,11 @@ namespace Pipeline
 
         private static TurnIntent ExtractValidData(TurnIntent turnInfo, TurnValidationResult validation)
         {
-            TurnIntent resultTurn = null;     // the result only containing valid data
+            TurnIntent resultTurn = new TurnIntent();     // the result only containing valid data
+            resultTurn.Score = turnInfo.Score;
 
             if (validation != TurnValidationResult.Invalid)
             {
-                resultTurn = new TurnIntent();
-
                 if (!string.IsNullOrWhiteSpace(turnInfo.Degrees) && validation.HasFlag(TurnValidationResult.DegreesValid))
                     resultTurn.Degrees = turnInfo.Degrees;
 
@@ -252,8 +243,6 @@ namespace Pipeline
 
                 if (!string.IsNullOrWhiteSpace(turnInfo.Place) && validation.HasFlag(TurnValidationResult.PlaceValid))
                     resultTurn.Place = turnInfo.Place;
-
-                resultTurn.Score = turnInfo.Score;
             }
 
             return resultTurn;

@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "belgian air force 334 contact reims 134.4 if",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 0.99921685
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "belgian air force 334 contact reims 134.4 if",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": null,
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

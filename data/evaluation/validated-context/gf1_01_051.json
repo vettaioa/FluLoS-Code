@@ -1,0 +1,24 @@
+{
+  "LuisContext": {
+    "Message": "cross air 512 contact geneva 125.85 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "125.85",
+        "Place": null,
+        "Score": 0.99950016
+      }
+    }
+  },
+  "RmlContext": {
+    "Message": "cross air 512 contact geneva 125.85 good bye",
+    "CallSign": null,
+    "Intents": {
+      "Contact": {
+        "Frequency": "125.85",
+        "Place": null,
+        "Score": 1.0
+      }
+    }
+  }
+}

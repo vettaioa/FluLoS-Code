@@ -1,0 +1,246 @@
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "LH",
+              "AirlineICAO": "DLH",
+              "Callsign": "Lufthansa",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Lufthansa"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "LH4652"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 10600,
+          "Heading": 67.203369140625,
+          "Latitude": 47.24590704792612,
+          "Longitude": 8.662540037899538,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 340.0,
+          "Squawk": "1056",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -962.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "FrequencyValid, PlaceValid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "LH",
+              "AirlineICAO": "DLH",
+              "Callsign": "Lufthansa",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Lufthansa"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "LH4652"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 10600,
+          "Heading": 67.203369140625,
+          "Latitude": 47.24590704792612,
+          "Longitude": 8.662540037899538,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 340.0,
+          "Squawk": "1056",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -962.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "PlaceValid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "LH",
+              "AirlineICAO": "DLH",
+              "Callsign": "Lufthansa",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Lufthansa"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "LH4652"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 10600,
+          "Heading": 67.203369140625,
+          "Latitude": 47.24590704792612,
+          "Longitude": 8.662540037899538,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 340.0,
+          "Squawk": "1056",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -962.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "PlaceValid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "LH",
+              "AirlineICAO": "DLH",
+              "Callsign": "Lufthansa",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Lufthansa"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "LH4652"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 10600,
+          "Heading": 67.203369140625,
+          "Latitude": 47.24590704792612,
+          "Longitude": 8.662540037899538,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 340.0,
+          "Squawk": "1056",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -962.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "FrequencyValid, PlaceValid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "LH",
+              "AirlineICAO": "DLH",
+              "Callsign": "Lufthansa",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Lufthansa"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "LH4652"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 10600,
+          "Heading": 67.203369140625,
+          "Latitude": 47.24590704792612,
+          "Longitude": 8.662540037899538,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 340.0,
+          "Squawk": "1056",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -962.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "PlaceValid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": {
+        "Airplane": {
+          "Flight": {
+            "ActualDepartureTime": null,
+            "Airline": {
+              "AirlineIATA": "LH",
+              "AirlineICAO": "DLH",
+              "Callsign": "Lufthansa",
+              "Country": {
+                "Code": "DE",
+                "Name": "Germany"
+              },
+              "Name": "Lufthansa"
+            },
+            "ArrivalAirport": null,
+            "DepartureAirport": null,
+            "FlightIdentification": "LH4652"
+          },
+          "Manufacturer": null,
+          "Model": null
+        },
+        "Position": {
+          "Altitude": 10600,
+          "Heading": 67.203369140625,
+          "Latitude": 47.24590704792612,
+          "Longitude": 8.662540037899538,
+          "OnGround": false,
+          "PointType": "EXACT",
+          "Speed": 340.0,
+          "Squawk": "1056",
+          "Timestamp": 1620588421765,
+          "VerticalRate": -962.0
+        }
+      },
+      "SquawkResult": "Invalid",
+      "ContactResult": "PlaceValid",
+      "FlightLevelResult": "Invalid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}
