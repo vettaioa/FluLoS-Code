@@ -1,35 +1,32 @@
 [
   {
     "LuisContext": {
-      "Message": "iberia 3473 bonjour identified climb to flight level",
-      "CallSign": {
-        "Airline": "iberia",
-        "FlightNumber": "3473"
-      },
+      "Message": "sabena 826A climb to flight level 320 trasadingen karlsruhe",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.008065913
+          "Score": 0.012290957
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0014003508
+          "Score": 0.0015209916
         },
         "FlightLevel": {
           "Instruction": "Climb",
-          "Level": null,
-          "Score": 0.33797815
+          "Level": "320",
+          "Score": 0.99785775
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002013609
+          "Score": 0.0017774309
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0014283421
+          "Score": 0.0014617715
         }
       }
     },

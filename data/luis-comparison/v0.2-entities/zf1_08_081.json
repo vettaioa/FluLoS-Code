@@ -1,35 +1,35 @@
 [
   {
     "LuisContext": {
-      "Message": "iberia 3473 bonjour identified climb to flight level",
+      "Message": "jet set 442 descend flight level 330",
       "CallSign": {
-        "Airline": "iberia",
-        "FlightNumber": "3473"
+        "Airline": "jet set",
+        "FlightNumber": "442"
       },
       "Intents": {
         "None": {
-          "Score": 0.008065913
+          "Score": 0.016442806
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0014003508
+          "Score": 0.012132342
         },
         "FlightLevel": {
-          "Instruction": "Climb",
-          "Level": null,
-          "Score": 0.33797815
+          "Instruction": "Descend",
+          "Level": "330",
+          "Score": 0.844236
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.002013609
+          "Score": 0.004713637
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0014283421
+          "Score": 0.035367716
         }
       }
     },

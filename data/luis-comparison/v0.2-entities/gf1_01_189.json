@@ -1,35 +1,35 @@
 [
   {
     "LuisContext": {
-      "Message": "lufthansa 4652 bonjour identified cleared passeiry tour du pin flight level 310",
+      "Message": "lufthansa 4652",
       "CallSign": {
         "Airline": "lufthansa",
         "FlightNumber": "4652"
       },
       "Intents": {
         "None": {
-          "Score": 0.007549389
+          "Score": 0.2159196
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.021972511
+          "Score": 0.0034354778
         },
         "FlightLevel": {
           "Instruction": null,
-          "Level": "310",
-          "Score": 0.9169504
+          "Level": null,
+          "Score": 0.003993903
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0084545035
+          "Score": 0.019482626
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.05038492
+          "Score": 0.077137776
         }
       }
     },

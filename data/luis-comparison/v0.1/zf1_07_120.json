@@ -1,32 +1,32 @@
 [
   {
     "LuisContext": {
-      "Message": "affirm 22B good afternoon squawk 7535",
+      "Message": "fo 22B good afternoon squawk 7535",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.017338088
+          "Score": 0.019332942
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.005608812
+          "Score": 0.0079313945
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.0047697388
+          "Score": 0.006884543
         },
         "Squawk": {
           "Code": "7535",
-          "Score": 0.9685259
+          "Score": 0.9182855
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.005634342
+          "Score": 0.009002201
         }
       }
     },

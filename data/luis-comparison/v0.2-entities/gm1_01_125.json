@@ -1,32 +1,35 @@
 [
   {
     "LuisContext": {
-      "Message": "good or 499 bonjour cleared direct arbos epinal flight level 340",
-      "CallSign": null,
+      "Message": "condor 499 bonjour cleared",
+      "CallSign": {
+        "Airline": "condor",
+        "FlightNumber": "499"
+      },
       "Intents": {
         "None": {
-          "Score": 0.00804672
+          "Score": 0.09407152
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.021243373
+          "Score": 0.010491659
         },
         "FlightLevel": {
           "Instruction": null,
-          "Level": "340",
-          "Score": 0.91791624
+          "Level": null,
+          "Score": 0.057979237
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.010287849
+          "Score": 0.027459707
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.025470395
+          "Score": 0.027514545
         }
       }
     },

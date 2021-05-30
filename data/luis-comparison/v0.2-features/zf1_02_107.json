@@ -1,35 +1,32 @@
 [
   {
     "LuisContext": {
-      "Message": "alitalia 292 buongiorno squawk 2761",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "292"
-      },
+      "Message": "alitalia",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.010121471
+          "Score": 0.13448763
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0015589196
+          "Score": 0.0020276667
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.001713842
+          "Score": 0.00088101265
         },
         "Squawk": {
-          "Code": "2761",
-          "Score": 0.9779643
+          "Code": null,
+          "Score": 0.004959954
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.001523835
+          "Score": 0.0014941256
         }
       }
     },

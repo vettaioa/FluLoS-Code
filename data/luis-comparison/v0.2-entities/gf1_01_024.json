@@ -1,32 +1,32 @@
 [
   {
     "LuisContext": {
-      "Message": "topswiss 4578 on left to 0 degrees",
+      "Message": "topswiss 4578 on left",
       "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.06468497
+          "Score": 0.24862523
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.014480796
+          "Score": 0.0053927996
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.015054063
+          "Score": 0.0032254958
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.005596806
+          "Score": 0.0061399224
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.73144823
+          "Score": 0.44206432
         }
       }
     },

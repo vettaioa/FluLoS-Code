@@ -1,35 +1,32 @@
 [
   {
     "LuisContext": {
-      "Message": "iberia 3473 bonjour identified climb to flight level",
-      "CallSign": {
-        "Airline": "iberia",
-        "FlightNumber": "3473"
-      },
+      "Message": "speedbird 77WW good morning squawk 2720",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.008065913
+          "Score": 0.021598907
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0014003508
+          "Score": 0.001480953
         },
         "FlightLevel": {
-          "Instruction": "Climb",
+          "Instruction": null,
           "Level": null,
-          "Score": 0.33797815
+          "Score": 0.0014092196
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.002013609
+          "Code": "2720",
+          "Score": 0.9824171
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0014283421
+          "Score": 0.0013984303
         }
       }
     },

@@ -1,35 +1,35 @@
 [
   {
     "LuisContext": {
-      "Message": "viva 9081 turn further left heading equals heading 340",
+      "Message": "viva 9081 turn further left heading equals",
       "CallSign": {
         "Airline": "viva",
         "FlightNumber": "9081"
       },
       "Intents": {
         "None": {
-          "Score": 0.014143365
+          "Score": 0.02935964
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.01879231
+          "Score": 0.013925156
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.06896028
+          "Score": 0.014478724
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.004995572
+          "Score": 0.006234299
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.8691472
+          "Score": 0.8954803
         }
       }
     },

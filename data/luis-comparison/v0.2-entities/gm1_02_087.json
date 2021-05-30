@@ -1,35 +1,35 @@
 [
   {
     "LuisContext": {
-      "Message": "aero lloyd 517 contact zurich ontario 134.6 good bye",
+      "Message": "aero lloyd 517 contact zurich 134134.6 good bye",
       "CallSign": {
         "Airline": "aero lloyd",
         "FlightNumber": "517"
       },
       "Intents": {
         "None": {
-          "Score": 0.0073044538
+          "Score": 0.0112636285
         },
         "Contact": {
-          "Frequency": "134.6",
+          "Frequency": "134134.6",
           "Place": "zurich",
-          "Score": 0.8677614
+          "Score": 0.6903803
         },
         "FlightLevel": {
           "Instruction": null,
           "Level": null,
-          "Score": 0.09502101
+          "Score": 0.087087356
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0055138227
+          "Score": 0.005840393
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.055116095
+          "Score": 0.05538075
         }
       }
     },

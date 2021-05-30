@@ -1,35 +1,35 @@
 [
   {
     "LuisContext": {
-      "Message": "belgian air force 34 bonjour identified cleared passeiry epinal flight level 320",
+      "Message": "belgian air force 34 bonjour",
       "CallSign": {
         "Airline": "belgian air force",
         "FlightNumber": "34"
       },
       "Intents": {
         "None": {
-          "Score": 0.0072423695
+          "Score": 0.041604444
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.048216354
+          "Score": 0.044081796
         },
         "FlightLevel": {
           "Instruction": null,
-          "Level": "320",
-          "Score": 0.93050635
+          "Level": null,
+          "Score": 0.054462206
         },
         "Squawk": {
           "Code": null,
-          "Score": 0.0072333273
+          "Score": 0.027308395
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.021307189
+          "Score": 0.029217357
         }
       }
     },

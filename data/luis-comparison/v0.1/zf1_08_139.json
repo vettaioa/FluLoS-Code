@@ -1,35 +1,32 @@
 [
   {
     "LuisContext": {
-      "Message": "iberia 3473 bonjour identified climb to flight level",
-      "CallSign": {
-        "Airline": "iberia",
-        "FlightNumber": "3473"
-      },
+      "Message": "IFG good morning squawk 2744",
+      "CallSign": null,
       "Intents": {
         "None": {
-          "Score": 0.008065913
+          "Score": 0.018131852
         },
         "Contact": {
           "Frequency": null,
           "Place": null,
-          "Score": 0.0014003508
+          "Score": 0.004140284
         },
         "FlightLevel": {
-          "Instruction": "Climb",
+          "Instruction": null,
           "Level": null,
-          "Score": 0.33797815
+          "Score": 0.0038401845
         },
         "Squawk": {
-          "Code": null,
-          "Score": 0.002013609
+          "Code": "2744",
+          "Score": 0.9782531
         },
         "Turn": {
           "Direction": null,
           "Degrees": null,
           "Heading": null,
           "Place": null,
-          "Score": 0.0014283421
+          "Score": 0.0039275233
         }
       }
     },
