@@ -36,13 +36,13 @@
     "RmlContext": {
       "Message": "bonjour swiss air 659 cleared st prex willisau flight level 300",
       "CallSign": {
-        "Airline": "bonair",
-        "FlightNumber": ""
+        "Airline": "bonjour swiss air",
+        "FlightNumber": "659"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "659",
+          "Level": "300",
           "Score": 1.0
         }
       }
@@ -85,13 +85,13 @@
     "RmlContext": {
       "Message": "bonjour swiss 659 cleared st prex willisau flight level 300",
       "CallSign": {
-        "Airline": "bonair",
-        "FlightNumber": ""
+        "Airline": "bonjour swiss",
+        "FlightNumber": "659"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "659",
+          "Level": "300",
           "Score": 1.0
         }
       }
@@ -131,13 +131,13 @@
     "RmlContext": {
       "Message": "bonjour 659 cleared st prex willisau flight level 300",
       "CallSign": {
-        "Airline": "bonair",
-        "FlightNumber": ""
+        "Airline": "bonjour",
+        "FlightNumber": "659"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "659",
+          "Level": "300",
           "Score": 1.0
         }
       }

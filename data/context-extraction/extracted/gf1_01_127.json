@@ -33,12 +33,12 @@
     "RmlContext": {
       "Message": "roger turn left heading 220",
       "CallSign": {
-        "Airline": "aerogem",
+        "Airline": "roger turn left",
         "FlightNumber": ""
       },
       "Intents": {
         "Turn": {
-          "Direction": "left",
+          "Direction": null,
           "Degrees": null,
           "Heading": "220",
           "Place": null,
@@ -81,7 +81,7 @@
     "RmlContext": {
       "Message": "roger turn left heading to 20",
       "CallSign": {
-        "Airline": "aerogem",
+        "Airline": "roger turn left",
         "FlightNumber": ""
       },
       "Intents": {
@@ -127,12 +127,12 @@
     "RmlContext": {
       "Message": "roger turn left heading 22o",
       "CallSign": {
-        "Airline": "aerogem",
+        "Airline": "roger turn left",
         "FlightNumber": ""
       },
       "Intents": {
         "Turn": {
-          "Direction": "left",
+          "Direction": null,
           "Degrees": null,
           "Heading": "22",
           "Place": null,

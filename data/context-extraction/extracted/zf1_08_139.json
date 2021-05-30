@@ -33,7 +33,7 @@
     "RmlContext": {
       "Message": "IFG good morning squawk 2744",
       "CallSign": {
-        "Airline": "",
+        "Airline": "IFG good morning",
         "FlightNumber": ""
       },
       "Intents": {
@@ -78,7 +78,7 @@
     "RmlContext": {
       "Message": "IFG good morning squawk 274 for",
       "CallSign": {
-        "Airline": "",
+        "Airline": "IFG good morning",
         "FlightNumber": ""
       },
       "Intents": {
@@ -124,7 +124,7 @@
     "RmlContext": {
       "Message": "IFG good morning squawk 27 for4",
       "CallSign": {
-        "Airline": "",
+        "Airline": "IFG good morning",
         "FlightNumber": ""
       },
       "Intents": {

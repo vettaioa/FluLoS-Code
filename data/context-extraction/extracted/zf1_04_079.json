@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "airfrans uh 356 good morning fly correction squawk 7536",
       "CallSign": {
-        "Airline": "airfrans",
+        "Airline": "airfrans uh",
         "FlightNumber": "356"
       },
       "Intents": {
@@ -84,7 +84,7 @@
     "RmlContext": {
       "Message": "air france a 356 good morning fly correction squawk 7536",
       "CallSign": {
-        "Airline": "airbus france",
+        "Airline": "air france a",
         "FlightNumber": "356"
       },
       "Intents": {

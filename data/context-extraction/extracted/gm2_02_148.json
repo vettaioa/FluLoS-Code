@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "hamburg air 2546 contact marseille 125.85 au revoir",
       "CallSign": {
-        "Airline": "hamburg airways",
+        "Airline": "hamburg air",
         "FlightNumber": "2546"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "hamburg air 2546 contact marseille 125.850",
       "CallSign": {
-        "Airline": "hamburg airways",
+        "Airline": "hamburg air",
         "FlightNumber": "2546"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "hamburg 2546 contact marseille 125.85 au revoir",
       "CallSign": {
-        "Airline": "air hamburg",
+        "Airline": "hamburg",
         "FlightNumber": "2546"
       },
       "Intents": {

@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "tag lloyd 171 turn left to bilsa",
       "CallSign": {
-        "Airline": "hapag lloyd",
+        "Airline": "tag lloyd",
         "FlightNumber": "171"
       },
       "Intents": {}
@@ -79,7 +79,7 @@
     "RmlContext": {
       "Message": "bag lloyd 171 turn left to bilsa",
       "CallSign": {
-        "Airline": "hapag lloyd",
+        "Airline": "bag lloyd",
         "FlightNumber": "171"
       },
       "Intents": {}
@@ -122,7 +122,7 @@
     "RmlContext": {
       "Message": "tag heuer 171 turn left to bilsa",
       "CallSign": {
-        "Airline": "tag u-s",
+        "Airline": "tag heuer",
         "FlightNumber": "171"
       },
       "Intents": {}

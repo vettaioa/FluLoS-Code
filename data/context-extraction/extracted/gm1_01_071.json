@@ -84,15 +84,10 @@
     "RmlContext": {
       "Message": "lm 376 squawk 5766",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "lm",
+        "FlightNumber": "376"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "376",
-          "Score": 1.0
-        },
         "Squawk": {
           "Code": "5766",
           "Score": 1.0
@@ -134,15 +129,10 @@
     "RmlContext": {
       "Message": "l 376 squawk 5766",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "l",
+        "FlightNumber": "376"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "376",
-          "Score": 1.0
-        },
         "Squawk": {
           "Code": "5766",
           "Score": 1.0

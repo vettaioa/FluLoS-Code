@@ -33,12 +33,12 @@
     "RmlContext": {
       "Message": "roger turn left heading 225 permit climb",
       "CallSign": {
-        "Airline": "aerogem",
+        "Airline": "roger turn left",
         "FlightNumber": ""
       },
       "Intents": {
         "Turn": {
-          "Direction": "left",
+          "Direction": null,
           "Degrees": null,
           "Heading": "225",
           "Place": null,
@@ -81,12 +81,12 @@
     "RmlContext": {
       "Message": "roger turn left heading 2252 permit climb",
       "CallSign": {
-        "Airline": "aerogem",
+        "Airline": "roger turn left",
         "FlightNumber": ""
       },
       "Intents": {
         "Turn": {
-          "Direction": "left",
+          "Direction": null,
           "Degrees": null,
           "Heading": "225",
           "Place": null,
@@ -129,12 +129,12 @@
     "RmlContext": {
       "Message": "roger turn left heading 225 minute climb",
       "CallSign": {
-        "Airline": "aerogem",
+        "Airline": "roger turn left",
         "FlightNumber": ""
       },
       "Intents": {
         "Turn": {
-          "Direction": "left",
+          "Direction": null,
           "Degrees": null,
           "Heading": "225",
           "Place": null,

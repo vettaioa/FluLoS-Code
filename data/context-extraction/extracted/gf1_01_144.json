@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "cross air 2690 climb to flight level 300",
       "CallSign": {
-        "Airline": "crossair",
+        "Airline": "cross air",
         "FlightNumber": "2690"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "cross air 2690 climb flight level 300",
       "CallSign": {
-        "Airline": "crossair",
+        "Airline": "cross air",
         "FlightNumber": "2690"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "cross air 690 climb to flight level 300",
       "CallSign": {
-        "Airline": "crossair",
+        "Airline": "cross air",
         "FlightNumber": "690"
       },
       "Intents": {

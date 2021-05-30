@@ -76,7 +76,7 @@
     "RmlContext": {
       "Message": "alitalia is",
       "CallSign": {
-        "Airline": "alitalia",
+        "Airline": "alitalia is",
         "FlightNumber": ""
       },
       "Intents": {}
@@ -116,7 +116,7 @@
     "RmlContext": {
       "Message": "alitalia in",
       "CallSign": {
-        "Airline": "alitalia",
+        "Airline": "alitalia in",
         "FlightNumber": ""
       },
       "Intents": {}

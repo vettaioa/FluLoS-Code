@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "belgian air force 334 contact reims on 134.4 good bye",
       "CallSign": {
-        "Airline": "belgian airforce",
+        "Airline": "belgian air force",
         "FlightNumber": "334"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "belgian air force 334 contact reims 134.4 good bye",
       "CallSign": {
-        "Airline": "belgian airforce",
+        "Airline": "belgian air force",
         "FlightNumber": "334"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "belgian air force 34 contact reims on 134.4 good bye",
       "CallSign": {
-        "Airline": "belgian airforce",
+        "Airline": "belgian air force",
         "FlightNumber": "34"
       },
       "Intents": {

@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "lauda 109 good afternoon squawk 2746",
       "CallSign": {
-        "Airline": "lauda air",
+        "Airline": "lauda",
         "FlightNumber": "109"
       },
       "Intents": {
@@ -84,7 +84,7 @@
     "RmlContext": {
       "Message": "lauda 109 good afternoon squawk 27 for6",
       "CallSign": {
-        "Airline": "lauda air",
+        "Airline": "lauda",
         "FlightNumber": "109"
       },
       "Intents": {

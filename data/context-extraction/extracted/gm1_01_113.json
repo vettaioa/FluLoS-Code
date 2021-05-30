@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "iberia for 476 contact zurich 125.85 good bye",
       "CallSign": {
-        "Airline": "iberia",
+        "Airline": "iberia for",
         "FlightNumber": "476"
       },
       "Intents": {

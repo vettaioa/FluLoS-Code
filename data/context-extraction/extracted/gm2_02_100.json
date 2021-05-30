@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "swiss air 6752 turn left direct to kamas",
       "CallSign": {
-        "Airline": "swiss air force",
+        "Airline": "swiss air",
         "FlightNumber": "6752"
       },
       "Intents": {}
@@ -79,7 +79,7 @@
     "RmlContext": {
       "Message": "swiss air 6752 turn left direct kamas",
       "CallSign": {
-        "Airline": "swiss air force",
+        "Airline": "swiss air",
         "FlightNumber": "6752"
       },
       "Intents": {}
@@ -122,7 +122,7 @@
     "RmlContext": {
       "Message": "swiss air 6752 turn left direct to kamas",
       "CallSign": {
-        "Airline": "swiss air force",
+        "Airline": "swiss air",
         "FlightNumber": "6752"
       },
       "Intents": {}

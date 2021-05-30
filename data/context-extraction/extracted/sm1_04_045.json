@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
-        "Airline": "belair",
+        "Airline": "sobelair",
         "FlightNumber": "2557"
       },
       "Intents": {
@@ -87,7 +87,7 @@
     "RmlContext": {
       "Message": "sobelair 2557 turn left by 5 degrees",
       "CallSign": {
-        "Airline": "belair",
+        "Airline": "sobelair",
         "FlightNumber": "2557"
       },
       "Intents": {
@@ -138,7 +138,7 @@
     "RmlContext": {
       "Message": "sobelair 2557 turn left by 5 degrees here",
       "CallSign": {
-        "Airline": "belair",
+        "Airline": "sobelair",
         "FlightNumber": "2557"
       },
       "Intents": {

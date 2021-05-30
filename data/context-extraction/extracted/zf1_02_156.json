@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "jetaviation 701 squawk 2732",
       "CallSign": {
-        "Airline": "euraviation",
+        "Airline": "jetaviation",
         "FlightNumber": "701"
       },
       "Intents": {
@@ -84,7 +84,7 @@
     "RmlContext": {
       "Message": "jetaviation 71 squawk 2732",
       "CallSign": {
-        "Airline": "euraviation",
+        "Airline": "jetaviation",
         "FlightNumber": "71"
       },
       "Intents": {
@@ -132,7 +132,7 @@
     "RmlContext": {
       "Message": "jetaviation 701 squawk 273 too",
       "CallSign": {
-        "Airline": "euraviation",
+        "Airline": "jetaviation",
         "FlightNumber": "701"
       },
       "Intents": {

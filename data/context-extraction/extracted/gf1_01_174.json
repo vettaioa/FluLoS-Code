@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "swiss air 6752 contact marseille on 12585 good bye",
       "CallSign": {
-        "Airline": "swiss air force",
+        "Airline": "swiss air",
         "FlightNumber": "6752"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "swiss air 6752 contact marseille on 1585 good bye",
       "CallSign": {
-        "Airline": "swiss air force",
+        "Airline": "swiss air",
         "FlightNumber": "6752"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "swiss air 6752 contact marseille on 12585 good bye",
       "CallSign": {
-        "Airline": "swiss air force",
+        "Airline": "swiss air",
         "FlightNumber": "6752"
       },
       "Intents": {

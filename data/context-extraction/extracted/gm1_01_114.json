@@ -36,13 +36,13 @@
     "RmlContext": {
       "Message": "twa 81 identified cleared st rolampont flight level 340",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "twa",
+        "FlightNumber": "81"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "81",
+          "Level": "340",
           "Score": 1.0
         }
       }
@@ -85,13 +85,13 @@
     "RmlContext": {
       "Message": "twa 881 identified cleared st rolampont flight level 340",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "twa",
+        "FlightNumber": "881"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "881",
+          "Level": "340",
           "Score": 1.0
         }
       }

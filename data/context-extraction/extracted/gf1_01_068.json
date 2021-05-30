@@ -33,16 +33,10 @@
     "RmlContext": {
       "Message": "aero 560",
       "CallSign": {
-        "Airline": "aerem",
-        "FlightNumber": ""
+        "Airline": "aero",
+        "FlightNumber": "560"
       },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "560",
-          "Score": 1.0
-        }
-      }
+      "Intents": {}
     }
   },
   {
@@ -79,16 +73,10 @@
     "RmlContext": {
       "Message": "aero 8560",
       "CallSign": {
-        "Airline": "aerem",
-        "FlightNumber": ""
+        "Airline": "aero",
+        "FlightNumber": "8560"
       },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "856",
-          "Score": 1.0
-        }
-      }
+      "Intents": {}
     }
   },
   {
@@ -125,7 +113,7 @@
     "RmlContext": {
       "Message": "aero at 560",
       "CallSign": {
-        "Airline": "aero alfe",
+        "Airline": "aero at",
         "FlightNumber": "560"
       },
       "Intents": {}

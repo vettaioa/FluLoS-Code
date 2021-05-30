@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "cross air 512 contact geneva 125.85 good bye",
       "CallSign": {
-        "Airline": "crossair",
+        "Airline": "cross air",
         "FlightNumber": "512"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "cross air 51 contact geneva 125.85 good bye",
       "CallSign": {
-        "Airline": "crossair",
+        "Airline": "cross air",
         "FlightNumber": "51"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "cross air 512 contact geneva 125.85 good bye",
       "CallSign": {
-        "Airline": "crossair",
+        "Airline": "cross air",
         "FlightNumber": "512"
       },
       "Intents": {

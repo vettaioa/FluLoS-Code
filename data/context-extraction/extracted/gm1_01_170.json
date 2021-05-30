@@ -33,13 +33,13 @@
     "RmlContext": {
       "Message": "so 693 bonjour maintain flight level 300",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "so",
+        "FlightNumber": "693"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "693",
+          "Level": "300",
           "Score": 1.0
         }
       }
@@ -128,8 +128,8 @@
     "RmlContext": {
       "Message": "S693 bonjour maintain flight level 300",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "S",
+        "FlightNumber": "693"
       },
       "Intents": {
         "FlightLevel": {

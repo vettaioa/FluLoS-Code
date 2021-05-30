@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "jet set 442 descend flight level 330",
       "CallSign": {
-        "Airline": "jet service",
+        "Airline": "jet set",
         "FlightNumber": "442"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "jet set 442 descend to flight level 330",
       "CallSign": {
-        "Airline": "jet service",
+        "Airline": "jet set",
         "FlightNumber": "442"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "jet set 442 descend flight level 30",
       "CallSign": {
-        "Airline": "jet service",
+        "Airline": "jet set",
         "FlightNumber": "442"
       },
       "Intents": {

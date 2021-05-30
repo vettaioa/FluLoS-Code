@@ -36,15 +36,10 @@
     "RmlContext": {
       "Message": "turkair 925 good afternoon squawk 1005",
       "CallSign": {
-        "Airline": "turkish",
-        "FlightNumber": ""
+        "Airline": "turkair",
+        "FlightNumber": "925"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "925",
-          "Score": 1.0
-        },
         "Squawk": {
           "Code": "1005",
           "Score": 1.0
@@ -86,7 +81,7 @@
     "RmlContext": {
       "Message": "turkair 9 to 5 good afternoon squawk 1005",
       "CallSign": {
-        "Airline": "turkish",
+        "Airline": "turkair",
         "FlightNumber": ""
       },
       "Intents": {
@@ -134,13 +129,13 @@
     "RmlContext": {
       "Message": "turkair 925 good afternoon squawk 1o 05",
       "CallSign": {
-        "Airline": "turkish",
-        "FlightNumber": ""
+        "Airline": "turkair",
+        "FlightNumber": "925"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "925",
+          "Level": "05",
           "Score": 1.0
         }
       }

@@ -64,7 +64,8 @@ analyser-rules {
   Filename = $Filename
   
   CallSign = Airline?,FlightNumber?
-  Airline = check(Airline{$Airline}, Airline.checkAirline)
+  Airline = $Airline
+  //Airline = check(Airline{$Airline}, Airline.checkAirline)
   FlightNumber = $FlightNumber
   //FlightNumber = check(FlightNumber{$FlightNumber}, Airline.checkFlightNumber)
   

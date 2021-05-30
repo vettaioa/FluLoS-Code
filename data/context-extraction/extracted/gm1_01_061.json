@@ -36,15 +36,10 @@
     "RmlContext": {
       "Message": "twa 800 contact milano 12585 good bye",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "twa",
+        "FlightNumber": "800"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "800",
-          "Score": 1.0
-        },
         "Contact": {
           "Frequency": "12585",
           "Place": "milano",
@@ -90,15 +85,10 @@
     "RmlContext": {
       "Message": "tw 800 contact milano 12585 good bye",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "tw",
+        "FlightNumber": "800"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "800",
-          "Score": 1.0
-        },
         "Contact": {
           "Frequency": "12585",
           "Place": "milano",
@@ -144,15 +134,10 @@
     "RmlContext": {
       "Message": "tw 800 contact milano 12585 good bye",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "tw",
+        "FlightNumber": "800"
       },
       "Intents": {
-        "FlightLevel": {
-          "Instruction": null,
-          "Level": "800",
-          "Score": 1.0
-        },
         "Contact": {
           "Frequency": "12585",
           "Place": "milano",

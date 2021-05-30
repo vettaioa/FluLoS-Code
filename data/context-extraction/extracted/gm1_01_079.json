@@ -33,13 +33,13 @@
     "RmlContext": {
       "Message": "l 376 identified cleared st prex arbos epinal climb to flight level 320",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "l",
+        "FlightNumber": "376"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "376",
+          "Level": "320",
           "Score": 1.0
         }
       }
@@ -79,13 +79,13 @@
     "RmlContext": {
       "Message": "k 376 identified cleared st prex arbos epinal climb to flight level 320",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "k",
+        "FlightNumber": "376"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "376",
+          "Level": "320",
           "Score": 1.0
         }
       }
@@ -128,13 +128,13 @@
     "RmlContext": {
       "Message": "kl 376 identified cleared st prex arbos epinal climb to flight level 320",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "kl",
+        "FlightNumber": "376"
       },
       "Intents": {
         "FlightLevel": {
           "Instruction": null,
-          "Level": "376",
+          "Level": "320",
           "Score": 1.0
         }
       }

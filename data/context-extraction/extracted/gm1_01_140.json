@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "alitalia to 16 contact reims 13227 good bye",
       "CallSign": {
-        "Airline": "alitalia",
+        "Airline": "alitalia to",
         "FlightNumber": "16"
       },
       "Intents": {

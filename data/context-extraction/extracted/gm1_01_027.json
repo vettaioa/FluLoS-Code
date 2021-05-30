@@ -36,7 +36,7 @@
     "RmlContext": {
       "Message": "roger alitalia 110 climb flight level 320",
       "CallSign": {
-        "Airline": "alitalia",
+        "Airline": "roger alitalia",
         "FlightNumber": "110"
       },
       "Intents": {
@@ -85,7 +85,7 @@
     "RmlContext": {
       "Message": "roger alitalia 110 climb flight level 30",
       "CallSign": {
-        "Airline": "alitalia",
+        "Airline": "roger alitalia",
         "FlightNumber": "110"
       },
       "Intents": {
@@ -134,7 +134,7 @@
     "RmlContext": {
       "Message": "roger alitalia 110 climb to flight level 320",
       "CallSign": {
-        "Airline": "alitalia",
+        "Airline": "roger alitalia",
         "FlightNumber": "110"
       },
       "Intents": {

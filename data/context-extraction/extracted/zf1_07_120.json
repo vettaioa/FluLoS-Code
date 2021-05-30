@@ -33,8 +33,8 @@
     "RmlContext": {
       "Message": "fo 22B good afternoon squawk 7535",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "fo",
+        "FlightNumber": "22B"
       },
       "Intents": {
         "Squawk": {
@@ -78,8 +78,8 @@
     "RmlContext": {
       "Message": "f 22B good afternoon squawk 7535",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "f",
+        "FlightNumber": "22B"
       },
       "Intents": {
         "Squawk": {
@@ -123,8 +123,8 @@
     "RmlContext": {
       "Message": "fa 22B good afternoon squawk 7535",
       "CallSign": {
-        "Airline": "",
-        "FlightNumber": ""
+        "Airline": "fa",
+        "FlightNumber": "22B"
       },
       "Intents": {
         "Squawk": {
