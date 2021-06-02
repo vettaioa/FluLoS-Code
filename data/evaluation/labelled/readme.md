@@ -45,6 +45,7 @@ for callsign improvement:
 - sm2_09_028.wav (InvalidAirline) alitalia 6474 squawk 2762 -> sollte zu olympic 6474 verbessert werden
 - gf1_01_036.wav (InvalidFlightNr) saudia 155 bonjour squawk 5743 -> sollte zu saudia 158 verbessert werden, obwohl es auch sabena 158 gibt
 - gm1_02_011.json (InvalidFlightNr) speedbird 563 bonjour squawk 5721 -> sollte zu speedbird 56 verbessert werden, obwohl es auch speedbird 566 gibt
+- gm1_01_164.json (Invalid) portugalia 543 climb to flight level 350 -> sollte nicht korrigiert werden, da es nicht im Flugraum ist
 
 
 ## Squawk
