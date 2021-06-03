@@ -38,4 +38,4 @@ def levenshtein_distance(seq1, seq2):
                     matrix[x,y-1] + 1
                 )
     #print (matrix)
-    return (matrix[size_x - 1, size_y - 1])
+    return int(matrix[size_x - 1, size_y - 1])
