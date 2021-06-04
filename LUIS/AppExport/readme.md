@@ -65,7 +65,7 @@ After importing, the model must me manually trained and published in LUIS.
 
 
 **Lists**
-- ListAirlines: contains callsigns of airlines from https://en.wikipedia.org/wiki/List_of_airline_codes
+- ListAirlines: contains callsigns of airlines from folder ../airlines.json
 - ListContactIdentifiers: contact, frequency
 - ListFlightLevelInstructions: climb, descend (with descent as synonym), maintain
 - ListTurnDirections: left, right
