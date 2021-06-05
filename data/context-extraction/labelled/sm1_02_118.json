@@ -1,5 +1,5 @@
 {
     "airline": "midland",
     "flightnr": "720",
-    "intent": ["turn"]
+    "intent": ["turn","flightlevel"]
 }
