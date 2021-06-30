@@ -42,12 +42,10 @@ namespace Pipeline
                 ContextResultWrapper[] contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
                 if (contextResults != null)
                 {
+                    string resultsJson = SerializeToJson(contextResults);
                     Console.WriteLine("Extracted context:");
-                    // using Newtonsoft because build-in JsonSerializer cannot handle dictionnaries with enum as key
-                    string resultsJson = Newtonsoft.Json.JsonConvert.SerializeObject(contextResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
-
                     Console.WriteLine(resultsJson);
-                    WriteToOutputDirectory(config.ContextOutputDirectory, transcriptionResult.FilePath, resultsJson);
+                    WriteToOutput(OutputType.CONTEXTS, transcriptionResult.FilePath, resultsJson);
 
                     if (config.Evaluation.RunEvaluation)
                     {
@@ -61,11 +59,10 @@ namespace Pipeline
                             luisEvaluations[i] = contextEvaluator.Evaluate(contextResults[i].LuisContext);
                             rmlEvaluations[i] = contextEvaluator.Evaluate(contextResults[i].RmlContext);
                         }
-                        EvaluationResultsWrapper evaluationResults = new EvaluationResultsWrapper(luisEvaluations, rmlEvaluations);
-                        string evaluationJson = Newtonsoft.Json.JsonConvert.SerializeObject(evaluationResults, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
+                        string evaluationJson = SerializeToJson(new EvaluationResultsWrapper(luisEvaluations, rmlEvaluations));
                         Console.WriteLine("Evaluation results:");
                         Console.WriteLine(evaluationJson);
-                        WriteToOutputDirectory(config.Evaluation.FlagsOutputDirectory, transcriptionResult.FilePath, evaluationJson);
+                        WriteToOutput(OutputType.EVALUATIONFLAGS, transcriptionResult.FilePath, evaluationJson);
 
 
                         // extract correct data by considering the evaluation results (priorizing the first correct occurence of a field)
@@ -82,11 +79,10 @@ namespace Pipeline
 
                         MessageContext bestLuisContext = ContextMerger.Merge(luisValidatedContexts);
                         MessageContext bestRmlContext = ContextMerger.Merge(rmlValidatedContexts);
-                        ContextResultWrapper bestContexts = new ContextResultWrapper() { LuisContext = bestLuisContext, RmlContext = bestRmlContext };
-                        string bestContextJson = Newtonsoft.Json.JsonConvert.SerializeObject(bestContexts, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
+                        string bestContextJson = SerializeToJson(new ContextResultWrapper() { LuisContext = bestLuisContext, RmlContext = bestRmlContext });
                         Console.WriteLine("Validated Results:");
                         Console.WriteLine(bestContextJson);
-                        WriteToOutputDirectory(config.Evaluation.MergedOutputDirectory, transcriptionResult.FilePath, bestContextJson);
+                        WriteToOutput(OutputType.VALIDATEDMERGED, transcriptionResult.FilePath, bestContextJson);
                     }
                 }
                 else
@@ -97,6 +93,23 @@ namespace Pipeline
             else
             {
                 Console.WriteLine("No transcriptions received!");
+            }
+        }
+
+        protected enum OutputType { CONTEXTS, EVALUATIONFLAGS, VALIDATEDMERGED }
+        protected void WriteToOutput(OutputType outputType, string fileName, string jsonData)
+        {
+            switch (outputType)
+            {
+                case OutputType.CONTEXTS:
+                    WriteToOutputDirectory(config.ContextOutputDirectory, fileName, jsonData);
+                    break;
+                case OutputType.EVALUATIONFLAGS:
+                    WriteToOutputDirectory(config.Evaluation.FlagsOutputDirectory, fileName, jsonData);
+                    break;
+                case OutputType.VALIDATEDMERGED:
+                    WriteToOutputDirectory(config.Evaluation.MergedOutputDirectory, fileName, jsonData);
+                    break;
             }
         }
 
@@ -125,5 +138,13 @@ namespace Pipeline
             }
         }
 
+        private string SerializeToJson(object obj)
+        {
+            // using Newtonsoft because build-in JsonSerializer cannot handle dictionnaries with enum as key
+            return Newtonsoft.Json.JsonConvert.SerializeObject(obj, Newtonsoft.Json.Formatting.Indented, new StringEnumConverter());
+        }
+
     }
+
+
 }
