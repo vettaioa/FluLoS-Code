@@ -217,8 +217,8 @@ const GetElement = (elementId) => {
 }
 /*
  * Example Usage:
- * WriteTable('', 'blibla', {'Bla': ['blub'], 'Bli': [4]})
- * WriteTable('', ['blibla', 'blablu'], {'Bla': ['blub', 'jup'], 'Bli': [4, 'nope']})
+ * WriteTable(GetElement(''), 'blibla', {'Bla': ['blub'], 'Bli': [4]})
+ * WriteTable(GetElement(''), ['blibla', 'blablu'], {'Bla': ['blub', 'jup'], 'Bli': [4, 'nope']})
  */
 const WriteTable = (parentElement, tableHeader, keyValues) => {
     const ToTableCell = (data) => {
@@ -242,6 +242,25 @@ const WriteTable = (parentElement, tableHeader, keyValues) => {
 }
 const CleanElement = (parentElement) => {
     parentElement.innerHTML = '';
+}
+
+const WriteAirspace = (airspace) => {
+    const tableHeaders = ['Identification', 'Airline', 'Alt', 'Speed', 'Vert', '']
+    const tableContent = {};
+
+    for (const plane of airspace['airplanes']) {
+        if (plane?.Airplane?.Flight?.FlightIdentification) {
+            tableContent[plane.Airplane.Flight.FlightIdentification] = [
+                plane.Airplane.Flight.Airline?.Callsign || plane.Airplane.Flight.Airline?.Name || '<i>n/a</i>',
+                plane.Position?.Altitude,
+                plane.Position?.Speed,
+                plane.Position?.VerticalRate,
+                plane.Position?.OnGround? 'Gnd' : 'Air',
+            ];
+        }
+    }
+
+    WriteTable(GetElement('airspace-planes'), tableHeaders, tableContent)
 }
 
 const WriteSpeechToTextResult = (transcriptions, cleanedTranscriptions) => {
@@ -342,7 +361,18 @@ const SendRecording = (blob) => {
     .then(res => res.text())
     .then(data => {
         console.log('received UID :D', data) // TODO: hier noch handling for start von retry prozess einfügen
-        resultBox.innerHTML = data;
+        statusBox.innerHTML = 'Pipeline is Running';
+    })
+}
+
+const UpdateAirspace = () => {
+    fetch('/airspace', {
+        method: 'get',
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.debug('received airspace', data)
+        WriteAirspace(data);
     })
 }
 
@@ -352,12 +382,14 @@ let cache_lastSpeechToTextResult = [];
 let cache_lastContextResult = [];
 
 const OnSpeechToTextResult = (sttResult) => {
+    statusBox.innerHTML = 'Speech To Text is Done'
     console.debug('Received speechToTextResult', sttResult)
 
     cache_lastSpeechToTextResult = sttResult;
 }
 
 const OnContextResult = (contextResult) => {
+    statusBox.innerHTML = 'Context Extraction (Luis and RML) is Done'
     console.debug('Received contextResult', contextResult)
 
     // write speech to text section
@@ -372,6 +404,7 @@ const OnContextResult = (contextResult) => {
 }
 
 const OnEvaluationResult = (evaluationResult) => {
+    statusBox.innerHTML = 'Evaluation is Done'
     console.debug('Received evaluationResult', evaluationResult)
 
     const bestFlagsRml = evaluationResult['RmlEvaluations'][0];
@@ -382,18 +415,16 @@ const OnEvaluationResult = (evaluationResult) => {
 // Main Code
 const errorBox = document.getElementsByClassName('audioerr')[0]
 const microphoneBtn = document.getElementsByClassName('microphone')[0]
-const resultBox = document.getElementsByClassName('resultbox')[0]
+const statusBox = document.getElementsByClassName('statusbox')[0]
 
 let isRecording = false;
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 	navigator.mediaDevices.getUserMedia({ audio: true })
 		.then(function (stream) {
-			const mediaRecorder = new MediaRecorder(stream, { mimeType: 'audio/webm;codecs=opus' })
-
             const audioContext = new window.AudioContext;/*new (window.AudioContext || window.webkitAudioContext);*/
 
-            const recorder = new Recorder(audioContext.createMediaStreamSource(stream), { numChannels: 1 });
+            const recorder = new Recorder(audioContext.createMediaStreamSource(stream), { numChannels: 2 });
 
 			microphoneBtn.onclick = () => {
 				if (!isRecording) {
@@ -432,6 +463,8 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 //        tryDownload(retries);
 //    });
 //}
+
+UpdateAirspace();
 
 OnSpeechToTextResult(stts)
 OnContextResult(contexts)
