@@ -69,10 +69,10 @@ namespace Pipeline.WebUI
                         await HandleAirspaceAsync(context);
                         break;
                     case "process":
-                        HandleSpeechInputAsync(context);
+                        HandleSpeechInput(context);
                         break;
                     case "output":
-                        await HandleOutputAsync(context);
+                        HandleOutput(context);
                         break;
                     default:
                         context.Response.StatusCode = (int)HttpStatusCode.NotFound;
@@ -92,8 +92,9 @@ namespace Pipeline.WebUI
         }
 
 
-        public void PipelineOutputReceived(PipelineOutputType outputType, string uid, string jsonData)
+        public void PipelineOutputReceived(PipelineOutputType outputType, string fileName, string jsonData)
         {
+            var uid = Path.GetFileNameWithoutExtension(fileName);
             if (!pipelineResults.ContainsKey(uid))
             {
                 pipelineResults[uid] = new PipelineResult { uid = uid };
@@ -112,7 +113,7 @@ namespace Pipeline.WebUI
                     result.evaluationflagsJson = jsonData;
                     break;
                 case PipelineOutputType.VALIDATEDMERGED:
-                    result.evaluationflagsJson = jsonData;
+                    result.validatedmergedJson = jsonData;
                     break;
             }
         }
@@ -160,7 +161,7 @@ namespace Pipeline.WebUI
 
         }
 
-        private void HandleSpeechInputAsync(HttpListenerContext context)
+        private void HandleSpeechInput(HttpListenerContext context)
         {
             httpListenerContext = context;
             if (context.Request != null)
@@ -180,44 +181,50 @@ namespace Pipeline.WebUI
 
                 byte[] buffUid = Encoding.UTF8.GetBytes(uid);
                 context.Response.ContentType = "text/plain";
-                context.Response.OutputStream.Write(buffUid, 0, buffUid.Length);
+                context.Response.ContentLength64 = buffUid.Length;
+                using (var outputStream = context.Response.OutputStream)
+                {
+                    outputStream.Write(buffUid, 0, buffUid.Length);
+                }
 
 
             }
         }
 
-        private async Task HandleOutputAsync(HttpListenerContext context)
+        private void HandleOutput(HttpListenerContext context)
         {
             string uid = context.Request.QueryString["uid"];
+            string type = context.Request.QueryString["type"];
 
-            PipelineResult result = pipelineResults[uid];
-
-            if (result.IsComplete())
+            if (uid == null || type == null)
             {
-                context.Response.ContentType = "application/json";
-                await JsonSerializer.SerializeAsync(context.Response.OutputStream, result);
+                context.Response.StatusCode = (int)HttpStatusCode.BadRequest; // invalid request
+                return;
             }
-            else
+            if(!pipelineResults.ContainsKey(uid))
             {
-                context.Response.StatusCode = (int)HttpStatusCode.BadRequest; // request too early
+                context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                return;
+            }
+
+            PipelineResult pipelineResult = pipelineResults[uid];
+
+            string result = pipelineResult.GetValueByTypeName(type);
+            if (result == null)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.Locked; // request too early
+                return;
+            }
+
+            byte[] buffResult = Encoding.UTF8.GetBytes(result);
+            context.Response.ContentType = "application/json";
+            context.Response.ContentLength64 = buffResult.Length;
+            using (var outputStream = context.Response.OutputStream)
+            {
+                context.Response.OutputStream.Write(buffResult, 0, buffResult.Length);
             }
         }
 
-
-        private static void ProcessTranscriptions(TranscriptionResult transcriptionResult)
-        {
-            var contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
-            using StreamWriter writer = new StreamWriter(httpListenerContext.Response.OutputStream);
-            if (contextResults != null && contextResults.Length > 0)
-            {
-                JsonSerializerOptions jsonOptions = new JsonSerializerOptions() { WriteIndented = true };
-                Console.WriteLine(JsonSerializer.Serialize(contextResults, jsonOptions));
-            }
-            else
-            {
-                writer.Write("No results found");
-            }
-        }
     }
 
     internal class PipelineResult
@@ -228,9 +235,25 @@ namespace Pipeline.WebUI
         public string evaluationflagsJson { get; set; }
         public string validatedmergedJson { get; set; }
 
-        public bool IsComplete()
+        public string GetValueByTypeName(string type)
         {
-            return transcriptionsJson != null && contextsJson != null && evaluationflagsJson != null && validatedmergedJson != null;
+            switch (type)
+            {
+                case "transcription":
+                    return transcriptionsJson;
+                case "context":
+                    return contextsJson;
+                case "evaluationflags":
+                    return evaluationflagsJson;
+                case "validatedmerged":
+                    return validatedmergedJson;
+            }
+            return null;
         }
+
+        //public bool IsComplete()
+        //{
+        //    return transcriptionsJson != null && contextsJson != null && evaluationflagsJson != null && validatedmergedJson != null;
+        //}
     }
 }

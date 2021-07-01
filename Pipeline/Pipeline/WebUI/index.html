@@ -33,6 +33,9 @@
 		footer a:hover {
 			color: #def2ff;
 		}
+		h2 { font-size: 1.75rem; }
+		h3 { font-size: 1.5rem; }
+		.small { font-size: .5em; }
 	</style>
 </head>
 <body class="d-flex flex-column h-100">
@@ -44,12 +47,11 @@
 				</div>
 			</div>
 		</div>
-
 	</header>
 	<main class="flex-shrink-0">
-		<div class="container-fluid my-5">
+		<div class="container-fluid my-3">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-4 border-end border-dark">
 					<h2>Audio Input</h2>
 					<div class="microphone m-3 mx-auto">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z" /></svg>
@@ -95,32 +97,32 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">
+						<div class="col border-bottom border-primary">
 							<h2>Spech To Text Result</h2>
 							<div id="result-speechtotext">
 								<table class="table">
 									<thead>
 										<tr>
 											<th>#</th>
-											<th>Microsoft Speech-To-Text (literal) result</th>
-											<th>Cleaned</th>
+											<th>Speech-To-Text (literal) result</th>
+											<th>Cleaned Transcription</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td><code id="stt">Example STT Result</code></td>
-											<td><code id="cleaned">alitalia 301 descend to flight level 300 traffic</code></td>
+											<td><code id="stt"></code></td>
+											<td><code id="cleaned"></code></td>
 										</tr>
 										<tr>
 											<td>2</td>
-											<td><code id="stt2">Example STT Result 2</code></td>
-											<td><code id="cleaned2">alitalia 301 descend to flight level 300 traffic</code></td>
+											<td><code id="stt2"></code></td>
+											<td><code id="cleaned2"></code></td>
 										</tr>
 										<tr>
 											<td>3</td>
-											<td><code id="stt3">Example STT Result 3</code></td>
-											<td><code id="cleaned3">alitalia 301 descend flight level 300 traffic</code></td>
+											<td><code id="stt3"></code></td>
+											<td><code id="cleaned3"></code></td>
 										</tr>
 									</tbody>
 								</table>
@@ -128,31 +130,31 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col">
+						<div class="col border-bottom border-primary">
 							<h2>Context Extraction</h2>
 							<h3>LUIS Result</h3>
 
-							<div class="row">
+							<div class="row border-bottom border-secondary">
 								<div class="col">
 									<div id="result-luis-callsign">
 										<table class="table">
 											<tr class="text-center">
-												<th colspan="2">CallSign (Example)</th>
+												<th colspan="2">CallSign</th>
 											</tr>
 											<tr>
 												<th>Airline</th>
-												<td>alitalia</td>
+												<td></td>
 											</tr>
 											<tr>
 												<th>FlightNumber</th>
-												<td>301</td>
+												<td></td>
 											</tr>
 										</table>
 									</div>
 								</div>
 								<div class="col">
 									<div id="result-luis-flightlevel">
-										<table class="table">
+										<!--<table class="table">
 											<tr class="text-center">
 												<th colspan="2">FlightLevel (Example)</th>
 											</tr>
@@ -168,7 +170,7 @@
 												<th>Level</th>
 												<td>300</td>
 											</tr>
-										</table>
+										</table>-->
 									</div>
 									<div id="result-luis-turn"></div>
 									<div id="result-luis-contact"></div>
@@ -181,22 +183,22 @@
 									<div id="result-rml-callsign">
 										<table class="table">
 											<tr class="text-center">
-												<th colspan="2">CallSign (Example)</th>
+												<th colspan="2">CallSign</th>
 											</tr>
 											<tr>
 												<th>Airline</th>
-												<td>alitalia</td>
+												<td></td>
 											</tr>
 											<tr>
 												<th>FlightNumber</th>
-												<td>301</td>
+												<td></td>
 											</tr>
 										</table>
 									</div>
 								</div>
 								<div class="col">
 									<div id="result-rml-flightlevel">
-										<table class="table">
+										<!--<table class="table">
 											<tr class="text-center">
 												<th colspan="2">FlightLevel (Example)</th>
 											</tr>
@@ -208,7 +210,7 @@
 												<th>Level</th>
 												<td>300</td>
 											</tr>
-										</table>
+										</table>-->
 									</div>
 									<div id="result-rml-turn"></div>
 									<div id="result-rml-contact"></div>
@@ -223,32 +225,38 @@
 							<div id="result-evaluation-rml">
 								<table class="table">
 									<thead>
-									<th>Validation</th>
-									<th>Result</th>
+										<tr>
+											<th>Validation</th>
+											<th>Result</th>
+										</tr>
 									</thead>
 									<tr>
-										<td>Airline</td>
-										<td>Invalid (not found in Airspace)</td>
+										<td>CallSign</td>
+										<td></td>
 									</tr>
 									<tr>
-										<td>FlightNumber</td>
-										<td>Invalid (not found in Airspace)</td>
+										<td>FlightLevel Intent</td>
+										<td></td>
 									</tr>
 									<tr>
-										<td>FL Instruction</td>
-										<td>Not validated</td>
+										<td>Turn Intent</td>
+										<td></td>
 									</tr>
 									<tr>
-										<td>FL Level</td>
-										<td>Valid</td>
+										<td>Contact Intent</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Squawk Intent</td>
+										<td></td>
 									</tr>
 								</table>
 							</div>
 						</div>
 						<div class="col">
 							<h2>Final Result <small class="text-muted">based on RML Result data</small></h2>
-							<div id="result-final-rml">
-								<table class="table">
+							<div id="result-final-rml-callsign">
+								<!--<table class="table">
 									<thead>
 									<th>Validation</th>
 									<th>Result</th>
@@ -269,8 +277,12 @@
 										<td>FL Level</td>
 										<td>Valid</td>
 									</tr>
-								</table>
+								</table>-->
 							</div>
+							<div id="result-final-rml-flightlevel"></div>
+							<div id="result-final-rml-turn"></div>
+							<div id="result-final-rml-contact"></div>
+							<div id="result-final-rml-squawk"></div>
 						</div>
 					</div>
 				</div>

@@ -27,7 +27,7 @@ namespace Pipeline
             {
                 var cfg = config.SpeechToText;
                 cfg.SpeechToTextMode = SpeechToTextMode.FileSingle;
-                cfg.InputAudioFile = $"web_{uid}.wav";
+                cfg.InputAudioFile = $"{uid}.wav";
 
                 if(SaveAudioStreamToFile(wavAudioStream, cfg.InputAudioFile))
                 {

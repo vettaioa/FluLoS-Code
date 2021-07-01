@@ -1,217 +1,4 @@
-﻿//PSEUDO-DATA
-const stts = JSON.parse(`
-[
-  "alitalia three zero one descend to flight level three zero zero traffic",
-  "alitalia three zero one descend to flight level ah three zero zero traffic",
-  "alitalia three zero one descend flight level three zero zero traffic"
-]
-`)
-const contexts = JSON.parse(`
-[
-  {
-    "LuisContext": {
-      "Message": "alitalia 301 descend to flight level 300 traffic",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "301"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.0049089547
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0018584969
-        },
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "300",
-          "Score": 0.9978382
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0021387925
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0016026356
-        }
-      }
-    },
-    "RmlContext": {
-      "Message": "alitalia 301 descend to flight level 300 traffic",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "301"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "300",
-          "Score": 1.0
-        }
-      }
-    }
-  },
-  {
-    "LuisContext": {
-      "Message": "alitalia 301 descend to flight level 300 traffic",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "301"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.0049089547
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0018584969
-        },
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "300",
-          "Score": 0.9978382
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0021387925
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.0016026356
-        }
-      }
-    },
-    "RmlContext": {
-      "Message": "alitalia 301 descend to flight level 300 traffic",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "301"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "300",
-          "Score": 1.0
-        }
-      }
-    }
-  },
-  {
-    "LuisContext": {
-      "Message": "alitalia 301 descend flight level 300 traffic",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "301"
-      },
-      "Intents": {
-        "None": {
-          "Score": 0.0063280193
-        },
-        "Contact": {
-          "Frequency": null,
-          "Place": null,
-          "Score": 0.0018313368
-        },
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "300",
-          "Score": 0.99427915
-        },
-        "Squawk": {
-          "Code": null,
-          "Score": 0.0022202933
-        },
-        "Turn": {
-          "Direction": null,
-          "Degrees": null,
-          "Heading": null,
-          "Place": null,
-          "Score": 0.001554251
-        }
-      }
-    },
-    "RmlContext": {
-      "Message": "alitalia 301 descend flight level 300 traffic",
-      "CallSign": {
-        "Airline": "alitalia",
-        "FlightNumber": "301"
-      },
-      "Intents": {
-        "FlightLevel": {
-          "Instruction": "Descend",
-          "Level": "300",
-          "Score": 1.0
-        }
-      }
-    }
-  }
-]
-`)
-
-const evaluationflags = JSON.parse(`
-{
-  "LuisEvaluations": [
-    {
-      "RadarAirplane": null,
-      "SquawkResult": "Invalid",
-      "ContactResult": "Invalid",
-      "FlightLevelResult": "FlightLevelValid",
-      "TurnResult": "Invalid"
-    },
-    {
-      "RadarAirplane": null,
-      "SquawkResult": "Invalid",
-      "ContactResult": "Invalid",
-      "FlightLevelResult": "FlightLevelValid",
-      "TurnResult": "Invalid"
-    },
-    {
-      "RadarAirplane": null,
-      "SquawkResult": "Invalid",
-      "ContactResult": "Invalid",
-      "FlightLevelResult": "FlightLevelValid",
-      "TurnResult": "Invalid"
-    }
-  ],
-  "RmlEvaluations": [
-    {
-      "RadarAirplane": null,
-      "SquawkResult": "Invalid",
-      "ContactResult": "Invalid",
-      "FlightLevelResult": "FlightLevelValid",
-      "TurnResult": "Invalid"
-    },
-    {
-      "RadarAirplane": null,
-      "SquawkResult": "Invalid",
-      "ContactResult": "Invalid",
-      "FlightLevelResult": "FlightLevelValid",
-      "TurnResult": "Invalid"
-    },
-    {
-      "RadarAirplane": null,
-      "SquawkResult": "Invalid",
-      "ContactResult": "Invalid",
-      "FlightLevelResult": "FlightLevelValid",
-      "TurnResult": "Invalid"
-    }
-  ]
-}
-`)
-
-
-// Helper Functions
-
+﻿// Helper Functions
 const GetElement = (elementId) => {
     return document.getElementById(elementId)
 }
@@ -280,7 +67,7 @@ const WriteSpeechToTextResult = (transcriptions, cleanedTranscriptions) => {
 
 const WriteContextResult = (luisContext, rmlContext) => {
 
-    const WriteCallSigns = () => { // write CallSigns
+    const WriteCallSigns = () => {
         const luisCallSign = luisContext['CallSign']
         const rmlCallSign = rmlContext['CallSign']
 
@@ -304,7 +91,7 @@ const WriteContextResult = (luisContext, rmlContext) => {
         const luisIntent = luisContext['Intents'][intent]
         const rmlIntent = rmlContext['Intents'][intent]
 
-        console.log('writeintent', intent, {luisIntent, rmlIntent})
+        //console.log('writeintent', intent, {luisIntent, rmlIntent})
 
         if (luisIntent && luisIntent['Score'] > 0.1) {
             WriteTable(GetElement(`result-luis-${intentLc}`), intent, luisIntent);
@@ -324,14 +111,52 @@ const WriteContextResult = (luisContext, rmlContext) => {
     
 }
 
-const WriteEvaluationResult = (rmlEvaluationFlags, rmlContext) => {
+const WriteEvaluationResult = (rmlEvaluationFlags) => {
+    const invalidToDash = (value) => value == 'Invalid' ? '-' : value;
+
     const tableHeaders = [
         'Validation',
-        'Extracted Value',
+        'Result',
     ];
-    const tableContent = [
-        {'Airline': 'Invalid'}
-    ];
+    const tableContent = {
+        'CallSign': rmlEvaluationFlags['RadarAirplane'] ? 'In Airspace' : '<i>Not in Airspace</i>',
+        'FlightLevel Intent': invalidToDash(rmlEvaluationFlags['FlightLevelResult']),
+        'Turn Intent': invalidToDash(rmlEvaluationFlags['TurnResult']),
+        'Contact Intent': invalidToDash(rmlEvaluationFlags['ContactResult']),
+        'Squawk Intent': invalidToDash(rmlEvaluationFlags['SquawkResult']),
+    }
+
+    WriteTable(GetElement(`result-evaluation-rml`), tableHeaders, tableContent);
+}
+
+const WriteFinalResult = (finalRmlContext) => {
+
+    const WriteCallSign = () => {
+        const rmlCallSign = finalRmlContext['CallSign']
+
+        if (rmlCallSign) {
+            WriteTable(GetElement('result-final-rml-callsign'), 'CallSign', rmlCallSign);
+        } else {
+            CleanElement(GetElement('result-final-rml-callsign'));
+        }
+
+    };
+
+    const WriteIntent = (intent) => {
+        const intentLc = intent.toLowerCase();
+
+        const rmlIntent = finalRmlContext['Intents'][intent]
+
+        if (rmlIntent) {
+            WriteTable(GetElement(`result-final-rml-${intentLc}`), intent, rmlIntent);
+        } else {
+            CleanElement(GetElement(`result-final-rml-${intentLc}`));
+        }
+    }
+
+    WriteCallSign();
+    ['FlightLevel', 'Turn', 'Contact', 'Squawk'].forEach(intent => WriteIntent(intent))
+
 }
 
 
@@ -359,9 +184,10 @@ const SendRecording = (blob) => {
         mimeType: 'audio/wav',
     })
     .then(res => res.text())
-    .then(data => {
-        console.log('received UID :D', data) // TODO: hier noch handling for start von retry prozess einfügen
+    .then(uid => {
+        console.log('received UID :D', uid) // TODO: hier noch handling for start von retry prozess einfügen
         statusBox.innerHTML = 'Pipeline is Running';
+        GetPipelineOutput(uid);
     })
 }
 
@@ -376,31 +202,67 @@ const UpdateAirspace = () => {
     })
 }
 
+
+const GetPipelineOutput = async (uid) => {
+    const LoadOutput = (type, maxRetries = 10) => {
+        return new Promise((resolve, reject) => {
+            const tryFetch = (retries) => {
+                fetch(`/output?uid=${uid}&type=${type}`, {
+                    method: 'get',
+                })
+                .then(res => res.json()) // if not json => catch() is executed
+                .then(data => {
+                //console.debug('received Pipeline Output ' + type, data);
+                if (data) {
+                    resolve(data)
+                } else {
+                    throw new Error('No data received')
+                }
+                })
+                .catch((e) => {
+                    if (retries > 0) {
+                        setTimeout(() => tryFetch(retries - 1), 750);
+                    } else {
+                        reject(e);
+                    }
+                })
+            }
+            tryFetch(maxRetries);
+        })
+    }
+
+    let resTranscription, resContext, resEvaluationFlags, resValidatedMerged;
+
+    resTranscription = await LoadOutput('transcription', 20);
+    OnSpeechToTextResult(resTranscription);
+
+    resContext = await LoadOutput('context');
+    OnContextResult(resContext, resTranscription);
+
+    resEvaluationFlags = await LoadOutput('evaluationflags');
+    OnEvaluationResult(resEvaluationFlags);
+
+    resValidatedMerged = await LoadOutput('validatedmerged');
+    OnFinalResult(resValidatedMerged);
+}
+
 // API Callbacks
-
-let cache_lastSpeechToTextResult = [];
-let cache_lastContextResult = [];
-
 const OnSpeechToTextResult = (sttResult) => {
     statusBox.innerHTML = 'Speech To Text is Done'
     console.debug('Received speechToTextResult', sttResult)
-
-    cache_lastSpeechToTextResult = sttResult;
 }
 
-const OnContextResult = (contextResult) => {
+const OnContextResult = (contextResult, sttResult) => {
     statusBox.innerHTML = 'Context Extraction (Luis and RML) is Done'
     console.debug('Received contextResult', contextResult)
 
     // write speech to text section
     const cleanedTranscriptions = contextResult.map(c => c['LuisContext']['Message'] || null)
-    WriteSpeechToTextResult(cache_lastSpeechToTextResult, cleanedTranscriptions)
+    WriteSpeechToTextResult(sttResult, cleanedTranscriptions)
 
     //// write context extraction section
     const bestContext = contextResult[0]
     WriteContextResult(bestContext['LuisContext'], bestContext['RmlContext'])
-
-    cache_lastContextResult = contextResult;
 }
 
 const OnEvaluationResult = (evaluationResult) => {
@@ -408,8 +270,13 @@ const OnEvaluationResult = (evaluationResult) => {
     console.debug('Received evaluationResult', evaluationResult)
 
     const bestFlagsRml = evaluationResult['RmlEvaluations'][0];
-    const bestContextRml = cache_lastContextResult[0]['RmlContext'];
-    WriteEvaluationResult(bestFlagsRml, bestContextRml);
+    WriteEvaluationResult(bestFlagsRml);
+}
+
+const OnFinalResult = (finalResult) => {
+    statusBox.innerHTML = ''
+
+    WriteFinalResult(finalResult['RmlContext']);
 }
 
 // Main Code
@@ -465,8 +332,4 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 //}
 
 UpdateAirspace();
-
-OnSpeechToTextResult(stts)
-OnContextResult(contexts)
-OnEvaluationResult(evaluationflags)
 
