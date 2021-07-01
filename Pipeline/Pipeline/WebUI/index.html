@@ -97,32 +97,34 @@
 					<div class="row">
 						<div class="col">
 							<h2>Spech To Text Result</h2>
-							<table class="table">
-								<thead>
-									<tr>
-										<th>#</th>
-										<th>Microsoft Speech-To-Text (literal) result</th>
-										<th>Cleaned</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td><code id="stt">Example STT Result</code></td>
-										<td><code id="cleaned">alitalia 301 descend to flight level 300 traffic</code></td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td><code id="stt2">Example STT Result 2</code></td>
-										<td><code id="cleaned2">alitalia 301 descend to flight level 300 traffic</code></td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td><code id="stt3">Example STT Result 3</code></td>
-										<td><code id="cleaned3">alitalia 301 descend flight level 300 traffic</code></td>
-									</tr>
-								</tbody>
-							</table>
+							<div id="result-speechtotext">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Microsoft Speech-To-Text (literal) result</th>
+											<th>Cleaned</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td><code id="stt">Example STT Result</code></td>
+											<td><code id="cleaned">alitalia 301 descend to flight level 300 traffic</code></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td><code id="stt2">Example STT Result 2</code></td>
+											<td><code id="cleaned2">alitalia 301 descend to flight level 300 traffic</code></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td><code id="stt3">Example STT Result 3</code></td>
+											<td><code id="cleaned3">alitalia 301 descend flight level 300 traffic</code></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 					<div class="row">
@@ -132,72 +134,85 @@
 							
 							<div class="row">
 								<div class="col">
-									<table class="table">
-										<tr class="text-center">
-											<th colspan="2">CallSign</th>
-										</tr>
-										<tr>
-											<th>Airline</th>
-											<td>alitalia</td>
-										</tr>
-										<tr>
-											<th>FlightNumber</th>
-											<td>301</td>
-										</tr>
-									</table>
+									<div id="result-luis-callsign">
+										<table class="table">
+											<tr class="text-center">
+												<th colspan="2">CallSign (Example)</th>
+											</tr>
+											<tr>
+												<th>Airline</th>
+												<td>alitalia</td>
+											</tr>
+											<tr>
+												<th>FlightNumber</th>
+												<td>301</td>
+											</tr>
+										</table>
+									</div>
 								</div>
 								<div class="col">
-									<table class="table">
-										<tr class="text-center">
-											<th colspan="2">FlightLevel</th>
-										</tr>
-										<tr>
-											<th>Score</th>
-											<td>0.9978382</td>
-										</tr>
-										<tr>
-											<th>Instruction</th>
-											<td>Descend</td>
-										</tr>
-										<tr>
-											<th>Level</th>
-											<td>300</td>
-										</tr>
-									</table>
+									<div id="result-luis-flightlevel">
+										<table class="table">
+											<tr class="text-center">
+												<th colspan="2">FlightLevel (Example)</th>
+											</tr>
+											<tr>
+												<th>Score</th>
+												<td>0.9978382</td>
+											</tr>
+											<tr>
+												<th>Instruction</th>
+												<td>Descend</td>
+											</tr>
+											<tr>
+												<th>Level</th>
+												<td>300</td>
+											</tr>
+										</table>
+									</div>
+									<div id="result-luis-turn"></div>
+									<div id="result-luis-contact"></div>
+									<div id="result-luis-squawk"></div>
 								</div>
 							</div>
-
 							<h3>RML Result</h3>
 							<div class="row">
 								<div class="col">
-									<table class="table">
-										<tr class="text-center">
-											<th colspan="2">CallSign</th>
-										</tr>
-										<tr>
-											<th>Airline</th>
-											<td>alitalia</td>
-										</tr>
-										<tr>
-											<th>FlightNumber</th>
-											<td>301</td>
-										</tr>
-									</table>
+									<div id="result-rml-callsign">
+										<table class="table">
+											<tr class="text-center">
+												<th colspan="2">CallSign (Example)</th>
+											</tr>
+											<tr>
+												<th>Airline</th>
+												<td>alitalia</td>
+											</tr>
+											<tr>
+												<th>FlightNumber</th>
+												<td>301</td>
+											</tr>
+										</table>
+									</div>
 								</div>
 								<div class="col">
-									<table class="table">
-										<tr class="text-center">
-											<th colspan="2">FlightLevel</th>
-										</tr>
-										<tr>
-											<th>Instruction</th>
-											<td>Descend</td>
-										</tr>
-										<tr>
-											<th>Level</th>
-											<td>300</td>
-										</tr>
-									</table>
+									<div id="result-rml-flightlevel">
+										<table class="table">
+											<tr class="text-center">
+												<th colspan="2">FlightLevel (Example)</th>
+											</tr>
+											<tr>
+												<th>Instruction</th>
+												<td>Descend</td>
+											</tr>
+											<tr>
+												<th>Level</th>
+												<td>300</td>
+											</tr>
+										</table>
+									</div>
+									<div id="result-rml-turn"></div>
+									<div id="result-rml-contact"></div>
+									<div id="result-rml-squawk"></div>
 								</div>
 							</div>
 						</div>
