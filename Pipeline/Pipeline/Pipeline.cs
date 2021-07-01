@@ -14,10 +14,10 @@ namespace Pipeline
 {
     class Pipeline
     {
-        private AppConfiguration config;
-        private SpeechToTextRunner speechToText;
-        private ContextExtractor contextExtractor;
-        private ContextEvaluator contextEvaluator;
+        protected AppConfiguration config;
+        protected SpeechToTextRunner speechToText;
+        protected ContextExtractor contextExtractor;
+        protected ContextEvaluator contextEvaluator;
 
         public Pipeline(AppConfiguration config)
         {
@@ -35,17 +35,19 @@ namespace Pipeline
             await speechToText.Run();
         }
 
-        private void ProcessTranscriptions(TranscriptionResult transcriptionResult)
+        protected void ProcessTranscriptions(TranscriptionResult transcriptionResult)
         {
             if (transcriptionResult != null && transcriptionResult.Transcriptions != null)
             {
+                WriteToOutput(PipelineOutputType.TRANSCRIPTIONS, transcriptionResult.FilePath, SerializeToJson(transcriptionResult.Transcriptions));
+
                 ContextResultWrapper[] contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
                 if (contextResults != null)
                 {
                     string resultsJson = SerializeToJson(contextResults);
                     Console.WriteLine("Extracted context:");
                     Console.WriteLine(resultsJson);
-                    WriteToOutput(OutputType.CONTEXTS, transcriptionResult.FilePath, resultsJson);
+                    WriteToOutput(PipelineOutputType.CONTEXTS, transcriptionResult.FilePath, resultsJson);
 
                     if (config.Evaluation.RunEvaluation)
                     {
@@ -62,7 +64,7 @@ namespace Pipeline
                         string evaluationJson = SerializeToJson(new EvaluationResultsWrapper(luisEvaluations, rmlEvaluations));
                         Console.WriteLine("Evaluation results:");
                         Console.WriteLine(evaluationJson);
-                        WriteToOutput(OutputType.EVALUATIONFLAGS, transcriptionResult.FilePath, evaluationJson);
+                        WriteToOutput(PipelineOutputType.EVALUATIONFLAGS, transcriptionResult.FilePath, evaluationJson);
 
 
                         // extract correct data by considering the evaluation results (priorizing the first correct occurence of a field)
@@ -82,7 +84,7 @@ namespace Pipeline
                         string bestContextJson = SerializeToJson(new ContextResultWrapper() { LuisContext = bestLuisContext, RmlContext = bestRmlContext });
                         Console.WriteLine("Validated Results:");
                         Console.WriteLine(bestContextJson);
-                        WriteToOutput(OutputType.VALIDATEDMERGED, transcriptionResult.FilePath, bestContextJson);
+                        WriteToOutput(PipelineOutputType.VALIDATEDMERGED, transcriptionResult.FilePath, bestContextJson);
                     }
                 }
                 else
@@ -96,18 +98,17 @@ namespace Pipeline
             }
         }
 
-        protected enum OutputType { CONTEXTS, EVALUATIONFLAGS, VALIDATEDMERGED }
-        protected void WriteToOutput(OutputType outputType, string fileName, string jsonData)
+        protected virtual void WriteToOutput(PipelineOutputType outputType, string fileName, string jsonData)
         {
             switch (outputType)
             {
-                case OutputType.CONTEXTS:
+                case PipelineOutputType.CONTEXTS:
                     WriteToOutputDirectory(config.ContextOutputDirectory, fileName, jsonData);
                     break;
-                case OutputType.EVALUATIONFLAGS:
+                case PipelineOutputType.EVALUATIONFLAGS:
                     WriteToOutputDirectory(config.Evaluation.FlagsOutputDirectory, fileName, jsonData);
                     break;
-                case OutputType.VALIDATEDMERGED:
+                case PipelineOutputType.VALIDATEDMERGED:
                     WriteToOutputDirectory(config.Evaluation.MergedOutputDirectory, fileName, jsonData);
                     break;
             }
@@ -146,5 +147,11 @@ namespace Pipeline
 
     }
 
+    enum PipelineOutputType {
+        TRANSCRIPTIONS,
+        CONTEXTS,
+        EVALUATIONFLAGS,
+        VALIDATEDMERGED
+    }
 
 }
