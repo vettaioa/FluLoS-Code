@@ -35,7 +35,7 @@ namespace Pipeline
             await speechToText.Run();
         }
 
-        protected void ProcessTranscriptions(TranscriptionResult transcriptionResult)
+        private void ProcessTranscriptions(TranscriptionResult transcriptionResult)
         {
             if (transcriptionResult != null && transcriptionResult.Transcriptions != null)
             {

@@ -9,12 +9,17 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Pipeline.WebUI
 {
+    delegate void AudioInputHandler(MemoryStream wavAudioStream, string uid);
+
     class PipelineWebEndpoint
     {
+        public event AudioInputHandler AudioInputReceived;
+
         private HttpListener listener;
         private bool running = true;
 
@@ -46,6 +51,7 @@ namespace Pipeline.WebUI
 
             while (running)
             {
+
                 var context = await listener.GetContextAsync();
 
                 var path = context.Request.Url.AbsolutePath.Trim('/');
@@ -56,27 +62,24 @@ namespace Pipeline.WebUI
                         break;
                     case "index.html":
                     case "app.js":
-                    case "audiolib.js":
+                    case "recorder.js":
                         HandleStaticFile(context, path);
                         break;
-                    //case "airspace":
-                    //    HandleAirspaceAsync(context);
-                    //    break;
-                    //case "process":
-                    //    HandleSpeechInputAsync(context);
-                    //    break;
-                    //case "output":
-                    //    HandleOutputAsync(context);
-                    //    break;
+                    case "airspace":
+                        await HandleAirspaceAsync(context);
+                        break;
+                    case "process":
+                        HandleSpeechInputAsync(context);
+                        break;
+                    case "output":
+                        await HandleOutputAsync(context);
+                        break;
                     default:
                         context.Response.StatusCode = (int)HttpStatusCode.NotFound;
-                        context.Response.Close();
                         break;
                 }
 
-                context.Response.OutputStream.Close();
                 context.Response.Close();
-
             }
             listener.Close();
         }
@@ -132,18 +135,22 @@ namespace Pipeline.WebUI
                     break;
             }
             context.Response.ContentType = mimeType;
+            //context.Response.ContentLength64 = (new FileInfo(path)).Length;
+
             try
             {
-                var file = File.OpenRead(path);
-                file.CopyTo(context.Response.OutputStream);
+                using (var file = File.OpenRead(path))
+                {
+                    context.Response.ContentLength64 = file.Length;
+                    file.CopyTo(context.Response.OutputStream);
+                }
+                context.Response.OutputStream.Flush();
             }
             catch (Exception e)
             {
                 Console.WriteLine("Failed to read Static File", e);
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
             }
-            
-            context.Response.Close();
         }
 
         private async Task HandleAirspaceAsync(HttpListenerContext context)
@@ -151,10 +158,9 @@ namespace Pipeline.WebUI
             context.Response.ContentType = "application/json";
             await JsonSerializer.SerializeAsync(context.Response.OutputStream, new { airplanes = radarAirplanes });
 
-            context.Response.Close();
         }
 
-        private static async Task HandleSpeechInputAsync(HttpListenerContext context)
+        private void HandleSpeechInputAsync(HttpListenerContext context)
         {
             httpListenerContext = context;
             if (context.Request != null)
@@ -162,74 +168,39 @@ namespace Pipeline.WebUI
                 Console.WriteLine("Request received");
                 var uid = Guid.NewGuid().ToString();
 
-                // TODO: copy demo audio with new file name "uid.wav" or use other audio source
 
-                //if(context.Request.ContentType != null && context.Request.ContentType == REQUEST_MIME)
-                //{
-                //    Console.WriteLine("Processing audio...");
-                //    bool audioSaved = false;
-                //    try
-                //    {
-                //        using (var file = File.OpenWrite(AUDIO_FILENAME))
-                //        using (var stream = context.Request.InputStream)
-                //        {
-                //            stream.CopyTo(file);
-                //        }
-                //        audioSaved = true;
-                //    }
-                //    catch { }
+                var memoryStream = new MemoryStream();
 
-                //    if (audioSaved)
-                //    {
-                //        Console.WriteLine("Running Speech to Text...");
-                //        speechToTextConfig.InputAudioFile = AUDIO_FILENAME;
-                //        SpeechToTextRunner speechToText = new SpeechToTextRunner(speechToTextConfig);
-                //        speechToText.SpeechTranscribed += ProcessTranscriptions;
-                //        await speechToText.Run();
-                //    }
-                //    else
-                //    {
-                //        Console.WriteLine("Error saving audio to file!");
-                //    }
-                //}
-                //else
-                //{
-                //    Console.WriteLine("Wrong format, must be {0}", REQUEST_MIME);
-                //}
+                using (var inputStream = context.Request.InputStream)
+                {
+                    inputStream.CopyTo(memoryStream);
+                }
+
+                AudioInputReceived?.Invoke(memoryStream, uid);
 
                 byte[] buffUid = Encoding.UTF8.GetBytes(uid);
                 context.Response.ContentType = "text/plain";
                 context.Response.OutputStream.Write(buffUid, 0, buffUid.Length);
+
+
             }
-
-            // context.Request.InputStream
-            // containing the audio stram in audio/webm;codecs=opus
-
-            // the following example code produces a working .webm audio file
-            //var file = File.OpenWrite(@"audio.webm");
-            //context.Request.InputStream.CopyTo(file);
-
-
-            context.Response.Close();
         }
 
         private async Task HandleOutputAsync(HttpListenerContext context)
         {
             string uid = context.Request.QueryString["uid"];
-            string type = context.Request.QueryString["type"];
 
             PipelineResult result = pipelineResults[uid];
 
-            // TODO: WAIT until the result's json is not null
-
-            //switch (type)
-            //{
-            //    case "transcriptions":
-            //        // result.transcriptionsJson
-            //    default:
-            //        break;
-            //}
-            context.Response.Close();
+            if (result.IsComplete())
+            {
+                context.Response.ContentType = "application/json";
+                await JsonSerializer.SerializeAsync(context.Response.OutputStream, result);
+            }
+            else
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.BadRequest; // request too early
+            }
         }
 
 
@@ -256,5 +227,10 @@ namespace Pipeline.WebUI
         public string contextsJson { get; set; }
         public string evaluationflagsJson { get; set; }
         public string validatedmergedJson { get; set; }
+
+        public bool IsComplete()
+        {
+            return transcriptionsJson != null && contextsJson != null && evaluationflagsJson != null && validatedmergedJson != null;
+        }
     }
 }

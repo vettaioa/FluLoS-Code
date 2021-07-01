@@ -23,7 +23,22 @@ namespace Pipeline
             var airplanes = GetRadarAirplanes().GetAwaiter().GetResult();
             webEndpoint = new PipelineWebEndpoint(config, airplanes);
 
-            // TODO: call Run() method eg. on webEndpoint event
+            webEndpoint.AudioInputReceived += async (wavAudioStream, uid) =>
+            {
+                var cfg = config.SpeechToText;
+                cfg.SpeechToTextMode = SpeechToTextMode.FileSingle;
+                cfg.InputAudioFile = $"web_{uid}.wav";
+
+                if(SaveAudioStreamToFile(wavAudioStream, cfg.InputAudioFile))
+                {
+                    speechToText = new SpeechToTextRunner(cfg);
+                    await Run();
+                }
+                else
+                {
+                    Console.WriteLine("FAILED to SaveAudioStreamToFile");
+                }
+            };
         }
 
         public void StartWebEndpoint()
@@ -60,6 +75,23 @@ namespace Pipeline
             }
 
             return radarAirplanes;
+        }
+
+        private bool SaveAudioStreamToFile(MemoryStream wavAudioStream, string inputAudioFile)
+        {
+            Console.WriteLine("Processing audio...");
+            try
+            {
+                using (var file = File.OpenWrite(inputAudioFile))
+                using (var stream = wavAudioStream)
+                {
+                    stream.WriteTo(file);
+                }
+                return true;
+
+            }
+            catch { }
+            return false;
         }
     }
 }

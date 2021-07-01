@@ -44,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</header>
 	<main class="flex-shrink-0">
 		<div class="container-fluid my-5">
@@ -52,7 +52,7 @@
 				<div class="col-4">
 					<h2>Audio Input</h2>
 					<div class="microphone m-3 mx-auto">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z" /></svg>
 					</div>
 					<div class="audioerr alert alert-danger d-none" role="alert">Unknown Error!</div>
 
@@ -60,12 +60,12 @@
 					<div>
 						<table class="table">
 							<thead>
-								<th>Identification</th>
-								<th title="Altitude">Alt</th>
-								<th title="Speed (knots)">Speed</th>
-								<th title="Vertical Rate">Vert</th>
-								<!-- <th title="Squawk Code">Squawk</th> -->
-								<th title="Ground / Air"></th>
+							<th>Identification</th>
+							<th title="Altitude">Alt</th>
+							<th title="Speed (knots)">Speed</th>
+							<th title="Vertical Rate">Vert</th>
+							<!-- <th title="Squawk Code">Squawk</th> -->
+							<th title="Ground / Air"></th>
 							</thead>
 							<tbody>
 								<tr>
@@ -131,7 +131,7 @@
 						<div class="col">
 							<h2>Context Extraction</h2>
 							<h3>LUIS Result</h3>
-							
+
 							<div class="row">
 								<div class="col">
 									<div id="result-luis-callsign">
@@ -219,34 +219,58 @@
 					</div>
 					<div class="row">
 						<div class="col">
-							<h2>Validation</h2>
-							<table class="table">
-								<thead>
-									<th>Name</th>
-									<th>Extracted Value</th>
-									<th>Validation Result</th>
-								</thead>
-								<tr>
-									<td>Airline</td>
-									<td>alitalia</td>
-									<td>Invalid (not found in Airspace)</td>
-								</tr>
-								<tr>
-									<td>FlightNumber</td>
-									<td>301</td>
-									<td>Invalid (not found in Airspace)</td>
-								</tr>
-								<tr>
-									<td>FL Instruction</td>
-									<td>Descend</td>
-									<td>Not validated</td>
-								</tr>
-								<tr>
-									<td>FL Level</td>
-									<td>300</td>
-									<td>Valid</td>
-								</tr>
-							</table>
+							<h2>Validation <small class="text-muted">based on RML Result data</small></h2>
+							<div id="result-evaluation-rml">
+								<table class="table">
+									<thead>
+									<th>Validation</th>
+									<th>Result</th>
+									</thead>
+									<tr>
+										<td>Airline</td>
+										<td>Invalid (not found in Airspace)</td>
+									</tr>
+									<tr>
+										<td>FlightNumber</td>
+										<td>Invalid (not found in Airspace)</td>
+									</tr>
+									<tr>
+										<td>FL Instruction</td>
+										<td>Not validated</td>
+									</tr>
+									<tr>
+										<td>FL Level</td>
+										<td>Valid</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="col">
+							<h2>Final Result <small class="text-muted">based on RML Result data</small></h2>
+							<div id="result-final-rml">
+								<table class="table">
+									<thead>
+									<th>Validation</th>
+									<th>Result</th>
+									</thead>
+									<tr>
+										<td>Airline</td>
+										<td>Invalid (not found in Airspace)</td>
+									</tr>
+									<tr>
+										<td>FlightNumber</td>
+										<td>Invalid (not found in Airspace)</td>
+									</tr>
+									<tr>
+										<td>FL Instruction</td>
+										<td>Not validated</td>
+									</tr>
+									<tr>
+										<td>FL Level</td>
+										<td>Valid</td>
+									</tr>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -257,8 +281,8 @@
 		<div class="container-fluid p-4">
 			<div class="row justify-content-between align-items-center">
 				<div class="col">
-					<a href="https://ba-pub.engineering.zhaw.ch/BA_WebPublication/Flyer.pdf?version=Bachelorarbeit2021&code=BA21_rege_04&language=de" target="_blank">Spracherkennung für Fluglotsen</a><br/>
-					<a href="https://ba-pub.engineering.zhaw.ch/BA_WebPublication/Flyer.pdf?version=Bachelorarbeit2021&code=BA21_rege_04&language=en" target="_blank">Speech Recognition for Air Traffic Controllers</a><br/>
+					<a href="https://ba-pub.engineering.zhaw.ch/BA_WebPublication/Flyer.pdf?version=Bachelorarbeit2021&code=BA21_rege_04&language=de" target="_blank">Spracherkennung für Fluglotsen</a><br />
+					<a href="https://ba-pub.engineering.zhaw.ch/BA_WebPublication/Flyer.pdf?version=Bachelorarbeit2021&code=BA21_rege_04&language=en" target="_blank">Speech Recognition for Air Traffic Controllers</a><br />
 				</div>
 				<div class="col text-center">
 					&copy; 2021 Ioannis Vettas &amp; Pascal Haupt
@@ -269,6 +293,7 @@
 			</div>
 		</div>
 	</footer>
+<script src="recorder.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

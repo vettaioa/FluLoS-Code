@@ -158,16 +158,68 @@ const contexts = JSON.parse(`
 ]
 `)
 
+const evaluationflags = JSON.parse(`
+{
+  "LuisEvaluations": [
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    }
+  ],
+  "RmlEvaluations": [
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    },
+    {
+      "RadarAirplane": null,
+      "SquawkResult": "Invalid",
+      "ContactResult": "Invalid",
+      "FlightLevelResult": "FlightLevelValid",
+      "TurnResult": "Invalid"
+    }
+  ]
+}
+`)
+
 
 // Helper Functions
+
+const GetElement = (elementId) => {
+    return document.getElementById(elementId)
+}
 /*
  * Example Usage:
  * WriteTable('', 'blibla', {'Bla': ['blub'], 'Bli': [4]})
  * WriteTable('', ['blibla', 'blablu'], {'Bla': ['blub', 'jup'], 'Bli': [4, 'nope']})
  */
-const GetElement = (elementId) => {
-    return document.getElementById(elementId)
-}
 const WriteTable = (parentElement, tableHeader, keyValues) => {
     const ToTableCell = (data) => {
         if (data === undefined || data === null) {
@@ -196,7 +248,7 @@ const WriteSpeechToTextResult = (transcriptions, cleanedTranscriptions) => {
     const header = ['#', 'Speech-To-Text (literal) result', 'Cleaned Transcription'];
     const data = {1: [], 2: [], 3: []}
 
-    for (let i = 0; i < 3; ) {
+    for (let i = 0; i < 3; i++) {
         data[i + 1] = [transcriptions[i], cleanedTranscriptions?.[i] || '-']
     }
 
@@ -253,28 +305,43 @@ const WriteContextResult = (luisContext, rmlContext) => {
     
 }
 
+const WriteEvaluationResult = (rmlEvaluationFlags, rmlContext) => {
+    const tableHeaders = [
+        'Validation',
+        'Extracted Value',
+    ];
+    const tableContent = [
+        {'Airline': 'Invalid'}
+    ];
+}
+
 
 // Callbacks
-const StartRecording = (mediaRecorder) => {
+const StartRecording = (recorder) => {
     console.debug('start recording...');
-    mediaRecorder.start();
+    recorder.record();
     isRecording = true;
     microphoneBtn.classList.add('recording')
 }
-const StopRecording = (mediaRecorder) => {
+const StopRecording = (recorder) => {
     console.debug('stop recording');
-    mediaRecorder.stop();
+    recorder.stop();
     isRecording = false;
     microphoneBtn.classList.remove('recording')
+
+    // recorder.js calls callback with blob
+    recorder.exportWAV(SendRecording);
 }
 
 const SendRecording = (blob) => {
     fetch('/process', {
         method: 'post',
         body: blob,
+        mimeType: 'audio/wav',
     })
     .then(res => res.text())
     .then(data => {
+        console.log('received UID :D', data) // TODO: hier noch handling for start von retry prozess einfügen
         resultBox.innerHTML = data;
     })
 }
@@ -282,8 +349,11 @@ const SendRecording = (blob) => {
 // API Callbacks
 
 let cache_lastSpeechToTextResult = [];
+let cache_lastContextResult = [];
+
 const OnSpeechToTextResult = (sttResult) => {
     console.debug('Received speechToTextResult', sttResult)
+
     cache_lastSpeechToTextResult = sttResult;
 }
 
@@ -294,11 +364,20 @@ const OnContextResult = (contextResult) => {
     const cleanedTranscriptions = contextResult.map(c => c['LuisContext']['Message'] || null)
     WriteSpeechToTextResult(cache_lastSpeechToTextResult, cleanedTranscriptions)
 
-    // write context extraction section
+    //// write context extraction section
     const bestContext = contextResult[0]
     WriteContextResult(bestContext['LuisContext'], bestContext['RmlContext'])
+
+    cache_lastContextResult = contextResult;
 }
 
+const OnEvaluationResult = (evaluationResult) => {
+    console.debug('Received evaluationResult', evaluationResult)
+
+    const bestFlagsRml = evaluationResult['RmlEvaluations'][0];
+    const bestContextRml = cache_lastContextResult[0]['RmlContext'];
+    WriteEvaluationResult(bestFlagsRml, bestContextRml);
+}
 
 // Main Code
 const errorBox = document.getElementsByClassName('audioerr')[0]
@@ -307,29 +386,20 @@ const resultBox = document.getElementsByClassName('resultbox')[0]
 
 let isRecording = false;
 
-if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia
-	&& MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) {
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 	navigator.mediaDevices.getUserMedia({ audio: true })
 		.then(function (stream) {
 			const mediaRecorder = new MediaRecorder(stream, { mimeType: 'audio/webm;codecs=opus' })
 
-			let chunks = []
-			mediaRecorder.ondataavailable = function (e) {
-				console.log('got chunk', e.data);
-				chunks.push(e.data);
-			}
+            const audioContext = new window.AudioContext;/*new (window.AudioContext || window.webkitAudioContext);*/
 
-			mediaRecorder.onstop = () => {
-				const blob = new Blob(chunks, { 'type': 'audio/webm;codecs=opus' });
-				SendRecording(blob);
-			}
+            const recorder = new Recorder(audioContext.createMediaStreamSource(stream), { numChannels: 1 });
 
 			microphoneBtn.onclick = () => {
 				if (!isRecording) {
-					chunks = []
-					StartRecording(mediaRecorder);
+                    StartRecording(recorder);
 				} else {
-					StopRecording(mediaRecorder, chunks);
+                    StopRecording(recorder);
 				}
 			};
 		})
@@ -342,6 +412,28 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia
 	errorBox.classList.remove('d-none')
 }
 
+// try to get the response
+//function tryFetch(func, retries) {
+//    return new Promise(function (resolve, reject) {
+//        var tryDownload = function (attempts) {
+//            try {
+//                downloadItem(url);
+//                resolve();
+//            } catch (e) {
+//                if (attempts == 0) {
+//                    reject(e);
+//                } else {
+//                    setTimeout(function () {
+//                        tryDownload(attempts - 1);
+//                    }, 1000);
+//                }
+//            }
+//        };
+//        tryDownload(retries);
+//    });
+//}
+
 OnSpeechToTextResult(stts)
 OnContextResult(contexts)
+OnEvaluationResult(evaluationflags)
 
