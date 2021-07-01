@@ -21,10 +21,10 @@ const WriteTable = (parentElement, tableHeader, keyValues) => {
     const rows = Object.entries(keyValues).map(e => {
         const cols = typeof e[1] === 'string' || typeof e[1] === 'number'
             ? ToTableCell(e[1])
-            : e[1]?.map(c => ToTableCell(c))?.join('')
+            : e[1]?.map(c => ToTableCell(c))?.join('') || '<td><i>-</i></td>'
         return `<tr><th>${e[0]}</th>${cols}</tr>`
     }).join('\n');
-
+    console.log('WriteTable', {header, rows})
     parentElement.innerHTML = `<table class="table">\n${header}\n${rows}</table>`;
 }
 const CleanElement = (parentElement) => {
