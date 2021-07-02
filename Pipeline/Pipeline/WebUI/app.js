@@ -32,14 +32,14 @@ const CleanElement = (parentElement) => {
 }
 
 const WriteAirspace = (airspace) => {
-    const tableHeaders = ['Identification', 'Airline', 'Alt', 'Speed', 'Vert', '']
+    const tableHeaders = ['Identification', 'Airline', 'Level', 'Speed', 'Vert', '']
     const tableContent = {};
 
     for (const plane of airspace['airplanes']) {
         if (plane?.Airplane?.Flight?.FlightIdentification) {
             tableContent[plane.Airplane.Flight.FlightIdentification] = [
                 plane.Airplane.Flight.Airline?.Callsign || plane.Airplane.Flight.Airline?.Name || '<i>n/a</i>',
-                plane.Position?.Altitude,
+                plane.Position?.Altitude ? parseInt(plane.Position?.Altitude / 100) : '<i>n/a</i>',
                 plane.Position?.Speed,
                 plane.Position?.VerticalRate,
                 plane.Position?.OnGround? 'Gnd' : 'Air',
