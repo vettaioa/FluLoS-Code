@@ -111,14 +111,14 @@ const WriteContextResult = (luisContext, rmlContext) => {
     
 }
 
-const WriteEvaluationResult = (rmlEvaluationFlags) => {
+const WriteEvaluationResult = (rmlEvaluationFlags, luisEvaluationFlags) => {
     const invalidToDash = (value) => value == 'Invalid' ? '-' : value;
 
     const tableHeaders = [
         'Validation',
         'Result',
     ];
-    const tableContent = {
+    const tableContentRml = {
         'CallSign': rmlEvaluationFlags['RadarAirplane'] ? 'In Airspace' : '<i>Not in Airspace</i>',
         'FlightLevel Intent': invalidToDash(rmlEvaluationFlags['FlightLevelResult']),
         'Turn Intent': invalidToDash(rmlEvaluationFlags['TurnResult']),
@@ -126,13 +126,30 @@ const WriteEvaluationResult = (rmlEvaluationFlags) => {
         'Squawk Intent': invalidToDash(rmlEvaluationFlags['SquawkResult']),
     }
 
-    WriteTable(GetElement(`result-evaluation-rml`), tableHeaders, tableContent);
+    WriteTable(GetElement(`result-evaluation-rml`), tableHeaders, tableContentRml);
+
+    const tableContentLuis = {
+        'CallSign': luisEvaluationFlags['RadarAirplane'] ? 'In Airspace' : '<i>Not in Airspace</i>',
+        'FlightLevel Intent': invalidToDash(luisEvaluationFlags['FlightLevelResult']),
+        'Turn Intent': invalidToDash(luisEvaluationFlags['TurnResult']),
+        'Contact Intent': invalidToDash(luisEvaluationFlags['ContactResult']),
+        'Squawk Intent': invalidToDash(luisEvaluationFlags['SquawkResult']),
+    }
+
+    WriteTable(GetElement(`result-evaluation-luis`), tableHeaders, tableContentLuis);
 }
 
-const WriteFinalResult = (finalRmlContext) => {
+const WriteFinalResult = (finalRmlContext, finalLuisContext) => {
 
     const WriteCallSign = () => {
+        const luisCallSign = finalLuisContext['CallSign']
         const rmlCallSign = finalRmlContext['CallSign']
+
+        if (luisCallSign) {
+            WriteTable(GetElement('result-final-luis-callsign'), 'CallSign', luisCallSign);
+        } else {
+            CleanElement(GetElement('result-final-luis-callsign'));
+        }
 
         if (rmlCallSign) {
             WriteTable(GetElement('result-final-rml-callsign'), 'CallSign', rmlCallSign);
@@ -145,7 +162,14 @@ const WriteFinalResult = (finalRmlContext) => {
     const WriteIntent = (intent) => {
         const intentLc = intent.toLowerCase();
 
+        const luisIntent = finalLuisContext['Intents'][intent]
         const rmlIntent = finalRmlContext['Intents'][intent]
+
+        if (luisIntent && luisIntent['Score'] > 0.1) {
+            WriteTable(GetElement(`result-final-luis-${intentLc}`), intent, luisIntent);
+        } else {
+            CleanElement(GetElement(`result-final-luis-${intentLc}`));
+        }
 
         if (rmlIntent) {
             WriteTable(GetElement(`result-final-rml-${intentLc}`), intent, rmlIntent);
@@ -270,13 +294,14 @@ const OnEvaluationResult = (evaluationResult) => {
     console.debug('Received evaluationResult', evaluationResult)
 
     const bestFlagsRml = evaluationResult['RmlEvaluations'][0];
-    WriteEvaluationResult(bestFlagsRml);
+    const bestFlagsLuis = evaluationResult['LuisEvaluations'][0];
+    WriteEvaluationResult(bestFlagsRml, bestFlagsLuis);
 }
 
 const OnFinalResult = (finalResult) => {
     statusBox.innerHTML = ''
 
-    WriteFinalResult(finalResult['RmlContext']);
+    WriteFinalResult(finalResult['RmlContext'], finalResult['LuisContext']);
 }
 
 // Main Code
