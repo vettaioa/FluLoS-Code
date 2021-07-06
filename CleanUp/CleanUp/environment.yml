@@ -1,0 +1,9 @@
+name: TextCleanUp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - text2digits
