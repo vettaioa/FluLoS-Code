@@ -50,6 +50,9 @@ For the Web UI (`"RunWebPipeline": true` in `configuration.json`) it is required
 netsh http add urlacl url=http://+:8080/ user=DOMAIN\USERNAME
 ```
 
+### Audio Files / Speech Corpus
+Add Speech To Text Audio Files to `data/audio`
+
 ## Contributors
 - vettaioa
 - hauptpas
