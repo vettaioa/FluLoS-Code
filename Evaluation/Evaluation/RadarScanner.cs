@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Evaluation
 {
-    class RadarScanner
+    public class RadarScanner
     {
         private readonly string getAirplanesInRangeUrl;
         private readonly string getAirplaneUrl;

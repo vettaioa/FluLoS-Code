@@ -31,11 +31,14 @@ namespace Pipeline
                 {
                     if(config.RunWebPipeline)
                     {
-                        Console.WriteLine("Initializing Web UI Endpoint");
-                        var webPipeline = new WebUI.PipelineWebEndpoint(config);
-                        webPipeline.Run();
+                        Console.WriteLine("Initializing Web Pipeline...");
+                        var pipeline = new WebPipeline(config);
+
+                        Console.WriteLine("Starting Pipeline Web Endpoint...");
+                        pipeline.StartWebEndpoint();
+
                         Console.ReadKey();
-                        webPipeline.Stop();
+                        pipeline.StopWebEndpoint();
                     }
                     else
                     {

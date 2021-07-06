@@ -1,20 +1,24 @@
-﻿using Pipeline.Model;
+﻿using Evaluation.Model;
+using Pipeline.Model;
 using SharedModel;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Pipeline.WebUI
 {
+    delegate void AudioInputHandler(MemoryStream wavAudioStream, string uid);
+
     class PipelineWebEndpoint
     {
-        private const string REQUEST_MIME = "audio/webm;codecs=opus";
-        private const string AUDIO_FILENAME = "audio.webm";
+        public event AudioInputHandler AudioInputReceived;
 
         private HttpListener listener;
         private bool running = true;
@@ -23,7 +27,11 @@ namespace Pipeline.WebUI
         private static ContextExtractor contextExtractor;
         private static HttpListenerContext httpListenerContext;
 
-        public PipelineWebEndpoint(AppConfiguration config)
+        private IEnumerable<RadarAirplane> radarAirplanes;
+
+        private IDictionary<string, PipelineResult> pipelineResults = new ConcurrentDictionary<string, PipelineResult>();
+
+        public PipelineWebEndpoint(AppConfiguration config, IEnumerable<RadarAirplane> radarAirplanes)
         {
             speechToTextConfig = config.SpeechToText;
             speechToTextConfig.SpeechToTextMode = SpeechToTextMode.FileSingle;
@@ -32,6 +40,8 @@ namespace Pipeline.WebUI
             listener = new HttpListener();
             listener.Prefixes.Add("http://+:8080/");
             //listener.Prefixes.Add("https://*:8081/");
+
+            this.radarAirplanes = radarAirplanes;
         }
 
         public async Task Run()
@@ -39,23 +49,39 @@ namespace Pipeline.WebUI
             listener.Start();
             Console.WriteLine("Listening for HTTP requests");
 
-            while(running)
+            while (running)
             {
+
                 var context = await listener.GetContextAsync();
-                
-                switch(context.Request.Url.AbsolutePath.Trim('/'))
+
+                var path = context.Request.Url.AbsolutePath.Trim('/');
+                switch (path)
                 {
                     case "":
+                        HandleStaticFile(context, "index.html");
+                        break;
                     case "index.html":
-                        HandleIndexPage(context);
+                    case "app.js":
+                    case "recorder.js":
+                        HandleStaticFile(context, path);
+                        break;
+                    case "airspace":
+                        await HandleAirspaceAsync(context);
                         break;
                     case "process":
-                        await HandleSpeechInputAsync(context);
+                        HandleSpeechInput(context);
+                        break;
+                    case "output":
+                        HandleOutput(context);
+                        break;
+                    default:
+                        context.Response.StatusCode = (int)HttpStatusCode.NotFound;
                         break;
                 }
+
                 context.Response.Close();
             }
-            
+            listener.Close();
         }
 
         public void Stop()
@@ -65,75 +91,169 @@ namespace Pipeline.WebUI
             Console.WriteLine("Stopped listening for HTTP requests");
         }
 
-        private static void HandleIndexPage(HttpListenerContext context)
-        {
-            context.Response.ContentType = "text/html";
 
-            var file = File.OpenRead(@"WebUI\index.html");
-            file.CopyTo(context.Response.OutputStream);
+        public void PipelineOutputReceived(PipelineOutputType outputType, string fileName, string jsonData)
+        {
+            var uid = Path.GetFileNameWithoutExtension(fileName);
+            if (!pipelineResults.ContainsKey(uid))
+            {
+                pipelineResults[uid] = new PipelineResult { uid = uid };
+            }
+
+            var result = pipelineResults[uid];
+            switch (outputType)
+            {
+                case PipelineOutputType.TRANSCRIPTIONS:
+                    result.transcriptionsJson = jsonData;
+                    break;
+                case PipelineOutputType.CONTEXTS:
+                    result.contextsJson = jsonData;
+                    break;
+                case PipelineOutputType.EVALUATIONFLAGS:
+                    result.evaluationflagsJson = jsonData;
+                    break;
+                case PipelineOutputType.VALIDATEDMERGED:
+                    result.validatedmergedJson = jsonData;
+                    break;
+            }
         }
 
-        private static async Task HandleSpeechInputAsync(HttpListenerContext context)
+        private static void HandleStaticFile(HttpListenerContext context, string fileName)
+        {
+            string path = $"WebUI\\{fileName}";
+
+            string mimeType = "text/plain";
+            switch (Path.GetExtension(path))
+            {
+                case ".html":
+                    mimeType = "text/html";
+                    break;
+                case ".js":
+                    mimeType = "application/javascript";
+                    break;
+                case ".css":
+                    mimeType = "text/css";
+                    break;
+            }
+            context.Response.ContentType = mimeType;
+            //context.Response.ContentLength64 = (new FileInfo(path)).Length;
+
+            try
+            {
+                using (var file = File.OpenRead(path))
+                {
+                    context.Response.ContentLength64 = file.Length;
+                    file.CopyTo(context.Response.OutputStream);
+                }
+                context.Response.OutputStream.Flush();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed to read Static File", e);
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+            }
+        }
+
+        private async Task HandleAirspaceAsync(HttpListenerContext context)
+        {
+            context.Response.ContentType = "application/json";
+            await JsonSerializer.SerializeAsync(context.Response.OutputStream, new { airplanes = radarAirplanes });
+
+        }
+
+        private void HandleSpeechInput(HttpListenerContext context)
         {
             httpListenerContext = context;
             if (context.Request != null)
             {
                 Console.WriteLine("Request received");
-                if(context.Request.ContentType != null && context.Request.ContentType == REQUEST_MIME)
-                {
-                    Console.WriteLine("Processing audio...");
-                    bool audioSaved = false;
-                    try
-                    {
-                        using (var file = File.OpenWrite(AUDIO_FILENAME))
-                        using (var stream = context.Request.InputStream)
-                        {
-                            stream.CopyTo(file);
-                        }
-                        audioSaved = true;
-                    }
-                    catch { }
+                var uid = Guid.NewGuid().ToString();
 
-                    if (audioSaved)
-                    {
-                        Console.WriteLine("Running Speech to Text...");
-                        speechToTextConfig.InputAudioFile = AUDIO_FILENAME;
-                        SpeechToTextRunner speechToText = new SpeechToTextRunner(speechToTextConfig);
-                        speechToText.SpeechTranscribed += ProcessTranscriptions;
-                        await speechToText.Run();
-                    }
-                    else
-                    {
-                        Console.WriteLine("Error saving audio to file!");
-                    }
-                }
-                else
+
+                var memoryStream = new MemoryStream();
+
+                using (var inputStream = context.Request.InputStream)
                 {
-                    Console.WriteLine("Wrong format, must be {0}", REQUEST_MIME);
+                    inputStream.CopyTo(memoryStream);
                 }
+
+                AudioInputReceived?.Invoke(memoryStream, uid);
+
+                byte[] buffUid = Encoding.UTF8.GetBytes(uid);
+                context.Response.ContentType = "text/plain";
+                context.Response.ContentLength64 = buffUid.Length;
+                using (var outputStream = context.Response.OutputStream)
+                {
+                    outputStream.Write(buffUid, 0, buffUid.Length);
+                }
+
+
             }
-
-            // context.Request.InputStream
-            // containing the audio stram in audio/webm;codecs=opus
-
-            // the following example code produces a working .webm audio file
-            //var file = File.OpenWrite(@"audio.webm");
-            //context.Request.InputStream.CopyTo(file);
         }
 
-        private static void ProcessTranscriptions(TranscriptionResult transcriptionResult)
+        private void HandleOutput(HttpListenerContext context)
         {
-            var contextResults = contextExtractor.Extract(transcriptionResult.Transcriptions);
-            using StreamWriter writer = new StreamWriter(httpListenerContext.Response.OutputStream);
-            if (contextResults != null && contextResults.Length > 0)
+            string uid = context.Request.QueryString["uid"];
+            string type = context.Request.QueryString["type"];
+
+            if (uid == null || type == null)
             {
-                JsonSerializerOptions jsonOptions = new JsonSerializerOptions() { WriteIndented = true };
-                Console.WriteLine(JsonSerializer.Serialize(contextResults, jsonOptions));
+                context.Response.StatusCode = (int)HttpStatusCode.BadRequest; // invalid request
+                return;
             }
-            else
+            if(!pipelineResults.ContainsKey(uid))
             {
-                writer.Write("No results found");
+                context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                return;
+            }
+
+            PipelineResult pipelineResult = pipelineResults[uid];
+
+            string result = pipelineResult.GetValueByTypeName(type);
+            if (result == null)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.Locked; // request too early
+                return;
+            }
+
+            byte[] buffResult = Encoding.UTF8.GetBytes(result);
+            context.Response.ContentType = "application/json";
+            context.Response.ContentLength64 = buffResult.Length;
+            using (var outputStream = context.Response.OutputStream)
+            {
+                context.Response.OutputStream.Write(buffResult, 0, buffResult.Length);
             }
         }
+
+    }
+
+    internal class PipelineResult
+    {
+        public string uid { get; set; }
+        public string transcriptionsJson { get; set; }
+        public string contextsJson { get; set; }
+        public string evaluationflagsJson { get; set; }
+        public string validatedmergedJson { get; set; }
+
+        public string GetValueByTypeName(string type)
+        {
+            switch (type)
+            {
+                case "transcription":
+                    return transcriptionsJson;
+                case "context":
+                    return contextsJson;
+                case "evaluationflags":
+                    return evaluationflagsJson;
+                case "validatedmerged":
+                    return validatedmergedJson;
+            }
+            return null;
+        }
+
+        //public bool IsComplete()
+        //{
+        //    return transcriptionsJson != null && contextsJson != null && evaluationflagsJson != null && validatedmergedJson != null;
+        //}
     }
 }
